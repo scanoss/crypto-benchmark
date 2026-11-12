@@ -15,6 +15,7 @@ import (
 	"github.com/scanoss/crypto-benchmark/internal/check"
 	"github.com/scanoss/crypto-benchmark/internal/corpus"
 	"github.com/scanoss/crypto-benchmark/internal/fetch"
+	"github.com/scanoss/crypto-benchmark/internal/frame"
 	"github.com/scanoss/crypto-benchmark/internal/prediction"
 	"github.com/scanoss/crypto-benchmark/internal/score"
 	"github.com/scanoss/crypto-benchmark/internal/validate"
@@ -23,6 +24,7 @@ import (
 const usage = `usage:
   cbench validate [--root DIR] [--overlay DIR]
   cbench fetch [--root DIR] [--overlay DIR] [--only ID,...] [--dest DIR]
+  cbench frame (--entry ID [--dest DIR] | --dir DIR --language L --commit SHA) [--sample | --grep] [--root DIR] [--overlay DIR]
   cbench adapt crypto-finder --entry ID --input INTERIM.json [--callgraph CALLGRAPH.json] --out FILE [--root DIR] [--overlay DIR]
   cbench adapt cbom --tool NAME --tool-version V --entry ID --input BOM.json --out FILE [--source-root DIR] [--cdxgen] [--root DIR] [--overlay DIR]
   cbench score --tool NAME [--root DIR] [--overlay DIR] [--predictions DIR] [--format md|json] [--out FILE]
@@ -54,6 +56,18 @@ func run(args []string, stdout, stderr io.Writer) int {
 			return 2
 		}
 		return runFetch(*root, *overlay, *only, *dest, stdout, stderr)
+	case "frame":
+		entry := fs.String("entry", "", "suite C entry id; its checkout is read from --dest")
+		dest := fs.String("dest", "work/corpus", "directory cbench fetch materialized repositories into")
+		dir := fs.String("dir", "", "repository checkout to read instead of an entry's")
+		lang := fs.String("language", "", "language of --dir")
+		commit := fs.String("commit", "", "commit --dir is checked out at, the seed of --sample")
+		sample := fs.Bool("sample", false, "print the seeded sample of the files scope")
+		grep := fs.Bool("grep", false, "print the grep candidate lines of the pool scope")
+		if fs.Parse(args[1:]) != nil {
+			return 2
+		}
+		return runFrame(*root, *overlay, frameArgs{*entry, *dest, *dir, *lang, *commit, *sample, *grep}, stdout, stderr)
 	case "adapt":
 		if len(args) < 2 {
 			fmt.Fprint(stderr, usage)
@@ -133,6 +147,69 @@ func runFetch(root, overlay, only, dest string, stdout, stderr io.Writer) int {
 		}
 	}
 	return code
+}
+
+type frameArgs struct {
+	entry, dest, dir, lang, commit string
+	sample, grep                   bool
+}
+
+// runFrame prints the tool-independent crypto signal of a suite C checkout
+// (METHODOLOGY.md, "Suite C"): the signal files, their seeded sample, or the
+// pool's grep candidates.
+func runFrame(root, overlay string, a frameArgs, stdout, stderr io.Writer) int {
+	if (a.entry == "") == (a.dir == "") || (a.sample && a.grep) {
+		fmt.Fprintln(stderr, "frame: give either --entry or --dir, and at most one of --sample and --grep")
+		return 2
+	}
+	if a.entry != "" {
+		r := &check.Report{}
+		m := corpus.Load(root, overlay, r)
+		if r.HasErrors() {
+			printReport(r, stderr)
+			return 1
+		}
+		e, ok := m.Lookup(a.entry)
+		src, remote := e.Source.(corpus.Remote)
+		if !ok || !remote {
+			fmt.Fprintf(stderr, "frame: --entry %q is not a url entry of the manifest\n", a.entry)
+			return 2
+		}
+		a.dir, a.lang, a.commit = filepath.Join(a.dest, e.ID), string(e.Language), src.SHA
+	}
+	lang, err := check.OneOf(a.lang, corpus.Java, corpus.Python, corpus.Go, corpus.Rust, corpus.JavaScript)
+	if err != nil {
+		fmt.Fprintf(stderr, "frame: --language: %v\n", err)
+		return 2
+	}
+	if a.sample && a.commit == "" {
+		fmt.Fprintln(stderr, "frame: --sample needs the commit (--entry, or --commit with --dir)")
+		return 2
+	}
+	if a.grep {
+		lines, err := frame.Grep(a.dir, lang)
+		if err != nil {
+			return exitOn(err, stderr)
+		}
+		for _, l := range lines {
+			fmt.Fprintf(stdout, "%s:%d\n", l.File, l.Line)
+		}
+		return 0
+	}
+	f, err := frame.Scan(a.dir, lang)
+	if err != nil {
+		return exitOn(err, stderr)
+	}
+	files := f.Signal
+	if a.sample {
+		files = frame.Sample(f.Signal, a.commit, frame.SampleSize)
+	} else {
+		fmt.Fprintf(stdout, "# %d %s source files, %d signal files\n", f.SourceFiles, lang, len(f.Signal))
+	}
+	for _, p := range files {
+		fmt.Fprintln(stdout, p)
+	}
+	return 0
 }
 
 func runScore(root, overlay, preds, tool, format, out string, stdout, stderr io.Writer) int {
