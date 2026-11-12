@@ -1,0 +1,33 @@
+schema_version: "1"
+entry: java-b-depth3-unreachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:maven/org.cbench.depth3/liba@1.0.0
+    - pkg:maven/org.cbench.depth3/libb@1.0.0
+    - pkg:maven/org.cbench.depth3/libc@1.0.0
+assets:
+  - id: gt-0001
+    file: org/cbench/depth3/libc/Codec.java
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: dependency
+    component: pkg:maven/org.cbench.depth3/libc@1.0.0
+    reachable: false
+    depth: 2
+    distance: 3
+    notes: "Unreachable because the call to liba moves into an app function that main never calls."
+  - id: gt-0002
+    file: org/cbench/depth3/libc/Codec.java
+    lines: [15, 15]
+    asset_type: related-crypto-material
+    origin: dependency
+    component: pkg:maven/org.cbench.depth3/libc@1.0.0
+    reachable: false
+    depth: 2
+    distance: 3
+    notes: "new SecretKeySpec(...) makes a key from bytes, a key parse (related-crypto-material with no material_type), as in java-stdlib. The second annotation left it out because it wraps a constant key; kept, by the Java decision in the annotation log that new SecretKeySpec(...) parses a key from bytes. Unreachable because the call to liba moves into an app function that main never calls."

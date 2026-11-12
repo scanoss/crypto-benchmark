@@ -1,0 +1,28 @@
+schema_version: "1"
+entry: rust-b-depth3-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:cargo/cbench-depth3-liba@1.0.0
+    - pkg:cargo/cbench-depth3-libb@1.0.0
+    - pkg:cargo/cbench-depth3-libc@1.0.0
+assets:
+  - id: gt-0001
+    file: src/lib.rs
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: dependency
+    component: pkg:cargo/cbench-depth3-libc@1.0.0
+    reachable: true
+    depth: 2
+    distance: 3
+    path:
+      - "app::main"
+      - "app::run"
+      - "cbench_depth3_liba::seal"
+      - "cbench_depth3_libb::seal"
+      - "cbench_depth3_libc::mac"

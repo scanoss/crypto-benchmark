@@ -1,0 +1,62 @@
+schema_version: "1"
+entry: rust-tokio-rustls
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/bin/connector.rs
+    lines: [9, 11]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: src/bin/handshake.rs
+    lines: [11, 12]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: src/bin/handshake.rs
+    lines: [13, 13]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: src/bin/handshake.rs
+    lines: [14, 16]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0005
+    file: src/bin/handshake.rs
+    lines: [20, 20]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0006
+    file: src/bin/handshake.rs
+    lines: [21, 23]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0007
+    file: src/bin/handshake.rs
+    lines: [28, 28]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "accept() creates the server TLS session; both annotations annotate a session as a protocol asset."
+  - id: gt-0008
+    file: src/bin/handshake.rs
+    lines: [37, 37]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0

@@ -1,0 +1,75 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "sonar-cryptography",
+    "version": "1.7.0"
+  },
+  "entry": "go-x-crypto-pbkdf2",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "wpa-psk/main.go",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "wpa-psk/main.go",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "PBKDF2-SHA-1",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "derive/main.go",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "PBKDF2-SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "derive/main.go",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

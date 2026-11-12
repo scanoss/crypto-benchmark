@@ -1,0 +1,19 @@
+schema_version: "1"
+entry: python-b-direct-unreachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:pypi/cbench-direct-liba@1.0.0
+assets:
+  - id: gt-0001
+    file: liba/__init__.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: dependency
+    component: pkg:pypi/cbench-direct-liba@1.0.0
+    reachable: false
+    depth: 1
+    distance: 1
+    notes: "Unreachable because the call to liba moves into an app function that main never calls."

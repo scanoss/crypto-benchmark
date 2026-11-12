@@ -1,0 +1,10 @@
+[package]
+name = "cbench-handler-actix-app"
+version = "1.0.0"
+edition = "2021"
+license = "Apache-2.0"
+publish = false
+
+[dependencies]
+actix-web = { version = "=4.18.1", default-features = false, features = ["macros"] }
+cbench-handler-actix-liba = { path = "../liba", version = "1.0.0" }

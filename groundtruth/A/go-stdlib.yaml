@@ -1,0 +1,933 @@
+schema_version: "1"
+entry: go-stdlib
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: aes-cbc/main.go
+    lines: [18, 18]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "crypto/rand.Read fills a buffer the program uses as a key: a drbg draw, no material and no object of its own."
+  - id: gt-0002
+    file: aes-cbc/main.go
+    lines: [20, 20]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: aes-cbc/main.go
+    lines: [20, 20]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The value is created by make() on the line above and filled by rand.Read here; the draw is the expression that creates the material, so the asset takes the rand.Read line. It is passed to cipher.NewCBCEncrypter and NewCBCDecrypter as the IV."
+  - id: gt-0004
+    file: aes-cbc/main.go
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes-cbc/key
+    notes: "aes.NewCipher creates the AES block object the CBC modes are built on. The key is a 32-byte rand.Read buffer, not a literal key size, so no key_size."
+  - id: gt-0005
+    file: aes-cbc/main.go
+    lines: [28, 28]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes-cbc/key
+    notes: "cipher.NewCBCEncrypter creates a CBC mode object on the AES block; CryptBlocks on it is a follow-up."
+  - id: gt-0006
+    file: aes-cbc/main.go
+    lines: [31, 31]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes-cbc/key
+  - id: gt-0007
+    file: aes-gcm/main.go
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "crypto/rand.Read fills a buffer the program uses as a key: a drbg draw, no material and no object of its own."
+  - id: gt-0008
+    file: aes-gcm/main.go
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes-gcm/key
+    notes: "aes.NewCipher creates the raw AES block the GCM AEAD is built on. Re-derivation: the first annotation said primitive ae, for the GCM it is used under; the second said block-cipher. Changed to block-cipher: the object this call creates is a block cipher with no mode, and the AEAD is the separate cipher.NewGCM asset."
+  - id: gt-0009
+    file: aes-gcm/main.go
+    lines: [20, 20]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes-gcm/key
+    notes: "cipher.NewGCM creates the AEAD object; Seal and Open are follow-ups on it. Go appends the tag to the ciphertext, so there is no tag asset."
+  - id: gt-0010
+    file: aes-gcm/main.go
+    lines: [25, 25]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0011
+    file: aes-gcm/main.go
+    lines: [25, 25]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The value is created by make() on the line above and filled by rand.Read here; the draw is the expression that creates the material, so the asset takes the rand.Read line. It is passed to Seal and Open as the nonce."
+  - id: gt-0012
+    file: ecdh-x25519/main.go
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: HKDF
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "crypto/hkdf.Key inside the derive helper; the helper is called twice but the call is one asset. The salt is nil, so no salt material."
+  - id: gt-0013
+    file: ecdh-x25519/main.go
+    lines: [22, 22]
+    anchors: [[21, 21]]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdh-x25519/alice
+    notes: "ecdh.X25519() on line 21 only selects the curve and is not an asset."
+  - id: gt-0085
+    file: ecdh-x25519/main.go
+    lines: [22, 22]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0014
+    file: ecdh-x25519/main.go
+    lines: [26, 26]
+    anchors: [[21, 21]]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdh-x25519/bob
+  - id: gt-0086
+    file: ecdh-x25519/main.go
+    lines: [26, 26]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0015
+    file: ecdh-x25519/main.go
+    lines: [30, 30]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdh-x25519/alice
+    notes: "PublicKey() reads the peer's public key and is not an asset."
+  - id: gt-0016
+    file: ecdh-x25519/main.go
+    lines: [30, 30]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0017
+    file: ecdh-x25519/main.go
+    lines: [31, 31]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdh-x25519/bob
+  - id: gt-0018
+    file: ecdh-x25519/main.go
+    lines: [31, 31]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0019
+    file: ecdsa-p256/main.go
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa-p256/privateKey
+    notes: "An ecdsa package key is tied to ECDSA, so the algorithm is ECDSA with the curve elliptic.P256() names."
+  - id: gt-0087
+    file: ecdsa-p256/main.go
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0020
+    file: ecdsa-p256/main.go
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The digest is passed on to SignASN1 and VerifyASN1."
+  - id: gt-0021
+    file: ecdsa-p256/main.go
+    lines: [17, 17]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa-p256/privateKey
+    notes: "hash: the call receives the SHA-256 digest the program computes in the same function."
+  - id: gt-0022
+    file: ecdsa-p256/main.go
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa-p256/privateKey
+  - id: gt-0023
+    file: ed25519/main.go
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/privateKey
+  - id: gt-0088
+    file: ed25519/main.go
+    lines: [10, 10]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0024
+    file: ed25519/main.go
+    lines: [15, 15]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/privateKey
+  - id: gt-0025
+    file: ed25519/main.go
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/privateKey
+  - id: gt-0026
+    file: hmac-sha256/main.go
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "crypto/rand.Read fills a buffer the program uses as a key: a drbg draw, no material and no object of its own."
+  - id: gt-0027
+    file: hmac-sha256/main.go
+    lines: [15, 15]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hmac-sha256/key
+    notes: "sha256.New is passed as a function value, not called: it is the digest parameter. Write and Sum are follow-ups."
+  - id: gt-0028
+    file: hmac-sha256/main.go
+    lines: [19, 19]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hmac-sha256/key
+    notes: "A second HMAC object on the same key; hmac.Equal is a constant-time comparison and not an asset."
+  - id: gt-0029
+    file: key-load/main.go
+    lines: [12, 12]
+    asset_type: algorithm
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The key is only serialized and parsed, so no primitive."
+  - id: gt-0089
+    file: key-load/main.go
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0030
+    file: key-load/main.go
+    lines: [16, 16]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/privatePEM
+    notes: "x509.MarshalPKCS1PrivateKey nested in pem.EncodeToMemory; the PEM armoring alone is not an asset."
+  - id: gt-0031
+    file: key-load/main.go
+    lines: [17, 17]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/privatePEM
+    notes: "The public key serialization joins the private key's serialization object."
+  - id: gt-0032
+    file: key-load/main.go
+    lines: [23, 23]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/privatePEM
+  - id: gt-0033
+    file: key-load/main.go
+    lines: [27, 27]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/privatePEM
+  - id: gt-0034
+    file: legacy-cipher/main.go
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "crypto/rand.Read fills a buffer the program uses as a key: a drbg draw, no material and no object of its own."
+  - id: gt-0035
+    file: legacy-cipher/main.go
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0036
+    file: legacy-cipher/main.go
+    lines: [16, 16]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The value is created by make() on the line above and filled by rand.Read here; the draw is the expression that creates the material, so the asset takes the rand.Read line."
+  - id: gt-0037
+    file: legacy-cipher/main.go
+    lines: [17, 17]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: 3DES
+    origin: project
+    reachable: true
+    depth: 0
+    object: legacy-cipher/key
+  - id: gt-0038
+    file: legacy-cipher/main.go
+    lines: [23, 23]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: 3DES
+    parameters:
+      mode: CBC
+    origin: project
+    reachable: true
+    depth: 0
+    object: legacy-cipher/key
+  - id: gt-0039
+    file: legacy-cipher/main.go
+    lines: [26, 26]
+    asset_type: algorithm
+    primitive: stream-cipher
+    algorithm: RC4
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The RC4 key is a literal, so no key generation asset; XORKeyStream is a follow-up."
+  - id: gt-0040
+    file: legacy-hash/main.go
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0041
+    file: legacy-hash/main.go
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0042
+    file: mlkem/main.go
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: kem
+    algorithm: ML-KEM-768
+    origin: project
+    reachable: true
+    depth: 0
+    object: mlkem/decapsulationKey
+  - id: gt-0090
+    file: mlkem/main.go
+    lines: [10, 10]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0043
+    file: mlkem/main.go
+    lines: [15, 15]
+    asset_type: algorithm
+    primitive: kem
+    algorithm: ML-KEM-768
+    origin: project
+    reachable: true
+    depth: 0
+    object: mlkem/decapsulationKey
+    notes: "EncapsulationKey() on line 14 reads the public half of the key pair and is not an asset."
+  - id: gt-0044
+    file: mlkem/main.go
+    lines: [15, 15]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0045
+    file: mlkem/main.go
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: kem
+    algorithm: ML-KEM-768
+    origin: project
+    reachable: true
+    depth: 0
+    object: mlkem/decapsulationKey
+  - id: gt-0046
+    file: mlkem/main.go
+    lines: [16, 16]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0047
+    file: pbkdf2/main.go
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0048
+    file: pbkdf2/main.go
+    lines: [13, 13]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The value is created by make() on the line above and filled by rand.Read here; the draw is the expression that creates the material, so the asset takes the rand.Read line."
+  - id: gt-0049
+    file: pbkdf2/main.go
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "crypto/pbkdf2.Key; no hash on a KDF by the guide."
+  - id: gt-0050
+    file: rng/main.go
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0051
+    file: rng/main.go
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0052
+    file: rng/main.go
+    lines: [18, 18]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "rand.Text draws from the cryptographic generator."
+  - id: gt-0053
+    file: rsa-oaep/main.go
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-oaep/privateKey
+  - id: gt-0091
+    file: rsa-oaep/main.go
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0054
+    file: rsa-oaep/main.go
+    lines: [18, 18]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-oaep/privateKey
+    notes: "sha256.New() is the OAEP digest parameter, an algorithm specification like hashes.SHA256(), not a hash asset. RSA-OAEP gets no hash."
+  - id: gt-0055
+    file: rsa-oaep/main.go
+    lines: [22, 22]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-oaep/privateKey
+  - id: gt-0056
+    file: rsa-pkcs1v15/main.go
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-pkcs1v15/privateKey
+  - id: gt-0092
+    file: rsa-pkcs1v15/main.go
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0057
+    file: rsa-pkcs1v15/main.go
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0058
+    file: rsa-pkcs1v15/main.go
+    lines: [17, 17]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-pkcs1v15/privateKey
+  - id: gt-0059
+    file: rsa-pkcs1v15/main.go
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-pkcs1v15/privateKey
+  - id: gt-0060
+    file: rsa-pss/main.go
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-pss/privateKey
+  - id: gt-0093
+    file: rsa-pss/main.go
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0061
+    file: rsa-pss/main.go
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0062
+    file: rsa-pss/main.go
+    lines: [18, 18]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA-PSS
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-pss/privateKey
+    notes: "rsa.PSSOptions on line 17 is a parameter object and not an asset."
+  - id: gt-0063
+    file: rsa-pss/main.go
+    lines: [22, 22]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA-PSS
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-pss/privateKey
+  - id: gt-0064
+    file: sha2/main.go
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0065
+    file: sha2/main.go
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "sha256.New creates the hash object; Write and Sum are follow-ups."
+  - id: gt-0066
+    file: sha2/main.go
+    lines: [19, 19]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-512
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0067
+    file: sha3/main.go
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA3-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0068
+    file: sha3/main.go
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA3-512
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0069
+    file: sha3/main.go
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: xof
+    algorithm: SHAKE256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: the first annotation said primitive hash; the second said xof. Changed to xof, the CycloneDX primitive for an extendable-output function, which the schema lists although the guide's primitive list does not name it. The score does not compare primitives."
+  - id: gt-0070
+    file: tls-config/main.go
+    lines: [9, 16]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "A tls.Config composite literal is Go's TLS context, the counterpart of ssl.create_default_context(); there is no constructor call, so the asset is the literal, from &tls.Config{ to its closing brace."
+  - id: gt-0071
+    file: tls-handshake/main.go
+    lines: [17, 17]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The key signs the self-signed certificate and the TLS handshake. CreateCertificate is a certificate asset, so the key is an object of one asset."
+  - id: gt-0094
+    file: tls-handshake/main.go
+    lines: [17, 17]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0072
+    file: tls-handshake/main.go
+    lines: [30, 30]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: tls-handshake/der
+    notes: "The template literal on lines 21-29 is the certificate builder's input; the asset is the CreateCertificate call that signs it. big.NewInt(1) is a constant serial, not a draw."
+  - id: gt-0073
+    file: tls-handshake/main.go
+    lines: [34, 34]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: tls-handshake/der
+  - id: gt-0074
+    file: tls-handshake/main.go
+    lines: [41, 44]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "A tls.Config composite literal is Go's TLS context, the counterpart of ssl.create_default_context(); there is no constructor call, so the asset is the literal, from &tls.Config{ to its closing brace."
+  - id: gt-0075
+    file: tls-handshake/main.go
+    lines: [45, 45]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "A tls.Config composite literal is Go's TLS context, the counterpart of ssl.create_default_context(); there is no constructor call, so the asset is the literal, from &tls.Config{ to its closing brace."
+  - id: gt-0076
+    file: tls-handshake/main.go
+    lines: [48, 48]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "tls.Server creates a TLS session from the config, like paramiko.Transport for SSH; its own object."
+  - id: gt-0077
+    file: tls-handshake/main.go
+    lines: [50, 50]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0078
+    file: x509-cert/main.go
+    lines: [17, 17]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-384
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The key signs the self-signed certificate; certificate and key serialization are other asset types, so the key generation is an object of one asset."
+  - id: gt-0095
+    file: x509-cert/main.go
+    lines: [17, 17]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0079
+    file: x509-cert/main.go
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "rand.Int draws the certificate serial number."
+  - id: gt-0080
+    file: x509-cert/main.go
+    lines: [34, 34]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: x509-cert/der
+  - id: gt-0081
+    file: x509-cert/main.go
+    lines: [41, 41]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: x509-cert/der
+    notes: "pem.Decode on line 40 is encoding only."
+  - id: gt-0082
+    file: x509-cert/main.go
+    lines: [45, 45]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "A certificate fingerprint: a digest of a certificate, its own object."
+  - id: gt-0083
+    file: x509-cert/main.go
+    lines: [47, 47]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: x509-cert/keyDER
+  - id: gt-0084
+    file: x509-cert/main.go
+    lines: [51, 51]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: x509-cert/keyDER

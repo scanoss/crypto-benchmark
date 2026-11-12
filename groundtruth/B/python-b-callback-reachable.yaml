@@ -1,0 +1,25 @@
+schema_version: "1"
+entry: python-b-callback-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:pypi/cbench-callback-liba@1.0.0
+    - pkg:pypi/cbench-callback-libb@1.0.0
+assets:
+  - id: gt-0001
+    file: libb/__init__.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: dependency
+    component: pkg:pypi/cbench-callback-libb@1.0.0
+    reachable: true
+    depth: 2
+    distance: 2
+    path:
+      - "main.main"
+      - "main.report"
+      - "liba.fingerprint"
+      - "libb.digest"
+    notes: "Reachable because main passes report to threading.Thread as target, which calls it while main runs."

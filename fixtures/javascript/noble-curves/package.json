@@ -1,0 +1,9 @@
+{
+  "name": "crypto-benchmark-noble-curves",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@noble/curves": "2.4.0"
+  }
+}

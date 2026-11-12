@@ -1,0 +1,10 @@
+{
+  "name": "cbench-deadfn-liba",
+  "version": "1.0.0",
+  "description": "Suite B fixture library liba (deadfn).",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cbench-deadfn-libb": "1.0.0"
+  }
+}

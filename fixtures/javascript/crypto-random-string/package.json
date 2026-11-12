@@ -1,0 +1,9 @@
+{
+  "name": "crypto-benchmark-crypto-random-string",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "crypto-random-string": "6.0.0"
+  }
+}

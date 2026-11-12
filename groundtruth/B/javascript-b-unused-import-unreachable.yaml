@@ -1,0 +1,20 @@
+schema_version: "1"
+entry: javascript-b-unused-import-unreachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:npm/cbench-unused-import-liba@1.0.0
+    - pkg:npm/cbench-unused-import-libb@1.0.0
+assets:
+  - id: gt-0001
+    file: index.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: dependency
+    component: pkg:npm/cbench-unused-import-libb@1.0.0
+    reachable: false
+    depth: 2
+    distance: 2
+    notes: "Unreachable because main only reads a constant of liba and calls nothing."

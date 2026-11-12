@@ -1,0 +1,167 @@
+schema_version: "1"
+entry: python-paramiko
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: key-load/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0014
+    file: key-load/main.py
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: key-load/main.py
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/key_file
+  - id: gt-0003
+    file: key-load/main.py
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/key_file
+  - id: gt-0004
+    file: keygen/main.py
+    lines: [5, 5]
+    asset_type: algorithm
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "First annotation gave primitive signature; resolved to none with the second annotator: the program only serializes and fingerprints the key."
+  - id: gt-0015
+    file: keygen/main.py
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0005
+    file: keygen/main.py
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: keygen/key_bytes
+    notes: "key.asbytes() serializes the public key; nested in the parse on the same line.RSAKey(data=...) parses the public key blob."
+  - id: gt-0006
+    file: keygen/main.py
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: keygen/key_bytes
+  - id: gt-0007
+    file: keygen/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "key.fingerprint is a property that hashes the public key blob with SHA-256. Missed by the first annotation, added from the second: a fingerprint the program uses is a digest asset, as cert.digest is. Re-derivation: second annotator left it out as a property, not a call; kept: reading the property runs the SHA-256 digest in the program, and the program uses the fingerprint."
+  - id: gt-0008
+    file: sign/main.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign/key
+  - id: gt-0016
+    file: sign/main.py
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0009
+    file: sign/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign/key
+  - id: gt-0010
+    file: sign/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign/key
+  - id: gt-0011
+    file: ssh-transport/main.py
+    lines: [19, 19]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0012
+    file: ssh-transport/main.py
+    lines: [20, 20]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0017
+    file: ssh-transport/main.py
+    lines: [20, 20]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0013
+    file: ssh-transport/main.py
+    lines: [23, 23]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0

@@ -1,0 +1,135 @@
+{
+  "version": "1.7",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "dev"
+  },
+  "rules": {
+    "source": "local",
+    "checksum_sha256": "120961b10cb5a6d359ceabf4f43552fd01c04d733e8fa26ecef1aba1815321e4"
+  },
+  "findings": [
+    {
+      "file_path": "main.go",
+      "language": "go",
+      "cryptographic_assets": [
+        {
+          "start_line": 18,
+          "end_line": 18,
+          "start_col": 9,
+          "end_col": 28,
+          "match": "return sha256.Sum256(data)",
+          "rules": [
+            {
+              "id": "testdata.rules.go.transitive-reachability.sha256",
+              "message": "Detected SHA-256 hashing",
+              "severity": "INFO"
+            }
+          ],
+          "status": "pending",
+          "metadata": {
+            "algorithmFamily": "SHA-2",
+            "algorithmName": "SHA-256",
+            "algorithmPrimitive": "hash",
+            "assetType": "algorithm"
+          },
+          "oid": "2.16.840.1.101.3.4.2.1",
+          "finding_id": "7855dad3",
+          "occurrence_key": "v1:8b9e91a2df28b887",
+          "source": "direct"
+        },
+        {
+          "start_line": 22,
+          "end_line": 22,
+          "start_col": 9,
+          "end_col": 22,
+          "match": "return md5.Sum(data)",
+          "rules": [
+            {
+              "id": "testdata.rules.go.transitive-reachability.md5",
+              "message": "Detected MD5 hashing",
+              "severity": "INFO"
+            }
+          ],
+          "status": "pending",
+          "metadata": {
+            "algorithmFamily": "MD5",
+            "algorithmName": "MD5",
+            "algorithmPrimitive": "hash",
+            "assetType": "algorithm"
+          },
+          "oid": "1.2.840.113549.2.5",
+          "finding_id": "ebfc9a7b",
+          "occurrence_key": "v1:337496d1286f3a88",
+          "source": "direct"
+        }
+      ]
+    },
+    {
+      "file_path": "libb.go",
+      "language": "go",
+      "cryptographic_assets": [
+        {
+          "start_line": 11,
+          "end_line": 11,
+          "start_col": 9,
+          "end_col": 28,
+          "match": "sum := sha256.Sum256(data)",
+          "rules": [
+            {
+              "id": "testdata.rules.go.transitive-reachability.sha256",
+              "message": "Detected SHA-256 hashing",
+              "severity": "INFO"
+            }
+          ],
+          "status": "pending",
+          "metadata": {
+            "algorithmFamily": "SHA-2",
+            "algorithmName": "SHA-256",
+            "algorithmPrimitive": "hash",
+            "assetType": "algorithm"
+          },
+          "oid": "2.16.840.1.101.3.4.2.1",
+          "finding_id": "a3a9d75d",
+          "occurrence_key": "v1:8d23bf0258eb7fc3",
+          "source": "dependency",
+          "dependency_info": {
+            "module": "example.com/translibb",
+            "version": "v0.0.0",
+            "purl": "pkg:golang/example.com/translibb@v0.0.0"
+          }
+        },
+        {
+          "start_line": 17,
+          "end_line": 17,
+          "start_col": 9,
+          "end_col": 28,
+          "match": "sum := sha512.Sum512(data)",
+          "rules": [
+            {
+              "id": "testdata.rules.go.transitive-reachability.sha512",
+              "message": "Detected SHA-512 hashing",
+              "severity": "INFO"
+            }
+          ],
+          "status": "pending",
+          "metadata": {
+            "algorithmFamily": "SHA-2",
+            "algorithmName": "SHA-512",
+            "algorithmPrimitive": "hash",
+            "assetType": "algorithm"
+          },
+          "oid": "2.16.840.1.101.3.4.2.3",
+          "finding_id": "1f739245",
+          "occurrence_key": "v1:e0c9269e77b69d24",
+          "source": "dependency",
+          "dependency_info": {
+            "module": "example.com/translibb",
+            "version": "v0.0.0",
+            "purl": "pkg:golang/example.com/translibb@v0.0.0"
+          }
+        }
+      ]
+    }
+  ]
+}

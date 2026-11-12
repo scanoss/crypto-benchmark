@@ -1,0 +1,283 @@
+schema_version: "1"
+entry: java-jjwt-api
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/main/java/bench/JweDirect.java
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweDirect/key
+    notes: "Jwts.ENC.A256GCM.key() generates a 256-bit AES key for A256GCM, so the API fixes mode GCM and key_size 256, as javascript-jose's generateSecret('A256GCM')."
+  - id: gt-0002
+    file: src/main/java/bench/JweDirect.java
+    lines: [11, 14]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweDirect/key
+    notes: "encryptWith(SecretKey, Jwts.ENC.A256GCM) uses alg dir (header observed: alg dir, enc A256GCM), so A256GCM is the only algorithm the chain performs. The builder chain is one asset, from Jwts.builder() to compact()."
+  - id: gt-0003
+    file: src/main/java/bench/JweDirect.java
+    lines: [15, 18]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweDirect/key
+    notes: "The parser call names no algorithm, so it takes the algorithm the token the program produced uses, with only the parameters its API fixes, none here (guide, verify calls). Re-derivation: the first annotation ended the range at the trailing getPayload() accessors. Changed, with the second annotation: the range ends at the closing parenthesis of the parse call that verifies or decrypts; the accessors only read its result."
+  - id: gt-0004
+    file: src/main/java/bench/JweRsaOaep.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      key_size: 4096
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweRsaOaep/pair
+    notes: "Jwts.SIG.RS512.keyPair() generates a generic JCA RSA key pair of 4096 bits (observed), a size its API fixes for RS512. The key is generic RSA, not tied to one scheme, so the algorithm is RSA; primitive pke because the program uses the key only for RSA-OAEP-256 key wrapping, although it was built through a signature algorithm's builder."
+  - id: gt-0021
+    file: src/main/java/bench/JweRsaOaep.java
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0005
+    file: src/main/java/bench/JweRsaOaep.java
+    lines: [9, 13]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweRsaOaep/pair
+    notes: "encryptWith names RSA_OAEP_256 and A256GCM: two assets on the builder chain's lines. RSA-OAEP carries no hash (guide, hash)."
+  - id: gt-0006
+    file: src/main/java/bench/JweRsaOaep.java
+    lines: [9, 13]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweRsaOaep/content_key
+    notes: "The content key goes from encrypt to decrypt inside the token, so both content-encryption assets are one object (guide, passed on)."
+  - id: gt-0007
+    file: src/main/java/bench/JweRsaOaep.java
+    lines: [14, 17]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweRsaOaep/pair
+    notes: "decryptWith names no algorithm; the token the program produced uses RSA-OAEP-256 and A256GCM, so the call is two assets with no parameters (guide, verify calls). Re-derivation: the first annotation ended the range at the trailing getPayload() accessors. Changed, with the second annotation: the range ends at the closing parenthesis of the parse call that verifies or decrypts; the accessors only read its result."
+  - id: gt-0008
+    file: src/main/java/bench/JweRsaOaep.java
+    lines: [14, 17]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweRsaOaep/content_key
+    notes: "The parser call names no algorithm, so it takes the algorithm the token the program produced uses, with only the parameters its API fixes, none here (guide, verify calls). Re-derivation: the first annotation ended the range at the trailing getPayload() accessors. Changed, with the second annotation: the range ends at the closing parenthesis of the parse call that verifies or decrypts; the accessors only read its result."
+  - id: gt-0009
+    file: src/main/java/bench/JwsEd25519.java
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEd25519/pair
+    notes: "Jwks.CRV.Ed25519.keyPair() generates an Ed25519 key pair, a key type tied to one scheme (guide, algorithm)."
+  - id: gt-0022
+    file: src/main/java/bench/JwsEd25519.java
+    lines: [9, 9]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0010
+    file: src/main/java/bench/JwsEd25519.java
+    lines: [10, 13]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEd25519/pair
+    notes: "Jwts.SIG.EdDSA with an Ed25519 key is Ed25519 (guide, algorithm)."
+  - id: gt-0011
+    file: src/main/java/bench/JwsEd25519.java
+    lines: [14, 17]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEd25519/pair
+    notes: "The parser names no algorithm; the key's type is Ed25519, which fixes the scheme. Re-derivation: the first annotation ended the range at the trailing getPayload() accessors. Changed, with the second annotation: the range ends at the closing parenthesis of the parse call that verifies or decrypts; the accessors only read its result."
+  - id: gt-0012
+    file: src/main/java/bench/JwsEs256.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEs256/pair
+    notes: "Jwts.SIG.ES256.keyPair() generates a generic JCA EC key pair on P-256 (observed secp256r1); a generic EC key is EC with its curve (guide, algorithm). A second annotator may write ECDSA because the builder hangs off ES256; the key object itself is a plain JCA EC key."
+  - id: gt-0023
+    file: src/main/java/bench/JwsEs256.java
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0013
+    file: src/main/java/bench/JwsEs256.java
+    lines: [9, 12]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEs256/pair
+    notes: "signWith(key, Jwts.SIG.ES256) names ES256: ECDSA, P-256, SHA-256."
+  - id: gt-0014
+    file: src/main/java/bench/JwsEs256.java
+    lines: [13, 16]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEs256/pair
+    notes: "The parser names no algorithm; ECDSA from the key's type and the token, no curve or hash (guide, verify calls). Re-derivation: the first annotation ended the range at the trailing getPayload() accessors. Changed, with the second annotation: the range ends at the closing parenthesis of the parse call that verifies or decrypts; the accessors only read its result."
+  - id: gt-0015
+    file: src/main/java/bench/JwsHs256.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsHs256/key
+    notes: "Jwts.SIG.HS256.key() generates a 256-bit JCA SecretKey with algorithm HmacSHA256 (observed), a key tied to HMAC, so algorithm HMAC rather than none (the guide's generic secret key). Key generation gets no hash. A second annotator may leave out the algorithm."
+  - id: gt-0016
+    file: src/main/java/bench/JwsHs256.java
+    lines: [9, 12]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsHs256/key
+    notes: "signWith(key) names no algorithm. jjwt picks HS256 from the key's length (header observed: HS256), so only HMAC is fixed by the API; the digest bound to the key at creation is not carried (guide, hash). A second annotator may set hash SHA-256."
+  - id: gt-0017
+    file: src/main/java/bench/JwsHs256.java
+    lines: [13, 16]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsHs256/key
+    notes: "The parser call names no algorithm, so it takes the algorithm the token the program produced uses, with only the parameters its API fixes, none here (guide, verify calls). Re-derivation: the first annotation ended the range at the trailing getPayload() accessors. Changed, with the second annotation: the range ends at the closing parenthesis of the parse call that verifies or decrypts; the accessors only read its result."
+  - id: gt-0018
+    file: src/main/java/bench/JwsRs256.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsRs256/pair
+    notes: "Jwts.SIG.RS256.keyPair() generates a generic JCA RSA key pair of 2048 bits (observed), the size its API fixes for RS256. Generic RSA key, so RSA with no padding."
+  - id: gt-0024
+    file: src/main/java/bench/JwsRs256.java
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0019
+    file: src/main/java/bench/JwsRs256.java
+    lines: [9, 13]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsRs256/pair
+    notes: "signWith(privateKey) names no algorithm. For an RSA key jjwt only ever picks RS256, RS384 or RS512, by key length (header observed: RS256), so the API fixes padding PKCS1v15 but not the hash. A second annotator may set hash SHA-256 or leave out the padding."
+  - id: gt-0020
+    file: src/main/java/bench/JwsRs256.java
+    lines: [14, 18]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsRs256/pair
+    notes: "The parser names no algorithm and verifyWith(RSA public key) accepts RS* and PS* tokens, so no padding or hash is fixed (guide, verify calls). Re-derivation: the first annotation ended the range at the trailing getPayload() accessors. Changed, with the second annotation: the range ends at the closing parenthesis of the parse call that verifies or decrypts; the accessors only read its result."

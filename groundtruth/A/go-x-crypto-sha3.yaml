@@ -1,0 +1,43 @@
+schema_version: "1"
+entry: go-x-crypto-sha3
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: hash/main.go
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA3-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: hash/main.go
+    lines: [15, 15]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA3-512
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: hash/main.go
+    lines: [17, 17]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: Keccak-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "NewLegacyKeccak256 is the pre-standard Keccak padding, not SHA3-256; Keccak-256 is not in the algo table and keeps its usual name."
+  - id: gt-0004
+    file: hash/main.go
+    lines: [22, 22]
+    asset_type: algorithm
+    primitive: xof
+    algorithm: SHAKE256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: the first annotation said primitive hash; the second said xof. Changed to xof, the CycloneDX primitive for an extendable-output function, which the schema lists although the guide's primitive list does not name it. The score does not compare primitives."

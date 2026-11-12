@@ -1,0 +1,9 @@
+[package]
+name = "rustls-fixture"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+rustls = "=0.23.46"
+webpki-roots = "=1.0.11"

@@ -1,0 +1,37 @@
+schema_version: "1"
+entry: go-b-deadfn-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:golang/example.com/cbench/deadfn/liba@v1.0.0
+    - pkg:golang/example.com/cbench/deadfn/libb@v1.0.0
+assets:
+  - id: gt-0001
+    file: codec.go
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: dependency
+    component: pkg:golang/example.com/cbench/deadfn/libb@v1.0.0
+    reachable: true
+    depth: 2
+    distance: 2
+    path:
+      - "example.com/cbench/deadfn/app.main"
+      - "example.com/cbench/deadfn/liba.Sign"
+      - "example.com/cbench/deadfn/libb.Sign"
+  - id: gt-0002
+    file: codec.go
+    lines: [26, 26]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: dependency
+    component: pkg:golang/example.com/cbench/deadfn/libb@v1.0.0
+    reachable: false
+    depth: 2
+    distance: 2
+    notes: "LegacyDigest is never called, in either variant; its file is reachable."

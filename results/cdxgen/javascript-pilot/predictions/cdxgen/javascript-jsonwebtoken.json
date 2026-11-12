@@ -1,0 +1,65 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "javascript-jsonwebtoken",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "es256/main.js",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ecdsaWithSHA256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "hs256/main.js",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "hmacWithSHA256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rs256/main.js",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "algorithm": "rsa",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rs256/main.js",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "sha256WithRSAEncryption",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

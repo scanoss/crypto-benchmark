@@ -1,0 +1,624 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "python-b-wrapper-unreachable",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "libb/__init__.py",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-384",
+      "parameters": {
+        "key_size": 384
+      },
+      "origin": "dependency",
+      "component": "pkg:pypi/cbench-wrapper-libb@1.0.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "pip/_internal/cache.py",
+      "lines": [
+        29,
+        29
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-224",
+      "parameters": {
+        "key_size": 224
+      },
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_internal/cli/req_command.py",
+      "lines": [
+        65,
+        65
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_internal/commands/hash.py",
+      "lines": [
+        56,
+        56
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_internal/operations/build/build_tracker.py",
+      "lines": [
+        85,
+        85
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-224",
+      "parameters": {
+        "key_size": 224
+      },
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "unknown"
+    },
+    {
+      "file": "pip/_internal/self_outdated_check.py",
+      "lines": [
+        38,
+        38
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-224",
+      "parameters": {
+        "key_size": 224
+      },
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_internal/utils/hashes.py",
+      "lines": [
+        80,
+        80
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_internal/utils/misc.py",
+      "lines": [
+        662,
+        662
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/cachecontrol/caches/file_cache.py",
+      "lines": [
+        95,
+        95
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-224",
+      "parameters": {
+        "key_size": 224
+      },
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/distlib/database.py",
+      "lines": [
+        1032,
+        1032
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/distlib/index.py",
+      "lines": [
+        269,
+        269
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/distlib/index.py",
+      "lines": [
+        270,
+        270
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/distlib/util.py",
+      "lines": [
+        1496,
+        1496
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/distlib/util.py",
+      "lines": [
+        1500,
+        1500
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/distlib/util.py",
+      "lines": [
+        1503,
+        1503
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/distlib/util.py",
+      "lines": [
+        1504,
+        1504
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/distlib/util.py",
+      "lines": [
+        1508,
+        1508
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/requests/auth.py",
+      "lines": [
+        148,
+        148
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/requests/auth.py",
+      "lines": [
+        156,
+        156
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/requests/auth.py",
+      "lines": [
+        164,
+        164
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/requests/auth.py",
+      "lines": [
+        172,
+        172
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/requests/auth.py",
+      "lines": [
+        203,
+        203
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/requests/auth.py",
+      "lines": [
+        205,
+        205
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/contrib/_securetransport/low_level.py",
+      "lines": [
+        229,
+        229
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/contrib/pyopenssl.py",
+      "lines": [
+        99,
+        99
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/contrib/pyopenssl.py",
+      "lines": [
+        103,
+        103
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/contrib/pyopenssl.py",
+      "lines": [
+        106,
+        106
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/contrib/pyopenssl.py",
+      "lines": [
+        109,
+        109
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/contrib/pyopenssl.py",
+      "lines": [
+        172,
+        172
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/contrib/pyopenssl.py",
+      "lines": [
+        231,
+        231
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/contrib/pyopenssl.py",
+      "lines": [
+        232,
+        232
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/contrib/pyopenssl.py",
+      "lines": [
+        391,
+        391
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/contrib/pyopenssl.py",
+      "lines": [
+        432,
+        432
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/contrib/securetransport.py",
+      "lines": [
+        163,
+        163
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/contrib/securetransport.py",
+      "lines": [
+        168,
+        168
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/contrib/securetransport.py",
+      "lines": [
+        173,
+        173
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/contrib/securetransport.py",
+      "lines": [
+        178,
+        178
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/contrib/securetransport.py",
+      "lines": [
+        183,
+        183
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/filepost.py",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/util/ssl_.py",
+      "lines": [
+        65,
+        65
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/util/ssl_.py",
+      "lines": [
+        70,
+        70
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/util/ssl_.py",
+      "lines": [
+        72,
+        72
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/util/ssl_.py",
+      "lines": [
+        77,
+        77
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/util/ssl_.py",
+      "lines": [
+        77,
+        77
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/util/ssl_.py",
+      "lines": [
+        179,
+        179
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/util/ssl_.py",
+      "lines": [
+        239,
+        239
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/util/ssl_.py",
+      "lines": [
+        287,
+        287
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    },
+    {
+      "file": "pip/_vendor/urllib3/util/ssl_.py",
+      "lines": [
+        288,
+        288
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:pypi/pip@24.0",
+      "reachable": "false"
+    }
+  ]
+}

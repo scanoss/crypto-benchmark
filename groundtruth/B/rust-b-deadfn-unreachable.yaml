@@ -1,0 +1,34 @@
+schema_version: "1"
+entry: rust-b-deadfn-unreachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:cargo/cbench-deadfn-liba@1.0.0
+    - pkg:cargo/cbench-deadfn-libb@1.0.0
+assets:
+  - id: gt-0001
+    file: src/codec.rs
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: dependency
+    component: pkg:cargo/cbench-deadfn-libb@1.0.0
+    reachable: false
+    depth: 2
+    distance: 2
+    notes: "Unreachable because main calls liba's non-crypto function, which calls the non-crypto sibling in the same libb file."
+  - id: gt-0002
+    file: src/codec.rs
+    lines: [18, 18]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: dependency
+    component: pkg:cargo/cbench-deadfn-libb@1.0.0
+    reachable: false
+    depth: 2
+    distance: 2
+    notes: "legacy_digest is public but never called, in either variant; its module is reachable."

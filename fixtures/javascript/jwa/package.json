@@ -1,0 +1,9 @@
+{
+  "name": "crypto-benchmark-jwa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "jwa": "2.0.1"
+  }
+}

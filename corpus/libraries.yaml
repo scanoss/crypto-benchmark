@@ -1,0 +1,1306 @@
+# Suite A library list, frozen on 2026-11-04. METHODOLOGY.md ("Suite A library list")
+# states the criterion. Within an ecosystem, libraries are listed by descending primary
+# metric, so file order is the rank. Checked by internal/libraries.
+schema_version: "1"
+libraries:
+  - ecosystem: python
+    package: cryptography
+    metric: pypistats_last_month
+    value: 1068178556
+    source: https://pypistats.org/api/packages/cryptography/recent
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 86926
+      source: https://api.deps.dev/v3alpha/systems/pypi/packages/cryptography/versions/50.0.2:dependents
+      retrieved: 2026-11-04
+  - ecosystem: python
+    package: pyjwt
+    metric: pypistats_last_month
+    value: 574600226
+    source: https://pypistats.org/api/packages/pyjwt/recent
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 49351
+      source: https://api.deps.dev/v3alpha/systems/pypi/packages/pyjwt/versions/2.15.1:dependents
+      retrieved: 2026-11-04
+  - ecosystem: python
+    package: truststore
+    metric: pypistats_last_month
+    value: 240436114
+    source: https://pypistats.org/api/packages/truststore/recent
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 63077
+      source: https://api.deps.dev/v3alpha/systems/pypi/packages/truststore/versions/0.10.5:dependents
+      retrieved: 2026-11-04
+  - ecosystem: python
+    package: rsa
+    metric: pypistats_last_month
+    value: 189305776
+    source: https://pypistats.org/api/packages/rsa/recent
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 5054
+      source: https://api.deps.dev/v3alpha/systems/pypi/packages/rsa/versions/4.9.1:dependents
+      retrieved: 2026-11-04
+  - ecosystem: python
+    package: pyopenssl
+    metric: pypistats_last_month
+    value: 172597949
+    source: https://pypistats.org/api/packages/pyopenssl/recent
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 5144
+      source: https://api.deps.dev/v3alpha/systems/pypi/packages/pyopenssl/versions/26.4.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: python
+    package: pynacl
+    metric: pypistats_last_month
+    value: 162342567
+    source: https://pypistats.org/api/packages/pynacl/recent
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 9180
+      source: https://api.deps.dev/v3alpha/systems/pypi/packages/pynacl/versions/1.6.2:dependents
+      retrieved: 2026-11-04
+  - ecosystem: python
+    package: bcrypt
+    metric: pypistats_last_month
+    value: 151548082
+    source: https://pypistats.org/api/packages/bcrypt/recent
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 9597
+      source: https://api.deps.dev/v3alpha/systems/pypi/packages/bcrypt/versions/5.0.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: python
+    package: paramiko
+    metric: pypistats_last_month
+    value: 103594967
+    source: https://pypistats.org/api/packages/paramiko/recent
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 3856
+      source: https://api.deps.dev/v3alpha/systems/pypi/packages/paramiko/versions/5.1.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: python
+    package: joserfc
+    metric: pypistats_last_month
+    value: 98534978
+    source: https://pypistats.org/api/packages/joserfc/recent
+    retrieved: 2026-11-04
+  - ecosystem: python
+    package: pycryptodome
+    metric: pypistats_last_month
+    value: 68741896
+    source: https://pypistats.org/api/packages/pycryptodome/recent
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 6239
+      source: https://api.deps.dev/v3alpha/systems/pypi/packages/pycryptodome/versions/4.3.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: python
+    package: argon2-cffi
+    metric: pypistats_last_month
+    value: 60609086
+    source: https://pypistats.org/api/packages/argon2-cffi/recent
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 7784
+      source: https://api.deps.dev/v3alpha/systems/pypi/packages/argon2-cffi/versions/25.1.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: python
+    package: ecdsa
+    metric: pypistats_last_month
+    value: 39913999
+    source: https://pypistats.org/api/packages/ecdsa/recent
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 2943
+      source: https://api.deps.dev/v3alpha/systems/pypi/packages/ecdsa/versions/0.19.2:dependents
+      retrieved: 2026-11-04
+  - ecosystem: python
+    package: pyotp
+    metric: pypistats_last_month
+    value: 32214806
+    source: https://pypistats.org/api/packages/pyotp/recent
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 1108
+      source: https://api.deps.dev/v3alpha/systems/pypi/packages/pyotp/versions/2.10.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: python
+    package: python-jose
+    metric: pypistats_last_month
+    value: 30887573
+    source: https://pypistats.org/api/packages/python-jose/recent
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 1958
+      source: https://api.deps.dev/v3alpha/systems/pypi/packages/python-jose/versions/3.5.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: python
+    package: passlib
+    metric: pypistats_last_month
+    value: 30856199
+    source: https://pypistats.org/api/packages/passlib/recent
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 2364
+      source: https://api.deps.dev/v3alpha/systems/pypi/packages/passlib/versions/1.7.4:dependents
+      retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: jose
+    metric: npm_weekly_downloads
+    value: 222013579
+    source: https://api.npmjs.org/downloads/point/last-week/jose
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 124820
+      source: https://api.deps.dev/v3alpha/systems/npm/packages/jose/versions/6.2.15:dependents
+      retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: "@noble/hashes"
+    metric: npm_weekly_downloads
+    value: 139730923
+    source: https://api.npmjs.org/downloads/point/last-week/@noble/hashes
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 18130
+      source: https://api.deps.dev/v3alpha/systems/npm/packages/%40noble%2Fhashes/versions/2.4.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: jwa
+    metric: npm_weekly_downloads
+    value: 121783874
+    source: https://api.npmjs.org/downloads/point/last-week/jwa
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 96552
+      source: https://api.deps.dev/v3alpha/systems/npm/packages/jwa/versions/2.0.1:dependents
+      retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: jsonwebtoken
+    metric: npm_weekly_downloads
+    value: 81157024
+    source: https://api.npmjs.org/downloads/point/last-week/jsonwebtoken
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 51362
+      source: https://api.deps.dev/v3alpha/systems/npm/packages/jsonwebtoken/versions/9.0.3:dependents
+      retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: "@noble/ciphers"
+    metric: npm_weekly_downloads
+    value: 55502081
+    source: https://api.npmjs.org/downloads/point/last-week/@noble/ciphers
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 5348
+      source: https://api.deps.dev/v3alpha/systems/npm/packages/%40noble%2Fciphers/versions/2.4.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: node-forge
+    metric: npm_weekly_downloads
+    value: 55039572
+    source: https://api.npmjs.org/downloads/point/last-week/node-forge
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: fast-sha256
+    metric: npm_weekly_downloads
+    value: 52611435
+    source: https://api.npmjs.org/downloads/point/last-week/fast-sha256
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 12788
+      source: https://api.deps.dev/v3alpha/systems/npm/packages/fast-sha256/versions/1.3.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: tweetnacl
+    metric: npm_weekly_downloads
+    value: 50989060
+    source: https://api.npmjs.org/downloads/point/last-week/tweetnacl
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 50511
+      source: https://api.deps.dev/v3alpha/systems/npm/packages/tweetnacl/versions/1.0.3:dependents
+      retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: "@noble/curves"
+    metric: npm_weekly_downloads
+    value: 47316762
+    source: https://api.npmjs.org/downloads/point/last-week/@noble/curves
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 8175
+      source: https://api.deps.dev/v3alpha/systems/npm/packages/%40noble%2Fcurves/versions/2.4.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: crypto-random-string
+    metric: npm_weekly_downloads
+    value: 39538197
+    source: https://api.npmjs.org/downloads/point/last-week/crypto-random-string
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 3
+      source: https://api.deps.dev/v3alpha/systems/npm/packages/crypto-random-string/versions/6.0.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: blake3-wasm
+    metric: npm_weekly_downloads
+    value: 30883448
+    source: https://api.npmjs.org/downloads/point/last-week/blake3-wasm
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 2
+      source: https://api.deps.dev/v3alpha/systems/npm/packages/blake3-wasm/versions/3.0.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: hash.js
+    metric: npm_weekly_downloads
+    value: 28613343
+    source: https://api.npmjs.org/downloads/point/last-week/hash.js
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 149203
+      source: https://api.deps.dev/v3alpha/systems/npm/packages/hash.js/versions/1.1.7:dependents
+      retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: selfsigned
+    metric: npm_weekly_downloads
+    value: 23422339
+    source: https://api.npmjs.org/downloads/point/last-week/selfsigned
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 1523
+      source: https://api.deps.dev/v3alpha/systems/npm/packages/selfsigned/versions/5.5.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: "@peculiar/x509"
+    metric: npm_weekly_downloads
+    value: 21555123
+    source: https://api.npmjs.org/downloads/point/last-week/@peculiar/x509
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 9
+      source: https://api.deps.dev/v3alpha/systems/npm/packages/%40peculiar%2Fx509/versions/3.1.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: iron-webcrypto
+    metric: npm_weekly_downloads
+    value: 21300936
+    source: https://api.npmjs.org/downloads/point/last-week/iron-webcrypto
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 166
+      source: https://api.deps.dev/v3alpha/systems/npm/packages/iron-webcrypto/versions/2.0.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: rust
+    package: sha2
+    metric: crates_recent_downloads
+    value: 352533973
+    source: https://crates.io/api/v1/crates/sha2
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 79
+      source: https://api.deps.dev/v3alpha/systems/cargo/packages/sha2/versions/0.11.1:dependents
+      retrieved: 2026-11-04
+  - ecosystem: rust
+    package: rustls
+    metric: crates_recent_downloads
+    value: 264912155
+    source: https://crates.io/api/v1/crates/rustls
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 0
+      source: https://api.deps.dev/v3alpha/systems/cargo/packages/rustls/versions/0.23.46:dependents
+      retrieved: 2026-11-04
+  - ecosystem: rust
+    package: rustls-webpki
+    metric: crates_recent_downloads
+    value: 253070259
+    source: https://crates.io/api/v1/crates/rustls-webpki
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 1
+      source: https://api.deps.dev/v3alpha/systems/cargo/packages/rustls-webpki/versions/0.103.16:dependents
+      retrieved: 2026-11-04
+  - ecosystem: rust
+    package: tokio-rustls
+    metric: crates_recent_downloads
+    value: 224969401
+    source: https://crates.io/api/v1/crates/tokio-rustls
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 0
+      source: https://api.deps.dev/v3alpha/systems/cargo/packages/tokio-rustls/versions/0.26.6:dependents
+      retrieved: 2026-11-04
+  - ecosystem: rust
+    package: hmac
+    metric: crates_recent_downloads
+    value: 212767234
+    source: https://crates.io/api/v1/crates/hmac
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 0
+      source: https://api.deps.dev/v3alpha/systems/cargo/packages/hmac/versions/0.13.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: rust
+    package: ring
+    metric: crates_recent_downloads
+    value: 209918208
+    source: https://crates.io/api/v1/crates/ring
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 921
+      source: https://api.deps.dev/v3alpha/systems/cargo/packages/ring/versions/0.17.14:dependents
+      retrieved: 2026-11-04
+  - ecosystem: rust
+    package: sha1
+    metric: crates_recent_downloads
+    value: 204542833
+    source: https://crates.io/api/v1/crates/sha1
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 6
+      source: https://api.deps.dev/v3alpha/systems/cargo/packages/sha1/versions/0.11.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: rust
+    package: siphasher
+    metric: crates_recent_downloads
+    value: 191106712
+    source: https://crates.io/api/v1/crates/siphasher
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 2966
+      source: https://api.deps.dev/v3alpha/systems/cargo/packages/siphasher/versions/1.0.4:dependents
+      retrieved: 2026-11-04
+  - ecosystem: rust
+    package: chacha20
+    metric: crates_recent_downloads
+    value: 184664340
+    source: https://crates.io/api/v1/crates/chacha20
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 28
+      source: https://api.deps.dev/v3alpha/systems/cargo/packages/chacha20/versions/0.10.2:dependents
+      retrieved: 2026-11-04
+  - ecosystem: rust
+    package: md-5
+    metric: crates_recent_downloads
+    value: 134648826
+    source: https://crates.io/api/v1/crates/md-5
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 4
+      source: https://api.deps.dev/v3alpha/systems/cargo/packages/md-5/versions/0.11.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: rust
+    package: aes
+    metric: crates_recent_downloads
+    value: 114389656
+    source: https://crates.io/api/v1/crates/aes
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 126
+      source: https://api.deps.dev/v3alpha/systems/cargo/packages/aes/versions/0.9.4:dependents
+      retrieved: 2026-11-04
+  - ecosystem: rust
+    package: hkdf
+    metric: crates_recent_downloads
+    value: 108380018
+    source: https://crates.io/api/v1/crates/hkdf
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 0
+      source: https://api.deps.dev/v3alpha/systems/cargo/packages/hkdf/versions/0.13.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: rust
+    package: curve25519-dalek
+    metric: crates_recent_downloads
+    value: 90775101
+    source: https://crates.io/api/v1/crates/curve25519-dalek
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 19
+      source: https://api.deps.dev/v3alpha/systems/cargo/packages/curve25519-dalek/versions/5.0.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: rust
+    package: openssl
+    metric: crates_recent_downloads
+    value: 82624065
+    source: https://crates.io/api/v1/crates/openssl
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 1531
+      source: https://api.deps.dev/v3alpha/systems/cargo/packages/openssl/versions/0.10.82:dependents
+      retrieved: 2026-11-04
+  - ecosystem: rust
+    package: ecdsa
+    metric: crates_recent_downloads
+    value: 81604118
+    source: https://crates.io/api/v1/crates/ecdsa
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 0
+      source: https://api.deps.dev/v3alpha/systems/cargo/packages/ecdsa/versions/0.17.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: go
+    package: golang.org/x/crypto/bcrypt
+    metric: pkggodev_imported_by
+    value: 46492
+    source: https://pkg.go.dev/golang.org/x/crypto/bcrypt?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: github.com/dgrijalva/jwt-go
+    metric: pkggodev_imported_by
+    value: 29217
+    source: https://pkg.go.dev/github.com/dgrijalva/jwt-go?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: github.com/ethereum/go-ethereum/crypto
+    metric: pkggodev_imported_by
+    value: 26884
+    source: https://pkg.go.dev/github.com/ethereum/go-ethereum/crypto?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: golang.org/x/crypto/ssh
+    metric: pkggodev_imported_by
+    value: 24982
+    source: https://pkg.go.dev/golang.org/x/crypto/ssh?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: golang.org/x/crypto/sha3
+    metric: pkggodev_imported_by
+    value: 19128
+    source: https://pkg.go.dev/golang.org/x/crypto/sha3?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: github.com/golang-jwt/jwt/v5
+    metric: pkggodev_imported_by
+    value: 18004
+    source: https://pkg.go.dev/github.com/golang-jwt/jwt/v5?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: golang.org/x/crypto/pbkdf2
+    metric: pkggodev_imported_by
+    value: 8749
+    source: https://pkg.go.dev/golang.org/x/crypto/pbkdf2?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: golang.org/x/crypto/ripemd160
+    metric: pkggodev_imported_by
+    value: 6004
+    source: https://pkg.go.dev/golang.org/x/crypto/ripemd160?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: golang.org/x/crypto/chacha20poly1305
+    metric: pkggodev_imported_by
+    value: 4874
+    source: https://pkg.go.dev/golang.org/x/crypto/chacha20poly1305?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: golang.org/x/crypto/hkdf
+    metric: pkggodev_imported_by
+    value: 4432
+    source: https://pkg.go.dev/golang.org/x/crypto/hkdf?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: golang.org/x/crypto/blake2b
+    metric: pkggodev_imported_by
+    value: 4410
+    source: https://pkg.go.dev/golang.org/x/crypto/blake2b?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: golang.org/x/crypto/scrypt
+    metric: pkggodev_imported_by
+    value: 3896
+    source: https://pkg.go.dev/golang.org/x/crypto/scrypt?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: golang.org/x/crypto/ssh/agent
+    metric: pkggodev_imported_by
+    value: 3597
+    source: https://pkg.go.dev/golang.org/x/crypto/ssh/agent?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: golang.org/x/crypto/acme/autocert
+    metric: pkggodev_imported_by
+    value: 3553
+    source: https://pkg.go.dev/golang.org/x/crypto/acme/autocert?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: golang.org/x/crypto/curve25519
+    metric: pkggodev_imported_by
+    value: 3488
+    source: https://pkg.go.dev/golang.org/x/crypto/curve25519?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: java
+    package: org.bouncycastle:bcprov-jdk15on
+    metric: depsdev_direct_dependents
+    value: 1160
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/org.bouncycastle%3Abcprov-jdk15on/versions/1.70:dependents
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 9996
+      source: https://api.deps.dev/v3alpha/systems/maven/packages/org.bouncycastle%3Abcprov-jdk15on/versions/1.70:dependents
+      retrieved: 2026-11-04
+  - ecosystem: java
+    package: org.bouncycastle:bcpkix-jdk15on
+    metric: depsdev_direct_dependents
+    value: 622
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/org.bouncycastle%3Abcpkix-jdk15on/versions/1.70:dependents
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 5533
+      source: https://api.deps.dev/v3alpha/systems/maven/packages/org.bouncycastle%3Abcpkix-jdk15on/versions/1.70:dependents
+      retrieved: 2026-11-04
+  - ecosystem: java
+    package: com.jcraft:jsch
+    metric: depsdev_direct_dependents
+    value: 507
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/com.jcraft%3Ajsch/versions/0.1.55:dependents
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 4973
+      source: https://api.deps.dev/v3alpha/systems/maven/packages/com.jcraft%3Ajsch/versions/0.1.55:dependents
+      retrieved: 2026-11-04
+  - ecosystem: java
+    package: org.springframework.security:spring-security-crypto
+    metric: depsdev_direct_dependents
+    value: 501
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/org.springframework.security%3Aspring-security-crypto/versions/7.2.0-RC1:dependents
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 809
+      source: https://api.deps.dev/v3alpha/systems/maven/packages/org.springframework.security%3Aspring-security-crypto/versions/7.2.0-RC1:dependents
+      retrieved: 2026-11-04
+  - ecosystem: java
+    package: net.i2p.crypto:eddsa
+    metric: depsdev_direct_dependents
+    value: 240
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/net.i2p.crypto%3Aeddsa/versions/0.3.0:dependents
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 2447
+      source: https://api.deps.dev/v3alpha/systems/maven/packages/net.i2p.crypto%3Aeddsa/versions/0.3.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: java
+    package: org.jasypt:jasypt
+    metric: depsdev_direct_dependents
+    value: 215
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/org.jasypt%3Ajasypt/versions/1.9.3:dependents
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 3482
+      source: https://api.deps.dev/v3alpha/systems/maven/packages/org.jasypt%3Ajasypt/versions/1.9.3:dependents
+      retrieved: 2026-11-04
+  - ecosystem: java
+    package: io.jsonwebtoken:jjwt-api
+    metric: depsdev_direct_dependents
+    value: 204
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/io.jsonwebtoken%3Ajjwt-api/versions/0.13.0:dependents
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 1054
+      source: https://api.deps.dev/v3alpha/systems/maven/packages/io.jsonwebtoken%3Ajjwt-api/versions/0.13.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: java
+    package: org.mindrot:jbcrypt
+    metric: depsdev_direct_dependents
+    value: 192
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/org.mindrot%3Ajbcrypt/versions/0.4:dependents
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 1357
+      source: https://api.deps.dev/v3alpha/systems/maven/packages/org.mindrot%3Ajbcrypt/versions/0.4:dependents
+      retrieved: 2026-11-04
+  - ecosystem: java
+    package: com.nimbusds:nimbus-jose-jwt
+    metric: depsdev_direct_dependents
+    value: 172
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/com.nimbusds%3Animbus-jose-jwt/versions/10.10:dependents
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 1362
+      source: https://api.deps.dev/v3alpha/systems/maven/packages/com.nimbusds%3Animbus-jose-jwt/versions/10.10:dependents
+      retrieved: 2026-11-04
+  - ecosystem: java
+    package: org.bouncycastle:bcpg-jdk15on
+    metric: depsdev_direct_dependents
+    value: 111
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/org.bouncycastle%3Abcpg-jdk15on/versions/1.70:dependents
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 376
+      source: https://api.deps.dev/v3alpha/systems/maven/packages/org.bouncycastle%3Abcpg-jdk15on/versions/1.70:dependents
+      retrieved: 2026-11-04
+  - ecosystem: java
+    package: org.bitbucket.b_c:jose4j
+    metric: depsdev_direct_dependents
+    value: 93
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/org.bitbucket.b_c%3Ajose4j/versions/0.9.7:dependents
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 765
+      source: https://api.deps.dev/v3alpha/systems/maven/packages/org.bitbucket.b_c%3Ajose4j/versions/0.9.7:dependents
+      retrieved: 2026-11-04
+  - ecosystem: java
+    package: com.lambdaworks:scrypt
+    metric: depsdev_direct_dependents
+    value: 68
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/com.lambdaworks%3Ascrypt/versions/1.4.0:dependents
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 302
+      source: https://api.deps.dev/v3alpha/systems/maven/packages/com.lambdaworks%3Ascrypt/versions/1.4.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: java
+    package: at.favre.lib:bcrypt
+    metric: depsdev_direct_dependents
+    value: 63
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/at.favre.lib%3Abcrypt/versions/0.10.2:dependents
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 244
+      source: https://api.deps.dev/v3alpha/systems/maven/packages/at.favre.lib%3Abcrypt/versions/0.10.2:dependents
+      retrieved: 2026-11-04
+  - ecosystem: java
+    package: dev.whyoleg.cryptography:cryptography-core-jvm
+    metric: depsdev_direct_dependents
+    value: 61
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/dev.whyoleg.cryptography%3Acryptography-core-jvm/versions/0.6.0:dependents
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 221
+      source: https://api.deps.dev/v3alpha/systems/maven/packages/dev.whyoleg.cryptography%3Acryptography-core-jvm/versions/0.6.0:dependents
+      retrieved: 2026-11-04
+  - ecosystem: java
+    package: org.apache.santuario:xmlsec
+    metric: depsdev_direct_dependents
+    value: 60
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/org.apache.santuario%3Axmlsec/versions/4.0.4:dependents
+    retrieved: 2026-11-04
+    dependents:
+      metric: depsdev_dependents
+      value: 505
+      source: https://api.deps.dev/v3alpha/systems/maven/packages/org.apache.santuario%3Axmlsec/versions/4.0.4:dependents
+      retrieved: 2026-11-04
+stdlib:
+  - ecosystem: python
+    package: python-stdlib
+    modules: [hashlib, hmac, ssl, secrets]
+    source: https://docs.python.org/3/library/crypto.html
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: node-stdlib
+    modules: [node:crypto, webcrypto]
+    source: https://nodejs.org/api/crypto.html
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: go-stdlib
+    modules: [crypto/aes, crypto/cipher, crypto/des, crypto/dsa, crypto/ecdh, crypto/ecdsa, crypto/ed25519, crypto/elliptic, crypto/fips140, crypto/hkdf, crypto/hmac, crypto/hpke, crypto/md5, crypto/mlkem, crypto/pbkdf2, crypto/rand, crypto/rc4, crypto/rsa, crypto/sha1, crypto/sha256, crypto/sha3, crypto/sha512, crypto/subtle, crypto/tls, crypto/x509, crypto/x509/pkix]
+    source: https://pkg.go.dev/crypto
+    retrieved: 2026-11-04
+  - ecosystem: java
+    package: java-stdlib
+    modules: [java.security, javax.crypto, javax.net.ssl, java.security.cert]
+    source: https://docs.oracle.com/en/java/javase/21/security/java-cryptography-architecture-jca-reference-guide.html
+    retrieved: 2026-11-04
+excluded:
+  - ecosystem: python
+    package: oauthlib
+    reason: "OAuth 1/2 protocol framework; its request signing is incidental, not a crypto library"
+    metric: pypistats_last_month
+    value: 223433886
+    source: https://pypistats.org/api/packages/oauthlib/recent
+    retrieved: 2026-11-04
+  - ecosystem: python
+    package: keyring
+    reason: "credential storage front end for OS keychains; performs no cryptographic operation itself"
+    metric: pypistats_last_month
+    value: 147106766
+    source: https://pypistats.org/api/packages/keyring/recent
+    retrieved: 2026-11-04
+  - ecosystem: python
+    package: asn1crypto
+    reason: "ASN.1 parser and serializer for crypto structures; encoding only"
+    metric: pypistats_last_month
+    value: 133247380
+    source: https://pypistats.org/api/packages/asn1crypto/recent
+    retrieved: 2026-11-04
+  - ecosystem: python
+    package: xxhash
+    reason: "non-cryptographic hash (xxHash)"
+    metric: pypistats_last_month
+    value: 130734740
+    source: https://pypistats.org/api/packages/xxhash/recent
+    retrieved: 2026-11-04
+  - ecosystem: python
+    package: msal-extensions
+    reason: "token cache persistence for the Microsoft Authentication Library; not a crypto library"
+    metric: pypistats_last_month
+    value: 111134191
+    source: https://pypistats.org/api/packages/msal-extensions/recent
+    retrieved: 2026-11-04
+  - ecosystem: python
+    package: authlib
+    reason: "OAuth and OpenID Connect framework; its JOSE module is deprecated in favour of joserfc, which is listed"
+    metric: pypistats_last_month
+    value: 107757780
+    source: https://pypistats.org/api/packages/authlib/recent
+    retrieved: 2026-11-04
+  - ecosystem: python
+    package: griffelib
+    reason: "matched the word 'signatures' (Python function signatures); not crypto"
+    metric: pypistats_last_month
+    value: 77562106
+    source: https://pypistats.org/api/packages/griffelib/recent
+    retrieved: 2026-11-04
+  - ecosystem: python
+    package: argon2-cffi-bindings
+    reason: "low-level CFFI bindings that projects use through argon2-cffi, which is listed"
+    metric: pypistats_last_month
+    value: 61779568
+    source: https://pypistats.org/api/packages/argon2-cffi-bindings/recent
+    retrieved: 2026-11-04
+  - ecosystem: python
+    package: mmh3
+    reason: "non-cryptographic hash (MurmurHash3)"
+    metric: pypistats_last_month
+    value: 56310131
+    source: https://pypistats.org/api/packages/mmh3/recent
+    retrieved: 2026-11-04
+  - ecosystem: python
+    package: pycryptodomex
+    reason: "the same library as pycryptodome under the Cryptodome namespace; pycryptodome is listed and covers its API"
+    metric: pypistats_last_month
+    value: 46647119
+    source: https://pypistats.org/api/packages/pycryptodomex/recent
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: fast-json-stable-stringify
+    reason: deterministic JSON stringify, not crypto
+    metric: npm_weekly_downloads
+    value: 203854687
+    source: https://api.npmjs.org/downloads/point/last-week/fast-json-stable-stringify
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: imurmurhash
+    reason: non-cryptographic MurmurHash
+    metric: npm_weekly_downloads
+    value: 201130762
+    source: https://api.npmjs.org/downloads/point/last-week/imurmurhash
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: json-stable-stringify-without-jsonify
+    reason: deterministic JSON stringify, not crypto
+    metric: npm_weekly_downloads
+    value: 175477618
+    source: https://api.npmjs.org/downloads/point/last-week/json-stable-stringify-without-jsonify
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: ecdsa-sig-formatter
+    reason: DER/JOSE signature encoding conversion only
+    metric: npm_weekly_downloads
+    value: 108087158
+    source: https://api.npmjs.org/downloads/point/last-week/ecdsa-sig-formatter
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: buffer-equal-constant-time
+    reason: constant-time compare helper
+    metric: npm_weekly_downloads
+    value: 107488071
+    source: https://api.npmjs.org/downloads/point/last-week/buffer-equal-constant-time
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: "@alloc/quick-lru"
+    reason: LRU cache, carries keyword only
+    metric: npm_weekly_downloads
+    value: 97512876
+    source: https://api.npmjs.org/downloads/point/last-week/@alloc/quick-lru
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: object-hash
+    reason: object fingerprinting utility over node:crypto, not a crypto API
+    metric: npm_weekly_downloads
+    value: 86976151
+    source: https://api.npmjs.org/downloads/point/last-week/object-hash
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: file-type
+    reason: file type detection, carries keyword only
+    metric: npm_weekly_downloads
+    value: 79552447
+    source: https://api.npmjs.org/downloads/point/last-week/file-type
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: "@js-sdsl/ordered-map"
+    reason: data structure, carries keyword only
+    metric: npm_weekly_downloads
+    value: 61936954
+    source: https://api.npmjs.org/downloads/point/last-week/@js-sdsl/ordered-map
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: quick-lru
+    reason: LRU cache, carries keyword only
+    metric: npm_weekly_downloads
+    value: 61447211
+    source: https://api.npmjs.org/downloads/point/last-week/quick-lru
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: cluster-key-slot
+    reason: Redis cluster CRC16 slot, non-cryptographic
+    metric: npm_weekly_downloads
+    value: 51577564
+    source: https://api.npmjs.org/downloads/point/last-week/cluster-key-slot
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: hashery
+    reason: object hashing for caching, utility
+    metric: npm_weekly_downloads
+    value: 41822364
+    source: https://api.npmjs.org/downloads/point/last-week/hashery
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: randombytes
+    reason: browserify polyfill of crypto.randomBytes
+    metric: npm_weekly_downloads
+    value: 38266822
+    source: https://api.npmjs.org/downloads/point/last-week/randombytes
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: resolve-alpn
+    reason: ALPN protocol detection, not crypto ops
+    metric: npm_weekly_downloads
+    value: 34413635
+    source: https://api.npmjs.org/downloads/point/last-week/resolve-alpn
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: basic-ftp
+    reason: FTP client, carries keyword only
+    metric: npm_weekly_downloads
+    value: 32439997
+    source: https://api.npmjs.org/downloads/point/last-week/basic-ftp
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: "@lukeed/csprng"
+    reason: alias/polyfill for crypto.randomBytes
+    metric: npm_weekly_downloads
+    value: 28582441
+    source: https://api.npmjs.org/downloads/point/last-week/@lukeed/csprng
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: hash-base
+    reason: browserify abstract base class for hash streams
+    metric: npm_weekly_downloads
+    value: 26416849
+    source: https://api.npmjs.org/downloads/point/last-week/hash-base
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: github-slugger
+    reason: slug generator, carries keyword only
+    metric: npm_weekly_downloads
+    value: 25877829
+    source: https://api.npmjs.org/downloads/point/last-week/github-slugger
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: jwt-decode
+    reason: decodes JWT payload without verifying, encoding only
+    metric: npm_weekly_downloads
+    value: 24863594
+    source: https://api.npmjs.org/downloads/point/last-week/jwt-decode
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: oauth4webapi
+    reason: OAuth 2/OIDC client, crypto is incidental
+    metric: npm_weekly_downloads
+    value: 23985032
+    source: https://api.npmjs.org/downloads/point/last-week/oauth4webapi
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: "@peculiar/asn1-x509"
+    reason: ASN.1 schema definitions (encoding), no crypto ops
+    metric: npm_weekly_downloads
+    value: 23745798
+    source: https://api.npmjs.org/downloads/point/last-week/@peculiar/asn1-x509
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: openid-client
+    reason: OAuth 2/OIDC client, crypto is incidental
+    metric: npm_weekly_downloads
+    value: 22389574
+    source: https://api.npmjs.org/downloads/point/last-week/openid-client
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: "@peculiar/asn1-rsa"
+    reason: ASN.1 schema definitions (encoding), no crypto ops
+    metric: npm_weekly_downloads
+    value: 22315419
+    source: https://api.npmjs.org/downloads/point/last-week/@peculiar/asn1-rsa
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: uid
+    reason: unique ID generator (like nanoid)
+    metric: npm_weekly_downloads
+    value: 21765016
+    source: https://api.npmjs.org/downloads/point/last-week/uid
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: "@peculiar/asn1-x509-attr"
+    reason: ASN.1 schema definitions (encoding), no crypto ops
+    metric: npm_weekly_downloads
+    value: 21734932
+    source: https://api.npmjs.org/downloads/point/last-week/@peculiar/asn1-x509-attr
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: "@peculiar/asn1-cms"
+    reason: ASN.1 schema definitions (encoding), no crypto ops
+    metric: npm_weekly_downloads
+    value: 21694323
+    source: https://api.npmjs.org/downloads/point/last-week/@peculiar/asn1-cms
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: lru.min
+    reason: LRU cache, carries keyword only
+    metric: npm_weekly_downloads
+    value: 21646710
+    source: https://api.npmjs.org/downloads/point/last-week/lru.min
+    retrieved: 2026-11-04
+  - ecosystem: javascript
+    package: jwks-rsa
+    reason: JWKS key fetching/caching client; verification done by jose/jsonwebtoken
+    metric: npm_weekly_downloads
+    value: 21492087
+    source: https://api.npmjs.org/downloads/point/last-week/jwks-rsa
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: digest
+    reason: trait-only crate for hash functions
+    metric: crates_recent_downloads
+    value: 386605769
+    source: https://crates.io/api/v1/crates/digest
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: block-buffer
+    reason: buffering plumbing for block functions
+    metric: crates_recent_downloads
+    value: 381334712
+    source: https://crates.io/api/v1/crates/block-buffer
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: crypto-common
+    reason: shared traits for RustCrypto
+    metric: crates_recent_downloads
+    value: 375186377
+    source: https://crates.io/api/v1/crates/crypto-common
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: zeroize
+    reason: memory zeroing helper
+    metric: crates_recent_downloads
+    value: 238333157
+    source: https://crates.io/api/v1/crates/zeroize
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: ppv-lite86
+    reason: SIMD helper used by rand_chacha, no crypto API
+    metric: crates_recent_downloads
+    value: 234517236
+    source: https://crates.io/api/v1/crates/ppv-lite86
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: subtle
+    reason: constant-time utilities
+    metric: crates_recent_downloads
+    value: 216595005
+    source: https://crates.io/api/v1/crates/subtle
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: const-oid
+    reason: OID encoding
+    metric: crates_recent_downloads
+    value: 216309387
+    source: https://crates.io/api/v1/crates/const-oid
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: rustls-pki-types
+    reason: shared PKI type definitions, no operations
+    metric: crates_recent_downloads
+    value: 213910145
+    source: https://crates.io/api/v1/crates/rustls-pki-types
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: rustls-native-certs
+    reason: loads platform root certificates, plumbing for rustls
+    metric: crates_recent_downloads
+    value: 172608310
+    source: https://crates.io/api/v1/crates/rustls-native-certs
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: der
+    reason: DER encoding
+    metric: crates_recent_downloads
+    value: 151341429
+    source: https://crates.io/api/v1/crates/der
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: signature
+    reason: trait-only crate for signatures
+    metric: crates_recent_downloads
+    value: 142692064
+    source: https://crates.io/api/v1/crates/signature
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: spki
+    reason: SPKI encoding
+    metric: crates_recent_downloads
+    value: 133057309
+    source: https://crates.io/api/v1/crates/spki
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: cipher
+    reason: trait-only crate for ciphers
+    metric: crates_recent_downloads
+    value: 131938200
+    source: https://crates.io/api/v1/crates/cipher
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: base64ct
+    reason: encoding
+    metric: crates_recent_downloads
+    value: 130674117
+    source: https://crates.io/api/v1/crates/base64ct
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: pkcs8
+    reason: PKCS#8 encoding
+    metric: crates_recent_downloads
+    value: 123871915
+    source: https://crates.io/api/v1/crates/pkcs8
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: pem-rfc7468
+    reason: PEM encoding
+    metric: crates_recent_downloads
+    value: 109107627
+    source: https://crates.io/api/v1/crates/pem-rfc7468
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: security-framework
+    reason: OS Security.framework bindings, used through native-tls
+    metric: crates_recent_downloads
+    value: 108683951
+    source: https://crates.io/api/v1/crates/security-framework
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: pem
+    reason: PEM encoding
+    metric: crates_recent_downloads
+    value: 105698246
+    source: https://crates.io/api/v1/crates/pem
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: zeroize_derive
+    reason: derive macro for zeroize
+    metric: crates_recent_downloads
+    value: 98421105
+    source: https://crates.io/api/v1/crates/zeroize_derive
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: openssl-sys
+    reason: raw FFI bindings, used through the openssl crate
+    metric: crates_recent_downloads
+    value: 90818728
+    source: https://crates.io/api/v1/crates/openssl-sys
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: base16ct
+    reason: hex encoding
+    metric: crates_recent_downloads
+    value: 90327131
+    source: https://crates.io/api/v1/crates/base16ct
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: crypto-bigint
+    reason: big integer arithmetic plumbing
+    metric: crates_recent_downloads
+    value: 90050242
+    source: https://crates.io/api/v1/crates/crypto-bigint
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: constant_time_eq
+    reason: constant-time comparison
+    metric: crates_recent_downloads
+    value: 89401684
+    source: https://crates.io/api/v1/crates/constant_time_eq
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: ctutils
+    reason: constant-time utilities
+    metric: crates_recent_downloads
+    value: 88852759
+    source: https://crates.io/api/v1/crates/ctutils
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: cmov
+    reason: constant-time conditional move intrinsics
+    metric: crates_recent_downloads
+    value: 88494430
+    source: https://crates.io/api/v1/crates/cmov
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: aead
+    reason: trait-only crate for AEAD
+    metric: crates_recent_downloads
+    value: 85678011
+    source: https://crates.io/api/v1/crates/aead
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: universal-hash
+    reason: trait-only crate for universal hashes
+    metric: crates_recent_downloads
+    value: 84683966
+    source: https://crates.io/api/v1/crates/universal-hash
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: sec1
+    reason: SEC1 encoding
+    metric: crates_recent_downloads
+    value: 83724090
+    source: https://crates.io/api/v1/crates/sec1
+    retrieved: 2026-11-04
+  - ecosystem: rust
+    package: elliptic-curve
+    reason: trait/support crate for elliptic curves
+    metric: crates_recent_downloads
+    value: 83533943
+    source: https://crates.io/api/v1/crates/elliptic-curve
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: github.com/micro/util/go/lib/tls
+    reason: go-micro framework helper (single self-signed Certificate() func), not a crypto library
+    metric: pkggodev_imported_by
+    value: 18461
+    source: https://pkg.go.dev/github.com/micro/util/go/lib/tls?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: golang.org/x/crypto/ssh/terminal
+    reason: deprecated stub; moved to golang.org/x/term, terminal handling not crypto
+    metric: pkggodev_imported_by
+    value: 11399
+    source: https://pkg.go.dev/golang.org/x/crypto/ssh/terminal?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: github.com/cosmos/cosmos-sdk/crypto/types
+    reason: key interface/type definitions only; implementations in subpackages
+    metric: pkggodev_imported_by
+    value: 5990
+    source: https://pkg.go.dev/github.com/cosmos/cosmos-sdk/crypto/types?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: github.com/ethereum/go-ethereum/accounts/keystore
+    reason: Ethereum wallet account/key-file management, not a crypto API
+    metric: pkggodev_imported_by
+    value: 4603
+    source: https://pkg.go.dev/github.com/ethereum/go-ethereum/accounts/keystore?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: github.com/tendermint/tendermint/crypto
+    reason: key interface definitions and thin helpers; implementations in subpackages
+    metric: pkggodev_imported_by
+    value: 4404
+    source: https://pkg.go.dev/github.com/tendermint/tendermint/crypto?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: go
+    package: github.com/hyperledger/fabric/common/crypto
+    reason: Fabric signer interface and nonce helpers, framework plumbing
+    metric: pkggodev_imported_by
+    value: 3560
+    source: https://pkg.go.dev/github.com/hyperledger/fabric/common/crypto?tab=importedby
+    retrieved: 2026-11-04
+  - ecosystem: java
+    package: commons-codec:commons-codec
+    reason: Encoder library by its own docs (Base64/Hex/etc.); DigestUtils delegates to JCA MessageDigest, so hashing is a convenience wrapper, not its purpose
+    metric: depsdev_direct_dependents
+    value: 190
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/commons-codec%3Acommons-codec/versions/1.23.0:dependents
+    retrieved: 2026-11-04
+  - ecosystem: java
+    package: org.bouncycastle:bcutil-jdk18on
+    reason: Bouncy Castle internal ASN.1/utility support module pulled in by bcpkix/bctls, not a crypto API projects call directly
+    metric: depsdev_direct_dependents
+    value: 66
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/org.bouncycastle%3Abcutil-jdk18on/versions/1.86:dependents
+    retrieved: 2026-11-04
+  - ecosystem: java
+    package: org.bytedeco:flycapture
+    reason: JavaCPP camera SDK preset; matched a search term only, no cryptography
+    metric: depsdev_direct_dependents
+    value: 64
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/org.bytedeco%3Aflycapture/versions/2.13.3.31-1.5.9:dependents
+    retrieved: 2026-11-04
+  - ecosystem: java
+    package: org.bytedeco:libfreenect2
+    reason: JavaCPP Kinect driver preset; matched a search term only, no cryptography
+    metric: depsdev_direct_dependents
+    value: 64
+    source: https://api.deps.dev/v3alpha/systems/maven/packages/org.bytedeco%3Alibfreenect2/versions/0.2.0-1.5.9:dependents
+    retrieved: 2026-11-04

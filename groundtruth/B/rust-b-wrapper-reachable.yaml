@@ -1,0 +1,27 @@
+schema_version: "1"
+entry: rust-b-wrapper-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:cargo/cbench-wrapper-liba@1.0.0
+    - pkg:cargo/cbench-wrapper-libb@1.0.0
+assets:
+  - id: gt-0001
+    file: src/lib.rs
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-384
+    origin: dependency
+    component: pkg:cargo/cbench-wrapper-libb@1.0.0
+    reachable: true
+    depth: 2
+    distance: 2
+    path:
+      - "app::main"
+      - "app::run"
+      - "cbench_wrapper_liba::protect"
+      - "cbench_wrapper_liba::protect_inner"
+      - "cbench_wrapper_libb::encode"
+      - "cbench_wrapper_libb::encode_inner"
+      - "cbench_wrapper_libb::hash_block"

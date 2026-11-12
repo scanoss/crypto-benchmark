@@ -1,0 +1,12 @@
+{
+  "name": "cbench-dispatch-app",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cbench-dispatch-liba": "file:../dist/cbench-dispatch-liba-1.0.0.tgz"
+  },
+  "overrides": {
+    "cbench-dispatch-libb": "file:../dist/cbench-dispatch-libb-1.0.0.tgz"
+  }
+}

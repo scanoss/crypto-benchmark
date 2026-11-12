@@ -1,0 +1,117 @@
+schema_version: "1"
+entry: python-pyopenssl
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: cert-load/main.py
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0012
+    file: cert-load/main.py
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: cert-load/main.py
+    lines: [15, 22]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: cert-load/cert
+  - id: gt-0003
+    file: cert-load/main.py
+    lines: [19, 19]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "x509.random_serial_number() draws from os.urandom inside the builder chain."
+  - id: gt-0004
+    file: cert-load/main.py
+    lines: [24, 24]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: cert-load/cert
+  - id: gt-0005
+    file: cert-load/main.py
+    lines: [28, 28]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: cert-load/cert
+  - id: gt-0006
+    file: cert-load/main.py
+    lines: [29, 29]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0007
+    file: tls-context/main.py
+    lines: [5, 5]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: x509-cert/main.py
+    lines: [14, 21]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0009
+    file: x509-cert/main.py
+    lines: [18, 18]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "x509.random_serial_number() draws from os.urandom inside the builder chain."
+  - id: gt-0010
+    file: x509-cert/main.py
+    lines: [26, 26]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0013
+    file: x509-cert/main.py
+    lines: [26, 26]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0011
+    file: x509-cert/main.py
+    lines: [28, 28]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0

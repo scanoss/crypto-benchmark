@@ -1,0 +1,22 @@
+schema_version: "1"
+entry: java-b-direct-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:maven/org.cbench.direct/liba@1.0.0
+assets:
+  - id: gt-0001
+    file: org/cbench/direct/liba/Fingerprint.java
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: dependency
+    component: pkg:maven/org.cbench.direct/liba@1.0.0
+    reachable: true
+    depth: 1
+    distance: 1
+    path:
+      - "org.cbench.direct.app.Main.main"
+      - "org.cbench.direct.app.Main.run"
+      - "org.cbench.direct.liba.Fingerprint.digest"

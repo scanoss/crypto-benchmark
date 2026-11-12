@@ -1,0 +1,70 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "javascript-b-handler-express-reachable",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "index.js",
+      "lines": [
+        4,
+        4
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:npm/cbench-handler-express-libb@1.0.0",
+      "reachable": "true",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "index.js",
+      "lines": [
+        19,
+        20
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "dependency",
+      "component": "pkg:npm/cookie-signature@1.2.2",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "index.js",
+      "lines": [
+        46,
+        47
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "dependency",
+      "component": "pkg:npm/etag@1.8.1",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    }
+  ]
+}

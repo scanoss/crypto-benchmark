@@ -1,0 +1,40 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "javascript-jwa",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "ps256/main.js",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "algorithm": "rsa",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rs256/main.js",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "algorithm": "rsa",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

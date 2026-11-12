@@ -1,0 +1,10 @@
+{
+  "name": "cbench-transitive-liba",
+  "version": "1.0.0",
+  "description": "Suite B fixture library liba (transitive).",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cbench-transitive-libb": "1.0.0"
+  }
+}

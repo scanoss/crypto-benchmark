@@ -1,0 +1,29 @@
+schema_version: "1"
+entry: python-truststore
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: inject/main.py
+    lines: [9, 9]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: second annotator listed the same three context creations but swapped the two file names; resolved to the first annotation, which matches the files."
+  - id: gt-0002
+    file: inject/main.py
+    lines: [14, 14]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: second annotator listed the same three context creations but swapped the two file names; resolved to the first annotation, which matches the files."
+  - id: gt-0003
+    file: ssl-context/main.py
+    lines: [7, 7]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: second annotator listed the same three context creations but swapped the two file names; resolved to the first annotation, which matches the files."

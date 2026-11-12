@@ -1,0 +1,10 @@
+[package]
+name = "hkdf-fixture"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+hkdf = "=0.13.0"
+sha2 = "=0.11.1"
+hex-literal = "=1.1.0"

@@ -1,0 +1,30 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "sonar-cryptography",
+    "version": "1.7.0"
+  },
+  "entry": "go-dgrijalva-jwt-go",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "rs256/main.go",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-2048",
+      "parameters": {
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

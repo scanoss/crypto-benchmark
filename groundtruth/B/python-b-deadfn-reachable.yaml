@@ -1,0 +1,37 @@
+schema_version: "1"
+entry: python-b-deadfn-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:pypi/cbench-deadfn-liba@1.0.0
+    - pkg:pypi/cbench-deadfn-libb@1.0.0
+assets:
+  - id: gt-0001
+    file: libb/codec.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: dependency
+    component: pkg:pypi/cbench-deadfn-libb@1.0.0
+    reachable: true
+    depth: 2
+    distance: 2
+    path:
+      - "main.main"
+      - "liba.sign"
+      - "libb.codec.sign"
+  - id: gt-0002
+    file: libb/codec.py
+    lines: [19, 19]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: dependency
+    component: pkg:pypi/cbench-deadfn-libb@1.0.0
+    reachable: false
+    depth: 2
+    distance: 2
+    notes: "legacy_digest is never called, in either variant; its module is reachable."

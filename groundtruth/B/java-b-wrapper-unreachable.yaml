@@ -1,0 +1,20 @@
+schema_version: "1"
+entry: java-b-wrapper-unreachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:maven/org.cbench.wrapper/liba@1.0.0
+    - pkg:maven/org.cbench.wrapper/libb@1.0.0
+assets:
+  - id: gt-0001
+    file: org/cbench/wrapper/libb/Encoder.java
+    lines: [19, 19]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-384
+    origin: dependency
+    component: pkg:maven/org.cbench.wrapper/libb@1.0.0
+    reachable: false
+    depth: 2
+    distance: 2
+    notes: "Unreachable because the call to liba moves into an app function that main never calls."

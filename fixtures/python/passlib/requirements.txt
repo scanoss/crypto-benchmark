@@ -1,0 +1,5 @@
+# passlib 1.7.4 is the last release. It needs bcrypt<4.1 (its backend probe breaks on bcrypt 4.1+)
+# and imports the stdlib crypt module, which warns with DeprecationWarning on Python 3.12.
+passlib==1.7.4
+bcrypt==4.0.1
+argon2-cffi==25.1.0

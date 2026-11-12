@@ -1,0 +1,109 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "rust-hmac",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "src/bin/hmac_sha1.rs",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-Sha1",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/hmac_sha256.rs",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-Sha256",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/hmac_sha256.rs",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/hmac_sha256.rs",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-Sha256",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/hmac_sha256.rs",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/hmac_sha512.rs",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-512",
+      "parameters": {
+        "hash": "SHA-512"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

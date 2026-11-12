@@ -1,0 +1,51 @@
+schema_version: "1"
+entry: java-jbcrypt
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/main/java/bench/HashPassword.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "BCrypt.gensalt(12) draws 16 bytes from SecureRandom; nested in hashpw it is its own asset (python-bcrypt precedent). Re-derivation: the second annotation listed only the salt for gensalt(12), reading it as a library call that makes material. Kept the draw as well: gensalt draws its bytes from SecureRandom in project-called code, and python-bcrypt annotates bcrypt.gensalt() as a draw and a salt on the same lines."
+  - id: gt-0002
+    file: src/main/java/bench/HashPassword.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: src/main/java/bench/HashPassword.java
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "gensalt creates the salt the program passes to hashpw (python-bcrypt precedent). Lines are those of the line holding the nested gensalt call."
+  - id: gt-0004
+    file: src/main/java/bench/HashPassword.java
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "BCrypt.checkpw is a one-shot function that rehashes with bcrypt."
+  - id: gt-0005
+    file: src/main/java/bench/HashPassword.java
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0

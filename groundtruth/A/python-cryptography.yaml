@@ -1,0 +1,588 @@
+schema_version: "1"
+entry: python-cryptography
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: aes-cbc/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: aes-cbc/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0045
+    file: aes-cbc/main.py
+    lines: [9, 9]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: agreed. The IV is passed to modes.CBC on line 11; that use is not another asset."
+  - id: gt-0003
+    file: aes-cbc/main.py
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: aes-gcm/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: GCM
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes-gcm/key
+  - id: gt-0005
+    file: aes-gcm/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes-gcm/key
+  - id: gt-0006
+    file: aes-gcm/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0046
+    file: aes-gcm/main.py
+    lines: [9, 9]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: agreed."
+  - id: gt-0007
+    file: chacha20-poly1305/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: ChaCha20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    object: chacha20-poly1305/key
+    notes: "Re-derivation: second annotator added key_size 256 because the API fixes a 32-byte key; resolved to none: the algorithm admits only a 256-bit key, so the size is not a parameter that tells variants apart (guide, parameters)."
+  - id: gt-0008
+    file: chacha20-poly1305/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: ChaCha20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    object: chacha20-poly1305/key
+  - id: gt-0009
+    file: chacha20-poly1305/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0047
+    file: chacha20-poly1305/main.py
+    lines: [9, 9]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: agreed."
+  - id: gt-0010
+    file: ecdsa-p256/main.py
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa-p256/private_key
+  - id: gt-0053
+    file: ecdsa-p256/main.py
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0011
+    file: ecdsa-p256/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa-p256/private_key
+  - id: gt-0012
+    file: ecdsa-p256/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa-p256/private_key
+  - id: gt-0013
+    file: ed25519/main.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/private_key
+  - id: gt-0054
+    file: ed25519/main.py
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0014
+    file: ed25519/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/private_key
+  - id: gt-0015
+    file: ed25519/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/private_key
+  - id: gt-0016
+    file: fernet/main.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: Fernet
+    origin: project
+    reachable: true
+    depth: 0
+    object: fernet/key
+  - id: gt-0017
+    file: fernet/main.py
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: Fernet
+    origin: project
+    reachable: true
+    depth: 0
+    object: fernet/key
+  - id: gt-0052
+    file: fernet/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: Fernet
+    origin: project
+    reachable: true
+    depth: 0
+    object: fernet/key
+    notes: "Fernet.decrypt is its own operation (owner decision 2026-11-05), as decrypt is for RSA-OAEP and AES. f.encrypt on line 8 stays a follow-up on the Fernet(key) object."
+  - id: gt-0018
+    file: hmac-sha256/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0019
+    file: hmac-sha256/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hmac-sha256/key
+  - id: gt-0020
+    file: hmac-sha256/main.py
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hmac-sha256/key
+  - id: gt-0021
+    file: key-load/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0055
+    file: key-load/main.py
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0022
+    file: key-load/main.py
+    lines: [8, 12]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/key
+  - id: gt-0023
+    file: key-load/main.py
+    lines: [13, 13]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/key
+  - id: gt-0024
+    file: pbkdf2/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0025
+    file: pbkdf2/main.py
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0048
+    file: pbkdf2/main.py
+    lines: [13, 13]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: agreed. The salt reaches PBKDF2HMAC through the helper kdf(salt) in the same file, so it is annotated where main creates it (guide, related crypto material)."
+  - id: gt-0026
+    file: rsa-oaep/main.py
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-oaep/private_key
+  - id: gt-0056
+    file: rsa-oaep/main.py
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0027
+    file: rsa-oaep/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-oaep/private_key
+  - id: gt-0028
+    file: rsa-oaep/main.py
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-oaep/private_key
+  - id: gt-0029
+    file: rsa-pss/main.py
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-pss/private_key
+  - id: gt-0057
+    file: rsa-pss/main.py
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0030
+    file: rsa-pss/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA-PSS
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-pss/private_key
+  - id: gt-0031
+    file: rsa-pss/main.py
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA-PSS
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-pss/private_key
+  - id: gt-0032
+    file: scrypt/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: scrypt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0033
+    file: scrypt/main.py
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0049
+    file: scrypt/main.py
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: agreed. The salt reaches Scrypt through the helper kdf(salt) in the same file, so it is annotated where main creates it (guide, related crypto material)."
+  - id: gt-0034
+    file: sha256/main.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0035
+    file: x25519/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: HKDF
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0036
+    file: x25519/main.py
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: x25519/alice
+  - id: gt-0058
+    file: x25519/main.py
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0037
+    file: x25519/main.py
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: x25519/bob
+  - id: gt-0059
+    file: x25519/main.py
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0038
+    file: x25519/main.py
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: x25519/alice
+  - id: gt-0050
+    file: x25519/main.py
+    lines: [13, 13]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: agreed. The exchange call is also the key-agree algorithm asset; derive() is a program function, not an asset, so the exchange stands alone."
+  - id: gt-0039
+    file: x25519/main.py
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: x25519/bob
+  - id: gt-0051
+    file: x25519/main.py
+    lines: [14, 14]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: agreed. The exchange call is also the key-agree algorithm asset."
+  - id: gt-0040
+    file: x509-cert/main.py
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0060
+    file: x509-cert/main.py
+    lines: [10, 10]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0041
+    file: x509-cert/main.py
+    lines: [14, 22]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: x509-cert/cert
+  - id: gt-0042
+    file: x509-cert/main.py
+    lines: [18, 18]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "x509.random_serial_number() draws from os.urandom inside the builder chain. Re-derivation: second annotator folded it into the builder chain; kept: a random draw nested in another asset's call is still its own asset (guide, what is an asset)."
+  - id: gt-0043
+    file: x509-cert/main.py
+    lines: [24, 24]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: x509-cert/cert
+  - id: gt-0044
+    file: x509-cert/main.py
+    lines: [25, 25]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: x509-cert/cert

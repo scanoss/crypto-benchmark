@@ -1,0 +1,9 @@
+{
+  "name": "crypto-benchmark-noble-ciphers",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@noble/ciphers": "2.4.0"
+  }
+}

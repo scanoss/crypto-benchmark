@@ -1,0 +1,143 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "python-bcrypt",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "hashpw/main.py",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "bcrypt",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "hashpw/main.py",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "hashpw/main.py",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "salt",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "hashpw/main.py",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "bcrypt",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "hashpw/main.py",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "bcrypt",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "kdf/main.py",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "salt",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "kdf/main.py",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "kdf/main.py",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "bcrypt-pbkdf",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "kdf/main.py",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "bcrypt-pbkdf",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

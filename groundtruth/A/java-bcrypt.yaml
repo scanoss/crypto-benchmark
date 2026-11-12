@@ -1,0 +1,79 @@
+schema_version: "1"
+entry: java-bcrypt
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/main/java/bench/HashPassword.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "BCrypt.withDefaults().hashToString(12, ...) is one fluent chain and one bcrypt asset; withDefaults creates the hasher on the same chain. The library draws the salt itself and keeps it in the hash string."
+  - id: gt-0002
+    file: src/main/java/bench/HashPassword.java
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "BCrypt.verifyer().verify(...) is one chain and one bcrypt asset."
+  - id: gt-0003
+    file: src/main/java/bench/HashVersion2y.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Version 2y is a bcrypt hash-string prefix variant, not a different algorithm."
+  - id: gt-0004
+    file: src/main/java/bench/HashVersion2y.java
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0005
+    file: src/main/java/bench/HashWithSalt.java
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0006
+    file: src/main/java/bench/HashWithSalt.java
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The 16 drawn bytes are passed as the salt argument of hash(cost, salt, password)."
+  - id: gt-0007
+    file: src/main/java/bench/HashWithSalt.java
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: src/main/java/bench/HashWithSalt.java
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0

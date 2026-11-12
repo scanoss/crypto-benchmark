@@ -1,0 +1,9 @@
+[package]
+name = "chacha20-fixture"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+chacha20 = { version = "=0.10.2", features = ["xchacha"] }
+getrandom = "=0.4.3"

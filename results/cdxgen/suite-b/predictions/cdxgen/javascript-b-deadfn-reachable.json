@@ -1,0 +1,43 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "javascript-b-deadfn-reachable",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "codec.js",
+      "lines": [
+        18,
+        18
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-1",
+      "origin": "dependency",
+      "component": "pkg:npm/cbench-deadfn-libb@1.0.0",
+      "reachable": "unknown"
+    },
+    {
+      "file": "codec.js",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "algorithm": "sha-256",
+      "origin": "dependency",
+      "component": "pkg:npm/cbench-deadfn-libb@1.0.0",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

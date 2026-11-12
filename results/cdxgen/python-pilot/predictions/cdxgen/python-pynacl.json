@@ -1,0 +1,17 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "python-pynacl",
+  "reachability_reported": false,
+  "assets": [],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

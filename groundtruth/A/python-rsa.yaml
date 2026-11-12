@@ -1,0 +1,131 @@
+schema_version: "1"
+entry: python-rsa
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: encrypt-decrypt/main.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    object: encrypt-decrypt/key
+  - id: gt-0010
+    file: encrypt-decrypt/main.py
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: encrypt-decrypt/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: true
+    depth: 0
+    object: encrypt-decrypt/key
+  - id: gt-0003
+    file: encrypt-decrypt/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: true
+    depth: 0
+    object: encrypt-decrypt/key
+  - id: gt-0004
+    file: key-load/main.py
+    lines: [5, 5]
+    asset_type: algorithm
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0011
+    file: key-load/main.py
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0005
+    file: key-load/main.py
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/pem
+  - id: gt-0006
+    file: key-load/main.py
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/pem
+  - id: gt-0007
+    file: sign-verify/main.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign-verify/key
+  - id: gt-0012
+    file: sign-verify/main.py
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0008
+    file: sign-verify/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign-verify/key
+  - id: gt-0009
+    file: sign-verify/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign-verify/key

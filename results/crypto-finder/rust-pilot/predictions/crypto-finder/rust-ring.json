@@ -1,0 +1,619 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "rust-ring",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "src/bin/aead_aes256gcm.rs",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/aead_aes256gcm.rs",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-GCM",
+      "parameters": {
+        "mode": "gcm"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/aead_aes256gcm.rs",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/aead_aes256gcm.rs",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/aead_chacha20poly1305.rs",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "ChaCha20-Poly1305",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/aead_chacha20poly1305.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "ChaCha20-Poly1305",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/aead_chacha20poly1305.rs",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/aead_chacha20poly1305.rs",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "tag",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/digest_sha256.rs",
+      "lines": [
+        4,
+        4
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-2",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/digest_sha256.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-2",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/digest_sha384.rs",
+      "lines": [
+        4,
+        4
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-2",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/ecdsa_p256.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/ecdsa_p256.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/ecdsa_p256.rs",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/ecdsa_p256.rs",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/ecdsa_p256.rs",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/ed25519.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/ed25519.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/ed25519.rs",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/ed25519.rs",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/ed25519.rs",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/hkdf_sha256.rs",
+      "lines": [
+        4,
+        4
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "salt",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/hkdf_sha256.rs",
+      "lines": [
+        4,
+        4
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "HKDF",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/hmac_sha256.rs",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/hmac_sha256.rs",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/hmac_sha256.rs",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/pbkdf2.rs",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/pbkdf2.rs",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "salt",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/pbkdf2.rs",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "PBKDF2-HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/pbkdf2.rs",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "PBKDF2-HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/random.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/random.rs",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/rsa_pkcs1.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/rsa_pkcs1.rs",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSA-PKCS1-v1.5",
+      "parameters": {
+        "padding": "pkcs1v15"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/rsa_pkcs1.rs",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSA-PKCS1-v1.5",
+      "parameters": {
+        "padding": "pkcs1v15"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/x25519.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/x25519.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "key-agree",
+      "algorithm": "X25519",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/x25519.rs",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/x25519.rs",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "algorithm",
+      "primitive": "key-agree",
+      "algorithm": "X25519",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/x25519.rs",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "key-agree",
+      "algorithm": "X25519",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/x25519.rs",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "shared-secret",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/x25519.rs",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "key-agree",
+      "algorithm": "X25519",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/bin/x25519.rs",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "shared-secret",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

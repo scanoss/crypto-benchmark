@@ -1,0 +1,10 @@
+{
+  "name": "cbench-depth3-liba",
+  "version": "1.0.0",
+  "description": "Suite B fixture library liba (depth3).",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cbench-depth3-libb": "1.0.0"
+  }
+}

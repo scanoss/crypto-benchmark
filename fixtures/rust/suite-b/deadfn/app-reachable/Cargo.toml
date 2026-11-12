@@ -1,0 +1,9 @@
+[package]
+name = "cbench-deadfn-app"
+version = "1.0.0"
+edition = "2021"
+license = "Apache-2.0"
+publish = false
+
+[dependencies]
+cbench-deadfn-liba = { path = "../liba", version = "1.0.0" }

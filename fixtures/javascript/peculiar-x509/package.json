@@ -1,0 +1,10 @@
+{
+  "name": "crypto-benchmark-peculiar-x509",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@peculiar/x509": "3.1.0",
+    "reflect-metadata": "0.2.2"
+  }
+}

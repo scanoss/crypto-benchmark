@@ -1,0 +1,101 @@
+schema_version: "1"
+entry: javascript-fast-sha256
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: hkdf/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: hkdf/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: hkdf/main.js
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: hkdf/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: HKDF
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0005
+    file: hmac-sha256/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0006
+    file: hmac-sha256/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The package implements only SHA-256, so the API fixes the hash."
+  - id: gt-0007
+    file: pbkdf2/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: pbkdf2/main.js
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0009
+    file: pbkdf2/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0010
+    file: sha256/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0011
+    file: sha256/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0

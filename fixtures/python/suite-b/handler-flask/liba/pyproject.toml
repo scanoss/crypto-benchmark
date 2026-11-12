@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cbench-handler-flask-liba"
+version = "1.0.0"
+license = "Apache-2.0"
+dependencies = ["cbench-handler-flask-libb==1.0.0"]
+
+[tool.setuptools]
+packages = ["liba"]

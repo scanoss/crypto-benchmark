@@ -1,0 +1,90 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "go-x-crypto-pbkdf2",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "derive/main.go",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "wpa-psk/main.go",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "derive/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "password",
+      "algorithm": "password",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "derive/main.go",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "PBKDF2",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "wpa-psk/main.go",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-1",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "derive/main.go",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

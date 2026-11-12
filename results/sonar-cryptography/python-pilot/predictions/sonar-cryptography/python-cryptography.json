@@ -1,0 +1,551 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "sonar-cryptography",
+    "version": "1.7.0"
+  },
+  "entry": "python-cryptography",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "aes-gcm/main.py",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-256-GCM",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "aes-cbc/main.py",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES-CBC-PKCS7",
+      "parameters": {
+        "mode": "cbc",
+        "padding": "pkcs7",
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rsa-oaep/main.py",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-3072",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ed25519/main.py",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key@3acb16b6-81d1-4976-bbe1-76a0bd386012",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ed25519/main.py",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "parameters": {
+        "curve": "Edwards25519"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rsa-pss/main.py",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key@7f0234db-5f60-4541-9020-5946a9c959c4",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ecdsa-p256/main.py",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key@e754ecd0-8bae-4727-9305-927c19985953",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ecdsa-p256/main.py",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-secp256r1-SHA-256",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "fernet/main.py",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "secret-key@7103f09f-b0a8-42a0-a1e3-0423ea9abb02",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "key-load/main.py",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key@9b6531b8-a049-40bf-8069-ef58e82ba919",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x509-cert/main.py",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key@1f0a7e28-40c4-408f-a2c6-922aabf397f9",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x25519/main.py",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "key-agree",
+      "algorithm": "x25519",
+      "parameters": {
+        "curve": "Curve25519"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x25519/main.py",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "key-agree",
+      "algorithm": "x25519",
+      "parameters": {
+        "curve": "Curve25519"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rsa-pss/main.py",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSA-PKCS1-1.5-SHA-256",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "hmac-sha256/main.py",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "hmac-sha256/main.py",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "fernet/main.py",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x25519/main.py",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "HKDF-SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "chacha20-poly1305/main.py",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "secret-key@7d1554c1-d8da-4b84-ae44-01b793d6f9f6",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "chacha20-poly1305/main.py",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "ChaCha20-Poly1305",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "pbkdf2/main.py",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "PBKDF2-SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rsa-oaep/main.py",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key@59464740-e954-4c84-82e7-7d446333230e",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "chacha20-poly1305/main.py",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "Poly1305",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "hmac-sha256/main.py",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "hmac-sha256/main.py",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "fernet/main.py",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "sha256/main.py",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x25519/main.py",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "pbkdf2/main.py",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rsa-pss/main.py",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ecdsa-p256/main.py",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "fernet/main.py",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES-128-CBC-PKCS7",
+      "parameters": {
+        "mode": "cbc",
+        "padding": "pkcs7",
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "fernet/main.py",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "Fernet",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "scrypt/main.py",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "scrypt",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ed25519/main.py",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "key-load/main.py",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "EC-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x509-cert/main.py",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "EC-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "aes-gcm/main.py",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "secret-key@b2ee28ea-5dee-4b7c-b76f-c0c681fcffcd",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

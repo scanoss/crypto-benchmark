@@ -1,0 +1,12 @@
+{
+  "name": "cbench-deadfn-app",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cbench-deadfn-liba": "file:../dist/cbench-deadfn-liba-1.0.0.tgz"
+  },
+  "overrides": {
+    "cbench-deadfn-libb": "file:../dist/cbench-deadfn-libb-1.0.0.tgz"
+  }
+}

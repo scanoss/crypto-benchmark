@@ -1,0 +1,66 @@
+schema_version: "1"
+entry: rust-chacha20
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/bin/chacha20.rs
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: src/bin/chacha20.rs
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: src/bin/chacha20.rs
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: src/bin/chacha20.rs
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: stream-cipher
+    algorithm: ChaCha20
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0005
+    file: src/bin/xchacha20.rs
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0006
+    file: src/bin/xchacha20.rs
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: stream-cipher
+    algorithm: XChaCha20
+    origin: project
+    reachable: true
+    depth: 0
+    object: xchacha20/key
+  - id: gt-0007
+    file: src/bin/xchacha20.rs
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: stream-cipher
+    algorithm: XChaCha20
+    origin: project
+    reachable: true
+    depth: 0
+    object: xchacha20/key

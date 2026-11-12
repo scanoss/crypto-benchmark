@@ -1,0 +1,104 @@
+schema_version: "1"
+entry: rust-rustls-webpki
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/bin/verify_chain.rs
+    lines: [6, 6]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: verify_chain/ca_der
+  - id: gt-0002
+    file: src/bin/verify_chain.rs
+    lines: [7, 7]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: verify_chain/leaf_der
+  - id: gt-0003
+    file: src/bin/verify_chain.rs
+    lines: [9, 9]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: verify_chain/ca_der
+  - id: gt-0004
+    file: src/bin/verify_chain.rs
+    lines: [10, 10]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: verify_chain/leaf_der
+  - id: gt-0005
+    file: src/bin/verify_chain.rs
+    lines: [12, 20]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "verify_for_usage verifies the leaf's signature with the CA key, a verify call on a key. It names no algorithm, so it takes the CA key's type (ECDSA, from the fixture certificates) with no parameters. It is an algorithm asset, so it is not in the certificate objects."
+  - id: gt-0006
+    file: src/bin/verify_signature.rs
+    lines: [8, 8]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: verify_signature/leaf_der
+  - id: gt-0007
+    file: src/bin/verify_signature.rs
+    lines: [9, 9]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: verify_signature/leaf_der
+  - id: gt-0008
+    file: src/bin/verify_signature.rs
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: verify_signature/pkcs8
+  - id: gt-0009
+    file: src/bin/verify_signature.rs
+    lines: [13, 13]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: verify_signature/pkcs8
+    notes: "Re-derivation: kept the first annotation. The second annotation also made from_pkcs8 an ECDSA signer object. The ring entry's second annotator and both annotations there treat from_pkcs8 as a key parse only, like load_pem_private_key; the sign call is the asset. The second annotation also listed SystemRandom::new() on line 12 as a draw; it draws nothing and is not an asset (the ring entry decides the same)."
+  - id: gt-0010
+    file: src/bin/verify_signature.rs
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: verify_signature/key_pair
+  - id: gt-0011
+    file: src/bin/verify_signature.rs
+    lines: [17, 17]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: verify_signature/key_pair
+    notes: "The leaf certificate holds the public key of the key pair loaded on line 13, so this verify and the sign on line 16 are one object."

@@ -1,0 +1,12 @@
+{
+  "name": "cbench-transitive-app",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cbench-transitive-liba": "file:../dist/cbench-transitive-liba-1.0.0.tgz"
+  },
+  "overrides": {
+    "cbench-transitive-libb": "file:../dist/cbench-transitive-libb-1.0.0.tgz"
+  }
+}

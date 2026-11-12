@@ -1,0 +1,185 @@
+schema_version: "1"
+entry: rust-ecdsa
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/bin/p256_sign.rs
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: p256_sign/signing_key
+    notes: "SigningKey::generate() draws from the OS generator inside the library; the draw is not a call in the program, so there is no drbg asset."
+  - id: gt-0014
+    file: src/bin/p256_sign.rs
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: src/bin/p256_sign.rs
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: p256_sign/verifying_key_bytes
+  - id: gt-0003
+    file: src/bin/p256_sign.rs
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: p256_sign/signing_key
+    notes: "Re-derivation: field parameters. The first annotation set only hash SHA-256; the second also set the curve. Resolved to the second: p256 and k256 fix the curve and the digest in the signing key's type, so both are parameters the API fixes, not values carried over from key generation."
+  - id: gt-0004
+    file: src/bin/p256_sign.rs
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: p256_sign/verifying_key_bytes
+  - id: gt-0005
+    file: src/bin/p256_sign.rs
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: p256_sign/signing_key
+    notes: "Re-derivation: field parameters. The first annotation set only hash SHA-256; the second also set the curve. Resolved to the second: p256 and k256 fix the curve and the digest in the signing key's type, so both are parameters the API fixes, not values carried over from key generation."
+  - id: gt-0006
+    file: src/bin/k256_sign.rs
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: secp256k1
+    origin: project
+    reachable: true
+    depth: 0
+    object: k256_sign/signing_key
+  - id: gt-0015
+    file: src/bin/k256_sign.rs
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0007
+    file: src/bin/k256_sign.rs
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: secp256k1
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: k256_sign/signing_key
+    notes: "Re-derivation: field parameters. The first annotation set only hash SHA-256; the second also set the curve. Resolved to the second: p256 and k256 fix the curve and the digest in the signing key's type, so both are parameters the API fixes, not values carried over from key generation."
+  - id: gt-0008
+    file: src/bin/k256_sign.rs
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: secp256k1
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: k256_sign/signing_key
+    notes: "Re-derivation: field parameters. The first annotation set only hash SHA-256; the second also set the curve. Resolved to the second: p256 and k256 fix the curve and the digest in the signing key's type, so both are parameters the API fixes, not values carried over from key generation."
+  - id: gt-0009
+    file: src/bin/key_bytes.rs
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: key_bytes/original
+  - id: gt-0016
+    file: src/bin/key_bytes.rs
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0010
+    file: src/bin/key_bytes.rs
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key_bytes/secret_bytes
+  - id: gt-0011
+    file: src/bin/key_bytes.rs
+    lines: [10, 10]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key_bytes/secret_bytes
+  - id: gt-0012
+    file: src/bin/key_bytes.rs
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: key_bytes/original
+    notes: "Re-derivation: field parameters. The first annotation set only hash SHA-256; the second also set the curve. Resolved to the second: p256 and k256 fix the curve and the digest in the signing key's type, so both are parameters the API fixes, not values carried over from key generation."
+  - id: gt-0013
+    file: src/bin/key_bytes.rs
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: key_bytes/original
+    notes: "Re-derivation: field parameters. The first annotation set only hash SHA-256; the second also set the curve. Resolved to the second: p256 and k256 fix the curve and the digest in the signing key's type, so both are parameters the API fixes, not values carried over from key generation."

@@ -1,0 +1,237 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "java-spring-security-crypto",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "src/main/java/bench/Argon2Encoder.java",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "Argon2id",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/BCryptEncoder.java",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "bcrypt",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/DelegatingEncoder.java",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "bcrypt",
+      "parameters": {
+        "key_size": 10
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/Pbkdf2Encoder.java",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "PBKDF2WithHmacSHA256",
+      "parameters": {
+        "key_size": 256,
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/RandomKey.java",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/SCryptEncoder.java",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "scrypt",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/StrongerEncryption.java",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/StrongerEncryption.java",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "salt",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/StrongerEncryption.java",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-256-GCM",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/StrongerEncryption.java",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "PBKDF2WithHmacSHA1",
+      "parameters": {
+        "key_size": 256,
+        "hash": "SHA-1"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/TextEncryption.java",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/TextEncryption.java",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "salt",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/TextEncryption.java",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES-256-CBC",
+      "parameters": {
+        "mode": "cbc",
+        "padding": "pkcs5",
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/TextEncryption.java",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "PBKDF2WithHmacSHA1",
+      "parameters": {
+        "key_size": 256,
+        "hash": "SHA-1"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

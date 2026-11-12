@@ -1,0 +1,140 @@
+schema_version: "1"
+entry: go-go-ethereum-crypto
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: key-hex/main.go
+    lines: [11, 11]
+    asset_type: algorithm
+    algorithm: ECDSA
+    parameters:
+      curve: secp256k1
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "crypto.GenerateKey returns an ECDSA key on secp256k1. The program only serializes it and derives an address, so no primitive."
+  - id: gt-0012
+    file: key-hex/main.go
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: key-hex/main.go
+    lines: [15, 15]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-hex/keyHex
+    notes: "crypto.FromECDSA serializes the private key; hex encoding is not an asset."
+  - id: gt-0003
+    file: key-hex/main.go
+    lines: [16, 16]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-hex/keyHex
+  - id: gt-0004
+    file: key-hex/main.go
+    lines: [20, 20]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: Keccak-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "crypto.PubkeyToAddress computes Keccak-256 over the public key: a digest of a key, its own object. Keccak-256 is not in the algo table and keeps its usual name."
+  - id: gt-0005
+    file: key-hex/main.go
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: Keccak-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0006
+    file: sign/main.go
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: secp256k1
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign/privateKey
+  - id: gt-0013
+    file: sign/main.go
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0007
+    file: sign/main.go
+    lines: [15, 15]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: Keccak-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: sign/main.go
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: secp256k1
+      hash: Keccak-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign/privateKey
+    notes: "crypto.Sign is always secp256k1 (API-fixed curve) and receives the Keccak-256 digest computed in the same function."
+  - id: gt-0009
+    file: sign/main.go
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: secp256k1
+      hash: Keccak-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "crypto.Ecrecover recovers the public key from the signature: a signature operation that no key performs, so it is its own object."
+  - id: gt-0010
+    file: sign/main.go
+    lines: [25, 25]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "crypto.FromECDSAPub serializes the public key; the only serialization, so no object."
+  - id: gt-0011
+    file: sign/main.go
+    lines: [26, 26]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: secp256k1
+      hash: Keccak-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign/privateKey
+    notes: "VerifySignature is given the serialized public key of privateKey, the same key passed on."

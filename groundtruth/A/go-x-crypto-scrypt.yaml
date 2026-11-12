@@ -1,0 +1,32 @@
+schema_version: "1"
+entry: go-x-crypto-scrypt
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: derive/main.go
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: derive/main.go
+    lines: [13, 13]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The value is created by make() on the line above and filled by rand.Read here; the draw is the expression that creates the material, so the asset takes the rand.Read line."
+  - id: gt-0003
+    file: derive/main.go
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: scrypt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "N, r and p are cost parameters, not a key size."

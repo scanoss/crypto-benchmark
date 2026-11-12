@@ -1,0 +1,13 @@
+{
+  "name": "cbench-handler-express-app",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cbench-handler-express-liba": "file:../dist/cbench-handler-express-liba-1.0.0.tgz",
+    "express": "5.3.0"
+  },
+  "overrides": {
+    "cbench-handler-express-libb": "file:../dist/cbench-handler-express-libb-1.0.0.tgz"
+  }
+}

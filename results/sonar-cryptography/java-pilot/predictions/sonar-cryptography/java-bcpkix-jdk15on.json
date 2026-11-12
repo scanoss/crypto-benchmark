@@ -1,0 +1,177 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "sonar-cryptography",
+    "version": "1.7.0"
+  },
+  "entry": "java-bcpkix-jdk15on",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "src/main/java/bench/PemRoundTrip.java",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@2d319447-1a21-46d5-9c26-d34df663f2f4",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Csr.java",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@e09c2cb1-f235-4fba-8c1a-51d189a9779d",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/PemRoundTrip.java",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@61a8ac79-d4d1-4fe4-a6d2-a4cb5c702a55",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/SelfSignedCert.java",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-3072",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/CmsSignedData.java",
+      "lines": [
+        29,
+        29
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-3072",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Csr.java",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@68fc09ef-0ef3-4162-9e83-d3316b7fd424",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/SelfSignedCert.java",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@b3f96cd6-cc98-4f66-a6f2-b3154daabb94",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/CmsSignedData.java",
+      "lines": [
+        29,
+        29
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@de881c40-3f5d-40ab-8150-bdb69a0b619d",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Csr.java",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "EC",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/PemRoundTrip.java",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "EC",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Csr.java",
+      "lines": [
+        20,
+        20
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "EC-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/PemRoundTrip.java",
+      "lines": [
+        29,
+        29
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "EC-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

@@ -1,0 +1,1257 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "go-b-handler-gin-unreachable",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "libb.go",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/example.com/cbench/handler-gin/libb@v1.0.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "baked_in.go",
+      "lines": [
+        743,
+        743
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "Keccak-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/go-playground/validator/v10@v10.30.1",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "baked_in.go",
+      "lines": [
+        782,
+        782
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/go-playground/validator/v10@v10.30.1",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "baked_in.go",
+      "lines": [
+        785,
+        785
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/go-playground/validator/v10@v10.30.1",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "http3/server.go",
+      "lines": [
+        230,
+        230
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "http3/server.go",
+      "lines": [
+        735,
+        735
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/cipher_suite.go",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/cipher_suite.go",
+      "lines": [
+        37,
+        37
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/cipher_suite.go",
+      "lines": [
+        39,
+        39
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-384",
+      "parameters": {
+        "key_size": 384
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/cipher_suite.go",
+      "lines": [
+        53,
+        57
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-GCM",
+      "parameters": {
+        "mode": "gcm"
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/cipher_suite.go",
+      "lines": [
+        53,
+        53
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/cipher_suite.go",
+      "lines": [
+        71,
+        71
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "ChaCha20-Poly1305",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/header_protector.go",
+      "lines": [
+        49,
+        49
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/header_protector.go",
+      "lines": [
+        116,
+        116
+      ],
+      "asset_type": "algorithm",
+      "primitive": "stream-cipher",
+      "algorithm": "ChaCha20",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/hkdf.go",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "HKDF",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/initial_aead.go",
+      "lines": [
+        25,
+        25
+      ],
+      "asset_type": "protocol",
+      "algorithm": "TLS",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/initial_aead.go",
+      "lines": [
+        62,
+        62
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "HKDF",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/initial_aead.go",
+      "lines": [
+        62,
+        62
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/initial_aead.go",
+      "lines": [
+        66,
+        66
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/initial_aead.go",
+      "lines": [
+        66,
+        66
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/initial_aead.go",
+      "lines": [
+        67,
+        67
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/initial_aead.go",
+      "lines": [
+        67,
+        67
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/initial_aead.go",
+      "lines": [
+        78,
+        78
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/initial_aead.go",
+      "lines": [
+        79,
+        79
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/retry.go",
+      "lines": [
+        21,
+        36
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-GCM",
+      "parameters": {
+        "mode": "gcm"
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/retry.go",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/tls_config_go126.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/tls_config_go126.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/tls_config_go126.go",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/tls_config_go126.go",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/token_protector.go",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/token_protector.go",
+      "lines": [
+        59,
+        59
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "HKDF-sha256",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/token_protector.go",
+      "lines": [
+        59,
+        59
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/token_protector.go",
+      "lines": [
+        64,
+        64
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "HKDF-sha256",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/token_protector.go",
+      "lines": [
+        64,
+        64
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/token_protector.go",
+      "lines": [
+        69,
+        73
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-GCM",
+      "parameters": {
+        "mode": "gcm"
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/handshake/token_protector.go",
+      "lines": [
+        69,
+        69
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/protocol/connection_id.go",
+      "lines": [
+        48,
+        48
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/protocol/connection_id.go",
+      "lines": [
+        68,
+        68
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/protocol/version.go",
+      "lines": [
+        90,
+        90
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/utils/rand.go",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/wire/transport_parameters.go",
+      "lines": [
+        365,
+        365
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "internal/wire/version_negotiation.go",
+      "lines": [
+        39,
+        39
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "packet_packer.go",
+      "lines": [
+        164,
+        164
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "path_manager.go",
+      "lines": [
+        119,
+        119
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "path_manager_outgoing.go",
+      "lines": [
+        261,
+        261
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "stateless_reset.go",
+      "lines": [
+        24,
+        24
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-sha256",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "stateless_reset.go",
+      "lines": [
+        24,
+        24
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "stateless_reset.go",
+      "lines": [
+        27,
+        27
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "stateless_reset.go",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-sha256",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "stateless_reset.go",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "transport.go",
+      "lines": [
+        401,
+        401
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "transport.go",
+      "lines": [
+        661,
+        661
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/github.com/quic-go/quic-go@v0.65.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "chacha20poly1305/chacha20poly1305_generic.go",
+      "lines": [
+        41,
+        41
+      ],
+      "asset_type": "algorithm",
+      "primitive": "stream-cipher",
+      "algorithm": "ChaCha20",
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "chacha20poly1305/chacha20poly1305_generic.go",
+      "lines": [
+        61,
+        61
+      ],
+      "asset_type": "algorithm",
+      "primitive": "stream-cipher",
+      "algorithm": "ChaCha20",
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "chacha20poly1305/xchacha20poly1305.go",
+      "lines": [
+        59,
+        59
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "HChaCha20",
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "chacha20poly1305/xchacha20poly1305.go",
+      "lines": [
+        81,
+        81
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "HChaCha20",
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/hashes.go",
+      "lines": [
+        25,
+        25
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-3-224",
+      "parameters": {
+        "key_size": 224
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/hashes.go",
+      "lines": [
+        36,
+        36
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-3-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/hashes.go",
+      "lines": [
+        47,
+        47
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-3-384",
+      "parameters": {
+        "key_size": 384
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/hashes.go",
+      "lines": [
+        58,
+        58
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-3-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/hashes.go",
+      "lines": [
+        67,
+        67
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-3-224",
+      "parameters": {
+        "key_size": 224
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/hashes.go",
+      "lines": [
+        76,
+        76
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-3-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/hashes.go",
+      "lines": [
+        85,
+        85
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-3-384",
+      "parameters": {
+        "key_size": 384
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/hashes.go",
+      "lines": [
+        94,
+        94
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-3-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/shake.go",
+      "lines": [
+        34,
+        34
+      ],
+      "asset_type": "algorithm",
+      "primitive": "xof",
+      "algorithm": "SHAKE128",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/shake.go",
+      "lines": [
+        34,
+        34
+      ],
+      "asset_type": "algorithm",
+      "primitive": "xof",
+      "algorithm": "SHAKE128",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/shake.go",
+      "lines": [
+        41,
+        41
+      ],
+      "asset_type": "algorithm",
+      "primitive": "xof",
+      "algorithm": "SHAKE256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/shake.go",
+      "lines": [
+        41,
+        41
+      ],
+      "asset_type": "algorithm",
+      "primitive": "xof",
+      "algorithm": "SHAKE256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/shake.go",
+      "lines": [
+        51,
+        51
+      ],
+      "asset_type": "algorithm",
+      "primitive": "xof",
+      "algorithm": "CSHAKE128",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/shake.go",
+      "lines": [
+        52,
+        52
+      ],
+      "asset_type": "algorithm",
+      "primitive": "xof",
+      "algorithm": "CSHAKE128",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/shake.go",
+      "lines": [
+        63,
+        63
+      ],
+      "asset_type": "algorithm",
+      "primitive": "xof",
+      "algorithm": "CSHAKE256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "sha3/shake.go",
+      "lines": [
+        64,
+        64
+      ],
+      "asset_type": "algorithm",
+      "primitive": "xof",
+      "algorithm": "CSHAKE256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/crypto@v0.58.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "http2/server.go",
+      "lines": [
+        939,
+        939
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/net@v0.62.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "http2/transport.go",
+      "lines": [
+        2661,
+        2661
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/net@v0.62.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "http2/transport.go",
+      "lines": [
+        2750,
+        2750
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "dependency",
+      "component": "pkg:golang/golang.org/x/net@v0.62.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    }
+  ]
+}

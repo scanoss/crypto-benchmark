@@ -1,0 +1,534 @@
+schema_version: "1"
+entry: rust-openssl
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/bin/aes_cbc.rs
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: src/bin/aes_cbc.rs
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: src/bin/aes_cbc.rs
+    lines: [9, 9]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: src/bin/aes_cbc.rs
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: CBC
+      padding: PKCS7
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes_cbc/key
+    notes: "Re-derivation: kept the first annotation. The second annotation left padding out. symm::encrypt always runs the cipher with PKCS#7 padding enabled, so the API fixes it, as in the guide's aes_cbc_pkcs7_encrypt example."
+  - id: gt-0005
+    file: src/bin/aes_cbc.rs
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: CBC
+      padding: PKCS7
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes_cbc/key
+    notes: "Re-derivation: kept the first annotation. The second annotation left padding out. symm::decrypt always expects PKCS#7 padding, so the API fixes it."
+  - id: gt-0006
+    file: src/bin/aes_gcm.rs
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0007
+    file: src/bin/aes_gcm.rs
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: src/bin/aes_gcm.rs
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0009
+    file: src/bin/aes_gcm.rs
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 128
+      mode: GCM
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes_gcm/key
+  - id: gt-0010
+    file: src/bin/aes_gcm.rs
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: tag
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0011
+    file: src/bin/aes_gcm.rs
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 128
+      mode: GCM
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes_gcm/key
+  - id: gt-0012
+    file: src/bin/ecdsa_p256.rs
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa_p256/key
+  - id: gt-0049
+    file: src/bin/ecdsa_p256.rs
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0013
+    file: src/bin/ecdsa_p256.rs
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0014
+    file: src/bin/ecdsa_p256.rs
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa_p256/key
+    notes: "hash SHA-256: the sign call receives the digest the program computes on line 10."
+  - id: gt-0015
+    file: src/bin/ecdsa_p256.rs
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa_p256/key
+  - id: gt-0016
+    file: src/bin/ed25519.rs
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/key
+  - id: gt-0050
+    file: src/bin/ed25519.rs
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0017
+    file: src/bin/ed25519.rs
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/key
+  - id: gt-0018
+    file: src/bin/ed25519.rs
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/key
+  - id: gt-0019
+    file: src/bin/hmac_sha256.rs
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: only second. PKey::hmac builds an OpenSSL key object from raw key bytes. Added: it is a key loaded from bytes, so related-crypto-material with no material_type."
+  - id: gt-0020
+    file: src/bin/hmac_sha256.rs
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hmac_sha256/key
+  - id: gt-0021
+    file: src/bin/hmac_sha256.rs
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hmac_sha256/key
+  - id: gt-0022
+    file: src/bin/key_pem.rs
+    lines: [6, 6]
+    asset_type: algorithm
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0051
+    file: src/bin/key_pem.rs
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0023
+    file: src/bin/key_pem.rs
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key_pem/pem
+  - id: gt-0024
+    file: src/bin/key_pem.rs
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: CBC
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "private_key_to_pem_passphrase(Cipher::aes_256_cbc(), ...) encrypts the PEM with AES-256-CBC, which the call names, so it is an algorithm asset on the serialization's lines (as pycryptodome export_key(protection=...)). The EVP_BytesToKey derivation OpenSSL runs is not named and not annotated."
+  - id: gt-0025
+    file: src/bin/key_pem.rs
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key_pem/pem
+  - id: gt-0026
+    file: src/bin/key_pem.rs
+    lines: [10, 10]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key_pem/pem
+    notes: "Re-derivation: kept the first annotation. The second annotation added an AES decrypt on this call. The call names no cipher; the decryption reads it from the PEM header. The Python pilot annotated pycryptodome RSA.import_key(passphrase=...) the same way, as a key parse only."
+  - id: gt-0027
+    file: src/bin/key_pem.rs
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key_pem/pem
+  - id: gt-0028
+    file: src/bin/pbkdf2.rs
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0029
+    file: src/bin/pbkdf2.rs
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0030
+    file: src/bin/pbkdf2.rs
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0031
+    file: src/bin/random.rs
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0032
+    file: src/bin/rsa_oaep.rs
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa_oaep/rsa
+  - id: gt-0052
+    file: src/bin/rsa_oaep.rs
+    lines: [4, 4]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0033
+    file: src/bin/rsa_oaep.rs
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa_oaep/rsa
+  - id: gt-0034
+    file: src/bin/rsa_oaep.rs
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa_oaep/rsa
+  - id: gt-0035
+    file: src/bin/rsa_sign.rs
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa_sign/keypair
+  - id: gt-0053
+    file: src/bin/rsa_sign.rs
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0036
+    file: src/bin/rsa_sign.rs
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa_sign/keypair
+  - id: gt-0037
+    file: src/bin/rsa_sign.rs
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa_sign/keypair
+  - id: gt-0038
+    file: src/bin/sha256.rs
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0039
+    file: src/bin/sha256.rs
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0040
+    file: src/bin/sha256.rs
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0041
+    file: src/bin/tls_client.rs
+    lines: [4, 4]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0042
+    file: src/bin/tls_client.rs
+    lines: [9, 9]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: kept the first annotation. The second annotation treated configure() as configuring the connector. configure() creates the Ssl session object for one connection (into_ssl then sets the host name on it), and the Rust entries annotate creating a TLS session as a protocol asset, as rustls ClientConnection::new."
+  - id: gt-0043
+    file: src/bin/x509_cert.rs
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0054
+    file: src/bin/x509_cert.rs
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0044
+    file: src/bin/x509_cert.rs
+    lines: [18, 18]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "BigNum::rand draws the serial from OpenSSL's CSPRNG, as x509.random_serial_number() in the Python pilot."
+  - id: gt-0045
+    file: src/bin/x509_cert.rs
+    lines: [24, 33]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: x509_cert/cert
+    notes: "The builder statements from X509::builder() to build() are one certificate asset, as the guide's CertificateBuilder chain. The ECDSA/SHA-256 sign inside it is part of building the certificate."
+  - id: gt-0046
+    file: src/bin/x509_cert.rs
+    lines: [35, 35]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: x509_cert/cert
+  - id: gt-0047
+    file: src/bin/x509_cert.rs
+    lines: [36, 36]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: x509_cert/cert
+  - id: gt-0048
+    file: src/bin/x509_cert.rs
+    lines: [37, 37]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0

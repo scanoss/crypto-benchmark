@@ -1,0 +1,24 @@
+schema_version: "1"
+entry: javascript-b-transitive-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:npm/cbench-transitive-liba@1.0.0
+    - pkg:npm/cbench-transitive-libb@1.0.0
+assets:
+  - id: gt-0001
+    file: index.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-512
+    origin: dependency
+    component: pkg:npm/cbench-transitive-libb@1.0.0
+    reachable: true
+    depth: 2
+    distance: 2
+    path:
+      - "index.js:main"
+      - "index.js:run"
+      - "cbench-transitive-liba:fingerprint"
+      - "cbench-transitive-libb:digest"

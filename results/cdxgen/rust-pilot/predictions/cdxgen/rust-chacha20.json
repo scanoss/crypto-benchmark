@@ -1,0 +1,66 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "rust-chacha20",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "src/bin/chacha20.rs",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/xchacha20.rs",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/chacha20.rs",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "nonce",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/xchacha20.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "nonce",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

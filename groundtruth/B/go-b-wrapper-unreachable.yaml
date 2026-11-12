@@ -1,0 +1,20 @@
+schema_version: "1"
+entry: go-b-wrapper-unreachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:golang/example.com/cbench/wrapper/liba@v1.0.0
+    - pkg:golang/example.com/cbench/wrapper/libb@v1.0.0
+assets:
+  - id: gt-0001
+    file: libb.go
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-384
+    origin: dependency
+    component: pkg:golang/example.com/cbench/wrapper/libb@v1.0.0
+    reachable: false
+    depth: 2
+    distance: 2
+    notes: "Unreachable because the call to liba moves into an app function that main never calls."

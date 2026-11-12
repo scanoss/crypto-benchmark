@@ -1,0 +1,61 @@
+schema_version: "1"
+entry: javascript-hash-js
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: hmac-sha256/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: ripemd160/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: RIPEMD-160
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: sha1/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: sha256/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0005
+    file: sha256/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0006
+    file: sha512/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-512
+    origin: project
+    reachable: true
+    depth: 0

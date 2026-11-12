@@ -1,0 +1,132 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "go-x-crypto-chacha20poly1305",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "chacha20-poly1305/main.go",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "chacha20-poly1305/main.go",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "ChaCha20-Poly1305",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "chacha20-poly1305/main.go",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "chacha20-poly1305/main.go",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "xchacha20-poly1305/main.go",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "xchacha20-poly1305/main.go",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "XChaCha20-Poly1305",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "xchacha20-poly1305/main.go",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "xchacha20-poly1305/main.go",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

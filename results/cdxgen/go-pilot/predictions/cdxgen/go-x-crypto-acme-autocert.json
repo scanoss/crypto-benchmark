@@ -1,0 +1,53 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "go-x-crypto-acme-autocert",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "manager/main.go",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ecdsa",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manager/main.go",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manager/main.go",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "protocol",
+      "algorithm": "TLS",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

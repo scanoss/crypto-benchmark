@@ -1,0 +1,11 @@
+[package]
+name = "cbench-deadfn-libb"
+version = "1.0.0"
+edition = "2021"
+license = "Apache-2.0"
+publish = false
+
+[dependencies]
+hmac = "=0.12.1"
+sha1 = "=0.11.0"
+sha2 = "=0.10.8"

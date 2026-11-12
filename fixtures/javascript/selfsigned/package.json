@@ -1,0 +1,9 @@
+{
+  "name": "crypto-benchmark-selfsigned",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "selfsigned": "5.5.0"
+  }
+}

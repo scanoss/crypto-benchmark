@@ -1,0 +1,123 @@
+schema_version: "1"
+entry: javascript-jsonwebtoken
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: es256/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: es256/privateKey
+  - id: gt-0009
+    file: es256/main.js
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: es256/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: es256/privateKey
+  - id: gt-0003
+    file: es256/main.js
+    lines: [7, 10]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: es256/privateKey
+  - id: gt-0004
+    file: hs256/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hs256/secret
+  - id: gt-0005
+    file: hs256/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: true
+    depth: 0
+    object: hs256/secret
+    notes: "Algorithm from the token the program produced; the call names none, so only the parameters its API fixes are set (guide, verify calls). jsonwebtoken accepts HS256, HS384 and HS512 for a secret."
+  - id: gt-0006
+    file: rs256/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    object: rs256/privateKey
+  - id: gt-0010
+    file: rs256/main.js
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0007
+    file: rs256/main.js
+    lines: [6, 10]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rs256/privateKey
+  - id: gt-0008
+    file: rs256/main.js
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rs256/privateKey
+    notes: "algorithms: ['RS256'] names the algorithm."

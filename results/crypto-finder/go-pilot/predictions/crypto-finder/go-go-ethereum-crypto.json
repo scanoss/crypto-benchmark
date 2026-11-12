@@ -1,0 +1,193 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "go-go-ethereum-crypto",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "key-hex/main.go",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-secp256k1",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "key-hex/main.go",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "key-hex/main.go",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "key-hex/main.go",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "key-hex/main.go",
+      "lines": [
+        20,
+        20
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "Keccak-256",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "key-hex/main.go",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "Keccak-256",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "sign/main.go",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-secp256k1",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "sign/main.go",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "sign/main.go",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "Keccak-256",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "sign/main.go",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "sign/main.go",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "sign/main.go",
+      "lines": [
+        25,
+        25
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "sign/main.go",
+      "lines": [
+        26,
+        26
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

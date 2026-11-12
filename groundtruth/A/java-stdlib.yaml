@@ -1,0 +1,641 @@
+schema_version: "1"
+entry: java-stdlib
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/main/java/bench/AesCbc.java
+    lines: [14, 14]
+    anchors: [[12, 12]]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+    object: AesCbc/key
+    notes: "Key generation: algorithm from KeyGenerator.getInstance, key_size from keyGen.init on the same generator (annotation log, Java decisions). The getInstance call is not an asset. Primitive block-cipher: the key is used for AES-CBC."
+  - id: gt-0002
+    file: src/main/java/bench/AesCbc.java
+    lines: [17, 17]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: src/main/java/bench/AesCbc.java
+    lines: [17, 17]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Draw passed to IvParameterSpec for AES-CBC."
+  - id: gt-0004
+    file: src/main/java/bench/AesCbc.java
+    lines: [20, 20]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+      padding: PKCS7
+    origin: project
+    reachable: true
+    depth: 0
+    object: AesCbc/key
+    notes: "PKCS5Padding is PKCS7 (algo table). No key_size: the key size is set on the KeyGenerator, not stated in this call's method for this cipher (annotation log, Java decisions: kg.init does not carry to the cipher)."
+  - id: gt-0005
+    file: src/main/java/bench/AesCbc.java
+    lines: [24, 24]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+      padding: PKCS7
+    origin: project
+    reachable: true
+    depth: 0
+    object: AesCbc/key
+  - id: gt-0006
+    file: src/main/java/bench/AesGcm.java
+    lines: [14, 14]
+    anchors: [[12, 12]]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+    object: AesGcm/key
+    notes: "Key generation: algorithm from KeyGenerator.getInstance, key_size from keyGen.init on the same generator (annotation log, Java decisions). The getInstance call is not an asset. Primitive ae: the key is used for AES-GCM."
+  - id: gt-0007
+    file: src/main/java/bench/AesGcm.java
+    lines: [18, 18]
+    anchors: [[16, 16]]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: src/main/java/bench/AesGcm.java
+    lines: [18, 18]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The draw fills the buffer allocated on the line above; the draw is the creating expression. Passed to GCMParameterSpec, whose argument is the IV, so initialization-vector."
+  - id: gt-0009
+    file: src/main/java/bench/AesGcm.java
+    lines: [23, 23]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+    origin: project
+    reachable: true
+    depth: 0
+    object: AesGcm/key
+    notes: "GCM admits only NoPadding, so no padding. No key_size: the key size is set on the KeyGenerator, not stated in this call's method for this cipher (annotation log, Java decisions: kg.init does not carry to the cipher). Re-derivation: the second annotation added padding none from NoPadding. Kept out: GCM admits only no padding, and the guide leaves out a parameter with one admissible value."
+  - id: gt-0010
+    file: src/main/java/bench/AesGcm.java
+    lines: [28, 28]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+    origin: project
+    reachable: true
+    depth: 0
+    object: AesGcm/key
+    notes: "Re-derivation: as for the encrypt instance, padding none is left out."
+  - id: gt-0011
+    file: src/main/java/bench/CertificateParse.java
+    lines: [27, 28]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: CertificateParse/cert
+    notes: "CertificateFactory.getInstance on line 26 computes nothing and is not an asset; generateCertificate parses the PEM."
+  - id: gt-0012
+    file: src/main/java/bench/CertificateParse.java
+    lines: [30, 30]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "SHA-256 fingerprint of the certificate; md.digest on line 31 is a follow-up. A digest of a certificate is its own object (guide)."
+  - id: gt-0013
+    file: src/main/java/bench/CertificateParse.java
+    lines: [31, 31]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: CertificateParse/cert
+    notes: "cert.getEncoded() serializes the certificate (annotation log, Java decisions)."
+  - id: gt-0014
+    file: src/main/java/bench/ChaCha20Poly1305.java
+    lines: [14, 14]
+    anchors: [[12, 12]]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: ChaCha20
+    origin: project
+    reachable: true
+    depth: 0
+    object: ChaCha20Poly1305/key
+    notes: "Key generation: algorithm from KeyGenerator.getInstance, key_size from keyGen.init on the same generator (annotation log, Java decisions). The getInstance call is not an asset. Algorithm ChaCha20, as the generator names it, although the key is used for ChaCha20-Poly1305. No key_size: ChaCha20 keys are always 256 bits (guide, single admissible value), so keyGen.init(256) states nothing."
+  - id: gt-0015
+    file: src/main/java/bench/ChaCha20Poly1305.java
+    lines: [17, 17]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0016
+    file: src/main/java/bench/ChaCha20Poly1305.java
+    lines: [17, 17]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Passed in an IvParameterSpec, whose argument is the IV, so initialization-vector by the guide's parameter rule, although the JCA ChaCha20-Poly1305 docs and the variable call it a nonce (same call as the javascript-stdlib precedent). Re-derivation: the second annotation said nonce, since the JCA docs call the ChaCha20-Poly1305 IV a nonce. Kept initialization-vector: the guide names material by the parameter it is passed as, here IvParameterSpec, as javascript-stdlib did for the iv parameter of Node ChaCha20-Poly1305."
+  - id: gt-0017
+    file: src/main/java/bench/ChaCha20Poly1305.java
+    lines: [19, 19]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: ChaCha20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    object: ChaCha20Poly1305/key
+  - id: gt-0018
+    file: src/main/java/bench/ChaCha20Poly1305.java
+    lines: [23, 23]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: ChaCha20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    object: ChaCha20Poly1305/key
+  - id: gt-0019
+    file: src/main/java/bench/EcdsaP256.java
+    lines: [13, 13]
+    anchors: [[11, 11], [12, 12]]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: EcdsaP256/keyPair
+    notes: "Generic EC key pair (KeyPairGenerator \"EC\"), curve secp256r1 from initialize on the same generator."
+  - id: gt-0056
+    file: src/main/java/bench/EcdsaP256.java
+    lines: [13, 13]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0020
+    file: src/main/java/bench/EcdsaP256.java
+    lines: [17, 17]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: EcdsaP256/keyPair
+    notes: "No curve: SHA256withECDSA does not state it; the curve is the key's."
+  - id: gt-0021
+    file: src/main/java/bench/EcdsaP256.java
+    lines: [22, 22]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: EcdsaP256/keyPair
+  - id: gt-0022
+    file: src/main/java/bench/Ed25519Signature.java
+    lines: [11, 11]
+    anchors: [[10, 10]]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: Ed25519Signature/keyPair
+  - id: gt-0057
+    file: src/main/java/bench/Ed25519Signature.java
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0023
+    file: src/main/java/bench/Ed25519Signature.java
+    lines: [15, 15]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: Ed25519Signature/keyPair
+  - id: gt-0024
+    file: src/main/java/bench/Ed25519Signature.java
+    lines: [20, 20]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: Ed25519Signature/keyPair
+  - id: gt-0025
+    file: src/main/java/bench/HmacSha256.java
+    lines: [15, 15]
+    anchors: [[14, 14]]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: true
+    depth: 0
+    object: HmacSha256/key
+    notes: "KeyGenerator \"HmacSHA256\": key generation gets no hash (guide, hash), so HMAC alone. No key_size: no init call states one."
+  - id: gt-0026
+    file: src/main/java/bench/HmacSha256.java
+    lines: [17, 17]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: HmacSha256/key
+  - id: gt-0027
+    file: src/main/java/bench/HmacSha256.java
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: HmacSha256/key
+    notes: "A second Mac recomputes the tag to verify it; MessageDigest.isEqual is a constant-time comparison, not an asset."
+  - id: gt-0028
+    file: src/main/java/bench/KeySerialization.java
+    lines: [16, 16]
+    anchors: [[14, 14], [15, 15]]
+    asset_type: algorithm
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "No primitive: the program only serializes the key (guide). Only one algorithm asset, so no object."
+  - id: gt-0058
+    file: src/main/java/bench/KeySerialization.java
+    lines: [16, 16]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0029
+    file: src/main/java/bench/KeySerialization.java
+    lines: [18, 18]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: KeySerialization/publicBytes
+    notes: "getEncoded serializes the public key (X.509 SubjectPublicKeyInfo)."
+  - id: gt-0030
+    file: src/main/java/bench/KeySerialization.java
+    lines: [19, 19]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: KeySerialization/publicBytes
+    notes: "getEncoded serializes the private key (PKCS#8); same object as the public key's serialization (guide, key pair)."
+  - id: gt-0031
+    file: src/main/java/bench/KeySerialization.java
+    lines: [22, 22]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: KeySerialization/publicBytes
+    notes: "KeyFactory.getInstance on line 21 is not an asset; generatePublic parses the key."
+  - id: gt-0032
+    file: src/main/java/bench/KeySerialization.java
+    lines: [23, 23]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: KeySerialization/publicBytes
+  - id: gt-0033
+    file: src/main/java/bench/Pbkdf2.java
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0034
+    file: src/main/java/bench/Pbkdf2.java
+    lines: [14, 14]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Passed as the salt of PBEKeySpec."
+  - id: gt-0035
+    file: src/main/java/bench/Pbkdf2.java
+    lines: [17, 17]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "PBKDF2WithHmacSHA256 is PBKDF2 with no hash (guide). 600000 iterations and 256-bit output are not parameters of the schema. generateSecret on line 18 is a follow-up. A KDF given a password is its own object."
+  - id: gt-0037
+    file: src/main/java/bench/Pbkdf2.java
+    lines: [21, 21]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "new SecretKeySpec(derived, \"AES\") makes a key from bytes (annotation log, Java decisions). Re-derivation: the first annotation also counted generateSecret(spec).getEncoded() on line 18 as serializing a key. Changed, with the second annotation: it reads the KDF output, which is the output of the PBKDF2 asset, not a key serialization. This parse is then its own object."
+  - id: gt-0038
+    file: src/main/java/bench/RandomBytes.java
+    lines: [10, 10]
+    anchors: [[8, 8]]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0039
+    file: src/main/java/bench/RandomBytes.java
+    lines: [14, 14]
+    anchors: [[12, 12]]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "getInstanceStrong on line 13 is not an asset; the draw is."
+  - id: gt-0040
+    file: src/main/java/bench/RandomBytes.java
+    lines: [16, 16]
+    anchors: [[8, 8]]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "generateSeed is a draw. Not seed material: the program prints the bytes and passes them to no crypto operation as a seed."
+  - id: gt-0041
+    file: src/main/java/bench/RsaOaep.java
+    lines: [12, 12]
+    anchors: [[10, 10]]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    object: RsaOaep/keyPair
+  - id: gt-0059
+    file: src/main/java/bench/RsaOaep.java
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0042
+    file: src/main/java/bench/RsaOaep.java
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: RsaOaep/keyPair
+    notes: "RSA/ECB/OAEPWithSHA-256AndMGF1Padding is RSA-OAEP with no hash (annotation log, Java decisions; guide); ECB is a JCA placeholder."
+  - id: gt-0043
+    file: src/main/java/bench/RsaOaep.java
+    lines: [18, 18]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: RsaOaep/keyPair
+  - id: gt-0044
+    file: src/main/java/bench/RsaSignature.java
+    lines: [12, 12]
+    anchors: [[10, 10]]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    object: RsaSignature/keyPair
+  - id: gt-0060
+    file: src/main/java/bench/RsaSignature.java
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0045
+    file: src/main/java/bench/RsaSignature.java
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: RsaSignature/keyPair
+  - id: gt-0046
+    file: src/main/java/bench/RsaSignature.java
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: RsaSignature/keyPair
+  - id: gt-0047
+    file: src/main/java/bench/Sha256.java
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "md.digest on line 10 is a follow-up."
+  - id: gt-0048
+    file: src/main/java/bench/Sha3.java
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA3-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0049
+    file: src/main/java/bench/TlsContext.java
+    lines: [9, 9]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "SSLContext.getInstance(\"TLSv1.3\"); init, createSSLEngine and setEnabledProtocols configure or attach and are not assets. The engine never connects."
+  - id: gt-0050
+    file: src/main/java/bench/X25519Agreement.java
+    lines: [11, 11]
+    anchors: [[10, 10]]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: X25519Agreement/alice
+    notes: "Two key pairs from one generator: two key generations, one per call."
+  - id: gt-0061
+    file: src/main/java/bench/X25519Agreement.java
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0051
+    file: src/main/java/bench/X25519Agreement.java
+    lines: [12, 12]
+    anchors: [[10, 10]]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: X25519Agreement/bob
+  - id: gt-0062
+    file: src/main/java/bench/X25519Agreement.java
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0052
+    file: src/main/java/bench/X25519Agreement.java
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: X25519Agreement/alice
+    notes: "init with alice's private key: the agreement acts on alice's key (guide, derived keys)."
+  - id: gt-0053
+    file: src/main/java/bench/X25519Agreement.java
+    lines: [17, 17]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: the second annotation also made generateSecret() a key-agree asset. Kept as the shared-secret only: KeyAgreement.getInstance creates the key-agreement object, which is the algorithm asset (guide, creating a key-agreement object), and generateSecret is its follow-up that returns the shared secret."
+  - id: gt-0054
+    file: src/main/java/bench/X25519Agreement.java
+    lines: [19, 19]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: X25519Agreement/bob
+  - id: gt-0055
+    file: src/main/java/bench/X25519Agreement.java
+    lines: [22, 22]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: the second annotation also made generateSecret() a key-agree asset. Kept as the shared-secret only: KeyAgreement.getInstance creates the key-agreement object, which is the algorithm asset (guide, creating a key-agreement object), and generateSecret is its follow-up that returns the shared secret."

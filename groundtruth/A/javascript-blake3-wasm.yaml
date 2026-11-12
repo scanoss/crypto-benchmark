@@ -1,0 +1,60 @@
+schema_version: "1"
+entry: javascript-blake3-wasm
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: derive-key/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Key material for the KDF: a drbg draw only."
+  - id: gt-0002
+    file: derive-key/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: BLAKE3
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "BLAKE3 in derive-key mode is a KDF."
+  - id: gt-0003
+    file: hash/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: BLAKE3
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: hash/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: BLAKE3
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0005
+    file: keyed-hash/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0006
+    file: keyed-hash/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: BLAKE3
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "BLAKE3 in keyed mode is a MAC; the algorithm is still BLAKE3."

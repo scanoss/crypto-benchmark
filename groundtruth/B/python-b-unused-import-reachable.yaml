@@ -1,0 +1,23 @@
+schema_version: "1"
+entry: python-b-unused-import-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:pypi/cbench-unused-import-liba@1.0.0
+    - pkg:pypi/cbench-unused-import-libb@1.0.0
+assets:
+  - id: gt-0001
+    file: libb/__init__.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: dependency
+    component: pkg:pypi/cbench-unused-import-libb@1.0.0
+    reachable: true
+    depth: 2
+    distance: 2
+    path:
+      - "main.main"
+      - "liba.fingerprint"
+      - "libb.digest"

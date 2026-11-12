@@ -1,0 +1,20 @@
+schema_version: "1"
+entry: javascript-b-dispatch-unreachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:npm/cbench-dispatch-liba@1.0.0
+    - pkg:npm/cbench-dispatch-libb@1.0.0
+assets:
+  - id: gt-0001
+    file: index.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: dependency
+    component: pkg:npm/cbench-dispatch-libb@1.0.0
+    reachable: false
+    depth: 2
+    distance: 2
+    notes: "Reached through a method call on the Hasher subclass instance that liba.standard() returns. Unreachable because main asks liba for its non-crypto implementation instead of the libb-backed one."

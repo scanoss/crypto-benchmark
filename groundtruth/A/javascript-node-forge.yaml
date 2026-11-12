@@ -1,0 +1,484 @@
+schema_version: "1"
+entry: javascript-node-forge
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: aes-cbc/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: aes-cbc/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: aes-cbc/main.js
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: aes-cbc/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+      padding: PKCS7
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes-cbc/key
+    notes: "Padding: the library pads with PKCS#7 unless the program turns it off, and this call leaves the default, so the API fixes PKCS7 (guide, parameters; the same reading as pyotp's default SHA-1)."
+  - id: gt-0005
+    file: aes-cbc/main.js
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+      padding: PKCS7
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes-cbc/key
+    notes: "Padding: the library pads with PKCS#7 unless the program turns it off, and this call leaves the default, so the API fixes PKCS7 (guide, parameters; the same reading as pyotp's default SHA-1)."
+  - id: gt-0006
+    file: aes-gcm/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0007
+    file: aes-gcm/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: aes-gcm/main.js
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Passed as start({ iv }), so its material type is initialization-vector (guide, material type)."
+  - id: gt-0009
+    file: aes-gcm/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes-gcm/key
+  - id: gt-0010
+    file: aes-gcm/main.js
+    lines: [13, 13]
+    asset_type: related-crypto-material
+    material_type: tag
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Reading cipher.mode.tag returns the GCM tag separately from the ciphertext, like cryptography's encryptor.tag (guide, tag)."
+  - id: gt-0011
+    file: aes-gcm/main.js
+    lines: [15, 15]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes-gcm/key
+  - id: gt-0012
+    file: ed25519/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/privateKey
+  - id: gt-0044
+    file: ed25519/main.js
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0013
+    file: ed25519/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/privateKey
+  - id: gt-0014
+    file: ed25519/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/privateKey
+  - id: gt-0015
+    file: hmac-sha256/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0016
+    file: hmac-sha256/main.js
+    lines: [6, 6]
+    anchors: [[5, 5]]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "forge.hmac.create() names no algorithm; start() is the call that fixes HMAC with SHA-256, so it is the asset."
+  - id: gt-0017
+    file: pbkdf2/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0018
+    file: pbkdf2/main.js
+    lines: [4, 4]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0019
+    file: pbkdf2/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0020
+    file: rng/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0021
+    file: rng/main.js
+    lines: [5, 8]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0022
+    file: rsa-keys/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "No primitive: the program only serializes and parses the keys."
+  - id: gt-0045
+    file: rsa-keys/main.js
+    lines: [4, 4]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0023
+    file: rsa-keys/main.js
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-keys/privatePem
+  - id: gt-0024
+    file: rsa-keys/main.js
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-keys/privatePem
+  - id: gt-0025
+    file: rsa-keys/main.js
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-keys/privatePem
+  - id: gt-0026
+    file: rsa-keys/main.js
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-keys/privatePem
+  - id: gt-0027
+    file: rsa-oaep/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-oaep/keys
+  - id: gt-0046
+    file: rsa-oaep/main.js
+    lines: [4, 4]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0028
+    file: rsa-oaep/main.js
+    lines: [5, 8]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-oaep/keys
+    notes: "The md objects inside the options are algorithm specifications; RSA-OAEP carries no hash (guide, hash)."
+  - id: gt-0029
+    file: rsa-oaep/main.js
+    lines: [9, 12]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-oaep/keys
+  - id: gt-0030
+    file: rsa-pss/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-pss/keys
+  - id: gt-0047
+    file: rsa-pss/main.js
+    lines: [4, 4]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0031
+    file: rsa-pss/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0032
+    file: rsa-pss/main.js
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA-PSS
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-pss/keys
+    notes: "forge.pss.create(...) is an algorithm specification that computes nothing; it is a parameter of sign and verify (guide, not assets)."
+  - id: gt-0033
+    file: rsa-pss/main.js
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA-PSS
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-pss/keys
+  - id: gt-0034
+    file: rsa-sign/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-sign/keys
+  - id: gt-0048
+    file: rsa-sign/main.js
+    lines: [4, 4]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0035
+    file: rsa-sign/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "A digest the program computes and passes to sign and verify (guide, digest passed on)."
+  - id: gt-0036
+    file: rsa-sign/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-sign/keys
+    notes: "sign defaults to RSASSA-PKCS1-v1_5 and receives the SHA-256 digest computed in the same function (guide, hash)."
+  - id: gt-0037
+    file: rsa-sign/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-sign/keys
+  - id: gt-0038
+    file: sha256/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0039
+    file: tls-client/main.js
+    lines: [5, 17]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0040
+    file: x509-cert/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0049
+    file: x509-cert/main.js
+    lines: [4, 4]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0041
+    file: x509-cert/main.js
+    lines: [7, 16]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: x509-cert/cert
+    notes: "Building the certificate is one asset, from createCertificate() to cert.sign(), as a builder chain is (guide, building a certificate). forge builds it in statements, so the range spans them; the SHA-256 RSA signature inside is part of it. Re-derivation: the second annotation put the certificate on line 7 only and added an RSA PKCS1v15 SHA-256 signature asset for cert.sign on line 16. Kept as one asset: the guide counts the whole build, sign included, as one certificate asset, and the range keeps both lines a tool might report."
+  - id: gt-0042
+    file: x509-cert/main.js
+    lines: [18, 18]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: x509-cert/cert
+  - id: gt-0043
+    file: x509-cert/main.js
+    lines: [19, 19]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: x509-cert/cert

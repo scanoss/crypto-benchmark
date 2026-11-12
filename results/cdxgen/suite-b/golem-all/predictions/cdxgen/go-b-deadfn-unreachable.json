@@ -1,0 +1,70 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "go-b-deadfn-unreachable",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "codec.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "hmacSHA",
+      "origin": "dependency",
+      "component": "pkg:golang/example.com/cbench/deadfn/libb",
+      "reachable": "unknown"
+    },
+    {
+      "file": "codec.go",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "dependency",
+      "component": "pkg:golang/example.com/cbench/deadfn/libb",
+      "reachable": "unknown"
+    },
+    {
+      "file": "codec.go",
+      "lines": [
+        26,
+        26
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-1",
+      "origin": "dependency",
+      "component": "pkg:golang/example.com/cbench/deadfn/libb",
+      "reachable": "unknown"
+    },
+    {
+      "file": "codec.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "dependency",
+      "component": "pkg:golang/example.com/cbench/deadfn/libb",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "1",
+    "locations_dropped": "4"
+  }
+}

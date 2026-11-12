@@ -1,0 +1,71 @@
+schema_version: "1"
+entry: javascript-selfsigned
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: ec-cert/main.js
+    lines: [4, 8]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: ec-cert/main.js
+    lines: [4, 8]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: the first annotation gave no primitive because the program only stores the returned key; changed to the second annotation's signature, because the same call uses the key to sign the certificate it returns."
+  - id: gt-0006
+    file: ec-cert/main.js
+    lines: [4, 8]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0003
+    file: rsa-cert/main.js
+    lines: [6, 10]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-cert/pems
+    notes: "generate builds the certificate and generates its RSA key pair, which it returns to the program: two assets on the same lines."
+  - id: gt-0004
+    file: rsa-cert/main.js
+    lines: [6, 10]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: the first annotation gave no primitive because the program only stores the returned key; changed to the second annotation's signature, because the same call uses the key to sign the certificate it returns. generate also returns a SHA-1 fingerprint the program never reads, so no digest asset."
+  - id: gt-0007
+    file: rsa-cert/main.js
+    lines: [6, 10]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0005
+    file: rsa-cert/main.js
+    lines: [11, 11]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa-cert/pems

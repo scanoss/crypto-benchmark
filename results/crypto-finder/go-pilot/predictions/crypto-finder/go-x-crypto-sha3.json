@@ -1,0 +1,84 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "go-x-crypto-sha3",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "hash/main.go",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-3-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "hash/main.go",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-3-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "hash/main.go",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "Keccak-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "hash/main.go",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "algorithm",
+      "primitive": "xof",
+      "algorithm": "SHAKE-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

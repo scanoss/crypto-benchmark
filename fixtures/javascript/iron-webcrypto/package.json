@@ -1,0 +1,9 @@
+{
+  "name": "crypto-benchmark-iron-webcrypto",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "iron-webcrypto": "2.0.0"
+  }
+}

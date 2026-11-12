@@ -1,0 +1,20 @@
+schema_version: "1"
+entry: java-b-handler-spring-unreachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:maven/org.cbench.handlerspring/liba@1.0.0
+    - pkg:maven/org.cbench.handlerspring/libb@1.0.0
+assets:
+  - id: gt-0001
+    file: org/cbench/handlerspring/libb/Digests.java
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: dependency
+    component: pkg:maven/org.cbench.handlerspring/libb@1.0.0
+    reachable: false
+    depth: 2
+    distance: 2
+    notes: "Unreachable because FingerprintController carries no @RestController or mapping annotation, so Spring never registers it, and nothing else calls fingerprint."

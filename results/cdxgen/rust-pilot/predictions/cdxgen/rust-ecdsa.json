@@ -1,0 +1,102 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "rust-ecdsa",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "src/bin/key_bytes.rs",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "secret_bytes",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/k256_sign.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "signing_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/key_bytes.rs",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "signing_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/p256_sign.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "signing_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/p256_sign.rs",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "verifying_key_bytes",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/k256_sign.rs",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "verifying_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/p256_sign.rs",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "verifying_key",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

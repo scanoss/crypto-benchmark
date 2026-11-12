@@ -1,0 +1,24 @@
+schema_version: "1"
+entry: go-x-crypto-bcrypt
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: hash-verify/main.go
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The cost 12 is not a key size. bcrypt draws its salt itself and keeps it in the hash string, so no salt asset."
+  - id: gt-0002
+    file: hash-verify/main.go
+    lines: [15, 15]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0

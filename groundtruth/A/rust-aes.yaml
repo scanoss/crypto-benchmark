@@ -1,0 +1,46 @@
+schema_version: "1"
+entry: rust-aes
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/bin/aes128.rs
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: src/bin/aes128.rs
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 128
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: src/bin/aes192.rs
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 192
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: src/bin/aes256.rs
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0

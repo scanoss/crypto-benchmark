@@ -1,0 +1,50 @@
+schema_version: "1"
+entry: python-argon2-cffi
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: password-hasher/main.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: Argon2id
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "PasswordHasher() defaults to Argon2id; ph.hash and ph.verify are follow-up calls on it."
+  - id: gt-0002
+    file: raw/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0005
+    file: raw/main.py
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: agreed. The os.urandom(16) draw is also the drbg asset on this line."
+  - id: gt-0003
+    file: raw/main.py
+    lines: [10, 12]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: Argon2id
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: raw/main.py
+    lines: [13, 15]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: Argon2id
+    origin: project
+    reachable: true
+    depth: 0

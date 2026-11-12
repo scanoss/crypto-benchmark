@@ -1,0 +1,370 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "java-bcpg-jdk15on",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "src/main/java/bench/PgpEncrypt.java",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "algorithm",
+      "primitive": "other",
+      "algorithm": "RSA",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpEncrypt.java",
+      "lines": [
+        32,
+        32
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpEncrypt.java",
+      "lines": [
+        42,
+        42
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpEncrypt.java",
+      "lines": [
+        46,
+        46
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpEncrypt.java",
+      "lines": [
+        55,
+        55
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "parameters": {
+        "mode": "cfb"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpEncrypt.java",
+      "lines": [
+        56,
+        56
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpKeyRing.java",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "algorithm",
+      "primitive": "other",
+      "algorithm": "RSA",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpKeyRing.java",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpKeyRing.java",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "algorithm",
+      "primitive": "other",
+      "algorithm": "RSA",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpKeyRing.java",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpKeyRing.java",
+      "lines": [
+        33,
+        33
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpKeyRing.java",
+      "lines": [
+        36,
+        36
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpKeyRing.java",
+      "lines": [
+        37,
+        37
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "OpenPGP-S2K",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpKeyRing.java",
+      "lines": [
+        44,
+        44
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpKeyRing.java",
+      "lines": [
+        47,
+        47
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpKeyRing.java",
+      "lines": [
+        37,
+        37
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES-256-CFB",
+      "parameters": {
+        "mode": "cfb",
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpPassword.java",
+      "lines": [
+        36,
+        36
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpPassword.java",
+      "lines": [
+        40,
+        40
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "OpenPGP-S2K",
+      "parameters": {
+        "hash": "SHA-1"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpPassword.java",
+      "lines": [
+        49,
+        49
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "parameters": {
+        "mode": "cfb"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpPassword.java",
+      "lines": [
+        50,
+        50
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "OpenPGP-S2K",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpSign.java",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "algorithm",
+      "primitive": "other",
+      "algorithm": "RSA",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpSign.java",
+      "lines": [
+        25,
+        25
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpSign.java",
+      "lines": [
+        29,
+        29
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/PgpSign.java",
+      "lines": [
+        36,
+        36
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

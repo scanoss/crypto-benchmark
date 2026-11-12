@@ -1,0 +1,190 @@
+schema_version: "1"
+entry: go-golang-jwt-v5
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: hs256/main.go
+    lines: [13, 13]
+    anchors: [[12, 12]]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hs256/secret
+    notes: "SignedString performs the signature with the key. NewWithClaims on the line above only records the method (an algorithm specification) and computes nothing, so the asset is SignedString with the algorithm the token's method fixes. The HMAC key is a literal, so no key generation."
+  - id: gt-0002
+    file: hs256/main.go
+    lines: [18, 20]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hs256/secret
+    notes: "jwt.WithValidMethods([\"HS256\"]) names the algorithm, so HS256 fixes HMAC with SHA-256."
+  - id: gt-0003
+    file: rs256/main.go
+    lines: [15, 15]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    object: rs256/privateKey
+  - id: gt-0014
+    file: rs256/main.go
+    lines: [15, 15]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0004
+    file: rs256/main.go
+    lines: [19, 19]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: rs256/keyPEM
+    notes: "x509.MarshalPKCS1PrivateKey nested in pem.EncodeToMemory."
+  - id: gt-0005
+    file: rs256/main.go
+    lines: [20, 20]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: rs256/keyPEM
+    notes: "jwt.ParseRSAPrivateKeyFromPEM parses the PEM the program serialized; the parsed key signs, so the algorithm object is the generated key."
+  - id: gt-0006
+    file: rs256/main.go
+    lines: [27, 27]
+    anchors: [[26, 26]]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rs256/privateKey
+    notes: "SignedString performs the signature with the key. NewWithClaims on the line above only records the method (an algorithm specification) and computes nothing, so the asset is SignedString with the algorithm the token's method fixes."
+  - id: gt-0007
+    file: rs256/main.go
+    lines: [32, 34]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rs256/privateKey
+    notes: "jwt.WithValidMethods([\"RS256\"]) names the algorithm."
+  - id: gt-0008
+    file: es256/main.go
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: es256/privateKey
+  - id: gt-0015
+    file: es256/main.go
+    lines: [13, 13]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0009
+    file: es256/main.go
+    lines: [18, 18]
+    anchors: [[17, 17]]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: es256/privateKey
+    notes: "SignedString performs the signature with the key. NewWithClaims on the line above only records the method (an algorithm specification) and computes nothing, so the asset is SignedString with the algorithm the token's method fixes."
+  - id: gt-0010
+    file: es256/main.go
+    lines: [23, 25]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: es256/privateKey
+  - id: gt-0011
+    file: eddsa/main.go
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: eddsa/privateKey
+  - id: gt-0016
+    file: eddsa/main.go
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0012
+    file: eddsa/main.go
+    lines: [17, 17]
+    anchors: [[16, 16]]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: eddsa/privateKey
+    notes: "SignedString performs the signature with the key. NewWithClaims on the line above only records the method (an algorithm specification) and computes nothing, so the asset is SignedString with the algorithm the token's method fixes. EdDSA with an Ed25519 key is Ed25519."
+  - id: gt-0013
+    file: eddsa/main.go
+    lines: [22, 24]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: eddsa/privateKey

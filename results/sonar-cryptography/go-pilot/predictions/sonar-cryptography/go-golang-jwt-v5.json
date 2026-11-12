@@ -1,0 +1,99 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "sonar-cryptography",
+    "version": "1.7.0"
+  },
+  "entry": "go-golang-jwt-v5",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "eddsa/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "parameters": {
+        "curve": "Edwards25519"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rs256/main.go",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-2048",
+      "parameters": {
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "es256/main.go",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "eddsa/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "eddsa/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "es256/main.go",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

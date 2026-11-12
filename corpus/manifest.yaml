@@ -1,0 +1,1286 @@
+schema_version: "1"
+entries:
+  - id: python-stdlib
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/stdlib
+    notes: "Suite A library coverage: Python standard library crypto (hashlib, hmac, secrets, ssl) on CPython 3.12."
+  - id: python-cryptography
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/cryptography
+    notes: "Suite A library coverage: cryptography==50.0.2, one program per primitive."
+  - id: python-pyjwt
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/pyjwt
+    notes: "Suite A library coverage: PyJWT==2.15.1, one program per primitive."
+  - id: python-truststore
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/truststore
+    notes: "Suite A library coverage: truststore==0.10.5, one program per primitive."
+  - id: python-rsa
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/rsa
+    notes: "Suite A library coverage: rsa==4.9.1, one program per primitive."
+  - id: python-pyopenssl
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/pyopenssl
+    notes: "Suite A library coverage: pyOpenSSL==26.4.0, one program per primitive."
+  - id: python-pynacl
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/pynacl
+    notes: "Suite A library coverage: PyNaCl==1.6.2, one program per primitive."
+  - id: python-bcrypt
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/bcrypt
+    notes: "Suite A library coverage: bcrypt==5.0.0, one program per primitive."
+  - id: python-paramiko
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/paramiko
+    notes: "Suite A library coverage: paramiko==5.1.0, one program per primitive."
+  - id: python-joserfc
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/joserfc
+    notes: "Suite A library coverage: joserfc==1.8.0, one program per primitive."
+  - id: python-pycryptodome
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/pycryptodome
+    notes: "Suite A library coverage: pycryptodome==4.3.0, one program per primitive."
+  - id: python-argon2-cffi
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/argon2-cffi
+    notes: "Suite A library coverage: argon2-cffi==25.1.0, one program per primitive."
+  - id: python-ecdsa
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/ecdsa
+    notes: "Suite A library coverage: ecdsa==0.19.2, one program per primitive."
+  - id: python-python-jose
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/python-jose
+    notes: "Suite A library coverage: python-jose[cryptography]==3.5.0, one program per primitive."
+  - id: python-passlib
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/passlib
+    notes: "Suite A library coverage: passlib==1.7.4, one program per primitive."
+  - id: python-pyotp
+    language: python
+    suite: A
+    split: dev
+    path: fixtures/python/pyotp
+    notes: "Suite A library coverage: pyotp==2.10.0, one program per primitive."
+  - id: javascript-stdlib
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/stdlib
+    notes: "Suite A library coverage: Node.js standard library crypto (node:crypto and WebCrypto) on Node.js 24."
+  - id: javascript-jose
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/jose
+    notes: "Suite A library coverage: jose@6.2.15, one program per primitive."
+  - id: javascript-noble-hashes
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/noble-hashes
+    notes: "Suite A library coverage: @noble/hashes@2.4.0, one program per primitive."
+  - id: javascript-jwa
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/jwa
+    notes: "Suite A library coverage: jwa@2.0.1, one program per primitive."
+  - id: javascript-jsonwebtoken
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/jsonwebtoken
+    notes: "Suite A library coverage: jsonwebtoken@9.0.3, one program per primitive."
+  - id: javascript-noble-ciphers
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/noble-ciphers
+    notes: "Suite A library coverage: @noble/ciphers@2.4.0, one program per primitive."
+  - id: javascript-node-forge
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/node-forge
+    notes: "Suite A library coverage: node-forge@1.4.3, one program per primitive."
+  - id: javascript-fast-sha256
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/fast-sha256
+    notes: "Suite A library coverage: fast-sha256@1.3.0, one program per primitive."
+  - id: javascript-tweetnacl
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/tweetnacl
+    notes: "Suite A library coverage: tweetnacl@1.0.3, one program per primitive."
+  - id: javascript-noble-curves
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/noble-curves
+    notes: "Suite A library coverage: @noble/curves@2.4.0, one program per primitive."
+  - id: javascript-crypto-random-string
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/crypto-random-string
+    notes: "Suite A library coverage: crypto-random-string@6.0.0, one program per primitive."
+  - id: javascript-blake3-wasm
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/blake3-wasm
+    notes: "Suite A library coverage: blake3-wasm@2.1.5 (3.0.0 cannot be installed: its dependency @c4312/blake3-internal@2.1.7 is not on the npm registry), one program per primitive."
+  - id: javascript-hash-js
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/hash-js
+    notes: "Suite A library coverage: hash.js@1.1.7, one program per primitive."
+  - id: javascript-selfsigned
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/selfsigned
+    notes: "Suite A library coverage: selfsigned@5.5.0, one program per primitive."
+  - id: javascript-peculiar-x509
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/peculiar-x509
+    notes: "Suite A library coverage: @peculiar/x509@3.1.0 with reflect-metadata@0.2.2, one program per primitive."
+  - id: javascript-iron-webcrypto
+    language: javascript
+    suite: A
+    split: dev
+    path: fixtures/javascript/iron-webcrypto
+    notes: "Suite A library coverage: iron-webcrypto@2.0.0, one program per primitive."
+  - id: go-stdlib
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/stdlib
+    notes: "Suite A library coverage: Go standard library crypto (crypto/aes, cipher, des, rc4, sha256, sha512, sha3, md5, sha1, hmac, hkdf, pbkdf2, rand, rsa, ecdsa, ed25519, ecdh, mlkem, tls, x509) on Go 1.26.0, one program per primitive."
+  - id: go-x-crypto-bcrypt
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/x-crypto-bcrypt
+    notes: "Suite A library coverage: golang.org/x/crypto/bcrypt at golang.org/x/crypto v0.58.0, one program per primitive."
+  - id: go-dgrijalva-jwt-go
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/dgrijalva-jwt-go
+    notes: "Suite A library coverage: github.com/dgrijalva/jwt-go v3.2.0+incompatible (archived), one program per primitive."
+  - id: go-go-ethereum-crypto
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/go-ethereum-crypto
+    notes: "Suite A library coverage: github.com/ethereum/go-ethereum/crypto at go-ethereum v1.17.10, one program per primitive."
+  - id: go-x-crypto-ssh
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/x-crypto-ssh
+    notes: "Suite A library coverage: golang.org/x/crypto/ssh at golang.org/x/crypto v0.58.0, one program per primitive."
+  - id: go-x-crypto-sha3
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/x-crypto-sha3
+    notes: "Suite A library coverage: golang.org/x/crypto/sha3 at golang.org/x/crypto v0.58.0, one program per primitive."
+  - id: go-golang-jwt-v5
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/golang-jwt-v5
+    notes: "Suite A library coverage: github.com/golang-jwt/jwt/v5 v5.3.1, one program per primitive."
+  - id: go-x-crypto-pbkdf2
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/x-crypto-pbkdf2
+    notes: "Suite A library coverage: golang.org/x/crypto/pbkdf2 at golang.org/x/crypto v0.58.0, one program per primitive."
+  - id: go-x-crypto-ripemd160
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/x-crypto-ripemd160
+    notes: "Suite A library coverage: golang.org/x/crypto/ripemd160 at golang.org/x/crypto v0.58.0, one program per primitive."
+  - id: go-x-crypto-chacha20poly1305
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/x-crypto-chacha20poly1305
+    notes: "Suite A library coverage: golang.org/x/crypto/chacha20poly1305 at golang.org/x/crypto v0.58.0, one program per primitive."
+  - id: go-x-crypto-hkdf
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/x-crypto-hkdf
+    notes: "Suite A library coverage: golang.org/x/crypto/hkdf at golang.org/x/crypto v0.58.0, one program per primitive."
+  - id: go-x-crypto-blake2b
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/x-crypto-blake2b
+    notes: "Suite A library coverage: golang.org/x/crypto/blake2b at golang.org/x/crypto v0.58.0, one program per primitive."
+  - id: go-x-crypto-scrypt
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/x-crypto-scrypt
+    notes: "Suite A library coverage: golang.org/x/crypto/scrypt at golang.org/x/crypto v0.58.0, one program per primitive."
+  - id: go-x-crypto-ssh-agent
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/x-crypto-ssh-agent
+    notes: "Suite A library coverage: golang.org/x/crypto/ssh/agent at golang.org/x/crypto v0.58.0, one program per primitive."
+  - id: go-x-crypto-acme-autocert
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/x-crypto-acme-autocert
+    notes: "Suite A library coverage: golang.org/x/crypto/acme/autocert, Manager configuration only (issuance needs the network) at golang.org/x/crypto v0.58.0, one program per primitive."
+  - id: go-x-crypto-curve25519
+    language: go
+    suite: A
+    split: dev
+    path: fixtures/go/x-crypto-curve25519
+    notes: "Suite A library coverage: golang.org/x/crypto/curve25519 at golang.org/x/crypto v0.58.0, one program per primitive."
+  - id: rust-aes
+    language: rust
+    suite: A
+    split: dev
+    path: fixtures/rust/aes
+    notes: "Suite A library coverage: aes 0.9.4, one program per primitive (with getrandom 0.4.3)."
+  - id: rust-chacha20
+    language: rust
+    suite: A
+    split: dev
+    path: fixtures/rust/chacha20
+    notes: "Suite A library coverage: chacha20 0.10.2, one program per primitive (with getrandom 0.4.3)."
+  - id: rust-curve25519-dalek
+    language: rust
+    suite: A
+    split: dev
+    path: fixtures/rust/curve25519-dalek
+    notes: "Suite A library coverage: curve25519-dalek 5.0.0, one program per primitive (with sha2 0.11.1, getrandom 0.4.3)."
+  - id: rust-ecdsa
+    language: rust
+    suite: A
+    split: dev
+    path: fixtures/rust/ecdsa
+    notes: "Suite A library coverage: ecdsa 0.17.0, one program per primitive (with p256 0.14.0, k256 0.14.0)."
+  - id: rust-hkdf
+    language: rust
+    suite: A
+    split: dev
+    path: fixtures/rust/hkdf
+    notes: "Suite A library coverage: hkdf 0.13.0, one program per primitive (with sha2 0.11.1, hex-literal 1.1.0)."
+  - id: rust-hmac
+    language: rust
+    suite: A
+    split: dev
+    path: fixtures/rust/hmac
+    notes: "Suite A library coverage: hmac 0.13.0, one program per primitive (with sha2 0.11.1, sha1 0.11.0)."
+  - id: rust-md-5
+    language: rust
+    suite: A
+    split: dev
+    path: fixtures/rust/md-5
+    notes: "Suite A library coverage: md-5 0.11.0, one program per primitive."
+  - id: rust-openssl
+    language: rust
+    suite: A
+    split: dev
+    path: fixtures/rust/openssl
+    notes: "Suite A library coverage: openssl 0.10.82, one program per primitive."
+  - id: rust-ring
+    language: rust
+    suite: A
+    split: dev
+    path: fixtures/rust/ring
+    notes: "Suite A library coverage: ring 0.17.14, one program per primitive."
+  - id: rust-rustls-webpki
+    language: rust
+    suite: A
+    split: dev
+    path: fixtures/rust/rustls-webpki
+    notes: "Suite A library coverage: rustls-webpki 0.103.16, one program per primitive (with rustls-pki-types 1.15.1, ring 0.17.14)."
+  - id: rust-rustls
+    language: rust
+    suite: A
+    split: dev
+    path: fixtures/rust/rustls
+    notes: "Suite A library coverage: rustls 0.23.46, one program per primitive (with webpki-roots 1.0.11)."
+  - id: rust-sha1
+    language: rust
+    suite: A
+    split: dev
+    path: fixtures/rust/sha1
+    notes: "Suite A library coverage: sha1 0.11.0, one program per primitive."
+  - id: rust-sha2
+    language: rust
+    suite: A
+    split: dev
+    path: fixtures/rust/sha2
+    notes: "Suite A library coverage: sha2 0.11.1, one program per primitive."
+  - id: rust-siphasher
+    language: rust
+    suite: A
+    split: dev
+    path: fixtures/rust/siphasher
+    notes: "Suite A library coverage: siphasher 1.0.4, one program per primitive."
+  - id: rust-tokio-rustls
+    language: rust
+    suite: A
+    split: dev
+    path: fixtures/rust/tokio-rustls
+    notes: "Suite A library coverage: tokio-rustls 0.26.6, one program per primitive (with tokio 1.54.1, webpki-roots 1.0.11)."
+  - id: java-stdlib
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/stdlib
+    notes: "Suite A library coverage: JCA/JCE (java.security, javax.crypto, javax.net.ssl, java.security.cert) on JDK 21, one class per primitive."
+  - id: java-bcprov-jdk15on
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/bcprov-jdk15on
+    notes: "Suite A library coverage: org.bouncycastle:bcprov-jdk15on@1.70, the last release of this deprecated artifact, one class per primitive."
+  - id: java-bcpkix-jdk15on
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/bcpkix-jdk15on
+    notes: "Suite A library coverage: org.bouncycastle:bcpkix-jdk15on@1.70, the last release of this deprecated artifact, one class per primitive."
+  - id: java-bcpg-jdk15on
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/bcpg-jdk15on
+    notes: "Suite A library coverage: org.bouncycastle:bcpg-jdk15on@1.70, the last release of this deprecated artifact, one class per primitive."
+  - id: java-jsch
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/jsch
+    notes: "Suite A library coverage: com.jcraft:jsch@0.1.55, one class per primitive."
+  - id: java-spring-security-crypto
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/spring-security-crypto
+    notes: "Suite A library coverage: org.springframework.security:spring-security-crypto@7.1.2, the latest GA; the frozen list row names 7.2.0-RC1, a release candidate, one class per primitive."
+  - id: java-eddsa
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/eddsa
+    notes: "Suite A library coverage: net.i2p.crypto:eddsa@0.3.0, one class per primitive."
+  - id: java-jasypt
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/jasypt
+    notes: "Suite A library coverage: org.jasypt:jasypt@1.9.3, one class per primitive."
+  - id: java-jjwt-api
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/jjwt-api
+    notes: "Suite A library coverage: io.jsonwebtoken:jjwt-api@0.13.0 with jjwt-impl and jjwt-jackson 0.13.0, one class per primitive."
+  - id: java-jbcrypt
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/jbcrypt
+    notes: "Suite A library coverage: org.mindrot:jbcrypt@0.4, one class per primitive."
+  - id: java-nimbus-jose-jwt
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/nimbus-jose-jwt
+    notes: "Suite A library coverage: com.nimbusds:nimbus-jose-jwt@10.10, one class per primitive."
+  - id: java-jose4j
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/jose4j
+    notes: "Suite A library coverage: org.bitbucket.b_c:jose4j@0.9.7, one class per primitive."
+  - id: java-scrypt
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/scrypt
+    notes: "Suite A library coverage: com.lambdaworks:scrypt@1.4.0, one class per primitive."
+  - id: java-bcrypt
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/bcrypt
+    notes: "Suite A library coverage: at.favre.lib:bcrypt@0.10.2, one class per primitive."
+  - id: java-cryptography-core-jvm
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/cryptography-core-jvm
+    notes: "Suite A library coverage: dev.whyoleg.cryptography:cryptography-core-jvm@0.6.0 with cryptography-provider-jdk-jvm, called from Java, one class per primitive."
+  - id: java-xmlsec
+    language: java
+    suite: A
+    split: dev
+    path: fixtures/java/xmlsec
+    notes: "Suite A library coverage: org.apache.santuario:xmlsec@4.0.4, one class per primitive."
+  - id: go-b-direct-reachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/direct/app-reachable
+    pair: go-b-direct-unreachable
+    variant: reachable
+    scenario: direct
+    notes: "app -> liba, crypto in liba (a direct dependency, distance 1)."
+  - id: go-b-direct-unreachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/direct/app-unreachable
+    pair: go-b-direct-reachable
+    variant: unreachable
+    scenario: direct
+    notes: "app -> liba, crypto in liba (a direct dependency, distance 1). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: go-b-transitive-reachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/transitive/app-reachable
+    pair: go-b-transitive-unreachable
+    variant: reachable
+    scenario: transitive
+    notes: "app -> liba -> libb, crypto in libb (distance 2)."
+  - id: go-b-transitive-unreachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/transitive/app-unreachable
+    pair: go-b-transitive-reachable
+    variant: unreachable
+    scenario: transitive
+    notes: "app -> liba -> libb, crypto in libb (distance 2). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: go-b-depth3-reachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/depth3/app-reachable
+    pair: go-b-depth3-unreachable
+    variant: reachable
+    scenario: depth3
+    notes: "app -> liba -> libb -> libc, crypto in libc (distance 3)."
+  - id: go-b-depth3-unreachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/depth3/app-unreachable
+    pair: go-b-depth3-reachable
+    variant: unreachable
+    scenario: depth3
+    notes: "app -> liba -> libb -> libc, crypto in libc (distance 3). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: go-b-wrapper-reachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/wrapper/app-reachable
+    pair: go-b-wrapper-unreachable
+    variant: reachable
+    scenario: wrapper
+    notes: "app -> liba (two nested wrappers) -> libb (two nested wrappers) -> crypto in libb (distance 2)."
+  - id: go-b-wrapper-unreachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/wrapper/app-unreachable
+    pair: go-b-wrapper-reachable
+    variant: unreachable
+    scenario: wrapper
+    notes: "app -> liba (two nested wrappers) -> libb (two nested wrappers) -> crypto in libb (distance 2). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: go-b-dispatch-reachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/dispatch/app-reachable
+    pair: go-b-dispatch-unreachable
+    variant: reachable
+    scenario: dispatch
+    notes: "app calls an interface/trait/duck-typed method that liba declares; the implementation that runs the crypto lives in libb (distance 2)."
+  - id: go-b-dispatch-unreachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/dispatch/app-unreachable
+    pair: go-b-dispatch-reachable
+    variant: unreachable
+    scenario: dispatch
+    notes: "app calls an interface/trait/duck-typed method that liba declares; the implementation that runs the crypto lives in libb (distance 2). Unreachable variant: main asks liba for its non-crypto implementation instead of the libb-backed one."
+  - id: go-b-deadfn-reachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/deadfn/app-reachable
+    pair: go-b-deadfn-unreachable
+    variant: reachable
+    scenario: deadfn
+    notes: "one libb file holds a used crypto function, a non-crypto sibling and a crypto function nothing calls (distance 2)."
+  - id: go-b-deadfn-unreachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/deadfn/app-unreachable
+    pair: go-b-deadfn-reachable
+    variant: unreachable
+    scenario: deadfn
+    notes: "one libb file holds a used crypto function, a non-crypto sibling and a crypto function nothing calls (distance 2). Unreachable variant: main calls liba's non-crypto function, which calls the non-crypto sibling in the same libb file."
+  - id: go-b-unused-import-reachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/unused-import/app-reachable
+    pair: go-b-unused-import-unreachable
+    variant: reachable
+    scenario: unused-import
+    notes: "the app imports liba (which imports libb) but calls no crypto function (distance 2)."
+  - id: go-b-unused-import-unreachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/unused-import/app-unreachable
+    pair: go-b-unused-import-reachable
+    variant: unreachable
+    scenario: unused-import
+    notes: "the app imports liba (which imports libb) but calls no crypto function (distance 2). Unreachable variant: main only reads a constant of liba and calls nothing."
+  - id: python-b-direct-reachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/direct/app-reachable
+    pair: python-b-direct-unreachable
+    variant: reachable
+    scenario: direct
+    notes: "app -> liba, crypto in liba (a direct dependency, distance 1)."
+  - id: python-b-direct-unreachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/direct/app-unreachable
+    pair: python-b-direct-reachable
+    variant: unreachable
+    scenario: direct
+    notes: "app -> liba, crypto in liba (a direct dependency, distance 1). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: python-b-transitive-reachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/transitive/app-reachable
+    pair: python-b-transitive-unreachable
+    variant: reachable
+    scenario: transitive
+    notes: "app -> liba -> libb, crypto in libb (distance 2)."
+  - id: python-b-transitive-unreachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/transitive/app-unreachable
+    pair: python-b-transitive-reachable
+    variant: unreachable
+    scenario: transitive
+    notes: "app -> liba -> libb, crypto in libb (distance 2). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: python-b-depth3-reachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/depth3/app-reachable
+    pair: python-b-depth3-unreachable
+    variant: reachable
+    scenario: depth3
+    notes: "app -> liba -> libb -> libc, crypto in libc (distance 3)."
+  - id: python-b-depth3-unreachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/depth3/app-unreachable
+    pair: python-b-depth3-reachable
+    variant: unreachable
+    scenario: depth3
+    notes: "app -> liba -> libb -> libc, crypto in libc (distance 3). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: python-b-wrapper-reachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/wrapper/app-reachable
+    pair: python-b-wrapper-unreachable
+    variant: reachable
+    scenario: wrapper
+    notes: "app -> liba (two nested wrappers) -> libb (two nested wrappers) -> crypto in libb (distance 2)."
+  - id: python-b-wrapper-unreachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/wrapper/app-unreachable
+    pair: python-b-wrapper-reachable
+    variant: unreachable
+    scenario: wrapper
+    notes: "app -> liba (two nested wrappers) -> libb (two nested wrappers) -> crypto in libb (distance 2). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: python-b-dispatch-reachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/dispatch/app-reachable
+    pair: python-b-dispatch-unreachable
+    variant: reachable
+    scenario: dispatch
+    notes: "app calls an interface/trait/duck-typed method that liba declares; the implementation that runs the crypto lives in libb (distance 2)."
+  - id: python-b-dispatch-unreachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/dispatch/app-unreachable
+    pair: python-b-dispatch-reachable
+    variant: unreachable
+    scenario: dispatch
+    notes: "app calls an interface/trait/duck-typed method that liba declares; the implementation that runs the crypto lives in libb (distance 2). Unreachable variant: main asks liba for its non-crypto implementation instead of the libb-backed one."
+  - id: python-b-deadfn-reachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/deadfn/app-reachable
+    pair: python-b-deadfn-unreachable
+    variant: reachable
+    scenario: deadfn
+    notes: "one libb file holds a used crypto function, a non-crypto sibling and a crypto function nothing calls (distance 2)."
+  - id: python-b-deadfn-unreachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/deadfn/app-unreachable
+    pair: python-b-deadfn-reachable
+    variant: unreachable
+    scenario: deadfn
+    notes: "one libb file holds a used crypto function, a non-crypto sibling and a crypto function nothing calls (distance 2). Unreachable variant: main calls liba's non-crypto function, which calls the non-crypto sibling in the same libb file."
+  - id: python-b-unused-import-reachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/unused-import/app-reachable
+    pair: python-b-unused-import-unreachable
+    variant: reachable
+    scenario: unused-import
+    notes: "the app imports liba (which imports libb) but calls no crypto function (distance 2)."
+  - id: python-b-unused-import-unreachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/unused-import/app-unreachable
+    pair: python-b-unused-import-reachable
+    variant: unreachable
+    scenario: unused-import
+    notes: "the app imports liba (which imports libb) but calls no crypto function (distance 2). Unreachable variant: main only reads a constant of liba and calls nothing."
+  - id: java-b-direct-reachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/direct/app-reachable
+    pair: java-b-direct-unreachable
+    variant: reachable
+    scenario: direct
+    notes: "app -> liba, crypto in liba (a direct dependency, distance 1)."
+  - id: java-b-direct-unreachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/direct/app-unreachable
+    pair: java-b-direct-reachable
+    variant: unreachable
+    scenario: direct
+    notes: "app -> liba, crypto in liba (a direct dependency, distance 1). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: java-b-transitive-reachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/transitive/app-reachable
+    pair: java-b-transitive-unreachable
+    variant: reachable
+    scenario: transitive
+    notes: "app -> liba -> libb, crypto in libb (distance 2)."
+  - id: java-b-transitive-unreachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/transitive/app-unreachable
+    pair: java-b-transitive-reachable
+    variant: unreachable
+    scenario: transitive
+    notes: "app -> liba -> libb, crypto in libb (distance 2). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: java-b-depth3-reachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/depth3/app-reachable
+    pair: java-b-depth3-unreachable
+    variant: reachable
+    scenario: depth3
+    notes: "app -> liba -> libb -> libc, crypto in libc (distance 3)."
+  - id: java-b-depth3-unreachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/depth3/app-unreachable
+    pair: java-b-depth3-reachable
+    variant: unreachable
+    scenario: depth3
+    notes: "app -> liba -> libb -> libc, crypto in libc (distance 3). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: java-b-wrapper-reachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/wrapper/app-reachable
+    pair: java-b-wrapper-unreachable
+    variant: reachable
+    scenario: wrapper
+    notes: "app -> liba (two nested wrappers) -> libb (two nested wrappers) -> crypto in libb (distance 2)."
+  - id: java-b-wrapper-unreachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/wrapper/app-unreachable
+    pair: java-b-wrapper-reachable
+    variant: unreachable
+    scenario: wrapper
+    notes: "app -> liba (two nested wrappers) -> libb (two nested wrappers) -> crypto in libb (distance 2). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: java-b-dispatch-reachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/dispatch/app-reachable
+    pair: java-b-dispatch-unreachable
+    variant: reachable
+    scenario: dispatch
+    notes: "app calls an interface/trait/duck-typed method that liba declares; the implementation that runs the crypto lives in libb (distance 2)."
+  - id: java-b-dispatch-unreachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/dispatch/app-unreachable
+    pair: java-b-dispatch-reachable
+    variant: unreachable
+    scenario: dispatch
+    notes: "app calls an interface/trait/duck-typed method that liba declares; the implementation that runs the crypto lives in libb (distance 2). Unreachable variant: main asks liba for its non-crypto implementation instead of the libb-backed one."
+  - id: java-b-deadfn-reachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/deadfn/app-reachable
+    pair: java-b-deadfn-unreachable
+    variant: reachable
+    scenario: deadfn
+    notes: "one libb file holds a used crypto function, a non-crypto sibling and a crypto function nothing calls (distance 2)."
+  - id: java-b-deadfn-unreachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/deadfn/app-unreachable
+    pair: java-b-deadfn-reachable
+    variant: unreachable
+    scenario: deadfn
+    notes: "one libb file holds a used crypto function, a non-crypto sibling and a crypto function nothing calls (distance 2). Unreachable variant: main calls liba's non-crypto function, which calls the non-crypto sibling in the same libb file."
+  - id: java-b-unused-import-reachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/unused-import/app-reachable
+    pair: java-b-unused-import-unreachable
+    variant: reachable
+    scenario: unused-import
+    notes: "the app imports liba (which imports libb) but calls no crypto function (distance 2)."
+  - id: java-b-unused-import-unreachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/unused-import/app-unreachable
+    pair: java-b-unused-import-reachable
+    variant: unreachable
+    scenario: unused-import
+    notes: "the app imports liba (which imports libb) but calls no crypto function (distance 2). Unreachable variant: main only reads a constant of liba and calls nothing."
+  - id: javascript-b-direct-reachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/direct/app-reachable
+    pair: javascript-b-direct-unreachable
+    variant: reachable
+    scenario: direct
+    notes: "app -> liba, crypto in liba (a direct dependency, distance 1)."
+  - id: javascript-b-direct-unreachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/direct/app-unreachable
+    pair: javascript-b-direct-reachable
+    variant: unreachable
+    scenario: direct
+    notes: "app -> liba, crypto in liba (a direct dependency, distance 1). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: javascript-b-transitive-reachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/transitive/app-reachable
+    pair: javascript-b-transitive-unreachable
+    variant: reachable
+    scenario: transitive
+    notes: "app -> liba -> libb, crypto in libb (distance 2)."
+  - id: javascript-b-transitive-unreachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/transitive/app-unreachable
+    pair: javascript-b-transitive-reachable
+    variant: unreachable
+    scenario: transitive
+    notes: "app -> liba -> libb, crypto in libb (distance 2). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: javascript-b-depth3-reachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/depth3/app-reachable
+    pair: javascript-b-depth3-unreachable
+    variant: reachable
+    scenario: depth3
+    notes: "app -> liba -> libb -> libc, crypto in libc (distance 3)."
+  - id: javascript-b-depth3-unreachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/depth3/app-unreachable
+    pair: javascript-b-depth3-reachable
+    variant: unreachable
+    scenario: depth3
+    notes: "app -> liba -> libb -> libc, crypto in libc (distance 3). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: javascript-b-wrapper-reachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/wrapper/app-reachable
+    pair: javascript-b-wrapper-unreachable
+    variant: reachable
+    scenario: wrapper
+    notes: "app -> liba (two nested wrappers) -> libb (two nested wrappers) -> crypto in libb (distance 2)."
+  - id: javascript-b-wrapper-unreachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/wrapper/app-unreachable
+    pair: javascript-b-wrapper-reachable
+    variant: unreachable
+    scenario: wrapper
+    notes: "app -> liba (two nested wrappers) -> libb (two nested wrappers) -> crypto in libb (distance 2). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: javascript-b-dispatch-reachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/dispatch/app-reachable
+    pair: javascript-b-dispatch-unreachable
+    variant: reachable
+    scenario: dispatch
+    notes: "app calls an interface/trait/duck-typed method that liba declares; the implementation that runs the crypto lives in libb (distance 2)."
+  - id: javascript-b-dispatch-unreachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/dispatch/app-unreachable
+    pair: javascript-b-dispatch-reachable
+    variant: unreachable
+    scenario: dispatch
+    notes: "app calls an interface/trait/duck-typed method that liba declares; the implementation that runs the crypto lives in libb (distance 2). Unreachable variant: main asks liba for its non-crypto implementation instead of the libb-backed one."
+  - id: javascript-b-deadfn-reachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/deadfn/app-reachable
+    pair: javascript-b-deadfn-unreachable
+    variant: reachable
+    scenario: deadfn
+    notes: "one libb file holds a used crypto function, a non-crypto sibling and a crypto function nothing calls (distance 2)."
+  - id: javascript-b-deadfn-unreachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/deadfn/app-unreachable
+    pair: javascript-b-deadfn-reachable
+    variant: unreachable
+    scenario: deadfn
+    notes: "one libb file holds a used crypto function, a non-crypto sibling and a crypto function nothing calls (distance 2). Unreachable variant: main calls liba's non-crypto function, which calls the non-crypto sibling in the same libb file."
+  - id: javascript-b-unused-import-reachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/unused-import/app-reachable
+    pair: javascript-b-unused-import-unreachable
+    variant: reachable
+    scenario: unused-import
+    notes: "the app imports liba (which imports libb) but calls no crypto function (distance 2)."
+  - id: javascript-b-unused-import-unreachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/unused-import/app-unreachable
+    pair: javascript-b-unused-import-reachable
+    variant: unreachable
+    scenario: unused-import
+    notes: "the app imports liba (which imports libb) but calls no crypto function (distance 2). Unreachable variant: main only reads a constant of liba and calls nothing."
+  - id: rust-b-direct-reachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/direct/app-reachable
+    pair: rust-b-direct-unreachable
+    variant: reachable
+    scenario: direct
+    notes: "app -> liba, crypto in liba (a direct dependency, distance 1)."
+  - id: rust-b-direct-unreachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/direct/app-unreachable
+    pair: rust-b-direct-reachable
+    variant: unreachable
+    scenario: direct
+    notes: "app -> liba, crypto in liba (a direct dependency, distance 1). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: rust-b-transitive-reachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/transitive/app-reachable
+    pair: rust-b-transitive-unreachable
+    variant: reachable
+    scenario: transitive
+    notes: "app -> liba -> libb, crypto in libb (distance 2)."
+  - id: rust-b-transitive-unreachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/transitive/app-unreachable
+    pair: rust-b-transitive-reachable
+    variant: unreachable
+    scenario: transitive
+    notes: "app -> liba -> libb, crypto in libb (distance 2). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: rust-b-depth3-reachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/depth3/app-reachable
+    pair: rust-b-depth3-unreachable
+    variant: reachable
+    scenario: depth3
+    notes: "app -> liba -> libb -> libc, crypto in libc (distance 3)."
+  - id: rust-b-depth3-unreachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/depth3/app-unreachable
+    pair: rust-b-depth3-reachable
+    variant: unreachable
+    scenario: depth3
+    notes: "app -> liba -> libb -> libc, crypto in libc (distance 3). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: rust-b-wrapper-reachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/wrapper/app-reachable
+    pair: rust-b-wrapper-unreachable
+    variant: reachable
+    scenario: wrapper
+    notes: "app -> liba (two nested wrappers) -> libb (two nested wrappers) -> crypto in libb (distance 2)."
+  - id: rust-b-wrapper-unreachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/wrapper/app-unreachable
+    pair: rust-b-wrapper-reachable
+    variant: unreachable
+    scenario: wrapper
+    notes: "app -> liba (two nested wrappers) -> libb (two nested wrappers) -> crypto in libb (distance 2). Unreachable variant: the call to liba moves into an app function that main never calls."
+  - id: rust-b-dispatch-reachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/dispatch/app-reachable
+    pair: rust-b-dispatch-unreachable
+    variant: reachable
+    scenario: dispatch
+    notes: "app calls an interface/trait/duck-typed method that liba declares; the implementation that runs the crypto lives in libb (distance 2)."
+  - id: rust-b-dispatch-unreachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/dispatch/app-unreachable
+    pair: rust-b-dispatch-reachable
+    variant: unreachable
+    scenario: dispatch
+    notes: "app calls an interface/trait/duck-typed method that liba declares; the implementation that runs the crypto lives in libb (distance 2). Unreachable variant: main asks liba for its non-crypto implementation instead of the libb-backed one."
+  - id: rust-b-deadfn-reachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/deadfn/app-reachable
+    pair: rust-b-deadfn-unreachable
+    variant: reachable
+    scenario: deadfn
+    notes: "one libb file holds a used crypto function, a non-crypto sibling and a crypto function nothing calls (distance 2)."
+  - id: rust-b-deadfn-unreachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/deadfn/app-unreachable
+    pair: rust-b-deadfn-reachable
+    variant: unreachable
+    scenario: deadfn
+    notes: "one libb file holds a used crypto function, a non-crypto sibling and a crypto function nothing calls (distance 2). Unreachable variant: main calls liba's non-crypto function, which calls the non-crypto sibling in the same libb file."
+  - id: rust-b-unused-import-reachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/unused-import/app-reachable
+    pair: rust-b-unused-import-unreachable
+    variant: reachable
+    scenario: unused-import
+    notes: "the app imports liba (which imports libb) but calls no crypto function (distance 2)."
+  - id: rust-b-unused-import-unreachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/unused-import/app-unreachable
+    pair: rust-b-unused-import-reachable
+    variant: unreachable
+    scenario: unused-import
+    notes: "the app imports liba (which imports libb) but calls no crypto function (distance 2). Unreachable variant: main only reads a constant of liba and calls nothing."
+  - id: go-b-handler-nethttp-reachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/handler-nethttp/app-reachable
+    pair: go-b-handler-nethttp-unreachable
+    variant: reachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with net/http http.HandleFunc; the handler calls liba -> libb, crypto in libb (distance 2)."
+  - id: go-b-handler-nethttp-unreachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/handler-nethttp/app-unreachable
+    pair: go-b-handler-nethttp-reachable
+    variant: unreachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with net/http http.HandleFunc; the handler calls liba -> libb, crypto in libb (distance 2). Unreachable variant: the handler is never registered, and nothing calls it."
+  - id: go-b-handler-gin-reachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/handler-gin/app-reachable
+    pair: go-b-handler-gin-unreachable
+    variant: reachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with gin r.GET; the handler calls liba -> libb, crypto in libb (distance 2)."
+  - id: go-b-handler-gin-unreachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/handler-gin/app-unreachable
+    pair: go-b-handler-gin-reachable
+    variant: unreachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with gin r.GET; the handler calls liba -> libb, crypto in libb (distance 2). Unreachable variant: the handler is never registered, and nothing calls it."
+  - id: go-b-callback-reachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/callback/app-reachable
+    pair: go-b-callback-unreachable
+    variant: reachable
+    scenario: callback
+    notes: "the app passes a function by value to slices.SortFunc; that function calls liba -> libb, crypto in libb (distance 2)."
+  - id: go-b-callback-unreachable
+    language: go
+    suite: B
+    split: dev
+    path: fixtures/go/suite-b/callback/app-unreachable
+    pair: go-b-callback-reachable
+    variant: unreachable
+    scenario: callback
+    notes: "the app passes a function by value to slices.SortFunc; that function calls liba -> libb, crypto in libb (distance 2). Unreachable variant: main passes strings.Compare instead, and nothing calls byFingerprint."
+  - id: python-b-handler-flask-reachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/handler-flask/app-reachable
+    pair: python-b-handler-flask-unreachable
+    variant: reachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with Flask app.add_url_rule; the handler calls liba -> libb, crypto in libb (distance 2)."
+  - id: python-b-handler-flask-unreachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/handler-flask/app-unreachable
+    pair: python-b-handler-flask-reachable
+    variant: unreachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with Flask app.add_url_rule; the handler calls liba -> libb, crypto in libb (distance 2). Unreachable variant: the handler is never registered, and nothing calls it."
+  - id: python-b-handler-fastapi-reachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/handler-fastapi/app-reachable
+    pair: python-b-handler-fastapi-unreachable
+    variant: reachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with FastAPI app.add_api_route; the handler calls liba -> libb, crypto in libb (distance 2)."
+  - id: python-b-handler-fastapi-unreachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/handler-fastapi/app-unreachable
+    pair: python-b-handler-fastapi-reachable
+    variant: unreachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with FastAPI app.add_api_route; the handler calls liba -> libb, crypto in libb (distance 2). Unreachable variant: the handler is never registered, and nothing calls it."
+  - id: python-b-callback-reachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/callback/app-reachable
+    pair: python-b-callback-unreachable
+    variant: reachable
+    scenario: callback
+    notes: "the app passes a function by value to threading.Thread(target=...); that function calls liba -> libb, crypto in libb (distance 2)."
+  - id: python-b-callback-unreachable
+    language: python
+    suite: B
+    split: dev
+    path: fixtures/python/suite-b/callback/app-unreachable
+    pair: python-b-callback-reachable
+    variant: unreachable
+    scenario: callback
+    notes: "the app passes a function by value to threading.Thread(target=...); that function calls liba -> libb, crypto in libb (distance 2). Unreachable variant: main passes greet instead, and nothing calls report."
+  - id: java-b-handler-spring-reachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/handler-spring/app-reachable
+    pair: java-b-handler-spring-unreachable
+    variant: reachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with Spring Boot @RestController; the handler calls liba -> libb, crypto in libb (distance 2)."
+  - id: java-b-handler-spring-unreachable
+    language: java
+    suite: B
+    split: dev
+    path: fixtures/java/suite-b/handler-spring/app-unreachable
+    pair: java-b-handler-spring-reachable
+    variant: unreachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with Spring Boot @RestController; the handler calls liba -> libb, crypto in libb (distance 2). Unreachable variant: the controller class has no Spring annotations, so it is never registered, and nothing calls it."
+  - id: javascript-b-handler-express-reachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/handler-express/app-reachable
+    pair: javascript-b-handler-express-unreachable
+    variant: reachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with Express app.get; the handler calls liba -> libb, crypto in libb (distance 2)."
+  - id: javascript-b-handler-express-unreachable
+    language: javascript
+    suite: B
+    split: dev
+    path: fixtures/javascript/suite-b/handler-express/app-unreachable
+    pair: javascript-b-handler-express-reachable
+    variant: unreachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with Express app.get; the handler calls liba -> libb, crypto in libb (distance 2). Unreachable variant: the handler is never registered, and nothing calls it."
+  - id: rust-b-handler-axum-reachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/handler-axum/app-reachable
+    pair: rust-b-handler-axum-unreachable
+    variant: reachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with axum Router::route; the handler calls liba -> libb, crypto in libb (distance 2)."
+  - id: rust-b-handler-axum-unreachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/handler-axum/app-unreachable
+    pair: rust-b-handler-axum-reachable
+    variant: unreachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with axum Router::route; the handler calls liba -> libb, crypto in libb (distance 2). Unreachable variant: the handler is never registered, and nothing calls it."
+  - id: rust-b-handler-actix-reachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/handler-actix/app-reachable
+    pair: rust-b-handler-actix-unreachable
+    variant: reachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with actix-web App::route; the handler calls liba -> libb, crypto in libb (distance 2)."
+  - id: rust-b-handler-actix-unreachable
+    language: rust
+    suite: B
+    split: dev
+    path: fixtures/rust/suite-b/handler-actix/app-unreachable
+    pair: rust-b-handler-actix-reachable
+    variant: unreachable
+    scenario: handler
+    notes: "main starts a web app and registers a handler with actix-web App::route; the handler calls liba -> libb, crypto in libb (distance 2). Unreachable variant: the handler is never registered, and nothing calls it."

@@ -1,0 +1,105 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "sonar-cryptography",
+    "version": "1.7.0"
+  },
+  "entry": "java-bcpg-jdk15on",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "src/main/java/bench/PgpKeyRing.java",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@c4a7ff20-c18a-4948-9b85-6384a3443be3",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/PgpSign.java",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-3072",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/PgpEncrypt.java",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-3072",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/PgpKeyRing.java",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-3072",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/PgpSign.java",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@e2bdb85a-5f87-4d1a-bb4d-fcd71a82a75a",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/PgpEncrypt.java",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@5834c113-027c-4480-b103-96bbe149012e",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

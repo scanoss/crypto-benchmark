@@ -1,0 +1,23 @@
+schema_version: "1"
+entry: rust-md-5
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/bin/md5.rs
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: src/bin/md5_oneshot.rs
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: true
+    depth: 0

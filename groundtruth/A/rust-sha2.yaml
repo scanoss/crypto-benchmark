@@ -1,0 +1,41 @@
+schema_version: "1"
+entry: rust-sha2
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/bin/sha256.rs
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: src/bin/sha384.rs
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-384
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: src/bin/sha512.rs
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-512
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: src/bin/sha512_256.rs
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-512/256
+    origin: project
+    reachable: true
+    depth: 0

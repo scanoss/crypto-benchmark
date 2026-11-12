@@ -1,0 +1,20 @@
+schema_version: "1"
+entry: python-b-transitive-unreachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:pypi/cbench-transitive-liba@1.0.0
+    - pkg:pypi/cbench-transitive-libb@1.0.0
+assets:
+  - id: gt-0001
+    file: libb/__init__.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-512
+    origin: dependency
+    component: pkg:pypi/cbench-transitive-libb@1.0.0
+    reachable: false
+    depth: 2
+    distance: 2
+    notes: "Unreachable because the call to liba moves into an app function that main never calls."

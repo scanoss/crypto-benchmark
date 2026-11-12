@@ -1,0 +1,294 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "rust-ring",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "src/bin/aead_aes256gcm.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_bytes",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/aead_chacha20poly1305.rs",
+      "lines": [
+        4,
+        4
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_bytes",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/ecdsa_p256.rs",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_pair",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/ed25519.rs",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_pair",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/rsa_pkcs1.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_pair",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/aead_aes256gcm.rs",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/hkdf_sha256.rs",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/hmac_sha256.rs",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/x25519.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "my_private_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/x25519.rs",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "my_public_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/aead_aes256gcm.rs",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "nonce_bytes",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/aead_chacha20poly1305.rs",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "nonce",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/aead_chacha20poly1305.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "opening_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/pbkdf2.rs",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "password",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/x25519.rs",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "peer_private_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/ed25519.rs",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "peer_public_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/x25519.rs",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "peer_public_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/rsa_pkcs1.rs",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "private_key_der",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/ecdsa_p256.rs",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "public_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/rsa_pkcs1.rs",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "public_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/hkdf_sha256.rs",
+      "lines": [
+        4,
+        4
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "salt",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/pbkdf2.rs",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "salt",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/aead_chacha20poly1305.rs",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "sealing_key",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

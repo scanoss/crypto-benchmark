@@ -1,0 +1,9 @@
+{
+  "name": "crypto-benchmark-tweetnacl",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "tweetnacl": "1.0.3"
+  }
+}

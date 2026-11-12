@@ -1,0 +1,20 @@
+schema_version: "1"
+entry: java-b-transitive-unreachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:maven/org.cbench.transitive/liba@1.0.0
+    - pkg:maven/org.cbench.transitive/libb@1.0.0
+assets:
+  - id: gt-0001
+    file: org/cbench/transitive/libb/Digests.java
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-512
+    origin: dependency
+    component: pkg:maven/org.cbench.transitive/libb@1.0.0
+    reachable: false
+    depth: 2
+    distance: 2
+    notes: "Unreachable because the call to liba moves into an app function that main never calls."

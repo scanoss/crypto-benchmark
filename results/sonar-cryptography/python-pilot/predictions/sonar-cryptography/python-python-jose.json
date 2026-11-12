@@ -1,0 +1,45 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "sonar-cryptography",
+    "version": "1.7.0"
+  },
+  "entry": "python-python-jose",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "jwt-rs256/main.py",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key@3e606a89-4325-4e68-8628-325d42686637",
+      "parameters": {
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "jwt-rs256/main.py",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-2048",
+      "parameters": {
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

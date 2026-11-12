@@ -1,0 +1,62 @@
+schema_version: "1"
+entry: java-scrypt
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/main/java/bench/DeriveKey.java
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "new SecureRandom() is not an asset; nextBytes(salt) is the draw (annotation log, Java decisions; SecureRandom)."
+  - id: gt-0002
+    file: src/main/java/bench/DeriveKey.java
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The drawn bytes are passed as the salt argument of SCrypt.scrypt."
+  - id: gt-0003
+    file: src/main/java/bench/DeriveKey.java
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: scrypt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "N=16384, r=8, p=1, 32-byte output; a KDF output length is not a key size."
+  - id: gt-0004
+    file: src/main/java/bench/HashPassword.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: scrypt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "SCryptUtil.scrypt draws its own 16-byte salt and keeps it in the $s0$ hash string: no salt or drbg asset in the program."
+  - id: gt-0005
+    file: src/main/java/bench/HashPassword.java
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: scrypt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "SCryptUtil.check is a one-shot function that rederives with scrypt."
+  - id: gt-0006
+    file: src/main/java/bench/HashPassword.java
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: scrypt
+    origin: project
+    reachable: true
+    depth: 0

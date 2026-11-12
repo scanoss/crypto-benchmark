@@ -1,0 +1,106 @@
+schema_version: "1"
+entry: java-jsch
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/main/java/bench/AddIdentity.java
+    lines: [10, 10]
+    asset_type: algorithm
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "KeyPair.genKeyPair(jsch, KeyPair.RSA, 3072) generates the key pair. Primitive signature: the program adds the key to jsch as an SSH user-authentication identity, which signs (as paramiko's add_server_key key in python-paramiko ssh-transport). The algorithm object has this one asset; the serializations form the separate related-crypto-material object. Re-derivation: the first annotation gave primitive signature, since the key becomes an SSH identity. Changed, with the second annotation: the program never connects, so the key is only stored and loaded, and the guide gives such a key no primitive."
+  - id: gt-0010
+    file: src/main/java/bench/AddIdentity.java
+    lines: [10, 10]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: src/main/java/bench/AddIdentity.java
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: AddIdentity/privateKey
+    notes: "writePrivateKey serializes the private key (PEM)."
+  - id: gt-0003
+    file: src/main/java/bench/AddIdentity.java
+    lines: [14, 14]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: AddIdentity/privateKey
+    notes: "writePublicKey serializes the public key of the same pair (OpenSSH format); same object as the private key's serialization (guide, key pair)."
+  - id: gt-0004
+    file: src/main/java/bench/AddIdentity.java
+    lines: [16, 16]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: AddIdentity/privateKey
+    notes: "addIdentity parses the private and public key bytes the program serialized above: one call, one parse asset, same object (guide, passed on)."
+  - id: gt-0005
+    file: src/main/java/bench/GenerateKeyPair.java
+    lines: [10, 10]
+    asset_type: algorithm
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "No primitive: the program only serializes and fingerprints the key (python-paramiko keygen precedent)."
+  - id: gt-0011
+    file: src/main/java/bench/GenerateKeyPair.java
+    lines: [10, 10]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0006
+    file: src/main/java/bench/GenerateKeyPair.java
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: GenerateKeyPair/privateKey
+  - id: gt-0007
+    file: src/main/java/bench/GenerateKeyPair.java
+    lines: [14, 14]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: GenerateKeyPair/privateKey
+  - id: gt-0008
+    file: src/main/java/bench/GenerateKeyPair.java
+    lines: [15, 15]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "kpair.getFingerPrint() hashes the public key blob; JSch 0.1.55 uses its configured \"md5\" HASH class (KeyPair.genHash). A digest of a key is its own object (guide, objects)."
+  - id: gt-0009
+    file: src/main/java/bench/SessionConfig.java
+    lines: [9, 9]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "jsch.getSession creates the SSH session; the program never connects. The setConfig calls (StrictHostKeyChecking, cipher.c2s/s2c aes256-ctr, kex ecdh-sha2-nistp256, server_host_key) configure the session and are not assets (guide: calls that configure an existing context, like set_cipher_list)."

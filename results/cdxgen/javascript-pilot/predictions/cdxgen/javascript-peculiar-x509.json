@@ -1,0 +1,54 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "javascript-peculiar-x509",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "csr/main.js",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "parse-verify/main.js",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "self-signed/main.js",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

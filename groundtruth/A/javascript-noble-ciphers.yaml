@@ -1,0 +1,236 @@
+schema_version: "1"
+entry: javascript-noble-ciphers
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: aes-cbc/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: aes-cbc/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: aes-cbc/main.js
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: aes-cbc/main.js
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+      padding: PKCS7
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes-cbc/key
+    notes: "Padding: the library pads with PKCS#7 unless the program turns it off, and this call leaves the default, so the API fixes PKCS7 (guide, parameters; the same reading as pyotp's default SHA-1)."
+  - id: gt-0005
+    file: aes-cbc/main.js
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+      padding: PKCS7
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes-cbc/key
+    notes: "Padding: the library pads with PKCS#7 unless the program turns it off, and this call leaves the default, so the API fixes PKCS7 (guide, parameters; the same reading as pyotp's default SHA-1)."
+  - id: gt-0006
+    file: aes-gcm/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0007
+    file: aes-gcm/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: aes-gcm/main.js
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0009
+    file: aes-gcm/main.js
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes-gcm/key
+    notes: "No key_size: the key length comes from a variable, not a literal in the call (guide, parameters)."
+  - id: gt-0010
+    file: aes-gcm/main.js
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+    origin: project
+    reachable: true
+    depth: 0
+    object: aes-gcm/key
+  - id: gt-0011
+    file: chacha20-poly1305/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0012
+    file: chacha20-poly1305/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0013
+    file: chacha20-poly1305/main.js
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0014
+    file: chacha20-poly1305/main.js
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: ChaCha20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "encrypt and decrypt are follow-ups on the cipher object."
+  - id: gt-0015
+    file: managed-nonce/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0016
+    file: managed-nonce/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: XChaCha20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "managedNonce draws each nonce inside encrypt and prepends it to the ciphertext; the program never handles it, so it is not related crypto material (guide, not related crypto material)."
+  - id: gt-0017
+    file: xchacha20-poly1305/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0018
+    file: xchacha20-poly1305/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0019
+    file: xchacha20-poly1305/main.js
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0020
+    file: xchacha20-poly1305/main.js
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: XChaCha20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    object: xchacha20-poly1305/key
+  - id: gt-0021
+    file: xchacha20-poly1305/main.js
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: XChaCha20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    object: xchacha20-poly1305/key
+  - id: gt-0022
+    file: xsalsa20-poly1305/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0023
+    file: xsalsa20-poly1305/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0024
+    file: xsalsa20-poly1305/main.js
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0025
+    file: xsalsa20-poly1305/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: XSalsa20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "seal and open are follow-ups on the secretbox object."

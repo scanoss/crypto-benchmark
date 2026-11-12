@@ -1,0 +1,222 @@
+schema_version: "1"
+entry: javascript-noble-hashes
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: argon2id/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: argon2id/main.js
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: argon2id/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: Argon2id
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: blake2b/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: BLAKE2b
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "dkLen is the output length, not a key size."
+  - id: gt-0005
+    file: blake3/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: BLAKE3
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0006
+    file: hkdf/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Input key material: a drbg draw only."
+  - id: gt-0007
+    file: hkdf/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: hkdf/main.js
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0009
+    file: hkdf/main.js
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: HKDF
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "KDFs carry no hash (guide, hash)."
+  - id: gt-0010
+    file: hmac-sha256/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Random bytes used as the HMAC key: a drbg draw only (keys are not related crypto material)."
+  - id: gt-0011
+    file: hmac-sha256/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hmac-sha256/key
+    notes: "sha256 is passed as the hash function, an algorithm specification, not an asset of its own."
+  - id: gt-0012
+    file: hmac-sha256/main.js
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hmac-sha256/key
+  - id: gt-0013
+    file: pbkdf2/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0014
+    file: pbkdf2/main.js
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0015
+    file: pbkdf2/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0016
+    file: rng/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0017
+    file: scrypt/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0018
+    file: scrypt/main.js
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0019
+    file: scrypt/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: scrypt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0020
+    file: sha1/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0021
+    file: sha256/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0022
+    file: sha256/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Creating the incremental hasher is the asset; update and digest are follow-ups."
+  - id: gt-0023
+    file: sha3-256/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA3-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0024
+    file: sha512/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-512
+    origin: project
+    reachable: true
+    depth: 0

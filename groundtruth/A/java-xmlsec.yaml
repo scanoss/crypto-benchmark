@@ -1,0 +1,147 @@
+schema_version: "1"
+entry: java-xmlsec
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/main/java/bench/XmlEncryption.java
+    lines: [27, 27]
+    anchors: [[25, 25]]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+    object: XmlEncryption/contentKey
+    notes: "JCA key generation: algorithm from KeyGenerator.getInstance(\"AES\"), key_size from init(256) on the same generator (annotation log, Java decisions). No mode: the generator fixes none. Re-derivation: the second annotation put this key generation on KeyGenerator.getInstance (line 25). Kept on generateKey(), as in every Java entry (annotation log, Java decisions)."
+  - id: gt-0002
+    file: src/main/java/bench/XmlEncryption.java
+    lines: [31, 31]
+    anchors: [[29, 29]]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    object: XmlEncryption/keyPair
+    notes: "JCA key pair generation: RSA from getInstance, 3072 from initialize on the same generator. Primitive pke: the key only wraps the content key. Re-derivation: the second annotation put this key generation on KeyPairGenerator.getInstance (line 29). Kept on generateKeyPair(), as in every Java entry."
+  - id: gt-0011
+    file: src/main/java/bench/XmlEncryption.java
+    lines: [31, 31]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0003
+    file: src/main/java/bench/XmlEncryption.java
+    lines: [38, 38]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: XmlEncryption/keyPair
+    notes: "XMLCipher.RSA_OAEP is the rsa-oaep-mgf1p URI (OAEP with SHA-1). Like a JCA getInstance, the getInstance naming the algorithm is the asset and init/encryptKey are follow-ups (annotation log, Java decisions; engine objects). RSA-OAEP carries no hash (guide). The JCA-style engine object is initialized with this key in the same method (init), so it joins the key's object, like AESGCM(key) in the guide's 'built on a key'."
+  - id: gt-0004
+    file: src/main/java/bench/XmlEncryption.java
+    lines: [42, 42]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+    object: XmlEncryption/contentKey
+    notes: "XMLCipher.AES_256_GCM is the xmlenc11 aes256-gcm URI, which states the key size. getInstance is the asset; init/getEncryptedData/doFinal are follow-ups. The IV is drawn and kept inside the EncryptedData by the library: not related crypto material. The JCA-style engine object is initialized with this key in the same method (init), so it joins the key's object, like AESGCM(key) in the guide's 'built on a key'."
+  - id: gt-0005
+    file: src/main/java/bench/XmlEncryption.java
+    lines: [55, 55]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: XmlEncryption/keyPair
+    notes: "Decryption as the Santuario docs show it: XMLCipher.getInstance() with no algorithm (line 52) names and computes nothing, so it is not an asset, and doFinal is the decrypt call. It unwraps the content key with the KEK and decrypts the content: two assets, algorithms from the EncryptedData the program produced, no parameters (guide, verify calls). A second annotator may put these on line 52 instead."
+  - id: gt-0006
+    file: src/main/java/bench/XmlEncryption.java
+    lines: [55, 55]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    origin: project
+    reachable: true
+    depth: 0
+    object: XmlEncryption/contentKey
+    notes: "Content decryption with the unwrapped content key, which reached it inside the document (guide, passed on). Algorithm from the EncryptedData, no parameters."
+  - id: gt-0007
+    file: src/main/java/bench/XmlSignature.java
+    lines: [24, 24]
+    anchors: [[22, 22]]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    object: XmlSignature/keyPair
+    notes: "JCA key pair generation: RSA from getInstance, 3072 from initialize on the same generator. Re-derivation: the second annotation put this key generation on KeyPairGenerator.getInstance (line 22). Kept on generateKeyPair(), as in every Java entry."
+  - id: gt-0012
+    file: src/main/java/bench/XmlSignature.java
+    lines: [24, 24]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0008
+    file: src/main/java/bench/XmlSignature.java
+    lines: [30, 30]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: XmlSignature/keyPair
+    notes: "ALGO_ID_SIGNATURE_RSA_SHA256 (xmldsig-more rsa-sha256) is RSASSA-PKCS1-v1_5 with SHA-256. Creating the XMLSignature names the algorithm, so it is the asset; sign(privateKey) on line 36 is a follow-up, like Signature.getInstance then sign (annotation log, Java decisions; engine objects). Joins the key's object because sign(keyPair.getPrivate()) runs it with that key."
+  - id: gt-0009
+    file: src/main/java/bench/XmlSignature.java
+    lines: [35, 35]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "addDocument names the reference digest SHA-256; the digest of the canonicalized document is computed at sign and goes into DigestValue, a digest the program passes on. No object: a hash given no key. Enveloped and c14n transforms are not cryptographic. On verification the reference digest is recomputed inside checkSignatureValue, a follow-up, so it is not annotated again. A second annotator may treat addDocument as configuration of the signature asset."
+  - id: gt-0010
+    file: src/main/java/bench/XmlSignature.java
+    lines: [40, 40]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: XmlSignature/keyPair
+    notes: "new XMLSignature(element, baseURI) builds the verifier from the signature element the program produced; the call names no algorithm, so RSA from the key and document with no padding or hash (guide, verify calls). checkSignatureValue on line 40 is a follow-up. Re-derivation: the first annotation put the verify on new XMLSignature(sigElement, \"\") (line 39). Changed, with the second annotation, to checkSignatureValue (line 40): the constructor names no algorithm and only reads the element, and checkSignatureValue performs the verification. The second annotation also added a SHA-256 hash asset here for the reference digest that verification recomputes; kept out, since it runs inside this verify call."

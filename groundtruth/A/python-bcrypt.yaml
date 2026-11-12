@@ -1,0 +1,87 @@
+schema_version: "1"
+entry: python-bcrypt
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: hashpw/main.py
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "bcrypt.gensalt draws the salt from os.urandom; a random draw nested in hashpw is its own asset."
+  - id: gt-0002
+    file: hashpw/main.py
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: hashpw/main.py
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: agreed. bcrypt.gensalt creates the salt the program passes to hashpw, so it counts although it ends up in the hash string (guide, related crypto material)."
+  - id: gt-0003
+    file: hashpw/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: hashpw/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0005
+    file: kdf/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0009
+    file: kdf/main.py
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: agreed."
+  - id: gt-0006
+    file: kdf/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt-pbkdf
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "bcrypt.kdf is OpenSSH bcrypt_pbkdf, not in the algo table. Second annotator added key_size from the KDF output length; resolved to none: a KDF output length is not a key size (guide, parameters). Re-derivation: second annotator wrote bcrypt; kept bcrypt-pbkdf: bcrypt.kdf runs bcrypt_pbkdf (OpenSSH's PBKDF2 variant over bcrypt), a different algorithm from the bcrypt password hash, and keeps its usual name (guide, algorithm)."
+  - id: gt-0007
+    file: kdf/main.py
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt-pbkdf
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Second annotator added key_size from the KDF output length; resolved to none: a KDF output length is not a key size (guide, parameters). Re-derivation: second annotator wrote bcrypt; kept bcrypt-pbkdf: bcrypt.kdf runs bcrypt_pbkdf (OpenSSH's PBKDF2 variant over bcrypt), a different algorithm from the bcrypt password hash, and keeps its usual name (guide, algorithm)."

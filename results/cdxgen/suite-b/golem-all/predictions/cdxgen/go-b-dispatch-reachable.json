@@ -1,0 +1,31 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "go-b-dispatch-reachable",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "libb.go",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "dependency",
+      "component": "pkg:golang/example.com/cbench/dispatch/libb",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "2",
+    "locations_dropped": "4"
+  }
+}

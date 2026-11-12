@@ -1,0 +1,297 @@
+schema_version: "1"
+entry: javascript-noble-curves
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: ecdh-p256/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdh-p256/alice
+  - id: gt-0022
+    file: ecdh-p256/main.js
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: ecdh-p256/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdh-p256/bob
+  - id: gt-0023
+    file: ecdh-p256/main.js
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0003
+    file: ecdh-p256/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: ECDH
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdh-p256/alice
+    notes: "The library's p256 object fixes the curve, unlike python-ecdsa's ECDH object, which the program configured."
+  - id: gt-0004
+    file: ecdh-p256/main.js
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0005
+    file: ecdh-p256/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: ECDH
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdh-p256/bob
+  - id: gt-0006
+    file: ecdh-p256/main.js
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0007
+    file: ecdsa-p256/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa-p256/secretKey
+  - id: gt-0024
+    file: ecdsa-p256/main.js
+    lines: [4, 4]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0008
+    file: ecdsa-p256/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa-p256/secretKey
+  - id: gt-0009
+    file: ecdsa-p256/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa-p256/secretKey
+  - id: gt-0010
+    file: ecdsa-secp256k1/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: EC
+    parameters:
+      curve: secp256k1
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa-secp256k1/secretKey
+    notes: "noble's curve object is generic (it signs and agrees keys), so the key is a generic EC key with its curve (guide, algorithm)."
+  - id: gt-0025
+    file: ecdsa-secp256k1/main.js
+    lines: [4, 4]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0011
+    file: ecdsa-secp256k1/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: secp256k1
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa-secp256k1/secretKey
+    notes: "sign prehashes with the curve's SHA-256 by default, which the call leaves in place, so the API fixes the hash; the curve object fixes the curve."
+  - id: gt-0012
+    file: ecdsa-secp256k1/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: secp256k1
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa-secp256k1/secretKey
+  - id: gt-0013
+    file: ed25519/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/secretKey
+  - id: gt-0026
+    file: ed25519/main.js
+    lines: [4, 4]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0014
+    file: ed25519/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/secretKey
+  - id: gt-0015
+    file: ed25519/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/secretKey
+  - id: gt-0016
+    file: x25519/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: x25519/alice
+  - id: gt-0027
+    file: x25519/main.js
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0017
+    file: x25519/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: x25519/bob
+  - id: gt-0028
+    file: x25519/main.js
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0018
+    file: x25519/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: x25519/alice
+  - id: gt-0019
+    file: x25519/main.js
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0020
+    file: x25519/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: x25519/bob
+  - id: gt-0021
+    file: x25519/main.js
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0

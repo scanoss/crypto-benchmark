@@ -1,0 +1,208 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "javascript-peculiar-x509",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "csr/main.js",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "other",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "csr/main.js",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "csr/main.js",
+      "lines": [
+        12,
+        17
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "csr/main.js",
+      "lines": [
+        18,
+        18
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "parse-verify/main.js",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "other",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "parse-verify/main.js",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "parse-verify/main.js",
+      "lines": [
+        12,
+        17
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "parse-verify/main.js",
+      "lines": [
+        18,
+        18
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "parse-verify/main.js",
+      "lines": [
+        20,
+        20
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "parse-verify/main.js",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "parse-verify/main.js",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "self-signed/main.js",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "other",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "self-signed/main.js",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "self-signed/main.js",
+      "lines": [
+        7,
+        15
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "self-signed/main.js",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

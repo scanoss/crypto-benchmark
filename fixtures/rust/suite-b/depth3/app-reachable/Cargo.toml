@@ -1,0 +1,9 @@
+[package]
+name = "cbench-depth3-app"
+version = "1.0.0"
+edition = "2021"
+license = "Apache-2.0"
+publish = false
+
+[dependencies]
+cbench-depth3-liba = { path = "../liba", version = "1.0.0" }

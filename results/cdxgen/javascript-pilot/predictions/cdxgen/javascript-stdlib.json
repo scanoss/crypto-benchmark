@@ -1,0 +1,216 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "javascript-stdlib",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "ed25519/main.js",
+      "lines": [
+        4,
+        4
+      ],
+      "asset_type": "algorithm",
+      "algorithm": "ed25519",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rsa-oaep/main.js",
+      "lines": [
+        4,
+        4
+      ],
+      "asset_type": "algorithm",
+      "algorithm": "rsa",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rsa-pss/main.js",
+      "lines": [
+        4,
+        4
+      ],
+      "asset_type": "algorithm",
+      "algorithm": "rsa",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rsa-sign/main.js",
+      "lines": [
+        4,
+        4
+      ],
+      "asset_type": "algorithm",
+      "algorithm": "rsa",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ecdsa/main.js",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ecdsa/main.js",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "hkdf/main.js",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "hmac-sha256/main.js",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "hmac-sha256/main.js",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "pbkdf2/main.js",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rsa-pss/main.js",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rsa-pss/main.js",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rsa-sign/main.js",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rsa-sign/main.js",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "sha256/main.js",
+      "lines": [
+        4,
+        4
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x25519/main.js",
+      "lines": [
+        4,
+        4
+      ],
+      "asset_type": "algorithm",
+      "algorithm": "x25519",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x25519/main.js",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "algorithm",
+      "algorithm": "x25519",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

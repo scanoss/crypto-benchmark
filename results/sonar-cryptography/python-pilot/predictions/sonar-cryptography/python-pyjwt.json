@@ -1,0 +1,72 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "sonar-cryptography",
+    "version": "1.7.0"
+  },
+  "entry": "python-pyjwt",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "jwt-rs256/main.py",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key@2878f290-73ee-40b2-b240-cda87368e9d1",
+      "parameters": {
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "jwt-es256/main.py",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key@a56bee82-f54e-4c35-9009-5ac62c600c7e",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "jwt-rs256/main.py",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-2048",
+      "parameters": {
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "jwt-es256/main.py",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "EC-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

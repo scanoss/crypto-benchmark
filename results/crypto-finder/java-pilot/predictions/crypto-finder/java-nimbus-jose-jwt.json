@@ -1,0 +1,672 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "java-nimbus-jose-jwt",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "src/main/java/bench/JweDirect.java",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JweDirect.java",
+      "lines": [
+        20,
+        20
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "JWE-DIR",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JweDirect.java",
+      "lines": [
+        20,
+        20
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-GCM-256",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JweDirect.java",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JweDirect.java",
+      "lines": [
+        27,
+        27
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JweDirect.java",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JweRsaOaep.java",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JweRsaOaep.java",
+      "lines": [
+        15,
+        17
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JweRsaOaep.java",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSAES-OAEP-SHA256",
+      "parameters": {
+        "key_size": 256,
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JweRsaOaep.java",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-GCM-256",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JweRsaOaep.java",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSAES-OAEP",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JweRsaOaep.java",
+      "lines": [
+        26,
+        26
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSAES-OAEP",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JweRsaOaep.java",
+      "lines": [
+        27,
+        27
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JweRsaOaep.java",
+      "lines": [
+        27,
+        27
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwkJson.java",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "other",
+      "algorithm": "EC",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwkJson.java",
+      "lines": [
+        12,
+        15
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwkJson.java",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwkJson.java",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwkJson.java",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwkJson.java",
+      "lines": [
+        20,
+        20
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwkJson.java",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsEd25519.java",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsEd25519.java",
+      "lines": [
+        17,
+        19
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsEd25519.java",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsEd25519.java",
+      "lines": [
+        24,
+        24
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "EdDSA",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsEd25519.java",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsEd25519.java",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsEs256.java",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "algorithm",
+      "primitive": "other",
+      "algorithm": "EC",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsEs256.java",
+      "lines": [
+        17,
+        19
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsEs256.java",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-deterministic",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsEs256.java",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsEs256.java",
+      "lines": [
+        24,
+        24
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-SHA256",
+      "parameters": {
+        "key_size": 256,
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsEs256.java",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsEs256.java",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsHs256.java",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsHs256.java",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsHs256.java",
+      "lines": [
+        20,
+        20
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA256",
+      "parameters": {
+        "key_size": 256,
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsHs256.java",
+      "lines": [
+        25,
+        25
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwsHs256.java",
+      "lines": [
+        26,
+        26
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwtRs256.java",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwtRs256.java",
+      "lines": [
+        17,
+        19
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwtRs256.java",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwtRs256.java",
+      "lines": [
+        29,
+        29
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-SHA256",
+      "parameters": {
+        "key_size": 256,
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwtRs256.java",
+      "lines": [
+        35,
+        35
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/JwtRs256.java",
+      "lines": [
+        36,
+        36
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSA",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

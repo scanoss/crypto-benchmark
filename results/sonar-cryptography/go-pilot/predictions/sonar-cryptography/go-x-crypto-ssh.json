@@ -1,0 +1,114 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "sonar-cryptography",
+    "version": "1.7.0"
+  },
+  "entry": "go-x-crypto-ssh",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "key-file/main.go",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-3072",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "handshake/main.go",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "parameters": {
+        "curve": "Edwards25519"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "keys/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "parameters": {
+        "curve": "Edwards25519"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "handshake/main.go",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "keys/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "handshake/main.go",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "keys/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

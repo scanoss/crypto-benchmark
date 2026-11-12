@@ -1,0 +1,189 @@
+schema_version: "1"
+entry: javascript-iron-webcrypto
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: encrypt/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Iron.defaults names AES-256-CBC for encryption and HMAC with SHA-256 for integrity, and a string password is stretched with PBKDF2; the library constant fixes them (guide, parameters). One asset per algorithm."
+  - id: gt-0002
+    file: encrypt/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Iron stretches a string password into each key with PBKDF2, with the salt size and iteration count that the options object passed to the call carries. Re-derivation: the second annotation left PBKDF2 out because no argument names it; kept, because the options name its parameters and the API fixes the algorithm for a string password."
+  - id: gt-0003
+    file: encrypt/main.js
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "encrypt draws the PBKDF2 salt and returns it as key.salt, which the program passes back as salt (guide, made by a library call)."
+  - id: gt-0004
+    file: encrypt/main.js
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "encrypt draws the IV and returns it as key.iv, which the program passes back as iv (guide, made by a library call)."
+  - id: gt-0005
+    file: encrypt/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0006
+    file: encrypt/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0007
+    file: hmac/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      key_size: 256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Iron.defaults names AES-256-CBC for encryption and HMAC with SHA-256 for integrity, and a string password is stretched with PBKDF2; the library constant fixes them (guide, parameters). One asset per algorithm. Re-derivation: key_size 256 added from the second annotation. The integrity algorithm sha256 fixes a 256-bit HMAC key in the library's algorithm table, so the API fixes it."
+  - id: gt-0008
+    file: hmac/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Iron stretches a string password into each key with PBKDF2, with the salt size and iteration count that the options object passed to the call carries. Re-derivation: the second annotation left PBKDF2 out because no argument names it; kept, because the options name its parameters and the API fixes the algorithm for a string password."
+  - id: gt-0009
+    file: hmac/main.js
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "hmacWithPassword draws the salt and returns it; the program passes it back as salt."
+  - id: gt-0010
+    file: hmac/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      key_size: 256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0011
+    file: hmac/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0012
+    file: seal/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Iron.defaults names AES-256-CBC for encryption and HMAC with SHA-256 for integrity, and a string password is stretched with PBKDF2; the library constant fixes them (guide, parameters). One asset per algorithm. The salts and IV stay inside the sealed string (guide, not related crypto material)."
+  - id: gt-0013
+    file: seal/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      key_size: 256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: key_size 256 added from the second annotation. The integrity algorithm sha256 fixes a 256-bit HMAC key in the library's algorithm table, so the API fixes it."
+  - id: gt-0014
+    file: seal/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Iron stretches a string password into each key with PBKDF2, with the salt size and iteration count that the options object passed to the call carries. Re-derivation: the second annotation left PBKDF2 out because no argument names it; kept, because the options name its parameters and the API fixes the algorithm for a string password."
+  - id: gt-0015
+    file: seal/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0016
+    file: seal/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      key_size: 256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0017
+    file: seal/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0

@@ -1,0 +1,25 @@
+schema_version: "1"
+entry: python-b-handler-fastapi-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:pypi/cbench-handler-fastapi-liba@1.0.0
+    - pkg:pypi/cbench-handler-fastapi-libb@1.0.0
+assets:
+  - id: gt-0001
+    file: libb/__init__.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: dependency
+    component: pkg:pypi/cbench-handler-fastapi-libb@1.0.0
+    reachable: true
+    depth: 2
+    distance: 2
+    path:
+      - "main.main"
+      - "main.fingerprint"
+      - "liba.fingerprint"
+      - "libb.digest"
+    notes: "Reachable because main registers fingerprint with FastAPI's app.add_api_route; FastAPI calls it for each request, and main answers one request in process (or serves with the argument serve)."

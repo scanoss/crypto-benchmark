@@ -1,0 +1,22 @@
+schema_version: "1"
+entry: python-b-direct-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:pypi/cbench-direct-liba@1.0.0
+assets:
+  - id: gt-0001
+    file: liba/__init__.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: dependency
+    component: pkg:pypi/cbench-direct-liba@1.0.0
+    reachable: true
+    depth: 1
+    distance: 1
+    path:
+      - "main.main"
+      - "main.run"
+      - "liba.fingerprint"

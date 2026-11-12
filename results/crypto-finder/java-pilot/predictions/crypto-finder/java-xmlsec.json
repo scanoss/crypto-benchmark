@@ -1,0 +1,202 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "java-xmlsec",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "src/main/java/bench/XmlEncryption.java",
+      "lines": [
+        25,
+        25
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/XmlEncryption.java",
+      "lines": [
+        29,
+        29
+      ],
+      "asset_type": "algorithm",
+      "primitive": "other",
+      "algorithm": "RSA",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/XmlEncryption.java",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/XmlEncryption.java",
+      "lines": [
+        38,
+        38
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSAES-OAEP",
+      "parameters": {
+        "padding": "oaep"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/XmlEncryption.java",
+      "lines": [
+        42,
+        42
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-256-GCM",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/XmlEncryption.java",
+      "lines": [
+        55,
+        55
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/XmlEncryption.java",
+      "lines": [
+        55,
+        55
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/XmlSignature.java",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "algorithm",
+      "primitive": "other",
+      "algorithm": "RSA",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/XmlSignature.java",
+      "lines": [
+        24,
+        24
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/XmlSignature.java",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSA-SHA256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/XmlSignature.java",
+      "lines": [
+        35,
+        35
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src/main/java/bench/XmlSignature.java",
+      "lines": [
+        40,
+        40
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

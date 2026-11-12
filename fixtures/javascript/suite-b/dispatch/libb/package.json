@@ -1,0 +1,7 @@
+{
+  "name": "cbench-dispatch-libb",
+  "version": "1.0.0",
+  "description": "Suite B fixture library libb (dispatch).",
+  "main": "index.js",
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,22 @@
+schema_version: "1"
+entry: javascript-b-direct-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:npm/cbench-direct-liba@1.0.0
+assets:
+  - id: gt-0001
+    file: index.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: dependency
+    component: pkg:npm/cbench-direct-liba@1.0.0
+    reachable: true
+    depth: 1
+    distance: 1
+    path:
+      - "index.js:main"
+      - "index.js:run"
+      - "cbench-direct-liba:fingerprint"

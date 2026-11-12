@@ -1,0 +1,29 @@
+schema_version: "1"
+entry: javascript-crypto-random-string
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: rng/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: rng/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: rng/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0

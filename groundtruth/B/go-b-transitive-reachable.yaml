@@ -1,0 +1,24 @@
+schema_version: "1"
+entry: go-b-transitive-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:golang/example.com/cbench/transitive/liba@v1.0.0
+    - pkg:golang/example.com/cbench/transitive/libb@v1.0.0
+assets:
+  - id: gt-0001
+    file: libb.go
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-512
+    origin: dependency
+    component: pkg:golang/example.com/cbench/transitive/libb@v1.0.0
+    reachable: true
+    depth: 2
+    distance: 2
+    path:
+      - "example.com/cbench/transitive/app.main"
+      - "example.com/cbench/transitive/app.run"
+      - "example.com/cbench/transitive/liba.Fingerprint"
+      - "example.com/cbench/transitive/libb.Digest"

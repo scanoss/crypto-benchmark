@@ -1,0 +1,266 @@
+schema_version: "1"
+entry: python-ecdsa
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: ecdh/main.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: ECDH
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdh/alice
+  - id: gt-0002
+    file: ecdh/main.py
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: ECDH
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdh/bob
+  - id: gt-0003
+    file: ecdh/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: ECDH
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdh/alice
+    notes: "Generated on an ECDH object. First annotation wrote EC; resolved to ECDH with the second annotator: the key type is tied to ECDH (guide, algorithm)."
+  - id: gt-0004
+    file: ecdh/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: ECDH
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdh/bob
+    notes: "Generated on an ECDH object. First annotation wrote EC; resolved to ECDH with the second annotator: the key type is tied to ECDH (guide, algorithm)."
+  - id: gt-0005
+    file: ecdh/main.py
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: ECDH
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdh/alice
+    notes: "Re-derivation: missed by the first annotation, added from the second: generate_sharedsecret_bytes() performs the agreement with the private key the ECDH object holds after generate_private_key(), like cryptography's private_key.exchange(). ECDH() creation only fixes the curve, so this is not a follow-up on an operation already annotated. No curve: the call does not state it."
+  - id: gt-0022
+    file: ecdh/main.py
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: agreed. The same call is also the ECDH key-agree algorithm asset."
+  - id: gt-0006
+    file: ecdh/main.py
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: ECDH
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdh/bob
+    notes: "Re-derivation: missed by the first annotation, added from the second: generate_sharedsecret_bytes() performs the agreement with the private key the ECDH object holds after generate_private_key(), like cryptography's private_key.exchange(). ECDH() creation only fixes the curve, so this is not a follow-up on an operation already annotated. No curve: the call does not state it."
+  - id: gt-0023
+    file: ecdh/main.py
+    lines: [13, 13]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: agreed. The same call is also the ECDH key-agree algorithm asset."
+  - id: gt-0007
+    file: key-load/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/sk
+  - id: gt-0024
+    file: key-load/main.py
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0008
+    file: key-load/main.py
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/pem
+  - id: gt-0009
+    file: key-load/main.py
+    lines: [9, 9]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/pem
+  - id: gt-0010
+    file: key-load/main.py
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/pem
+  - id: gt-0011
+    file: key-load/main.py
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/pem
+  - id: gt-0012
+    file: key-load/main.py
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/sk
+    notes: "verify call"
+  - id: gt-0013
+    file: key-load/main.py
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/sk
+    notes: "sign call nested in the verify"
+  - id: gt-0014
+    file: key-load/main.py
+    lines: [15, 15]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/pem
+    notes: "to_string() serializes the raw private key to bytes. Missed by the first annotation, added from the second."
+  - id: gt-0015
+    file: key-load/main.py
+    lines: [15, 15]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-load/pem
+    notes: "to_string() serializes the raw private key to bytes. Missed by the first annotation, added from the second."
+  - id: gt-0016
+    file: sign-p256/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign-p256/sk
+  - id: gt-0025
+    file: sign-p256/main.py
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0017
+    file: sign-p256/main.py
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign-p256/sk
+  - id: gt-0018
+    file: sign-p256/main.py
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign-p256/sk
+  - id: gt-0019
+    file: sign-secp256k1/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: secp256k1
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign-secp256k1/sk
+  - id: gt-0026
+    file: sign-secp256k1/main.py
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0020
+    file: sign-secp256k1/main.py
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign-secp256k1/sk
+  - id: gt-0021
+    file: sign-secp256k1/main.py
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign-secp256k1/sk

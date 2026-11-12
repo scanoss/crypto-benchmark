@@ -1,0 +1,28 @@
+schema_version: "1"
+entry: javascript-b-depth3-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:npm/cbench-depth3-liba@1.0.0
+    - pkg:npm/cbench-depth3-libb@1.0.0
+    - pkg:npm/cbench-depth3-libc@1.0.0
+assets:
+  - id: gt-0001
+    file: index.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: dependency
+    component: pkg:npm/cbench-depth3-libc@1.0.0
+    reachable: true
+    depth: 2
+    distance: 3
+    path:
+      - "index.js:main"
+      - "index.js:run"
+      - "cbench-depth3-liba:seal"
+      - "cbench-depth3-libb:seal"
+      - "cbench-depth3-libc:mac"

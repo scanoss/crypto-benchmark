@@ -1,0 +1,97 @@
+schema_version: "1"
+entry: rust-rustls
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/bin/client_config.rs
+    lines: [9, 11]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: src/bin/client_config.rs
+    lines: [14, 14]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Creating a TLS connection on a config is a protocol asset of its own (guide: protocol covers TLS contexts and sessions). Both annotations agreed."
+  - id: gt-0003
+    file: src/bin/handshake.rs
+    lines: [9, 9]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: src/bin/handshake.rs
+    lines: [12, 14]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0005
+    file: src/bin/handshake.rs
+    lines: [16, 17]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0006
+    file: src/bin/handshake.rs
+    lines: [18, 18]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0007
+    file: src/bin/handshake.rs
+    lines: [19, 21]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: src/bin/handshake.rs
+    lines: [23, 23]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0009
+    file: src/bin/handshake.rs
+    lines: [24, 24]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0010
+    file: src/bin/server_config.rs
+    lines: [8, 9]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0011
+    file: src/bin/server_config.rs
+    lines: [10, 10]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0012
+    file: src/bin/server_config.rs
+    lines: [12, 14]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0013
+    file: src/bin/server_config.rs
+    lines: [16, 16]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0

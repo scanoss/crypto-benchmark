@@ -1,0 +1,71 @@
+{
+  "schema_version": "6.18",
+  "scan_metadata": {
+    "ecosystem": "go",
+    "root_module": "example.com/transapp",
+    "tool_name": "crypto-finder",
+    "tool_version": "dev"
+  },
+  "finding_graphs": [
+    {
+      "finding_id": "7855dad3",
+      "occurrence_key": "v1:8b9e91a2df28b887",
+      "reachability": "reachable",
+      "reachable": true
+    },
+    {
+      "finding_id": "ebfc9a7b",
+      "occurrence_key": "v1:337496d1286f3a88",
+      "reachability": "unreachable",
+      "reachable": false
+    },
+    {
+      "finding_id": "a3a9d75d",
+      "occurrence_key": "v1:8d23bf0258eb7fc3",
+      "reachability": "reachable",
+      "reachable": true,
+      "dependency": {
+        "module": "example.com/translibb",
+        "version": "v0.0.0",
+        "purl": "pkg:golang/example.com/translibb@v0.0.0",
+        "relationship": "transitive",
+        "path": [
+          {
+            "module": "example.com/transliba",
+            "version": "v0.0.0",
+            "purl": "pkg:golang/example.com/transliba@v0.0.0"
+          },
+          {
+            "module": "example.com/translibb",
+            "version": "v0.0.0",
+            "purl": "pkg:golang/example.com/translibb@v0.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "finding_id": "1f739245",
+      "occurrence_key": "v1:e0c9269e77b69d24",
+      "reachability": "unreachable",
+      "reachable": false,
+      "dependency": {
+        "module": "example.com/translibb",
+        "version": "v0.0.0",
+        "purl": "pkg:golang/example.com/translibb@v0.0.0",
+        "relationship": "transitive",
+        "path": [
+          {
+            "module": "example.com/transliba",
+            "version": "v0.0.0",
+            "purl": "pkg:golang/example.com/transliba@v0.0.0"
+          },
+          {
+            "module": "example.com/translibb",
+            "version": "v0.0.0",
+            "purl": "pkg:golang/example.com/translibb@v0.0.0"
+          }
+        ]
+      }
+    }
+  ]
+}

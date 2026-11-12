@@ -1,0 +1,76 @@
+schema_version: "1"
+entry: go-x-crypto-chacha20poly1305
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: chacha20-poly1305/main.go
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "crypto/rand.Read fills a buffer the program uses as a key: a drbg draw, no material and no object of its own."
+  - id: gt-0002
+    file: chacha20-poly1305/main.go
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: ChaCha20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Seal and Open are follow-ups on the AEAD object."
+  - id: gt-0003
+    file: chacha20-poly1305/main.go
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: chacha20-poly1305/main.go
+    lines: [21, 21]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The value is created by make() on the line above and filled by rand.Read here; the draw is the expression that creates the material, so the asset takes the rand.Read line."
+  - id: gt-0005
+    file: xchacha20-poly1305/main.go
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "crypto/rand.Read fills a buffer the program uses as a key: a drbg draw, no material and no object of its own."
+  - id: gt-0006
+    file: xchacha20-poly1305/main.go
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: XChaCha20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0007
+    file: xchacha20-poly1305/main.go
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: xchacha20-poly1305/main.go
+    lines: [21, 21]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The value is created by make() on the line above and filled by rand.Read here; the draw is the expression that creates the material, so the asset takes the rand.Read line. The nonce is prepended to the sealed output, but the program creates and passes it, so it counts."

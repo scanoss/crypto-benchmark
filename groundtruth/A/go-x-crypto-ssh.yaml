@@ -1,0 +1,163 @@
+schema_version: "1"
+entry: go-x-crypto-ssh
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: handshake/main.go
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: handshake/hostKey
+  - id: gt-0015
+    file: handshake/main.go
+    lines: [13, 13]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: handshake/main.go
+    lines: [17, 17]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: handshake/hostKey
+    notes: "Re-derivation: the second annotation counted signer.Sign as a sign call on a key, since ssh.Signer is the library's private-key type. Kept as a follow-up, by the pycryptodome DSS.new precedent, because this program creates the signer from a key with NewSignerFromKey. ssh.NewSignerFromKey creates a signer object on the key, like pycryptodome DSS.new; its Sign method is a follow-up on that object and is not annotated."
+  - id: gt-0003
+    file: handshake/main.go
+    lines: [21, 28]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: the second annotation left the SSH config literals out. Kept: the stdlib re-derivation annotated tls.Config literals as TLS contexts independently, and an SSH config is the same kind of context. An ssh.ServerConfig or ssh.ClientConfig literal is the SSH context the transports are created from, annotated like a tls.Config literal; the conn created from it is a separate protocol asset. AddHostKey on line 29 configures it and is not an asset."
+  - id: gt-0004
+    file: handshake/main.go
+    lines: [31, 35]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: the second annotation left the SSH config literals out. Kept: the stdlib re-derivation annotated tls.Config literals as TLS contexts independently, and an SSH config is the same kind of context. An ssh.ServerConfig or ssh.ClientConfig literal is the SSH context the transports are created from, annotated like a tls.Config literal; the conn created from it is a separate protocol asset. ssh.Password and ssh.FixedHostKey are authentication and host-key settings of the config, not assets."
+  - id: gt-0005
+    file: handshake/main.go
+    lines: [47, 47]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "ssh.NewServerConn creates the server side SSH transport, like paramiko.Transport."
+  - id: gt-0006
+    file: handshake/main.go
+    lines: [61, 61]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0007
+    file: key-file/main.go
+    lines: [15, 15]
+    asset_type: algorithm
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The key is only serialized and parsed, so no primitive."
+  - id: gt-0016
+    file: key-file/main.go
+    lines: [15, 15]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0008
+    file: key-file/main.go
+    lines: [20, 20]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-file/block
+    notes: "The passphrase encryption that MarshalPrivateKeyWithPassphrase runs uses algorithms the call does not name, so it is not annotated separately. Re-derivation: the second annotation added bcrypt-pbkdf and AES-256-CTR assets here and at the parse, citing pycryptodome export_key. Not added: export_key names its scheme in the call, while this call names none, and python-paramiko's password-protected write_private_key_file was annotated as the serialization only."
+  - id: gt-0009
+    file: key-file/main.go
+    lines: [34, 34]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: key-file/block
+    notes: "Parsing the key file the program wrote; the returned Signer signs nothing here."
+  - id: gt-0010
+    file: keys/main.go
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: keys/privateKey
+  - id: gt-0017
+    file: keys/main.go
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0011
+    file: keys/main.go
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: keys/privateKey
+    notes: "Re-derivation: the second annotation counted signer.Sign as a sign call on a key, since ssh.Signer is the library's private-key type. Kept as a follow-up, by the pycryptodome DSS.new precedent, because this program creates the signer from a key with NewSignerFromKey. ssh.NewSignerFromKey creates a signer object on the key, like pycryptodome DSS.new; its Sign method is a follow-up on that object and is not annotated."
+  - id: gt-0012
+    file: keys/main.go
+    lines: [20, 20]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "MarshalAuthorizedKey serializes the public key in authorized_keys format; the only serialization, so no object."
+  - id: gt-0013
+    file: keys/main.go
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "FingerprintSHA256 is a digest of a key, its own object."
+  - id: gt-0014
+    file: keys/main.go
+    lines: [28, 28]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: keys/privateKey
+    notes: "Verify on the public key is a verify call on a key, unlike signer.Sign on line 24, which is a follow-up on the signer object."

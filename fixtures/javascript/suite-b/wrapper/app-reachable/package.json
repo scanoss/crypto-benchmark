@@ -1,0 +1,12 @@
+{
+  "name": "cbench-wrapper-app",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cbench-wrapper-liba": "file:../dist/cbench-wrapper-liba-1.0.0.tgz"
+  },
+  "overrides": {
+    "cbench-wrapper-libb": "file:../dist/cbench-wrapper-libb-1.0.0.tgz"
+  }
+}

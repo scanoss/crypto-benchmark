@@ -1,0 +1,214 @@
+schema_version: "1"
+entry: python-pynacl
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: box/main.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: box/alice
+  - id: gt-0020
+    file: box/main.py
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: box/main.py
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: box/bob
+  - id: gt-0021
+    file: box/main.py
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0003
+    file: box/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: box/alice
+    notes: "Box() computes the shared key; .encrypt on the same line is a separate asset."
+  - id: gt-0004
+    file: box/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: XSalsa20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: second annotator added key_size 256 because the API fixes a 32-byte key; resolved to none: the algorithm admits only a 256-bit key, so the size is not a parameter that tells variants apart (guide, parameters)."
+  - id: gt-0005
+    file: box/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: box/bob
+  - id: gt-0006
+    file: box/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: XSalsa20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: second annotator added key_size 256 because the API fixes a 32-byte key; resolved to none: the algorithm admits only a 256-bit key, so the size is not a parameter that tells variants apart (guide, parameters)."
+  - id: gt-0007
+    file: hash/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: hash/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: BLAKE2b
+    origin: project
+    reachable: true
+    depth: 0
+    object: hash/key
+    notes: "Keyed BLAKE2b with the default 32-byte digest. Second annotator wrote BLAKE2b-256; resolved to BLAKE2b, the spelling in the internal/algo table, which lists no BLAKE2b output sizes."
+  - id: gt-0009
+    file: hash/main.py
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: BLAKE2b
+    origin: project
+    reachable: true
+    depth: 0
+    object: hash/key
+    notes: "Keyed BLAKE2b with the default 32-byte digest. Second annotator wrote BLAKE2b-256; resolved to BLAKE2b, the spelling in the internal/algo table, which lists no BLAKE2b output sizes."
+  - id: gt-0010
+    file: hash/main.py
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0011
+    file: pwhash/main.py
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: Argon2id
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0012
+    file: pwhash/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: Argon2id
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0013
+    file: rng/main.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0014
+    file: rng/main.py
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0015
+    file: secretbox/main.py
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0016
+    file: secretbox/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: XSalsa20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: second annotator added key_size 256 because the API fixes a 32-byte key; resolved to none: the algorithm admits only a 256-bit key, so the size is not a parameter that tells variants apart (guide, parameters)."
+  - id: gt-0017
+    file: sign/main.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign/signing_key
+  - id: gt-0022
+    file: sign/main.py
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0018
+    file: sign/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign/signing_key
+  - id: gt-0019
+    file: sign/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign/signing_key

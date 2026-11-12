@@ -1,0 +1,30 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "rust-rustls-webpki",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "src/bin/verify_signature.rs",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_pair",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

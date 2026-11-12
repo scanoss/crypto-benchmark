@@ -1,0 +1,66 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "rust-hkdf",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "src/bin/hkdf_sha512_extract.rs",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "enc_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/hkdf_sha512_extract.rs",
+      "lines": [
+        5,
+        5
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "input_key_material",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/hkdf_sha256.rs",
+      "lines": [
+        7,
+        7
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "salt",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/hkdf_sha512_extract.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "salt",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

@@ -1,0 +1,1125 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "sonar-cryptography",
+    "version": "1.7.0"
+  },
+  "entry": "java-stdlib",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "src/main/java/bench/AesCbc.java",
+      "lines": [
+        18,
+        18
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "initialization-vector",
+      "algorithm": "iv@6a6eff52-d7d4-43f7-a7b4-6ae6df6dfd08",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/AesGcm.java",
+      "lines": [
+        29,
+        29
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "initialization-vector",
+      "algorithm": "iv@23ef3796-4f12-4f3a-9e19-0319262652cb",
+      "parameters": {
+        "key_size": 96
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Pbkdf2.java",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES-128",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/RsaOaep.java",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-OAEP",
+      "parameters": {
+        "mode": "ecb",
+        "padding": "oaep",
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/RsaOaep.java",
+      "lines": [
+        18,
+        18
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-OAEP",
+      "parameters": {
+        "mode": "ecb",
+        "padding": "oaep",
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/RsaSignature.java",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-3072",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/RsaOaep.java",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-3072",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/EcdsaP256.java",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/EcdsaP256.java",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Pbkdf2.java",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "PBKDF2-HMAC-SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/ChaCha20Poly1305.java",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@30def1cb-beaa-4a5a-b3af-212b14351c0d",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/RsaSignature.java",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@4abd80a4-a404-44a5-a669-11edcd04bf6a",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/AesGcm.java",
+      "lines": [
+        24,
+        24
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "initialization-vector",
+      "algorithm": "iv@3845aad8-a350-467e-9238-c778c01c87f8",
+      "parameters": {
+        "key_size": 96
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/AesGcm.java",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-128-GCM",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/AesGcm.java",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-128-GCM",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Pbkdf2.java",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "password",
+      "algorithm": "password@9b38953e-12b4-425b-abc2-f20a06325752",
+      "parameters": {
+        "key_size": 224
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Pbkdf2.java",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "secret-key@edec3139-23ba-4610-8c15-91de4f646e61",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/ChaCha20Poly1305.java",
+      "lines": [
+        20,
+        20
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "initialization-vector",
+      "algorithm": "iv@69ee45d4-4af9-4740-8054-49d7a6e208a0",
+      "parameters": {
+        "key_size": 96
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Ed25519Signature.java",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "parameters": {
+        "curve": "Edwards25519"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Ed25519Signature.java",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "parameters": {
+        "curve": "Edwards25519"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Ed25519Signature.java",
+      "lines": [
+        20,
+        20
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "parameters": {
+        "curve": "Edwards25519"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/TlsContext.java",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "protocol",
+      "algorithm": "TLSv1.3",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/ChaCha20Poly1305.java",
+      "lines": [
+        24,
+        24
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "initialization-vector",
+      "algorithm": "iv@d8535c80-8cf7-44e9-845a-a253d2821407",
+      "parameters": {
+        "key_size": 96
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/EcdsaP256.java",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@54b54dda-8564-485d-a7ef-71918ce50d60",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/EcdsaP256.java",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@6644fddc-b14e-462c-ba6e-83a1ba771c9d",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Ed25519Signature.java",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@5c3b1e93-f64a-444c-bc78-8d77c94a0c36",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/X25519Agreement.java",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "key-agree",
+      "algorithm": "x25519",
+      "parameters": {
+        "curve": "Curve25519"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/X25519Agreement.java",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "key-agree",
+      "algorithm": "x25519",
+      "parameters": {
+        "curve": "Curve25519"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/X25519Agreement.java",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "algorithm",
+      "primitive": "key-agree",
+      "algorithm": "x25519",
+      "parameters": {
+        "curve": "Curve25519"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/KeySerialization.java",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "EC",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/KeySerialization.java",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "EC",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/EcdsaP256.java",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "EC",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/RsaSignature.java",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSA-PKCS1-1.5-SHA-256",
+      "parameters": {
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/RsaSignature.java",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSA-PKCS1-1.5-SHA-256",
+      "parameters": {
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/X25519Agreement.java",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@5569af0b-7e3b-4cdb-90e3-1b5adc5b59c4",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/KeySerialization.java",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@b79439a6-b0c2-41ec-8e2d-df7664f2c9fe",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/RsaOaep.java",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "other",
+      "algorithm": "MGF1",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/RsaOaep.java",
+      "lines": [
+        18,
+        18
+      ],
+      "asset_type": "algorithm",
+      "primitive": "other",
+      "algorithm": "MGF1",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/HmacSha256.java",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/HmacSha256.java",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/HmacSha256.java",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Pbkdf2.java",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/ChaCha20Poly1305.java",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "stream-cipher",
+      "algorithm": "ChaCha20",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/ChaCha20Poly1305.java",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "algorithm",
+      "primitive": "stream-cipher",
+      "algorithm": "ChaCha20",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/ChaCha20Poly1305.java",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "algorithm",
+      "primitive": "stream-cipher",
+      "algorithm": "ChaCha20",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Pbkdf2.java",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "salt",
+      "algorithm": "salt@cf87d316-ca11-439d-a310-31c745db6c48",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/HmacSha256.java",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@9b5d1084-f616-440f-87a1-d827ad982f28",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/AesCbc.java",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "secret-key@abaf9b48-ce4e-487d-b34f-eb75b216351c",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/RsaOaep.java",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@feab04e4-81b8-4a43-9491-f3818bef4f4d",
+      "parameters": {
+        "key_size": 3072
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/AesGcm.java",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "secret-key@39f34d3a-62cc-40af-9bcf-9c5004346be5",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/ChaCha20Poly1305.java",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "Poly1305",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/ChaCha20Poly1305.java",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "Poly1305",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/AesCbc.java",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/AesGcm.java",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/KeySerialization.java",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "key@d65c5361-d1f6-4cc5-b2b5-d4c186345326",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/AesCbc.java",
+      "lines": [
+        20,
+        20
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES-128-CBC-PKCS5",
+      "parameters": {
+        "mode": "cbc",
+        "padding": "pkcs5",
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/AesCbc.java",
+      "lines": [
+        24,
+        24
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES-128-CBC-PKCS5",
+      "parameters": {
+        "mode": "cbc",
+        "padding": "pkcs5",
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Pbkdf2.java",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "algorithm": "secret-key@241ea141-3289-473f-9afd-caa27dea0089",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/RsaSignature.java",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/RsaSignature.java",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/EcdsaP256.java",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/EcdsaP256.java",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/HmacSha256.java",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/HmacSha256.java",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/HmacSha256.java",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/CertificateParse.java",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/RsaOaep.java",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/RsaOaep.java",
+      "lines": [
+        18,
+        18
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Pbkdf2.java",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Sha256.java",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/KeySerialization.java",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key@84ddb236-9877-4664-927c-be4aa4c747ef",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Sha3.java",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA3-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/AesCbc.java",
+      "lines": [
+        18,
+        18
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "initialization-vector",
+      "algorithm": "iv@ea1d4b06-05dc-4538-be5c-d2d511ac619c",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Ed25519Signature.java",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Ed25519Signature.java",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/Ed25519Signature.java",
+      "lines": [
+        20,
+        20
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/KeySerialization.java",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "EC-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/main/java/bench/EcdsaP256.java",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "EC-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

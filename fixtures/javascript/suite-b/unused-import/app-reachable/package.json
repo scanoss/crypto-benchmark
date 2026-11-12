@@ -1,0 +1,12 @@
+{
+  "name": "cbench-unused-import-app",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cbench-unused-import-liba": "file:../dist/cbench-unused-import-liba-1.0.0.tgz"
+  },
+  "overrides": {
+    "cbench-unused-import-libb": "file:../dist/cbench-unused-import-libb-1.0.0.tgz"
+  }
+}

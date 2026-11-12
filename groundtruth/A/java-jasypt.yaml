@@ -1,0 +1,105 @@
+schema_version: "1"
+entry: java-jasypt
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/main/java/bench/BasicPassword.java
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: MD5
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "BasicPasswordEncryptor is a StandardStringDigester fixed to MD5, 1000 iterations, 8-byte random salt. Annotated as a password hash (primitive kdf) named by its digest, since the scheme has no other algorithm name; a second annotator may write primitive hash. encryptPassword and checkPassword are follow-ups. Salt kept in the output."
+  - id: gt-0002
+    file: src/main/java/bench/PbeAes256.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: CBC
+      padding: PKCS7
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The asset is the creating call new StandardPBEStringEncryptor(); its algorithm comes from setAlgorithm(\"PBEWITHHMACSHA512ANDAES_256\") on the same object in the same method (as key_size comes from KeyPairGenerator.initialize, annotation log, Java decisions). setAlgorithm, setPassword and setIvGenerator configure the object and are not assets. JCE PBEWithHmacSHA512AndAES_256 is PBES2: PBKDF2-HMAC-SHA512 then AES-256-CBC with PKCS5 padding, so two assets with the same lines. new RandomIvGenerator() only configures how the library draws the IV, which it keeps in the output: not an asset. Salt likewise. A second annotator may place these assets on line 10 instead."
+  - id: gt-0003
+    file: src/main/java/bench/PbeAes256.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "PBKDF2 half of PBEWITHHMACSHA512ANDAES_256 (set on line 10); no hash on a KDF (guide, hash). Re-derivation: the second annotation added new RandomIvGenerator() on line 11 as a SHA1PRNG drbg asset. Kept out: creating a generator draws nothing, and the IV it later draws stays inside the library output."
+  - id: gt-0004
+    file: src/main/java/bench/PbeDefault.java
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: DES
+    parameters:
+      mode: CBC
+      padding: PKCS7
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "jasypt's default algorithm PBEWithMD5AndDES (PKCS#5 PBES1): PBKDF1 with MD5 derives a DES key, then DES-CBC with PKCS5 padding. The creating call fixes both by default, so two assets with the same lines (two-algorithms rule). encrypt and decrypt are follow-ups on the encryptor object. Salt drawn by the library and kept in the output: no salt asset. DES has one key size, so no key_size."
+  - id: gt-0005
+    file: src/main/java/bench/PbeDefault.java
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF1
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "PBKDF1 half of PBEWithMD5AndDES. PBKDF1 is not in the algo table and keeps its usual name; its MD5 is not written (no hash on a KDF)."
+  - id: gt-0006
+    file: src/main/java/bench/StringDigest.java
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The asset is the creating call new StandardStringDigester(); SHA-256 comes from setAlgorithm on line 8 (same object, same method). setAlgorithm and setIterations configure it. digest and matches are follow-ups. Salt (8 random bytes by default) is drawn by the library and kept in the output."
+  - id: gt-0007
+    file: src/main/java/bench/StrongPassword.java
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "StrongPasswordEncryptor is a StandardStringDigester fixed to SHA-256, 100000 iterations, 16-byte random salt. Annotated as a password hash (primitive kdf) named by its digest; a second annotator may write primitive hash. encryptPassword and checkPassword are follow-ups."
+  - id: gt-0008
+    file: src/main/java/bench/TextEncryption.java
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: DES
+    parameters:
+      mode: CBC
+      padding: PKCS7
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "BasicTextEncryptor wraps StandardPBEStringEncryptor with its default PBEWithMD5AndDES. jasypt's default algorithm PBEWithMD5AndDES (PKCS#5 PBES1): PBKDF1 with MD5 derives a DES key, then DES-CBC with PKCS5 padding. The creating call fixes both by default, so two assets with the same lines (two-algorithms rule). encrypt and decrypt are follow-ups on the encryptor object. Salt drawn by the library and kept in the output: no salt asset."
+  - id: gt-0009
+    file: src/main/java/bench/TextEncryption.java
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF1
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "PBKDF1 half of PBEWithMD5AndDES (BasicTextEncryptor)."

@@ -1,0 +1,23 @@
+schema_version: "1"
+entry: go-b-depth3-unreachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:golang/example.com/cbench/depth3/liba@v1.0.0
+    - pkg:golang/example.com/cbench/depth3/libb@v1.0.0
+    - pkg:golang/example.com/cbench/depth3/libc@v1.0.0
+assets:
+  - id: gt-0001
+    file: libc.go
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: dependency
+    component: pkg:golang/example.com/cbench/depth3/libc@v1.0.0
+    reachable: false
+    depth: 2
+    distance: 3
+    notes: "Distance 3 follows the imports app -> liba -> libb -> libc. liba's and the app's go.mod also list libc as // indirect, as Go requires, but neither imports it (annotation guide, Suite B). Unreachable because the call to liba moves into an app function that main never calls."

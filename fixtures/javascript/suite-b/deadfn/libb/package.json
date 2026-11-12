@@ -1,0 +1,7 @@
+{
+  "name": "cbench-deadfn-libb",
+  "version": "1.0.0",
+  "description": "Suite B fixture library libb (deadfn).",
+  "main": "codec.js",
+  "license": "Apache-2.0"
+}

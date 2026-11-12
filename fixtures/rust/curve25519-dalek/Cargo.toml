@@ -1,0 +1,10 @@
+[package]
+name = "curve25519-dalek-fixture"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+curve25519-dalek = { version = "=5.0.0", features = ["rand_core", "digest"] }
+sha2 = "=0.11.1"
+getrandom = { version = "=0.4.3", features = ["sys_rng"] }

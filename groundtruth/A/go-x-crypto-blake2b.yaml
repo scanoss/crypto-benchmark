@@ -1,0 +1,54 @@
+schema_version: "1"
+entry: go-x-crypto-blake2b
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: hash/main.go
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: BLAKE2b
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: hash/main.go
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: BLAKE2b
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "New512(nil) is unkeyed, so a hash, not a MAC."
+  - id: gt-0003
+    file: mac/main.go
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "crypto/rand.Read fills a buffer the program uses as a key: a drbg draw, no material and no object of its own."
+  - id: gt-0004
+    file: mac/main.go
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: BLAKE2b
+    origin: project
+    reachable: true
+    depth: 0
+    object: mac/key
+    notes: "New256 with a key is keyed BLAKE2b, used as a MAC."
+  - id: gt-0005
+    file: mac/main.go
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: BLAKE2b
+    origin: project
+    reachable: true
+    depth: 0
+    object: mac/key

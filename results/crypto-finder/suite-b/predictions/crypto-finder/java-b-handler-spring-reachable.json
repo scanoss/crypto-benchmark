@@ -1,0 +1,1265 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "java-b-handler-spring-reachable",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "ch/qos/logback/classic/net/SimpleSSLSocketServer.java",
+      "lines": [
+        91,
+        91
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/ch.qos.logback/logback-classic@1.5.38",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "ch/qos/logback/core/net/AbstractSSLSocketAppender.java",
+      "lines": [
+        61,
+        61
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/ch.qos.logback/logback-core@1.5.38",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 5
+    },
+    {
+      "file": "ch/qos/logback/core/net/ssl/SSLConfigurableServerSocket.java",
+      "lines": [
+        53,
+        53
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/ch.qos.logback/logback-core@1.5.38",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 5
+    },
+    {
+      "file": "ch/qos/logback/core/net/ssl/SSLConfigurableSocket.java",
+      "lines": [
+        54,
+        54
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/ch.qos.logback/logback-core@1.5.38",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 5
+    },
+    {
+      "file": "ch/qos/logback/core/net/ssl/SSLContextFactoryBean.java",
+      "lines": [
+        80,
+        80
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/ch.qos.logback/logback-core@1.5.38",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 5
+    },
+    {
+      "file": "ch/qos/logback/core/net/ssl/SSLContextFactoryBean.java",
+      "lines": [
+        81,
+        81
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/ch.qos.logback/logback-core@1.5.38",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 5
+    },
+    {
+      "file": "ch/qos/logback/core/net/ssl/SSLParametersConfiguration.java",
+      "lines": [
+        52,
+        52
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/ch.qos.logback/logback-core@1.5.38",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 5
+    },
+    {
+      "file": "ch/qos/logback/core/net/ssl/SecureRandomFactoryBean.java",
+      "lines": [
+        49,
+        49
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "origin": "dependency",
+      "component": "pkg:maven/ch.qos.logback/logback-core@1.5.38",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 5
+    },
+    {
+      "file": "ch/qos/logback/core/net/ssl/SecureRandomFactoryBean.java",
+      "lines": [
+        50,
+        50
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "origin": "dependency",
+      "component": "pkg:maven/ch.qos.logback/logback-core@1.5.38",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 5
+    },
+    {
+      "file": "org/apache/catalina/realm/JNDIRealm.java",
+      "lines": [
+        2764,
+        2764
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "unknown"
+    },
+    {
+      "file": "org/apache/catalina/realm/JNDIRealm.java",
+      "lines": [
+        2769,
+        2769
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "unknown"
+    },
+    {
+      "file": "org/apache/catalina/realm/JNDIRealm.java",
+      "lines": [
+        2804,
+        2804
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "unknown"
+    },
+    {
+      "file": "org/apache/catalina/realm/SecretKeyCredentialHandler.java",
+      "lines": [
+        73,
+        73
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "PBKDF2WithHmacSHA1",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/catalina/realm/SecretKeyCredentialHandler.java",
+      "lines": [
+        73,
+        73
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "PBKDF2",
+      "parameters": {
+        "hash": "SHA1"
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/catalina/util/SessionIdGeneratorBase.java",
+      "lines": [
+        233,
+        233
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/catalina/util/SessionIdGeneratorBase.java",
+      "lines": [
+        261,
+        261
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/catalina/util/SessionIdGeneratorBase.java",
+      "lines": [
+        263,
+        263
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/catalina/util/SessionIdGeneratorBase.java",
+      "lines": [
+        279,
+        279
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/catalina/valves/SSLValve.java",
+      "lines": [
+        251,
+        251
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/catalina/valves/SSLValve.java",
+      "lines": [
+        251,
+        251
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/catalina/valves/SSLValve.java",
+      "lines": [
+        251,
+        251
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/catalina/webresources/AbstractResource.java",
+      "lines": [
+        148,
+        148
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/coyote/ajp/AjpProcessor.java",
+      "lines": [
+        1184,
+        1184
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/coyote/ajp/AjpProcessor.java",
+      "lines": [
+        1184,
+        1184
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/coyote/ajp/AjpProcessor.java",
+      "lines": [
+        1184,
+        1184
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/AbstractEndpoint.java",
+      "lines": [
+        671,
+        671
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/AbstractEndpoint.java",
+      "lines": [
+        674,
+        674
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/AbstractEndpoint.java",
+      "lines": [
+        679,
+        679
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/AbstractEndpoint.java",
+      "lines": [
+        722,
+        722
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/SSLContextWrapper.java",
+      "lines": [
+        70,
+        70
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/SSLHostConfig.java",
+      "lines": [
+        1559,
+        1559
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/SSLUtilBase.java",
+      "lines": [
+        552,
+        552
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/SSLUtilBase.java",
+      "lines": [
+        552,
+        552
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/SSLUtilBase.java",
+      "lines": [
+        556,
+        556
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/SSLUtilBase.java",
+      "lines": [
+        562,
+        562
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/SSLUtilBase.java",
+      "lines": [
+        596,
+        596
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/jsse/JSSESSLContext.java",
+      "lines": [
+        45,
+        45
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/jsse/JSSESSLContext.java",
+      "lines": [
+        71,
+        71
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/jsse/JSSESupport.java",
+      "lines": [
+        132,
+        132
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/jsse/JSSESupport.java",
+      "lines": [
+        132,
+        132
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/jsse/PEMFile.java",
+      "lines": [
+        124,
+        124
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/jsse/PEMFile.java",
+      "lines": [
+        329,
+        329
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/jsse/PEMFile.java",
+      "lines": [
+        329,
+        329
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/jsse/PEMFile.java",
+      "lines": [
+        406,
+        406
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "secret-key",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/jsse/PEMFile.java",
+      "lines": [
+        407,
+        407
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES-CBC-PKCS5Padding",
+      "parameters": {
+        "mode": "CBC",
+        "padding": "PKCS5Padding"
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/jsse/PEMFile.java",
+      "lines": [
+        407,
+        407
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "DES-CBC-PKCS5Padding",
+      "parameters": {
+        "mode": "CBC",
+        "padding": "PKCS5Padding"
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/jsse/PEMFile.java",
+      "lines": [
+        408,
+        408
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "initialization-vector",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/jsse/PEMFile.java",
+      "lines": [
+        527,
+        527
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/jsse/PEMFile.java",
+      "lines": [
+        528,
+        528
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "initialization-vector",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/jsse/PEMFile.java",
+      "lines": [
+        593,
+        593
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/jsse/PEMFile.java",
+      "lines": [
+        615,
+        615
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/openssl/OpenSSLContext.java",
+      "lines": [
+        400,
+        400
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/openssl/OpenSSLContext.java",
+      "lines": [
+        553,
+        553
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/openssl/OpenSSLX509Certificate.java",
+      "lines": [
+        179,
+        179
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/openssl/OpenSSLX509Certificate.java",
+      "lines": [
+        182,
+        183
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/openssl/OpenSSLX509Certificate.java",
+      "lines": [
+        182,
+        183
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/openssl/panama/OpenSSLContext.java",
+      "lines": [
+        598,
+        598
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/openssl/panama/OpenSSLLibrary.java",
+      "lines": [
+        243,
+        243
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/openssl/panama/OpenSSLX509Certificate.java",
+      "lines": [
+        179,
+        179
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/openssl/panama/OpenSSLX509Certificate.java",
+      "lines": [
+        182,
+        183
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/net/openssl/panama/OpenSSLX509Certificate.java",
+      "lines": [
+        182,
+        183
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/security/ConcurrentMessageDigest.java",
+      "lines": [
+        134,
+        134
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/security/ConcurrentMessageDigest.java",
+      "lines": [
+        134,
+        134
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/security/ConcurrentMessageDigest.java",
+      "lines": [
+        134,
+        134
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/security/ConcurrentMessageDigest.java",
+      "lines": [
+        172,
+        172
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/security/ConcurrentMessageDigest.java",
+      "lines": [
+        172,
+        172
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/security/ConcurrentMessageDigest.java",
+      "lines": [
+        172,
+        172
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/util/security/ConcurrentMessageDigest.java",
+      "lines": [
+        172,
+        172
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/websocket/DigestAuthenticator.java",
+      "lines": [
+        158,
+        158
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/websocket/Util.java",
+      "lines": [
+        141,
+        141
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "SHA1PRNG",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/websocket/Util.java",
+      "lines": [
+        150,
+        150
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/websocket/WsWebSocketContainer.java",
+      "lines": [
+        979,
+        979
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/apache/tomcat/websocket/WsWebSocketContainer.java",
+      "lines": [
+        979,
+        979
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@11.0.27",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/cbench/handlerspring/libb/Digests.java",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.cbench.handlerspring/libb@1.0.0",
+      "reachable": "true",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "org/springframework/boot/ssl/SslManagerBundle.java",
+      "lines": [
+        73,
+        73
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/org.springframework.boot/spring-boot@4.1.2",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "org/springframework/boot/ssl/pem/PemCertificateParser.java",
+      "lines": [
+        77,
+        77
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.springframework.boot/spring-boot@4.1.2",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "org/springframework/boot/ssl/pem/PemCertificateParser.java",
+      "lines": [
+        77,
+        77
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.springframework.boot/spring-boot@4.1.2",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "org/springframework/boot/ssl/pem/PemPrivateKeyParser.java",
+      "lines": [
+        244,
+        244
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "dependency",
+      "component": "pkg:maven/org.springframework.boot/spring-boot@4.1.2",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "org/springframework/boot/ssl/pem/PemPrivateKeyParser.java",
+      "lines": [
+        253,
+        253
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "dependency",
+      "component": "pkg:maven/org.springframework.boot/spring-boot@4.1.2",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "org/springframework/boot/ssl/pem/PemPrivateKeyParser.java",
+      "lines": [
+        442,
+        442
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "dependency",
+      "component": "pkg:maven/org.springframework.boot/spring-boot@4.1.2",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "org/springframework/boot/ssl/pem/PemPrivateKeyParser.java",
+      "lines": [
+        445,
+        445
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "origin": "dependency",
+      "component": "pkg:maven/org.springframework.boot/spring-boot@4.1.2",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "org/springframework/boot/ssl/pem/PemPrivateKeyParser.java",
+      "lines": [
+        447,
+        447
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "origin": "dependency",
+      "component": "pkg:maven/org.springframework.boot/spring-boot@4.1.2",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "org/springframework/boot/ssl/pem/PemSslStoreBundle.java",
+      "lines": [
+        122,
+        122
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:maven/org.springframework.boot/spring-boot@4.1.2",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "org/springframework/boot/system/ApplicationTemp.java",
+      "lines": [
+        192,
+        192
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.springframework.boot/spring-boot@4.1.2",
+      "reachable": "unknown"
+    },
+    {
+      "file": "org/springframework/boot/autoconfigure/ssl/CertificateMatcher.java",
+      "lines": [
+        54,
+        54
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "origin": "dependency",
+      "component": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@4.1.2",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "org/springframework/boot/tomcat/SslConnectorCustomizer.java",
+      "lines": [
+        138,
+        138
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:maven/org.springframework.boot/spring-boot-tomcat@4.1.2",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 3
+    },
+    {
+      "file": "org/springframework/util/AlternativeJdkIdGenerator.java",
+      "lines": [
+        42,
+        42
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "origin": "dependency",
+      "component": "pkg:maven/org.springframework/spring-core@7.0.10",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    },
+    {
+      "file": "org/springframework/util/DigestUtils.java",
+      "lines": [
+        115,
+        115
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "dependency",
+      "component": "pkg:maven/org.springframework/spring-core@7.0.10",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 4
+    }
+  ]
+}

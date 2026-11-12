@@ -1,0 +1,66 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "rust-curve25519-dalek",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "src/bin/ristretto_dh.rs",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "alice_secret",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/x25519_dh.rs",
+      "lines": [
+        4,
+        4
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "alice_secret",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/ristretto_dh.rs",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "bob_secret",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src/bin/x25519_dh.rs",
+      "lines": [
+        6,
+        6
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "bob_secret",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

@@ -1,0 +1,27 @@
+schema_version: "1"
+entry: python-b-wrapper-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:pypi/cbench-wrapper-liba@1.0.0
+    - pkg:pypi/cbench-wrapper-libb@1.0.0
+assets:
+  - id: gt-0001
+    file: libb/__init__.py
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-384
+    origin: dependency
+    component: pkg:pypi/cbench-wrapper-libb@1.0.0
+    reachable: true
+    depth: 2
+    distance: 2
+    path:
+      - "main.main"
+      - "main.run"
+      - "liba.protect"
+      - "liba._protect"
+      - "libb.encode"
+      - "libb._encode"
+      - "libb._hash_block"

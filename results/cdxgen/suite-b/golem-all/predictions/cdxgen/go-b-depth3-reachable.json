@@ -1,0 +1,57 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "go-b-depth3-reachable",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "libc.go",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "hmacSHA",
+      "origin": "dependency",
+      "component": "pkg:golang/example.com/cbench/depth3/libc",
+      "reachable": "unknown"
+    },
+    {
+      "file": "libc.go",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "dependency",
+      "component": "pkg:golang/example.com/cbench/depth3/libc",
+      "reachable": "unknown"
+    },
+    {
+      "file": "libc.go",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "dependency",
+      "component": "pkg:golang/example.com/cbench/depth3/libc",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "1",
+    "locations_dropped": "4"
+  }
+}

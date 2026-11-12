@@ -1,0 +1,104 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "rust-b-handler-actix-unreachable",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "examples/tls_rustls.rs",
+      "lines": [
+        46,
+        46
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:cargo/actix-http@3.20.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "examples/tls_rustls.rs",
+      "lines": [
+        52,
+        52
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:cargo/actix-http@3.20.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "examples/ws.rs",
+      "lines": [
+        86,
+        86
+      ],
+      "asset_type": "certificate",
+      "origin": "dependency",
+      "component": "pkg:cargo/actix-http@3.20.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "examples/ws.rs",
+      "lines": [
+        92,
+        92
+      ],
+      "asset_type": "protocol",
+      "origin": "dependency",
+      "component": "pkg:cargo/actix-http@3.20.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "src/ws/proto.rs",
+      "lines": [
+        238,
+        238
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "dependency",
+      "component": "pkg:cargo/actix-http@3.20.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    },
+    {
+      "file": "src/lib.rs",
+      "lines": [
+        4,
+        4
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "dependency",
+      "component": "pkg:cargo/cbench-handler-actix-libb@1.0.0",
+      "reachable": "false",
+      "depth": 2,
+      "distance": 2
+    }
+  ]
+}

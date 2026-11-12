@@ -1,0 +1,34 @@
+schema_version: "1"
+entry: go-x-crypto-acme-autocert
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: manager/main.go
+    lines: [17, 17]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The ACME account key, which acme.Client uses to sign its requests. Re-derivation: the second annotation also listed the &acme.Client{Key: accountKey} literal on line 25 as a signer object built on the key. Not added: the client signs nothing in this program, and attaching a key to a client is configuration, like keyring.Add in ssh/agent."
+  - id: gt-0003
+    file: manager/main.go
+    lines: [17, 17]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: manager/main.go
+    lines: [29, 29]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Manager.TLSConfig() creates the TLS context that serves the certificates. The autocert.Manager literal configures an ACME client and is not an asset; certificate issuance needs the network and is out of scope for an offline fixture."

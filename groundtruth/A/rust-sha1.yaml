@@ -1,0 +1,23 @@
+schema_version: "1"
+entry: rust-sha1
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/bin/sha1.rs
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: src/bin/sha1_oneshot.rs
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: true
+    depth: 0

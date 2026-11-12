@@ -1,0 +1,158 @@
+schema_version: "1"
+entry: python-stdlib
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: hmac-sha256/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: hmac-sha256/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hmac-sha256/key
+  - id: gt-0003
+    file: hmac-sha256/main.py
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hmac-sha256/key
+  - id: gt-0004
+    file: pbkdf2/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0016
+    file: pbkdf2/main.py
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: agreed."
+  - id: gt-0005
+    file: pbkdf2/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0006
+    file: pbkdf2/main.py
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0007
+    file: rng/main.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: rng/main.py
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0009
+    file: rng/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0010
+    file: scrypt/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0017
+    file: scrypt/main.py
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: agreed."
+  - id: gt-0011
+    file: scrypt/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: scrypt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Second annotator added key_size from the KDF output length; resolved to none: a KDF output length is not a key size (guide, parameters)."
+  - id: gt-0012
+    file: scrypt/main.py
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: scrypt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Second annotator added key_size from the KDF output length; resolved to none: a KDF output length is not a key size (guide, parameters)."
+  - id: gt-0013
+    file: sha256/main.py
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0014
+    file: sha256/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0015
+    file: tls-context/main.py
+    lines: [5, 5]
+    asset_type: protocol
+    origin: project
+    reachable: true
+    depth: 0

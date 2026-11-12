@@ -1,0 +1,246 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:9522d92c-d41d-485b-a204-b461da99f17c",
+  "version": 2,
+  "metadata": {
+    "timestamp": "2026-11-04T11:21:35Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cdxgen",
+          "name": "cdxgen",
+          "version": "13.6.0",
+          "purl": "pkg:npm/%40cdxgen/cdxgen@13.6.0",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cdxgen/cdxgen@13.6.0",
+          "publisher": "OWASP Foundation",
+          "authors": [
+            {
+              "name": "OWASP Foundation"
+            }
+          ]
+        }
+      ]
+    },
+    "component": {
+      "name": "example.com/transapp",
+      "purl": "pkg:golang/example.com/transapp",
+      "bom-ref": "pkg:golang/example.com/transapp",
+      "type": "application"
+    }
+  },
+  "components": [
+    {
+      "name": "example.com/transliba",
+      "purl": "pkg:golang/example.com/transliba",
+      "type": "library",
+      "bom-ref": "pkg:golang/example.com/transliba",
+      "properties": [
+        {
+          "name": "cdx:go:local_dir",
+          "value": "../liba"
+        },
+        {
+          "name": "internal:SrcGoMod",
+          "value": "/work/go/liba/go.mod"
+        }
+      ]
+    },
+    {
+      "name": "example.com/translibb",
+      "purl": "pkg:golang/example.com/translibb",
+      "type": "library",
+      "bom-ref": "pkg:golang/example.com/translibb",
+      "properties": [
+        {
+          "name": "cdx:go:local_dir",
+          "value": "../libb"
+        },
+        {
+          "name": "internal:SrcGoMod",
+          "value": "/work/go/libb/go.mod"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "name": "key",
+      "bom-ref": "crypto/material/key@key",
+      "description": "Related cryptographic material indicator detected by golem source analysis; raw values are not emitted",
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "key"
+        }
+      },
+      "properties": [
+        {
+          "name": "cdx:golem:crypto:sourceLocation",
+          "value": "/usr/local/go/src/reflect/map_swiss.go:163:3"
+        },
+        {
+          "name": "cdx:golem:crypto:sourceLocation",
+          "value": "/usr/local/go/src/reflect/map_swiss.go:295:2"
+        },
+        {
+          "name": "cdx:golem:crypto:sourceLocation",
+          "value": "/usr/local/go/src/reflect/map_swiss.go:431:2"
+        },
+        {
+          "name": "cdx:golem:crypto:symbol",
+          "value": "literal"
+        },
+        {
+          "name": "cdx:golem:crypto:usageScope",
+          "value": "runtime"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "name": "md5",
+      "bom-ref": "crypto/algorithm/md5@1.2.840.113549.2.5",
+      "description": "Rivest, Shamir and Adleman (RSA) algorithm coupled with an Message Digest #5 (MD5) algorithm",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "oid": "1.2.840.113549.2.5",
+        "algorithmProperties": {
+          "primitive": "hash"
+        }
+      },
+      "properties": [
+        {
+          "name": "cdx:golem:crypto:sourceLocation",
+          "value": "/work/go/app/main.go:22:9"
+        },
+        {
+          "name": "cdx:golem:crypto:strength",
+          "value": "weak"
+        },
+        {
+          "name": "cdx:golem:crypto:symbol",
+          "value": "crypto/md5.Sum"
+        },
+        {
+          "name": "cdx:golem:crypto:usageScope",
+          "value": "runtime"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "name": "sha-256",
+      "bom-ref": "crypto/algorithm/sha-256@2.16.840.1.101.3.4.2.1",
+      "description": "NIST Algorithm",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1",
+        "algorithmProperties": {
+          "primitive": "hash"
+        }
+      },
+      "properties": [
+        {
+          "name": "cdx:golem:crypto:sourceLocation",
+          "value": "/work/go/libb/libb.go:11:9"
+        },
+        {
+          "name": "cdx:golem:crypto:strength",
+          "value": "strong"
+        },
+        {
+          "name": "cdx:golem:crypto:symbol",
+          "value": "crypto/sha256.Sum256"
+        },
+        {
+          "name": "cdx:golem:crypto:usageScope",
+          "value": "runtime"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "name": "sha-512",
+      "bom-ref": "crypto/algorithm/sha-512@2.16.840.1.101.3.4.2.3",
+      "description": "NIST Algorithm",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.3",
+        "algorithmProperties": {
+          "primitive": "hash"
+        }
+      },
+      "properties": [
+        {
+          "name": "cdx:golem:crypto:sourceLocation",
+          "value": "/work/go/libb/libb.go:17:9"
+        },
+        {
+          "name": "cdx:golem:crypto:strength",
+          "value": "strong"
+        },
+        {
+          "name": "cdx:golem:crypto:symbol",
+          "value": "crypto/sha512.Sum512"
+        },
+        {
+          "name": "cdx:golem:crypto:usageScope",
+          "value": "runtime"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "name": "vdsoSymbolKeys",
+      "bom-ref": "crypto/material/vdsoSymbolKeys@key",
+      "description": "Related cryptographic material indicator detected by golem source analysis; raw values are not emitted",
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "key"
+        }
+      },
+      "properties": [
+        {
+          "name": "cdx:golem:crypto:sourceLocation",
+          "value": "/usr/local/go/src/runtime/vdso_linux_amd64.go:17:5"
+        },
+        {
+          "name": "cdx:golem:crypto:symbol",
+          "value": "literal"
+        },
+        {
+          "name": "cdx:golem:crypto:usageScope",
+          "value": "runtime"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:golang/example.com/transapp",
+      "dependsOn": [
+        "pkg:golang/example.com/transliba"
+      ],
+      "provides": [
+        "crypto/algorithm/md5@1.2.840.113549.2.5",
+        "crypto/algorithm/sha-256@2.16.840.1.101.3.4.2.1"
+      ]
+    },
+    {
+      "ref": "pkg:golang/example.com/transliba",
+      "dependsOn": [
+        "pkg:golang/example.com/translibb"
+      ]
+    },
+    {
+      "ref": "pkg:golang/example.com/translibb",
+      "dependsOn": [],
+      "provides": [
+        "crypto/algorithm/sha-256@2.16.840.1.101.3.4.2.1",
+        "crypto/algorithm/sha-512@2.16.840.1.101.3.4.2.3"
+      ]
+    }
+  ]
+}

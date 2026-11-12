@@ -1,0 +1,124 @@
+schema_version: "1"
+entry: java-cryptography-core-jvm
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/main/java/bench/AesCbcEncrypt.java
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Java program calling the Kotlin library cryptography-kotlin through its JVM API (blocking variants). CryptographyRandom.Default.nextBytes(32) draws the key bytes from the library's secure random. The bytes are a key, so there is no related-crypto-material asset for the draw. AES key generation is not callable from Java source (its key-size parameter is a Kotlin value class, so the method name is mangled), hence the drawn and decoded key."
+  - id: gt-0002
+    file: src/main/java/bench/AesCbcEncrypt.java
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "keyDecoder().decodeFromByteArrayBlocking(AES.Key.Format.RAW, keyBytes) parses a key from bytes. Its own object: the only related-crypto-material asset of this key."
+  - id: gt-0003
+    file: src/main/java/bench/AesCbcEncrypt.java
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+      padding: PKCS7
+    origin: project
+    reachable: true
+    depth: 0
+    object: AesCbcEncrypt/key
+    notes: "key.cipher(true).encryptBlocking(...): one chain, one asset; mode from AES.CBC, padding=true is PKCS#7. No key_size: the key size is not stated in the call (32 is the draw length). The library draws the IV and prepends it to the ciphertext: no IV asset. Encrypt and decrypt each create a cipher on the same key: one object."
+  - id: gt-0004
+    file: src/main/java/bench/AesCbcEncrypt.java
+    lines: [15, 15]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+      padding: PKCS7
+    origin: project
+    reachable: true
+    depth: 0
+    object: AesCbcEncrypt/key
+  - id: gt-0005
+    file: src/main/java/bench/ChaCha20Poly1305Encrypt.java
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: ChaCha20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    object: ChaCha20Poly1305Encrypt/key
+    notes: "Java program calling the Kotlin library cryptography-kotlin through its JVM API (blocking variants). Key generation via keyGenerator().generateKeyBlocking(); primitive ae for the cipher that uses the key. Substitutes for AES-GCM, which is not callable from Java source (the GCM cipher's tag-size parameter is a Kotlin value class)."
+  - id: gt-0006
+    file: src/main/java/bench/ChaCha20Poly1305Encrypt.java
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: ChaCha20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    object: ChaCha20Poly1305Encrypt/key
+    notes: "key.cipher().encryptBlocking(...): one chain, one asset. The library draws the nonce and prepends it to the output: no nonce asset."
+  - id: gt-0007
+    file: src/main/java/bench/ChaCha20Poly1305Encrypt.java
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: ChaCha20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    object: ChaCha20Poly1305Encrypt/key
+  - id: gt-0008
+    file: src/main/java/bench/HmacSha256.java
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: true
+    depth: 0
+    object: HmacSha256/key
+    notes: "Java program calling the Kotlin library cryptography-kotlin through its JVM API (blocking variants). provider.get(HMAC).keyGenerator(SHA256).generateKeyBlocking() generates an HMAC-SHA256 key; key generation gets no hash (guide, hash)."
+  - id: gt-0009
+    file: src/main/java/bench/HmacSha256.java
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: true
+    depth: 0
+    object: HmacSha256/key
+    notes: "key.signatureGenerator().generateSignatureBlocking(...): one chain, one asset. No hash: the SHA-256 digest is bound to the key at generation and the call names none (guide: do not carry a digest bound to a key to a later operation)."
+  - id: gt-0010
+    file: src/main/java/bench/HmacSha256.java
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: true
+    depth: 0
+    object: HmacSha256/key
+    notes: "key.signatureVerifier().tryVerifySignatureBlocking(...); no hash, as above."
+  - id: gt-0011
+    file: src/main/java/bench/Sha256Hash.java
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Java program calling the Kotlin library cryptography-kotlin through its JVM API (blocking variants). provider.get(SHA256.INSTANCE).hasher().hashBlocking(...): one chain, one asset."

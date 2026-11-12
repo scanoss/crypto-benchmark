@@ -1,0 +1,27 @@
+schema_version: "1"
+entry: java-b-wrapper-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:maven/org.cbench.wrapper/liba@1.0.0
+    - pkg:maven/org.cbench.wrapper/libb@1.0.0
+assets:
+  - id: gt-0001
+    file: org/cbench/wrapper/libb/Encoder.java
+    lines: [19, 19]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-384
+    origin: dependency
+    component: pkg:maven/org.cbench.wrapper/libb@1.0.0
+    reachable: true
+    depth: 2
+    distance: 2
+    path:
+      - "org.cbench.wrapper.app.Main.main"
+      - "org.cbench.wrapper.app.Main.run"
+      - "org.cbench.wrapper.liba.Protector.protect"
+      - "org.cbench.wrapper.liba.Protector.protectInner"
+      - "org.cbench.wrapper.libb.Encoder.encode"
+      - "org.cbench.wrapper.libb.Encoder.encodeInner"
+      - "org.cbench.wrapper.libb.Encoder.hashBlock"

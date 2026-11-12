@@ -1,0 +1,51 @@
+schema_version: "1"
+entry: java-b-deadfn-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:maven/org.cbench.deadfn/liba@1.0.0
+    - pkg:maven/org.cbench.deadfn/libb@1.0.0
+assets:
+  - id: gt-0001
+    file: org/cbench/deadfn/libb/Codec.java
+    lines: [15, 15]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: dependency
+    component: pkg:maven/org.cbench.deadfn/libb@1.0.0
+    reachable: true
+    depth: 2
+    distance: 2
+    path:
+      - "org.cbench.deadfn.app.Main.main"
+      - "org.cbench.deadfn.liba.Api.sign"
+      - "org.cbench.deadfn.libb.Codec.sign"
+  - id: gt-0002
+    file: org/cbench/deadfn/libb/Codec.java
+    lines: [16, 16]
+    asset_type: related-crypto-material
+    origin: dependency
+    component: pkg:maven/org.cbench.deadfn/libb@1.0.0
+    reachable: true
+    depth: 2
+    distance: 2
+    path:
+      - "org.cbench.deadfn.app.Main.main"
+      - "org.cbench.deadfn.liba.Api.sign"
+      - "org.cbench.deadfn.libb.Codec.sign"
+    notes: "new SecretKeySpec(...) makes a key from bytes, a key parse (related-crypto-material with no material_type), as in java-stdlib. The second annotation left it out because it wraps a constant key; kept, by the Java decision in the annotation log that new SecretKeySpec(...) parses a key from bytes."
+  - id: gt-0003
+    file: org/cbench/deadfn/libb/Codec.java
+    lines: [29, 29]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: dependency
+    component: pkg:maven/org.cbench.deadfn/libb@1.0.0
+    reachable: false
+    depth: 2
+    distance: 2
+    notes: "legacyDigest is never called, in either variant; its class is reachable."

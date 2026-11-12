@@ -1,0 +1,9 @@
+[package]
+name = "cbench-transitive-app"
+version = "1.0.0"
+edition = "2021"
+license = "Apache-2.0"
+publish = false
+
+[dependencies]
+cbench-transitive-liba = { path = "../liba", version = "1.0.0" }

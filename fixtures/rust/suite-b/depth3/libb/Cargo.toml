@@ -1,0 +1,9 @@
+[package]
+name = "cbench-depth3-libb"
+version = "1.0.0"
+edition = "2021"
+license = "Apache-2.0"
+publish = false
+
+[dependencies]
+cbench-depth3-libc = { path = "../libc", version = "1.0.0" }

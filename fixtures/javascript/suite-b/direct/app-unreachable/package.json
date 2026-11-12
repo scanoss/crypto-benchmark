@@ -1,0 +1,9 @@
+{
+  "name": "cbench-direct-app",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cbench-direct-liba": "file:../dist/cbench-direct-liba-1.0.0.tgz"
+  }
+}

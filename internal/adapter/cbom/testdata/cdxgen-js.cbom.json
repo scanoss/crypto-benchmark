@@ -1,0 +1,208 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:c796efaa-9fbe-47cc-af21-25deab58762a",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-04T11:18:35Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cdxgen",
+          "name": "cdxgen",
+          "version": "13.6.0",
+          "purl": "pkg:npm/%40cdxgen/cdxgen@13.6.0",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cdxgen/cdxgen@13.6.0",
+          "publisher": "OWASP Foundation",
+          "authors": [
+            {
+              "name": "OWASP Foundation"
+            }
+          ]
+        }
+      ]
+    },
+    "component": null
+  },
+  "components": [
+    {
+      "type": "cryptographic-asset",
+      "name": "md5",
+      "bom-ref": "crypto/algorithm/md5@1.2.840.113549.2.5",
+      "description": "Rivest, Shamir and Adleman (RSA) algorithm coupled with an Message Digest #5 (MD5) algorithm",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "oid": "1.2.840.113549.2.5",
+        "algorithmProperties": {
+          "primitive": "hash",
+          "algorithmFamily": "MD5"
+        }
+      },
+      "properties": [
+        {
+          "name": "cdx:crypto:primitive",
+          "value": "hash"
+        },
+        {
+          "name": "cdx:crypto:sourceLocation",
+          "value": "web/src/lib/avatarHash.ts:4:9"
+        },
+        {
+          "name": "cdx:crypto:sourceType",
+          "value": "js-ast:node:crypto.createHash"
+        },
+        {
+          "name": "internal:SrcFile",
+          "value": "src/polyglot_reachability/web/src/lib/avatarHash.ts"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "name",
+            "confidence": 1,
+            "concludedValue": "md5",
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 1,
+                "value": "web/src/lib/avatarHash.ts#4"
+              }
+            ]
+          }
+        ],
+        "occurrences": [
+          {
+            "location": "web/src/lib/avatarHash.ts",
+            "additionalContext": "hash",
+            "line": 4,
+            "symbol": "node:crypto.createHash"
+          }
+        ]
+      },
+      "tags": [
+        "cryptographic-asset"
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "name": "sha-1",
+      "bom-ref": "crypto/algorithm/sha-1@1.3.14.3.2.26",
+      "description": "SHA-1 secure hash standard (OIW)",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "oid": "1.3.14.3.2.26",
+        "algorithmProperties": {
+          "primitive": "hash",
+          "algorithmFamily": "SHA-1"
+        }
+      },
+      "properties": [
+        {
+          "name": "cdx:crypto:primitive",
+          "value": "hash"
+        },
+        {
+          "name": "cdx:crypto:sourceLocation",
+          "value": "web/src/lib/avatarHash.ts:12:9"
+        },
+        {
+          "name": "cdx:crypto:sourceType",
+          "value": "js-ast:node:crypto.createHash"
+        },
+        {
+          "name": "internal:SrcFile",
+          "value": "src/polyglot_reachability/web/src/lib/avatarHash.ts"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "name",
+            "confidence": 1,
+            "concludedValue": "sha-1",
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 1,
+                "value": "web/src/lib/avatarHash.ts#12"
+              }
+            ]
+          }
+        ],
+        "occurrences": [
+          {
+            "location": "web/src/lib/avatarHash.ts",
+            "additionalContext": "hash",
+            "line": 12,
+            "symbol": "node:crypto.createHash"
+          }
+        ]
+      },
+      "tags": [
+        "cryptographic-asset"
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "name": "sha-256",
+      "bom-ref": "crypto/algorithm/sha-256@2.16.840.1.101.3.4.2.1",
+      "description": "NIST Algorithm",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1",
+        "algorithmProperties": {
+          "primitive": "hash",
+          "algorithmFamily": "SHA-2"
+        }
+      },
+      "properties": [
+        {
+          "name": "cdx:crypto:primitive",
+          "value": "hash"
+        },
+        {
+          "name": "cdx:crypto:sourceLocation",
+          "value": "web/src/lib/etag.ts:4:9"
+        },
+        {
+          "name": "cdx:crypto:sourceType",
+          "value": "js-ast:node:crypto.createHash"
+        },
+        {
+          "name": "internal:SrcFile",
+          "value": "src/polyglot_reachability/web/src/lib/etag.ts"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "name",
+            "confidence": 1,
+            "concludedValue": "sha-256",
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 1,
+                "value": "web/src/lib/etag.ts#4"
+              }
+            ]
+          }
+        ],
+        "occurrences": [
+          {
+            "location": "web/src/lib/etag.ts",
+            "additionalContext": "hash",
+            "line": 4,
+            "symbol": "node:crypto.createHash"
+          }
+        ]
+      },
+      "tags": [
+        "cryptographic-asset"
+      ]
+    }
+  ],
+  "dependencies": []
+}

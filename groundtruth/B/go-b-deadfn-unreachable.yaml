@@ -1,0 +1,34 @@
+schema_version: "1"
+entry: go-b-deadfn-unreachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:golang/example.com/cbench/deadfn/liba@v1.0.0
+    - pkg:golang/example.com/cbench/deadfn/libb@v1.0.0
+assets:
+  - id: gt-0001
+    file: codec.go
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: dependency
+    component: pkg:golang/example.com/cbench/deadfn/libb@v1.0.0
+    reachable: false
+    depth: 2
+    distance: 2
+    notes: "Unreachable because main calls liba's non-crypto function, which calls the non-crypto sibling in the same libb file."
+  - id: gt-0002
+    file: codec.go
+    lines: [26, 26]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: dependency
+    component: pkg:golang/example.com/cbench/deadfn/libb@v1.0.0
+    reachable: false
+    depth: 2
+    distance: 2
+    notes: "LegacyDigest is never called, in either variant; its file is reachable."

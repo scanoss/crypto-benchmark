@@ -1,0 +1,320 @@
+schema_version: "1"
+entry: javascript-tweetnacl
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: box-before/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: box-before/alice
+  - id: gt-0030
+    file: box-before/main.js
+    lines: [4, 4]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: box-before/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: box-before/bob
+  - id: gt-0031
+    file: box-before/main.js
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0003
+    file: box-before/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: box-before/alice
+  - id: gt-0004
+    file: box-before/main.js
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "box.before returns the shared key to the program, which passes it to box.after."
+  - id: gt-0005
+    file: box-before/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: box-before/bob
+  - id: gt-0006
+    file: box-before/main.js
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0007
+    file: box-before/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: box-before/main.js
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0009
+    file: box-before/main.js
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: XSalsa20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0010
+    file: box-before/main.js
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: XSalsa20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0011
+    file: box/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: box/alice
+  - id: gt-0032
+    file: box/main.js
+    lines: [4, 4]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0012
+    file: box/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: box/bob
+  - id: gt-0033
+    file: box/main.js
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0013
+    file: box/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0014
+    file: box/main.js
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0015
+    file: box/main.js
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: box/alice
+    notes: "nacl.box agrees a key with X25519 and encrypts with XSalsa20-Poly1305 in one call: two assets on the same lines. The shared key stays inside the call, so it is not related crypto material."
+  - id: gt-0016
+    file: box/main.js
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: XSalsa20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0017
+    file: box/main.js
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: box/bob
+  - id: gt-0018
+    file: box/main.js
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: XSalsa20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0019
+    file: hash/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-512
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0020
+    file: secretbox/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0021
+    file: secretbox/main.js
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0022
+    file: secretbox/main.js
+    lines: [5, 5]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0023
+    file: secretbox/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: XSalsa20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    object: secretbox/key
+  - id: gt-0024
+    file: secretbox/main.js
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: XSalsa20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    object: secretbox/key
+    notes: "A one-shot function on the library, not a follow-up."
+  - id: gt-0025
+    file: sign/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign/keyPair
+  - id: gt-0034
+    file: sign/main.js
+    lines: [4, 4]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0026
+    file: sign/main.js
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign/keyPair
+  - id: gt-0027
+    file: sign/main.js
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign/keyPair
+  - id: gt-0028
+    file: sign/main.js
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign/keyPair
+  - id: gt-0029
+    file: sign/main.js
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: sign/keyPair

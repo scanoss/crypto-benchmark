@@ -1,0 +1,9 @@
+{
+  "name": "crypto-benchmark-blake3-wasm",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "blake3-wasm": "2.1.5"
+  }
+}

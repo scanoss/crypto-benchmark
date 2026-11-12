@@ -1,0 +1,440 @@
+schema_version: "1"
+entry: rust-ring
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/bin/digest_sha256.rs
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: src/bin/digest_sha256.rs
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: src/bin/digest_sha384.rs
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-384
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: src/bin/hmac_sha256.rs
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hmac_sha256/key
+    notes: "Re-derivation: field parameters. The second annotation added key_size 256; added, because ring's hmac::Key::generate always draws a key as long as the digest output (32 bytes for SHA-256)."
+  - id: gt-0005
+    file: src/bin/hmac_sha256.rs
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: true
+    depth: 0
+    object: hmac_sha256/key
+  - id: gt-0006
+    file: src/bin/hmac_sha256.rs
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: true
+    depth: 0
+    object: hmac_sha256/key
+  - id: gt-0007
+    file: src/bin/hkdf_sha256.rs
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: HKDF
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: src/bin/hkdf_sha256.rs
+    lines: [4, 4]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0009
+    file: src/bin/pbkdf2.rs
+    lines: [8, 8]
+    anchors: [[6, 6]]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0010
+    file: src/bin/pbkdf2.rs
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0011
+    file: src/bin/pbkdf2.rs
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0012
+    file: src/bin/pbkdf2.rs
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "pbkdf2::verify is a one-shot module function, so it is its own asset (guide, follow-ups)."
+  - id: gt-0013
+    file: src/bin/aead_aes256gcm.rs
+    lines: [7, 7]
+    anchors: [[5, 5]]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0014
+    file: src/bin/aead_aes256gcm.rs
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: GCM
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0015
+    file: src/bin/aead_aes256gcm.rs
+    lines: [11, 11]
+    anchors: [[5, 5]]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0016
+    file: src/bin/aead_aes256gcm.rs
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0017
+    file: src/bin/aead_chacha20poly1305.rs
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: ChaCha20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    object: aead_chacha20poly1305/key_bytes
+  - id: gt-0018
+    file: src/bin/aead_chacha20poly1305.rs
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: ChaCha20-Poly1305
+    origin: project
+    reachable: true
+    depth: 0
+    object: aead_chacha20poly1305/key_bytes
+  - id: gt-0019
+    file: src/bin/aead_chacha20poly1305.rs
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0020
+    file: src/bin/aead_chacha20poly1305.rs
+    lines: [10, 10]
+    asset_type: related-crypto-material
+    material_type: tag
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "seal_in_place_separate_tag returns the tag separately from the ciphertext, so the call creates a tag (guide, tag)."
+  - id: gt-0021
+    file: src/bin/ed25519.rs
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/key_pair
+  - id: gt-0042
+    file: src/bin/ed25519.rs
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0022
+    file: src/bin/ed25519.rs
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/pkcs8_bytes
+    notes: "Re-derivation: only second. generate_pkcs8 generates the key pair and returns it already serialized as PKCS#8, so the call is two assets: the key generation and the serialization. Added."
+  - id: gt-0023
+    file: src/bin/ed25519.rs
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/pkcs8_bytes
+  - id: gt-0024
+    file: src/bin/ed25519.rs
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/key_pair
+  - id: gt-0025
+    file: src/bin/ed25519.rs
+    lines: [13, 13]
+    anchors: [[12, 12]]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: ed25519/key_pair
+    notes: "Re-derivation: the first annotation put the verify on UnparsedPublicKey::new, as a verifier object; the second made UnparsedPublicKey::new a public-key load and verify the asset. Resolved: UnparsedPublicKey::new stores bytes with an algorithm and parses nothing (the type is named unparsed), so it is not an asset, and verify is a verify call on a key. The algorithm bound when the wrapper was made is not carried into verify's parameters."
+  - id: gt-0026
+    file: src/bin/ecdsa_p256.rs
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa_p256/key_pair
+  - id: gt-0043
+    file: src/bin/ecdsa_p256.rs
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0027
+    file: src/bin/ecdsa_p256.rs
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa_p256/pkcs8
+    notes: "Re-derivation: only second. generate_pkcs8 generates the key pair and returns it already serialized as PKCS#8, so the call is two assets: the key generation and the serialization. Added."
+  - id: gt-0028
+    file: src/bin/ecdsa_p256.rs
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa_p256/pkcs8
+    notes: "Re-derivation: lines. The first annotation ran to the .map_err call on line 8; the from_pkcs8 call closes on line 7."
+  - id: gt-0029
+    file: src/bin/ecdsa_p256.rs
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa_p256/key_pair
+    notes: "The ECDSA_P256_SHA256 signing algorithm is bound when the key pair is loaded, so the sign call carries no curve or hash (guide, hash: do not carry a digest bound to a key)."
+  - id: gt-0030
+    file: src/bin/ecdsa_p256.rs
+    lines: [14, 14]
+    anchors: [[13, 13]]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: ecdsa_p256/key_pair
+    notes: "Re-derivation: the first annotation put the verify on UnparsedPublicKey::new, as a verifier object; the second made UnparsedPublicKey::new a public-key load and verify the asset. Resolved: UnparsedPublicKey::new stores bytes with an algorithm and parses nothing (the type is named unparsed), so it is not an asset, and verify is a verify call on a key. The algorithm bound when the wrapper was made is not carried into verify's parameters."
+  - id: gt-0031
+    file: src/bin/rsa_pkcs1.rs
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Re-derivation: object. The second annotation grouped this parse with the UnparsedPublicKey::new call it annotated; with that call resolved to not an asset, the parse is its own object."
+  - id: gt-0032
+    file: src/bin/rsa_pkcs1.rs
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa_pkcs1/key_pair
+  - id: gt-0033
+    file: src/bin/rsa_pkcs1.rs
+    lines: [14, 14]
+    anchors: [[13, 13]]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: rsa_pkcs1/key_pair
+    notes: "Re-derivation: the first annotation put the verify on UnparsedPublicKey::new, as a verifier object; the second made UnparsedPublicKey::new a public-key load and verify the asset. Resolved: UnparsedPublicKey::new stores bytes with an algorithm and parses nothing (the type is named unparsed), so it is not an asset, and verify is a verify call on a key. The algorithm bound when the wrapper was made is not carried into verify's parameters."
+  - id: gt-0034
+    file: src/bin/x25519.rs
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: x25519/my_private_key
+  - id: gt-0044
+    file: src/bin/x25519.rs
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0035
+    file: src/bin/x25519.rs
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: x25519/peer_private_key
+  - id: gt-0045
+    file: src/bin/x25519.rs
+    lines: [9, 9]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0036
+    file: src/bin/x25519.rs
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: x25519/my_private_key
+  - id: gt-0037
+    file: src/bin/x25519.rs
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "agree_ephemeral hands the shared secret to the program's closure as a value."
+  - id: gt-0038
+    file: src/bin/x25519.rs
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: x25519/peer_private_key
+  - id: gt-0039
+    file: src/bin/x25519.rs
+    lines: [13, 13]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0040
+    file: src/bin/random.rs
+    lines: [6, 6]
+    anchors: [[4, 4]]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "SystemRandom::new() draws nothing and is not an asset; the fill and generate calls are the draws."
+  - id: gt-0041
+    file: src/bin/random.rs
+    lines: [7, 7]
+    anchors: [[4, 4]]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0

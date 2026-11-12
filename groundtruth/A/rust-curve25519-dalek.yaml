@@ -1,0 +1,182 @@
+schema_version: "1"
+entry: rust-curve25519-dalek
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/bin/x25519_dh.rs
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: src/bin/x25519_dh.rs
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: src/bin/x25519_dh.rs
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "mul_clamped is the X25519 function. mul_base_clamped on lines 9 and 10 derives the public keys and is not an asset, like private_key.public_key()."
+  - id: gt-0004
+    file: src/bin/x25519_dh.rs
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0005
+    file: src/bin/x25519_dh.rs
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: X25519
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0006
+    file: src/bin/x25519_dh.rs
+    lines: [13, 13]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0007
+    file: src/bin/ristretto_dh.rs
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: ECDH
+    parameters:
+      curve: ristretto255
+    origin: project
+    reachable: true
+    depth: 0
+    object: ristretto_dh/alice_secret
+    notes: "Re-derivation: field algorithm. The first annotation named it Ristretto255; the second wrote ECDH with curve ristretto255. Resolved to the second: the scalar multiplication is Diffie-Hellman over the ristretto255 group, the way the guide writes an EC scheme with its curve."
+  - id: gt-0018
+    file: src/bin/ristretto_dh.rs
+    lines: [8, 8]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0008
+    file: src/bin/ristretto_dh.rs
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: ECDH
+    parameters:
+      curve: ristretto255
+    origin: project
+    reachable: true
+    depth: 0
+    object: ristretto_dh/bob_secret
+    notes: "Re-derivation: field algorithm. The first annotation named it Ristretto255; the second wrote ECDH with curve ristretto255. Resolved to the second: the scalar multiplication is Diffie-Hellman over the ristretto255 group, the way the guide writes an EC scheme with its curve."
+  - id: gt-0019
+    file: src/bin/ristretto_dh.rs
+    lines: [9, 9]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0009
+    file: src/bin/ristretto_dh.rs
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0010
+    file: src/bin/ristretto_dh.rs
+    lines: [12, 12]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0011
+    file: src/bin/ristretto_dh.rs
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: ECDH
+    parameters:
+      curve: ristretto255
+    origin: project
+    reachable: true
+    depth: 0
+    object: ristretto_dh/alice_secret
+    notes: "Re-derivation: field algorithm. The first annotation named it Ristretto255; the second wrote ECDH with curve ristretto255. Resolved to the second: the scalar multiplication is Diffie-Hellman over the ristretto255 group, the way the guide writes an EC scheme with its curve. The key agreement is the * operator between the secret scalar and the peer's point; it is an operator call, and both annotations annotated it."
+  - id: gt-0012
+    file: src/bin/ristretto_dh.rs
+    lines: [14, 14]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0013
+    file: src/bin/ristretto_dh.rs
+    lines: [15, 15]
+    asset_type: algorithm
+    primitive: key-agree
+    algorithm: ECDH
+    parameters:
+      curve: ristretto255
+    origin: project
+    reachable: true
+    depth: 0
+    object: ristretto_dh/bob_secret
+    notes: "Re-derivation: field algorithm. The first annotation named it Ristretto255; the second wrote ECDH with curve ristretto255. Resolved to the second: the scalar multiplication is Diffie-Hellman over the ristretto255 group, the way the guide writes an EC scheme with its curve."
+  - id: gt-0014
+    file: src/bin/ristretto_dh.rs
+    lines: [15, 15]
+    asset_type: related-crypto-material
+    material_type: shared-secret
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0015
+    file: src/bin/ristretto_dh.rs
+    lines: [21, 21]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "decompress() parses a public key from its 32-byte encoding. The helper is called for both keys and is one asset, so it has no object."
+  - id: gt-0016
+    file: src/bin/hash_to_scalar.rs
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-512
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0017
+    file: src/bin/hash_to_scalar.rs
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-512
+    origin: project
+    reachable: true
+    depth: 0

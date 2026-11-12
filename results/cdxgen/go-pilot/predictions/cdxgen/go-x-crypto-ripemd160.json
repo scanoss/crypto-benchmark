@@ -1,0 +1,42 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "go-x-crypto-ripemd160",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "hash160/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "publicKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "hash160/main.go",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

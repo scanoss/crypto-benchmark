@@ -1,0 +1,137 @@
+schema_version: "1"
+entry: javascript-jwa
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: es256/main.js
+    lines: [5, 9]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: es256/privateKey
+    notes: "generateKeyPairSync also writes both keys as PEM through publicKeyEncoding and privateKeyEncoding; that is the output format of the key generation call, not a separate serialization call, so it is one asset."
+  - id: gt-0009
+    file: es256/main.js
+    lines: [5, 9]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: es256/main.js
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: es256/privateKey
+    notes: "Creating the jwa object names the algorithm; sign and verify are follow-ups on it (guide, follow-ups). Re-derivation: the second annotation treated jwa(...) as a specification object and annotated sign and verify instead. Kept: jwa(...) returns the signer that the program calls, like argon2-cffi PasswordHasher(), and a specification object is one passed as a parameter to another asset."
+  - id: gt-0003
+    file: hs256/main.js
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Creating the jwa object names the algorithm; sign and verify are follow-ups on it (guide, follow-ups). Re-derivation: the second annotation treated jwa(...) as a specification object and annotated sign and verify instead. Kept: jwa(...) returns the signer that the program calls, like argon2-cffi PasswordHasher(), and a specification object is one passed as a parameter to another asset."
+  - id: gt-0004
+    file: ps256/main.js
+    lines: [5, 9]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    object: ps256/privateKey
+    notes: "generateKeyPairSync also writes both keys as PEM through publicKeyEncoding and privateKeyEncoding; that is the output format of the key generation call, not a separate serialization call, so it is one asset."
+  - id: gt-0010
+    file: ps256/main.js
+    lines: [5, 9]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0005
+    file: ps256/main.js
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA-PSS
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: ps256/privateKey
+    notes: "Creating the jwa object names the algorithm; sign and verify are follow-ups on it (guide, follow-ups). Re-derivation: the second annotation treated jwa(...) as a specification object and annotated sign and verify instead. Kept: jwa(...) returns the signer that the program calls, like argon2-cffi PasswordHasher(), and a specification object is one passed as a parameter to another asset."
+  - id: gt-0006
+    file: rs256/main.js
+    lines: [5, 9]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    object: rs256/privateKey
+    notes: "generateKeyPairSync also writes both keys as PEM through publicKeyEncoding and privateKeyEncoding; that is the output format of the key generation call, not a separate serialization call, so it is one asset."
+  - id: gt-0011
+    file: rs256/main.js
+    lines: [5, 9]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0007
+    file: rs256/main.js
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rs256/privateKey
+    notes: "A new jwa object per call, so each line is its own asset."
+  - id: gt-0008
+    file: rs256/main.js
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: rs256/privateKey

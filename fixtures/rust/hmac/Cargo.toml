@@ -1,0 +1,10 @@
+[package]
+name = "hmac-fixture"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+hmac = "=0.13.0"
+sha2 = "=0.11.1"
+sha1 = "=0.11.0"

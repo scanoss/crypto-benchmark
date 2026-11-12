@@ -1,0 +1,13 @@
+{
+  "name": "cbench-depth3-app",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cbench-depth3-liba": "file:../dist/cbench-depth3-liba-1.0.0.tgz"
+  },
+  "overrides": {
+    "cbench-depth3-libb": "file:../dist/cbench-depth3-libb-1.0.0.tgz",
+    "cbench-depth3-libc": "file:../dist/cbench-depth3-libc-1.0.0.tgz"
+  }
+}

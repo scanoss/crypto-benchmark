@@ -1,0 +1,148 @@
+schema_version: "1"
+entry: java-spring-security-crypto
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/main/java/bench/Argon2Encoder.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: Argon2id
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Argon2PasswordEncoder.defaultsForSpringSecurity_v5_8() creates an Argon2id encoder (Argon2Parameters.ARGON2_id, observed $argon2id$ output). encode and matches are follow-ups on the encoder. Library draws the salt itself and keeps it in the hash string: no salt asset (guide, related crypto material)."
+  - id: gt-0002
+    file: src/main/java/bench/BCryptEncoder.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "new BCryptPasswordEncoder(12) creates the encoder; encode and matches are follow-ups (passlib CryptContext precedent). Cost 12 is not a key size. Library draws the salt itself and keeps it in the hash string: no salt asset (guide, related crypto material)."
+  - id: gt-0003
+    file: src/main/java/bench/DelegatingEncoder.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "PasswordEncoderFactories.createDelegatingPasswordEncoder() encodes with bcrypt by default (observed {bcrypt} prefix). It also registers argon2, pbkdf2, scrypt, SHA-256, MD5 and other encoders for matching legacy hashes; only bcrypt runs in this program, so one asset. encode and matches are follow-ups."
+  - id: gt-0004
+    file: src/main/java/bench/Pbkdf2Encoder.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "defaultsForSpringSecurity_v5_8() is PBKDF2WithHmacSHA256, 310000 iterations; no hash on a KDF (guide, hash). encode and matches are follow-ups. Library draws the salt itself and keeps it in the hash string: no salt asset (guide, related crypto material)."
+  - id: gt-0005
+    file: src/main/java/bench/RandomKey.java
+    lines: [10, 10]
+    anchors: [[9, 9]]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "generator.generateKey() draws 16 bytes from SecureRandom. KeyGenerators.secureRandom(16) only creates the generator, like new SecureRandom(): not an asset. The bytes are a key, so the draw has no related-crypto-material asset."
+  - id: gt-0006
+    file: src/main/java/bench/SCryptEncoder.java
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: scrypt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "defaultsForSpringSecurity_v5_8() scrypt encoder (BouncyCastle SCrypt). encode and matches are follow-ups. Library draws the salt itself and keeps it in the hash string: no salt asset (guide, related crypto material)."
+  - id: gt-0007
+    file: src/main/java/bench/StrongerEncryption.java
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "KeyGenerators.string().generateKey() draws 8 SecureRandom bytes and hex-encodes them; the chain is one draw."
+  - id: gt-0008
+    file: src/main/java/bench/StrongerEncryption.java
+    lines: [10, 10]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The drawn value is passed as the salt argument of Encryptors.stronger (guide, a random draw)."
+  - id: gt-0009
+    file: src/main/java/bench/StrongerEncryption.java
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: GCM
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Encryptors.stronger fixes AES/GCM/NoPadding with a 256-bit key derived by PBKDF2 (API-fixed parameters). Two algorithms in one call: two assets with the same lines. The IV is drawn by the library and kept in the output: no IV asset. encrypt and decrypt are follow-ups on the encryptor. The AES key is derived by PBKDF2 (a new object) and has this one asset, so no object."
+  - id: gt-0010
+    file: src/main/java/bench/StrongerEncryption.java
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Encryptors.stronger derives the AES key from the password and salt with PBKDF2WithHmacSHA1, 1024 iterations (AesBytesEncryptor); no hash on a KDF."
+  - id: gt-0011
+    file: src/main/java/bench/TextEncryption.java
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "KeyGenerators.string().generateKey() draws 8 SecureRandom bytes and hex-encodes them; the chain is one draw."
+  - id: gt-0012
+    file: src/main/java/bench/TextEncryption.java
+    lines: [9, 9]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "The drawn value is passed as the salt argument of Encryptors.text."
+  - id: gt-0013
+    file: src/main/java/bench/TextEncryption.java
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: CBC
+      padding: PKCS7
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Encryptors.text is Encryptors.standard wrapped in hex encoding: AesBytesEncryptor with AES/CBC/PKCS5Padding and a 256-bit PBKDF2-derived key (API-fixed parameters; PKCS5Padding is PKCS7). Two algorithms in one call: two assets with the same lines. The IV is drawn by the library and kept in the output. encrypt and decrypt are follow-ups."
+  - id: gt-0014
+    file: src/main/java/bench/TextEncryption.java
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Encryptors.text derives the AES key with PBKDF2WithHmacSHA1, 1024 iterations; no hash on a KDF."

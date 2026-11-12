@@ -1,0 +1,31 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "javascript-b-wrapper-reachable",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "index.js",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-384",
+      "origin": "dependency",
+      "component": "pkg:npm/cbench-wrapper-libb@1.0.0",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

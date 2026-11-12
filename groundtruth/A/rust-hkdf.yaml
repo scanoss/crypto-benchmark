@@ -1,0 +1,39 @@
+schema_version: "1"
+entry: rust-hkdf
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/bin/hkdf_sha256.rs
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: src/bin/hkdf_sha256.rs
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: HKDF
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: src/bin/hkdf_sha512_extract.rs
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: src/bin/hkdf_sha512_extract.rs
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: HKDF
+    origin: project
+    reachable: true
+    depth: 0

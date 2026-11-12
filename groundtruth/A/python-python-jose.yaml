@@ -1,0 +1,131 @@
+schema_version: "1"
+entry: python-python-jose
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: jwe/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: jwe/main.py
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: GCM
+    origin: project
+    reachable: true
+    depth: 0
+    object: jwe/key
+  - id: gt-0003
+    file: jwe/main.py
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    origin: project
+    reachable: true
+    depth: 0
+    object: jwe/key
+  - id: gt-0004
+    file: jws-hs256/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0005
+    file: jws-hs256/main.py
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: jws-hs256/key
+  - id: gt-0006
+    file: jws-hs256/main.py
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: jws-hs256/key
+  - id: gt-0007
+    file: jwt-rs256/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    object: jwt-rs256/private_key
+  - id: gt-0012
+    file: jwt-rs256/main.py
+    lines: [7, 7]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0008
+    file: jwt-rs256/main.py
+    lines: [8, 12]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: jwt-rs256/pem
+  - id: gt-0009
+    file: jwt-rs256/main.py
+    lines: [13, 15]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: jwt-rs256/pem
+  - id: gt-0010
+    file: jwt-rs256/main.py
+    lines: [18, 18]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: jwt-rs256/private_key
+  - id: gt-0011
+    file: jwt-rs256/main.py
+    lines: [19, 19]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: jwt-rs256/private_key

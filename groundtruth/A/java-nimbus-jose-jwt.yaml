@@ -1,0 +1,486 @@
+schema_version: "1"
+entry: java-nimbus-jose-jwt
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/main/java/bench/JweDirect.java
+    lines: [17, 17]
+    anchors: [[15, 15]]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweDirect/key
+    notes: "JCA key generation: algorithm and key size from KeyGenerator.getInstance(\"AES\") and init(256) on the same generator (annotation log, Java decisions; key generation). No mode: an AES KeyGenerator fixes none. Re-derivation: the second annotation put this key generation on KeyGenerator.getInstance(\"AES\") (line 15). Kept on generateKey(), the call that generates the key, as in every Java entry (annotation log, Java decisions)."
+  - id: gt-0002
+    file: src/main/java/bench/JweDirect.java
+    lines: [22, 22]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweDirect/key
+    notes: "DirectEncrypter performs JWE alg dir content encryption with the AES key (A*GCM or A*CBC-HS*), so AES with no mode. Nimbus signer/verifier/encrypter/decrypter objects are built on the key and fix the algorithm family they compute, so their construction is an asset (guide: creating a signer object that names its algorithm or fixes it by default), with no parameters because the construction leaves the concrete JWS/JWE algorithm open. The later sign/verify/encrypt/decrypt call on the JOSE object is a separate asset: it is not a follow-up on the signer object, and it is the call that runs the algorithm the header names. A second annotator may annotate only one of the two."
+  - id: gt-0003
+    file: src/main/java/bench/JweDirect.java
+    lines: [23, 23]
+    anchors: [[20, 20]]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweDirect/key
+    notes: "alg dir uses the key as the content key, so A256GCM is the only algorithm. The JOSE object's header, built in the same method, names the algorithm, so the call takes its parameters from it."
+  - id: gt-0004
+    file: src/main/java/bench/JweDirect.java
+    lines: [27, 27]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweDirect/key
+    notes: "See the DirectEncrypter asset."
+  - id: gt-0005
+    file: src/main/java/bench/JweDirect.java
+    lines: [28, 28]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweDirect/key
+    notes: "verify/decrypt names no algorithm; it takes the algorithm the token the program produced uses, with only what the verifier/decrypter type fixes (guide, verify calls)."
+  - id: gt-0006
+    file: src/main/java/bench/JweRsaOaep.java
+    lines: [15, 17]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweRsaOaep/rsaJWK
+    notes: "The RSAKeyGenerator builder chain is one asset, from new RSAKeyGenerator(3072) to generate()."
+  - id: gt-0039
+    file: src/main/java/bench/JweRsaOaep.java
+    lines: [15, 17]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0007
+    file: src/main/java/bench/JweRsaOaep.java
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweRsaOaep/rsaJWK
+    notes: "RSAEncrypter supports RSA1_5 and the RSA-OAEP variants, so RSA with no padding. toRSAPublicKey() converts the JWK to a JCA key object, not to bytes: not a serialization. Nimbus signer/verifier/encrypter/decrypter objects are built on the key and fix the algorithm family they compute, so their construction is an asset (guide: creating a signer object that names its algorithm or fixes it by default), with no parameters because the construction leaves the concrete JWS/JWE algorithm open. The later sign/verify/encrypt/decrypt call on the JOSE object is a separate asset: it is not a follow-up on the signer object, and it is the call that runs the algorithm the header names. A second annotator may annotate only one of the two."
+  - id: gt-0008
+    file: src/main/java/bench/JweRsaOaep.java
+    lines: [22, 22]
+    anchors: [[19, 19]]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweRsaOaep/rsaJWK
+    notes: "The header names RSA-OAEP-256 and A256GCM: two assets on this call. RSA-OAEP carries no hash (guide, hash). The JOSE object's header, built in the same method, names the algorithm, so the call takes its parameters from it."
+  - id: gt-0009
+    file: src/main/java/bench/JweRsaOaep.java
+    lines: [22, 22]
+    anchors: [[19, 19]]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+      key_size: 256
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweRsaOaep/content_key
+    notes: "The content key goes from encrypt to decrypt inside the token: one object (guide, passed on)."
+  - id: gt-0010
+    file: src/main/java/bench/JweRsaOaep.java
+    lines: [26, 26]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweRsaOaep/rsaJWK
+    notes: "See the RSAEncrypter asset."
+  - id: gt-0011
+    file: src/main/java/bench/JweRsaOaep.java
+    lines: [27, 27]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweRsaOaep/rsaJWK
+    notes: "verify/decrypt names no algorithm; it takes the algorithm the token the program produced uses, with only what the verifier/decrypter type fixes (guide, verify calls). RSADecrypter accepts several RSA key algorithms, so the algorithm comes from the token: two assets, RSA-OAEP and AES."
+  - id: gt-0012
+    file: src/main/java/bench/JweRsaOaep.java
+    lines: [27, 27]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    origin: project
+    reachable: true
+    depth: 0
+    object: JweRsaOaep/content_key
+    notes: "verify/decrypt names no algorithm; it takes the algorithm the token the program produced uses, with only what the verifier/decrypter type fixes (guide, verify calls)."
+  - id: gt-0013
+    file: src/main/java/bench/JwkJson.java
+    lines: [12, 15]
+    asset_type: algorithm
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "No primitive: the program only serializes the key and computes its thumbprint, it never signs (guide, primitive), although the JWK carries use=sig. Generic EC key, so EC with its curve."
+  - id: gt-0040
+    file: src/main/java/bench/JwkJson.java
+    lines: [12, 15]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0014
+    file: src/main/java/bench/JwkJson.java
+    lines: [16, 16]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwkJson/privateJson
+    notes: "Serializing the private JWK to JSON."
+  - id: gt-0015
+    file: src/main/java/bench/JwkJson.java
+    lines: [17, 17]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwkJson/privateJson
+    notes: "Serializing the public JWK; toPublicJWK() on the same line derives the public key and is not an asset (guide, key pair)."
+  - id: gt-0016
+    file: src/main/java/bench/JwkJson.java
+    lines: [19, 19]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwkJson/privateJson
+  - id: gt-0017
+    file: src/main/java/bench/JwkJson.java
+    lines: [20, 20]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwkJson/privateJson
+  - id: gt-0018
+    file: src/main/java/bench/JwkJson.java
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "computeThumbprint() is the RFC 7638 SHA-256 thumbprint by default, a digest of a key the program passes on (guide; javascript-jose precedent). The call names no digest; the API fixes SHA-256."
+  - id: gt-0019
+    file: src/main/java/bench/JwsEd25519.java
+    lines: [17, 19]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEd25519/jwk
+    notes: "OctetKeyPairGenerator(Curve.Ed25519) generates an Ed25519 OKP, a key type tied to one scheme. Builder chain to generate() is one asset."
+  - id: gt-0041
+    file: src/main/java/bench/JwsEd25519.java
+    lines: [17, 19]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0020
+    file: src/main/java/bench/JwsEd25519.java
+    lines: [22, 22]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEd25519/jwk
+    notes: "Ed25519Signer fixes Ed25519. Nimbus signer/verifier/encrypter/decrypter objects are built on the key and fix the algorithm family they compute, so their construction is an asset (guide: creating a signer object that names its algorithm or fixes it by default), with no parameters because the construction leaves the concrete JWS/JWE algorithm open. The later sign/verify/encrypt/decrypt call on the JOSE object is a separate asset: it is not a follow-up on the signer object, and it is the call that runs the algorithm the header names. A second annotator may annotate only one of the two."
+  - id: gt-0021
+    file: src/main/java/bench/JwsEd25519.java
+    lines: [26, 26]
+    anchors: [[24, 24]]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEd25519/jwk
+    notes: "JWS alg EdDSA with an Ed25519 key is Ed25519 (guide, algorithm). The JOSE object's header, built in the same method, names the algorithm, so the call takes its parameters from it."
+  - id: gt-0022
+    file: src/main/java/bench/JwsEd25519.java
+    lines: [30, 30]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEd25519/jwk
+    notes: "Ed25519Verifier fixes Ed25519."
+  - id: gt-0023
+    file: src/main/java/bench/JwsEd25519.java
+    lines: [31, 31]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEd25519/jwk
+    notes: "verify/decrypt names no algorithm; it takes the algorithm the token the program produced uses, with only what the verifier/decrypter type fixes (guide, verify calls). Ed25519Verifier fixes Ed25519."
+  - id: gt-0024
+    file: src/main/java/bench/JwsEs256.java
+    lines: [17, 19]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: EC
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEs256/ecJWK
+    notes: "ECKeyGenerator makes a generic EC JWK, so EC with its curve (guide, algorithm). Builder chain to generate() is one asset."
+  - id: gt-0042
+    file: src/main/java/bench/JwsEs256.java
+    lines: [17, 19]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0025
+    file: src/main/java/bench/JwsEs256.java
+    lines: [22, 22]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEs256/ecJWK
+    notes: "ECDSASigner fixes ECDSA; the curve is the key's, not stated by the call, so none. Nimbus signer/verifier/encrypter/decrypter objects are built on the key and fix the algorithm family they compute, so their construction is an asset (guide: creating a signer object that names its algorithm or fixes it by default), with no parameters because the construction leaves the concrete JWS/JWE algorithm open. The later sign/verify/encrypt/decrypt call on the JOSE object is a separate asset: it is not a follow-up on the signer object, and it is the call that runs the algorithm the header names. A second annotator may annotate only one of the two."
+  - id: gt-0026
+    file: src/main/java/bench/JwsEs256.java
+    lines: [26, 26]
+    anchors: [[24, 24]]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEs256/ecJWK
+    notes: "JWS alg ES256: ECDSA, P-256, SHA-256. The JOSE object's header, built in the same method, names the algorithm, so the call takes its parameters from it."
+  - id: gt-0027
+    file: src/main/java/bench/JwsEs256.java
+    lines: [30, 30]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEs256/ecJWK
+    notes: "ECDSAVerifier fixes ECDSA."
+  - id: gt-0028
+    file: src/main/java/bench/JwsEs256.java
+    lines: [31, 31]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsEs256/ecJWK
+    notes: "verify/decrypt names no algorithm; it takes the algorithm the token the program produced uses, with only what the verifier/decrypter type fixes (guide, verify calls)."
+  - id: gt-0029
+    file: src/main/java/bench/JwsHs256.java
+    lines: [17, 17]
+    anchors: [[15, 15]]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "SecureRandom draw used as the HMAC key: a drbg asset with no algorithm and no object, and not related crypto material (guide, keys)."
+  - id: gt-0030
+    file: src/main/java/bench/JwsHs256.java
+    lines: [19, 19]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsHs256/sharedSecret
+    notes: "MACSigner fixes HMAC; the digest is chosen by the header, so no hash here. Nimbus signer/verifier/encrypter/decrypter objects are built on the key and fix the algorithm family they compute, so their construction is an asset (guide: creating a signer object that names its algorithm or fixes it by default), with no parameters because the construction leaves the concrete JWS/JWE algorithm open. The later sign/verify/encrypt/decrypt call on the JOSE object is a separate asset: it is not a follow-up on the signer object, and it is the call that runs the algorithm the header names. A second annotator may annotate only one of the two."
+  - id: gt-0031
+    file: src/main/java/bench/JwsHs256.java
+    lines: [21, 21]
+    anchors: [[20, 20]]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsHs256/sharedSecret
+    notes: "JWS alg HS256. The JOSE object's header, built in the same method, names the algorithm, so the call takes its parameters from it."
+  - id: gt-0032
+    file: src/main/java/bench/JwsHs256.java
+    lines: [25, 25]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsHs256/sharedSecret
+    notes: "MACVerifier fixes HMAC. Shares the object with the signer because both are built on the same drawn key (guide, built on a key)."
+  - id: gt-0033
+    file: src/main/java/bench/JwsHs256.java
+    lines: [26, 26]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwsHs256/sharedSecret
+    notes: "verify/decrypt names no algorithm; it takes the algorithm the token the program produced uses, with only what the verifier/decrypter type fixes (guide, verify calls)."
+  - id: gt-0034
+    file: src/main/java/bench/JwtRs256.java
+    lines: [17, 19]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwtRs256/rsaJWK
+    notes: "Builder chain from new RSAKeyGenerator(3072) to generate() is one asset."
+  - id: gt-0043
+    file: src/main/java/bench/JwtRs256.java
+    lines: [17, 19]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0035
+    file: src/main/java/bench/JwtRs256.java
+    lines: [22, 22]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwtRs256/rsaJWK
+    notes: "RSASSASigner supports RS* and PS*, so RSA with no padding. Nimbus signer/verifier/encrypter/decrypter objects are built on the key and fix the algorithm family they compute, so their construction is an asset (guide: creating a signer object that names its algorithm or fixes it by default), with no parameters because the construction leaves the concrete JWS/JWE algorithm open. The later sign/verify/encrypt/decrypt call on the JOSE object is a separate asset: it is not a follow-up on the signer object, and it is the call that runs the algorithm the header names. A second annotator may annotate only one of the two."
+  - id: gt-0036
+    file: src/main/java/bench/JwtRs256.java
+    lines: [31, 31]
+    anchors: [[29, 29]]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwtRs256/rsaJWK
+    notes: "JWS alg RS256. The JOSE object's header, built in the same method, names the algorithm, so the call takes its parameters from it."
+  - id: gt-0037
+    file: src/main/java/bench/JwtRs256.java
+    lines: [35, 35]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwtRs256/rsaJWK
+    notes: "RSASSAVerifier supports RS* and PS*."
+  - id: gt-0038
+    file: src/main/java/bench/JwtRs256.java
+    lines: [36, 36]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: JwtRs256/rsaJWK
+    notes: "verify/decrypt names no algorithm; it takes the algorithm the token the program produced uses, with only what the verifier/decrypter type fixes (guide, verify calls)."

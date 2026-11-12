@@ -1,0 +1,27 @@
+schema_version: "1"
+entry: javascript-b-wrapper-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:npm/cbench-wrapper-liba@1.0.0
+    - pkg:npm/cbench-wrapper-libb@1.0.0
+assets:
+  - id: gt-0001
+    file: index.js
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-384
+    origin: dependency
+    component: pkg:npm/cbench-wrapper-libb@1.0.0
+    reachable: true
+    depth: 2
+    distance: 2
+    path:
+      - "index.js:main"
+      - "index.js:run"
+      - "cbench-wrapper-liba:protect"
+      - "cbench-wrapper-liba:protectInner"
+      - "cbench-wrapper-libb:encode"
+      - "cbench-wrapper-libb:encodeInner"
+      - "cbench-wrapper-libb:hashBlock"

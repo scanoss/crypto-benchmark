@@ -1,0 +1,285 @@
+schema_version: "1"
+entry: java-bcpg-jdk15on
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/main/java/bench/PgpEncrypt.java
+    lines: [32, 32]
+    anchors: [[30, 30]]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    object: PgpEncrypt/keyPair
+    notes: "key_size from keyPairGen.initialize(3072) on the same generator (Java decisions). JcaPGPKeyPair wraps the generated pair and is not an asset. Re-derivation: the second annotation put this key generation on KeyPairGenerator.getInstance (line 30). Kept on generateKeyPair(), as in every Java entry (annotation log, Java decisions)."
+  - id: gt-0021
+    file: src/main/java/bench/PgpEncrypt.java
+    lines: [32, 32]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: src/main/java/bench/PgpEncrypt.java
+    lines: [41, 45]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: CFB
+    origin: project
+    reachable: true
+    depth: 0
+    object: PgpEncrypt/encrypted
+    notes: "JcePGPDataEncryptorBuilder(AES_256) names AES with a 256-bit key; OpenPGP symmetrically encrypted integrity-protected data (SEIPD v1, setWithIntegrityPacket(true)) runs AES in OpenPGP CFB mode, fixed by the API. Primitive block-cipher, not ae: the integrity packet is a SHA-1 MDC, not an AEAD mode; the MDC hash is internal and not annotated. The asset spans the whole PGPEncryptedDataGenerator(...) call, which holds the builder chain. The session key is generated inside the library, so it is not related crypto material. encryptedGen.open(...) is a follow-up. The session key goes from encryption to decryption inside the message, so the two AES assets are one object, as for a JWE content key (guide, passed on); the id takes the variable that carries it. Re-derivation: the second annotation added the new SecureRandom() passed to this builder as a drbg asset. Kept out: creating a generator draws nothing, and the library draws the session key and prefix from it and keeps them inside the message."
+  - id: gt-0003
+    file: src/main/java/bench/PgpEncrypt.java
+    lines: [46, 46]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: true
+    depth: 0
+    object: PgpEncrypt/keyPair
+    notes: "JcePublicKeyKeyEncryptionMethodGenerator(publicKey) encrypts the session key with the RSA key. OpenPGP fixes RSA to PKCS#1 v1.5 for both signatures and session-key encryption (RFC 4880 sections 5.1 and 5.2.2), so the API fixes the padding (guide, parameters)."
+  - id: gt-0004
+    file: src/main/java/bench/PgpEncrypt.java
+    lines: [55, 56]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: true
+    depth: 0
+    object: PgpEncrypt/keyPair
+    notes: "encryptedData.getDataStream(decryptorFactory) decrypts: it is two assets with the same lines, the RSA session-key decryption with the private key and the AES data decryption (guide, a call that performs two algorithms). The nested JcePublicKeyDataDecryptorFactoryBuilder chain is part of it. OpenPGP fixes RSA to PKCS#1 v1.5 for both signatures and session-key encryption (RFC 4880 sections 5.1 and 5.2.2), so the API fixes the padding (guide, parameters)."
+  - id: gt-0005
+    file: src/main/java/bench/PgpEncrypt.java
+    lines: [55, 56]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CFB
+    origin: project
+    reachable: true
+    depth: 0
+    object: PgpEncrypt/encrypted
+    notes: "AES data decryption in OpenPGP CFB mode (fixed by the API). No key_size: the call takes the cipher and key size from the message. encryptedData.verify() on line 60 checks the MDC and is a follow-up."
+  - id: gt-0006
+    file: src/main/java/bench/PgpKeyRing.java
+    lines: [30, 30]
+    anchors: [[28, 28]]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    object: PgpKeyRing/signKey
+    notes: "Primary key, used to make the key ring's certification signatures. key_size from keyPairGen.initialize(3072). Re-derivation: the second annotation put this key generation on KeyPairGenerator.getInstance (line 28). Kept on generateKeyPair(), as in every Java entry (annotation log, Java decisions)."
+  - id: gt-0022
+    file: src/main/java/bench/PgpKeyRing.java
+    lines: [30, 30]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0007
+    file: src/main/java/bench/PgpKeyRing.java
+    lines: [31, 31]
+    anchors: [[28, 28]]
+    asset_type: algorithm
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Judgment call: the encryption subkey (RSA_ENCRYPT) is only bound into the ring and serialized; the program never encrypts with it, so it has no primitive (guide: none when the program only stores or serializes the key). Its own object would have this one algorithm asset only, so no object. Re-derivation: the second annotation made one asset of the shared generator at getInstance (line 28). Kept two: each generateKeyPair() call generates its own key pair."
+  - id: gt-0023
+    file: src/main/java/bench/PgpKeyRing.java
+    lines: [31, 31]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0008
+    file: src/main/java/bench/PgpKeyRing.java
+    lines: [33, 33]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "get(HashAlgorithmTags.SHA1) creates a SHA-1 digest calculator, passed on as the secret-key checksum calculator and the S2K digest."
+  - id: gt-0009
+    file: src/main/java/bench/PgpKeyRing.java
+    lines: [36, 36]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: PgpKeyRing/signKey
+    notes: "JcaPGPContentSignerBuilder(RSA_SIGN, SHA256) names the signer; PGPKeyRingGenerator signs the user ID certification and the subkey binding with signKey through it. The PGPKeyRingGenerator call itself (lines 34-37), addSubKey and generatePublicKeyRing/generateSecretKeyRing are follow-ups that run this signer, not assets. Judgment call: the asset is placed on the nested builder line, not the whole generator call. OpenPGP fixes RSA to PKCS#1 v1.5 for both signatures and session-key encryption (RFC 4880 sections 5.1 and 5.2.2), so the API fixes the padding (guide, parameters)."
+  - id: gt-0010
+    file: src/main/java/bench/PgpKeyRing.java
+    lines: [37, 37]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: CFB
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "JcePBESecretKeyEncryptorBuilder(AES_256, sha1Calc).build(passphrase) encrypts the secret keys with AES-256 in OpenPGP CFB mode under a passphrase-derived key. Its key is derived from the passphrase, a new object (guide, derived keys), so no object."
+  - id: gt-0011
+    file: src/main/java/bench/PgpKeyRing.java
+    lines: [37, 37]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: OpenPGP-S2K
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "OpenPGP String-to-Key (iterated and salted S2K, RFC 4880 3.7) derives the key from the passphrase. Not in the algo table, so it keeps its usual name OpenPGP-S2K (guide, algorithm). The S2K salt is drawn inside the library and kept in the packet, so it is not related crypto material. Judgment call: annotated as its own kdf asset because the call performs it; a second annotator may fold it into the AES asset. Re-derivation: the second annotation wrote S2K; neither name is in internal/algo, so both keep a usual name, and they differ only in spelling."
+  - id: gt-0012
+    file: src/main/java/bench/PgpKeyRing.java
+    lines: [44, 44]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: PgpKeyRing/armored
+    notes: "publicKeyRing.encode(out) serializes the public key ring; ArmoredOutputStream only armors (guide, encoding). Judgment call: the public and secret rings hold the same two keys, so their serializations are one related-crypto-material object, named after the stream that carries them. Re-derivation: the second annotation read new PGPKeyRingGenerator(...) as building an OpenPGP certificate and this encode as serializing it (asset type certificate). Kept as key serialization: the guide reserves certificate for X.509 certificates and CSRs, and an OpenPGP key ring is keys with self-signatures."
+  - id: gt-0013
+    file: src/main/java/bench/PgpKeyRing.java
+    lines: [47, 47]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: true
+    depth: 0
+    object: PgpKeyRing/armored
+    notes: "secretKeyRing.encode(out) serializes the (passphrase-encrypted) secret key ring."
+  - id: gt-0014
+    file: src/main/java/bench/PgpPassword.java
+    lines: [35, 39]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: CFB
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "JcePGPDataEncryptorBuilder(AES_256) names AES with a 256-bit key; OpenPGP symmetrically encrypted integrity-protected data (SEIPD v1, setWithIntegrityPacket(true)) runs AES in OpenPGP CFB mode, fixed by the API. Primitive block-cipher, not ae: the integrity packet is a SHA-1 MDC, not an AEAD mode; the MDC hash is internal and not annotated. The asset spans the whole PGPEncryptedDataGenerator(...) call, which holds the builder chain. The session key is generated inside the library, so it is not related crypto material. encryptedGen.open(...) is a follow-up. With a single passphrase method, BC 1.70 uses the S2K-derived key directly as the session key, so the decrypt side derives it again: a derived key is a new object each time (guide, derived keys), so the two AES assets have no object. Re-derivation: the second annotation added the new SecureRandom() passed to this builder as a drbg asset. Kept out: creating a generator draws nothing, and the library draws the session key and prefix from it and keeps them inside the message."
+  - id: gt-0015
+    file: src/main/java/bench/PgpPassword.java
+    lines: [40, 40]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: OpenPGP-S2K
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "JcePBEKeyEncryptionMethodGenerator(passphrase) derives the key from the passphrase with BC's default S2K. OpenPGP String-to-Key (iterated and salted S2K, RFC 4880 3.7) derives the key from the passphrase. Not in the algo table, so it keeps its usual name OpenPGP-S2K (guide, algorithm). The S2K salt is drawn inside the library and kept in the packet, so it is not related crypto material. Judgment call: annotated as its own kdf asset because the call performs it; a second annotator may fold it into the AES asset. Re-derivation: the second annotation wrote S2K; neither name is in internal/algo, so both keep a usual name, and they differ only in spelling."
+  - id: gt-0016
+    file: src/main/java/bench/PgpPassword.java
+    lines: [49, 51]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: OpenPGP-S2K
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "encryptedData.getDataStream(...) with a JcePBEDataDecryptorFactoryBuilder(...).build(passphrase) derives the key again and decrypts: two assets with the same lines. OpenPGP String-to-Key (iterated and salted S2K, RFC 4880 3.7) derives the key from the passphrase. Not in the algo table, so it keeps its usual name OpenPGP-S2K (guide, algorithm). The S2K salt is drawn inside the library and kept in the packet, so it is not related crypto material. Judgment call: annotated as its own kdf asset because the call performs it; a second annotator may fold it into the AES asset. Re-derivation: the second annotation wrote S2K; neither name is in internal/algo, so both keep a usual name, and they differ only in spelling."
+  - id: gt-0017
+    file: src/main/java/bench/PgpPassword.java
+    lines: [49, 51]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CFB
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "AES data decryption in OpenPGP CFB mode (fixed by the API); no key_size, the call takes it from the message. encryptedData.verify() on line 55 checks the MDC and is a follow-up."
+  - id: gt-0018
+    file: src/main/java/bench/PgpSign.java
+    lines: [25, 25]
+    anchors: [[23, 23]]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 3072
+    origin: project
+    reachable: true
+    depth: 0
+    object: PgpSign/keyPair
+    notes: "key_size from keyPairGen.initialize(3072). Re-derivation: the second annotation put this key generation on KeyPairGenerator.getInstance (line 23). Kept on generateKeyPair(), as in every Java entry (annotation log, Java decisions)."
+  - id: gt-0024
+    file: src/main/java/bench/PgpSign.java
+    lines: [25, 25]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0019
+    file: src/main/java/bench/PgpSign.java
+    lines: [28, 29]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: PgpSign/keyPair
+    notes: "PGPSignatureGenerator with JcaPGPContentSignerBuilder(RSA_GENERAL, SHA256) names the signer; init, update and generate are follow-ups. OpenPGP fixes RSA to PKCS#1 v1.5 for both signatures and session-key encryption (RFC 4880 sections 5.1 and 5.2.2), so the API fixes the padding (guide, parameters)."
+  - id: gt-0020
+    file: src/main/java/bench/PgpSign.java
+    lines: [36, 36]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: true
+    depth: 0
+    object: PgpSign/keyPair
+    notes: "Judgment call: signature.init(JcaPGPContentVerifierBuilderProvider, publicKey) creates the verifier on the key, like a verifier object built on a key, so it is the verify asset; update and verify() on line 39 are follow-ups. A second annotator may place it on verify(). No hash: the digest comes from the parsed signature packet (guide: a call that takes its algorithm from the token gets no hash). OpenPGP fixes RSA to PKCS#1 v1.5 for both signatures and session-key encryption (RFC 4880 sections 5.1 and 5.2.2), so the API fixes the padding (guide, parameters)."

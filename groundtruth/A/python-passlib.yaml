@@ -1,0 +1,96 @@
+schema_version: "1"
+entry: python-passlib
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: argon2/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: Argon2id
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: argon2/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: Argon2id
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0003
+    file: argon2/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: Argon2id
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0004
+    file: crypt-context/main.py
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "context.hash and context.verify are follow-up calls on the CryptContext. Re-derivation: second annotator also annotated context.verify on lines 9 and 10; not added: the program created the CryptContext, so its methods are follow-up calls, as PasswordHasher.verify is in argon2-cffi. passlib's argon2.verify and pbkdf2_sha256.verify are one-shot functions on the handler class, so they stay assets."
+  - id: gt-0005
+    file: pbkdf2-sha256/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0006
+    file: pbkdf2-sha256/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0007
+    file: pbkdf2-sha256/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0008
+    file: sha512-crypt/main.py
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: SHA-512-crypt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0009
+    file: sha512-crypt/main.py
+    lines: [8, 8]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: SHA-512-crypt
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0010
+    file: sha512-crypt/main.py
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: SHA-512-crypt
+    origin: project
+    reachable: true
+    depth: 0

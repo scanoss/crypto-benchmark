@@ -1,0 +1,51 @@
+schema_version: "1"
+entry: rust-hmac
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: src/bin/hmac_sha1.rs
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-1
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0002
+    file: src/bin/hmac_sha256.rs
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hmac_sha256/key
+  - id: gt-0003
+    file: src/bin/hmac_sha256.rs
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+    object: hmac_sha256/key
+  - id: gt-0004
+    file: src/bin/hmac_sha512.rs
+    lines: [5, 5]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-512
+    origin: project
+    reachable: true
+    depth: 0

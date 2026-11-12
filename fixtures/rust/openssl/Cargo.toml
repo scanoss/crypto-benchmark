@@ -1,0 +1,8 @@
+[package]
+name = "openssl-fixture"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+openssl = "=0.10.82"

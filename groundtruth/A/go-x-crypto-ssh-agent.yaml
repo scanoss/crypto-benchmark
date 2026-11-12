@@ -1,0 +1,47 @@
+schema_version: "1"
+entry: go-x-crypto-ssh-agent
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: agent-sign/main.go
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: agent-sign/privateKey
+    notes: "keyring.Add on line 19 stores the key in the agent and is not an asset, like add_server_key."
+  - id: gt-0004
+    file: agent-sign/main.go
+    lines: [14, 14]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: agent-sign/main.go
+    lines: [32, 32]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: agent-sign/privateKey
+    notes: "The agent signs with the stored key: a sign operation of that key, through the agent protocol."
+  - id: gt-0003
+    file: agent-sign/main.go
+    lines: [40, 40]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: true
+    depth: 0
+    object: agent-sign/privateKey
+    notes: "ssh.NewPublicKey on line 36 converts the key and is not an asset."

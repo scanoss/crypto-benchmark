@@ -1,0 +1,676 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "go-stdlib",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "aes-cbc/main.go",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "aes",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ecdh-x25519/main.go",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "key-agree",
+      "algorithm": "curveX25519",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ecdsa-p256/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ecdsa",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ecdsa-p256/main.go",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ecdsa",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ed25519/main.go",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "hmac-sha256/main.go",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "hmacSHA",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ecdh-x25519/main.go",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ecdh-x25519/main.go",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "pbkdf2/main.go",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "legacy-hash/main.go",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "md5",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlkem/main.go",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kem",
+      "algorithm": "ML-KEM-768",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "pbkdf2/main.go",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "password",
+      "algorithm": "password",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "pbkdf2/main.go",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "PBKDF2",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "key-load/main.go",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "PKCS#1 private key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ecdsa-p256/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ecdsa-p256/main.go",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ed25519/main.go",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "key-load/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlkem/main.go",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rsa-oaep/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rsa-pkcs1v15/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "rsa-pss/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "tls-handshake/main.go",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x509-cert/main.go",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "key-load/main.go",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "key-load/main.go",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "key-load/main.go",
+      "lines": [
+        27,
+        27
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "tls-handshake/main.go",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "tls-handshake/main.go",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "tls-handshake/main.go",
+      "lines": [
+        27,
+        27
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "tls-handshake/main.go",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "tls-handshake/main.go",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "tls-handshake/main.go",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "tls-handshake/main.go",
+      "lines": [
+        34,
+        34
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "tls-handshake/main.go",
+      "lines": [
+        38,
+        38
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "tls-handshake/main.go",
+      "lines": [
+        39,
+        39
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x509-cert/main.go",
+      "lines": [
+        25,
+        25
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x509-cert/main.go",
+      "lines": [
+        27,
+        27
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x509-cert/main.go",
+      "lines": [
+        32,
+        32
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x509-cert/main.go",
+      "lines": [
+        34,
+        34
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x509-cert/main.go",
+      "lines": [
+        41,
+        41
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x509-cert/main.go",
+      "lines": [
+        45,
+        45
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x509-cert/main.go",
+      "lines": [
+        47,
+        47
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x509-cert/main.go",
+      "lines": [
+        51,
+        51
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "x509-cert/main.go",
+      "lines": [
+        55,
+        55
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "legacy-cipher/main.go",
+      "lines": [
+        26,
+        26
+      ],
+      "asset_type": "algorithm",
+      "primitive": "stream-cipher",
+      "algorithm": "rc4",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "key-load/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "rsa",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "legacy-hash/main.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-1",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ecdh-x25519/main.go",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "sha2/main.go",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-512",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "sha3/main.go",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha3-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "ecdh-x25519/main.go",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "shared-secret",
+      "algorithm": "shared-secret",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "legacy-cipher/main.go",
+      "lines": [
+        25,
+        25
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "streamKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "tls-config/main.go",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "protocol",
+      "algorithm": "TLS",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "key-load/main.go",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "certificate",
+      "algorithm": "X.509 certificate",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

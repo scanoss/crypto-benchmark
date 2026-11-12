@@ -1,0 +1,10 @@
+[package]
+name = "tokio-rustls-fixture"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+tokio-rustls = "=0.26.6"
+tokio = { version = "=1.54.1", features = ["rt-multi-thread", "macros", "io-util"] }
+webpki-roots = "=1.0.11"

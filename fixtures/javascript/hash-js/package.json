@@ -1,0 +1,9 @@
+{
+  "name": "crypto-benchmark-hash-js",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "hash.js": "1.1.7"
+  }
+}

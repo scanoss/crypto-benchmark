@@ -1,0 +1,10 @@
+{
+  "name": "cbench-unused-import-liba",
+  "version": "1.0.0",
+  "description": "Suite B fixture library liba (unused-import).",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cbench-unused-import-libb": "1.0.0"
+  }
+}

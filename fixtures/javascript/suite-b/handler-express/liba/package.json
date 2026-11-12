@@ -1,0 +1,10 @@
+{
+  "name": "cbench-handler-express-liba",
+  "version": "1.0.0",
+  "description": "Suite B fixture library liba (handler-express).",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cbench-handler-express-libb": "1.0.0"
+  }
+}

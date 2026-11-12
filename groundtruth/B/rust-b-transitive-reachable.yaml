@@ -1,0 +1,24 @@
+schema_version: "1"
+entry: rust-b-transitive-reachable
+scope:
+  kind: exhaustive
+  components:
+    - pkg:cargo/cbench-transitive-liba@1.0.0
+    - pkg:cargo/cbench-transitive-libb@1.0.0
+assets:
+  - id: gt-0001
+    file: src/lib.rs
+    lines: [4, 4]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-512
+    origin: dependency
+    component: pkg:cargo/cbench-transitive-libb@1.0.0
+    reachable: true
+    depth: 2
+    distance: 2
+    path:
+      - "app::main"
+      - "app::run"
+      - "cbench_transitive_liba::fingerprint"
+      - "cbench_transitive_libb::digest"

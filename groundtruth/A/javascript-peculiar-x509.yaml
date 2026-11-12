@@ -1,0 +1,148 @@
+schema_version: "1"
+entry: javascript-peculiar-x509
+scope:
+  kind: exhaustive
+assets:
+  - id: gt-0001
+    file: csr/main.js
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "A WebCrypto key is generated for one algorithm and can only be used with it, a key type tied to one scheme, so it is named by that scheme (guide, algorithm): RSASSA-PKCS1-v1_5 is RSA with padding PKCS1v15, RSA-PSS and RSA-OAEP keep their names, ECDSA is ECDSA. Re-derivation: the first annotation wrote plain RSA; changed to the second annotation's reading, which matches how this entry already named the WebCrypto ECDSA key."
+  - id: gt-0013
+    file: csr/main.js
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0002
+    file: csr/main.js
+    lines: [12, 17]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: csr/csr
+    notes: "A certificate signing request counts as a certificate asset."
+  - id: gt-0003
+    file: csr/main.js
+    lines: [18, 18]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: csr/csr
+  - id: gt-0004
+    file: parse-verify/main.js
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      key_size: 2048
+    origin: project
+    reachable: true
+    depth: 0
+    object: parse-verify/keys
+    notes: "A WebCrypto key is generated for one algorithm and can only be used with it, a key type tied to one scheme, so it is named by that scheme (guide, algorithm): RSASSA-PKCS1-v1_5 is RSA with padding PKCS1v15, RSA-PSS and RSA-OAEP keep their names, ECDSA is ECDSA. Re-derivation: the first annotation wrote plain RSA; changed to the second annotation's reading, which matches how this entry already named the WebCrypto ECDSA key."
+  - id: gt-0014
+    file: parse-verify/main.js
+    lines: [11, 11]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0005
+    file: parse-verify/main.js
+    lines: [12, 17]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: parse-verify/issued
+  - id: gt-0006
+    file: parse-verify/main.js
+    lines: [18, 18]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: parse-verify/issued
+  - id: gt-0007
+    file: parse-verify/main.js
+    lines: [20, 20]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: parse-verify/issued
+  - id: gt-0008
+    file: parse-verify/main.js
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    origin: project
+    reachable: true
+    depth: 0
+    object: parse-verify/keys
+    notes: "Parsing created the certificate object; verify performs a different operation, a signature verification, so both are assets (guide, follow-up exception). Algorithm from the key the program used; the call fixes no parameter."
+  - id: gt-0009
+    file: parse-verify/main.js
+    lines: [22, 22]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: true
+    depth: 0
+  - id: gt-0010
+    file: self-signed/main.js
+    lines: [6, 6]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "algorithm is a literal object in the same function (guide, parameters). A WebCrypto ECDSA key is tied to ECDSA; key generation carries no hash."
+  - id: gt-0015
+    file: self-signed/main.js
+    lines: [6, 6]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: true
+    depth: 0
+    notes: "Generated private key (owner decision 2026-11-08): the key generation hands the program a private key, which is related crypto material of type private-key on the same lines as its algorithm asset."
+  - id: gt-0011
+    file: self-signed/main.js
+    lines: [7, 15]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: self-signed/cert
+  - id: gt-0012
+    file: self-signed/main.js
+    lines: [16, 16]
+    asset_type: certificate
+    origin: project
+    reachable: true
+    depth: 0
+    object: self-signed/cert
