@@ -1,0 +1,15 @@
+// Gradle analogue of `mvn dependency:copy-dependencies`: copies each project's
+// resolvable runtime and test runtime jars into <project>/build/dependency.
+allprojects {
+    afterEvaluate { p ->
+        p.tasks.register("copyDeps", Copy) {
+            def names = ["runtimeClasspath", "testRuntimeClasspath"]
+            names.each { n ->
+                def c = p.configurations.findByName(n)
+                if (c != null && c.canBeResolved) { from(c) }
+            }
+            into(p.layout.buildDirectory.dir("dependency"))
+            duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+        }
+    }
+}

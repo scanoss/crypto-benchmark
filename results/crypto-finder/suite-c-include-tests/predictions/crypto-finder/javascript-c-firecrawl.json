@@ -1,0 +1,4483 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "javascript-c-firecrawl",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        64,
+        64
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        91,
+        91
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        114,
+        114
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        119,
+        119
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        128,
+        128
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        204,
+        204
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        211,
+        211
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        212,
+        212
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        245,
+        245
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        248,
+        248
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        264,
+        264
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        268,
+        268
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        268,
+        268
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        277,
+        277
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        288,
+        288
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        291,
+        291
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        337,
+        337
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        340,
+        340
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        375,
+        375
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        378,
+        378
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        378,
+        378
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        411,
+        411
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        443,
+        443
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        460,
+        460
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        462,
+        462
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        482,
+        482
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        485,
+        485
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        527,
+        527
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        565,
+        565
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        577,
+        577
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        584,
+        584
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        595,
+        595
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        610,
+        610
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        613,
+        613
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        639,
+        639
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        642,
+        642
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        682,
+        682
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        683,
+        683
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        703,
+        703
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        705,
+        705
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        715,
+        715
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        727,
+        727
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        729,
+        729
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        752,
+        752
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        754,
+        754
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        772,
+        772
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        773,
+        773
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        796,
+        796
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        810,
+        810
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        830,
+        830
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/core.test.ts",
+      "lines": [
+        833,
+        833
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/key-gate.test.ts",
+      "lines": [
+        18,
+        18
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/key-gate.test.ts",
+      "lines": [
+        58,
+        58
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/key-gate.test.ts",
+      "lines": [
+        84,
+        84
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/key-gate.test.ts",
+      "lines": [
+        109,
+        109
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/key-gate.test.ts",
+      "lines": [
+        148,
+        148
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/key-gate.test.ts",
+      "lines": [
+        149,
+        149
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/key-gate.test.ts",
+      "lines": [
+        186,
+        186
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/key-gate.test.ts",
+      "lines": [
+        196,
+        196
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/key-gate.test.ts",
+      "lines": [
+        224,
+        224
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/key-gate.test.ts",
+      "lines": [
+        225,
+        225
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/key-gate.test.ts",
+      "lines": [
+        265,
+        265
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/key-gate.test.ts",
+      "lines": [
+        300,
+        300
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/key-gate.test.ts",
+      "lines": [
+        302,
+        302
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/key-gate.test.ts",
+      "lines": [
+        331,
+        331
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/key-gate.test.ts",
+      "lines": [
+        332,
+        332
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        54,
+        54
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        55,
+        55
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        60,
+        60
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        66,
+        66
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        67,
+        67
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        121,
+        121
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        122,
+        122
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        164,
+        164
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        165,
+        165
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        172,
+        172
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        224,
+        224
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        225,
+        225
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        226,
+        226
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        271,
+        271
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        272,
+        272
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        273,
+        273
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        309,
+        309
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/router.test.ts",
+      "lines": [
+        310,
+        310
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/stress.test.ts",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/stress.test.ts",
+      "lines": [
+        32,
+        32
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/stress.test.ts",
+      "lines": [
+        40,
+        40
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/stress.test.ts",
+      "lines": [
+        104,
+        104
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/stress.test.ts",
+      "lines": [
+        105,
+        105
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-fdb/stress.test.ts",
+      "lines": [
+        118,
+        118
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-postgres.test.ts",
+      "lines": [
+        41,
+        41
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-postgres.test.ts",
+      "lines": [
+        46,
+        46
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-postgres.test.ts",
+      "lines": [
+        47,
+        47
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-postgres.test.ts",
+      "lines": [
+        79,
+        79
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-postgres.test.ts",
+      "lines": [
+        80,
+        80
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-postgres.test.ts",
+      "lines": [
+        80,
+        80
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-postgres.test.ts",
+      "lines": [
+        81,
+        81
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/nuq-postgres.test.ts",
+      "lines": [
+        81,
+        81
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/index-cache.test.ts",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/lib.ts",
+      "lines": [
+        51,
+        51
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v1/deprecation.test.ts",
+      "lines": [
+        79,
+        79
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v1/deprecation.test.ts",
+      "lines": [
+        207,
+        207
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v1/deprecation.test.ts",
+      "lines": [
+        226,
+        226
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v1/scrape.test.ts",
+      "lines": [
+        32,
+        32
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v1/scrape.test.ts",
+      "lines": [
+        346,
+        346
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v1/scrape.test.ts",
+      "lines": [
+        862,
+        862
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v1/scrape.test.ts",
+      "lines": [
+        1119,
+        1119
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v1/scrape.test.ts",
+      "lines": [
+        1120,
+        1120
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v1/zdr.test.ts",
+      "lines": [
+        33,
+        33
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/agent-thread.test.ts",
+      "lines": [
+        175,
+        175
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/agent-thread.test.ts",
+      "lines": [
+        190,
+        190
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/auth-denied.test.ts",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/browser-replay.test.ts",
+      "lines": [
+        79,
+        79
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/browser-replay.test.ts",
+      "lines": [
+        153,
+        153
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/browser-replay.test.ts",
+      "lines": [
+        230,
+        230
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/crawl.test.ts",
+      "lines": [
+        359,
+        359
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/exchange-provider-metadata.test.ts",
+      "lines": [
+        201,
+        201
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/index-cache-variants.test.ts",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/index-cache-variants.test.ts",
+      "lines": [
+        54,
+        54
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/monitor.test.ts",
+      "lines": [
+        46,
+        46
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/parse.test.ts",
+      "lines": [
+        164,
+        165
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/parsers-maxpages-index-cache.test.ts",
+      "lines": [
+        24,
+        24
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/parsers-maxpages-index-cache.test.ts",
+      "lines": [
+        46,
+        46
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/parsers-maxpages-index-cache.test.ts",
+      "lines": [
+        70,
+        70
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-browser.test.ts",
+      "lines": [
+        46,
+        46
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-browser.test.ts",
+      "lines": [
+        47,
+        47
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-browser.test.ts",
+      "lines": [
+        111,
+        111
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-browser.test.ts",
+      "lines": [
+        184,
+        184
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-browser.test.ts",
+      "lines": [
+        262,
+        262
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-browser.test.ts",
+      "lines": [
+        285,
+        285
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-browser.test.ts",
+      "lines": [
+        317,
+        317
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-cache.test.ts",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-cache.test.ts",
+      "lines": [
+        54,
+        54
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-cache.test.ts",
+      "lines": [
+        89,
+        89
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-cache.test.ts",
+      "lines": [
+        126,
+        126
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-cache.test.ts",
+      "lines": [
+        162,
+        162
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts",
+      "lines": [
+        59,
+        59
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts",
+      "lines": [
+        80,
+        80
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts",
+      "lines": [
+        105,
+        105
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape-robots.test.ts",
+      "lines": [
+        29,
+        29
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape.test.ts",
+      "lines": [
+        34,
+        34
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape.test.ts",
+      "lines": [
+        64,
+        64
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape.test.ts",
+      "lines": [
+        1356,
+        1356
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/scrape.test.ts",
+      "lines": [
+        1357,
+        1357
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/zdr.test.ts",
+      "lines": [
+        44,
+        44
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/__tests__/snips/v2/zdr.test.ts",
+      "lines": [
+        80,
+        80
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts",
+      "lines": [
+        100,
+        100
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-v1_5-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts",
+      "lines": [
+        100,
+        100
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts",
+      "lines": [
+        101,
+        101
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-v1_5-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts",
+      "lines": [
+        116,
+        119
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts",
+      "lines": [
+        344,
+        344
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-v1_5-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts",
+      "lines": [
+        344,
+        344
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts",
+      "lines": [
+        345,
+        349
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-v1_5-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts",
+      "lines": [
+        346,
+        346
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts",
+      "lines": [
+        384,
+        384
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-v1_5-SHA-512",
+      "parameters": {
+        "hash": "SHA-512"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts",
+      "lines": [
+        384,
+        384
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts",
+      "lines": [
+        386,
+        386
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-v1_5-SHA-512",
+      "parameters": {
+        "hash": "SHA-512"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/__tests__/auth.test.ts",
+      "lines": [
+        183,
+        183
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/v2/feedback/alexandria.integration.test.ts",
+      "lines": [
+        75,
+        75
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/v2/feedback/alexandria.integration.test.ts",
+      "lines": [
+        76,
+        76
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/v2/feedback/record.integration.test.ts",
+      "lines": [
+        66,
+        66
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/v2/feedback/record.integration.test.ts",
+      "lines": [
+        67,
+        67
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/v2/feedback/record.integration.test.ts",
+      "lines": [
+        75,
+        75
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/v2/feedback/record.integration.test.ts",
+      "lines": [
+        77,
+        77
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/v2/parse-upload.ts",
+      "lines": [
+        103,
+        104
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/v2/parse-upload.ts",
+      "lines": [
+        124,
+        125
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/v2/scrape-alexandria.ts",
+      "lines": [
+        119,
+        119
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/controllers/v2/team-siem-logging.ts",
+      "lines": [
+        131,
+        131
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-v1_5-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts",
+      "lines": [
+        24,
+        24
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-v1_5-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts",
+      "lines": [
+        24,
+        24
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts",
+      "lines": [
+        25,
+        29
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-v1_5-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts",
+      "lines": [
+        26,
+        26
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-v1_5-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts",
+      "lines": [
+        55,
+        59
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts",
+      "lines": [
+        120,
+        120
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-v1_5-SHA-512",
+      "parameters": {
+        "hash": "SHA-512"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts",
+      "lines": [
+        120,
+        120
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts",
+      "lines": [
+        121,
+        121
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts",
+      "lines": [
+        126,
+        126
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-v1_5-SHA-512",
+      "parameters": {
+        "hash": "SHA-512"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/world-id.test.ts",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-v1_5-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/world-id.test.ts",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/world-id.test.ts",
+      "lines": [
+        33,
+        33
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-v1_5-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/world-id.test.ts",
+      "lines": [
+        51,
+        51
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/world-id.test.ts",
+      "lines": [
+        52,
+        52
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSASSA-PKCS1-v1_5-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/__tests__/world-id.test.ts",
+      "lines": [
+        120,
+        120
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/alexandria-feedback-token.test.ts",
+      "lines": [
+        89,
+        89
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/alexandria-feedback-token.test.ts",
+      "lines": [
+        95,
+        95
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/alexandria-feedback-token.ts",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/alexandria-feedback-token.ts",
+      "lines": [
+        29,
+        29
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/bigtable-row-key.ts",
+      "lines": [
+        21,
+        22
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/browser-sessions.ts",
+      "lines": [
+        289,
+        289
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/change-tracking-store.ts",
+      "lines": [
+        38,
+        38
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/deterministicJson/core/util.ts",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/gcs-jobs.ts",
+      "lines": [
+        63,
+        63
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/gcs-pdf-cache.ts",
+      "lines": [
+        38,
+        38
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/html-to-markdown.ts",
+      "lines": [
+        20,
+        20
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/keyless-signup-link.ts",
+      "lines": [
+        73,
+        73
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES-128-ECB",
+      "parameters": {
+        "mode": "ecb",
+        "padding": "pkcs7",
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/keyless-signup-link.ts",
+      "lines": [
+        80,
+        80
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "AES-128-CBC",
+      "parameters": {
+        "mode": "cbc",
+        "padding": "pkcs7",
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/keyless.ts",
+      "lines": [
+        114,
+        114
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/mcp-delegated-credential.ts",
+      "lines": [
+        76,
+        76
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/org-secret-crypto.test.ts",
+      "lines": [
+        14,
+        14
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/org-secret-crypto.ts",
+      "lines": [
+        35,
+        35
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/org-secret-crypto.ts",
+      "lines": [
+        35,
+        35
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "initialization-vector",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/org-secret-crypto.ts",
+      "lines": [
+        36,
+        36
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-256-GCM",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/org-secret-crypto.ts",
+      "lines": [
+        42,
+        42
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "tag",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/org-secret-crypto.ts",
+      "lines": [
+        58,
+        62
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-256-GCM",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/owner-id.ts",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/request-credits-store.ts",
+      "lines": [
+        50,
+        50
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/request-credits-store.ts",
+      "lines": [
+        61,
+        62
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/request-credits-store.ts",
+      "lines": [
+        79,
+        79
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/secret-compare.ts",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/secret-compare.ts",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/siem-logging/azure-sentinel.test.ts",
+      "lines": [
+        314,
+        314
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/siem-logging/azure-sentinel.test.ts",
+      "lines": [
+        341,
+        341
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/siem-logging/azure-sentinel.ts",
+      "lines": [
+        67,
+        67
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/siem-logging/azure-sentinel.ts",
+      "lines": [
+        304,
+        304
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/spur.ts",
+      "lines": [
+        247,
+        247
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/threat-protection/providers/google-web-risk.ts",
+      "lines": [
+        102,
+        102
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/threat-protection/providers/web-risk/sync.test.ts",
+      "lines": [
+        59,
+        59
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/threat-protection/providers/web-risk/sync.ts",
+      "lines": [
+        106,
+        106
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/threat-protection/providers/web-risk/sync.ts",
+      "lines": [
+        184,
+        184
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/threat-protection/providers/web-risk/testing.ts",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/threat-protection/providers/web-risk/testing.ts",
+      "lines": [
+        87,
+        87
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/threat-protection/providers/zscaler/client.ts",
+      "lines": [
+        117,
+        117
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/threat-protection/providers/zscaler/lookup-queue.ts",
+      "lines": [
+        196,
+        196
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/tracking.ts",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/vercel-marketplace-oidc.ts",
+      "lines": [
+        114,
+        114
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/vercel-marketplace-oidc.ts",
+      "lines": [
+        201,
+        206
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/world-id.ts",
+      "lines": [
+        50,
+        50
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/world-id.ts",
+      "lines": [
+        63,
+        63
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/world-id.ts",
+      "lines": [
+        93,
+        93
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/world-id.ts",
+      "lines": [
+        127,
+        127
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/world-id.ts",
+      "lines": [
+        162,
+        162
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/world-id.ts",
+      "lines": [
+        162,
+        162
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "initialization-vector",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/world-id.ts",
+      "lines": [
+        163,
+        163
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-256-GCM",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/world-id.ts",
+      "lines": [
+        168,
+        168
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "tag",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/world-id.ts",
+      "lines": [
+        180,
+        184
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-256-GCM",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/world-id.ts",
+      "lines": [
+        207,
+        207
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/world-id.ts",
+      "lines": [
+        313,
+        318
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/lib/zdr-queue.ts",
+      "lines": [
+        236,
+        236
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/index/index.ts",
+      "lines": [
+        105,
+        105
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts",
+      "lines": [
+        248,
+        248
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts",
+      "lines": [
+        276,
+        276
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts",
+      "lines": [
+        286,
+        286
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts",
+      "lines": [
+        414,
+        414
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFBackgroundRefresh.test.ts",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFBackgroundRefresh.test.ts",
+      "lines": [
+        131,
+        131
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFBackgroundRefresh.test.ts",
+      "lines": [
+        132,
+        132
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFCache.test.ts",
+      "lines": [
+        1390,
+        1391
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFCache.test.ts",
+      "lines": [
+        1394,
+        1394
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFSupersede.test.ts",
+      "lines": [
+        142,
+        143
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/background-refresh.ts",
+      "lines": [
+        128,
+        128
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts",
+      "lines": [
+        39,
+        39
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts",
+      "lines": [
+        282,
+        282
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts",
+      "lines": [
+        344,
+        344
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/cache-service.ts",
+      "lines": [
+        38,
+        41
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/routing.ts",
+      "lines": [
+        55,
+        55
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/runpodMU.ts",
+      "lines": [
+        104,
+        104
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/utils/specialtyHandler.ts",
+      "lines": [
+        35,
+        35
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/index.ts",
+      "lines": [
+        400,
+        400
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/lib/fetch.ts",
+      "lines": [
+        118,
+        118
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/lib/mock.ts",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/lib/promptInjectionGuard.ts",
+      "lines": [
+        102,
+        102
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/waterfallExperiments.ts",
+      "lines": [
+        34,
+        34
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/search/tool-intent.ts",
+      "lines": [
+        172,
+        172
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/search/tool-intent.ts",
+      "lines": [
+        204,
+        204
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/alexandria/retrieve.ts",
+      "lines": [
+        80,
+        80
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/autumn/autumn.service.ts",
+      "lines": [
+        321,
+        321
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/autumn/firebill.ts",
+      "lines": [
+        316,
+        316
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/index-cache.ts",
+      "lines": [
+        100,
+        100
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/index.ts",
+      "lines": [
+        216,
+        216
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/integrations/slack/crypto.ts",
+      "lines": [
+        48,
+        48
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/integrations/slack/crypto.ts",
+      "lines": [
+        48,
+        48
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "initialization-vector",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/integrations/slack/crypto.ts",
+      "lines": [
+        49,
+        49
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-256-GCM",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/integrations/slack/crypto.ts",
+      "lines": [
+        54,
+        54
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "tag",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/integrations/slack/crypto.ts",
+      "lines": [
+        75,
+        79
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-256-GCM",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/integrations/slack/oauth.ts",
+      "lines": [
+        48,
+        48
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/integrations/slack/signature.ts",
+      "lines": [
+        35,
+        35
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/integrations/slack/slack.test.ts",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/integrations/slack/slack.test.ts",
+      "lines": [
+        42,
+        42
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/integrations/slack/slack.test.ts",
+      "lines": [
+        61,
+        62
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/monitoring/email_recipients.ts",
+      "lines": [
+        37,
+        37
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/monitoring/jitter.ts",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/monitoring/scheduler.ts",
+      "lines": [
+        52,
+        52
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/monitoring/search/dedupe.ts",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/monitoring/search/dedupe.ts",
+      "lines": [
+        26,
+        26
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/monitoring/store.ts",
+      "lines": [
+        45,
+        45
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/oauth-token-introspection.ts",
+      "lines": [
+        34,
+        34
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/vercel-marketplace-oidc.ts",
+      "lines": [
+        43,
+        43
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/webhook/delivery.ts",
+      "lines": [
+        83,
+        83
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/webhook/delivery.ts",
+      "lines": [
+        166,
+        166
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "hash": "SHA-256"
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/worker/nuq-fdb/groups.ts",
+      "lines": [
+        116,
+        116
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/worker/nuq-fdb/queue.ts",
+      "lines": [
+        754,
+        754
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/worker/nuq-fdb/sweeper.ts",
+      "lines": [
+        130,
+        130
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/api/src/services/worker/nuq.ts",
+      "lines": [
+        96,
+        96
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/go-sdk/tools.go",
+      "lines": [
+        79,
+        79
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/js-sdk/firecrawl/src/v2/methods/tools.ts",
+      "lines": [
+        77,
+        77
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/local/src/login.rs",
+      "lines": [
+        42,
+        42
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "apps/local/src/login.rs",
+      "lines": [
+        47,
+        47
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

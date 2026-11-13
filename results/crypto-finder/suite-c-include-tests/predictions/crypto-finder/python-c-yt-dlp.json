@@ -1,0 +1,1574 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "python-c-yt-dlp",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "devscripts/generate_third_party_licenses.py",
+      "lines": [
+        352,
+        352
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/helper.py",
+      "lines": [
+        100,
+        100
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_http_proxy.py",
+      "lines": [
+        135,
+        135
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_http_proxy.py",
+      "lines": [
+        136,
+        136
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_http_proxy.py",
+      "lines": [
+        140,
+        140
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_http_proxy.py",
+      "lines": [
+        186,
+        186
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_http_proxy.py",
+      "lines": [
+        187,
+        187
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_http_proxy.py",
+      "lines": [
+        188,
+        188
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        310,
+        310
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        311,
+        311
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        312,
+        312
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        338,
+        338
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        339,
+        339
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        356,
+        356
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        357,
+        357
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        358,
+        358
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        359,
+        359
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        360,
+        360
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        381,
+        381
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        382,
+        382
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        383,
+        383
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        384,
+        384
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        385,
+        385
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        795,
+        795
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        796,
+        796
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        797,
+        797
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        798,
+        798
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking.py",
+      "lines": [
+        799,
+        799
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking_utils.py",
+      "lines": [
+        92,
+        92
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking_utils.py",
+      "lines": [
+        93,
+        93
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking_utils.py",
+      "lines": [
+        94,
+        94
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking_utils.py",
+      "lines": [
+        98,
+        98
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking_utils.py",
+      "lines": [
+        99,
+        99
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_networking_utils.py",
+      "lines": [
+        100,
+        100
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_pot/test_pot_director.py",
+      "lines": [
+        581,
+        582
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_pot/test_pot_director.py",
+      "lines": [
+        595,
+        596
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_websockets.py",
+      "lines": [
+        97,
+        97
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_websockets.py",
+      "lines": [
+        98,
+        98
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_websockets.py",
+      "lines": [
+        109,
+        109
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_websockets.py",
+      "lines": [
+        110,
+        110
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_websockets.py",
+      "lines": [
+        111,
+        111
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_websockets.py",
+      "lines": [
+        112,
+        112
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_websockets.py",
+      "lines": [
+        119,
+        119
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_websockets.py",
+      "lines": [
+        120,
+        120
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_websockets.py",
+      "lines": [
+        121,
+        121
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_websockets.py",
+      "lines": [
+        122,
+        122
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "test/test_websockets.py",
+      "lines": [
+        154,
+        154
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/cookies.py",
+      "lines": [
+        1041,
+        1041
+      ],
+      "asset_type": "algorithm",
+      "primitive": "kdf",
+      "algorithm": "PBKDF2-HMAC",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/downloader/bunnycdn.py",
+      "lines": [
+        44,
+        44
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/abc.py",
+      "lines": [
+        303,
+        305
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/abematv.py",
+      "lines": [
+        75,
+        78
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/abematv.py",
+      "lines": [
+        106,
+        106
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "other",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/anvato.py",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/aws.py",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/aws.py",
+      "lines": [
+        52,
+        52
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/bilibili.py",
+      "lines": [
+        166,
+        166
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/brilliantpala.py",
+      "lines": [
+        83,
+        83
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/cda.py",
+      "lines": [
+        162,
+        166
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/cda.py",
+      "lines": [
+        165,
+        165
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/dacast.py",
+      "lines": [
+        123,
+        124
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/dangalplay.py",
+      "lines": [
+        122,
+        122
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/douyutv.py",
+      "lines": [
+        175,
+        176
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/eggs.py",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/fptplay.py",
+      "lines": [
+        76,
+        76
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/goplay.py",
+      "lines": [
+        290,
+        290
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/goplay.py",
+      "lines": [
+        338,
+        338
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/goplay.py",
+      "lines": [
+        340,
+        340
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/goplay.py",
+      "lines": [
+        393,
+        393
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/goplay.py",
+      "lines": [
+        418,
+        418
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/hotstar.py",
+      "lines": [
+        60,
+        60
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/huya.py",
+      "lines": [
+        95,
+        96
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/huya.py",
+      "lines": [
+        138,
+        138
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/instagram.py",
+      "lines": [
+        594,
+        595
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/iqiyi.py",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/iwara.py",
+      "lines": [
+        156,
+        156
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/jamendo.py",
+      "lines": [
+        57,
+        57
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/kankanews.py",
+      "lines": [
+        37,
+        39
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/kankanews.py",
+      "lines": [
+        37,
+        39
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/musescore.py",
+      "lines": [
+        48,
+        48
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/neteasemusic.py",
+      "lines": [
+        42,
+        42
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/nexx.py",
+      "lines": [
+        412,
+        413
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/playsuisse.py",
+      "lines": [
+        171,
+        171
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/scrippsnetworks.py",
+      "lines": [
+        68,
+        68
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/theplatform.py",
+      "lines": [
+        221,
+        221
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/twitcasting.py",
+      "lines": [
+        177,
+        177
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/vice.py",
+      "lines": [
+        131,
+        131
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/vk.py",
+      "lines": [
+        65,
+        65
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/yahoo.py",
+      "lines": [
+        343,
+        343
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/yandexmusic.py",
+      "lines": [
+        123,
+        123
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/youtube/_base.py",
+      "lines": [
+        769,
+        769
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/youtube/jsc/_builtin/ejs.py",
+      "lines": [
+        69,
+        69
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA3-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/youtube/pot/_director.py",
+      "lines": [
+        151,
+        151
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/zingmp3.py",
+      "lines": [
+        61,
+        62
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/extractor/zingmp3.py",
+      "lines": [
+        66,
+        67
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/networking/_helper.py",
+      "lines": [
+        110,
+        110
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/networking/_helper.py",
+      "lines": [
+        119,
+        119
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/networking/_helper.py",
+      "lines": [
+        125,
+        125
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/networking/_helper.py",
+      "lines": [
+        140,
+        141
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/networking/_helper.py",
+      "lines": [
+        142,
+        142
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/networking/_helper.py",
+      "lines": [
+        146,
+        148
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/postprocessor/sponsorblock.py",
+      "lines": [
+        95,
+        95
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/update.py",
+      "lines": [
+        531,
+        531
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/utils/_deprecated.py",
+      "lines": [
+        45,
+        45
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/utils/_utils.py",
+      "lines": [
+        4452,
+        4452
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/utils/_utils.py",
+      "lines": [
+        4800,
+        4800
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/utils/_utils.py",
+      "lines": [
+        5675,
+        5675
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "yt_dlp/utils/_utils.py",
+      "lines": [
+        5679,
+        5679
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

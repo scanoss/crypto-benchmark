@@ -1,0 +1,1783 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "sonar-cryptography",
+    "version": "1.7.0"
+  },
+  "entry": "go-c-caveman",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "proxy/internal/identity/oidc_test.go",
+      "lines": [
+        79,
+        79
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/awssig/awssig.go",
+      "lines": [
+        232,
+        232
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/nativeruntime/marker.go",
+      "lines": [
+        140,
+        140
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "HMAC-SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc.go",
+      "lines": [
+        249,
+        249
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSA-PKCS1-1.5",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc_test.go",
+      "lines": [
+        71,
+        71
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "RSA-PKCS1-1.5",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc.go",
+      "lines": [
+        246,
+        246
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/identity_test.go",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc_test.go",
+      "lines": [
+        67,
+        67
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc_test.go",
+      "lines": [
+        79,
+        79
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/awssig/awssig.go",
+      "lines": [
+        232,
+        232
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/awssig/awssig.go",
+      "lines": [
+        238,
+        238
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/ccr/store.go",
+      "lines": [
+        145,
+        145
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/ccr/store.go",
+      "lines": [
+        163,
+        163
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/ccr/store.go",
+      "lines": [
+        261,
+        261
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/ccr/store.go",
+      "lines": [
+        268,
+        268
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/ccr/store_consolidation_blocks_test.go",
+      "lines": [
+        27,
+        27
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/ccr/store_repair.go",
+      "lines": [
+        531,
+        531
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/ccr/store_reclaim.go",
+      "lines": [
+        321,
+        321
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/nativehook/hook.go",
+      "lines": [
+        190,
+        190
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/nativehook/hook.go",
+      "lines": [
+        362,
+        362
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/nativehook/hook.go",
+      "lines": [
+        371,
+        371
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/repointel/index.go",
+      "lines": [
+        795,
+        795
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/capabilities_test.go",
+      "lines": [
+        34,
+        34
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/compressor.go",
+      "lines": [
+        166,
+        166
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/compressor.go",
+      "lines": [
+        198,
+        198
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/cacheguard/cacheguard.go",
+      "lines": [
+        104,
+        104
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/cacheguard/cacheguard.go",
+      "lines": [
+        149,
+        149
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/cloudlink/link.go",
+      "lines": [
+        427,
+        427
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/cloudlink/link.go",
+      "lines": [
+        639,
+        639
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/cloudlink/link_test.go",
+      "lines": [
+        1483,
+        1483
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/cloudlink/link_test.go",
+      "lines": [
+        1498,
+        1498
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/cloudlink/events.go",
+      "lines": [
+        123,
+        123
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/live_zone_test.go",
+      "lines": [
+        86,
+        86
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/live_zone_test.go",
+      "lines": [
+        329,
+        329
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/chatgpt.go",
+      "lines": [
+        103,
+        103
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/chatgpt.go",
+      "lines": [
+        402,
+        402
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/proxy.go",
+      "lines": [
+        209,
+        209
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/proxy.go",
+      "lines": [
+        615,
+        615
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/proxy.go",
+      "lines": [
+        779,
+        779
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/proxy.go",
+      "lines": [
+        1138,
+        1138
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/proxy.go",
+      "lines": [
+        1870,
+        1870
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/hotpath_golden_test.go",
+      "lines": [
+        32,
+        32
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/raw_pin.go",
+      "lines": [
+        358,
+        358
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/capture_test.go",
+      "lines": [
+        60,
+        60
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/capture_test.go",
+      "lines": [
+        201,
+        201
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/capture_test.go",
+      "lines": [
+        227,
+        227
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/prefix_monitor.go",
+      "lines": [
+        318,
+        318
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/cache_warm.go",
+      "lines": [
+        528,
+        528
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/stats_accounting_test.go",
+      "lines": [
+        381,
+        381
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/route.go",
+      "lines": [
+        1185,
+        1185
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/chatgpt_auto.go",
+      "lines": [
+        315,
+        315
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/route_cache.go",
+      "lines": [
+        291,
+        291
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/capture.go",
+      "lines": [
+        271,
+        271
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/route_pool.go",
+      "lines": [
+        59,
+        59
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/translate/responses.go",
+      "lines": [
+        85,
+        85
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/translate/responses.go",
+      "lines": [
+        234,
+        234
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/evals/probes.go",
+      "lines": [
+        70,
+        70
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/redact/payload.go",
+      "lines": [
+        483,
+        483
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mem/store.go",
+      "lines": [
+        751,
+        751
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/standalone/principal_sources_test.go",
+      "lines": [
+        87,
+        87
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/standalone/principal_sources_test.go",
+      "lines": [
+        141,
+        141
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/standalone/middleware_test.go",
+      "lines": [
+        59,
+        59
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/recurring.go",
+      "lines": [
+        285,
+        285
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/prefix_stability_e2e_test.go",
+      "lines": [
+        69,
+        69
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/learn.go",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/learn_loops.go",
+      "lines": [
+        83,
+        83
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/prefix_cache.go",
+      "lines": [
+        158,
+        158
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/detect_procedures.go",
+      "lines": [
+        142,
+        142
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/learn_attribution.go",
+      "lines": [
+        151,
+        151
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/learn_attribution.go",
+      "lines": [
+        183,
+        183
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/usage_import.go",
+      "lines": [
+        514,
+        514
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/usage_import.go",
+      "lines": [
+        519,
+        519
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/session_source.go",
+      "lines": [
+        252,
+        252
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/middleware/counter.go",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/middleware/seal.go",
+      "lines": [
+        66,
+        66
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/middleware/identity_test.go",
+      "lines": [
+        45,
+        45
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/middleware/runtime.go",
+      "lines": [
+        282,
+        282
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/nativeruntime/runtime.go",
+      "lines": [
+        887,
+        887
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/nativeruntime/runtime.go",
+      "lines": [
+        1431,
+        1431
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/nativeruntime/runtime.go",
+      "lines": [
+        1474,
+        1474
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/nativeruntime/receipt.go",
+      "lines": [
+        218,
+        218
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/nativeruntime/marker.go",
+      "lines": [
+        140,
+        140
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/nativeruntime/server_windows.go",
+      "lines": [
+        29,
+        29
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/pixel/transform_openai.go",
+      "lines": [
+        845,
+        845
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/pixel/transform_anthropic.go",
+      "lines": [
+        868,
+        868
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/pixel/transform_anthropic.go",
+      "lines": [
+        1303,
+        1303
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/providers/openai/cache_key.go",
+      "lines": [
+        220,
+        220
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/providers/openai/session_cache_key.go",
+      "lines": [
+        77,
+        77
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/pool/chatgpt.go",
+      "lines": [
+        99,
+        99
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/middleware/seal.go",
+      "lines": [
+        64,
+        64
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-GCM",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc_test.go",
+      "lines": [
+        102,
+        102
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-2048",
+      "parameters": {
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc_test.go",
+      "lines": [
+        146,
+        146
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-2048",
+      "parameters": {
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc_test.go",
+      "lines": [
+        215,
+        215
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-2048",
+      "parameters": {
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc_test.go",
+      "lines": [
+        260,
+        260
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-2048",
+      "parameters": {
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc_test.go",
+      "lines": [
+        293,
+        293
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-2048",
+      "parameters": {
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc_test.go",
+      "lines": [
+        345,
+        345
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-2048",
+      "parameters": {
+        "key_size": 2048
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls_test.go",
+      "lines": [
+        39,
+        39
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls_test.go",
+      "lines": [
+        53,
+        53
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls_test.go",
+      "lines": [
+        329,
+        329
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc_test.go",
+      "lines": [
+        103,
+        103
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc_test.go",
+      "lines": [
+        145,
+        145
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/config/config_test.go",
+      "lines": [
+        715,
+        715
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/cloudlink/events.go",
+      "lines": [
+        324,
+        324
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/route.go",
+      "lines": [
+        657,
+        657
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/translate/responses_stream.go",
+      "lines": [
+        79,
+        79
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/cabundle/cabundle_test.go",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/standalone/principal_sources_test.go",
+      "lines": [
+        46,
+        46
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/standalone/principal_sources_test.go",
+      "lines": [
+        52,
+        52
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/middleware/protocol_v11_test.go",
+      "lines": [
+        522,
+        522
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/middleware/hardening_test.go",
+      "lines": [
+        48,
+        48
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/pool/chatgpt.go",
+      "lines": [
+        344,
+        344
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/pool/chatgpt.go",
+      "lines": [
+        356,
+        356
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls_test.go",
+      "lines": [
+        39,
+        39
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls_test.go",
+      "lines": [
+        53,
+        53
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls_test.go",
+      "lines": [
+        329,
+        329
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc_test.go",
+      "lines": [
+        103,
+        103
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc_test.go",
+      "lines": [
+        145,
+        145
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/config/config_test.go",
+      "lines": [
+        715,
+        715
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/cabundle/cabundle_test.go",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/standalone/principal_sources_test.go",
+      "lines": [
+        71,
+        71
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/standalone/principal_sources_test.go",
+      "lines": [
+        52,
+        52
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "ECDSA-secp256r1",
+      "parameters": {
+        "curve": "secp256r1"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/oidc_test.go",
+      "lines": [
+        260,
+        260
+      ],
+      "asset_type": "algorithm",
+      "primitive": "pke",
+      "algorithm": "RSA-1024",
+      "parameters": {
+        "key_size": 1024
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

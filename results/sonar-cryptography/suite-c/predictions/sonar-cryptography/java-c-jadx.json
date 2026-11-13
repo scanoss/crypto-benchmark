@@ -1,0 +1,75 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "sonar-cryptography",
+    "version": "1.7.0"
+  },
+  "entry": "java-c-jadx",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "jadx-gui/src/main/java/jadx/gui/utils/CertificateManager.java",
+      "lines": [
+        84,
+        84
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "jadx-gui/src/main/java/jadx/gui/utils/CertificateManager.java",
+      "lines": [
+        85,
+        85
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "jadx-core/src/main/java/jadx/core/utils/files/FileUtils.java",
+      "lines": [
+        498,
+        498
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "jadx-gui/src/main/java/jadx/gui/utils/CertificateManager.java",
+      "lines": [
+        83,
+        83
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

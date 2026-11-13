@@ -1,0 +1,1326 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "go-c-ollama",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "server/routes.go",
+      "lines": [
+        1228,
+        1228
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "adjustTokenLimit",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/bench/bench.go",
+      "lines": [
+        1072,
+        1072
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "apiKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "server/cloud_proxy.go",
+      "lines": [
+        32,
+        32
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cloudWebSearchOrchestrationKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/codex_app.go",
+      "lines": [
+        44,
+        44
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "codexAppReasoningEffortsKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "internal/proxy/codex_desktop.go",
+      "lines": [
+        42,
+        42
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "CodexDesktopManagedAPIKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/codex.go",
+      "lines": [
+        34,
+        34
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "codexRootModelCatalogJSONKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/codex.go",
+      "lines": [
+        32,
+        32
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "codexRootModelKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/codex.go",
+      "lines": [
+        33,
+        33
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "codexRootModelProviderKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/codex.go",
+      "lines": [
+        35,
+        35
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "codexRootOpenAIBaseURLKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/codex.go",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "codexRootProfileKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/laguna/laguna.go",
+      "lines": [
+        841,
+        841
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "consumedKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/laguna/laguna.go",
+      "lines": [
+        847,
+        847
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "consumedKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/laguna/laguna.go",
+      "lines": [
+        908,
+        908
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "consumedKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/laguna/laguna.go",
+      "lines": [
+        913,
+        913
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "consumedKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/laguna/laguna.go",
+      "lines": [
+        922,
+        922
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "consumedKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/laguna/laguna.go",
+      "lines": [
+        927,
+        927
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "consumedKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/qwen3_5/qwen3_5.go",
+      "lines": [
+        663,
+        663
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "consumedKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/qwen3_5/qwen3_5.go",
+      "lines": [
+        666,
+        666
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "consumedKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/kev/score.go",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "controlToken",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/deepseek_harness.go",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "deepSeekHarnessAPIKeyEnv",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "auth/auth.go",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "defaultPrivateKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/codex_app.go",
+      "lines": [
+        458,
+        458
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "dottedKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/codex_app.go",
+      "lines": [
+        476,
+        476
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "dottedKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/gemma4/gemma4.go",
+      "lines": [
+        945,
+        945
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "downKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/cohere2_moe/cohere2_moe.go",
+      "lines": [
+        578,
+        578
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "embedTokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/gemma4/gemma4.go",
+      "lines": [
+        807,
+        807
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "embedTokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/gemma4embedding/gemma4embedding.go",
+      "lines": [
+        387,
+        387
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "embedTokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/llama/llama.go",
+      "lines": [
+        173,
+        173
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "embedTokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/qwen3/qwen3.go",
+      "lines": [
+        201,
+        201
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "embedTokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/qwen3_5/qwen3_5.go",
+      "lines": [
+        938,
+        938
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "embedTokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/qwen.go",
+      "lines": [
+        334,
+        334
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "envKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/gemma4/gemma4.go",
+      "lines": [
+        940,
+        940
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "gateUpKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "model/parsers/glm46.go",
+      "lines": [
+        33,
+        33
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "glm46ArgKeyCloseTag",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "model/parsers/glm46.go",
+      "lines": [
+        32,
+        32
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "glm46ArgKeyOpenTag",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "model/renderers/qwen3coder.go",
+      "lines": [
+        117,
+        117
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "handledKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/hermes.go",
+      "lines": [
+        34,
+        34
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "hermesLegacyKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/hermes.go",
+      "lines": [
+        35,
+        35
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "hermesPlaceholderKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/hermes.go",
+      "lines": [
+        33,
+        33
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "hermesProviderKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "compatmigrate/mistral_pixtral.go",
+      "lines": [
+        32,
+        32
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "imageToken",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "server/routes.go",
+      "lines": [
+        1238,
+        1238
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "inputTokensAndContext",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/codex.go",
+      "lines": [
+        192,
+        192
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/codex.go",
+      "lines": [
+        197,
+        197
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/hermes.go",
+      "lines": [
+        664,
+        664
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/launch.go",
+      "lines": [
+        1590,
+        1590
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/openclaw.go",
+      "lines": [
+        370,
+        370
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/opencode.go",
+      "lines": [
+        522,
+        522
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/qwen.go",
+      "lines": [
+        174,
+        174
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "compatmigrate/glm47_flash.go",
+      "lines": [
+        193,
+        193
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "compatmigrate/qwen35.go",
+      "lines": [
+        479,
+        479
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "compatmigrate/qwen35.go",
+      "lines": [
+        480,
+        480
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "fs/gguf/gguf.go",
+      "lines": [
+        440,
+        440
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "fs/gguf/metadata.go",
+      "lines": [
+        81,
+        81
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "internal/testutil/gguf/gguf.go",
+      "lines": [
+        149,
+        149
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "llm/llama_server.go",
+      "lines": [
+        499,
+        499
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "llm/server.go",
+      "lines": [
+        26,
+        26
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlx/memory.go",
+      "lines": [
+        80,
+        80
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlx/random.go",
+      "lines": [
+        20,
+        20
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlx/random.go",
+      "lines": [
+        39,
+        39
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/grammar.go",
+      "lines": [
+        167,
+        167
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/cohere2_moe/cohere2_moe.go",
+      "lines": [
+        413,
+        413
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/cohere2_moe/cohere2_moe.go",
+      "lines": [
+        464,
+        464
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/gemma4/gemma4.go",
+      "lines": [
+        212,
+        212
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/glm4_moe_lite/glm4_moe_lite.go",
+      "lines": [
+        463,
+        463
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/nemotron_h/nemotron_h.go",
+      "lines": [
+        1050,
+        1050
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/nemotron_h/nemotron_h.go",
+      "lines": [
+        772,
+        772
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "model/renderers/lfm3_speech.go",
+      "lines": [
+        61,
+        61
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "model/renderers/lfm3_speech.go",
+      "lines": [
+        83,
+        83
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "server/gguf_metadata.go",
+      "lines": [
+        95,
+        95
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "compatmigrate/glm_ocr.go",
+      "lines": [
+        131,
+        131
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keyLength",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "compatmigrate/glm47_flash.go",
+      "lines": [
+        191,
+        191
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keyMLA",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "auth/auth.go",
+      "lines": [
+        27,
+        27
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keyPath",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "auth/auth.go",
+      "lines": [
+        59,
+        59
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keyPath",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "compatmigrate/qwen3vl.go",
+      "lines": [
+        322,
+        322
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keyValue",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "model/parsers/laguna.go",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "lagunaArgKeyCloseTag",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "model/parsers/laguna.go",
+      "lines": [
+        20,
+        20
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "lagunaArgKeyOpenTag",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "model/renderers/lfm2.go",
+      "lines": [
+        18,
+        18
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "lfm2BOSToken",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "model/renderers/lfm3_speech.go",
+      "lines": [
+        117,
+        117
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "lfm3ControlToken",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/upload.go",
+      "lines": [
+        565,
+        565
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "md5",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/glm4_moe_lite/parser.go",
+      "lines": [
+        388,
+        388
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "nextKeyIdx",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "model/renderers/qwen3coder.go",
+      "lines": [
+        127,
+        127
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "paramHandledKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/cline.go",
+      "lines": [
+        171,
+        171
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "previousTokenSource",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/cmd.go",
+      "lines": [
+        2304,
+        2304
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "privateKeyBytes",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/cmd.go",
+      "lines": [
+        2293,
+        2293
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "privKeyPath",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/codex.go",
+      "lines": [
+        558,
+        558
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "probeKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/cmd.go",
+      "lines": [
+        2294,
+        2294
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "pubKeyPath",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/nemotron_h/nemotron_h.go",
+      "lines": [
+        797,
+        797
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "qbiasKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/qwen.go",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "qwenOllamaEnvKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "create/quantize.go",
+      "lines": [
+        159,
+        159
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "scaleKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "create/quantize.go",
+      "lines": [
+        162,
+        162
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "scaleKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/nemotron_h/nemotron_h.go",
+      "lines": [
+        779,
+        779
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "scaleKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "openai/responses_compact.go",
+      "lines": [
+        373,
+        373
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/pplxdecider/score.go",
+      "lines": [
+        24,
+        24
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "specialTokenPattern",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/lfm3/audio.go",
+      "lines": [
+        74,
+        74
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "speechTokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/create_safetensors.go",
+      "lines": [
+        163,
+        163
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "spinnerKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "compatmigrate/gemma3n.go",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/tokenizer/tokenizer_added.go",
+      "lines": [
+        40,
+        40
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/tokenizer/tokenizer_decode.go",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/tokenizer/tokenizer_load.go",
+      "lines": [
+        406,
+        406
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "create/metadata.go",
+      "lines": [
+        132,
+        132
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokenizerConfig",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/flint/flint.go",
+      "lines": [
+        158,
+        158
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokenizerConfig",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/qwen4_exp/qwen4_exp.go",
+      "lines": [
+        59,
+        59
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokenizerData",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "compatmigrate/gemma4.go",
+      "lines": [
+        92,
+        92
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokenizerModel",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/launch/openclaw.go",
+      "lines": [
+        503,
+        503
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "compatmigrate/gemma3n.go",
+      "lines": [
+        118,
+        118
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "compatmigrate/llama3.go",
+      "lines": [
+        125,
+        125
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/gemma4/media.go",
+      "lines": [
+        306,
+        306
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/gemma4/media.go",
+      "lines": [
+        312,
+        312
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/laya/score.go",
+      "lines": [
+        53,
+        53
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "types/errtypes/errtypes.go",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "UnknownOllamaKeyErrMsg",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

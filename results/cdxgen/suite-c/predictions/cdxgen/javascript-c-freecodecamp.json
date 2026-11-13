@@ -1,0 +1,54 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "javascript-c-freecodecamp",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "tools/client-plugins/gatsby-source-challenges/create-challenge-nodes.js",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "md5",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "api/src/utils/drip-campaign.ts",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "api/src/utils/index.ts",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

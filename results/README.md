@@ -12,6 +12,7 @@ crypto-finder v0.53.1 with remote ruleset v1.48.0, scored on 2026-11-12, finds 1
 - **Matching:** strict. Line ranges must overlap (`LINE_TOLERANCE = 0`), ties prefer an attributed pair, and an algorithm asset also matches on its anchors, the call that names its algorithm for the same object in the same function.
 - **Per language:** [Python](python-pilot.md), [JavaScript](javascript-pilot.md), [Rust](rust-pilot.md), [Go](go-pilot.md), [Java](java-pilot.md). Each page compares the tools and links to every run record.
 - **Suite B**, transitive reachability: [suite-b.md](suite-b.md). crypto-finder discriminates all 45 pairs.
+- **Suite C**, real repositories: [suite-c.md](suite-c.md). First score on the `files` scope (142 sampled files, 214 assets): crypto-finder 108 / 8 / 106 (0.931 / 0.505), sonar-cryptography 28 / 0 / 97 in three languages, cdxgen 18 / 33 / 196. 90 of crypto-finder's misses are test files its default left out; a later run with `--include-tests` is shown beside it.
 
 ## Tools
 

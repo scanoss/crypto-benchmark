@@ -1,0 +1,558 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "rust-c-clash-verge-rev",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "src-tauri/src/enhance/script.rs",
+      "lines": [
+        50,
+        50
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "changed_keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/hotkey.rs",
+      "lines": [
+        405,
+        405
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "current_hotkeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/enhance/tun.rs",
+      "lines": [
+        18,
+        18
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "dns_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/hotkey.rs",
+      "lines": [
+        319,
+        319
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "enable_global_hotkey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/config/encrypt.rs",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "encryption_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/config/encrypt.rs",
+      "lines": [
+        35,
+        35
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "encryption_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/validate.rs",
+      "lines": [
+        383,
+        383
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "error_keywords",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/enhance/mod.rs",
+      "lines": [
+        892,
+        892
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "exists_keys_set",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/enhance/mod.rs",
+      "lines": [
+        842,
+        842
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "exists_keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/enhance/mod.rs",
+      "lines": [
+        843,
+        843
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "gui_tun_keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/hotkey.rs",
+      "lines": [
+        267,
+        267
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "hotkey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/hotkey.rs",
+      "lines": [
+        329,
+        329
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "hotkeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/tray/mod.rs",
+      "lines": [
+        648,
+        648
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "hotkeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/enhance/tun.rs",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "ipv6_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/hotkey.rs",
+      "lines": [
+        279,
+        279
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "is_enable_global_hotkey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/lib.rs",
+      "lines": [
+        308,
+        308
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "is_enable_global_hotkey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/config/prfitem.rs",
+      "lines": [
+        314,
+        314
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_lower",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/utils/dirs.rs",
+      "lines": [
+        157,
+        157
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_path",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/hotkey.rs",
+      "lines": [
+        337,
+        337
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/hotkey.rs",
+      "lines": [
+        362,
+        362
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/hotkey.rs",
+      "lines": [
+        430,
+        430
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/hotkey.rs",
+      "lines": [
+        434,
+        434
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/notify/desktop.rs",
+      "lines": [
+        52,
+        52
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/notify/desktop.rs",
+      "lines": [
+        73,
+        73
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/service.rs",
+      "lines": [
+        1196,
+        1196
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/timer.rs",
+      "lines": [
+        315,
+        315
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/timer.rs",
+      "lines": [
+        422,
+        422
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/enhance/field.rs",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/enhance/field.rs",
+      "lines": [
+        41,
+        41
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/enhance/field.rs",
+      "lines": [
+        59,
+        59
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/enhance/mod.rs",
+      "lines": [
+        435,
+        435
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/enhance/mod.rs",
+      "lines": [
+        446,
+        446
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/utils/dirs.rs",
+      "lines": [
+        162,
+        162
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/enhance/mod.rs",
+      "lines": [
+        367,
+        367
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/enhance/mod.rs",
+      "lines": [
+        457,
+        457
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/config/encrypt.rs",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "nonce",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/utils/network.rs",
+      "lines": [
+        196,
+        196
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "password",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/service.rs",
+      "lines": [
+        914,
+        914
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "proposed_session_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "crates/clash-verge-media-unlock/src/disney_plus.rs",
+      "lines": [
+        37,
+        37
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "refresh_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/utils/resolve/mod.rs",
+      "lines": [
+        143,
+        143
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "skip_register_hotkeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "crates/clash-verge-media-unlock/src/bahamut.rs",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token_url",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/utils/server.rs",
+      "lines": [
+        153,
+        153
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/config/runtime.rs",
+      "lines": [
+        38,
+        38
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tun_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/enhance/tun.rs",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tun_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/core/tray/mod.rs",
+      "lines": [
+        426,
+        426
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "uppercase_key",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

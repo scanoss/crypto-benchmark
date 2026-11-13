@@ -1,0 +1,1732 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "go-c-caveman",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "engine/compressors/axtree.go",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "a11yStateKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/config/config.go",
+      "lines": [
+        599,
+        599
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "accessKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/middleware/seal.go",
+      "lines": [
+        64,
+        64
+      ],
+      "asset_type": "algorithm",
+      "primitive": "block-cipher",
+      "algorithm": "aes",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/toolschema_annotations.go",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "annotationDropKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/identity.go",
+      "lines": [
+        212,
+        212
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "apiKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/redact/redact.go",
+      "lines": [
+        122,
+        122
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "shared-secret",
+      "algorithm": "awsSecretAccessKeyRe",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/cache_components.go",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cacheComponentsMigratedKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/detect.go",
+      "lines": [
+        35,
+        35
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "codeKeywordRe",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/codexexec.go",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "codexLineKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/codexexec.go",
+      "lines": [
+        27,
+        27
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "codexOutputKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/awscreds/awscreds.go",
+      "lines": [
+        459,
+        459
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "credential",
+      "algorithm": "containerCredentialHosts",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/catalog/catalog.go",
+      "lines": [
+        54,
+        54
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "contextWindowTokensCapability",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/proxy.go",
+      "lines": [
+        323,
+        323
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "countTokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/config/config.go",
+      "lines": [
+        601,
+        601
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "credential",
+      "algorithm": "credential",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/standalone/standalone.go",
+      "lines": [
+        198,
+        198
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "credential",
+      "algorithm": "credential",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/standalone/standalone.go",
+      "lines": [
+        231,
+        231
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "credential",
+      "algorithm": "credential",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/redact/redact.go",
+      "lines": [
+        129,
+        129
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "credential",
+      "algorithm": "credentialPrefixRe",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/providers/bedrock/routing.go",
+      "lines": [
+        68,
+        68
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "defaultAPIKeyRegions",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/config_scan.go",
+      "lines": [
+        422,
+        422
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "descTokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/json.go",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "ElidedInvariantsKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/json.go",
+      "lines": [
+        18,
+        18
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "ElidedKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/json.go",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "ElidedNoteKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/toolschema_annotations.go",
+      "lines": [
+        33,
+        33
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "envelopeNestKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/toolschema_annotations.go",
+      "lines": [
+        25,
+        25
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "envelopeSchemaKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/providers/google_credentials.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "credential",
+      "algorithm": "ErrGoogleRequestCredentials",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/standalone/standalone.go",
+      "lines": [
+        62,
+        62
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "errInboundTokenRejected",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/json.go",
+      "lines": [
+        34,
+        34
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "errorKeyRe",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/redact/residual.go",
+      "lines": [
+        80,
+        80
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "highEntropyToken",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/nativeruntime/marker.go",
+      "lines": [
+        140,
+        140
+      ],
+      "asset_type": "algorithm",
+      "primitive": "mac",
+      "algorithm": "hmacSHA",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/invariants.go",
+      "lines": [
+        176,
+        176
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "shared-secret",
+      "algorithm": "invariantSecretFieldRe",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/toolschema.go",
+      "lines": [
+        41,
+        41
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keepSchemaKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/json.go",
+      "lines": [
+        329,
+        329
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/pixel/transform_anthropic.go",
+      "lines": [
+        911,
+        911
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/cloudlink/link.go",
+      "lines": [
+        639,
+        639
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/config/config.go",
+      "lines": [
+        575,
+        575
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/prefix_monitor.go",
+      "lines": [
+        247,
+        247
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/route.go",
+      "lines": [
+        1638,
+        1638
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/standalone/standalone.go",
+      "lines": [
+        151,
+        151
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/standalone/standalone.go",
+      "lines": [
+        163,
+        163
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/standalone/standalone.go",
+      "lines": [
+        172,
+        172
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/standalone/standalone.go",
+      "lines": [
+        175,
+        175
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/standalone/standalone.go",
+      "lines": [
+        189,
+        189
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/learn_portfolio.go",
+      "lines": [
+        283,
+        283
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/middleware_postgres.go",
+      "lines": [
+        374,
+        374
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/middleware_postgres.go",
+      "lines": [
+        376,
+        376
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/middleware_postgres.go",
+      "lines": [
+        622,
+        622
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/stats.go",
+      "lines": [
+        374,
+        374
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/stats.go",
+      "lines": [
+        509,
+        509
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/stats.go",
+      "lines": [
+        519,
+        519
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/translate/chat_in.go",
+      "lines": [
+        454,
+        454
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/providers/google_credentials.go",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/catalog/catalog.go",
+      "lines": [
+        395,
+        395
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/redact/redact.go",
+      "lines": [
+        116,
+        116
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keyAssignmentRe",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/pool/pool.go",
+      "lines": [
+        119,
+        119
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keychainService",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/kms/kms.go",
+      "lines": [
+        38,
+        38
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keyIDPattern",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/middleware_postgres.go",
+      "lines": [
+        73,
+        73
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "lockKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/kms/kms.go",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "PayloadsKeyEnvironment",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/auth_fallback.go",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "placeholderToken",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls.go",
+      "lines": [
+        63,
+        63
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "algorithm": "private-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/config/config.go",
+      "lines": [
+        561,
+        561
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "providerEnvKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/config/config.go",
+      "lines": [
+        120,
+        120
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/config/config.go",
+      "lines": [
+        249,
+        249
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/config/config.go",
+      "lines": [
+        281,
+        281
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/identity.go",
+      "lines": [
+        242,
+        242
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/identity.go",
+      "lines": [
+        247,
+        247
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/identity.go",
+      "lines": [
+        248,
+        248
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/identity.go",
+      "lines": [
+        250,
+        250
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/identity.go",
+      "lines": [
+        259,
+        259
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/identity.go",
+      "lines": [
+        260,
+        260
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/identity.go",
+      "lines": [
+        261,
+        261
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/identity.go",
+      "lines": [
+        265,
+        265
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/identity.go",
+      "lines": [
+        276,
+        276
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/identity.go",
+      "lines": [
+        276,
+        276
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls.go",
+      "lines": [
+        104,
+        104
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls.go",
+      "lines": [
+        104,
+        104
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls.go",
+      "lines": [
+        113,
+        113
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls.go",
+      "lines": [
+        117,
+        117
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls.go",
+      "lines": [
+        138,
+        138
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls.go",
+      "lines": [
+        138,
+        138
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls.go",
+      "lines": [
+        138,
+        138
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls.go",
+      "lines": [
+        138,
+        138
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls.go",
+      "lines": [
+        140,
+        140
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls.go",
+      "lines": [
+        142,
+        142
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls.go",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/tls.go",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/cabundle/cabundle.go",
+      "lines": [
+        18,
+        18
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/cabundle/cabundle.go",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/cabundle/cabundle.go",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/cabundle/cabundle.go",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/cabundle/cabundle.go",
+      "lines": [
+        32,
+        32
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/cabundle/cabundle.go",
+      "lines": [
+        37,
+        37
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/cabundle/cabundle.go",
+      "lines": [
+        51,
+        51
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/cabundle/cabundle.go",
+      "lines": [
+        56,
+        56
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/cabundle/cabundle.go",
+      "lines": [
+        67,
+        67
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/postgresconfig/postgresconfig.go",
+      "lines": [
+        66,
+        66
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/postgresconfig/postgresconfig.go",
+      "lines": [
+        67,
+        67
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "public-key",
+      "algorithm": "public-key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/providers/adapter.go",
+      "lines": [
+        1402,
+        1402
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "RawUsageIncompleteKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/stats_accounting.go",
+      "lines": [
+        18,
+        18
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "requestTokenBasis",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/redact/residual.go",
+      "lines": [
+        55,
+        55
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "RiskHighEntropyToken",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/toon_encode.go",
+      "lines": [
+        45,
+        45
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "safeTOONKeyRe",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/toolschema_annotations.go",
+      "lines": [
+        53,
+        53
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "schemaChildKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/pixel/schemastrip.go",
+      "lines": [
+        18,
+        18
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "schemaCompositionKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/pixel/schemastrip.go",
+      "lines": [
+        24,
+        24
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "schemaNamedSubschemaKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/toolschema_annotations.go",
+      "lines": [
+        39,
+        39
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "schemaNameMapKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/pixel/schemastrip.go",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "schemaSingleSubschemaKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/pixel/schemastrip.go",
+      "lines": [
+        8,
+        8
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "schemaStripKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/pixel/schemastrip.go",
+      "lines": [
+        150,
+        150
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "SchemaStructuralKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/pixel/schemastrip.go",
+      "lines": [
+        44,
+        44
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "schemaVerbatimKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/learn_types.go",
+      "lines": [
+        28,
+        28
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "scoreKeyConfigTax",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/learn_types.go",
+      "lines": [
+        30,
+        30
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "scoreKeyDeadLoad",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/learn_types.go",
+      "lines": [
+        29,
+        29
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "scoreKeyDumbzone",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/learn_types.go",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "scoreKeySubagent",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/cloudlink/link.go",
+      "lines": [
+        385,
+        385
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "shared-secret",
+      "algorithm": "secret",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/cloudlink/link.go",
+      "lines": [
+        397,
+        397
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "shared-secret",
+      "algorithm": "secret",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/awscreds/awscreds.go",
+      "lines": [
+        285,
+        285
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "shared-secret",
+      "algorithm": "secret",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/pool/pool.go",
+      "lines": [
+        118,
+        118
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "shared-secret",
+      "algorithm": "secretDir",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/config/config.go",
+      "lines": [
+        600,
+        600
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "shared-secret",
+      "algorithm": "secretKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/kms/kms.go",
+      "lines": [
+        27,
+        27
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "shared-secret",
+      "algorithm": "SecretsKeyEnvironment",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/providers/openai/session_cache_key.go",
+      "lines": [
+        24,
+        24
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "sessionCacheKeyDomain",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/providers/openai/session_cache_key.go",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "SessionCacheKeyID",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/pixel/transform_anthropic.go",
+      "lines": [
+        899,
+        899
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "sessionKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/usage_import.go",
+      "lines": [
+        125,
+        125
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "sessionKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/config/config.go",
+      "lines": [
+        609,
+        609
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "sessionToken",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/ccr/store.go",
+      "lines": [
+        145,
+        145
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/identity.go",
+      "lines": [
+        234,
+        234
+      ],
+      "asset_type": "protocol",
+      "algorithm": "TLS",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/pool/chatgpt.go",
+      "lines": [
+        152,
+        152
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/kms/kms.go",
+      "lines": [
+        133,
+        133
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/kms/kms.go",
+      "lines": [
+        135,
+        135
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/awscreds/awscreds.go",
+      "lines": [
+        560,
+        560
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokenBody",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/awscreds/awscreds.go",
+      "lines": [
+        306,
+        306
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokenFile",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "shared/platform/awscreds/awscreds.go",
+      "lines": [
+        552,
+        552
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokenReq",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/pixel/transform_gemini.go",
+      "lines": [
+        1002,
+        1002
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/pixel/transform_gemini.go",
+      "lines": [
+        1102,
+        1102
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/source_opencode.go",
+      "lines": [
+        85,
+        85
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/providers/bedrock/usage.go",
+      "lines": [
+        356,
+        356
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/detect_cache_hygiene.go",
+      "lines": [
+        144,
+        144
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "tokensObserved",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/toon_decode.go",
+      "lines": [
+        19,
+        19
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "toonKeyLineRe",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/store/learn_simulate.go",
+      "lines": [
+        118,
+        118
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "token",
+      "algorithm": "totalTokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/providers/adapter.go",
+      "lines": [
+        1120,
+        1120
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "usageLineKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/toolschema.go",
+      "lines": [
+        53,
+        53
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "userDefinedKeys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/gateway/proxy.go",
+      "lines": [
+        263,
+        263
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "warmKey",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "proxy/internal/identity/identity.go",
+      "lines": [
+        242,
+        242
+      ],
+      "asset_type": "certificate",
+      "algorithm": "X.509 certificate",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "engine/compressors/config.go",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "yamlKeyRe",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

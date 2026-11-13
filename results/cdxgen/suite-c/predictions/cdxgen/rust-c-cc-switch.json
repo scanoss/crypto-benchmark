@@ -1,0 +1,5034 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "rust-c-cc-switch",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "src-tauri/src/commands/provider.rs",
+      "lines": [
+        731,
+        731
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "access_key_id",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/copilot_auth.rs",
+      "lines": [
+        843,
+        843
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "access_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/gemini.rs",
+      "lines": [
+        91,
+        91
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "access_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/xai_oauth_auth.rs",
+      "lines": [
+        644,
+        644
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "access_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/codex_official_models.rs",
+      "lines": [
+        305,
+        305
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "access_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/codex_official_models.rs",
+      "lines": [
+        84,
+        84
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "access_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/subscription.rs",
+      "lines": [
+        1335,
+        1335
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "access_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/subscription.rs",
+      "lines": [
+        299,
+        299
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "access_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/subscription.rs",
+      "lines": [
+        823,
+        823
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "access_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/subscription_grok.rs",
+      "lines": [
+        97,
+        97
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "access_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth.rs",
+      "lines": [
+        1871,
+        1871
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "access_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_config.rs",
+      "lines": [
+        314,
+        314
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key_is_clearable",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/deeplink/provider.rs",
+      "lines": [
+        997,
+        997
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key_value",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/agy_config.rs",
+      "lines": [
+        112,
+        112
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/claude_desktop_config.rs",
+      "lines": [
+        441,
+        441
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/commands/model_fetch.rs",
+      "lines": [
+        27,
+        27
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/deeplink/parser.rs",
+      "lines": [
+        123,
+        123
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/deeplink/provider.rs",
+      "lines": [
+        51,
+        51
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/deeplink/provider.rs",
+      "lines": [
+        987,
+        987
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/grok_config.rs",
+      "lines": [
+        220,
+        220
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/provider.rs",
+      "lines": [
+        184,
+        184
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/provider.rs",
+      "lines": [
+        195,
+        195
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/provider.rs",
+      "lines": [
+        209,
+        209
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/provider.rs",
+      "lines": [
+        284,
+        284
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/coding_plan.rs",
+      "lines": [
+        166,
+        166
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/mod.rs",
+      "lines": [
+        5499,
+        5499
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/mod.rs",
+      "lines": [
+        8458,
+        8458
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/mod.rs",
+      "lines": [
+        8531,
+        8531
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/mod.rs",
+      "lines": [
+        8576,
+        8576
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/mod.rs",
+      "lines": [
+        8605,
+        8605
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/mod.rs",
+      "lines": [
+        8631,
+        8631
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/mod.rs",
+      "lines": [
+        8692,
+        8692
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/usage.rs",
+      "lines": [
+        110,
+        110
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/config.rs",
+      "lines": [
+        156,
+        156
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "base_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/commands/misc.rs",
+      "lines": [
+        5444,
+        5444
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "base_url_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/calculator.rs",
+      "lines": [
+        82,
+        82
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "billable_input_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/usage_stats.rs",
+      "lines": [
+        2523,
+        2523
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "billable_input_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/calculator.rs",
+      "lines": [
+        100,
+        100
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cache_creation_1h_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_dsh.rs",
+      "lines": [
+        531,
+        531
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cache_creation_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_dsh.rs",
+      "lines": [
+        530,
+        530
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cache_read_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_opencode.rs",
+      "lines": [
+        356,
+        356
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cache_read_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_pi.rs",
+      "lines": [
+        874,
+        874
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cache_read_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/parser.rs",
+      "lines": [
+        340,
+        340
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cache_write_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/parser.rs",
+      "lines": [
+        427,
+        427
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cache_write_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_opencode.rs",
+      "lines": [
+        360,
+        360
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cache_write_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_pi.rs",
+      "lines": [
+        875,
+        875
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cache_write_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/xai_oauth_auth.rs",
+      "lines": [
+        349,
+        349
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cached_access_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_gemini.rs",
+      "lines": [
+        1615,
+        1615
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cached_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/parser.rs",
+      "lines": [
+        339,
+        339
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cached_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/parser.rs",
+      "lines": [
+        426,
+        426
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cached_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/provider_router.rs",
+      "lines": [
+        102,
+        102
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "circuit_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/provider_router.rs",
+      "lines": [
+        145,
+        145
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "circuit_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/provider_router.rs",
+      "lines": [
+        175,
+        175
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "circuit_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/provider_router.rs",
+      "lines": [
+        208,
+        208
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "circuit_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/provider_router.rs",
+      "lines": [
+        238,
+        238
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "circuit_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/workbuddy_account/quota.rs",
+      "lines": [
+        438,
+        438
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "client_nonce",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/workbuddy_account/tests.rs",
+      "lines": [
+        700,
+        700
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "client_nonce",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/gemini.rs",
+      "lines": [
+        104,
+        104
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "client_secret",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_history_migration.rs",
+      "lines": [
+        228,
+        228
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "codex_dir_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_history_migration.rs",
+      "lines": [
+        402,
+        402
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "codex_dir_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_history_migration.rs",
+      "lines": [
+        575,
+        575
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "codex_dir_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_responses.rs",
+      "lines": [
+        2244,
+        2244
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "completion_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/parser.rs",
+      "lines": [
+        423,
+        423
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "completion_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/copilot_auth.rs",
+      "lines": [
+        1608,
+        1608
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "copilot_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/copilot_auth.rs",
+      "lines": [
+        999,
+        999
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "copilot_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/copilot_auth.rs",
+      "lines": [
+        1326,
+        1326
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "copilot_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_config.rs",
+      "lines": [
+        648,
+        648
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "current_refresh_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_config.rs",
+      "lines": [
+        673,
+        673
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "current_refresh_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_config.rs",
+      "lines": [
+        812,
+        812
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "current_refresh_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_agy.rs",
+      "lines": [
+        43,
+        43
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "cursor_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/s3_sync.rs",
+      "lines": [
+        48,
+        48
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "db_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/deeplink/codex_link.rs",
+      "lines": [
+        83,
+        83
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "declares_env_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage.rs",
+      "lines": [
+        1318,
+        1318
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "dedup_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_codex.rs",
+      "lines": [
+        2652,
+        2652
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "dedup_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_gemini.rs",
+      "lines": [
+        266,
+        266
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "dedup_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_opencode.rs",
+      "lines": [
+        451,
+        451
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "dedup_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_responses_arguments.rs",
+      "lines": [
+        170,
+        170
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "duplicate_keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_responses_arguments.rs",
+      "lines": [
+        186,
+        186
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "duplicate_keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        1571,
+        1571
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "emitted_unkeyed_annotations",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/usage_stats.rs",
+      "lines": [
+        1907,
+        1907
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "est_first_token_median_ms",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/usage_stats.rs",
+      "lines": [
+        2105,
+        2105
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "est_first_token_median_ms",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_gemini.rs",
+      "lines": [
+        1408,
+        1408
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "expected_key_set",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_gemini.rs",
+      "lines": [
+        1291,
+        1291
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "expected_keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_config.rs",
+      "lines": [
+        799,
+        799
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "expected_refresh_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_gemini.rs",
+      "lines": [
+        1368,
+        1368
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "expects_parameters_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/claude.rs",
+      "lines": [
+        409,
+        409
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "explicit_cache_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/forwarder.rs",
+      "lines": [
+        2028,
+        2028
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "explicit_prompt_cache_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/usage_stats.rs",
+      "lines": [
+        1906,
+        1906
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "first_token_median_ms",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/usage_stats.rs",
+      "lines": [
+        2104,
+        2104
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "first_token_median_ms",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/kimi_session.rs",
+      "lines": [
+        132,
+        132
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "first_token_ms",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/response_processor.rs",
+      "lines": [
+        430,
+        430
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "first_token_ms",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage.rs",
+      "lines": [
+        1235,
+        1235
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "first_token_ms",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage.rs",
+      "lines": [
+        925,
+        925
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "first_token_ms",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_agy.rs",
+      "lines": [
+        299,
+        299
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "first_token_ms",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_agy/native_models.rs",
+      "lines": [
+        98,
+        98
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "first_token_ms",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_copilot.rs",
+      "lines": [
+        151,
+        151
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "first_token_ms",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_dsh.rs",
+      "lines": [
+        565,
+        565
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "first_token_ms",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage.rs",
+      "lines": [
+        410,
+        410
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "first_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_kimi.rs",
+      "lines": [
+        196,
+        196
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "first_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_kimi.rs",
+      "lines": [
+        263,
+        263
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "first_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_kimi.rs",
+      "lines": [
+        282,
+        282
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "first_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_mcode.rs",
+      "lines": [
+        201,
+        201
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "first_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/claude_desktop_config.rs",
+      "lines": [
+        259,
+        259
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "gateway_token_configured",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage.rs",
+      "lines": [
+        903,
+        903
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "has_billable_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_codex.rs",
+      "lines": [
+        1300,
+        1300
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "has_billable_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/thinking_budget_rectifier.rs",
+      "lines": [
+        62,
+        62
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "has_budget_tokens_reference",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/claude_desktop_config.rs",
+      "lines": [
+        574,
+        574
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "has_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/agy_direct.rs",
+      "lines": [
+        60,
+        60
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "has_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/subscription_grok.rs",
+      "lines": [
+        148,
+        148
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "has_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        990,
+        990
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "has_keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/live.rs",
+      "lines": [
+        1243,
+        1243
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "has_provider_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex.rs",
+      "lines": [
+        351,
+        351
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "has_stored_api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_codex.rs",
+      "lines": [
+        1894,
+        1894
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "has_token_without_timestamp",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth.rs",
+      "lines": [
+        1273,
+        1273
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "id_token_changed",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_config.rs",
+      "lines": [
+        348,
+        348
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "id_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_config.rs",
+      "lines": [
+        735,
+        735
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "id_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth.rs",
+      "lines": [
+        671,
+        671
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "id_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/agy_account/oauth.rs",
+      "lines": [
+        338,
+        338
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "id_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/live.rs",
+      "lines": [
+        489,
+        489
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "id_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth.rs",
+      "lines": [
+        1258,
+        1258
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "incoming_id_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/logger.rs",
+      "lines": [
+        137,
+        137
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "input_token_semantics",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming.rs",
+      "lines": [
+        114,
+        114
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "input_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform.rs",
+      "lines": [
+        837,
+        837
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "input_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_codex_anthropic.rs",
+      "lines": [
+        191,
+        191
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "input_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_codex_chat.rs",
+      "lines": [
+        2379,
+        2379
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "input_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_gemini.rs",
+      "lines": [
+        1625,
+        1625
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "input_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/parser.rs",
+      "lines": [
+        325,
+        325
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "input_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_dsh.rs",
+      "lines": [
+        528,
+        528
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "input_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_opencode.rs",
+      "lines": [
+        348,
+        348
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "input_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_pi.rs",
+      "lines": [
+        872,
+        872
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "input_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        3378,
+        3378
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "is_keyless",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        1661,
+        1661
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "item_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        1844,
+        1844
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "item_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        3377,
+        3377
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "item_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        3448,
+        3448
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "item_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        3503,
+        3503
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "item_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        527,
+        527
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "item_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        552,
+        552
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "item_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        575,
+        575
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "item_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        722,
+        722
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "item_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        2988,
+        2988
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "item_keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        4233,
+        4233
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "item_keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        824,
+        824
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "item_keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/mod.rs",
+      "lines": [
+        6192,
+        6192
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_fields",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/mod.rs",
+      "lines": [
+        6266,
+        6266
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_fields",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/mod.rs",
+      "lines": [
+        6357,
+        6357
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_fields",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/mod.rs",
+      "lines": [
+        6394,
+        6394
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_fields",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/hermes_config.rs",
+      "lines": [
+        762,
+        762
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_matches",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/claude_editor.rs",
+      "lines": [
+        405,
+        405
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_patch",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/claude_desktop_config.rs",
+      "lines": [
+        1406,
+        1406
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_path",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/forwarder.rs",
+      "lines": [
+        2673,
+        2673
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key_str",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/agy_smoke_tests.rs",
+      "lines": [
+        67,
+        67
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_config.rs",
+      "lines": [
+        1582,
+        1582
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/config.rs",
+      "lines": [
+        124,
+        124
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/database/dao/profiles.rs",
+      "lines": [
+        124,
+        124
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/database/dao/settings.rs",
+      "lines": [
+        126,
+        126
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/database/dao/settings.rs",
+      "lines": [
+        181,
+        181
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/database/dao/settings.rs",
+      "lines": [
+        200,
+        200
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/database/dao/settings.rs",
+      "lines": [
+        80,
+        80
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/deeplink/tests.rs",
+      "lines": [
+        2542,
+        2542
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/dsh_config.rs",
+      "lines": [
+        714,
+        714
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/gemini_config.rs",
+      "lines": [
+        100,
+        100
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/gemini_config.rs",
+      "lines": [
+        42,
+        42
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/hermes_config.rs",
+      "lines": [
+        1201,
+        1201
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/jsonc_document.rs",
+      "lines": [
+        470,
+        470
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/live/engine.rs",
+      "lines": [
+        170,
+        170
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/live/patch/dotenv.rs",
+      "lines": [
+        143,
+        143
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/live/patch/dotenv.rs",
+      "lines": [
+        44,
+        44
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/live/project/claude.rs",
+      "lines": [
+        193,
+        193
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/live/project/claude.rs",
+      "lines": [
+        274,
+        274
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/live/project/codex.rs",
+      "lines": [
+        379,
+        379
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/mcp/pi.rs",
+      "lines": [
+        103,
+        103
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/mode/stack.rs",
+      "lines": [
+        88,
+        88
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/omp_config.rs",
+      "lines": [
+        610,
+        610
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/opencode_config.rs",
+      "lines": [
+        524,
+        524
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/claude.rs",
+      "lines": [
+        840,
+        840
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex.rs",
+      "lines": [
+        150,
+        150
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/gemini.rs",
+      "lines": [
+        196,
+        196
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/gemini.rs",
+      "lines": [
+        76,
+        76
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/gemini_shadow.rs",
+      "lines": [
+        145,
+        145
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/gemini_shadow.rs",
+      "lines": [
+        195,
+        195
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/gemini_shadow.rs",
+      "lines": [
+        210,
+        210
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/mod.rs",
+      "lines": [
+        208,
+        208
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_codex_chat.rs",
+      "lines": [
+        371,
+        371
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        3326,
+        3326
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_codex_chat_moonshot_schema.rs",
+      "lines": [
+        126,
+        126
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/claude_account/mod.rs",
+      "lines": [
+        405,
+        405
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/claude_account/mod.rs",
+      "lines": [
+        421,
+        421
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/claude_account/snapshot/tests.rs",
+      "lines": [
+        126,
+        126
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/kimi_oauth/mod.rs",
+      "lines": [
+        1020,
+        1020
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/kimi_oauth/mod.rs",
+      "lines": [
+        171,
+        171
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/codex_direct.rs",
+      "lines": [
+        1102,
+        1102
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/codex_editor.rs",
+      "lines": [
+        459,
+        459
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/codex_terminal.rs",
+      "lines": [
+        131,
+        131
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/s3.rs",
+      "lines": [
+        64,
+        64
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/s3_sync.rs",
+      "lines": [
+        191,
+        191
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_codex.rs",
+      "lines": [
+        1645,
+        1645
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_copilot.rs",
+      "lines": [
+        50,
+        50
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_dsh.rs",
+      "lines": [
+        131,
+        131
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_dsh.rs",
+      "lines": [
+        498,
+        498
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_kimi.rs",
+      "lines": [
+        50,
+        50
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_mcode.rs",
+      "lines": [
+        17,
+        17
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_workbuddy.rs",
+      "lines": [
+        53,
+        53
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/skill.rs",
+      "lines": [
+        3513,
+        3513
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/skill.rs",
+      "lines": [
+        5141,
+        5141
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/subscription_grok.rs",
+      "lines": [
+        223,
+        223
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/usage_cache.rs",
+      "lines": [
+        102,
+        102
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/usage_stats.rs",
+      "lines": [
+        1905,
+        1905
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/session_manager/cache.rs",
+      "lines": [
+        364,
+        364
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/session_manager/content.rs",
+      "lines": [
+        654,
+        654
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/session_manager/mod.rs",
+      "lines": [
+        200,
+        200
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/session_manager/search_revision.rs",
+      "lines": [
+        56,
+        56
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/tray.rs",
+      "lines": [
+        3546,
+        3546
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/workbuddy_account/mod.rs",
+      "lines": [
+        835,
+        835
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keyblob",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/workbuddy_account/mod.rs",
+      "lines": [
+        854,
+        854
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keyblob",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/codex_direct.rs",
+      "lines": [
+        1227,
+        1227
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keychain",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/codex_direct.rs",
+      "lines": [
+        267,
+        267
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keychain",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        1665,
+        1665
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keyed_index",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        579,
+        579
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keyed_index",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        1956,
+        1956
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/claude_editor.rs",
+      "lines": [
+        345,
+        345
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/codex_terminal.rs",
+      "lines": [
+        278,
+        278
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/gemini_editor.rs",
+      "lines": [
+        247,
+        247
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/env_checker.rs",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "keywords",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/model_fetch.rs",
+      "lines": [
+        114,
+        114
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "known_secrets",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_codex_chat.rs",
+      "lines": [
+        269,
+        269
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "last_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_config.rs",
+      "lines": [
+        590,
+        590
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "live_access_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth.rs",
+      "lines": [
+        1419,
+        1419
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "managed_id_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/s3_sync.rs",
+      "lines": [
+        126,
+        126
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "manifest_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/s3_sync.rs",
+      "lines": [
+        54,
+        54
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "manifest_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/s3_sync.rs",
+      "lines": [
+        89,
+        89
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "manifest_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/mod.rs",
+      "lines": [
+        5498,
+        5498
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "matches_provider_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_codex_anthropic.rs",
+      "lines": [
+        321,
+        321
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "max_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/thinking_budget_rectifier.rs",
+      "lines": [
+        125,
+        125
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "max_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/thinking_optimizer.rs",
+      "lines": [
+        38,
+        38
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "max_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth.rs",
+      "lines": [
+        1735,
+        1735
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "new_id_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth.rs",
+      "lines": [
+        937,
+        937
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "new_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/loopback_probe.rs",
+      "lines": [
+        32,
+        32
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "nonce",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/xai_oauth_auth.rs",
+      "lines": [
+        816,
+        816
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "nonce",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/skill.rs",
+      "lines": [
+        3135,
+        3135
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "nonce",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/mcp/grokbuild.rs",
+      "lines": [
+        60,
+        60
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        1660,
+        1660
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        1843,
+        1843
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        523,
+        523
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        548,
+        548
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        574,
+        574
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        718,
+        718
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        823,
+        823
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform.rs",
+      "lines": [
+        843,
+        843
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_codex_chat.rs",
+      "lines": [
+        2384,
+        2384
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_gemini.rs",
+      "lines": [
+        1626,
+        1626
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/parser.rs",
+      "lines": [
+        326,
+        326
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/parser.rs",
+      "lines": [
+        481,
+        481
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_dsh.rs",
+      "lines": [
+        529,
+        529
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_gemini.rs",
+      "lines": [
+        264,
+        264
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_opencode.rs",
+      "lines": [
+        349,
+        349
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_pi.rs",
+      "lines": [
+        873,
+        873
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "output_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/commands/s3_sync.rs",
+      "lines": [
+        167,
+        167
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "password_touched",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/commands/webdav_sync.rs",
+      "lines": [
+        175,
+        175
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "password_touched",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/hyper_client.rs",
+      "lines": [
+        519,
+        519
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "password",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/config.rs",
+      "lines": [
+        157,
+        157
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "path_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_codex.rs",
+      "lines": [
+        1291,
+        1291
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "previous_token_signature",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/forwarder.rs",
+      "lines": [
+        4880,
+        4880
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "prompt_cache_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_gemini.rs",
+      "lines": [
+        1607,
+        1607
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "prompt_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_responses.rs",
+      "lines": [
+        2229,
+        2229
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "prompt_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/parser.rs",
+      "lines": [
+        422,
+        422
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "prompt_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/parser.rs",
+      "lines": [
+        476,
+        476
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "prompt_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/deeplink/provider.rs",
+      "lines": [
+        518,
+        518
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "provider_api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/forwarder.rs",
+      "lines": [
+        1586,
+        1586
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "quota_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_opencode.rs",
+      "lines": [
+        350,
+        350
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "reasoning_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/xai_oauth_auth.rs",
+      "lines": [
+        626,
+        626
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "refresh_token_changed",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_config.rs",
+      "lines": [
+        731,
+        731
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "refresh_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth.rs",
+      "lines": [
+        1173,
+        1173
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "refresh_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth.rs",
+      "lines": [
+        662,
+        662
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "refresh_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth.rs",
+      "lines": [
+        929,
+        929
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "refresh_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/gemini.rs",
+      "lines": [
+        96,
+        96
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "refresh_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/xai_oauth_auth.rs",
+      "lines": [
+        337,
+        337
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "refresh_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/agy_account/mod.rs",
+      "lines": [
+        472,
+        472
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "refresh_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/agy_account/mod.rs",
+      "lines": [
+        704,
+        704
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "refresh_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/agy_account/oauth.rs",
+      "lines": [
+        337,
+        337
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "refresh_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/live.rs",
+      "lines": [
+        103,
+        103
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "remove_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/live.rs",
+      "lines": [
+        252,
+        252
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "remove_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/mod.rs",
+      "lines": [
+        7996,
+        7996
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "removed_env_keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/body_filter.rs",
+      "lines": [
+        70,
+        70
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "removed_keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_gemini.rs",
+      "lines": [
+        1292,
+        1292
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "required_keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/media_sanitizer.rs",
+      "lines": [
+        338,
+        338
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "response_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/privacy_filter/mod.rs",
+      "lines": [
+        468,
+        468
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "response_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_chat_history.rs",
+      "lines": [
+        253,
+        253
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "response_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/codex_editor.rs",
+      "lines": [
+        123,
+        123
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "row_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/commands/provider.rs",
+      "lines": [
+        651,
+        651
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "script_api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/commands/provider.rs",
+      "lines": [
+        732,
+        732
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "secret_access_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/agy_account/oauth.rs",
+      "lines": [
+        223,
+        223
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "secret",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/agy_account/oauth.rs",
+      "lines": [
+        237,
+        237
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "secret",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/claude_account/snapshot/mod.rs",
+      "lines": [
+        157,
+        157
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "secret",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/claude_account/snapshot/mod.rs",
+      "lines": [
+        183,
+        183
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "secret",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/subscription.rs",
+      "lines": [
+        1681,
+        1681
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "secret",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/kimi_oauth/mod.rs",
+      "lines": [
+        369,
+        369
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "separate_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/workbuddy_account/quota.rs",
+      "lines": [
+        470,
+        470
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "server_nonce",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/workbuddy_account/tests.rs",
+      "lines": [
+        701,
+        701
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "nonce",
+      "algorithm": "server_nonce",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_history_migration.rs",
+      "lines": [
+        1503,
+        1503
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/live/engine.rs",
+      "lines": [
+        141,
+        141
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/live/engine.rs",
+      "lines": [
+        143,
+        143
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/live/engine.rs",
+      "lines": [
+        170,
+        170
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/live/engine.rs",
+      "lines": [
+        87,
+        87
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/mode/operation.rs",
+      "lines": [
+        129,
+        129
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/mode/operation.rs",
+      "lines": [
+        224,
+        224
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/mode/operation.rs",
+      "lines": [
+        265,
+        265
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/pi_config/mod.rs",
+      "lines": [
+        494,
+        494
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/json_canonical.rs",
+      "lines": [
+        107,
+        107
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth/browser.rs",
+      "lines": [
+        57,
+        57
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/logger.rs",
+      "lines": [
+        68,
+        68
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/agy_account/oauth.rs",
+      "lines": [
+        80,
+        80
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/claude_account/layout.rs",
+      "lines": [
+        123,
+        123
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/claude_account/snapshot/store.rs",
+      "lines": [
+        108,
+        108
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/coding_plan.rs",
+      "lines": [
+        1378,
+        1378
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/dsh_account.rs",
+      "lines": [
+        292,
+        292
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/kimi_oauth/account.rs",
+      "lines": [
+        129,
+        129
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/kimi_oauth/account.rs",
+      "lines": [
+        137,
+        137
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/kimi_oauth/mod.rs",
+      "lines": [
+        69,
+        69
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/pi_prompt_files.rs",
+      "lines": [
+        340,
+        340
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/codex_direct.rs",
+      "lines": [
+        1102,
+        1102
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/codex_direct.rs",
+      "lines": [
+        1153,
+        1153
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/s3.rs",
+      "lines": [
+        101,
+        101
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_dsh.rs",
+      "lines": [
+        547,
+        547
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_kimi.rs",
+      "lines": [
+        179,
+        179
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/workbuddy_account/quota.rs",
+      "lines": [
+        333,
+        333
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        994,
+        994
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "shares_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/commands/deeplink.rs",
+      "lines": [
+        103,
+        103
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "skill_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/s3_sync.rs",
+      "lines": [
+        51,
+        51
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "skills_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_gemini.rs",
+      "lines": [
+        1441,
+        1441
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "source_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/failover_switch.rs",
+      "lines": [
+        45,
+        45
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "switch_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_opencode.rs",
+      "lines": [
+        148,
+        148
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "sync_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_gemini.rs",
+      "lines": [
+        1422,
+        1422
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "target_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/claude_account/snapshot/switch.rs",
+      "lines": [
+        101,
+        101
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "target_secret",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/thinking_budget_rectifier.rs",
+      "lines": [
+        131,
+        131
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "thinking_budget_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_mcode.rs",
+      "lines": [
+        147,
+        147
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "timing_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_codex.rs",
+      "lines": [
+        436,
+        436
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token_count_waited_for_tools",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_codex.rs",
+      "lines": [
+        1295,
+        1295
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token_events",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/forwarder.rs",
+      "lines": [
+        2371,
+        2371
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token_result",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/forwarder.rs",
+      "lines": [
+        2425,
+        2425
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token_result",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/forwarder.rs",
+      "lines": [
+        2487,
+        2487
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token_result",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/claude_desktop_config.rs",
+      "lines": [
+        407,
+        407
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_config.rs",
+      "lines": [
+        3129,
+        3129
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/commands/codex_oauth.rs",
+      "lines": [
+        123,
+        123
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/commands/codex_oauth.rs",
+      "lines": [
+        61,
+        61
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/commands/tool_uninstall.rs",
+      "lines": [
+        214,
+        214
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/commands/xai_oauth.rs",
+      "lines": [
+        121,
+        121
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/commands/xai_oauth.rs",
+      "lines": [
+        51,
+        51
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/codex_models_passthrough.rs",
+      "lines": [
+        79,
+        79
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/forwarder.rs",
+      "lines": [
+        1634,
+        1634
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/forwarder.rs",
+      "lines": [
+        167,
+        167
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/handlers.rs",
+      "lines": [
+        496,
+        496
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/handlers.rs",
+      "lines": [
+        519,
+        519
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/claude.rs",
+      "lines": [
+        955,
+        955
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/gemini.rs",
+      "lines": [
+        239,
+        239
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/agy_account/mod.rs",
+      "lines": [
+        400,
+        400
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/agy_account/mod.rs",
+      "lines": [
+        404,
+        404
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/agy_account/mod.rs",
+      "lines": [
+        532,
+        532
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/agy_account/oauth.rs",
+      "lines": [
+        372,
+        372
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/dsh_account.rs",
+      "lines": [
+        504,
+        504
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/kimi_oauth/account.rs",
+      "lines": [
+        420,
+        420
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/kimi_oauth/mod.rs",
+      "lines": [
+        976,
+        976
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/provider/codex_editor.rs",
+      "lines": [
+        465,
+        465
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_agy.rs",
+      "lines": [
+        252,
+        252
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/subscription.rs",
+      "lines": [
+        1661,
+        1661
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/subscription.rs",
+      "lines": [
+        1848,
+        1848
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/subscription.rs",
+      "lines": [
+        1890,
+        1890
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/subscription_grok.rs",
+      "lines": [
+        780,
+        780
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_gemini.rs",
+      "lines": [
+        182,
+        182
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens_obj",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_config.rs",
+      "lines": [
+        321,
+        321
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_config.rs",
+      "lines": [
+        402,
+        402
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_config.rs",
+      "lines": [
+        730,
+        730
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/jsonc_document.rs",
+      "lines": [
+        121,
+        121
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth.rs",
+      "lines": [
+        1053,
+        1053
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth.rs",
+      "lines": [
+        642,
+        642
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth.rs",
+      "lines": [
+        876,
+        876
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth.rs",
+      "lines": [
+        921,
+        921
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex_oauth_auth/browser.rs",
+      "lines": [
+        311,
+        311
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/copilot_auth.rs",
+      "lines": [
+        1374,
+        1374
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/copilot_auth.rs",
+      "lines": [
+        1613,
+        1613
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/copilot_auth.rs",
+      "lines": [
+        652,
+        652
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/copilot_auth.rs",
+      "lines": [
+        898,
+        898
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/copilot_auth.rs",
+      "lines": [
+        914,
+        914
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/copilot_auth.rs",
+      "lines": [
+        936,
+        936
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_responses.rs",
+      "lines": [
+        629,
+        629
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/xai_oauth_auth.rs",
+      "lines": [
+        335,
+        335
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/xai_oauth_auth.rs",
+      "lines": [
+        390,
+        390
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/xai_oauth_auth.rs",
+      "lines": [
+        551,
+        551
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/agy_account/mod.rs",
+      "lines": [
+        254,
+        254
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_gemini.rs",
+      "lines": [
+        187,
+        187
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_kimi.rs",
+      "lines": [
+        157,
+        157
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_opencode.rs",
+      "lines": [
+        346,
+        346
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/subscription.rs",
+      "lines": [
+        811,
+        811
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/session_manager/providers/claude.rs",
+      "lines": [
+        1268,
+        1268
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/session_manager/providers/gemini.rs",
+      "lines": [
+        450,
+        450
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/session_manager/providers/opencode_blocks.rs",
+      "lines": [
+        358,
+        358
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/codex_config.rs",
+      "lines": [
+        3125,
+        3125
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "top_level_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_codex_anthropic.rs",
+      "lines": [
+        194,
+        194
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "total_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_codex_chat.rs",
+      "lines": [
+        2389,
+        2389
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "total_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_gemini.rs",
+      "lines": [
+        1611,
+        1611
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "total_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/parser.rs",
+      "lines": [
+        477,
+        477
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "total_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/usage/parser.rs",
+      "lines": [
+        500,
+        500
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "total_tokens",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_codex.rs",
+      "lines": [
+        374,
+        374
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "trails_token_count",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/session_usage_grokbuild.rs",
+      "lines": [
+        342,
+        342
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "turn_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/dsh_config.rs",
+      "lines": [
+        1313,
+        1313
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "unchanged_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/transform_gemini.rs",
+      "lines": [
+        1413,
+        1413
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "unexpected_keys",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/services/skill.rs",
+      "lines": [
+        4041,
+        4041
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "unique_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        1460,
+        1460
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "unkeyed_text",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        1208,
+        1208
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "unkeyed",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        1239,
+        1239
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "unkeyed",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        1282,
+        1282
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "unkeyed",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        1306,
+        1306
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "unkeyed",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        1570,
+        1570
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "unkeyed",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/streaming_responses.rs",
+      "lines": [
+        583,
+        583
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "unkeyed",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/deeplink/parser.rs",
+      "lines": [
+        191,
+        191
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "usage_access_token",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/deeplink/parser.rs",
+      "lines": [
+        189,
+        189
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "usage_api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/deeplink/provider.rs",
+      "lines": [
+        513,
+        513
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "usage_api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "src-tauri/src/proxy/providers/codex.rs",
+      "lines": [
+        1268,
+        1268
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "algorithm": "uses_x_api_key",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}
