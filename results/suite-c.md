@@ -312,4 +312,5 @@ The first pool score's 549 FN and 24 FP, grouped by cause, with the later run's 
 - The sample is 142 files. One repository's assets can dominate a row: yt-dlp holds 45 of the 61 Python assets, firecrawl 36 of the 57 JavaScript ones, and the two Java repositories only 3 assets between them.
 - Most signal files import crypto for a hash or a random draw: 168 of the 214 assets are algorithms, and SHA-256 alone is most of Go. Suite C measures what real applications do with crypto, not library breadth; suite A does that.
 - Pool recall is relative to the pool and overstates true recall: it cannot see the assets no source found, and it favors the tools whose findings built the pool. Pool precision is exact.
+- A project's own implementation of an algorithm is out of crypto-finder's reach by design: it detects calls into crypto libraries and standard modules, not crypto written in the project's own code. yt-dlp's pure-Python AES, textbook RSA and RC4 are 25 of the pool FN that both crypto-finder runs miss.
 - Reachability is not scored in suite C. It is phase 2 ([METHODOLOGY.md](../METHODOLOGY.md#suite-c-decisions)).
