@@ -1,0 +1,291 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "rust-c-clash-verge-rev",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "scripts-workflow/renovate-assist.mjs",
+      "lines": [
+        48,
+        48
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "scripts/perf/build.mjs",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "scripts/perf/run.mjs",
+      "lines": [
+        94,
+        94
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "scripts/perf/run.mjs",
+      "lines": [
+        188,
+        188
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "scripts/prebuild.mjs",
+      "lines": [
+        111,
+        111
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "scripts/prebuild.mjs",
+      "lines": [
+        685,
+        685
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src-tauri/src/config/dns.rs",
+      "lines": [
+        48,
+        48
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src-tauri/src/config/encrypt.rs",
+      "lines": [
+        20,
+        20
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-256-GCM",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src-tauri/src/config/encrypt.rs",
+      "lines": [
+        23,
+        23
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src-tauri/src/config/encrypt.rs",
+      "lines": [
+        36,
+        36
+      ],
+      "asset_type": "algorithm",
+      "primitive": "ae",
+      "algorithm": "AES-256-GCM",
+      "parameters": {
+        "mode": "gcm",
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src-tauri/src/core/owner_identity.rs",
+      "lines": [
+        172,
+        172
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src-tauri/src/core/runtime_bundle.rs",
+      "lines": [
+        121,
+        121
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src-tauri/src/core/service.rs",
+      "lines": [
+        109,
+        109
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src-tauri/src/feat/clash.rs",
+      "lines": [
+        143,
+        143
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src-tauri/src/utils/dirs.rs",
+      "lines": [
+        163,
+        163
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src-tauri/src/utils/network.rs",
+      "lines": [
+        54,
+        54
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src-tauri/src/utils/network.rs",
+      "lines": [
+        54,
+        54
+      ],
+      "asset_type": "protocol",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "src-tauri/src/utils/server.rs",
+      "lines": [
+        348,
+        348
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

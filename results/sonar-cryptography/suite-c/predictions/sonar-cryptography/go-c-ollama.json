@@ -1,0 +1,939 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "sonar-cryptography",
+    "version": "1.7.0"
+  },
+  "entry": "go-c-ollama",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "server/model_recommendations_test.go",
+      "lines": [
+        628,
+        628
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "parameters": {
+        "curve": "Edwards25519"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/cmd.go",
+      "lines": [
+        2299,
+        2299
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "parameters": {
+        "curve": "Edwards25519"
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "parser/parser.go",
+      "lines": [
+        326,
+        326
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "parser/parser_test.go",
+      "lines": [
+        889,
+        889
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "parser/parser_test.go",
+      "lines": [
+        947,
+        947
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "parser/parser_test.go",
+      "lines": [
+        973,
+        973
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "integration/create_test.go",
+      "lines": [
+        150,
+        150
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "server/images.go",
+      "lines": [
+        1681,
+        1681
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "server/auth.go",
+      "lines": [
+        64,
+        64
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "server/create_fuzz_test.go",
+      "lines": [
+        138,
+        138
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlx/io_test.go",
+      "lines": [
+        45,
+        45
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "internal/decisiontest/corpus.go",
+      "lines": [
+        79,
+        79
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest.go",
+      "lines": [
+        319,
+        319
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest.go",
+      "lines": [
+        842,
+        842
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest.go",
+      "lines": [
+        970,
+        970
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest.go",
+      "lines": [
+        1288,
+        1288
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest.go",
+      "lines": [
+        1461,
+        1461
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest.go",
+      "lines": [
+        1485,
+        1485
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest.go",
+      "lines": [
+        1676,
+        1676
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/downgrade_test.go",
+      "lines": [
+        16,
+        16
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/layer.go",
+      "lines": [
+        52,
+        52
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/layer.go",
+      "lines": [
+        96,
+        96
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest_test.go",
+      "lines": [
+        125,
+        125
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest_test.go",
+      "lines": [
+        296,
+        296
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest_test.go",
+      "lines": [
+        352,
+        352
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest_test.go",
+      "lines": [
+        630,
+        630
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest_test.go",
+      "lines": [
+        840,
+        840
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest_test.go",
+      "lines": [
+        891,
+        891
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest_test.go",
+      "lines": [
+        924,
+        924
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest_test.go",
+      "lines": [
+        1026,
+        1026
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "manifest/manifest_test.go",
+      "lines": [
+        1168,
+        1168
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "app/store/image.go",
+      "lines": [
+        72,
+        72
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/ripple_test.go",
+      "lines": [
+        72,
+        72
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "openai/responses_compact.go",
+      "lines": [
+        373,
+        373
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "app/updater/updater.go",
+      "lines": [
+        292,
+        292
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/transfer_test.go",
+      "lines": [
+        80,
+        80
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/transfer_test.go",
+      "lines": [
+        891,
+        891
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/transfer_test.go",
+      "lines": [
+        1700,
+        1700
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/transfer_test.go",
+      "lines": [
+        1734,
+        1734
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/transfer_test.go",
+      "lines": [
+        1867,
+        1867
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/transfer_test.go",
+      "lines": [
+        1991,
+        1991
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/transfer_test.go",
+      "lines": [
+        2040,
+        2040
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/transfer_test.go",
+      "lines": [
+        2098,
+        2098
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/transfer_test.go",
+      "lines": [
+        2148,
+        2148
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/transfer_test.go",
+      "lines": [
+        2219,
+        2219
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/transfer_test.go",
+      "lines": [
+        2420,
+        2420
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/transfer_test.go",
+      "lines": [
+        2455,
+        2455
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/transfer_test.go",
+      "lines": [
+        2576,
+        2576
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/transfer_test.go",
+      "lines": [
+        2590,
+        2590
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/download.go",
+      "lines": [
+        301,
+        301
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "mlxrunner/model/ripple/ripple_test.go",
+      "lines": [
+        106,
+        106
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/create_safetensors_remote.go",
+      "lines": [
+        125,
+        125
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "server/model_recommendations_test.go",
+      "lines": [
+        628,
+        628
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/cmd.go",
+      "lines": [
+        2299,
+        2299
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-512",
+      "parameters": {
+        "key_size": 512
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "server/model_recommendations_test.go",
+      "lines": [
+        628,
+        628
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "cmd/cmd.go",
+      "lines": [
+        2299,
+        2299
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "NATIVEPRNG",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "server/upload.go",
+      "lines": [
+        185,
+        185
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "server/upload.go",
+      "lines": [
+        230,
+        230
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "app/wintray/tray.go",
+      "lines": [
+        436,
+        436
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/upload.go",
+      "lines": [
+        565,
+        565
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/upload.go",
+      "lines": [
+        634,
+        634
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "transfer/upload.go",
+      "lines": [
+        731,
+        731
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

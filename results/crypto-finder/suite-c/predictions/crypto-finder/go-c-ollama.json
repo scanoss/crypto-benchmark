@@ -1,0 +1,679 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "go-c-ollama",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "anthropic/anthropic.go",
+      "lines": [
+        1059,
+        1059
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "app/store/image.go",
+      "lines": [
+        72,
+        72
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "app/ui/app/src/components/ChatForm.tsx",
+      "lines": [
+        212,
+        212
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "app/ui/app/src/components/ChatForm.tsx",
+      "lines": [
+        297,
+        297
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "app/updater/updater.go",
+      "lines": [
+        292,
+        292
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "app/updater/updater_windows.go",
+      "lines": [
+        324,
+        324
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "app/wintray/tray.go",
+      "lines": [
+        436,
+        436
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "auth/auth.go",
+      "lines": [
+        34,
+        34
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "auth/auth.go",
+      "lines": [
+        39,
+        39
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "auth/auth.go",
+      "lines": [
+        66,
+        66
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "auth/auth.go",
+      "lines": [
+        72,
+        72
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "cmd/cmd.go",
+      "lines": [
+        556,
+        556
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "cmd/cmd.go",
+      "lines": [
+        2299,
+        2299
+      ],
+      "asset_type": "algorithm",
+      "primitive": "signature",
+      "algorithm": "Ed25519",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "cmd/cmd.go",
+      "lines": [
+        2299,
+        2299
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "private-key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "cmd/cmd.go",
+      "lines": [
+        2304,
+        2304
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "cmd/cmd.go",
+      "lines": [
+        2322,
+        2322
+      ],
+      "asset_type": "related-crypto-material",
+      "material_type": "key",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "cmd/create_safetensors_remote.go",
+      "lines": [
+        125,
+        125
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "internal/decisiontest/corpus.go",
+      "lines": [
+        79,
+        79
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "llm/llama_server.go",
+      "lines": [
+        265,
+        265
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "manifest/layer.go",
+      "lines": [
+        52,
+        52
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "manifest/layer.go",
+      "lines": [
+        96,
+        96
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "manifest/manifest.go",
+      "lines": [
+        319,
+        319
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "manifest/manifest.go",
+      "lines": [
+        842,
+        842
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "manifest/manifest.go",
+      "lines": [
+        970,
+        970
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "manifest/manifest.go",
+      "lines": [
+        1132,
+        1132
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "manifest/manifest.go",
+      "lines": [
+        1288,
+        1288
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "manifest/manifest.go",
+      "lines": [
+        1461,
+        1461
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "manifest/manifest.go",
+      "lines": [
+        1485,
+        1485
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "manifest/manifest.go",
+      "lines": [
+        1676,
+        1676
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "openai/responses_compact.go",
+      "lines": [
+        373,
+        373
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "parser/parser.go",
+      "lines": [
+        326,
+        326
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "server/auth.go",
+      "lines": [
+        64,
+        64
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "server/images.go",
+      "lines": [
+        1329,
+        1329
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "server/images.go",
+      "lines": [
+        1566,
+        1566
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "server/images.go",
+      "lines": [
+        1590,
+        1590
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "server/images.go",
+      "lines": [
+        1681,
+        1681
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "server/upload.go",
+      "lines": [
+        185,
+        185
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "server/upload.go",
+      "lines": [
+        230,
+        230
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "transfer/download.go",
+      "lines": [
+        301,
+        301
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "transfer/upload.go",
+      "lines": [
+        565,
+        565
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "transfer/upload.go",
+      "lines": [
+        634,
+        634
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "transfer/upload.go",
+      "lines": [
+        731,
+        731
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

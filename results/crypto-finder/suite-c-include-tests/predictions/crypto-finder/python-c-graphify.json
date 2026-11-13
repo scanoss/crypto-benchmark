@@ -1,0 +1,979 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "python-c-graphify",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "graphify/_minhash.py",
+      "lines": [
+        47,
+        47
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/cache.py",
+      "lines": [
+        78,
+        78
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/cache.py",
+      "lines": [
+        163,
+        163
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/cache.py",
+      "lines": [
+        620,
+        620
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/cache.py",
+      "lines": [
+        1075,
+        1075
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/callflow_html.py",
+      "lines": [
+        376,
+        376
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/callflow_html.py",
+      "lines": [
+        667,
+        667
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/cli.py",
+      "lines": [
+        1205,
+        1205
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/cluster.py",
+      "lines": [
+        226,
+        226
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/detect.py",
+      "lines": [
+        917,
+        917
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/detect.py",
+      "lines": [
+        2469,
+        2469
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/export.py",
+      "lines": [
+        86,
+        86
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/export.py",
+      "lines": [
+        87,
+        87
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/export.py",
+      "lines": [
+        668,
+        668
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/extract.py",
+      "lines": [
+        470,
+        470
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/extract.py",
+      "lines": [
+        12328,
+        12331
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "BLAKE2b",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/extractors/engine.py",
+      "lines": [
+        27,
+        27
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/extractors/engine.py",
+      "lines": [
+        1557,
+        1557
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/extractors/engine.py",
+      "lines": [
+        7411,
+        7412
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/extractors/engine.py",
+      "lines": [
+        7415,
+        7416
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/extractors/engine.py",
+      "lines": [
+        8532,
+        8533
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/extractors/engine.py",
+      "lines": [
+        8536,
+        8537
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/extractors/engine.py",
+      "lines": [
+        8569,
+        8570
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/extractors/engine.py",
+      "lines": [
+        9200,
+        9202
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/extractors/go.py",
+      "lines": [
+        573,
+        573
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/extractors/resolution.py",
+      "lines": [
+        1129,
+        1129
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/extractors/resolution.py",
+      "lines": [
+        1312,
+        1312
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/extractors/rust.py",
+      "lines": [
+        456,
+        456
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/extractors/terraform.py",
+      "lines": [
+        77,
+        77
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/global_graph.py",
+      "lines": [
+        92,
+        92
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/google_workspace.py",
+      "lines": [
+        172,
+        172
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/google_workspace.py",
+      "lines": [
+        181,
+        181
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/ids.py",
+      "lines": [
+        90,
+        92
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/install.py",
+      "lines": [
+        61,
+        61
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/llm.py",
+      "lines": [
+        678,
+        678
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/reflect.py",
+      "lines": [
+        723,
+        723
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/scip_ingest.py",
+      "lines": [
+        338,
+        338
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/transcribe.py",
+      "lines": [
+        63,
+        63
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/watch.py",
+      "lines": [
+        1386,
+        1386
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/watch.py",
+      "lines": [
+        1986,
+        1988
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "graphify/watch.py",
+      "lines": [
+        2012,
+        2012
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "tests/test_detect.py",
+      "lines": [
+        3477,
+        3477
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "tests/test_extract_cache_location.py",
+      "lines": [
+        131,
+        131
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "tests/test_file_id_collision_4854.py",
+      "lines": [
+        181,
+        181
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "tests/test_install_references.py",
+      "lines": [
+        442,
+        442
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "tests/test_js_import_resolution.py",
+      "lines": [
+        26,
+        26
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "tests/test_language_override_lifecycle.py",
+      "lines": [
+        86,
+        86
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "tests/test_office_limits.py",
+      "lines": [
+        77,
+        77
+      ],
+      "asset_type": "algorithm",
+      "primitive": "drbg",
+      "algorithm": "CSPRNG",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "tests/test_stat_index_portability.py",
+      "lines": [
+        159,
+        159
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "tests/test_wheel_packaging.py",
+      "lines": [
+        76,
+        76
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "tests/test_word_count_cache.py",
+      "lines": [
+        86,
+        86
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "tests/test_word_count_cache.py",
+      "lines": [
+        90,
+        92
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "tests/test_word_count_cache.py",
+      "lines": [
+        116,
+        116
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "worked/httpx/raw/auth.py",
+      "lines": [
+        85,
+        85
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "worked/httpx/raw/auth.py",
+      "lines": [
+        89,
+        89
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "worked/httpx/raw/auth.py",
+      "lines": [
+        90,
+        90
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "worked/httpx/raw/auth.py",
+      "lines": [
+        91,
+        91
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

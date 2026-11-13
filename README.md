@@ -5,7 +5,7 @@ It scores [SCANOSS crypto-finder](https://github.com/scanoss/crypto-finder) next
 
 ## Results
 
-crypto-finder v0.53.1 with remote ruleset v1.48.0, scored on 2026-11-12. Full tables: [results/README.md](results/README.md) (suite A) and [results/suite-b.md](results/suite-b.md) (suite B).
+crypto-finder v0.53.1 with remote ruleset v1.48.0, scored on 2026-11-12 (suites A and B) and 2026-11-13 (suite C). Full tables: [results/README.md](results/README.md) (suite A), [results/suite-b.md](results/suite-b.md) (suite B) and [results/suite-c.md](results/suite-c.md) (suite C).
 
 | Suite | What is scored | crypto-finder | sonar-cryptography 1.7.0 | cdxgen 13.6.0 |
 |---|---|---|---|---|
@@ -16,8 +16,12 @@ crypto-finder v0.53.1 with remote ruleset v1.48.0, scored on 2026-11-12. Full ta
 | B | Pairs discriminated correctly | 45 of 45 | no reachability reported | no reachability reported |
 | B | Reachable precision / recall | 1.000 / 1.000 | n/a | n/a |
 | B | Dependency crypto detected | 104 / 0 / 0 (TP / FP / FN) | 0 of 52 assets (Go, Python, Java) | 16 of 84 assets (JavaScript only) |
+| C | `files` scope, operation level, TP / FP / FN, first score | 108 / 8 / 106 | 28 / 0 / 97 (3 languages) | 18 / 33 / 196 |
+| C | `files` scope, precision / recall, first score | 0.931 / 0.505 | 1.000 / 0.224 | 0.353 / 0.084 |
 
 The two target cells crypto-finder misses are Python protocol and Rust protocol. Both fail on precision, because crypto-finder reports a TLS configuration setter as a protocol of its own. [Known gaps](results/README.md#known-gaps) lists every remaining error.
+
+In suite C, 90 of crypto-finder's 106 misses are in test files: its recorded configuration used the default that leaves test sources out, while the competitors scan them. A later, separate run with `--include-tests` scores 184 / 14 / 30 (0.929 / 0.860); the first score stands ([suite C](results/suite-c.md)).
 
 sonar-cryptography has no JavaScript or Rust support, so it ran on three languages. cdxgen 13.6.0 does not analyze algorithm use in Python or Java source, so it scores 0 there. Neither tool reports reachability for crypto assets, so suite B shows them as having none, not as scoring zero. Both were run on the first 35 suite B pairs only.
 
@@ -27,7 +31,7 @@ sonar-cryptography has no JavaScript or Rust support, so it ran on three languag
 |---|---|---|---|
 | **A**, library coverage | Does the tool find every crypto operation, and name it correctly? | One small program set per library: the top 15 crypto packages of each ecosystem plus the standard library, 79 entries, 1,416 assets in 1,015 objects, under `fixtures/` | Scored |
 | **B**, transitive reachability | Can the tool tell crypto the app reaches through its dependencies from crypto it does not? | 45 pairs over five languages (app -> lib A -> lib B -> crypto). Each pair has a reachable and an unreachable variant that differ in one change. Under `fixtures/<language>/suite-b/` | Scored |
-| **C**, real repositories | Does it hold on real code? | Ten open-source applications, two per language, chosen by a pre-registered rule ([METHODOLOGY.md](METHODOLOGY.md#suite-c)) and fetched at a pinned commit, never vendored | Selected; `files` ground truth annotated (214 assets in 142 files), not yet scored |
+| **C**, real repositories | Does it hold on real code? | Ten open-source applications, two per language, chosen by a pre-registered rule ([METHODOLOGY.md](METHODOLOGY.md#suite-c)) and fetched at a pinned commit, never vendored | `files` scope scored: first score 2026-11-13, 214 assets in 142 files ([results](results/suite-c.md)); `pool` scope not yet scored |
 
 **Targets**, pre-registered on 2026-11-05: precision >= 0.90 and recall >= 0.85 in every language × asset type cell of suite A, in each language over all asset types, and in each asset type over all languages. The object level is the headline view ([METHODOLOGY.md](METHODOLOGY.md#targets)).
 
