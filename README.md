@@ -27,7 +27,7 @@ sonar-cryptography has no JavaScript or Rust support, so it ran on three languag
 |---|---|---|---|
 | **A**, library coverage | Does the tool find every crypto operation, and name it correctly? | One small program set per library: the top 15 crypto packages of each ecosystem plus the standard library, 79 entries, 1,416 assets in 1,015 objects, under `fixtures/` | Scored |
 | **B**, transitive reachability | Can the tool tell crypto the app reaches through its dependencies from crypto it does not? | 45 pairs over five languages (app -> lib A -> lib B -> crypto). Each pair has a reachable and an unreachable variant that differ in one change. Under `fixtures/<language>/suite-b/` | Scored |
-| **C**, real repositories | Does it hold on real code? | Ten open-source applications, two per language, chosen by a pre-registered rule ([METHODOLOGY.md](METHODOLOGY.md#suite-c)) and fetched at a pinned commit, never vendored | Selected, not yet annotated or scored |
+| **C**, real repositories | Does it hold on real code? | Ten open-source applications, two per language, chosen by a pre-registered rule ([METHODOLOGY.md](METHODOLOGY.md#suite-c)) and fetched at a pinned commit, never vendored | Selected; `files` ground truth annotated (214 assets in 142 files), not yet scored |
 
 **Targets**, pre-registered on 2026-11-05: precision >= 0.90 and recall >= 0.85 in every language × asset type cell of suite A, in each language over all asset types, and in each asset type over all languages. The object level is the headline view ([METHODOLOGY.md](METHODOLOGY.md#targets)).
 

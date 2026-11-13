@@ -15,6 +15,7 @@ In every pass each disagreement was resolved against the guide and the resolutio
 - [Suite B, all five languages (2026-11-05)](#suite-b-all-five-languages-2026-11-05)
 - [Suite B, handler and callback (2026-11-05)](#suite-b-handler-and-callback-2026-11-05)
 - [Suite A, generated private keys (2026-11-08)](#suite-a-generated-private-keys-2026-11-08)
+- [Suite C, `files` scope (2026-11-13)](#suite-c-files-scope-2026-11-13)
 
 ## Suite A, Python pilot (2026-11-04)
 
@@ -523,3 +524,52 @@ A key generation that returns a private key became also related crypto material 
 - **Calls that generate a key pair among other work** (`selfsigned.generate`, which returns the private key's PEM with the certificate; `new JcaPGPKeyPair(..., gen.generateKeyPair(), ...)`; `add_server_key(paramiko.RSAKey.generate(...))`). Material on the lines of the call, as for the algorithm asset.
 - **curve25519-dalek `Scalar::random`** (`ristretto_dh.rs` lines 8 and 9). The ground truth already counts it as the key generation of the ECDH secret, so it has the material too.
 
+## Suite C, `files` scope (2026-11-13)
+
+Two fresh agents annotated the 142 sampled files of the ten suite C repositories independently, each with only the checkout at the pinned commit, the sample list, the annotation guide, the schema and the `internal/algo` tables. Neither saw the other's annotation, and no tool was run on a suite C repository and no tool output was read, before or during adjudication. Matching is as in the [Python pilot](#suite-a-python-pilot-2026-11-04): same file, overlapping lines and same asset type, then compared on lines, anchors, primitive, algorithm, parameters and material type. Objects were compared as groupings of the matched assets, and every grouping agreed.
+
+| Entry | First | Second | Agreed | Field | Only first | Only second | Agreement | Final |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| java-c-mall | 1 | 1 | 1 | 0 | 0 | 0 | 1.000 | 1 |
+| java-c-jadx | 2 | 2 | 2 | 0 | 0 | 0 | 1.000 | 2 |
+| python-c-yt-dlp | 27 | 45 | 27 | 0 | 0 | 18 | 0.600 | 45 |
+| python-c-graphify | 16 | 16 | 16 | 0 | 0 | 0 | 1.000 | 16 |
+| go-c-ollama | 31 | 31 | 30 | 1 | 0 | 0 | 0.968 | 31 |
+| go-c-caveman | 29 | 30 | 29 | 0 | 0 | 1 | 0.967 | 30 |
+| rust-c-clash-verge-rev | 9 | 8 | 8 | 0 | 1 | 0 | 0.889 | 9 |
+| rust-c-cc-switch | 26 | 21 | 21 | 0 | 5 | 0 | 0.808 | 23 |
+| javascript-c-freecodecamp | 21 | 21 | 20 | 0 | 1 | 1 | 0.909 | 21 |
+| javascript-c-firecrawl | 36 | 36 | 32 | 4 | 0 | 0 | 0.889 | 36 |
+| **Total** | **198** | **211** | **186** | **5** | **7** | **20** | **0.853** | **214** |
+
+The final ground truth has 214 assets in 142 files. The line ranges of every annotated asset were checked for a call cut short (unbalanced parentheses or a chained call continuing on the next line); none was.
+
+### Resolutions
+
+Of the 32 disagreements, 24 were resolved by taking the asset or field value that one annotation had and 8 by leaving it out; 3 assets that neither annotation listed were added. Each resolution is in the asset's `notes`, prefixed `Adjudication:`.
+
+- **python-c-yt-dlp, TLS sessions and loaders (18, only second).** Kept: 3 `wrap_socket`/`wrap_bio` calls as protocol assets, 6 `load_cert_chain` calls as a certificate and a key parse each (12 assets), and 3 `load_verify_locations` calls as certificate parses. The first annotation had read them as configuring the context.
+- **go-c-caveman, `httptest.NewTLSServer` (1, only second).** Kept as a protocol asset.
+- **rust-c-clash-verge-rev, reqwest `Client::builder().tls_backend_rustls()` (1, only first).** Removed: it selects a TLS backend for an HTTP client, which is configuration.
+- **rust-c-cc-switch, `Uuid::new_v4()` (5, only first).** Removed: an identifier library is not a random draw, even where the UUID bytes feed a PKCE verifier or an OAuth state.
+- **javascript-c-freecodecamp, `nanoid()` (1, only second).** Removed, for the same reason.
+- **javascript-c-freecodecamp, second `jwt.sign` in `user.ts` (1, only first).** Kept; the second annotation missed it.
+- **go-c-ollama, `ed25519.GenerateKey` primitive (1, field).** `signature`: the stored key is loaded and signs requests in a file outside the sample.
+- **javascript-c-firecrawl, jose `generateKeyPair('RS256')` and `('RS512')` (3, field).** Padding `PKCS1v15` added, as in the suite A jose entry.
+- **javascript-c-firecrawl, `SignJWT` chain with `alg: overrides.alg ?? "RS256"` (1, field).** No `hash`: one caller passes `RS512`, so only the padding is shared by every value that reaches the call.
+- **Neither annotation (3 added).** tokio-rustls `connector.connect(name, stream)` creates a TLS session over a stream: one call in rust-c-clash-verge-rev and two in rust-c-cc-switch. Both annotations had read them as using an existing context.
+
+### Questions the guide leaves open
+
+Each is now a sentence in the [annotation guide](annotation-guide.md):
+
+- **Project helpers.** A call to a project function that wraps crypto is not an asset at the call site; the library call inside it is, in its own file. A project's own implementation of an algorithm (yt-dlp's pure-Python AES) is annotated at its call sites.
+- **Random draws and identifier libraries.** Which APIs count as a draw, and that `uuid4`, `Uuid::new_v4` and `nanoid` do not.
+- **TLS sessions.** A session or listener created over a socket or stream from a context is a protocol asset; a connector without a stream and an HTTP client's TLS options are configuration.
+- **Certificates and keys loaded into a context.** `load_cert_chain`, `load_verify_locations`, `load_native_certs` and `add_parsable_certificates` are parses; default trust stores are not.
+- **External tools.** Crypto run through a command line is annotated at the call that names the algorithm.
+- **Purpose.** Cache keys, ETags, test digests and `usedforsecurity=False` are assets; a digest output named `salt` or `cnonce` is not material.
+- **Key generation primitive.** The use of the key is looked for anywhere in the repository.
+- **Objects across files.** An imported secret given to calls in several files is one object.
+- **Overridden algorithm literals.** Only the parameters every reaching value shares are set.
+- **Reachability fields in suite C.** `reachable: unknown`, no `depth`.

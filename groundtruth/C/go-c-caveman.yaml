@@ -1,0 +1,270 @@
+schema_version: "1"
+entry: go-c-caveman
+scope:
+  kind: files
+  files:
+    - engine/compressors/compressor.go
+    - engine/pixel/transform_anthropic.go
+    - engine/pixel/transform_anthropic_test.go
+    - mcp/engine_tools.go
+    - proxy/cmd/caveman-proxy/main.go
+    - proxy/internal/gateway/live_zone_test.go
+    - proxy/internal/identity/identity_test.go
+    - proxy/internal/nativeruntime/runtime.go
+    - proxy/internal/standalone/middleware_test.go
+    - proxy/internal/standalone/standalone_test.go
+    - proxy/internal/store/prefix_stability_e2e_test.go
+    - proxy/internal/translate/responses.go
+    - proxy/providers/anthropic/content_compress_test.go
+    - proxy/providers/openai/session_cache_key.go
+    - shared/platform/redact/residual_test.go
+assets:
+  - id: gt-0001
+    file: engine/compressors/compressor.go
+    lines: [166, 166]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0002
+    file: engine/compressors/compressor.go
+    lines: [198, 198]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0003
+    file: engine/pixel/transform_anthropic.go
+    lines: [868, 868]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0004
+    file: engine/pixel/transform_anthropic.go
+    lines: [1303, 1303]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0005
+    file: engine/pixel/transform_anthropic_test.go
+    lines: [483, 483]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0006
+    file: mcp/engine_tools.go
+    lines: [191, 191]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0007
+    file: proxy/cmd/caveman-proxy/main.go
+    lines: [370, 370]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "tls.NewListener wraps the listener so that each accepted connection is a TLS server session, the listener counterpart of tls.Server, which suite A annotates as a protocol asset. The tls.Config comes from a project helper outside the sample. subtle.ConstantTimeCompare at line 543 is a constant-time comparison, not an asset."
+  - id: gt-0008
+    file: proxy/internal/gateway/live_zone_test.go
+    lines: [86, 86]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0009
+    file: proxy/internal/gateway/live_zone_test.go
+    lines: [203, 203]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Two Sum256 calls on one line are two assets."
+  - id: gt-0010
+    file: proxy/internal/gateway/live_zone_test.go
+    lines: [203, 203]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Two Sum256 calls on one line are two assets."
+  - id: gt-0011
+    file: proxy/internal/gateway/live_zone_test.go
+    lines: [329, 329]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0012
+    file: proxy/internal/identity/identity_test.go
+    lines: [19, 19]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Hash of a bearer token for the token map fixture; a plain hash, not a password KDF."
+  - id: gt-0013
+    file: proxy/internal/nativeruntime/runtime.go
+    lines: [887, 887]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0014
+    file: proxy/internal/nativeruntime/runtime.go
+    lines: [1431, 1431]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0015
+    file: proxy/internal/nativeruntime/runtime.go
+    lines: [1474, 1474]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0016
+    file: proxy/internal/standalone/middleware_test.go
+    lines: [59, 59]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0017
+    file: proxy/internal/standalone/standalone_test.go
+    lines: [1254, 1254]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "SHA-256 payload hash compared with a request-signing header; the request signing itself is not in this file."
+  - id: gt-0018
+    file: proxy/internal/standalone/standalone_test.go
+    lines: [1354, 1354]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0019
+    file: proxy/internal/standalone/standalone_test.go
+    lines: [1770, 1773]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. httptest.NewTLSServer creates a TLS server context and listener: a protocol asset (annotation guide, TLS sessions; as tls.NewListener in main.go). pem.EncodeToMemory of upstream.Certificate().Raw is PEM armoring of DER the library already holds, not a certificate asset."
+  - id: gt-0020
+    file: proxy/internal/store/prefix_stability_e2e_test.go
+    lines: [69, 69]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0021
+    file: proxy/internal/translate/responses.go
+    lines: [85, 85]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0022
+    file: proxy/internal/translate/responses.go
+    lines: [234, 234]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0023
+    file: proxy/providers/anthropic/content_compress_test.go
+    lines: [72, 72]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Two Sum256 calls on one line are two assets."
+  - id: gt-0024
+    file: proxy/providers/anthropic/content_compress_test.go
+    lines: [72, 72]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Two Sum256 calls on one line are two assets."
+  - id: gt-0025
+    file: proxy/providers/anthropic/content_compress_test.go
+    lines: [77, 77]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Two Sum256 calls on one line are two assets."
+  - id: gt-0026
+    file: proxy/providers/anthropic/content_compress_test.go
+    lines: [77, 77]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Two Sum256 calls on one line are two assets."
+  - id: gt-0027
+    file: proxy/providers/anthropic/content_compress_test.go
+    lines: [196, 196]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Two Sum256 calls on one line are two assets."
+  - id: gt-0028
+    file: proxy/providers/anthropic/content_compress_test.go
+    lines: [196, 196]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Two Sum256 calls on one line are two assets."
+  - id: gt-0029
+    file: proxy/providers/openai/session_cache_key.go
+    lines: [77, 77]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Domain-separated SHA-256 of the session id for a cache key; a plain hash, not an HMAC."
+  - id: gt-0030
+    file: shared/platform/redact/residual_test.go
+    lines: [198, 198]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read fills a 64-byte random test input; a draw from the OS generator, no material."

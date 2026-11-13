@@ -1,0 +1,391 @@
+schema_version: "1"
+entry: python-c-yt-dlp
+scope:
+  kind: files
+  files:
+    - devscripts/generate_aes_testdata.py
+    - test/test_http_proxy.py
+    - test/test_websockets.py
+    - yt_dlp/downloader/bunnycdn.py
+    - yt_dlp/extractor/abematv.py
+    - yt_dlp/extractor/cda.py
+    - yt_dlp/extractor/eggs.py
+    - yt_dlp/extractor/instagram.py
+    - yt_dlp/extractor/jamendo.py
+    - yt_dlp/extractor/theplatform.py
+    - yt_dlp/extractor/vice.py
+    - yt_dlp/extractor/youtube/_base.py
+    - yt_dlp/extractor/youtube/jsc/_builtin/ejs.py
+    - yt_dlp/networking/_helper.py
+    - yt_dlp/postprocessor/sponsorblock.py
+assets:
+  - id: gt-0001
+    file: devscripts/generate_aes_testdata.py
+    lines: [29, 29]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: unknown
+    notes: "A literal list assigned to iv (and to key) and passed as the -iv argument of every openssl enc call below: a literal that creates the material is its creating expression. Annotated once where created."
+  - id: gt-0002
+    file: devscripts/generate_aes_testdata.py
+    lines: [31, 31]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 128
+      mode: CBC
+    origin: project
+    reachable: unknown
+    object: generate_aes_testdata/key
+    notes: "openssl_encode is a helper in this file that runs `openssl enc -e -aes-128-cbc` with the given key and IV; the call site names the algorithm as a literal, so the asset is the call. Judgement call: encryption through the openssl CLI in a subprocess still counts as a crypto operation the program performs. Same key as the aes_encrypt on line 36 (password = key)."
+  - id: gt-0003
+    file: devscripts/generate_aes_testdata.py
+    lines: [36, 36]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    origin: project
+    reachable: unknown
+    object: generate_aes_testdata/key
+    notes: "yt_dlp.aes.aes_encrypt encrypts one 16-byte block with the expanded key; key_expansion nested in it is part of the same asset. The key is the 16-element literal list (128 bits) but no call states the size, so no key_size."
+  - id: gt-0004
+    file: devscripts/generate_aes_testdata.py
+    lines: [37, 37]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 128
+      mode: CTR
+    origin: project
+    reachable: unknown
+    notes: "openssl enc -aes-128-ctr through the helper; key is new_key, derived on line 36."
+  - id: gt-0005
+    file: devscripts/generate_aes_testdata.py
+    lines: [42, 42]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    origin: project
+    reachable: unknown
+    notes: "aes_encrypt of one block with a 32-byte key (key + 16 zeros); key size not stated as a number by the call, so no key_size."
+  - id: gt-0006
+    file: devscripts/generate_aes_testdata.py
+    lines: [43, 43]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: CTR
+    origin: project
+    reachable: unknown
+    notes: "openssl enc -aes-256-ctr through the helper."
+  - id: gt-0007
+    file: test/test_http_proxy.py
+    lines: [110, 115]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. wrap_bio creates a TLS session from the context, a protocol asset like Go's tls.Server (annotation guide, TLS sessions). The SSLTransport(...) call on line 138 is a project class that wraps this call, so it is not an asset of its own."
+  - id: gt-0008
+    file: test/test_http_proxy.py
+    lines: [135, 135]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "ssl.SSLContext(...) creates a TLS context."
+  - id: gt-0009
+    file: test/test_http_proxy.py
+    lines: [136, 136]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. load_cert_chain(certfile, keyfile) parses a certificate and a key from files: one certificate asset and one related-crypto-material asset with no material_type on the same lines (annotation guide)."
+  - id: gt-0010
+    file: test/test_http_proxy.py
+    lines: [136, 136]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. The key half of load_cert_chain: a key parse, related-crypto-material with no material_type (annotation guide)."
+  - id: gt-0011
+    file: test/test_http_proxy.py
+    lines: [140, 140]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. wrap_socket creates a TLS session over the socket from the context: a protocol asset (annotation guide, TLS sessions)."
+  - id: gt-0012
+    file: test/test_http_proxy.py
+    lines: [186, 186]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "ssl.SSLContext(...) creates a TLS context."
+  - id: gt-0013
+    file: test/test_http_proxy.py
+    lines: [187, 187]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. load_cert_chain parses a certificate (annotation guide); the key half is the related-crypto-material asset on the same lines."
+  - id: gt-0014
+    file: test/test_http_proxy.py
+    lines: [187, 187]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. The key half of load_cert_chain: a key parse with no material_type."
+  - id: gt-0015
+    file: test/test_http_proxy.py
+    lines: [188, 188]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. wrap_socket creates a TLS session over the socket from the context: a protocol asset."
+  - id: gt-0016
+    file: test/test_websockets.py
+    lines: [97, 97]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "ssl.SSLContext(...) creates a TLS context."
+  - id: gt-0017
+    file: test/test_websockets.py
+    lines: [98, 98]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. load_cert_chain parses a certificate; the key half is the related-crypto-material asset on the same lines."
+  - id: gt-0018
+    file: test/test_websockets.py
+    lines: [98, 98]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. The key half of load_cert_chain: a key parse with no material_type."
+  - id: gt-0019
+    file: test/test_websockets.py
+    lines: [109, 109]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "ssl.SSLContext(...) creates a TLS context."
+  - id: gt-0020
+    file: test/test_websockets.py
+    lines: [111, 111]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. load_verify_locations(cafile=...) parses CA certificates from a file: a certificate parse (annotation guide)."
+  - id: gt-0021
+    file: test/test_websockets.py
+    lines: [112, 112]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. load_cert_chain parses a certificate; the key half is the related-crypto-material asset on the same lines."
+  - id: gt-0022
+    file: test/test_websockets.py
+    lines: [112, 112]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. The key half of load_cert_chain: a key parse with no material_type."
+  - id: gt-0023
+    file: test/test_websockets.py
+    lines: [119, 119]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "ssl.SSLContext(...) creates a TLS context. maximum_version and set_ciphers on the next lines configure it and are not assets."
+  - id: gt-0024
+    file: test/test_websockets.py
+    lines: [122, 122]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. load_cert_chain parses a certificate; set_ciphers and maximum_version above are configuration."
+  - id: gt-0025
+    file: test/test_websockets.py
+    lines: [122, 122]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. The key half of load_cert_chain: a key parse with no material_type."
+  - id: gt-0026
+    file: test/test_websockets.py
+    lines: [154, 154]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "ssl.SSLContext(...) nested as an argument of create_websocket_server: a TLS context of its own."
+  - id: gt-0027
+    file: yt_dlp/downloader/bunnycdn.py
+    lines: [44, 44]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "random.random() on line 43 is not a cryptographic generator, so it is not a drbg asset."
+  - id: gt-0028
+    file: yt_dlp/extractor/abematv.py
+    lines: [75, 78]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "hmac.new(key, msg, digestmod=hashlib.sha256); its digest becomes the AES key on line 81, a digest output, not a key generation."
+  - id: gt-0029
+    file: yt_dlp/extractor/abematv.py
+    lines: [81, 81]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: ECB
+    origin: project
+    reachable: unknown
+    notes: "yt_dlp.aes.aes_ecb_decrypt is the project's AES implementation; its API fixes ECB. Key is the 32-byte HMAC output, but no call states a size, so no key_size."
+  - id: gt-0030
+    file: yt_dlp/extractor/abematv.py
+    lines: [105, 105]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "h.update / h.digest on the next lines are follow-ups."
+  - id: gt-0031
+    file: yt_dlp/extractor/cda.py
+    lines: [162, 166]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "hmac.new with a literal key and hashlib.sha256 as digestmod on line 166; range runs from hmac.new( to its closing parenthesis."
+  - id: gt-0032
+    file: yt_dlp/extractor/cda.py
+    lines: [165, 165]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "hashlib.md5(password) nested in the HMAC's message: a digest call of its own."
+  - id: gt-0033
+    file: yt_dlp/extractor/eggs.py
+    lines: [22, 22]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "secrets.token_hex(8) draws from the OS CSPRNG; used as a device id, not as crypto material, so only the draw."
+  - id: gt-0034
+    file: yt_dlp/extractor/instagram.py
+    lines: [594, 595]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+  - id: gt-0035
+    file: yt_dlp/extractor/jamendo.py
+    lines: [57, 57]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: "random.random() on line 52 is not a cryptographic generator, so not an asset."
+  - id: gt-0036
+    file: yt_dlp/extractor/theplatform.py
+    lines: [221, 221]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0037
+    file: yt_dlp/extractor/vice.py
+    lines: [131, 131]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-512
+    origin: project
+    reachable: unknown
+    notes: "Named 'sign' by the API but it is a plain unkeyed SHA-512 hash, not a signature."
+  - id: gt-0038
+    file: yt_dlp/extractor/youtube/_base.py
+    lines: [769, 769]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0039
+    file: yt_dlp/extractor/youtube/jsc/_builtin/ejs.py
+    lines: [69, 69]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA3-512
+    origin: project
+    reachable: unknown
+    notes: "Hash of the script code inside a cached_property, compared later against allowed hashes."
+  - id: gt-0040
+    file: yt_dlp/networking/_helper.py
+    lines: [25, 25]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. load_verify_locations(cafile=certifi.where()) parses the CA bundle file: a certificate parse. load_default_certs and set_default_verify_paths in the other branch only point the context at default locations and are not assets."
+  - id: gt-0041
+    file: yt_dlp/networking/_helper.py
+    lines: [50, 50]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. load_verify_locations(cadata=cert) parses DER certificate bytes: a certificate parse. ssl.enum_certificates on line 43 reads raw bytes from the OS store and parses nothing."
+  - id: gt-0042
+    file: yt_dlp/networking/_helper.py
+    lines: [110, 110]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "ssl.SSLContext(...) creates a TLS context. set_ciphers, minimum_version, verify_mode and the other attributes set below are configuration."
+  - id: gt-0043
+    file: yt_dlp/networking/_helper.py
+    lines: [146, 148]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. load_cert_chain parses the client certificate (lines 146-148, the whole call); the key half is the related-crypto-material asset on the same lines."
+  - id: gt-0044
+    file: yt_dlp/networking/_helper.py
+    lines: [146, 148]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "Adjudication: only the second annotation listed it; kept. The key half of load_cert_chain: a key parse (keyfile or the same PEM) with no material_type."
+  - id: gt-0045
+    file: yt_dlp/postprocessor/sponsorblock.py
+    lines: [95, 95]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown

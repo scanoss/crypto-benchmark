@@ -1,0 +1,162 @@
+schema_version: "1"
+entry: python-c-graphify
+scope:
+  kind: files
+  files:
+    - graphify/build.py
+    - graphify/callflow_html.py
+    - graphify/cluster.py
+    - graphify/extractors/markdown.py
+    - graphify/extractors/objc.py
+    - graphify/extractors/razor.py
+    - graphify/global_graph.py
+    - graphify/mcp_ingest.py
+    - graphify/paths.py
+    - graphify/reflect.py
+    - graphify/symbol_resolution.py
+    - graphify/watch.py
+    - tests/test_extract_cache_location.py
+    - tests/test_word_count_cache.py
+    - worked/httpx/raw/auth.py
+assets:
+  - id: gt-0001
+    file: graphify/callflow_html.py
+    lines: [376, 376]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: "usedforsecurity=False does not remove the asset: the call still computes the digest."
+  - id: gt-0002
+    file: graphify/callflow_html.py
+    lines: [667, 667]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: "usedforsecurity=False does not remove the asset: the call still computes the digest."
+  - id: gt-0003
+    file: graphify/cluster.py
+    lines: [226, 226]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "hashlib.sha256() creates the hash object; update and hexdigest in the loop are follow-ups."
+  - id: gt-0004
+    file: graphify/global_graph.py
+    lines: [92, 92]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Hash object creation; update/hexdigest are follow-ups."
+  - id: gt-0005
+    file: graphify/reflect.py
+    lines: [723, 723]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0006
+    file: graphify/watch.py
+    lines: [1386, 1386]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Called through 'from hashlib import sha256'. The result is named salt but it is a truncated hash used as an ID suffix, passed to no crypto operation, so no salt material; a hash output is never material."
+  - id: gt-0007
+    file: graphify/watch.py
+    lines: [1986, 1988]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "usedforsecurity=False does not remove the asset: the call still computes the digest."
+  - id: gt-0008
+    file: graphify/watch.py
+    lines: [2012, 2012]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "usedforsecurity=False does not remove the asset: the call still computes the digest."
+  - id: gt-0009
+    file: tests/test_extract_cache_location.py
+    lines: [131, 131]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Hash object creation; the file_hash helper call on line 127 hashes in non-sampled project code and names no algorithm, so it is not annotated here."
+  - id: gt-0010
+    file: tests/test_word_count_cache.py
+    lines: [86, 86]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "cache.file_hash helper calls in this file hash in non-sampled project code and name no algorithm; not annotated."
+  - id: gt-0011
+    file: tests/test_word_count_cache.py
+    lines: [90, 92]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0012
+    file: tests/test_word_count_cache.py
+    lines: [116, 116]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0013
+    file: worked/httpx/raw/auth.py
+    lines: [85, 85]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "HTTP Digest client nonce built as an MD5 of the current time. Annotated as the MD5 hash only; the hash output is not related crypto material (no random draw, and a digest output is never material), though a second reading could call the cnonce a nonce."
+  - id: gt-0014
+    file: worked/httpx/raw/auth.py
+    lines: [89, 89]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "HTTP Digest HA1."
+  - id: gt-0015
+    file: worked/httpx/raw/auth.py
+    lines: [90, 90]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "HTTP Digest HA2."
+  - id: gt-0016
+    file: worked/httpx/raw/auth.py
+    lines: [91, 91]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "HTTP Digest response hash."
