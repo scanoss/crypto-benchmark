@@ -1,0 +1,893 @@
+schema_version: "1"
+entry: go-c-ollama-pool
+scope:
+  kind: pool
+assets:
+  - id: gt-0001
+    file: anthropic/anthropic.go
+    lines: [1059, 1059]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read fills a 12-byte buffer formatted into a request ID: a draw from the OS generator, no material (as in the files-scope truth)."
+  - id: gt-0002
+    file: app/store/image.go
+    lines: [72, 72]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "One-shot SHA-256 of image bytes used as a content-addressed filename; a hash is an asset whatever it is used for."
+  - id: gt-0003
+    file: app/updater/updater.go
+    lines: [292, 292]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0004
+    file: app/updater/updater_windows.go
+    lines: [275, 287]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    object: app/updater/certStore
+    notes: "Judgement call: windows.CryptQueryObject with CERT_QUERY_OBJECT_FILE and CERT_QUERY_CONTENT_FLAG_PKCS7_SIGNED_EMBED reads the Authenticode PKCS#7 signature embedded in the installer and returns a certificate store parsed from it: a certificate parse from a file. Grouped with the later x509.ParseCertificate of the signer certificate taken from that store (parses of one certificate are one object). The signature verification itself is WinVerifyTrustEx (line 249), which is not a pool item. Adjudication: lines 275-287 and the object from the first annotation: the call closes on line 287 ('); err != nil {'), and the signer certificate that x509.ParseCertificate parses at 324 comes out of the store this call returns, so the two parses are one certificate object (passed on inside a library's output). The second annotation ended the range at 288 and set no object."
+  - id: gt-0005
+    file: app/updater/updater_windows.go
+    lines: [324, 324]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    object: app/updater/certStore
+    notes: "x509.ParseCertificate parses the signer certificate DER found in the store. Adjudication: object as above."
+  - id: gt-0006
+    file: app/wintray/tray.go
+    lines: [436, 436]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: One-shot MD5 of icon bytes used to name a temp file.
+  - id: gt-0007
+    file: auth/auth.go
+    lines: [34, 34]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    object: cmd/privateKeyBytes
+    notes: "ssh.ParsePrivateKey parses ~/.ollama/id_ed25519, the file cmd/cmd.go writes; same key passed on through the file, so it joins that serialization object."
+  - id: gt-0008
+    file: auth/auth.go
+    lines: [39, 39]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    object: cmd/privateKeyBytes
+    notes: "ssh.MarshalAuthorizedKey serializes the public key of the parsed key."
+  - id: gt-0009
+    file: auth/auth.go
+    lines: [66, 66]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    object: cmd/privateKeyBytes
+    notes: ssh.ParsePrivateKey of ~/.ollama/id_ed25519 again, in Sign.
+  - id: gt-0010
+    file: auth/auth.go
+    lines: [72, 72]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    object: cmd/privateKeyBytes
+    notes: "ssh.MarshalAuthorizedKey serializes the public key of the parsed key, sent with the signature."
+  - id: gt-0011
+    file: auth/auth.go
+    lines: [78, 78]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: unknown
+    object: cmd/cryptoPrivateKey
+    notes: "ssh.Signer.Sign on the key parsed from id_ed25519; the call names no algorithm, so it takes the key type the program generates there (ed25519.GenerateKey in cmd/cmd.go). rand.Reader passed as a value is not a draw (Ed25519 signing is deterministic)."
+  - id: gt-0012
+    file: cmd/bench/bench_test.go
+    lines: [426, 426]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read (the file imports crypto/rand) fills bytes mapped to a random file name; a draw, no material."
+  - id: gt-0013
+    file: cmd/cmd.go
+    lines: [556, 556]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read fills a throwaway probe blob; a draw, no material (as in the files-scope truth)."
+  - id: gt-0014
+    file: cmd/cmd.go
+    lines: [2299, 2299]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: unknown
+    object: cmd/cryptoPrivateKey
+    notes: "ed25519.GenerateKey; rand.Reader is passed as a value, not a draw call. Primitive signature: auth/auth.go loads ~/.ollama/id_ed25519 and signs with it (privateKey.Sign), which is why both share this object (key written to a file and read back). The files-scope truth has the same asset without an object, since auth/auth.go was outside its sample. Adjudication: object differs from the files-scope truth, which has none for this asset because auth/auth.go was outside its sample; the pool covers auth/auth.go, so the passed-on rule links the generated key to the signature there (objects across files). Both annotations agreed."
+  - id: gt-0015
+    file: cmd/cmd.go
+    lines: [2299, 2299]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key on the lines of its key generation.
+  - id: gt-0016
+    file: cmd/cmd.go
+    lines: [2304, 2304]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    object: cmd/privateKeyBytes
+    notes: "ssh.MarshalPrivateKey serializes the private key to an OpenSSH PEM block; pem.EncodeToMemory at line 2313 is armoring only."
+  - id: gt-0017
+    file: cmd/cmd.go
+    lines: [2322, 2322]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    object: cmd/privateKeyBytes
+    notes: "ssh.MarshalAuthorizedKey serializes the public key of the same key pair. ssh.NewPublicKey at line 2317 converts the key and is not an asset."
+  - id: gt-0018
+    file: cmd/cmd_test.go
+    lines: [2096, 2096]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0019
+    file: cmd/create_safetensors_remote.go
+    lines: [125, 125]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0020
+    file: integration/create_test.go
+    lines: [150, 150]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "sha256.New creates the hash object; io.Copy and Sum are follow-ups."
+  - id: gt-0021
+    file: internal/decisiontest/corpus.go
+    lines: [79, 79]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0022
+    file: llm/llama_server.go
+    lines: [265, 265]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crand is crypto/rand; the bytes become a media marker string, a draw with no material."
+  - id: gt-0023
+    file: manifest/downgrade_test.go
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0024
+    file: manifest/layer.go
+    lines: [52, 52]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: sha256.New; Sum on line 62 is a follow-up.
+  - id: gt-0025
+    file: manifest/layer.go
+    lines: [96, 96]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: sha256.New; Sum on line 106 is a follow-up.
+  - id: gt-0026
+    file: manifest/manifest.go
+    lines: [319, 319]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0027
+    file: manifest/manifest.go
+    lines: [842, 842]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0028
+    file: manifest/manifest.go
+    lines: [970, 970]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0029
+    file: manifest/manifest.go
+    lines: [1132, 1132]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0030
+    file: manifest/manifest.go
+    lines: [1288, 1288]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0031
+    file: manifest/manifest.go
+    lines: [1461, 1461]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0032
+    file: manifest/manifest.go
+    lines: [1485, 1485]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0033
+    file: manifest/manifest.go
+    lines: [1676, 1676]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0034
+    file: manifest/manifest_test.go
+    lines: [125, 125]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0035
+    file: manifest/manifest_test.go
+    lines: [296, 296]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0036
+    file: manifest/manifest_test.go
+    lines: [352, 352]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0037
+    file: manifest/manifest_test.go
+    lines: [630, 630]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0038
+    file: manifest/manifest_test.go
+    lines: [840, 840]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0039
+    file: manifest/manifest_test.go
+    lines: [891, 891]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0040
+    file: manifest/manifest_test.go
+    lines: [924, 924]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0041
+    file: manifest/manifest_test.go
+    lines: [1026, 1026]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0042
+    file: manifest/manifest_test.go
+    lines: [1168, 1168]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0043
+    file: mlx/io_test.go
+    lines: [45, 45]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0044
+    file: mlxrunner/model/ripple/ripple_test.go
+    lines: [106, 106]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "SHA-256 of a name used to derive a deterministic phase; still a hash call."
+  - id: gt-0045
+    file: mlxrunner/ripple_test.go
+    lines: [72, 72]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0046
+    file: mlxrunner/tokenizer/tokenizer_reference_model_test.go
+    lines: [91, 91]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0047
+    file: mlxrunner/tokenizer/tokenizer_reference_model_test.go
+    lines: [121, 121]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0048
+    file: mlxrunner/tokenizer/tokenizer_reference_model_test.go
+    lines: [148, 148]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0049
+    file: mlxrunner/tokenizer/tokenizer_reference_model_test.go
+    lines: [165, 165]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0050
+    file: model/renderers/flint_reference_test.go
+    lines: [289, 289]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0051
+    file: model/renderers/lfm3_reference_test.go
+    lines: [82, 82]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0052
+    file: model/renderers/mimo_reference_test.go
+    lines: [25, 25]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0053
+    file: openai/responses_compact.go
+    lines: [373, 373]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0054
+    file: parser/parser.go
+    lines: [326, 326]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0055
+    file: parser/parser_test.go
+    lines: [889, 889]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0056
+    file: parser/parser_test.go
+    lines: [947, 947]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0057
+    file: parser/parser_test.go
+    lines: [973, 973]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0058
+    file: server/auth.go
+    lines: [64, 64]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0059
+    file: server/create_fuzz_test.go
+    lines: [138, 138]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0060
+    file: server/download_test.go
+    lines: [198, 198]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0061
+    file: server/images.go
+    lines: [1329, 1329]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0062
+    file: server/images.go
+    lines: [1566, 1566]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0063
+    file: server/images.go
+    lines: [1590, 1590]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0064
+    file: server/images.go
+    lines: [1681, 1681]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0065
+    file: server/images_test.go
+    lines: [638, 638]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0066
+    file: server/images_test.go
+    lines: [640, 640]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0067
+    file: server/images_test.go
+    lines: [664, 664]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0068
+    file: server/images_test.go
+    lines: [1305, 1305]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0069
+    file: server/images_test.go
+    lines: [1306, 1306]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0070
+    file: server/model_recommendations_test.go
+    lines: [628, 628]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: unknown
+    object: server/privateKey
+    notes: "Test Ed25519 key written to <home>/.ollama/id_ed25519 so that auth.Sign signs requests with it; verified at line 664 with its public key."
+  - id: gt-0071
+    file: server/model_recommendations_test.go
+    lines: [628, 628]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key on the lines of its key generation.
+  - id: gt-0072
+    file: server/model_recommendations_test.go
+    lines: [632, 632]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    object: server/privateKeyBlock
+    notes: "ssh.MarshalPrivateKey serializes the test private key; pem.EncodeToMemory at line 640 is armoring only."
+  - id: gt-0073
+    file: server/model_recommendations_test.go
+    lines: [655, 655]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    object: server/privateKeyBlock
+    notes: "ssh.ParsePublicKey parses the public key auth.Sign put in the Authorization header, which is the public half of the test key serialized at line 632; joined to that object. The auth/auth.go parses are grouped with the cmd/cmd.go key instead, since one asset takes one object id."
+  - id: gt-0074
+    file: server/model_recommendations_test.go
+    lines: [664, 664]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: unknown
+    object: server/privateKey
+    notes: "ssh.PublicKey.Verify of the request signature; the call names no algorithm, the key is the Ed25519 test key generated at line 628. The ssh.Signature literal on the same line is an argument, not an asset."
+  - id: gt-0075
+    file: server/routes_create_test.go
+    lines: [2170, 2170]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "GetSHA256Digest(f) at line 61 is a project helper defined outside the sample (server/images.go); the SHA-256 it computes is recorded where the library call is, outside this file, so line 61 is not annotated."
+  - id: gt-0076
+    file: server/routes_create_test.go
+    lines: [2203, 2203]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0077
+    file: server/routes_create_test.go
+    lines: [2259, 2259]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0078
+    file: server/upload.go
+    lines: [185, 185]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+  - id: gt-0079
+    file: server/upload.go
+    lines: [230, 230]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+  - id: gt-0080
+    file: transfer/download.go
+    lines: [301, 301]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "sha256.New; io.CopyN, the TeeReader writes and Sum on line 341 are follow-ups."
+  - id: gt-0081
+    file: transfer/redirect_test.go
+    lines: [606, 606]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "&tls.Config{RootCAs: pool} composite literal: Go TLS context, as the suite A Go stdlib truth annotates tls.Config literals."
+  - id: gt-0082
+    file: transfer/transfer_test.go
+    lines: [80, 80]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0083
+    file: transfer/transfer_test.go
+    lines: [891, 891]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0084
+    file: transfer/transfer_test.go
+    lines: [1424, 1424]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0085
+    file: transfer/transfer_test.go
+    lines: [1502, 1502]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0086
+    file: transfer/transfer_test.go
+    lines: [1548, 1548]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0087
+    file: transfer/transfer_test.go
+    lines: [1700, 1700]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0088
+    file: transfer/transfer_test.go
+    lines: [1734, 1734]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0089
+    file: transfer/transfer_test.go
+    lines: [1793, 1793]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0090
+    file: transfer/transfer_test.go
+    lines: [1867, 1867]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0091
+    file: transfer/transfer_test.go
+    lines: [1934, 1934]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0092
+    file: transfer/transfer_test.go
+    lines: [1991, 1991]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0093
+    file: transfer/transfer_test.go
+    lines: [2003, 2003]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0094
+    file: transfer/transfer_test.go
+    lines: [2040, 2040]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0095
+    file: transfer/transfer_test.go
+    lines: [2053, 2053]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0096
+    file: transfer/transfer_test.go
+    lines: [2098, 2098]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0097
+    file: transfer/transfer_test.go
+    lines: [2110, 2110]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0098
+    file: transfer/transfer_test.go
+    lines: [2148, 2148]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0099
+    file: transfer/transfer_test.go
+    lines: [2160, 2160]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0100
+    file: transfer/transfer_test.go
+    lines: [2219, 2219]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0101
+    file: transfer/transfer_test.go
+    lines: [2390, 2390]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0102
+    file: transfer/transfer_test.go
+    lines: [2420, 2420]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0103
+    file: transfer/transfer_test.go
+    lines: [2455, 2455]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0104
+    file: transfer/transfer_test.go
+    lines: [2536, 2536]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0105
+    file: transfer/transfer_test.go
+    lines: [2576, 2576]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0106
+    file: transfer/transfer_test.go
+    lines: [2590, 2590]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0107
+    file: transfer/upload.go
+    lines: [565, 565]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "md5.New for a composite part checksum; follow-ups not annotated."
+  - id: gt-0108
+    file: transfer/upload.go
+    lines: [634, 634]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+  - id: gt-0109
+    file: transfer/upload.go
+    lines: [731, 731]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown

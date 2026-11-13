@@ -1,0 +1,53 @@
+item	file	start	end	verdict	detail
+1	mall-admin/src/main/java/com/macro/mall/config/SpringDocConfig.java	43	43	reject	OpenAPI doc bearerFormat string, not a call
+2	mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java	37	37	reject	Spring @Value config key annotation
+3	mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java	39	39	reject	Spring @Value config key annotation
+4	mall-admin/src/main/java/com/macro/mall/service/UmsAdminService.java	32	32	reject	javadoc comment
+5	mall-admin/src/main/java/com/macro/mall/service/impl/UmsAdminServiceImpl.java	48	48	reject	field declaration of project helper type
+6	mall-admin/src/main/java/com/macro/mall/service/impl/UmsAdminServiceImpl.java	112	112	reject	call to project helper JwtTokenUtil.generateToken; asset is Hutool call inside helper (gt-0003)
+7	mall-admin/src/main/java/com/macro/mall/service/impl/UmsAdminServiceImpl.java	150	150	reject	call to project helper refreshHeadToken (helper rule)
+8	mall-demo/src/main/java/com/macro/mall/demo/config/SecurityConfig.java	41	41	asset	gt-0001
+9	mall-demo/src/main/java/com/macro/mall/demo/config/SpringDocConfig.java	42	42	reject	OpenAPI doc bearerFormat string
+10	mall-portal/src/main/java/com/macro/mall/portal/config/AlipayClientConfig.java	19	19	reject	The library-facade rule. In alipay-sdk-java 4.40.630.ALL (the version the repository pins), the DefaultAlipayClient constructor takes the sign type as an argument (RSA, RSA2 or SM2), its DefaultSigner only stores the key string, and signing runs later in execute with that sign type, so the library does not fix the algorithm; the value comes from the program's configuration. Both annotations had it as an RSA signer object.
+11	mall-portal/src/main/java/com/macro/mall/portal/config/AlipayConfig.java	30	30	reject	config field declaration (private key string), no parse or operation
+12	mall-portal/src/main/java/com/macro/mall/portal/config/SpringDocConfig.java	42	42	reject	OpenAPI doc bearerFormat string
+13	mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberController.java	29	29	reject	Spring @Value config key annotation
+14	mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberController.java	31	31	reject	Spring @Value config key annotation
+15	mall-portal/src/main/java/com/macro/mall/portal/service/impl/UmsMemberServiceImpl.java	45	45	reject	field declaration of project helper type
+16	mall-portal/src/main/java/com/macro/mall/portal/service/impl/UmsMemberServiceImpl.java	176	176	reject	call to project helper JwtTokenUtil.generateToken (helper rule)
+17	mall-portal/src/main/java/com/macro/mall/portal/service/impl/UmsMemberServiceImpl.java	185	185	reject	call to project helper refreshHeadToken (helper rule)
+18	mall-security/src/main/java/com/macro/mall/security/component/DynamicAuthorizationManager.java	34	34	reject	Spring AuthorizationManager.verify method declaration, authorization not crypto
+19	mall-security/src/main/java/com/macro/mall/security/component/DynamicAuthorizationManager.java	35	35	reject	Spring AuthorizationManager.super.verify, authorization not crypto
+20	mall-security/src/main/java/com/macro/mall/security/component/JwtAuthenticationTokenFilter.java	22	22	reject	comment
+21	mall-security/src/main/java/com/macro/mall/security/component/JwtAuthenticationTokenFilter.java	25	25	reject	class declaration
+22	mall-security/src/main/java/com/macro/mall/security/component/JwtAuthenticationTokenFilter.java	26	26	reject	logger creation
+23	mall-security/src/main/java/com/macro/mall/security/component/JwtAuthenticationTokenFilter.java	30	30	reject	field declaration of project helper type
+24	mall-security/src/main/java/com/macro/mall/security/component/JwtAuthenticationTokenFilter.java	31	31	reject	Spring @Value config key annotation
+25	mall-security/src/main/java/com/macro/mall/security/component/JwtAuthenticationTokenFilter.java	33	33	reject	Spring @Value config key annotation
+26	mall-security/src/main/java/com/macro/mall/security/component/JwtAuthenticationTokenFilter.java	43	43	reject	call to project helper getUserNameFromToken (helper rule)
+27	mall-security/src/main/java/com/macro/mall/security/component/JwtAuthenticationTokenFilter.java	47	47	reject	call to project helper validateToken (helper rule)
+28	mall-security/src/main/java/com/macro/mall/security/config/CommonSecurityConfig.java	21	21	asset	gt-0002
+29	mall-security/src/main/java/com/macro/mall/security/config/CommonSecurityConfig.java	30	30	reject	bean method declaration
+30	mall-security/src/main/java/com/macro/mall/security/config/CommonSecurityConfig.java	31	31	reject	construction of project helper class, no crypto
+31	mall-security/src/main/java/com/macro/mall/security/config/CommonSecurityConfig.java	45	45	reject	bean method declaration
+32	mall-security/src/main/java/com/macro/mall/security/config/CommonSecurityConfig.java	46	46	reject	construction of project filter, no crypto
+33	mall-security/src/main/java/com/macro/mall/security/config/SecurityConfig.java	35	35	reject	field declaration of filter type
+34	mall-security/src/main/java/com/macro/mall/security/config/SecurityConfig.java	61	61	reject	comment
+35	mall-security/src/main/java/com/macro/mall/security/config/SecurityConfig.java	62	62	reject	filter registration, not crypto
+36	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	17	17	reject	javadoc comment
+37	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	18	18	reject	javadoc comment
+38	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	20	20	reject	javadoc comment
+39	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	24	24	reject	javadoc comment
+40	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	26	26	reject	javadoc comment
+41	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	28	28	reject	class declaration
+42	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	29	29	reject	logger creation
+43	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	32	32	reject	Spring @Value config key annotation
+44	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	34	34	reject	Spring @Value config key annotation
+45	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	36	36	reject	Spring @Value config key annotation
+46	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	47	47	reject	javadoc comment
+47	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	53	53	asset	gt-0003
+48	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	57	57	reject	javadoc comment
+49	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	62	62	asset	gt-0004
+50	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	63	63	reject	log statement
+51	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	67	67	reject	Hutool JWTUtil.parseToken only decodes the token without verifying a signature; not crypto
+52	mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java	69	69	reject	log statement

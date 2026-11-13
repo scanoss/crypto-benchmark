@@ -1,0 +1,1502 @@
+item	file	start	end	verdict	detail
+1	engine/ccr/store.go	6	6	reject	comment
+2	engine/ccr/store.go	145	145	asset	gt-0001
+3	engine/ccr/store.go	146	146	reject	hex encoding of a digest output computed on another line
+4	engine/ccr/store.go	163	163	asset	gt-0002
+5	engine/ccr/store.go	261	261	asset	gt-0003
+6	engine/ccr/store.go	268	268	asset	gt-0004
+7	engine/ccr/store.go	269	269	reject	hex encoding of a digest output computed on another line
+8	engine/ccr/store_consolidation_blocks_test.go	27	27	asset	gt-0005
+9	engine/ccr/store_consolidation_blocks_test.go	28	28	reject	hex encoding of a digest output computed on another line
+10	engine/ccr/store_consolidation_blocks_test.go	80	80	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+11	engine/ccr/store_reclaim.go	321	321	asset	gt-0006
+12	engine/ccr/store_reclaim.go	322	322	reject	hex encoding of a digest output computed on another line
+13	engine/ccr/store_repair.go	531	531	asset	gt-0007
+14	engine/ccr/store_repair.go	532	532	reject	hex encoding of a digest output computed on another line
+15	engine/ccr/store_sqlite.go	952	952	reject	comment
+16	engine/codexexec.go	27	27	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+17	engine/codexexec.go	28	28	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+18	engine/compressors/axtree.go	15	15	reject	type, constant, variable or struct-field declaration; no crypto call
+19	engine/compressors/capabilities_test.go	34	34	asset	gt-0008
+20	engine/compressors/capabilities_test.go	35	35	reject	hex encoding of a digest output computed on another line
+21	engine/compressors/capabilities_test.go	36	36	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+22	engine/compressors/capabilities_test.go	51	51	reject	comment
+23	engine/compressors/capabilities_test.go	53	53	reject	comment
+24	engine/compressors/capabilities_test.go	58	58	reject	function or method declaration; no crypto call
+25	engine/compressors/capabilities_test.go	69	69	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+26	engine/compressors/compressor.go	131	131	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+27	engine/compressors/compressor.go	166	166	asset	gt-0009
+28	engine/compressors/compressor.go	180	180	reject	hex encoding of a digest output computed on another line
+29	engine/compressors/compressor.go	188	188	reject	comment
+30	engine/compressors/compressor.go	198	198	asset	gt-0010
+31	engine/compressors/compressor.go	201	201	reject	hex encoding of a digest output computed on another line
+32	engine/compressors/config.go	16	16	reject	regular expression literal
+33	engine/compressors/invariants.go	176	176	reject	regular expression literal
+34	engine/compressors/json.go	18	18	reject	type, constant, variable or struct-field declaration; no crypto call
+35	engine/compressors/json.go	23	23	reject	type, constant, variable or struct-field declaration; no crypto call
+36	engine/compressors/json.go	30	30	reject	type, constant, variable or struct-field declaration; no crypto call
+37	engine/compressors/json.go	34	34	reject	regular expression literal
+38	engine/compressors/json.go	329	329	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+39	engine/compressors/toolschema.go	41	41	reject	type, constant, variable or struct-field declaration; no crypto call
+40	engine/compressors/toolschema.go	53	53	reject	type, constant, variable or struct-field declaration; no crypto call
+41	engine/compressors/toolschema_annotations.go	16	16	reject	type, constant, variable or struct-field declaration; no crypto call
+42	engine/compressors/toolschema_annotations.go	25	25	reject	type, constant, variable or struct-field declaration; no crypto call
+43	engine/compressors/toolschema_annotations.go	33	33	reject	type, constant, variable or struct-field declaration; no crypto call
+44	engine/compressors/toolschema_annotations.go	39	39	reject	type, constant, variable or struct-field declaration; no crypto call
+45	engine/compressors/toolschema_annotations.go	53	53	reject	type, constant, variable or struct-field declaration; no crypto call
+46	engine/compressors/toon_decode.go	19	19	reject	regular expression literal
+47	engine/compressors/toon_encode.go	45	45	reject	regular expression literal
+48	engine/detect.go	35	35	reject	regular expression literal
+49	engine/evals/probes.go	70	70	asset	gt-0011
+50	engine/evals/probes.go	73	73	reject	hex encoding of a digest output computed on another line
+51	engine/pixel/schemastrip.go	8	8	reject	type, constant, variable or struct-field declaration; no crypto call
+52	engine/pixel/schemastrip.go	18	18	reject	type, constant, variable or struct-field declaration; no crypto call
+53	engine/pixel/schemastrip.go	24	24	reject	type, constant, variable or struct-field declaration; no crypto call
+54	engine/pixel/schemastrip.go	31	31	reject	type, constant, variable or struct-field declaration; no crypto call
+55	engine/pixel/schemastrip.go	44	44	reject	type, constant, variable or struct-field declaration; no crypto call
+56	engine/pixel/schemastrip.go	150	150	reject	type, constant, variable or struct-field declaration; no crypto call
+57	engine/pixel/transform_anthropic.go	868	868	asset	gt-0012
+58	engine/pixel/transform_anthropic.go	899	899	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+59	engine/pixel/transform_anthropic.go	911	911	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+60	engine/pixel/transform_anthropic.go	1303	1303	asset	gt-0013
+61	engine/pixel/transform_anthropic_test.go	478	478	reject	call to project test helper sha256SumForTest; the Sum256 inside it (line 483) is the asset (guide, project helpers)
+62	engine/pixel/transform_anthropic_test.go	482	482	reject	function declaration of a project helper; the Sum256 call is on line 483
+63	engine/pixel/transform_anthropic_test.go	483	483	asset	gt-0014
+64	engine/pixel/transform_gemini.go	1002	1002	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+65	engine/pixel/transform_gemini.go	1102	1102	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+66	engine/pixel/transform_openai.go	845	845	asset	gt-0015
+67	mcp/engine_tools.go	61	61	reject	string literal or test-table entry; no crypto call
+68	mcp/engine_tools.go	191	191	asset	gt-0016
+69	mcp/retrieve_verification_test.go	23	23	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+70	mcp/retrieve_verification_test.go	28	28	asset	gt-0017
+71	mcp/retrieve_verification_test.go	33	33	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+72	mcp/retrieve_verification_test.go	39	39	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+73	mem/store.go	751	751	asset	gt-0018
+74	proxy/cmd/caveman-proxy/learn_wire.go	72	72	reject	comment
+75	proxy/cmd/caveman-proxy/learn_wire.go	75	75	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+76	proxy/cmd/caveman-proxy/learn_wire.go	79	79	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+77	proxy/cmd/caveman-proxy/learn_wire.go	83	83	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+78	proxy/cmd/caveman-proxy/learn_wire.go	87	87	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+79	proxy/cmd/caveman-proxy/learn_wire_test.go	173	173	reject	function or method declaration; no crypto call
+80	proxy/cmd/caveman-proxy/learn_wire_test.go	183	183	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+81	proxy/cmd/caveman-proxy/learn_wire_test.go	186	186	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+82	proxy/cmd/caveman-proxy/learn_wire_test.go	189	189	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+83	proxy/cmd/caveman-proxy/learn_wire_test.go	197	197	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+84	proxy/cmd/caveman-proxy/learn_wire_test.go	200	200	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+85	proxy/cmd/caveman-proxy/learn_wire_test.go	201	201	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+86	proxy/cmd/caveman-proxy/main.go	237	237	reject	comment
+87	proxy/cmd/caveman-proxy/main.go	245	245	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+88	proxy/cmd/caveman-proxy/main.go	246	246	reject	call to project helper identity.NewServerTLS (guide, project helpers); its LoadX509KeyPair is annotated in identity/tls.go
+89	proxy/cmd/caveman-proxy/main.go	247	247	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+90	proxy/cmd/caveman-proxy/main.go	332	332	reject	stores a project object in a reloader map
+91	proxy/cmd/caveman-proxy/main.go	370	370	asset	gt-0019
+92	proxy/cmd/caveman-proxy/main.go	397	397	reject	string literal or test-table entry; no crypto call
+93	proxy/cmd/caveman-proxy/main.go	426	426	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+94	proxy/cmd/caveman-proxy/middleware_startup_test.go	52	52	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+95	proxy/internal/cloudlink/events.go	123	123	asset	gt-0020
+96	proxy/internal/cloudlink/events.go	324	324	asset	gt-0021
+97	proxy/internal/cloudlink/link.go	385	385	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+98	proxy/internal/cloudlink/link.go	397	397	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+99	proxy/internal/cloudlink/link.go	427	427	asset	gt-0022
+100	proxy/internal/cloudlink/link.go	639	639	asset	gt-0023
+101	proxy/internal/cloudlink/link_test.go	1483	1483	asset	gt-0024
+102	proxy/internal/cloudlink/link_test.go	1485	1485	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+103	proxy/internal/cloudlink/link_test.go	1498	1498	asset	gt-0025
+104	proxy/internal/cloudlink/link_test.go	1500	1500	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+105	proxy/internal/cloudlink/warm.go	32	32	reject	comment
+106	proxy/internal/cloudlink/warm.go	41	41	reject	TLSHandshakeTimeout field: configuration
+107	proxy/internal/config/config.go	97	97	reject	comment
+108	proxy/internal/config/config.go	98	98	reject	comment
+109	proxy/internal/config/config.go	100	100	reject	comment
+110	proxy/internal/config/config.go	107	107	reject	comment
+111	proxy/internal/config/config.go	114	114	reject	comment
+112	proxy/internal/config/config.go	115	115	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+113	proxy/internal/config/config.go	120	120	reject	type, constant, variable or struct-field declaration; no crypto call
+114	proxy/internal/config/config.go	125	125	reject	comment
+115	proxy/internal/config/config.go	127	127	reject	comment
+116	proxy/internal/config/config.go	130	130	reject	type, constant, variable or struct-field declaration; no crypto call
+117	proxy/internal/config/config.go	218	218	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+118	proxy/internal/config/config.go	219	219	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+119	proxy/internal/config/config.go	243	243	reject	type, constant, variable or struct-field declaration; no crypto call
+120	proxy/internal/config/config.go	249	249	reject	type, constant, variable or struct-field declaration; no crypto call
+121	proxy/internal/config/config.go	280	280	reject	comment
+122	proxy/internal/config/config.go	281	281	reject	function or method declaration; no crypto call
+123	proxy/internal/config/config.go	359	359	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+124	proxy/internal/config/config.go	376	376	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+125	proxy/internal/config/config.go	426	426	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+126	proxy/internal/config/config.go	432	432	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+127	proxy/internal/config/config.go	561	561	reject	type, constant, variable or struct-field declaration; no crypto call
+128	proxy/internal/config/config.go	575	575	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+129	proxy/internal/config/config.go	599	599	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+130	proxy/internal/config/config.go	600	600	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+131	proxy/internal/config/config.go	601	601	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+132	proxy/internal/config/config.go	609	609	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+133	proxy/internal/config/config_test.go	26	26	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+134	proxy/internal/config/config_test.go	715	715	asset	gt-0026,gt-0027
+135	proxy/internal/config/config_test.go	719	719	reject	x509.Certificate template literal, input to a certificate builder; not an asset
+136	proxy/internal/config/config_test.go	720	720	asset	gt-0028
+137	proxy/internal/config/middleware.go	43	43	reject	comment
+138	proxy/internal/config/middleware.go	44	44	reject	comment
+139	proxy/internal/config/middleware.go	45	45	reject	comment
+140	proxy/internal/config/middleware.go	47	47	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+141	proxy/internal/config/middleware.go	48	48	reject	type, constant, variable or struct-field declaration; no crypto call
+142	proxy/internal/config/middleware.go	105	105	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+143	proxy/internal/config/middleware.go	106	106	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+144	proxy/internal/config/middleware.go	109	109	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+145	proxy/internal/config/middleware_test.go	13	13	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+146	proxy/internal/config/middleware_test.go	20	20	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+147	proxy/internal/config/middleware_test.go	26	26	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+148	proxy/internal/config/middleware_test.go	32	32	reject	comment
+149	proxy/internal/config/middleware_test.go	33	33	reject	function or method declaration; no crypto call
+150	proxy/internal/config/middleware_test.go	35	35	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+151	proxy/internal/config/middleware_test.go	42	42	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+152	proxy/internal/config/middleware_test.go	43	43	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+153	proxy/internal/config/middleware_test.go	57	57	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+154	proxy/internal/config/middleware_test.go	58	58	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+155	proxy/internal/config/middleware_test.go	72	72	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+156	proxy/internal/config/middleware_test.go	73	73	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+157	proxy/internal/config/middleware_test.go	91	91	reject	comment
+158	proxy/internal/gateway/agent_evidence_test.go	21	21	reject	string literal or test-table entry; no crypto call
+159	proxy/internal/gateway/auth_fallback.go	12	12	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+160	proxy/internal/gateway/authmode_test.go	21	21	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+161	proxy/internal/gateway/breakpoint_plan_test.go	230	230	asset	gt-0029,gt-0030
+162	proxy/internal/gateway/cache_prefix_invariant_test.go	1303	1303	reject	function or method declaration; no crypto call
+163	proxy/internal/gateway/cache_prefix_invariant_test.go	1304	1304	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+164	proxy/internal/gateway/cache_prefix_invariant_test.go	1328	1328	reject	function or method declaration; no crypto call
+165	proxy/internal/gateway/cache_prefix_invariant_test.go	1329	1329	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+166	proxy/internal/gateway/cache_warm.go	528	528	asset	gt-0031
+167	proxy/internal/gateway/capture.go	23	23	reject	comment
+168	proxy/internal/gateway/capture.go	57	57	reject	comment
+169	proxy/internal/gateway/capture.go	271	271	asset	gt-0032
+170	proxy/internal/gateway/capture_test.go	60	60	asset	gt-0033
+171	proxy/internal/gateway/capture_test.go	62	62	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+172	proxy/internal/gateway/capture_test.go	201	201	asset	gt-0034
+173	proxy/internal/gateway/capture_test.go	227	227	asset	gt-0035
+174	proxy/internal/gateway/chatgpt.go	103	103	asset	gt-0036
+175	proxy/internal/gateway/chatgpt.go	402	402	asset	gt-0037
+176	proxy/internal/gateway/chatgpt_auto.go	315	315	asset	gt-0038
+177	proxy/internal/gateway/chatgpt_auto.go	316	316	asset	gt-0039
+178	proxy/internal/gateway/chatgpt_test.go	790	790	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+179	proxy/internal/gateway/chatgpt_test.go	1384	1384	reject	string literal or test-table entry; no crypto call
+180	proxy/internal/gateway/chatgpt_test.go	1510	1510	reject	function or method declaration; no crypto call
+181	proxy/internal/gateway/chatgpt_test.go	1511	1511	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+182	proxy/internal/gateway/compress_test.go	385	385	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+183	proxy/internal/gateway/compress_test.go	386	386	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+184	proxy/internal/gateway/compress_test.go	387	387	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+185	proxy/internal/gateway/hotpath_bench_test.go	196	196	reject	comment
+186	proxy/internal/gateway/hotpath_golden_test.go	31	31	asset	gt-0040
+187	proxy/internal/gateway/hotpath_golden_test.go	32	32	asset	gt-0041
+188	proxy/internal/gateway/hotpath_golden_test.go	39	39	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+189	proxy/internal/gateway/hotpath_golden_test.go	40	40	reject	hex encoding of a digest output computed on another line
+190	proxy/internal/gateway/hotpath_golden_test.go	60	60	reject	string literal or test-table entry; no crypto call
+191	proxy/internal/gateway/hotpath_golden_test.go	61	61	reject	string literal or test-table entry; no crypto call
+192	proxy/internal/gateway/hotpath_golden_test.go	62	62	reject	string literal or test-table entry; no crypto call
+193	proxy/internal/gateway/live_zone_test.go	86	86	asset	gt-0042
+194	proxy/internal/gateway/live_zone_test.go	203	203	asset	gt-0043,gt-0044
+195	proxy/internal/gateway/live_zone_test.go	329	329	asset	gt-0045
+196	proxy/internal/gateway/prefix_monitor.go	55	55	reject	comment
+197	proxy/internal/gateway/prefix_monitor.go	80	80	reject	comment
+198	proxy/internal/gateway/prefix_monitor.go	139	139	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+199	proxy/internal/gateway/prefix_monitor.go	202	202	reject	type, constant, variable or struct-field declaration; no crypto call
+200	proxy/internal/gateway/prefix_monitor.go	207	207	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+201	proxy/internal/gateway/prefix_monitor.go	208	208	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+202	proxy/internal/gateway/prefix_monitor.go	210	210	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+203	proxy/internal/gateway/prefix_monitor.go	247	247	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+204	proxy/internal/gateway/prefix_monitor.go	262	262	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+205	proxy/internal/gateway/prefix_monitor.go	269	269	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+206	proxy/internal/gateway/prefix_monitor.go	315	315	reject	function or method declaration; no crypto call
+207	proxy/internal/gateway/prefix_monitor.go	318	318	asset	gt-0046
+208	proxy/internal/gateway/prefix_monitor_test.go	297	297	reject	function or method declaration; no crypto call
+209	proxy/internal/gateway/prefix_monitor_test.go	298	298	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+210	proxy/internal/gateway/prefix_stability_payg_test.go	239	239	asset	gt-0047,gt-0048
+211	proxy/internal/gateway/prefix_stability_payg_test.go	380	380	asset	gt-0049,gt-0050
+212	proxy/internal/gateway/prefix_stability_test.go	217	217	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+213	proxy/internal/gateway/prefix_stability_test.go	223	223	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+214	proxy/internal/gateway/prefix_stability_test.go	224	224	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+215	proxy/internal/gateway/prefix_stability_test.go	363	363	asset	gt-0051,gt-0052
+216	proxy/internal/gateway/prefix_stability_test.go	465	465	asset	gt-0053,gt-0054
+217	proxy/internal/gateway/prefix_stability_test.go	478	478	asset	gt-0055,gt-0056
+218	proxy/internal/gateway/prefix_stability_test.go	512	512	asset	gt-0057,gt-0058
+219	proxy/internal/gateway/prefix_stability_test.go	623	623	asset	gt-0059
+220	proxy/internal/gateway/proxy.go	93	93	reject	comment
+221	proxy/internal/gateway/proxy.go	99	99	reject	comment
+222	proxy/internal/gateway/proxy.go	209	209	asset	gt-0060
+223	proxy/internal/gateway/proxy.go	249	249	asset	gt-0061
+224	proxy/internal/gateway/proxy.go	263	263	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+225	proxy/internal/gateway/proxy.go	323	323	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+226	proxy/internal/gateway/proxy.go	564	564	asset	gt-0062
+227	proxy/internal/gateway/proxy.go	615	615	asset	gt-0063
+228	proxy/internal/gateway/proxy.go	738	738	asset	gt-0064
+229	proxy/internal/gateway/proxy.go	779	779	asset	gt-0065
+230	proxy/internal/gateway/proxy.go	1138	1138	asset	gt-0066
+231	proxy/internal/gateway/proxy.go	1144	1144	asset	gt-0067
+232	proxy/internal/gateway/proxy.go	1145	1145	reject	hex encoding of a digest output computed on another line
+233	proxy/internal/gateway/proxy.go	1176	1176	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+234	proxy/internal/gateway/proxy.go	1179	1179	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+235	proxy/internal/gateway/proxy.go	1180	1180	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+236	proxy/internal/gateway/proxy.go	1269	1269	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+237	proxy/internal/gateway/proxy.go	1328	1328	reject	function or method declaration; no crypto call
+238	proxy/internal/gateway/proxy.go	1350	1350	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+239	proxy/internal/gateway/proxy.go	1351	1351	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+240	proxy/internal/gateway/proxy.go	1354	1354	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+241	proxy/internal/gateway/proxy.go	1359	1359	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+242	proxy/internal/gateway/proxy.go	1870	1870	asset	gt-0068
+243	proxy/internal/gateway/raw_pin.go	61	61	reject	type, constant, variable or struct-field declaration; no crypto call
+244	proxy/internal/gateway/raw_pin.go	65	65	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+245	proxy/internal/gateway/raw_pin.go	73	73	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+246	proxy/internal/gateway/raw_pin.go	77	77	reject	function or method declaration; no crypto call
+247	proxy/internal/gateway/raw_pin.go	78	78	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+248	proxy/internal/gateway/raw_pin.go	158	158	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+249	proxy/internal/gateway/raw_pin.go	161	161	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+250	proxy/internal/gateway/raw_pin.go	163	163	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+251	proxy/internal/gateway/raw_pin.go	185	185	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+252	proxy/internal/gateway/raw_pin.go	205	205	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+253	proxy/internal/gateway/raw_pin.go	211	211	reject	function or method declaration; no crypto call
+254	proxy/internal/gateway/raw_pin.go	241	241	reject	comment
+255	proxy/internal/gateway/raw_pin.go	243	243	reject	function or method declaration; no crypto call
+256	proxy/internal/gateway/raw_pin.go	249	249	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+257	proxy/internal/gateway/raw_pin.go	253	253	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+258	proxy/internal/gateway/raw_pin.go	255	255	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+259	proxy/internal/gateway/raw_pin.go	263	263	reject	function or method declaration; no crypto call
+260	proxy/internal/gateway/raw_pin.go	266	266	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+261	proxy/internal/gateway/raw_pin.go	276	276	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+262	proxy/internal/gateway/raw_pin.go	277	277	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+263	proxy/internal/gateway/raw_pin.go	278	278	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+264	proxy/internal/gateway/raw_pin.go	285	285	reject	function or method declaration; no crypto call
+265	proxy/internal/gateway/raw_pin.go	287	287	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+266	proxy/internal/gateway/raw_pin.go	288	288	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+267	proxy/internal/gateway/raw_pin.go	291	291	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+268	proxy/internal/gateway/raw_pin.go	294	294	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+269	proxy/internal/gateway/raw_pin.go	355	355	reject	comment
+270	proxy/internal/gateway/raw_pin.go	356	356	reject	comment
+271	proxy/internal/gateway/raw_pin.go	357	357	reject	function or method declaration; no crypto call
+272	proxy/internal/gateway/raw_pin.go	358	358	asset	gt-0069
+273	proxy/internal/gateway/raw_pin.go	367	367	reject	comment
+274	proxy/internal/gateway/raw_pin.go	368	368	reject	comment
+275	proxy/internal/gateway/raw_pin.go	369	369	reject	type, constant, variable or struct-field declaration; no crypto call
+276	proxy/internal/gateway/raw_pin.go	375	375	reject	function or method declaration; no crypto call
+277	proxy/internal/gateway/raw_pin.go	376	376	asset	gt-0070
+278	proxy/internal/gateway/raw_pin.go	379	379	reject	function or method declaration; no crypto call
+279	proxy/internal/gateway/route.go	657	657	asset	gt-0071,gt-0072
+280	proxy/internal/gateway/route.go	1185	1185	asset	gt-0073
+281	proxy/internal/gateway/route.go	1390	1390	reject	comment
+282	proxy/internal/gateway/route.go	1638	1638	reject	type, constant, variable or struct-field declaration; no crypto call
+283	proxy/internal/gateway/route_cache.go	291	291	asset	gt-0074
+284	proxy/internal/gateway/route_effort_test.go	1313	1313	reject	comment
+285	proxy/internal/gateway/route_pool.go	59	59	asset	gt-0075
+286	proxy/internal/gateway/route_pool.go	88	88	reject	comment
+287	proxy/internal/gateway/route_pool.go	237	237	reject	comment
+288	proxy/internal/gateway/route_pool_test.go	334	334	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+289	proxy/internal/gateway/route_pool_test.go	493	493	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+290	proxy/internal/gateway/route_pool_test.go	580	580	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+291	proxy/internal/gateway/server.go	586	586	reject	comment
+292	proxy/internal/gateway/server.go	759	759	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+293	proxy/internal/gateway/server_test.go	289	289	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+294	proxy/internal/gateway/stats_accounting.go	18	18	reject	type, constant, variable or struct-field declaration; no crypto call
+295	proxy/internal/gateway/stats_accounting_test.go	381	381	asset	gt-0076,gt-0077
+296	proxy/internal/gateway/subscription_live_zone_test.go	120	120	asset	gt-0078,gt-0079
+297	proxy/internal/gateway/subscription_live_zone_test.go	144	144	asset	gt-0080,gt-0081
+298	proxy/internal/gateway/subscription_live_zone_test.go	180	180	asset	gt-0082,gt-0083
+299	proxy/internal/gateway/subscription_live_zone_test.go	302	302	asset	gt-0084,gt-0085
+300	proxy/internal/gateway/subscription_live_zone_test.go	417	417	asset	gt-0086,gt-0087
+301	proxy/internal/gateway/subscription_live_zone_test.go	492	492	asset	gt-0088,gt-0089
+302	proxy/internal/gateway/toolschema_strip_test.go	121	121	asset	gt-0090,gt-0091
+303	proxy/internal/gateway/toolschema_strip_test.go	253	253	asset	gt-0092,gt-0093
+304	proxy/internal/gateway/toolschema_strip_test.go	329	329	asset	gt-0094,gt-0095
+305	proxy/internal/gateway/toolschema_strip_test.go	356	356	asset	gt-0096,gt-0097
+306	proxy/internal/gateway/toolschema_strip_test.go	385	385	asset	gt-0098,gt-0099
+307	proxy/internal/identity/identity.go	6	6	reject	comment
+308	proxy/internal/identity/identity.go	9	9	reject	comment
+309	proxy/internal/identity/identity.go	10	10	reject	comment
+310	proxy/internal/identity/identity.go	16	16	reject	comment
+311	proxy/internal/identity/identity.go	20	20	reject	comment
+312	proxy/internal/identity/identity.go	137	137	reject	comment
+313	proxy/internal/identity/identity.go	212	212	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+314	proxy/internal/identity/identity.go	220	220	asset	gt-0100
+315	proxy/internal/identity/identity.go	225	225	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+316	proxy/internal/identity/identity.go	234	234	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+317	proxy/internal/identity/identity.go	237	237	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+318	proxy/internal/identity/identity.go	240	240	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+319	proxy/internal/identity/identity.go	242	242	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+320	proxy/internal/identity/identity.go	247	247	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+321	proxy/internal/identity/identity.go	248	248	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+322	proxy/internal/identity/identity.go	250	250	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+323	proxy/internal/identity/identity.go	259	259	reject	function or method declaration; no crypto call
+324	proxy/internal/identity/identity.go	260	260	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+325	proxy/internal/identity/identity.go	261	261	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+326	proxy/internal/identity/identity.go	265	265	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+327	proxy/internal/identity/identity.go	276	276	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+328	proxy/internal/identity/identity.go	311	311	reject	comment
+329	proxy/internal/identity/identity.go	331	331	reject	comment
+330	proxy/internal/identity/identity.go	332	332	reject	comment
+331	proxy/internal/identity/identity.go	333	333	reject	comment
+332	proxy/internal/identity/identity.go	395	395	reject	sha256.Size constant, no call
+333	proxy/internal/identity/identity.go	510	510	reject	comment
+334	proxy/internal/identity/identity.go	541	541	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+335	proxy/internal/identity/identity_test.go	19	19	asset	gt-0101
+336	proxy/internal/identity/oidc.go	25	25	reject	comment
+337	proxy/internal/identity/oidc.go	31	31	reject	comment
+338	proxy/internal/identity/oidc.go	32	32	reject	comment
+339	proxy/internal/identity/oidc.go	49	49	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+340	proxy/internal/identity/oidc.go	63	63	reject	type, constant, variable or struct-field declaration; no crypto call
+341	proxy/internal/identity/oidc.go	70	70	reject	type, constant, variable or struct-field declaration; no crypto call
+342	proxy/internal/identity/oidc.go	72	72	reject	type, constant, variable or struct-field declaration; no crypto call
+343	proxy/internal/identity/oidc.go	117	117	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+344	proxy/internal/identity/oidc.go	140	140	reject	function or method declaration; no crypto call
+345	proxy/internal/identity/oidc.go	157	157	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+346	proxy/internal/identity/oidc.go	162	162	reject	type, constant, variable or struct-field declaration; no crypto call
+347	proxy/internal/identity/oidc.go	164	164	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+348	proxy/internal/identity/oidc.go	171	171	reject	rsa.PublicKey composite literal assembling a JWK key from decoded numbers; no parse or crypto call (judgement call)
+349	proxy/internal/identity/oidc.go	178	178	asset	gt-0102
+350	proxy/internal/identity/oidc.go	182	182	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+351	proxy/internal/identity/oidc.go	199	199	reject	function or method declaration; no crypto call
+352	proxy/internal/identity/oidc.go	220	220	reject	function or method declaration; no crypto call
+353	proxy/internal/identity/oidc.go	222	222	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+354	proxy/internal/identity/oidc.go	246	246	asset	gt-0103
+355	proxy/internal/identity/oidc.go	248	248	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+356	proxy/internal/identity/oidc.go	249	249	asset	gt-0104
+357	proxy/internal/identity/oidc.go	250	250	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+358	proxy/internal/identity/oidc.go	251	251	reject	comment
+359	proxy/internal/identity/oidc.go	252	252	asset	gt-0105
+360	proxy/internal/identity/oidc_test.go	51	51	reject	builds a JWK map from a key via project helpers; manual encoding, no library crypto call
+361	proxy/internal/identity/oidc_test.go	52	52	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+362	proxy/internal/identity/oidc_test.go	55	55	reject	builds a JWK map from a key via project helpers; manual encoding, no library crypto call
+363	proxy/internal/identity/oidc_test.go	60	60	reject	comment
+364	proxy/internal/identity/oidc_test.go	61	61	reject	comment
+365	proxy/internal/identity/oidc_test.go	62	62	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+366	proxy/internal/identity/oidc_test.go	67	67	asset	gt-0106
+367	proxy/internal/identity/oidc_test.go	70	70	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+368	proxy/internal/identity/oidc_test.go	71	71	asset	gt-0107
+369	proxy/internal/identity/oidc_test.go	72	72	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+370	proxy/internal/identity/oidc_test.go	73	73	asset	gt-0108
+371	proxy/internal/identity/oidc_test.go	79	79	asset	gt-0109
+372	proxy/internal/identity/oidc_test.go	102	102	asset	gt-0110,gt-0111
+373	proxy/internal/identity/oidc_test.go	103	103	asset	gt-0112,gt-0113
+374	proxy/internal/identity/oidc_test.go	109	109	reject	comment
+375	proxy/internal/identity/oidc_test.go	124	124	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+376	proxy/internal/identity/oidc_test.go	125	125	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+377	proxy/internal/identity/oidc_test.go	126	126	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+378	proxy/internal/identity/oidc_test.go	127	127	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+379	proxy/internal/identity/oidc_test.go	129	129	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+380	proxy/internal/identity/oidc_test.go	131	131	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+381	proxy/internal/identity/oidc_test.go	144	144	asset	gt-0114,gt-0115
+382	proxy/internal/identity/oidc_test.go	145	145	asset	gt-0116,gt-0117
+383	proxy/internal/identity/oidc_test.go	146	146	asset	gt-0118,gt-0119
+384	proxy/internal/identity/oidc_test.go	166	166	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+385	proxy/internal/identity/oidc_test.go	170	170	asset	gt-0120
+386	proxy/internal/identity/oidc_test.go	174	174	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+387	proxy/internal/identity/oidc_test.go	176	176	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+388	proxy/internal/identity/oidc_test.go	177	177	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+389	proxy/internal/identity/oidc_test.go	178	178	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+390	proxy/internal/identity/oidc_test.go	179	179	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+391	proxy/internal/identity/oidc_test.go	180	180	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+392	proxy/internal/identity/oidc_test.go	181	181	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+393	proxy/internal/identity/oidc_test.go	182	182	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+394	proxy/internal/identity/oidc_test.go	183	183	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+395	proxy/internal/identity/oidc_test.go	184	184	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+396	proxy/internal/identity/oidc_test.go	185	185	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+397	proxy/internal/identity/oidc_test.go	186	186	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+398	proxy/internal/identity/oidc_test.go	187	187	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+399	proxy/internal/identity/oidc_test.go	188	188	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+400	proxy/internal/identity/oidc_test.go	189	189	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+401	proxy/internal/identity/oidc_test.go	190	190	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+402	proxy/internal/identity/oidc_test.go	191	191	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+403	proxy/internal/identity/oidc_test.go	192	192	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+404	proxy/internal/identity/oidc_test.go	193	193	reject	string literal or test-table entry; no crypto call
+405	proxy/internal/identity/oidc_test.go	200	200	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+406	proxy/internal/identity/oidc_test.go	203	203	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+407	proxy/internal/identity/oidc_test.go	214	214	asset	gt-0121,gt-0122
+408	proxy/internal/identity/oidc_test.go	215	215	asset	gt-0123,gt-0124
+409	proxy/internal/identity/oidc_test.go	230	230	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+410	proxy/internal/identity/oidc_test.go	236	236	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+411	proxy/internal/identity/oidc_test.go	253	253	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+412	proxy/internal/identity/oidc_test.go	259	259	asset	gt-0125,gt-0126
+413	proxy/internal/identity/oidc_test.go	260	260	asset	gt-0127,gt-0128
+414	proxy/internal/identity/oidc_test.go	264	264	reject	builds a JWK map from a key via project helpers; manual encoding, no library crypto call
+415	proxy/internal/identity/oidc_test.go	265	265	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+416	proxy/internal/identity/oidc_test.go	266	266	reject	builds a JWK map from a key via project helpers; manual encoding, no library crypto call
+417	proxy/internal/identity/oidc_test.go	271	271	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+418	proxy/internal/identity/oidc_test.go	272	272	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+419	proxy/internal/identity/oidc_test.go	279	279	reject	string literal or test-table entry; no crypto call
+420	proxy/internal/identity/oidc_test.go	293	293	asset	gt-0129,gt-0130
+421	proxy/internal/identity/oidc_test.go	313	313	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+422	proxy/internal/identity/oidc_test.go	314	314	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+423	proxy/internal/identity/oidc_test.go	345	345	asset	gt-0131,gt-0132
+424	proxy/internal/identity/oidc_test.go	362	362	reject	call to project test helper sign() (guide, project helpers); its SignPKCS1v15/ecdsa.Sign/hmac.New are annotated at oidc_test.go:71-79
+425	proxy/internal/identity/tls.go	14	14	reject	comment
+426	proxy/internal/identity/tls.go	21	21	reject	struct field of type atomic.Pointer[tls.Config]
+427	proxy/internal/identity/tls.go	30	30	reject	type, constant, variable or struct-field declaration; no crypto call
+428	proxy/internal/identity/tls.go	31	31	reject	type, constant, variable or struct-field declaration; no crypto call
+429	proxy/internal/identity/tls.go	39	39	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+430	proxy/internal/identity/tls.go	48	48	reject	comment
+431	proxy/internal/identity/tls.go	49	49	reject	comment
+432	proxy/internal/identity/tls.go	50	50	reject	method signature returning *tls.Config; the literal on lines 51-53 is a separate item
+433	proxy/internal/identity/tls.go	51	51	asset	gt-0133
+434	proxy/internal/identity/tls.go	63	63	asset	gt-0134,gt-0135
+435	proxy/internal/identity/tls.go	65	65	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+436	proxy/internal/identity/tls.go	67	67	asset	gt-0136
+437	proxy/internal/identity/tls.go	68	68	asset	gt-0136
+438	proxy/internal/identity/tls.go	69	69	asset	gt-0136
+439	proxy/internal/identity/tls.go	70	70	asset	gt-0136
+440	proxy/internal/identity/tls.go	71	71	asset	gt-0136
+441	proxy/internal/identity/tls.go	72	72	asset	gt-0136
+442	proxy/internal/identity/tls.go	73	73	asset	gt-0136
+443	proxy/internal/identity/tls.go	82	82	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+444	proxy/internal/identity/tls.go	92	92	reject	assigning ClientCAs/ClientAuth on an existing tls.Config: configuration of a context annotated where created
+445	proxy/internal/identity/tls.go	104	104	reject	loadClientCA's clientCA literal with an empty x509.NewCertPool; parses nothing (the ParseCertificate at line 113 is the asset)
+446	proxy/internal/identity/tls.go	113	113	asset	gt-0137
+447	proxy/internal/identity/tls.go	117	117	reject	CertPool.AddCert of a parsed certificate: configuration
+448	proxy/internal/identity/tls.go	121	121	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+449	proxy/internal/identity/tls.go	128	128	reject	method signature taking *tls.ConnectionState
+450	proxy/internal/identity/tls.go	138	138	reject	x509.VerifyOptions literal (roots, empty intermediates pool, key usages): verification options, not an operation (the Verify call at line 142 is the asset)
+451	proxy/internal/identity/tls.go	140	140	reject	CertPool.AddCert of an intermediate: configuration
+452	proxy/internal/identity/tls.go	142	142	asset	gt-0138
+453	proxy/internal/identity/tls_test.go	28	28	reject	type, constant, variable or struct-field declaration; no crypto call
+454	proxy/internal/identity/tls_test.go	29	29	reject	type, constant, variable or struct-field declaration; no crypto call
+455	proxy/internal/identity/tls_test.go	39	39	asset	gt-0139,gt-0140
+456	proxy/internal/identity/tls_test.go	40	40	reject	x509.Certificate template literal, input to a certificate builder; not an asset
+457	proxy/internal/identity/tls_test.go	41	41	reject	continuation of an x509.Certificate template literal; not an asset
+458	proxy/internal/identity/tls_test.go	42	42	asset	gt-0141
+459	proxy/internal/identity/tls_test.go	46	46	asset	gt-0142
+460	proxy/internal/identity/tls_test.go	51	51	reject	function or method declaration; no crypto call
+461	proxy/internal/identity/tls_test.go	53	53	asset	gt-0143,gt-0144
+462	proxy/internal/identity/tls_test.go	55	55	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+463	proxy/internal/identity/tls_test.go	56	56	asset	gt-0145
+464	proxy/internal/identity/tls_test.go	60	60	asset	gt-0146
+465	proxy/internal/identity/tls_test.go	67	67	reject	call to project test helper that generates a key and a certificate (guide, project helpers); assets are inside the helper
+466	proxy/internal/identity/tls_test.go	99	99	asset	gt-0147
+467	proxy/internal/identity/tls_test.go	101	101	reject	x509.NewCertPool creates an empty pool; parses nothing
+468	proxy/internal/identity/tls_test.go	103	103	reject	function or method declaration; no crypto call
+469	proxy/internal/identity/tls_test.go	105	105	asset	gt-0148
+470	proxy/internal/identity/tls_test.go	107	107	reject	call to project test helper that generates a key and a certificate (guide, project helpers); assets are inside the helper
+471	proxy/internal/identity/tls_test.go	108	108	asset	gt-0149,gt-0150
+472	proxy/internal/identity/tls_test.go	114	114	reject	GetClientCertificate callback returning an already-parsed key pair: configuration
+473	proxy/internal/identity/tls_test.go	116	116	reject	http.Client whose transport uses an existing tls.Config: configuration
+474	proxy/internal/identity/tls_test.go	133	133	reject	type, constant, variable or struct-field declaration; no crypto call
+475	proxy/internal/identity/tls_test.go	137	137	reject	x509.Certificate template literal, input to a certificate builder; not an asset
+476	proxy/internal/identity/tls_test.go	138	138	reject	x509.Certificate template literal, input to a certificate builder; not an asset
+477	proxy/internal/identity/tls_test.go	140	140	reject	x509.Certificate template literal, input to a certificate builder; not an asset
+478	proxy/internal/identity/tls_test.go	143	143	reject	x509.Certificate template literal, input to a certificate builder; not an asset
+479	proxy/internal/identity/tls_test.go	144	144	reject	x509.Certificate template literal, input to a certificate builder; not an asset
+480	proxy/internal/identity/tls_test.go	146	146	reject	string literal or test-table entry; no crypto call
+481	proxy/internal/identity/tls_test.go	147	147	reject	x509.Certificate template literal, input to a certificate builder; not an asset
+482	proxy/internal/identity/tls_test.go	148	148	reject	x509.Certificate template literal, input to a certificate builder; not an asset
+483	proxy/internal/identity/tls_test.go	155	155	reject	x509.Certificate template literal, input to a certificate builder; not an asset
+484	proxy/internal/identity/tls_test.go	158	158	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+485	proxy/internal/identity/tls_test.go	159	159	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+486	proxy/internal/identity/tls_test.go	163	163	reject	call to project test helper that generates a key and a certificate (guide, project helpers); assets are inside the helper
+487	proxy/internal/identity/tls_test.go	171	171	asset	gt-0151,gt-0152
+488	proxy/internal/identity/tls_test.go	184	184	asset	gt-0153,gt-0154
+489	proxy/internal/identity/tls_test.go	193	193	reject	call to project test helper that generates a key and a certificate (guide, project helpers); assets are inside the helper
+490	proxy/internal/identity/tls_test.go	212	212	reject	call to project test helper that generates a key and a certificate (guide, project helpers); assets are inside the helper
+491	proxy/internal/identity/tls_test.go	243	243	asset	gt-0155
+492	proxy/internal/identity/tls_test.go	245	245	reject	call to project test helper that generates a key and a certificate (guide, project helpers); assets are inside the helper
+493	proxy/internal/identity/tls_test.go	246	246	asset	gt-0156,gt-0157
+494	proxy/internal/identity/tls_test.go	250	250	reject	x509.NewCertPool creates an empty pool; parses nothing
+495	proxy/internal/identity/tls_test.go	252	252	asset	gt-0158
+496	proxy/internal/identity/tls_test.go	253	253	asset	gt-0158
+497	proxy/internal/identity/tls_test.go	298	298	reject	call to project test helper that generates a key and a certificate (guide, project helpers); assets are inside the helper
+498	proxy/internal/identity/tls_test.go	300	300	asset	gt-0159
+499	proxy/internal/identity/tls_test.go	305	305	reject	tls.ConnectionState literal in a test request: no crypto operation
+500	proxy/internal/identity/tls_test.go	324	324	reject	comment
+501	proxy/internal/identity/tls_test.go	329	329	asset	gt-0160,gt-0161
+502	proxy/internal/identity/tls_test.go	330	330	reject	x509.Certificate template literal, input to a certificate builder; not an asset
+503	proxy/internal/identity/tls_test.go	331	331	reject	continuation of an x509.Certificate template literal; not an asset
+504	proxy/internal/identity/tls_test.go	332	332	asset	gt-0162
+505	proxy/internal/identity/tls_test.go	336	336	asset	gt-0163
+506	proxy/internal/identity/tls_test.go	341	341	reject	call to project test helper that generates a key and a certificate (guide, project helpers); assets are inside the helper
+507	proxy/internal/identity/tls_test.go	343	343	asset	gt-0164
+508	proxy/internal/identity/tls_test.go	347	347	reject	x509.NewCertPool creates an empty pool; parses nothing
+509	proxy/internal/identity/tls_test.go	349	349	asset	gt-0165
+510	proxy/internal/identity/tls_test.go	364	364	reject	tls.ConnectionState literal in a test request: no crypto operation
+511	proxy/internal/middleware/acceptance_test.go	68	68	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+512	proxy/internal/middleware/acceptance_test.go	145	145	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+513	proxy/internal/middleware/acceptance_test.go	147	147	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+514	proxy/internal/middleware/acceptance_test.go	150	150	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+515	proxy/internal/middleware/acceptance_test.go	183	183	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+516	proxy/internal/middleware/acceptance_test.go	208	208	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+517	proxy/internal/middleware/acceptance_test.go	209	209	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+518	proxy/internal/middleware/acceptance_test.go	215	215	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+519	proxy/internal/middleware/acceptance_test.go	363	363	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+520	proxy/internal/middleware/acceptance_test.go	364	364	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+521	proxy/internal/middleware/acceptance_test.go	494	494	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+522	proxy/internal/middleware/acceptance_test.go	565	565	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+523	proxy/internal/middleware/acceptance_test.go	585	585	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+524	proxy/internal/middleware/acceptance_test.go	588	588	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+525	proxy/internal/middleware/acceptance_test.go	652	652	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+526	proxy/internal/middleware/acceptance_test.go	653	653	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+527	proxy/internal/middleware/acceptance_test.go	665	665	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+528	proxy/internal/middleware/acceptance_test.go	688	688	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+529	proxy/internal/middleware/acceptance_test.go	810	810	asset	gt-0166
+530	proxy/internal/middleware/acceptance_test.go	827	827	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+531	proxy/internal/middleware/acceptance_test.go	832	832	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+532	proxy/internal/middleware/acceptance_test.go	865	865	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+533	proxy/internal/middleware/acceptance_test.go	897	897	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+534	proxy/internal/middleware/acceptance_test.go	898	898	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+535	proxy/internal/middleware/acceptance_test.go	902	902	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+536	proxy/internal/middleware/acceptance_test.go	1044	1044	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+537	proxy/internal/middleware/acceptance_test.go	1071	1071	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+538	proxy/internal/middleware/acceptance_test.go	1088	1088	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+539	proxy/internal/middleware/acceptance_test.go	1089	1089	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+540	proxy/internal/middleware/benchmark_test.go	41	41	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+541	proxy/internal/middleware/choices.go	23	23	reject	comment
+542	proxy/internal/middleware/choices.go	69	69	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+543	proxy/internal/middleware/choices.go	79	79	reject	comment
+544	proxy/internal/middleware/choices.go	81	81	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+545	proxy/internal/middleware/choices.go	112	112	asset	gt-0167
+546	proxy/internal/middleware/choices.go	124	124	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+547	proxy/internal/middleware/choices.go	127	127	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+548	proxy/internal/middleware/choices.go	135	135	reject	function or method declaration; no crypto call
+549	proxy/internal/middleware/choices.go	143	143	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+550	proxy/internal/middleware/choices.go	165	165	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+551	proxy/internal/middleware/choices.go	168	168	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+552	proxy/internal/middleware/counter.go	11	11	reject	comment
+553	proxy/internal/middleware/counter.go	31	31	asset	gt-0168
+554	proxy/internal/middleware/hardening_test.go	31	31	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+555	proxy/internal/middleware/hardening_test.go	32	32	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+556	proxy/internal/middleware/hardening_test.go	41	41	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+557	proxy/internal/middleware/hardening_test.go	48	48	asset	gt-0169
+558	proxy/internal/middleware/hardening_test.go	270	270	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+559	proxy/internal/middleware/hardening_test.go	302	302	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+560	proxy/internal/middleware/hardening_test.go	303	303	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+561	proxy/internal/middleware/hardening_test.go	418	418	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+562	proxy/internal/middleware/hardening_test.go	489	489	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+563	proxy/internal/middleware/hardening_test.go	498	498	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+564	proxy/internal/middleware/hardening_test.go	499	499	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+565	proxy/internal/middleware/hardening_test.go	509	509	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+566	proxy/internal/middleware/hardening_test.go	613	613	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+567	proxy/internal/middleware/hardening_test.go	690	690	reject	SQL text naming a digest column; no crypto call
+568	proxy/internal/middleware/hardening_test.go	691	691	reject	md5() inside a PostgreSQL SQL string generating filler bytes in the database; not a Go crypto call (judgement call)
+569	proxy/internal/middleware/hardening_test.go	694	694	reject	SQL text naming a digest column; no crypto call
+570	proxy/internal/middleware/hardening_test.go	847	847	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+571	proxy/internal/middleware/http.go	184	184	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+572	proxy/internal/middleware/http.go	192	192	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+573	proxy/internal/middleware/http.go	235	235	reject	comment
+574	proxy/internal/middleware/http.go	236	236	reject	function or method declaration; no crypto call
+575	proxy/internal/middleware/identity_test.go	45	45	asset	gt-0170
+576	proxy/internal/middleware/postgres_test.go	102	102	reject	SQL text naming a digest column; no crypto call
+577	proxy/internal/middleware/postgres_test.go	229	229	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+578	proxy/internal/middleware/postgres_test.go	260	260	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+579	proxy/internal/middleware/postgres_test.go	347	347	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+580	proxy/internal/middleware/postgres_test.go	349	349	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+581	proxy/internal/middleware/presence.go	64	64	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+582	proxy/internal/middleware/protocol.go	140	140	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+583	proxy/internal/middleware/protocol.go	148	148	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+584	proxy/internal/middleware/protocol.go	189	189	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+585	proxy/internal/middleware/protocol.go	228	228	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+586	proxy/internal/middleware/protocol_v11_test.go	436	436	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+587	proxy/internal/middleware/protocol_v11_test.go	502	502	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+588	proxy/internal/middleware/protocol_v11_test.go	522	522	asset	gt-0171
+589	proxy/internal/middleware/protocol_v11_test.go	575	575	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+590	proxy/internal/middleware/recovery.go	18	18	reject	comment
+591	proxy/internal/middleware/recovery.go	83	83	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+592	proxy/internal/middleware/recovery.go	224	224	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+593	proxy/internal/middleware/runtime.go	61	61	reject	comment
+594	proxy/internal/middleware/runtime.go	271	271	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+595	proxy/internal/middleware/runtime.go	282	282	asset	gt-0172
+596	proxy/internal/middleware/runtime.go	283	283	reject	function or method declaration; no crypto call
+597	proxy/internal/middleware/runtime.go	314	314	reject	function or method declaration; no crypto call
+598	proxy/internal/middleware/runtime.go	316	316	reject	comment
+599	proxy/internal/middleware/runtime.go	318	318	reject	function or method declaration; no crypto call
+600	proxy/internal/middleware/runtime.go	319	319	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+601	proxy/internal/middleware/runtime.go	323	323	reject	function or method declaration; no crypto call
+602	proxy/internal/middleware/runtime.go	334	334	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+603	proxy/internal/middleware/runtime.go	365	365	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+604	proxy/internal/middleware/runtime.go	371	371	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+605	proxy/internal/middleware/runtime.go	389	389	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+606	proxy/internal/middleware/runtime.go	402	402	reject	comment
+607	proxy/internal/middleware/runtime.go	404	404	reject	function or method declaration; no crypto call
+608	proxy/internal/middleware/runtime.go	405	405	reject	type, constant, variable or struct-field declaration; no crypto call
+609	proxy/internal/middleware/runtime.go	408	408	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+610	proxy/internal/middleware/runtime.go	411	411	reject	type, constant, variable or struct-field declaration; no crypto call
+611	proxy/internal/middleware/runtime.go	417	417	reject	function or method declaration; no crypto call
+612	proxy/internal/middleware/runtime.go	418	418	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+613	proxy/internal/middleware/runtime.go	447	447	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+614	proxy/internal/middleware/runtime.go	472	472	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+615	proxy/internal/middleware/runtime.go	473	473	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+616	proxy/internal/middleware/runtime.go	475	475	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+617	proxy/internal/middleware/runtime.go	478	478	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+618	proxy/internal/middleware/runtime.go	536	536	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+619	proxy/internal/middleware/runtime.go	539	539	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+620	proxy/internal/middleware/runtime.go	551	551	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+621	proxy/internal/middleware/runtime.go	598	598	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+622	proxy/internal/middleware/runtime.go	721	721	reject	function or method declaration; no crypto call
+623	proxy/internal/middleware/runtime.go	742	742	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+624	proxy/internal/middleware/runtime.go	764	764	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+625	proxy/internal/middleware/runtime_test.go	109	109	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+626	proxy/internal/middleware/runtime_test.go	110	110	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+627	proxy/internal/middleware/runtime_test.go	162	162	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+628	proxy/internal/middleware/runtime_test.go	291	291	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+629	proxy/internal/middleware/runtime_test.go	312	312	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+630	proxy/internal/middleware/runtime_test.go	324	324	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+631	proxy/internal/middleware/runtime_test.go	355	355	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+632	proxy/internal/middleware/runtime_test.go	478	478	reject	comment
+633	proxy/internal/middleware/runtime_test.go	493	493	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+634	proxy/internal/middleware/runtime_test.go	498	498	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+635	proxy/internal/middleware/runtime_test.go	499	499	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+636	proxy/internal/middleware/runtime_test.go	551	551	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+637	proxy/internal/middleware/runtime_test.go	565	565	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+638	proxy/internal/middleware/seal.go	16	16	reject	comment
+639	proxy/internal/middleware/seal.go	19	19	reject	comment
+640	proxy/internal/middleware/seal.go	20	20	reject	comment
+641	proxy/internal/middleware/seal.go	23	23	reject	comment
+642	proxy/internal/middleware/seal.go	24	24	reject	comment
+643	proxy/internal/middleware/seal.go	29	29	reject	comment
+644	proxy/internal/middleware/seal.go	32	32	reject	type, constant, variable or struct-field declaration; no crypto call
+645	proxy/internal/middleware/seal.go	40	40	reject	comment
+646	proxy/internal/middleware/seal.go	46	46	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+647	proxy/internal/middleware/seal.go	53	53	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+648	proxy/internal/middleware/seal.go	57	57	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+649	proxy/internal/middleware/seal.go	62	62	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+650	proxy/internal/middleware/seal.go	64	65	asset	gt-0173,gt-0174
+651	proxy/internal/middleware/seal.go	66	66	asset	gt-0175
+652	proxy/internal/middleware/seal.go	76	76	reject	function or method declaration; no crypto call
+653	proxy/internal/middleware/seal.go	78	78	reject	function or method declaration; no crypto call
+654	proxy/internal/middleware/seal.go	84	84	asset	gt-0176,gt-0177
+655	proxy/internal/middleware/seal.go	87	87	reject	aead.Seal is a follow-up on the AEAD object created at line 65
+656	proxy/internal/middleware/seal.go	98	98	reject	function or method declaration; no crypto call
+657	proxy/internal/middleware/seal.go	105	105	reject	type, constant, variable or struct-field declaration; no crypto call
+658	proxy/internal/middleware/seal.go	112	112	reject	aead.Open is a follow-up on the AEAD object created at line 65
+659	proxy/internal/middleware/validate.go	65	65	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+660	proxy/internal/middleware/validate.go	74	74	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+661	proxy/internal/nativehook/hook.go	190	190	asset	gt-0178
+662	proxy/internal/nativehook/hook.go	235	235	reject	follow-up Sum on a hash object created on another line
+663	proxy/internal/nativehook/hook.go	362	362	asset	gt-0179
+664	proxy/internal/nativehook/hook.go	363	363	reject	hex encoding of a digest output computed on another line
+665	proxy/internal/nativehook/hook.go	371	371	asset	gt-0180
+666	proxy/internal/nativehook/hook.go	379	379	reject	hex encoding of a digest output computed on another line
+667	proxy/internal/nativehook/hook_unix_test.go	65	65	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+668	proxy/internal/nativeruntime/marker.go	27	27	reject	comment
+669	proxy/internal/nativeruntime/marker.go	39	39	asset	gt-0181
+670	proxy/internal/nativeruntime/marker.go	86	86	reject	comment
+671	proxy/internal/nativeruntime/marker.go	110	110	reject	hmac.Equal is a constant-time comparison, not an asset
+672	proxy/internal/nativeruntime/marker.go	140	140	asset	gt-0182
+673	proxy/internal/nativeruntime/receipt.go	218	218	asset	gt-0183
+674	proxy/internal/nativeruntime/runtime.go	54	54	reject	type, constant, variable or struct-field declaration; no crypto call
+675	proxy/internal/nativeruntime/runtime.go	56	56	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+676	proxy/internal/nativeruntime/runtime.go	82	82	reject	type, constant, variable or struct-field declaration; no crypto call
+677	proxy/internal/nativeruntime/runtime.go	887	887	asset	gt-0184
+678	proxy/internal/nativeruntime/runtime.go	979	979	reject	type, constant, variable or struct-field declaration; no crypto call
+679	proxy/internal/nativeruntime/runtime.go	1431	1431	asset	gt-0185
+680	proxy/internal/nativeruntime/runtime.go	1432	1432	reject	hex encoding of a digest output computed on another line
+681	proxy/internal/nativeruntime/runtime.go	1474	1474	asset	gt-0186
+682	proxy/internal/nativeruntime/runtime_test.go	64	64	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+683	proxy/internal/nativeruntime/runtime_test.go	148	148	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+684	proxy/internal/nativeruntime/runtime_test.go	155	155	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+685	proxy/internal/nativeruntime/runtime_test.go	162	162	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+686	proxy/internal/nativeruntime/runtime_test.go	184	184	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+687	proxy/internal/nativeruntime/runtime_test.go	190	190	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+688	proxy/internal/nativeruntime/runtime_test.go	199	199	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+689	proxy/internal/nativeruntime/runtime_test.go	214	214	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+690	proxy/internal/nativeruntime/runtime_test.go	229	229	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+691	proxy/internal/nativeruntime/runtime_test.go	286	286	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+692	proxy/internal/nativeruntime/runtime_test.go	294	294	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+693	proxy/internal/nativeruntime/runtime_test.go	317	317	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+694	proxy/internal/nativeruntime/runtime_test.go	403	403	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+695	proxy/internal/nativeruntime/runtime_test.go	520	520	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+696	proxy/internal/nativeruntime/runtime_test.go	544	544	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+697	proxy/internal/nativeruntime/runtime_test.go	587	587	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+698	proxy/internal/nativeruntime/runtime_test.go	674	674	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+699	proxy/internal/nativeruntime/runtime_test.go	830	830	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+700	proxy/internal/nativeruntime/runtime_test.go	890	890	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+701	proxy/internal/nativeruntime/runtime_test.go	901	901	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+702	proxy/internal/nativeruntime/runtime_test.go	1033	1033	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+703	proxy/internal/nativeruntime/runtime_test.go	1183	1183	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+704	proxy/internal/nativeruntime/runtime_test.go	1309	1309	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+705	proxy/internal/nativeruntime/runtime_test.go	1318	1318	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+706	proxy/internal/nativeruntime/runtime_test.go	1425	1425	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+707	proxy/internal/nativeruntime/server_windows.go	29	29	asset	gt-0187
+708	proxy/internal/pool/chatgpt.go	99	99	asset	gt-0188
+709	proxy/internal/pool/chatgpt.go	152	152	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+710	proxy/internal/pool/chatgpt.go	260	260	reject	comment
+711	proxy/internal/pool/chatgpt.go	344	344	asset	gt-0189
+712	proxy/internal/pool/chatgpt.go	356	356	asset	gt-0190
+713	proxy/internal/pool/pool.go	118	118	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+714	proxy/internal/pool/pool.go	119	119	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+715	proxy/internal/repointel/index.go	795	795	asset	gt-0191
+716	proxy/internal/repointel/index.go	812	812	reject	follow-up Sum on a hash object created on another line
+717	proxy/internal/runstate/runstate.go	122	122	asset	gt-0192
+718	proxy/internal/runstate/runstate.go	125	125	asset	gt-0193
+719	proxy/internal/standalone/bedrock_chain_test.go	66	66	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+720	proxy/internal/standalone/bedrock_chain_test.go	97	97	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+721	proxy/internal/standalone/bedrock_chain_test.go	107	107	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+722	proxy/internal/standalone/golden_rows_test.go	152	152	reject	SQL text naming a digest column; no crypto call
+723	proxy/internal/standalone/middleware.go	16	16	reject	comment
+724	proxy/internal/standalone/middleware.go	21	21	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+725	proxy/internal/standalone/middleware.go	42	42	reject	comment
+726	proxy/internal/standalone/middleware.go	43	43	reject	call to project helper middleware.LoadKeyring (guide, project helpers); its AES-GCM is annotated in seal.go
+727	proxy/internal/standalone/middleware_test.go	59	59	asset	gt-0194
+728	proxy/internal/standalone/principal_sources_test.go	34	34	reject	comment
+729	proxy/internal/standalone/principal_sources_test.go	46	46	asset	gt-0195,gt-0196
+730	proxy/internal/standalone/principal_sources_test.go	47	47	reject	x509.Certificate template literal, input to a certificate builder; not an asset
+731	proxy/internal/standalone/principal_sources_test.go	48	48	reject	continuation of an x509.Certificate template literal; not an asset
+732	proxy/internal/standalone/principal_sources_test.go	49	49	asset	gt-0197
+733	proxy/internal/standalone/principal_sources_test.go	50	50	asset	gt-0198
+734	proxy/internal/standalone/principal_sources_test.go	51	51	reject	function or method declaration; no crypto call
+735	proxy/internal/standalone/principal_sources_test.go	52	52	asset	gt-0199,gt-0200
+736	proxy/internal/standalone/principal_sources_test.go	53	54	asset	gt-0201
+737	proxy/internal/standalone/principal_sources_test.go	58	58	asset	gt-0202
+738	proxy/internal/standalone/principal_sources_test.go	59	59	asset	gt-0203
+739	proxy/internal/standalone/principal_sources_test.go	62	62	reject	call to project test helper that generates a key and a certificate (guide, project helpers); assets are inside the helper
+740	proxy/internal/standalone/principal_sources_test.go	63	63	reject	call to project test helper that generates a key and a certificate (guide, project helpers); assets are inside the helper
+741	proxy/internal/standalone/principal_sources_test.go	71	81	asset	gt-0204,gt-0205,gt-0206,gt-0207,gt-0208,gt-0209
+742	proxy/internal/standalone/principal_sources_test.go	82	82	reject	base64 encoding of an ECDSA signature output (r||s); the sign call is line 81
+743	proxy/internal/standalone/principal_sources_test.go	85	85	reject	comment
+744	proxy/internal/standalone/principal_sources_test.go	87	87	asset	gt-0210
+745	proxy/internal/standalone/principal_sources_test.go	109	109	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+746	proxy/internal/standalone/principal_sources_test.go	111	111	reject	tls.ConnectionState literal in a test request: no crypto operation
+747	proxy/internal/standalone/principal_sources_test.go	141	141	asset	gt-0211
+748	proxy/internal/standalone/principal_sources_test.go	147	147	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+749	proxy/internal/standalone/principal_sources_test.go	148	148	reject	call to a project helper wrapping SHA-256 or a value derived from one (guide, project helpers); the library call is annotated inside the helper
+750	proxy/internal/standalone/principal_sources_test.go	159	159	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+751	proxy/internal/standalone/principal_sources_test.go	170	170	reject	comment
+752	proxy/internal/standalone/standalone.go	62	62	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+753	proxy/internal/standalone/standalone.go	151	151	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+754	proxy/internal/standalone/standalone.go	163	163	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+755	proxy/internal/standalone/standalone.go	172	172	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+756	proxy/internal/standalone/standalone.go	175	175	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+757	proxy/internal/standalone/standalone.go	189	189	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+758	proxy/internal/standalone/standalone.go	198	198	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+759	proxy/internal/standalone/standalone.go	231	231	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+760	proxy/internal/standalone/standalone.go	572	572	reject	comment
+761	proxy/internal/standalone/standalone.go	588	588	asset	gt-0212
+762	proxy/internal/standalone/standalone_test.go	64	64	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+763	proxy/internal/standalone/standalone_test.go	1156	1156	reject	string literal or test-table entry; no crypto call
+764	proxy/internal/standalone/standalone_test.go	1235	1235	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+765	proxy/internal/standalone/standalone_test.go	1247	1247	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+766	proxy/internal/standalone/standalone_test.go	1254	1254	asset	gt-0213
+767	proxy/internal/standalone/standalone_test.go	1273	1273	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+768	proxy/internal/standalone/standalone_test.go	1283	1283	reject	string literal or test-table entry; no crypto call
+769	proxy/internal/standalone/standalone_test.go	1354	1354	asset	gt-0214
+770	proxy/internal/standalone/standalone_test.go	1373	1373	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+771	proxy/internal/standalone/standalone_test.go	1765	1765	reject	comment
+772	proxy/internal/standalone/standalone_test.go	1804	1804	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+773	proxy/internal/store/cache_components.go	8	8	reject	comment
+774	proxy/internal/store/cache_components.go	21	21	reject	type, constant, variable or struct-field declaration; no crypto call
+775	proxy/internal/store/cache_components.go	30	30	reject	comment
+776	proxy/internal/store/cache_components.go	103	103	reject	SQL text naming a digest column; no crypto call
+777	proxy/internal/store/cache_components_test.go	16	16	reject	comment
+778	proxy/internal/store/cache_components_test.go	81	81	reject	comment
+779	proxy/internal/store/cache_components_test.go	84	84	reject	SQL text naming a digest column; no crypto call
+780	proxy/internal/store/cache_components_test.go	91	91	reject	type, constant, variable or struct-field declaration; no crypto call
+781	proxy/internal/store/cache_components_test.go	92	92	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+782	proxy/internal/store/cache_components_test.go	95	95	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+783	proxy/internal/store/cache_components_test.go	124	124	reject	comment
+784	proxy/internal/store/cache_components_test.go	130	130	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+785	proxy/internal/store/config_scan.go	422	422	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+786	proxy/internal/store/detect_cache_hygiene.go	144	144	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+787	proxy/internal/store/detect_config_trend.go	105	105	reject	comment
+788	proxy/internal/store/detect_procedures.go	142	142	asset	gt-0215
+789	proxy/internal/store/learn.go	21	21	asset	gt-0216
+790	proxy/internal/store/learn_attribution.go	127	127	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+791	proxy/internal/store/learn_attribution.go	151	151	asset	gt-0217
+792	proxy/internal/store/learn_attribution.go	153	153	reject	hex encoding of a digest output computed on another line
+793	proxy/internal/store/learn_attribution.go	171	171	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+794	proxy/internal/store/learn_attribution.go	183	183	asset	gt-0218
+795	proxy/internal/store/learn_attribution.go	184	184	reject	hex encoding of a digest output computed on another line
+796	proxy/internal/store/learn_attribution_test.go	28	28	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+797	proxy/internal/store/learn_digest.go	10	10	reject	comment
+798	proxy/internal/store/learn_digest.go	30	30	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+799	proxy/internal/store/learn_digest.go	32	32	reject	comment
+800	proxy/internal/store/learn_digest.go	33	33	reject	type, constant, variable or struct-field declaration; no crypto call
+801	proxy/internal/store/learn_digest.go	50	50	reject	comment
+802	proxy/internal/store/learn_digest.go	52	52	reject	type, constant, variable or struct-field declaration; no crypto call
+803	proxy/internal/store/learn_digest.go	65	65	reject	comment
+804	proxy/internal/store/learn_digest.go	67	67	reject	type, constant, variable or struct-field declaration; no crypto call
+805	proxy/internal/store/learn_digest.go	74	74	reject	type, constant, variable or struct-field declaration; no crypto call
+806	proxy/internal/store/learn_digest.go	75	75	reject	type, constant, variable or struct-field declaration; no crypto call
+807	proxy/internal/store/learn_digest.go	91	91	reject	comment
+808	proxy/internal/store/learn_digest.go	93	93	reject	function or method declaration; no crypto call
+809	proxy/internal/store/learn_digest.go	106	106	reject	comment
+810	proxy/internal/store/learn_digest.go	107	107	reject	function or method declaration; no crypto call
+811	proxy/internal/store/learn_digest.go	110	110	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+812	proxy/internal/store/learn_digest.go	112	112	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+813	proxy/internal/store/learn_digest.go	115	115	reject	function or method declaration; no crypto call
+814	proxy/internal/store/learn_digest.go	116	116	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+815	proxy/internal/store/learn_digest.go	117	117	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+816	proxy/internal/store/learn_digest.go	120	120	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+817	proxy/internal/store/learn_digest.go	123	123	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+818	proxy/internal/store/learn_digest.go	124	124	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+819	proxy/internal/store/learn_digest.go	126	126	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+820	proxy/internal/store/learn_digest.go	132	132	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+821	proxy/internal/store/learn_digest.go	135	135	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+822	proxy/internal/store/learn_digest.go	136	136	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+823	proxy/internal/store/learn_digest.go	144	144	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+824	proxy/internal/store/learn_digest.go	145	145	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+825	proxy/internal/store/learn_digest.go	146	146	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+826	proxy/internal/store/learn_digest.go	147	147	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+827	proxy/internal/store/learn_digest.go	148	148	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+828	proxy/internal/store/learn_digest.go	149	149	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+829	proxy/internal/store/learn_digest.go	150	150	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+830	proxy/internal/store/learn_digest.go	152	152	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+831	proxy/internal/store/learn_digest.go	158	158	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+832	proxy/internal/store/learn_digest.go	164	164	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+833	proxy/internal/store/learn_digest.go	169	169	reject	type, constant, variable or struct-field declaration; no crypto call
+834	proxy/internal/store/learn_digest.go	172	172	reject	comment
+835	proxy/internal/store/learn_digest.go	176	176	reject	comment
+836	proxy/internal/store/learn_digest.go	177	177	reject	regular expression literal
+837	proxy/internal/store/learn_digest.go	179	179	reject	function or method declaration; no crypto call
+838	proxy/internal/store/learn_digest.go	189	189	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+839	proxy/internal/store/learn_digest.go	196	196	reject	comment
+840	proxy/internal/store/learn_digest.go	197	197	reject	function or method declaration; no crypto call
+841	proxy/internal/store/learn_digest_test.go	9	9	reject	comment
+842	proxy/internal/store/learn_digest_test.go	10	10	reject	comment
+843	proxy/internal/store/learn_digest_test.go	12	12	reject	function or method declaration; no crypto call
+844	proxy/internal/store/learn_digest_test.go	53	53	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+845	proxy/internal/store/learn_digest_test.go	54	54	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+846	proxy/internal/store/learn_digest_test.go	66	66	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+847	proxy/internal/store/learn_digest_test.go	76	76	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+848	proxy/internal/store/learn_digest_test.go	81	81	reject	comment
+849	proxy/internal/store/learn_digest_test.go	84	84	reject	function or method declaration; no crypto call
+850	proxy/internal/store/learn_digest_test.go	85	85	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+851	proxy/internal/store/learn_digest_test.go	94	94	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+852	proxy/internal/store/learn_digest_test.go	101	101	reject	comment
+853	proxy/internal/store/learn_digest_test.go	103	103	reject	function or method declaration; no crypto call
+854	proxy/internal/store/learn_digest_test.go	104	104	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+855	proxy/internal/store/learn_digest_test.go	105	105	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+856	proxy/internal/store/learn_digest_test.go	106	106	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+857	proxy/internal/store/learn_digest_test.go	108	108	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+858	proxy/internal/store/learn_digest_test.go	110	110	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+859	proxy/internal/store/learn_digest_test.go	113	113	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+860	proxy/internal/store/learn_digest_test.go	117	117	reject	function or method declaration; no crypto call
+861	proxy/internal/store/learn_digest_test.go	126	126	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+862	proxy/internal/store/learn_digest_test.go	127	127	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+863	proxy/internal/store/learn_loops.go	83	83	asset	gt-0219
+864	proxy/internal/store/learn_portfolio.go	283	283	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+865	proxy/internal/store/learn_simulate.go	118	118	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+866	proxy/internal/store/learn_types.go	28	28	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+867	proxy/internal/store/learn_types.go	29	29	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+868	proxy/internal/store/learn_types.go	30	30	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+869	proxy/internal/store/learn_types.go	31	31	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+870	proxy/internal/store/middleware.go	29	29	reject	SQL text naming a digest column; no crypto call
+871	proxy/internal/store/middleware.go	33	33	reject	SQL text naming a digest column; no crypto call
+872	proxy/internal/store/middleware.go	38	38	reject	SQL text naming a digest column; no crypto call
+873	proxy/internal/store/middleware.go	72	72	reject	comment
+874	proxy/internal/store/middleware.go	84	84	reject	comment
+875	proxy/internal/store/middleware.go	264	264	reject	comment
+876	proxy/internal/store/middleware.go	274	274	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+877	proxy/internal/store/middleware.go	278	278	reject	comment
+878	proxy/internal/store/middleware.go	296	296	reject	comment
+879	proxy/internal/store/middleware.go	297	297	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+880	proxy/internal/store/middleware.go	301	301	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+881	proxy/internal/store/middleware.go	323	323	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+882	proxy/internal/store/middleware.go	324	324	reject	comment
+883	proxy/internal/store/middleware.go	325	325	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+884	proxy/internal/store/middleware.go	326	326	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+885	proxy/internal/store/middleware.go	382	382	reject	function or method declaration; no crypto call
+886	proxy/internal/store/middleware.go	383	383	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+887	proxy/internal/store/middleware.go	389	389	reject	function or method declaration; no crypto call
+888	proxy/internal/store/middleware.go	390	390	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+889	proxy/internal/store/middleware.go	395	395	reject	comment
+890	proxy/internal/store/middleware.go	396	396	reject	comment
+891	proxy/internal/store/middleware.go	400	400	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+892	proxy/internal/store/middleware.go	402	402	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+893	proxy/internal/store/middleware.go	404	404	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+894	proxy/internal/store/middleware.go	412	412	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+895	proxy/internal/store/middleware.go	415	415	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+896	proxy/internal/store/middleware.go	416	416	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+897	proxy/internal/store/middleware.go	608	608	reject	function or method declaration; no crypto call
+898	proxy/internal/store/middleware.go	609	609	reject	type, constant, variable or struct-field declaration; no crypto call
+899	proxy/internal/store/middleware.go	611	611	reject	SQL text naming a digest column; no crypto call
+900	proxy/internal/store/middleware.go	612	612	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+901	proxy/internal/store/middleware.go	620	620	reject	function or method declaration; no crypto call
+902	proxy/internal/store/middleware.go	622	622	reject	SQL text naming a digest column; no crypto call
+903	proxy/internal/store/middleware.go	623	623	reject	SQL text naming a digest column; no crypto call
+904	proxy/internal/store/middleware.go	625	625	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+905	proxy/internal/store/middleware.go	658	658	reject	comment
+906	proxy/internal/store/middleware.go	824	824	reject	SQL text naming a digest column; no crypto call
+907	proxy/internal/store/middleware.go	899	899	reject	function or method declaration; no crypto call
+908	proxy/internal/store/middleware.go	901	901	reject	SQL text naming a digest column; no crypto call
+909	proxy/internal/store/middleware.go	909	909	reject	SQL text naming a digest column; no crypto call
+910	proxy/internal/store/middleware.go	910	910	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+911	proxy/internal/store/middleware_originals.go	8	8	reject	comment
+912	proxy/internal/store/middleware_originals.go	16	16	reject	comment
+913	proxy/internal/store/middleware_originals.go	17	17	reject	function or method declaration; no crypto call
+914	proxy/internal/store/middleware_originals.go	19	19	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+915	proxy/internal/store/middleware_originals.go	21	21	reject	SQL text naming a digest column; no crypto call
+916	proxy/internal/store/middleware_originals.go	28	28	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+917	proxy/internal/store/middleware_originals.go	36	36	reject	SQL text naming a digest column; no crypto call
+918	proxy/internal/store/middleware_originals.go	37	37	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+919	proxy/internal/store/middleware_originals.go	50	50	reject	SQL text naming a digest column; no crypto call
+920	proxy/internal/store/middleware_originals.go	51	51	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+921	proxy/internal/store/middleware_originals.go	59	59	reject	comment
+922	proxy/internal/store/middleware_originals.go	60	60	reject	function or method declaration; no crypto call
+923	proxy/internal/store/middleware_originals.go	63	63	reject	SQL text naming a digest column; no crypto call
+924	proxy/internal/store/middleware_originals.go	64	64	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+925	proxy/internal/store/middleware_postgres.go	43	43	reject	comment
+926	proxy/internal/store/middleware_postgres.go	45	45	reject	comment
+927	proxy/internal/store/middleware_postgres.go	73	73	reject	SQL text naming a digest column; no crypto call
+928	proxy/internal/store/middleware_postgres.go	92	92	reject	SQL text naming a digest column; no crypto call
+929	proxy/internal/store/middleware_postgres.go	97	97	reject	SQL text naming a digest column; no crypto call
+930	proxy/internal/store/middleware_postgres.go	102	102	reject	SQL text naming a digest column; no crypto call
+931	proxy/internal/store/middleware_postgres.go	103	103	reject	SQL text naming a digest column; no crypto call
+932	proxy/internal/store/middleware_postgres.go	374	374	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+933	proxy/internal/store/middleware_postgres.go	376	376	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+934	proxy/internal/store/middleware_postgres.go	413	413	reject	function or method declaration; no crypto call
+935	proxy/internal/store/middleware_postgres.go	414	414	reject	type, constant, variable or struct-field declaration; no crypto call
+936	proxy/internal/store/middleware_postgres.go	416	416	reject	SQL text naming a digest column; no crypto call
+937	proxy/internal/store/middleware_postgres.go	417	417	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+938	proxy/internal/store/middleware_postgres.go	423	423	reject	function or method declaration; no crypto call
+939	proxy/internal/store/middleware_postgres.go	425	425	reject	SQL text naming a digest column; no crypto call
+940	proxy/internal/store/middleware_postgres.go	426	426	reject	SQL text naming a digest column; no crypto call
+941	proxy/internal/store/middleware_postgres.go	428	428	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+942	proxy/internal/store/middleware_postgres.go	516	516	reject	SQL text naming a digest column; no crypto call
+943	proxy/internal/store/middleware_postgres.go	517	517	reject	SQL text naming a digest column; no crypto call
+944	proxy/internal/store/middleware_postgres.go	580	580	reject	SQL text naming a digest column; no crypto call
+945	proxy/internal/store/middleware_postgres.go	622	622	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+946	proxy/internal/store/middleware_postgres.go	670	670	reject	function or method declaration; no crypto call
+947	proxy/internal/store/middleware_postgres.go	675	675	reject	SQL text naming a digest column; no crypto call
+948	proxy/internal/store/middleware_postgres.go	683	683	reject	SQL text naming a digest column; no crypto call
+949	proxy/internal/store/middleware_postgres.go	684	684	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+950	proxy/internal/store/middleware_postgres.go	690	690	reject	function or method declaration; no crypto call
+951	proxy/internal/store/middleware_postgres.go	692	692	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+952	proxy/internal/store/middleware_postgres.go	698	698	reject	SQL text naming a digest column; no crypto call
+953	proxy/internal/store/middleware_postgres.go	704	704	reject	type, constant, variable or struct-field declaration; no crypto call
+954	proxy/internal/store/middleware_postgres.go	706	706	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+955	proxy/internal/store/middleware_postgres.go	709	709	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+956	proxy/internal/store/middleware_postgres.go	716	716	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+957	proxy/internal/store/middleware_postgres.go	717	717	reject	SQL text naming a digest column; no crypto call
+958	proxy/internal/store/middleware_postgres.go	718	718	reject	SQL text naming a digest column; no crypto call
+959	proxy/internal/store/middleware_postgres.go	725	725	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+960	proxy/internal/store/middleware_postgres.go	727	727	reject	SQL text naming a digest column; no crypto call
+961	proxy/internal/store/middleware_postgres.go	731	731	reject	function or method declaration; no crypto call
+962	proxy/internal/store/middleware_postgres.go	733	733	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+963	proxy/internal/store/middleware_postgres.go	735	735	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+964	proxy/internal/store/middleware_postgres.go	738	738	reject	function or method declaration; no crypto call
+965	proxy/internal/store/middleware_postgres.go	741	741	reject	SQL text naming a digest column; no crypto call
+966	proxy/internal/store/middleware_postgres.go	742	742	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+967	proxy/internal/store/middleware_test.go	116	116	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+968	proxy/internal/store/middleware_test.go	193	193	reject	SQL text naming a digest column; no crypto call
+969	proxy/internal/store/middleware_test.go	194	194	reject	SQL text naming a digest column; no crypto call
+970	proxy/internal/store/middleware_test.go	244	244	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+971	proxy/internal/store/middleware_test.go	302	302	reject	SQL text naming a digest column; no crypto call
+972	proxy/internal/store/middleware_test.go	303	303	reject	SQL text naming a digest column; no crypto call
+973	proxy/internal/store/middleware_test.go	435	435	reject	SQL text naming a digest column; no crypto call
+974	proxy/internal/store/middleware_test.go	542	542	reject	SQL text naming a digest column; no crypto call
+975	proxy/internal/store/middleware_test.go	543	543	reject	SQL text naming a digest column; no crypto call
+976	proxy/internal/store/middleware_test.go	544	544	reject	SQL text naming a digest column; no crypto call
+977	proxy/internal/store/middleware_test.go	554	554	reject	SQL text naming a digest column; no crypto call
+978	proxy/internal/store/middleware_test.go	592	592	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+979	proxy/internal/store/middleware_test.go	622	622	reject	SQL text naming a digest column; no crypto call
+980	proxy/internal/store/middleware_test.go	623	623	reject	function or method declaration; no crypto call
+981	proxy/internal/store/middleware_test.go	626	626	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+982	proxy/internal/store/middleware_test.go	661	661	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+983	proxy/internal/store/middleware_test.go	682	682	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+984	proxy/internal/store/middleware_test.go	686	686	reject	SQL text naming a digest column; no crypto call
+985	proxy/internal/store/middleware_test.go	687	687	reject	SQL text naming a digest column; no crypto call
+986	proxy/internal/store/middleware_test.go	695	695	reject	SQL text naming a digest column; no crypto call
+987	proxy/internal/store/middleware_test.go	721	721	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+988	proxy/internal/store/middleware_test.go	722	722	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+989	proxy/internal/store/middleware_test.go	792	792	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+990	proxy/internal/store/middleware_test.go	877	877	reject	function or method declaration; no crypto call
+991	proxy/internal/store/middleware_test.go	879	879	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+992	proxy/internal/store/middleware_test.go	891	891	reject	SQL text naming a digest column; no crypto call
+993	proxy/internal/store/middleware_test.go	976	976	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+994	proxy/internal/store/middleware_test.go	978	978	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+995	proxy/internal/store/middleware_test.go	980	980	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+996	proxy/internal/store/middleware_test.go	983	983	reject	SQL text naming a digest column; no crypto call
+997	proxy/internal/store/prefix_cache.go	158	158	asset	gt-0220
+998	proxy/internal/store/prefix_stability_e2e_test.go	69	69	asset	gt-0221
+999	proxy/internal/store/recurring.go	285	285	asset	gt-0222
+1000	proxy/internal/store/session_source.go	252	252	asset	gt-0223
+1001	proxy/internal/store/source_opencode.go	85	85	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1002	proxy/internal/store/stats.go	374	374	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1003	proxy/internal/store/stats.go	509	509	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1004	proxy/internal/store/stats.go	519	519	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1005	proxy/internal/store/stats_report.go	292	292	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1006	proxy/internal/store/store.go	292	292	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1007	proxy/internal/store/store.go	301	301	reject	SQL text naming a digest column; no crypto call
+1008	proxy/internal/store/store.go	485	485	reject	SQL text naming a digest column; no crypto call
+1009	proxy/internal/store/store.go	592	592	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1010	proxy/internal/store/store.go	607	607	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1011	proxy/internal/store/store.go	610	610	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1012	proxy/internal/store/store.go	615	615	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1013	proxy/internal/store/store.go	874	874	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1014	proxy/internal/store/store.go	887	887	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1015	proxy/internal/store/store.go	922	922	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1016	proxy/internal/store/store.go	1169	1169	reject	function or method declaration; no crypto call
+1017	proxy/internal/store/store.go	1181	1181	reject	function or method declaration; no crypto call
+1018	proxy/internal/store/store.go	1187	1187	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1019	proxy/internal/store/usage_import.go	125	125	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1020	proxy/internal/store/usage_import.go	514	514	asset	gt-0224
+1021	proxy/internal/store/usage_import.go	519	519	asset	gt-0225
+1022	proxy/internal/translate/bench_test.go	71	71	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1023	proxy/internal/translate/bench_test.go	80	80	reject	string literal or test-table entry; no crypto call
+1024	proxy/internal/translate/chat_in.go	9	9	reject	comment
+1025	proxy/internal/translate/chat_in.go	10	10	reject	comment
+1026	proxy/internal/translate/chat_in.go	342	342	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1027	proxy/internal/translate/chat_in.go	401	401	reject	comment
+1028	proxy/internal/translate/chat_in.go	416	416	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1029	proxy/internal/translate/chat_in.go	454	454	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1030	proxy/internal/translate/chat_stream.go	140	140	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1031	proxy/internal/translate/chat_stream.go	429	429	reject	comment
+1032	proxy/internal/translate/chat_stream.go	486	486	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1033	proxy/internal/translate/chat_stream.go	487	487	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1034	proxy/internal/translate/doc.go	30	30	reject	comment
+1035	proxy/internal/translate/doc.go	36	36	reject	comment
+1036	proxy/internal/translate/doc.go	38	38	reject	comment
+1037	proxy/internal/translate/helpers_test.go	266	266	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1038	proxy/internal/translate/helpers_test.go	267	267	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1039	proxy/internal/translate/helpers_test.go	268	268	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1040	proxy/internal/translate/helpers_test.go	285	285	reject	comment
+1041	proxy/internal/translate/helpers_test.go	293	293	reject	string literal or test-table entry; no crypto call
+1042	proxy/internal/translate/messages_in.go	624	624	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1043	proxy/internal/translate/messages_in.go	784	784	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1044	proxy/internal/translate/messages_in.go	790	790	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1045	proxy/internal/translate/messages_responses.go	10	10	reject	comment
+1046	proxy/internal/translate/messages_responses.go	29	29	reject	comment
+1047	proxy/internal/translate/messages_responses.go	30	30	reject	function or method declaration; no crypto call
+1048	proxy/internal/translate/messages_responses.go	31	31	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1049	proxy/internal/translate/messages_responses.go	63	63	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1050	proxy/internal/translate/messages_responses.go	129	129	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1051	proxy/internal/translate/messages_responses.go	130	130	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1052	proxy/internal/translate/messages_responses.go	131	131	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1053	proxy/internal/translate/messages_responses.go	133	133	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1054	proxy/internal/translate/messages_responses.go	140	140	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1055	proxy/internal/translate/messages_responses.go	275	275	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1056	proxy/internal/translate/messages_responses.go	276	276	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1057	proxy/internal/translate/messages_responses.go	277	277	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1058	proxy/internal/translate/messages_responses.go	283	283	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1059	proxy/internal/translate/messages_responses.go	284	284	reject	type, constant, variable or struct-field declaration; no crypto call
+1060	proxy/internal/translate/messages_responses_test.go	35	35	reject	string literal or test-table entry; no crypto call
+1061	proxy/internal/translate/messages_responses_test.go	41	41	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1062	proxy/internal/translate/messages_responses_test.go	106	106	reject	string literal or test-table entry; no crypto call
+1063	proxy/internal/translate/messages_responses_test.go	241	241	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1064	proxy/internal/translate/properties_test.go	85	85	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1065	proxy/internal/translate/properties_test.go	87	87	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1066	proxy/internal/translate/properties_test.go	89	89	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1067	proxy/internal/translate/properties_test.go	91	91	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1068	proxy/internal/translate/properties_test.go	113	113	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1069	proxy/internal/translate/properties_test.go	115	115	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1070	proxy/internal/translate/properties_test.go	250	250	reject	comment
+1071	proxy/internal/translate/responses.go	9	9	reject	comment
+1072	proxy/internal/translate/responses.go	17	17	reject	comment
+1073	proxy/internal/translate/responses.go	85	85	asset	gt-0226
+1074	proxy/internal/translate/responses.go	234	234	asset	gt-0227
+1075	proxy/internal/translate/responses.go	261	261	reject	comment
+1076	proxy/internal/translate/responses.go	268	268	reject	comment
+1077	proxy/internal/translate/responses.go	274	274	reject	comment
+1078	proxy/internal/translate/responses.go	275	275	reject	regular expression literal
+1079	proxy/internal/translate/responses.go	277	277	reject	comment
+1080	proxy/internal/translate/responses.go	283	283	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1081	proxy/internal/translate/responses.go	286	286	reject	function or method declaration; no crypto call
+1082	proxy/internal/translate/responses.go	287	287	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1083	proxy/internal/translate/responses.go	315	315	reject	function or method declaration; no crypto call
+1084	proxy/internal/translate/responses.go	316	316	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1085	proxy/internal/translate/responses.go	319	319	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1086	proxy/internal/translate/responses_in.go	19	19	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1087	proxy/internal/translate/responses_in.go	37	37	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1088	proxy/internal/translate/responses_in.go	44	44	reject	comment
+1089	proxy/internal/translate/responses_in.go	189	189	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1090	proxy/internal/translate/responses_in.go	336	336	reject	comment
+1091	proxy/internal/translate/responses_in.go	338	338	reject	function or method declaration; no crypto call
+1092	proxy/internal/translate/responses_in.go	339	339	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1093	proxy/internal/translate/responses_in.go	342	342	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1094	proxy/internal/translate/responses_in.go	382	382	reject	comment
+1095	proxy/internal/translate/responses_in.go	397	397	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1096	proxy/internal/translate/responses_in.go	426	426	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1097	proxy/internal/translate/responses_in.go	527	527	reject	function or method declaration; no crypto call
+1098	proxy/internal/translate/responses_in.go	531	531	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1099	proxy/internal/translate/responses_in.go	551	551	reject	comment
+1100	proxy/internal/translate/responses_in.go	553	553	reject	comment
+1101	proxy/internal/translate/responses_in.go	558	558	reject	function or method declaration; no crypto call
+1102	proxy/internal/translate/responses_in.go	560	560	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1103	proxy/internal/translate/responses_in.go	564	564	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1104	proxy/internal/translate/responses_in.go	567	567	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1105	proxy/internal/translate/responses_in.go	579	579	reject	comment
+1106	proxy/internal/translate/responses_in.go	581	581	reject	function or method declaration; no crypto call
+1107	proxy/internal/translate/responses_in.go	582	582	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1108	proxy/internal/translate/responses_in.go	585	585	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1109	proxy/internal/translate/responses_in.go	594	594	reject	comment
+1110	proxy/internal/translate/responses_in.go	596	596	reject	function or method declaration; no crypto call
+1111	proxy/internal/translate/responses_in.go	601	601	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1112	proxy/internal/translate/responses_in.go	602	602	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1113	proxy/internal/translate/responses_in.go	606	606	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1114	proxy/internal/translate/responses_in.go	607	607	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1115	proxy/internal/translate/responses_in.go	616	616	reject	function or method declaration; no crypto call
+1116	proxy/internal/translate/responses_in.go	617	617	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1117	proxy/internal/translate/responses_stream.go	79	79	asset	gt-0228
+1118	proxy/internal/translate/responses_stream.go	203	203	reject	comment
+1119	proxy/internal/translate/responses_stream.go	218	218	reject	function or method declaration; no crypto call
+1120	proxy/internal/translate/responses_stream.go	229	229	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1121	proxy/internal/translate/responses_stream.go	235	235	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1122	proxy/internal/translate/responses_stream.go	237	237	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1123	proxy/internal/translate/responses_stream.go	485	485	reject	comment
+1124	proxy/internal/translate/responses_stream.go	651	651	reject	comment
+1125	proxy/internal/translate/responses_test.go	121	121	reject	function or method declaration; no crypto call
+1126	proxy/internal/translate/responses_test.go	145	145	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1127	proxy/internal/translate/responses_test.go	146	146	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1128	proxy/internal/translate/responses_test.go	161	161	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1129	proxy/internal/translate/responses_test.go	162	162	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1130	proxy/internal/translate/responses_test.go	181	181	reject	comment
+1131	proxy/internal/translate/responses_test.go	195	195	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1132	proxy/internal/translate/responses_test.go	415	415	reject	comment
+1133	proxy/internal/translate/responses_test.go	428	428	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1134	proxy/internal/translate/responses_test.go	448	448	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1135	proxy/internal/translate/responses_test.go	449	449	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1136	proxy/internal/translate/responses_test.go	452	452	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1137	proxy/internal/translate/responses_test.go	459	459	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1138	proxy/internal/translate/responses_test.go	482	482	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1139	proxy/internal/translate/responses_test.go	483	483	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1140	proxy/internal/translate/responses_test.go	484	484	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1141	proxy/internal/translate/responses_test.go	502	502	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1142	proxy/internal/translate/review_regressions_test.go	62	62	reject	comment
+1143	proxy/internal/translate/review_regressions_test.go	66	66	reject	string literal or test-table entry; no crypto call
+1144	proxy/internal/translate/review_regressions_test.go	67	67	reject	string literal or test-table entry; no crypto call
+1145	proxy/internal/translate/review_regressions_test.go	71	71	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1146	proxy/internal/translate/review_regressions_test.go	76	76	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1147	proxy/internal/translate/review_regressions_test.go	84	84	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1148	proxy/internal/translate/review_regressions_test.go	90	90	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1149	proxy/internal/translate/translate.go	1157	1157	reject	comment
+1150	proxy/internal/translate/wire_gaps_test.go	363	363	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1151	proxy/internal/translate/wire_gaps_test.go	426	426	reject	comment
+1152	proxy/internal/translate/wire_gaps_test.go	440	440	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1153	proxy/internal/translate/wire_gaps_test.go	576	576	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1154	proxy/internal/translate/wire_gaps_test.go	582	582	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1155	proxy/internal/translate/wire_gaps_test.go	650	650	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1156	proxy/internal/translate/wire_gaps_test.go	868	868	reject	string literal or test-table entry; no crypto call
+1157	proxy/internal/translate/wire_gaps_test.go	870	870	reject	string literal or test-table entry; no crypto call
+1158	proxy/internal/translate/wire_gaps_test.go	878	878	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1159	proxy/providers/adapter.go	29	29	reject	comment
+1160	proxy/providers/adapter.go	33	33	asset	gt-0229
+1161	proxy/providers/adapter.go	37	37	reject	comment
+1162	proxy/providers/adapter.go	38	38	reject	sha256.Size constant, no call
+1163	proxy/providers/adapter.go	74	74	reject	sha256.Size constant, no call
+1164	proxy/providers/adapter.go	1120	1120	reject	type, constant, variable or struct-field declaration; no crypto call
+1165	proxy/providers/adapter.go	1402	1402	reject	type, constant, variable or struct-field declaration; no crypto call
+1166	proxy/providers/anthropic/content_compress.go	16	16	reject	comment
+1167	proxy/providers/anthropic/content_compress_test.go	72	72	asset	gt-0230,gt-0231
+1168	proxy/providers/anthropic/content_compress_test.go	77	77	asset	gt-0232,gt-0233
+1169	proxy/providers/anthropic/content_compress_test.go	196	196	asset	gt-0234,gt-0235
+1170	proxy/providers/bedrock/bedrock_test.go	326	326	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1171	proxy/providers/bedrock/bedrock_test.go	341	341	reject	call to project helper awssig.HashPayload (guide, project helpers); its Sum256 is annotated in awssig.go
+1172	proxy/providers/bedrock/bedrock_test.go	342	342	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1173	proxy/providers/bedrock/bedrock_test.go	384	384	reject	call to project helper awssig.HashPayload (guide, project helpers); its Sum256 is annotated in awssig.go
+1174	proxy/providers/bedrock/bedrock_test.go	431	431	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1175	proxy/providers/bedrock/cache_points_test.go	323	323	reject	call to project helper awssig.HashPayload (guide, project helpers); its Sum256 is annotated in awssig.go
+1176	proxy/providers/bedrock/compress_sign_test.go	86	86	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1177	proxy/providers/bedrock/compress_sign_test.go	89	89	reject	call to project helper awssig.HashPayload (guide, project helpers); its Sum256 is annotated in awssig.go
+1178	proxy/providers/bedrock/compress_sign_test.go	90	90	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1179	proxy/providers/bedrock/routing.go	68	68	reject	type, constant, variable or struct-field declaration; no crypto call
+1180	proxy/providers/bedrock/signing.go	119	119	reject	call to project SigV4 signer helper (guide, project helpers); its HMAC and SHA-256 are annotated in awssig.go
+1181	proxy/providers/bedrock/signing.go	125	125	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1182	proxy/providers/bedrock/signing.go	143	143	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1183	proxy/providers/bedrock/usage.go	356	356	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1184	proxy/providers/bedrock/usage_test.go	458	458	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1185	proxy/providers/google_credentials.go	12	12	reject	type, constant, variable or struct-field declaration; no crypto call
+1186	proxy/providers/google_credentials.go	22	22	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1187	proxy/providers/openai/cache_key.go	220	220	asset	gt-0236
+1188	proxy/providers/openai/content_compress_test.go	74	74	asset	gt-0237,gt-0238
+1189	proxy/providers/openai/content_compress_test.go	77	77	asset	gt-0239,gt-0240
+1190	proxy/providers/openai/session_cache_key.go	19	19	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1191	proxy/providers/openai/session_cache_key.go	21	21	reject	comment
+1192	proxy/providers/openai/session_cache_key.go	24	24	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1193	proxy/providers/openai/session_cache_key.go	34	34	reject	comment
+1194	proxy/providers/openai/session_cache_key.go	77	77	asset	gt-0241
+1195	shared/platform/awscreds/awscreds.go	285	285	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1196	shared/platform/awscreds/awscreds.go	306	306	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1197	shared/platform/awscreds/awscreds.go	459	459	reject	type, constant, variable or struct-field declaration; no crypto call
+1198	shared/platform/awscreds/awscreds.go	494	494	reject	comment
+1199	shared/platform/awscreds/awscreds.go	552	552	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1200	shared/platform/awscreds/awscreds.go	560	560	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1201	shared/platform/awssig/awssig.go	2	2	reject	comment
+1202	shared/platform/awssig/awssig.go	11	11	reject	comment
+1203	shared/platform/awssig/awssig.go	13	13	reject	comment
+1204	shared/platform/awssig/awssig.go	31	31	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1205	shared/platform/awssig/awssig.go	56	56	reject	comment
+1206	shared/platform/awssig/awssig.go	59	59	reject	comment
+1207	shared/platform/awssig/awssig.go	66	66	reject	function or method declaration; no crypto call
+1208	shared/platform/awssig/awssig.go	86	86	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1209	shared/platform/awssig/awssig.go	110	110	reject	call to or declaration of project helper hmacSHA256 (guide, project helpers); its hmac.New is annotated at awssig.go:232
+1210	shared/platform/awssig/awssig.go	118	118	reject	comment
+1211	shared/platform/awssig/awssig.go	119	119	reject	comment
+1212	shared/platform/awssig/awssig.go	225	225	reject	call to or declaration of project helper hmacSHA256 (guide, project helpers); its hmac.New is annotated at awssig.go:232
+1213	shared/platform/awssig/awssig.go	226	226	reject	call to or declaration of project helper hmacSHA256 (guide, project helpers); its hmac.New is annotated at awssig.go:232
+1214	shared/platform/awssig/awssig.go	227	227	reject	call to or declaration of project helper hmacSHA256 (guide, project helpers); its hmac.New is annotated at awssig.go:232
+1215	shared/platform/awssig/awssig.go	228	228	reject	call to or declaration of project helper hmacSHA256 (guide, project helpers); its hmac.New is annotated at awssig.go:232
+1216	shared/platform/awssig/awssig.go	231	231	reject	call to or declaration of project helper hmacSHA256 (guide, project helpers); its hmac.New is annotated at awssig.go:232
+1217	shared/platform/awssig/awssig.go	232	232	asset	gt-0242
+1218	shared/platform/awssig/awssig.go	238	238	asset	gt-0243
+1219	shared/platform/awssig/awssig_test.go	66	66	reject	call to project SigV4 signer helper (guide, project helpers); its HMAC and SHA-256 are annotated in awssig.go
+1220	shared/platform/awssig/awssig_test.go	69	69	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1221	shared/platform/awssig/awssig_test.go	84	84	reject	comment
+1222	shared/platform/awssig/awssig_test.go	86	86	reject	comment
+1223	shared/platform/awssig/awssig_test.go	89	89	reject	comment
+1224	shared/platform/awssig/awssig_test.go	103	103	reject	call to project SigV4 signer helper (guide, project helpers); its HMAC and SHA-256 are annotated in awssig.go
+1225	shared/platform/awssig/awssig_test.go	112	112	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1226	shared/platform/awssig/awssig_test.go	115	115	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1227	shared/platform/awssig/awssig_test.go	124	124	reject	comment
+1228	shared/platform/awssig/awssig_test.go	139	139	reject	call to project SigV4 signer helper (guide, project helpers); its HMAC and SHA-256 are annotated in awssig.go
+1229	shared/platform/awssig/awssig_test.go	161	161	reject	call to project SigV4 signer helper (guide, project helpers); its HMAC and SHA-256 are annotated in awssig.go
+1230	shared/platform/awssig/awssig_test.go	164	164	reject	call to project SigV4 signer helper (guide, project helpers); its HMAC and SHA-256 are annotated in awssig.go
+1231	shared/platform/awssig/awssig_test.go	167	167	reject	call to project SigV4 signer helper (guide, project helpers); its HMAC and SHA-256 are annotated in awssig.go
+1232	shared/platform/awssig/awssig_test.go	179	179	reject	call to project SigV4 signer helper (guide, project helpers); its HMAC and SHA-256 are annotated in awssig.go
+1233	shared/platform/awssig/awssig_test.go	202	202	reject	call to project SigV4 signer helper (guide, project helpers); its HMAC and SHA-256 are annotated in awssig.go
+1234	shared/platform/awssig/awssig_test.go	208	208	reject	call to a test closure wrapping the project signer (guide, project helpers)
+1235	shared/platform/awssig/awssig_test.go	209	209	reject	call to a test closure wrapping the project signer (guide, project helpers)
+1236	shared/platform/cabundle/cabundle.go	1	1	reject	comment
+1237	shared/platform/cabundle/cabundle.go	2	2	reject	comment
+1238	shared/platform/cabundle/cabundle.go	18	18	reject	function or method declaration; no crypto call
+1239	shared/platform/cabundle/cabundle.go	19	19	reject	type, constant, variable or struct-field declaration; no crypto call
+1240	shared/platform/cabundle/cabundle.go	31	31	reject	function or method declaration; no crypto call
+1241	shared/platform/cabundle/cabundle.go	32	32	reject	x509.SystemCertPool loads the platform roots, like load_default_certs: parses nothing the program supplies, not an asset
+1242	shared/platform/cabundle/cabundle.go	37	37	reject	CertPool.AddCert attaches an already-parsed certificate to a pool: configuration
+1243	shared/platform/cabundle/cabundle.go	51	51	reject	function or method declaration; no crypto call
+1244	shared/platform/cabundle/cabundle.go	56	56	reject	type, constant, variable or struct-field declaration; no crypto call
+1245	shared/platform/cabundle/cabundle.go	67	67	asset	gt-0244
+1246	shared/platform/cabundle/cabundle_test.go	19	19	asset	gt-0245,gt-0246
+1247	shared/platform/cabundle/cabundle_test.go	23	23	reject	x509.Certificate template literal, input to a certificate builder; not an asset
+1248	shared/platform/cabundle/cabundle_test.go	24	24	asset	gt-0247
+1249	shared/platform/cacheguard/cacheguard.go	61	61	reject	sha256.Size constant, no call
+1250	shared/platform/cacheguard/cacheguard.go	68	68	reject	sha256.Size constant, no call
+1251	shared/platform/cacheguard/cacheguard.go	73	73	reject	sha256.Size constant, no call
+1252	shared/platform/cacheguard/cacheguard.go	93	93	reject	sha256.Size constant, no call
+1253	shared/platform/cacheguard/cacheguard.go	96	96	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1254	shared/platform/cacheguard/cacheguard.go	99	99	reject	sha256.Size constant, no call
+1255	shared/platform/cacheguard/cacheguard.go	100	100	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1256	shared/platform/cacheguard/cacheguard.go	104	104	asset	gt-0248
+1257	shared/platform/cacheguard/cacheguard.go	149	149	asset	gt-0249
+1258	shared/platform/cacheguard/cacheguard_test.go	122	122	reject	function or method declaration; no crypto call
+1259	shared/platform/cacheguard/cacheguard_test.go	124	124	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1260	shared/platform/cacheguard/cacheguard_test.go	125	125	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1261	shared/platform/cacheguard/cacheguard_test.go	128	128	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1262	shared/platform/cacheguard/cacheguard_test.go	132	132	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1263	shared/platform/cacheguard/cacheguard_test.go	134	134	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1264	shared/platform/cacheguard/cacheguard_test.go	138	138	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1265	shared/platform/cacheguard/cacheguard_test.go	144	144	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1266	shared/platform/cacheguard/cacheguard_test.go	151	151	reject	comment
+1267	shared/platform/cacheguard/cacheguard_test.go	156	156	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1268	shared/platform/cacheguard/cacheguard_test.go	160	160	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1269	shared/platform/cacheguard/cacheguard_test.go	176	176	reject	comment
+1270	shared/platform/catalog/catalog.go	54	54	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1271	shared/platform/catalog/catalog.go	395	395	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1272	shared/platform/env/env.go	68	68	reject	string literal or test-table entry; no crypto call
+1273	shared/platform/env/env.go	80	80	reject	comment
+1274	shared/platform/env/env_test.go	67	67	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1275	shared/platform/env/env_test.go	91	91	reject	string literal or test-table entry; no crypto call
+1276	shared/platform/env/env_test.go	93	93	reject	string literal or test-table entry; no crypto call
+1277	shared/platform/env/env_test.go	98	98	reject	string literal or test-table entry; no crypto call
+1278	shared/platform/env/env_test.go	117	117	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1279	shared/platform/env/env_test.go	126	126	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1280	shared/platform/id/id.go	19	19	asset	gt-0250
+1281	shared/platform/id/id.go	35	35	asset	gt-0251
+1282	shared/platform/id/id.go	43	43	asset	gt-0252
+1283	shared/platform/kms/kms.go	3	3	reject	comment
+1284	shared/platform/kms/kms.go	27	27	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1285	shared/platform/kms/kms.go	28	28	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1286	shared/platform/kms/kms.go	38	38	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1287	shared/platform/kms/kms.go	50	50	reject	comment
+1288	shared/platform/kms/kms.go	51	51	reject	comment
+1289	shared/platform/kms/kms.go	52	52	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1290	shared/platform/kms/kms.go	63	63	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1291	shared/platform/kms/kms.go	66	66	reject	comment
+1292	shared/platform/kms/kms.go	71	71	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1293	shared/platform/kms/kms.go	84	84	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1294	shared/platform/kms/kms.go	85	85	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1295	shared/platform/kms/kms.go	90	90	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1296	shared/platform/kms/kms.go	113	113	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1297	shared/platform/kms/kms.go	123	123	reject	comment
+1298	shared/platform/kms/kms.go	133	133	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1299	shared/platform/kms/kms.go	135	135	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1300	shared/platform/kms/kms.go	149	149	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1301	shared/platform/kms/kms.go	156	156	reject	comment
+1302	shared/platform/kms/kms.go	157	157	reject	KMS wrapper function declaration; remote KMS over HTTP
+1303	shared/platform/kms/kms.go	162	162	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1304	shared/platform/kms/kms.go	165	165	reject	comment
+1305	shared/platform/kms/kms.go	166	166	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1306	shared/platform/kms/kms.go	171	171	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1307	shared/platform/kms/kms.go	174	174	reject	comment
+1308	shared/platform/kms/kms.go	175	175	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1309	shared/platform/kms/kms.go	184	184	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1310	shared/platform/kms/kms.go	186	186	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1311	shared/platform/kms/kms.go	191	191	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1312	shared/platform/kms/kms.go	192	192	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1313	shared/platform/kms/kms.go	194	194	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1314	shared/platform/kms/kms.go	201	201	reject	comment
+1315	shared/platform/kms/kms.go	202	202	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1316	shared/platform/kms/kms.go	207	207	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1317	shared/platform/kms/kms.go	210	210	reject	comment
+1318	shared/platform/kms/kms.go	212	212	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1319	shared/platform/kms/kms.go	217	217	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1320	shared/platform/kms/kms.go	220	220	reject	comment
+1321	shared/platform/kms/kms.go	222	222	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1322	shared/platform/kms/kms.go	242	242	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1323	shared/platform/kms/kms.go	245	245	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1324	shared/platform/kms/kms.go	246	246	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1325	shared/platform/kms/kms.go	252	252	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1326	shared/platform/kms/kms.go	253	253	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1327	shared/platform/kms/kms.go	258	258	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1328	shared/platform/kms/kms.go	262	262	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1329	shared/platform/kms/kms.go	265	265	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1330	shared/platform/kms/kms.go	290	290	reject	comment
+1331	shared/platform/kms/kms.go	291	291	reject	comment
+1332	shared/platform/kms/kms.go	319	319	asset	gt-0253
+1333	shared/platform/kms/kms.go	322	322	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1334	shared/platform/kms/kms.go	324	324	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1335	shared/platform/kms/kms.go	326	326	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1336	shared/platform/kms/kms.go	328	328	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1337	shared/platform/kms/kms.go	330	330	reject	bytes.Equal comparison
+1338	shared/platform/kms/kms_test.go	24	24	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1339	shared/platform/kms/kms_test.go	46	46	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1340	shared/platform/kms/kms_test.go	56	56	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1341	shared/platform/kms/kms_test.go	60	60	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1342	shared/platform/kms/kms_test.go	61	61	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1343	shared/platform/kms/kms_test.go	75	75	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1344	shared/platform/kms/kms_test.go	82	82	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1345	shared/platform/kms/kms_test.go	84	84	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1346	shared/platform/kms/kms_test.go	88	88	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1347	shared/platform/kms/kms_test.go	96	96	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1348	shared/platform/kms/kms_test.go	98	98	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1349	shared/platform/kms/kms_test.go	99	99	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1350	shared/platform/kms/kms_test.go	121	121	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1351	shared/platform/kms/kms_test.go	133	133	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1352	shared/platform/kms/kms_test.go	134	134	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1353	shared/platform/kms/kms_test.go	146	146	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1354	shared/platform/kms/kms_test.go	155	155	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1355	shared/platform/kms/kms_test.go	156	156	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1356	shared/platform/kms/kms_test.go	160	160	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1357	shared/platform/kms/kms_test.go	169	169	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1358	shared/platform/kms/kms_test.go	172	172	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1359	shared/platform/kms/kms_test.go	173	173	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1360	shared/platform/kms/kms_test.go	201	201	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1361	shared/platform/kms/kms_test.go	248	248	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1362	shared/platform/kms/kms_test.go	249	249	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1363	shared/platform/kms/kms_test.go	251	251	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1364	shared/platform/kms/kms_test.go	252	252	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1365	shared/platform/kms/kms_test.go	254	254	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1366	shared/platform/kms/kms_test.go	255	255	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1367	shared/platform/kms/kms_test.go	257	257	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1368	shared/platform/kms/kms_test.go	258	258	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1369	shared/platform/kms/kms_test.go	262	262	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1370	shared/platform/kms/kms_test.go	264	264	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1371	shared/platform/kms/kms_test.go	267	267	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1372	shared/platform/kms/kms_test.go	278	278	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1373	shared/platform/kms/kms_test.go	279	279	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1374	shared/platform/kms/kms_test.go	288	288	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1375	shared/platform/kms/kms_test.go	289	289	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1376	shared/platform/kms/kms_test.go	295	295	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1377	shared/platform/kms/kms_test.go	306	306	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1378	shared/platform/kms/kms_test.go	307	307	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1379	shared/platform/kms/kms_test.go	308	308	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1380	shared/platform/kms/kms_test.go	309	309	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1381	shared/platform/kms/kms_test.go	310	310	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1382	shared/platform/kms/kms_test.go	314	314	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1383	shared/platform/kms/kms_test.go	321	321	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1384	shared/platform/kms/kms_test.go	344	344	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1385	shared/platform/kms/kms_test.go	346	346	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1386	shared/platform/kms/kms_test.go	347	347	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1387	shared/platform/kms/kms_test.go	358	358	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1388	shared/platform/kms/kms_test.go	359	359	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1389	shared/platform/kms/kms_test.go	362	362	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1390	shared/platform/kms/kms_test.go	413	413	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1391	shared/platform/kms/kms_test.go	426	426	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1392	shared/platform/kms/kms_test.go	432	432	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1393	shared/platform/kms/kms_test.go	434	434	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1394	shared/platform/kms/kms_test.go	435	435	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1395	shared/platform/kms/kms_test.go	444	444	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1396	shared/platform/kms/kms_test.go	445	445	reject	remote KMS client: an HTTP call to a key manager naming no algorithm, its wrappers, config or error strings; no local crypto call (judgement call)
+1397	shared/platform/postgresconfig/postgresconfig.go	1	1	reject	comment
+1398	shared/platform/postgresconfig/postgresconfig.go	26	26	reject	comment
+1399	shared/platform/postgresconfig/postgresconfig.go	27	27	reject	comment
+1400	shared/platform/postgresconfig/postgresconfig.go	28	28	reject	comment
+1401	shared/platform/postgresconfig/postgresconfig.go	30	30	reject	comment
+1402	shared/platform/postgresconfig/postgresconfig.go	32	32	reject	comment
+1403	shared/platform/postgresconfig/postgresconfig.go	56	56	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1404	shared/platform/postgresconfig/postgresconfig.go	58	58	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1405	shared/platform/postgresconfig/postgresconfig.go	61	61	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1406	shared/platform/postgresconfig/postgresconfig.go	66	66	reject	x509.NewCertPool creates an empty pool; parses nothing
+1407	shared/platform/postgresconfig/postgresconfig.go	67	67	asset	gt-0254
+1408	shared/platform/postgresconfig/postgresconfig.go	70	70	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1409	shared/platform/postgresconfig/postgresconfig.go	71	71	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1410	shared/platform/postgresconfig/postgresconfig.go	73	73	reject	assigning RootCAs on pgx's existing TLS config: configuration
+1411	shared/platform/postgresconfig/postgresconfig.go	74	74	reject	toggling verification on an existing TLS config: configuration
+1412	shared/platform/postgresconfig/postgresconfig.go	75	75	reject	setting ServerName on an existing TLS config: configuration
+1413	shared/platform/postgresconfig/postgresconfig.go	77	77	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1414	shared/platform/postgresconfig/postgresconfig.go	80	80	reject	assigning RootCAs on pgx's existing TLS config: configuration
+1415	shared/platform/postgresconfig/postgresconfig.go	81	81	reject	toggling verification on an existing TLS config: configuration
+1416	shared/platform/postgresconfig/postgresconfig.go	82	82	reject	setting ServerName on an existing TLS config: configuration
+1417	shared/platform/postgresconfig/postgresconfig.go	87	87	reject	comment
+1418	shared/platform/postgresconfig/postgresconfig.go	88	88	reject	comment
+1419	shared/platform/postgresconfig/postgresconfig.go	89	89	reject	comment
+1420	shared/platform/postgresconfig/postgresconfig.go	91	91	reject	comment
+1421	shared/platform/postgresconfig/postgresconfig.go	92	92	reject	comment
+1422	shared/platform/postgresconfig/postgresconfig.go	94	94	reject	function or method declaration; no crypto call
+1423	shared/platform/postgresconfig/postgresconfig.go	97	97	reject	struct field of type *tls.Config
+1424	shared/platform/postgresconfig/postgresconfig.go	99	99	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1425	shared/platform/postgresconfig/postgresconfig.go	101	101	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1426	shared/platform/postgresconfig/postgresconfig.go	104	104	reject	type, constant, variable or struct-field declaration; no crypto call
+1427	shared/platform/postgresconfig/postgresconfig.go	106	106	reject	reads fields of an existing TLS config
+1428	shared/platform/postgresconfig/postgresconfig.go	108	108	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1429	shared/platform/postgresconfig/postgresconfig.go	111	111	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1430	shared/platform/postgresconfig/postgresconfig_test.go	25	25	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1431	shared/platform/postgresconfig/postgresconfig_test.go	26	26	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1432	shared/platform/postgresconfig/postgresconfig_test.go	28	28	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1433	shared/platform/postgresconfig/postgresconfig_test.go	32	32	reject	reads an existing pgx TLS config: no crypto call
+1434	shared/platform/postgresconfig/postgresconfig_test.go	37	37	reject	comment
+1435	shared/platform/postgresconfig/postgresconfig_test.go	45	45	reject	string literal or test-table entry; no crypto call
+1436	shared/platform/postgresconfig/postgresconfig_test.go	46	46	reject	string literal or test-table entry; no crypto call
+1437	shared/platform/postgresconfig/postgresconfig_test.go	55	55	reject	string literal or test-table entry; no crypto call
+1438	shared/platform/postgresconfig/postgresconfig_test.go	56	56	reject	string literal or test-table entry; no crypto call
+1439	shared/platform/postgresconfig/postgresconfig_test.go	57	57	reject	string literal or test-table entry; no crypto call
+1440	shared/platform/postgresconfig/postgresconfig_test.go	58	58	reject	string literal or test-table entry; no crypto call
+1441	shared/platform/postgresconfig/postgresconfig_test.go	63	63	reject	comment
+1442	shared/platform/postgresconfig/postgresconfig_test.go	65	65	reject	string literal or test-table entry; no crypto call
+1443	shared/platform/postgresconfig/postgresconfig_test.go	78	78	reject	comment
+1444	shared/platform/postgresconfig/postgresconfig_test.go	86	86	reject	string literal or test-table entry; no crypto call
+1445	shared/platform/postgresconfig/postgresconfig_test.go	87	87	reject	string literal or test-table entry; no crypto call
+1446	shared/platform/postgresconfig/postgresconfig_test.go	88	88	reject	string literal or test-table entry; no crypto call
+1447	shared/platform/postgresconfig/postgresconfig_test.go	91	91	reject	string literal or test-table entry; no crypto call
+1448	shared/platform/postgresconfig/postgresconfig_test.go	92	92	reject	string literal or test-table entry; no crypto call
+1449	shared/platform/postgresconfig/postgresconfig_test.go	97	97	reject	string literal or test-table entry; no crypto call
+1450	shared/platform/postgresconfig/postgresconfig_test.go	98	98	reject	string literal or test-table entry; no crypto call
+1451	shared/platform/postgresconfig/postgresconfig_test.go	100	100	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1452	shared/platform/postgresconfig/postgresconfig_test.go	117	117	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1453	shared/platform/postgresconfig/postgresconfig_test.go	118	118	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1454	shared/platform/postgresconfig/postgresconfig_test.go	128	128	asset	gt-0255
+1455	shared/platform/postgresconfig/postgresconfig_test.go	135	135	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1456	shared/platform/postgresconfig/postgresconfig_test.go	139	139	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1457	shared/platform/postgresconfig/postgresconfig_test.go	140	140	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1458	shared/platform/postgresconfig/postgresconfig_test.go	142	142	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1459	shared/platform/postgresconfig/postgresconfig_test.go	143	143	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1460	shared/platform/postgresconfig/postgresconfig_test.go	173	173	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1461	shared/platform/postgresconfig/postgresconfig_test.go	181	181	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1462	shared/platform/postgresconfig/postgresconfig_test.go	191	191	reject	string literal or test-table entry; no crypto call
+1463	shared/platform/postgresconfig/postgresconfig_test.go	192	192	reject	string literal or test-table entry; no crypto call
+1464	shared/platform/postgresconfig/postgresconfig_test.go	203	203	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1465	shared/platform/postgresconfig/postgresconfig_test.go	209	209	asset	gt-0256
+1466	shared/platform/postgresconfig/postgresconfig_test.go	215	215	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1467	shared/platform/redact/payload.go	363	363	reject	comment
+1468	shared/platform/redact/payload.go	483	483	asset	gt-0257
+1469	shared/platform/redact/payload_test.go	38	38	reject	string literal or test-table entry; no crypto call
+1470	shared/platform/redact/payload_test.go	305	305	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1471	shared/platform/redact/payload_test.go	666	666	reject	string literal or test-table entry; no crypto call
+1472	shared/platform/redact/redact.go	116	116	reject	regular expression literal
+1473	shared/platform/redact/redact.go	122	122	reject	regular expression literal
+1474	shared/platform/redact/redact.go	129	129	reject	regular expression literal
+1475	shared/platform/redact/redact_test.go	79	79	reject	comment
+1476	shared/platform/redact/redact_test.go	82	82	reject	string literal or test-table entry; no crypto call
+1477	shared/platform/redact/redact_test.go	109	109	reject	string literal or test-table entry; no crypto call
+1478	shared/platform/redact/redact_test.go	110	110	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1479	shared/platform/redact/redact_test.go	112	112	reject	identifier or data field containing digest/key/token/encrypted/TLS; no crypto call
+1480	shared/platform/redact/residual.go	5	5	reject	comment
+1481	shared/platform/redact/residual.go	55	55	reject	string literal (header name, error/log text, fixture or config key) naming crypto; no crypto call
+1482	shared/platform/redact/residual.go	80	80	reject	regular expression literal
+1483	shared/platform/redact/residual.go	275	275	reject	comment
+1484	shared/platform/redact/residual.go	324	324	reject	comment
+1485	shared/platform/redact/residual.go	329	329	reject	comment
+1486	shared/platform/redact/residual.go	330	330	reject	comment
+1487	shared/platform/redact/residual_test.go	15	15	reject	comment
+1488	shared/platform/redact/residual_test.go	66	66	reject	comment
+1489	shared/platform/redact/residual_test.go	72	72	reject	string literal or test-table entry; no crypto call
+1490	shared/platform/redact/residual_test.go	163	163	reject	string literal or test-table entry; no crypto call
+1491	shared/platform/redact/residual_test.go	165	165	reject	string literal or test-table entry; no crypto call
+1492	shared/platform/redact/residual_test.go	166	166	reject	string literal or test-table entry; no crypto call
+1493	shared/platform/redact/residual_test.go	167	167	reject	string literal or test-table entry; no crypto call
+1494	shared/platform/redact/residual_test.go	198	198	asset	gt-0258
+1495	shared/platform/redact/residual_test.go	314	314	reject	comment
+1496	shared/platform/redact/residual_test.go	377	377	reject	comment
+1497	shared/platform/ssrf/ssrf.go	148	148	reject	comment
+1498	shared/platform/ssrf/ssrf_test.go	804	804	reject	comment
+1499	shared/platform/ssrf/ssrf_test.go	806	806	reject	comment
+1500	shared/platform/ssrf/ssrf_test.go	824	824	reject	comment
+1501	shared/platform/ssrf/ssrf_test.go	825	825	reject	assigning an existing TLS client config from a test server: configuration

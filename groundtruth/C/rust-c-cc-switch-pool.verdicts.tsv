@@ -1,0 +1,976 @@
+item	file	start	end	verdict	detail
+1	src-tauri/src/agy_config.rs	112	112	reject	identifier containing token/key/secret/etc.; not crypto
+2	src-tauri/src/agy_smoke_tests.rs	67	67	reject	string literal
+3	src-tauri/src/app_config.rs	347	347	reject	comment
+4	src-tauri/src/claude_desktop_config.rs	259	259	reject	identifier containing token/key/secret/etc.; not crypto
+5	src-tauri/src/claude_desktop_config.rs	407	407	reject	uuid::Uuid::new_v4 is an identifier library, not a crypto draw (guide, random draws)
+6	src-tauri/src/claude_desktop_config.rs	441	441	reject	identifier containing token/key/secret/etc.; not crypto
+7	src-tauri/src/claude_desktop_config.rs	574	574	reject	identifier containing token/key/secret/etc.; not crypto
+8	src-tauri/src/claude_desktop_config.rs	1406	1406	reject	identifier containing token/key/secret/etc.; not crypto
+9	src-tauri/src/codex_config.rs	314	314	reject	identifier containing token/key/secret/etc.; not crypto
+10	src-tauri/src/codex_config.rs	321	321	reject	identifier containing token/key/secret/etc.; not crypto
+11	src-tauri/src/codex_config.rs	348	348	reject	identifier containing token/key/secret/etc.; not crypto
+12	src-tauri/src/codex_config.rs	402	402	reject	identifier containing token/key/secret/etc.; not crypto
+13	src-tauri/src/codex_config.rs	590	590	reject	identifier containing token/key/secret/etc.; not crypto
+14	src-tauri/src/codex_config.rs	648	648	reject	identifier containing token/key/secret/etc.; not crypto
+15	src-tauri/src/codex_config.rs	673	673	reject	identifier containing token/key/secret/etc.; not crypto
+16	src-tauri/src/codex_config.rs	730	730	reject	identifier containing token/key/secret/etc.; not crypto
+17	src-tauri/src/codex_config.rs	731	731	reject	identifier containing token/key/secret/etc.; not crypto
+18	src-tauri/src/codex_config.rs	735	735	reject	identifier containing token/key/secret/etc.; not crypto
+19	src-tauri/src/codex_config.rs	799	799	reject	identifier containing token/key/secret/etc.; not crypto
+20	src-tauri/src/codex_config.rs	812	812	reject	identifier containing token/key/secret/etc.; not crypto
+21	src-tauri/src/codex_config.rs	1582	1582	reject	identifier containing token/key/secret/etc.; not crypto
+22	src-tauri/src/codex_config.rs	3125	3125	reject	identifier containing token/key/secret/etc.; not crypto
+23	src-tauri/src/codex_config.rs	3129	3129	reject	identifier containing token/key/secret/etc.; not crypto
+24	src-tauri/src/codex_config.rs	3339	3339	reject	identifier containing token/key/secret/etc.; not crypto
+25	src-tauri/src/codex_config.rs	3791	3791	reject	string literal
+26	src-tauri/src/codex_config.rs	3795	3795	reject	string literal
+27	src-tauri/src/codex_history_migration.rs	228	228	reject	identifier containing token/key/secret/etc.; not crypto
+28	src-tauri/src/codex_history_migration.rs	402	402	reject	identifier containing token/key/secret/etc.; not crypto
+29	src-tauri/src/codex_history_migration.rs	575	575	reject	identifier containing token/key/secret/etc.; not crypto
+30	src-tauri/src/codex_history_migration.rs	1503	1503	asset	gt-0001
+31	src-tauri/src/codex_history_migration.rs	1504	1504	reject	slicing the digest output
+32	src-tauri/src/commands/codex_oauth.rs	61	61	reject	identifier containing token/key/secret/etc.; not crypto
+33	src-tauri/src/commands/codex_oauth.rs	123	123	reject	identifier containing token/key/secret/etc.; not crypto
+34	src-tauri/src/commands/deeplink.rs	103	103	reject	identifier containing token/key/secret/etc.; not crypto
+35	src-tauri/src/commands/misc.rs	5444	5444	reject	identifier containing token/key/secret/etc.; not crypto
+36	src-tauri/src/commands/model_fetch.rs	27	27	reject	identifier containing token/key/secret/etc.; not crypto
+37	src-tauri/src/commands/provider.rs	651	651	reject	identifier containing token/key/secret/etc.; not crypto
+38	src-tauri/src/commands/provider.rs	731	731	reject	identifier containing token/key/secret/etc.; not crypto
+39	src-tauri/src/commands/provider.rs	732	732	reject	identifier containing token/key/secret/etc.; not crypto
+40	src-tauri/src/commands/s3_sync.rs	167	167	reject	identifier containing token/key/secret/etc.; not crypto
+41	src-tauri/src/commands/tool_uninstall.rs	214	214	reject	identifier containing token/key/secret/etc.; not crypto
+42	src-tauri/src/commands/webdav_sync.rs	175	175	reject	identifier containing token/key/secret/etc.; not crypto
+43	src-tauri/src/commands/xai_oauth.rs	51	51	reject	identifier containing token/key/secret/etc.; not crypto
+44	src-tauri/src/commands/xai_oauth.rs	121	121	reject	identifier containing token/key/secret/etc.; not crypto
+45	src-tauri/src/config.rs	124	124	reject	identifier containing token/key/secret/etc.; not crypto
+46	src-tauri/src/config.rs	156	156	reject	identifier containing token/key/secret/etc.; not crypto
+47	src-tauri/src/config.rs	157	157	reject	identifier containing token/key/secret/etc.; not crypto
+48	src-tauri/src/database/dao/profiles.rs	124	124	reject	identifier containing token/key/secret/etc.; not crypto
+49	src-tauri/src/database/dao/settings.rs	80	80	reject	identifier containing token/key/secret/etc.; not crypto
+50	src-tauri/src/database/dao/settings.rs	126	126	reject	string literal
+51	src-tauri/src/database/dao/settings.rs	181	181	reject	string literal
+52	src-tauri/src/database/dao/settings.rs	200	200	reject	string literal
+53	src-tauri/src/deeplink/codex_link.rs	83	83	reject	identifier containing token/key/secret/etc.; not crypto
+54	src-tauri/src/deeplink/icon_fetch.rs	97	97	reject	comment
+55	src-tauri/src/deeplink/parser.rs	123	123	reject	identifier containing token/key/secret/etc.; not crypto
+56	src-tauri/src/deeplink/parser.rs	189	189	reject	identifier containing token/key/secret/etc.; not crypto
+57	src-tauri/src/deeplink/parser.rs	191	191	reject	identifier containing token/key/secret/etc.; not crypto
+58	src-tauri/src/deeplink/provider.rs	51	51	reject	identifier containing token/key/secret/etc.; not crypto
+59	src-tauri/src/deeplink/provider.rs	513	513	reject	identifier containing token/key/secret/etc.; not crypto
+60	src-tauri/src/deeplink/provider.rs	518	518	reject	identifier containing token/key/secret/etc.; not crypto
+61	src-tauri/src/deeplink/provider.rs	987	987	reject	identifier containing token/key/secret/etc.; not crypto
+62	src-tauri/src/deeplink/provider.rs	997	997	reject	identifier containing token/key/secret/etc.; not crypto
+63	src-tauri/src/deeplink/tests.rs	1633	1633	reject	test string literal (cert directory path)
+64	src-tauri/src/deeplink/tests.rs	1845	1845	reject	test string literal (ssh key path)
+65	src-tauri/src/deeplink/tests.rs	2542	2542	reject	string literal
+66	src-tauri/src/dsh_config.rs	714	714	reject	string literal
+67	src-tauri/src/dsh_config.rs	1313	1313	reject	identifier containing token/key/secret/etc.; not crypto
+68	src-tauri/src/gemini_config.rs	42	42	reject	identifier containing token/key/secret/etc.; not crypto
+69	src-tauri/src/gemini_config.rs	100	100	reject	identifier containing token/key/secret/etc.; not crypto
+70	src-tauri/src/grok_config.rs	220	220	reject	identifier containing token/key/secret/etc.; not crypto
+71	src-tauri/src/hermes_config.rs	762	762	reject	identifier containing token/key/secret/etc.; not crypto
+72	src-tauri/src/hermes_config.rs	1201	1201	reject	identifier containing token/key/secret/etc.; not crypto
+73	src-tauri/src/jsonc_document.rs	121	121	reject	identifier containing token/key/secret/etc.; not crypto
+74	src-tauri/src/jsonc_document.rs	470	470	reject	identifier containing token/key/secret/etc.; not crypto
+75	src-tauri/src/kimi_session.rs	132	132	reject	identifier containing token/key/secret/etc.; not crypto
+76	src-tauri/src/lib.rs	603	603	reject	rustls ring default_provider().install_default() installs the process crypto provider: configuration, not an asset
+77	src-tauri/src/live/engine.rs	81	81	reject	function signature of a project crypto helper; the library call inside is annotated
+78	src-tauri/src/live/engine.rs	82	82	reject	passes the project helper sha256_hex by reference (guide, project helpers)
+79	src-tauri/src/live/engine.rs	85	85	reject	comment
+80	src-tauri/src/live/engine.rs	86	86	reject	function signature of a project crypto helper; the library call inside is annotated
+81	src-tauri/src/live/engine.rs	87	87	asset	gt-0002
+82	src-tauri/src/live/engine.rs	141	141	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+83	src-tauri/src/live/engine.rs	143	143	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+84	src-tauri/src/live/engine.rs	170	170	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+85	src-tauri/src/live/patch/dotenv.rs	44	44	reject	identifier containing token/key/secret/etc.; not crypto
+86	src-tauri/src/live/patch/dotenv.rs	143	143	reject	identifier containing token/key/secret/etc.; not crypto
+87	src-tauri/src/live/patch/mod.rs	90	90	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+88	src-tauri/src/live/project/claude.rs	193	193	reject	identifier containing token/key/secret/etc.; not crypto
+89	src-tauri/src/live/project/claude.rs	274	274	reject	identifier containing token/key/secret/etc.; not crypto
+90	src-tauri/src/live/project/codex.rs	379	379	reject	identifier containing token/key/secret/etc.; not crypto
+91	src-tauri/src/mcp/grokbuild.rs	60	60	reject	string literal
+92	src-tauri/src/mcp/pi.rs	103	103	reject	identifier containing token/key/secret/etc.; not crypto
+93	src-tauri/src/mode/contract.rs	19	19	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+94	src-tauri/src/mode/operation.rs	25	25	reject	identifier containing token/key/secret/etc.; not crypto
+95	src-tauri/src/mode/operation.rs	129	129	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+96	src-tauri/src/mode/operation.rs	224	224	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+97	src-tauri/src/mode/operation.rs	265	265	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+98	src-tauri/src/mode/stack.rs	88	88	reject	identifier containing token/key/secret/etc.; not crypto
+99	src-tauri/src/omp_config.rs	610	610	reject	identifier containing token/key/secret/etc.; not crypto
+100	src-tauri/src/opencode_config.rs	524	524	reject	identifier containing token/key/secret/etc.; not crypto
+101	src-tauri/src/pi_config/mod.rs	494	494	asset	gt-0003
+102	src-tauri/src/provider.rs	184	184	reject	identifier containing token/key/secret/etc.; not crypto
+103	src-tauri/src/provider.rs	195	195	reject	identifier containing token/key/secret/etc.; not crypto
+104	src-tauri/src/provider.rs	209	209	reject	identifier containing token/key/secret/etc.; not crypto
+105	src-tauri/src/provider.rs	284	284	reject	identifier containing token/key/secret/etc.; not crypto
+106	src-tauri/src/proxy/body_filter.rs	70	70	reject	identifier containing token/key/secret/etc.; not crypto
+107	src-tauri/src/proxy/codex_models_passthrough.rs	79	79	reject	identifier containing token/key/secret/etc.; not crypto
+108	src-tauri/src/proxy/codex_quota_protection.rs	254	254	reject	comment
+109	src-tauri/src/proxy/codex_quota_protection.rs	266	266	asset	gt-0004
+110	src-tauri/src/proxy/copilot_optimizer.rs	314	314	asset	gt-0005
+111	src-tauri/src/proxy/copilot_optimizer.rs	343	343	asset	gt-0006
+112	src-tauri/src/proxy/error.rs	208	208	reject	comment
+113	src-tauri/src/proxy/failover_switch.rs	45	45	reject	string literal
+114	src-tauri/src/proxy/forwarder.rs	14	14	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+115	src-tauri/src/proxy/forwarder.rs	71	71	reject	comment
+116	src-tauri/src/proxy/forwarder.rs	79	79	asset	gt-0007
+117	src-tauri/src/proxy/forwarder.rs	100	100	reject	finalize: follow-up / digest output
+118	src-tauri/src/proxy/forwarder.rs	101	101	reject	formatting the digest output
+119	src-tauri/src/proxy/forwarder.rs	167	167	reject	identifier containing token/key/secret/etc.; not crypto
+120	src-tauri/src/proxy/forwarder.rs	567	567	reject	comment
+121	src-tauri/src/proxy/forwarder.rs	1205	1205	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+122	src-tauri/src/proxy/forwarder.rs	1227	1227	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+123	src-tauri/src/proxy/forwarder.rs	1586	1586	reject	identifier containing token/key/secret/etc.; not crypto
+124	src-tauri/src/proxy/forwarder.rs	1634	1634	reject	identifier containing token/key/secret/etc.; not crypto
+125	src-tauri/src/proxy/forwarder.rs	1684	1684	reject	comment
+126	src-tauri/src/proxy/forwarder.rs	2028	2028	reject	identifier containing token/key/secret/etc.; not crypto
+127	src-tauri/src/proxy/forwarder.rs	2371	2371	reject	identifier containing token/key/secret/etc.; not crypto
+128	src-tauri/src/proxy/forwarder.rs	2425	2425	reject	identifier containing token/key/secret/etc.; not crypto
+129	src-tauri/src/proxy/forwarder.rs	2487	2487	reject	identifier containing token/key/secret/etc.; not crypto
+130	src-tauri/src/proxy/forwarder.rs	2673	2673	reject	identifier containing token/key/secret/etc.; not crypto
+131	src-tauri/src/proxy/forwarder.rs	2978	2978	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+132	src-tauri/src/proxy/forwarder.rs	2983	2983	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+133	src-tauri/src/proxy/forwarder.rs	3012	3012	reject	comment
+134	src-tauri/src/proxy/forwarder.rs	3103	3103	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+135	src-tauri/src/proxy/forwarder.rs	3108	3108	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+136	src-tauri/src/proxy/forwarder.rs	3316	3316	reject	comment
+137	src-tauri/src/proxy/forwarder.rs	3324	3324	reject	function signature
+138	src-tauri/src/proxy/forwarder.rs	3359	3359	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+139	src-tauri/src/proxy/forwarder.rs	3979	3979	reject	comment
+140	src-tauri/src/proxy/forwarder.rs	4052	4052	reject	comment
+141	src-tauri/src/proxy/forwarder.rs	4062	4062	reject	function signature
+142	src-tauri/src/proxy/forwarder.rs	4880	4880	reject	identifier containing token/key/secret/etc.; not crypto
+143	src-tauri/src/proxy/forwarder.rs	5209	5209	reject	comment
+144	src-tauri/src/proxy/forwarder.rs	6004	6004	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+145	src-tauri/src/proxy/forwarder.rs	6013	6013	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+146	src-tauri/src/proxy/forwarder.rs	7746	7746	reject	rustls ring provider install_default in a test: configuration
+147	src-tauri/src/proxy/forwarder.rs	7818	7818	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+148	src-tauri/src/proxy/forwarder.rs	7946	7946	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+149	src-tauri/src/proxy/forwarder.rs	8117	8117	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+150	src-tauri/src/proxy/forwarder.rs	8118	8118	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+151	src-tauri/src/proxy/forwarder.rs	8138	8138	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+152	src-tauri/src/proxy/forwarder.rs	8152	8152	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+153	src-tauri/src/proxy/forwarder.rs	8305	8305	reject	comment
+154	src-tauri/src/proxy/forwarder.rs	8306	8306	reject	comment
+155	src-tauri/src/proxy/forwarder.rs	8324	8324	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+156	src-tauri/src/proxy/forwarder.rs	8325	8325	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+157	src-tauri/src/proxy/forwarder.rs	8329	8329	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+158	src-tauri/src/proxy/forwarder.rs	8337	8337	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+159	src-tauri/src/proxy/forwarder.rs	8348	8348	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+160	src-tauri/src/proxy/forwarder.rs	8374	8374	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+161	src-tauri/src/proxy/forwarder.rs	8381	8381	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+162	src-tauri/src/proxy/forwarder.rs	8388	8388	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+163	src-tauri/src/proxy/forwarder.rs	8389	8389	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+164	src-tauri/src/proxy/forwarder.rs	8393	8393	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+165	src-tauri/src/proxy/forwarder.rs	8407	8407	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+166	src-tauri/src/proxy/forwarder.rs	8418	8418	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+167	src-tauri/src/proxy/forwarder.rs	8529	8529	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+168	src-tauri/src/proxy/forwarder.rs	8530	8530	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+169	src-tauri/src/proxy/forwarder.rs	8547	8547	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+170	src-tauri/src/proxy/forwarder.rs	8620	8620	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+171	src-tauri/src/proxy/forwarder.rs	8782	8782	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+172	src-tauri/src/proxy/forwarder.rs	8828	8828	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+173	src-tauri/src/proxy/forwarder.rs	8871	8871	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+174	src-tauri/src/proxy/forwarder.rs	8942	8942	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+175	src-tauri/src/proxy/forwarder.rs	8964	8964	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+176	src-tauri/src/proxy/forwarder.rs	8965	8965	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+177	src-tauri/src/proxy/forwarder.rs	9029	9029	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+178	src-tauri/src/proxy/forwarder.rs	9030	9030	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+179	src-tauri/src/proxy/forwarder.rs	9071	9071	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+180	src-tauri/src/proxy/forwarder.rs	9112	9112	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+181	src-tauri/src/proxy/forwarder.rs	9115	9115	reject	function signature
+182	src-tauri/src/proxy/forwarder.rs	9117	9117	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+183	src-tauri/src/proxy/forwarder.rs	9124	9124	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+184	src-tauri/src/proxy/forwarder.rs	9138	9138	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+185	src-tauri/src/proxy/forwarder.rs	9140	9140	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+186	src-tauri/src/proxy/forwarder.rs	9143	9143	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+187	src-tauri/src/proxy/forwarder.rs	9144	9144	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+188	src-tauri/src/proxy/forwarder.rs	9157	9157	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+189	src-tauri/src/proxy/forwarder.rs	9162	9162	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+190	src-tauri/src/proxy/forwarder.rs	9171	9171	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+191	src-tauri/src/proxy/forwarder.rs	9177	9177	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+192	src-tauri/src/proxy/forwarder.rs	9220	9220	reject	rustls ring provider install_default in a test: configuration
+193	src-tauri/src/proxy/forwarder.rs	9329	9329	reject	rustls ring provider install_default in a test: configuration
+194	src-tauri/src/proxy/handlers.rs	496	496	reject	identifier containing token/key/secret/etc.; not crypto
+195	src-tauri/src/proxy/handlers.rs	519	519	reject	identifier containing token/key/secret/etc.; not crypto
+196	src-tauri/src/proxy/handlers.rs	4875	4875	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+197	src-tauri/src/proxy/handlers.rs	4881	4881	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+198	src-tauri/src/proxy/handlers.rs	4903	4903	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+199	src-tauri/src/proxy/hyper_client.rs	3	3	reject	comment
+200	src-tauri/src/proxy/hyper_client.rs	62	63	asset	gt-0008
+201	src-tauri/src/proxy/hyper_client.rs	247	247	reject	comment
+202	src-tauri/src/proxy/hyper_client.rs	337	337	reject	comment
+203	src-tauri/src/proxy/hyper_client.rs	340	340	reject	comment
+204	src-tauri/src/proxy/hyper_client.rs	344	344	reject	enum variant holding a TlsStream type
+205	src-tauri/src/proxy/hyper_client.rs	355	355	reject	IO forwarding on a TLS stream
+206	src-tauri/src/proxy/hyper_client.rs	368	368	reject	IO forwarding on a TLS stream
+207	src-tauri/src/proxy/hyper_client.rs	378	378	reject	IO forwarding on a TLS stream
+208	src-tauri/src/proxy/hyper_client.rs	388	388	reject	IO forwarding on a TLS stream
+209	src-tauri/src/proxy/hyper_client.rs	393	393	reject	comment
+210	src-tauri/src/proxy/hyper_client.rs	396	396	reject	comment
+211	src-tauri/src/proxy/hyper_client.rs	428	428	reject	call to project helper global_tls_connector (context created at line 625)
+212	src-tauri/src/proxy/hyper_client.rs	431	431	asset	gt-0009
+213	src-tauri/src/proxy/hyper_client.rs	434	434	reject	error mapping after the handshake call on 431-432
+214	src-tauri/src/proxy/hyper_client.rs	436	436	reject	use of the TLS stream
+215	src-tauri/src/proxy/hyper_client.rs	440	440	reject	use of the TLS stream
+216	src-tauri/src/proxy/hyper_client.rs	445	445	reject	wrapping the TLS stream, no crypto
+217	src-tauri/src/proxy/hyper_client.rs	495	495	reject	comment
+218	src-tauri/src/proxy/hyper_client.rs	498	498	reject	comment
+219	src-tauri/src/proxy/hyper_client.rs	519	519	reject	identifier containing token/key/secret/etc.; not crypto
+220	src-tauri/src/proxy/hyper_client.rs	532	532	reject	comment
+221	src-tauri/src/proxy/hyper_client.rs	534	534	reject	call to project helper global_tls_connector
+222	src-tauri/src/proxy/hyper_client.rs	537	537	asset	gt-0010
+223	src-tauri/src/proxy/hyper_client.rs	540	540	reject	error mapping after the handshake call on 537-538
+224	src-tauri/src/proxy/hyper_client.rs	541	541	reject	enum wrapping the TLS stream
+225	src-tauri/src/proxy/hyper_client.rs	610	610	reject	comment
+226	src-tauri/src/proxy/hyper_client.rs	615	615	reject	function signature of project helper
+227	src-tauri/src/proxy/hyper_client.rs	616	616	reject	static OnceLock of a TlsConnector type
+228	src-tauri/src/proxy/hyper_client.rs	620	620	reject	RootCertStore extend with built-in webpki roots parses nothing (guide, certificate and key loaders)
+229	src-tauri/src/proxy/hyper_client.rs	622	622	asset	gt-0011
+230	src-tauri/src/proxy/hyper_client.rs	624	624	reject	log message
+231	src-tauri/src/proxy/hyper_client.rs	625	625	asset	gt-0012
+232	src-tauri/src/proxy/hyper_client.rs	628	628	reject	TlsConnector::from wraps the config without a stream: configuration (guide, TLS sessions)
+233	src-tauri/src/proxy/json_canonical.rs	93	93	asset	gt-0013
+234	src-tauri/src/proxy/json_canonical.rs	103	103	reject	finalize on the hash object created at line 93: follow-up
+235	src-tauri/src/proxy/json_canonical.rs	107	107	asset	gt-0014
+236	src-tauri/src/proxy/json_canonical.rs	110	110	reject	tuple struct declaration over the Sha256 type
+237	src-tauri/src/proxy/json_canonical.rs	123	123	reject	function signature of a project crypto helper; the library call inside is annotated
+238	src-tauri/src/proxy/json_canonical.rs	127	127	reject	digest output iteration
+239	src-tauri/src/proxy/loopback_probe.rs	32	32	reject	uuid::Uuid::new_v4 nonce: identifier library, not a crypto draw (guide, random draws)
+240	src-tauri/src/proxy/media_sanitizer.rs	338	338	reject	identifier containing token/key/secret/etc.; not crypto
+241	src-tauri/src/proxy/opaque_state_rectifier.rs	4	4	reject	comment
+242	src-tauri/src/proxy/opaque_state_rectifier.rs	33	33	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+243	src-tauri/src/proxy/opaque_state_rectifier.rs	34	34	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+244	src-tauri/src/proxy/opaque_state_rectifier.rs	37	37	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+245	src-tauri/src/proxy/opaque_state_rectifier.rs	40	40	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+246	src-tauri/src/proxy/opaque_state_rectifier.rs	43	43	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+247	src-tauri/src/proxy/opaque_state_rectifier.rs	71	71	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+248	src-tauri/src/proxy/opaque_state_rectifier.rs	98	98	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+249	src-tauri/src/proxy/opaque_state_rectifier.rs	138	138	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+250	src-tauri/src/proxy/opaque_state_rectifier.rs	175	175	reject	function signature
+251	src-tauri/src/proxy/opaque_state_rectifier.rs	185	185	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+252	src-tauri/src/proxy/opaque_state_rectifier.rs	221	221	reject	function signature
+253	src-tauri/src/proxy/opaque_state_rectifier.rs	222	222	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+254	src-tauri/src/proxy/opaque_state_rectifier.rs	223	223	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+255	src-tauri/src/proxy/opaque_state_rectifier.rs	227	227	reject	comment
+256	src-tauri/src/proxy/opaque_state_rectifier.rs	228	228	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+257	src-tauri/src/proxy/opaque_state_rectifier.rs	231	231	reject	comment
+258	src-tauri/src/proxy/opaque_state_rectifier.rs	238	238	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+259	src-tauri/src/proxy/opaque_state_rectifier.rs	243	243	reject	comment
+260	src-tauri/src/proxy/opaque_state_rectifier.rs	244	244	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+261	src-tauri/src/proxy/opaque_state_rectifier.rs	245	245	reject	comment
+262	src-tauri/src/proxy/opaque_state_rectifier.rs	247	247	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+263	src-tauri/src/proxy/opaque_state_rectifier.rs	323	323	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+264	src-tauri/src/proxy/opaque_state_rectifier.rs	326	326	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+265	src-tauri/src/proxy/opaque_state_rectifier.rs	355	355	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+266	src-tauri/src/proxy/opaque_state_rectifier.rs	415	415	reject	function signature
+267	src-tauri/src/proxy/opaque_state_rectifier.rs	416	416	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+268	src-tauri/src/proxy/opaque_state_rectifier.rs	418	418	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+269	src-tauri/src/proxy/opaque_state_rectifier.rs	423	423	reject	function signature
+270	src-tauri/src/proxy/opaque_state_rectifier.rs	429	429	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+271	src-tauri/src/proxy/opaque_state_rectifier.rs	430	430	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+272	src-tauri/src/proxy/opaque_state_rectifier.rs	491	491	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+273	src-tauri/src/proxy/opaque_state_rectifier.rs	492	492	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+274	src-tauri/src/proxy/opaque_state_rectifier.rs	499	499	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+275	src-tauri/src/proxy/opaque_state_rectifier.rs	506	506	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+276	src-tauri/src/proxy/opaque_state_rectifier.rs	525	525	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+277	src-tauri/src/proxy/opaque_state_rectifier.rs	554	554	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+278	src-tauri/src/proxy/opaque_state_rectifier.rs	555	555	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+279	src-tauri/src/proxy/opaque_state_rectifier.rs	558	558	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+280	src-tauri/src/proxy/opaque_state_rectifier.rs	613	613	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+281	src-tauri/src/proxy/opaque_state_rectifier.rs	619	619	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+282	src-tauri/src/proxy/opaque_state_rectifier.rs	637	637	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+283	src-tauri/src/proxy/opaque_state_rectifier.rs	653	653	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+284	src-tauri/src/proxy/opaque_state_rectifier.rs	657	657	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+285	src-tauri/src/proxy/opaque_state_rectifier.rs	695	695	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+286	src-tauri/src/proxy/opaque_state_rectifier.rs	696	696	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+287	src-tauri/src/proxy/opaque_state_rectifier.rs	701	701	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+288	src-tauri/src/proxy/opaque_state_rectifier.rs	714	714	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+289	src-tauri/src/proxy/opaque_state_rectifier.rs	720	720	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+290	src-tauri/src/proxy/opaque_state_rectifier.rs	723	723	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+291	src-tauri/src/proxy/opaque_state_rectifier.rs	732	732	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+292	src-tauri/src/proxy/opaque_state_rectifier.rs	756	756	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+293	src-tauri/src/proxy/opaque_state_rectifier.rs	771	771	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+294	src-tauri/src/proxy/opaque_state_rectifier.rs	774	774	reject	function signature
+295	src-tauri/src/proxy/opaque_state_rectifier.rs	777	777	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+296	src-tauri/src/proxy/opaque_state_rectifier.rs	788	788	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+297	src-tauri/src/proxy/opaque_state_rectifier.rs	795	795	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+298	src-tauri/src/proxy/opaque_state_rectifier.rs	799	799	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+299	src-tauri/src/proxy/opaque_state_rectifier.rs	803	803	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+300	src-tauri/src/proxy/opaque_state_rectifier.rs	806	806	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+301	src-tauri/src/proxy/opaque_state_rectifier.rs	813	813	reject	function signature
+302	src-tauri/src/proxy/opaque_state_rectifier.rs	825	825	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+303	src-tauri/src/proxy/opaque_state_rectifier.rs	829	829	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+304	src-tauri/src/proxy/opaque_state_rectifier.rs	836	836	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+305	src-tauri/src/proxy/opaque_state_rectifier.rs	845	845	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+306	src-tauri/src/proxy/opaque_state_rectifier.rs	895	895	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+307	src-tauri/src/proxy/opaque_state_rectifier.rs	901	901	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+308	src-tauri/src/proxy/opaque_state_rectifier.rs	932	932	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+309	src-tauri/src/proxy/privacy_filter/mod.rs	430	430	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+310	src-tauri/src/proxy/privacy_filter/mod.rs	433	433	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+311	src-tauri/src/proxy/privacy_filter/mod.rs	438	438	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+312	src-tauri/src/proxy/privacy_filter/mod.rs	468	468	reject	identifier containing token/key/secret/etc.; not crypto
+313	src-tauri/src/proxy/privacy_filter/secrets.rs	32	32	reject	regex literal for secret redaction
+314	src-tauri/src/proxy/privacy_filter/secrets.rs	39	39	reject	regex literal
+315	src-tauri/src/proxy/privacy_filter/secrets.rs	58	58	reject	comment
+316	src-tauri/src/proxy/privacy_filter/secrets.rs	65	65	reject	string literals
+317	src-tauri/src/proxy/privacy_filter/secrets.rs	66	66	reject	string literals
+318	src-tauri/src/proxy/privacy_filter/secrets.rs	428	428	reject	string literal
+319	src-tauri/src/proxy/privacy_filter/secrets.rs	696	696	reject	comment
+320	src-tauri/src/proxy/privacy_filter/tests.rs	157	157	reject	test string literal
+321	src-tauri/src/proxy/privacy_filter/tests.rs	178	178	reject	test string literal
+322	src-tauri/src/proxy/privacy_filter/tests.rs	179	179	reject	test string literal
+323	src-tauri/src/proxy/privacy_filter/tests.rs	426	426	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+324	src-tauri/src/proxy/privacy_filter/tests.rs	443	443	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+325	src-tauri/src/proxy/privacy_filter/tests.rs	650	650	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+326	src-tauri/src/proxy/privacy_filter/tests.rs	651	651	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+327	src-tauri/src/proxy/privacy_filter/tests.rs	652	652	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+328	src-tauri/src/proxy/privacy_filter/tests.rs	658	658	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+329	src-tauri/src/proxy/privacy_filter/tests.rs	660	660	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+330	src-tauri/src/proxy/privacy_filter/tests.rs	704	704	reject	comment
+331	src-tauri/src/proxy/provider_router.rs	102	102	reject	string literal
+332	src-tauri/src/proxy/provider_router.rs	145	145	reject	string literal
+333	src-tauri/src/proxy/provider_router.rs	175	175	reject	string literal
+334	src-tauri/src/proxy/provider_router.rs	208	208	reject	string literal
+335	src-tauri/src/proxy/provider_router.rs	238	238	reject	string literal
+336	src-tauri/src/proxy/providers/claude.rs	409	409	reject	identifier containing token/key/secret/etc.; not crypto
+337	src-tauri/src/proxy/providers/claude.rs	437	437	reject	comment
+338	src-tauri/src/proxy/providers/claude.rs	451	451	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+339	src-tauri/src/proxy/providers/claude.rs	840	840	reject	identifier containing token/key/secret/etc.; not crypto
+340	src-tauri/src/proxy/providers/claude.rs	955	955	reject	identifier containing token/key/secret/etc.; not crypto
+341	src-tauri/src/proxy/providers/claude.rs	1612	1612	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+342	src-tauri/src/proxy/providers/claude.rs	1657	1657	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+343	src-tauri/src/proxy/providers/claude.rs	2277	2277	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+344	src-tauri/src/proxy/providers/codex.rs	150	150	reject	identifier containing token/key/secret/etc.; not crypto
+345	src-tauri/src/proxy/providers/codex.rs	351	351	reject	identifier containing token/key/secret/etc.; not crypto
+346	src-tauri/src/proxy/providers/codex.rs	611	611	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+347	src-tauri/src/proxy/providers/codex.rs	641	641	reject	comment
+348	src-tauri/src/proxy/providers/codex.rs	642	642	reject	comment
+349	src-tauri/src/proxy/providers/codex.rs	644	644	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+350	src-tauri/src/proxy/providers/codex.rs	658	658	reject	comment
+351	src-tauri/src/proxy/providers/codex.rs	662	662	reject	comment
+352	src-tauri/src/proxy/providers/codex.rs	711	711	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+353	src-tauri/src/proxy/providers/codex.rs	712	712	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+354	src-tauri/src/proxy/providers/codex.rs	714	714	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+355	src-tauri/src/proxy/providers/codex.rs	715	715	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+356	src-tauri/src/proxy/providers/codex.rs	718	718	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+357	src-tauri/src/proxy/providers/codex.rs	1268	1268	reject	identifier containing token/key/secret/etc.; not crypto
+358	src-tauri/src/proxy/providers/codex.rs	2777	2777	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+359	src-tauri/src/proxy/providers/codex.rs	2781	2781	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+360	src-tauri/src/proxy/providers/codex.rs	2786	2786	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+361	src-tauri/src/proxy/providers/codex.rs	2807	2807	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+362	src-tauri/src/proxy/providers/codex.rs	2809	2809	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+363	src-tauri/src/proxy/providers/codex.rs	2812	2812	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+364	src-tauri/src/proxy/providers/codex.rs	2820	2820	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+365	src-tauri/src/proxy/providers/codex.rs	2828	2828	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+366	src-tauri/src/proxy/providers/codex.rs	2832	2832	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+367	src-tauri/src/proxy/providers/codex.rs	2840	2840	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+368	src-tauri/src/proxy/providers/codex.rs	2843	2843	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+369	src-tauri/src/proxy/providers/codex.rs	2844	2844	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+370	src-tauri/src/proxy/providers/codex.rs	2845	2845	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+371	src-tauri/src/proxy/providers/codex.rs	2865	2865	reject	function signature
+372	src-tauri/src/proxy/providers/codex.rs	2871	2871	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+373	src-tauri/src/proxy/providers/codex.rs	2874	2874	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+374	src-tauri/src/proxy/providers/codex.rs	2882	2882	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+375	src-tauri/src/proxy/providers/codex.rs	2890	2890	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+376	src-tauri/src/proxy/providers/codex.rs	2904	2904	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+377	src-tauri/src/proxy/providers/codex_chat_history.rs	253	253	reject	identifier containing token/key/secret/etc.; not crypto
+378	src-tauri/src/proxy/providers/codex_compaction.rs	7	7	reject	comment
+379	src-tauri/src/proxy/providers/codex_compaction.rs	12	12	reject	comment
+380	src-tauri/src/proxy/providers/codex_compaction.rs	27	27	reject	comment
+381	src-tauri/src/proxy/providers/codex_compaction.rs	77	77	reject	project function decoding a base64 envelope (decode_compaction_summary), no crypto
+382	src-tauri/src/proxy/providers/codex_compaction.rs	78	78	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+383	src-tauri/src/proxy/providers/codex_compaction.rs	83	83	reject	function signature
+384	src-tauri/src/proxy/providers/codex_compaction.rs	84	84	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+385	src-tauri/src/proxy/providers/codex_compaction.rs	87	87	reject	function signature
+386	src-tauri/src/proxy/providers/codex_compaction.rs	88	88	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+387	src-tauri/src/proxy/providers/codex_compaction.rs	98	98	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+388	src-tauri/src/proxy/providers/codex_compaction.rs	112	112	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+389	src-tauri/src/proxy/providers/codex_compaction.rs	113	113	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+390	src-tauri/src/proxy/providers/codex_compaction.rs	137	137	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+391	src-tauri/src/proxy/providers/codex_compaction.rs	302	302	reject	comment
+392	src-tauri/src/proxy/providers/codex_compaction.rs	330	330	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+393	src-tauri/src/proxy/providers/codex_compaction.rs	331	331	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+394	src-tauri/src/proxy/providers/codex_compaction.rs	529	529	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+395	src-tauri/src/proxy/providers/codex_compaction.rs	535	535	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+396	src-tauri/src/proxy/providers/codex_compaction.rs	564	564	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+397	src-tauri/src/proxy/providers/codex_compaction.rs	581	581	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+398	src-tauri/src/proxy/providers/codex_compaction.rs	583	583	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+399	src-tauri/src/proxy/providers/codex_compaction.rs	596	596	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+400	src-tauri/src/proxy/providers/codex_compaction.rs	664	664	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+401	src-tauri/src/proxy/providers/codex_compaction.rs	666	666	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+402	src-tauri/src/proxy/providers/codex_compaction.rs	682	682	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+403	src-tauri/src/proxy/providers/codex_compaction.rs	685	685	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+404	src-tauri/src/proxy/providers/codex_compaction.rs	760	760	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+405	src-tauri/src/proxy/providers/codex_oauth_auth.rs	155	155	reject	comment
+406	src-tauri/src/proxy/providers/codex_oauth_auth.rs	281	281	reject	comment
+407	src-tauri/src/proxy/providers/codex_oauth_auth.rs	642	642	reject	identifier containing token/key/secret/etc.; not crypto
+408	src-tauri/src/proxy/providers/codex_oauth_auth.rs	662	662	reject	identifier containing token/key/secret/etc.; not crypto
+409	src-tauri/src/proxy/providers/codex_oauth_auth.rs	671	671	reject	identifier containing token/key/secret/etc.; not crypto
+410	src-tauri/src/proxy/providers/codex_oauth_auth.rs	876	876	reject	identifier containing token/key/secret/etc.; not crypto
+411	src-tauri/src/proxy/providers/codex_oauth_auth.rs	921	921	reject	identifier containing token/key/secret/etc.; not crypto
+412	src-tauri/src/proxy/providers/codex_oauth_auth.rs	929	929	reject	identifier containing token/key/secret/etc.; not crypto
+413	src-tauri/src/proxy/providers/codex_oauth_auth.rs	937	937	reject	identifier containing token/key/secret/etc.; not crypto
+414	src-tauri/src/proxy/providers/codex_oauth_auth.rs	1053	1053	reject	identifier containing token/key/secret/etc.; not crypto
+415	src-tauri/src/proxy/providers/codex_oauth_auth.rs	1173	1173	reject	identifier containing token/key/secret/etc.; not crypto
+416	src-tauri/src/proxy/providers/codex_oauth_auth.rs	1258	1258	reject	identifier containing token/key/secret/etc.; not crypto
+417	src-tauri/src/proxy/providers/codex_oauth_auth.rs	1273	1273	reject	identifier containing token/key/secret/etc.; not crypto
+418	src-tauri/src/proxy/providers/codex_oauth_auth.rs	1419	1419	reject	identifier containing token/key/secret/etc.; not crypto
+419	src-tauri/src/proxy/providers/codex_oauth_auth.rs	1735	1735	reject	identifier containing token/key/secret/etc.; not crypto
+420	src-tauri/src/proxy/providers/codex_oauth_auth.rs	1871	1871	reject	identifier containing token/key/secret/etc.; not crypto
+421	src-tauri/src/proxy/providers/codex_oauth_auth.rs	2169	2169	reject	comment
+422	src-tauri/src/proxy/providers/codex_oauth_auth.rs	2170	2170	reject	project JWT payload parser: base64 decode only, no signature verify
+423	src-tauri/src/proxy/providers/codex_oauth_auth.rs	2187	2187	reject	identifier containing token/key/secret/etc.; not crypto
+424	src-tauri/src/proxy/providers/codex_oauth_auth.rs	2199	2199	reject	identifier containing token/key/secret/etc.; not crypto
+425	src-tauri/src/proxy/providers/codex_oauth_auth.rs	2330	2330	reject	function signature
+426	src-tauri/src/proxy/providers/codex_oauth_auth.rs	2331	2331	reject	identifier containing token/key/secret/etc.; not crypto
+427	src-tauri/src/proxy/providers/codex_oauth_auth.rs	2332	2332	reject	identifier containing token/key/secret/etc.; not crypto
+428	src-tauri/src/proxy/providers/codex_oauth_auth.rs	2336	2336	reject	function signature
+429	src-tauri/src/proxy/providers/codex_oauth_auth.rs	2343	2343	reject	string literal
+430	src-tauri/src/proxy/providers/codex_oauth_auth.rs	2344	2344	reject	identifier containing token/key/secret/etc.; not crypto
+431	src-tauri/src/proxy/providers/codex_oauth_auth.rs	2353	2353	reject	string literal
+432	src-tauri/src/proxy/providers/codex_oauth_auth.rs	2355	2355	reject	identifier containing token/key/secret/etc.; not crypto
+433	src-tauri/src/proxy/providers/codex_oauth_auth/browser.rs	57	57	asset	gt-0015
+434	src-tauri/src/proxy/providers/codex_oauth_auth/browser.rs	311	311	reject	identifier containing token/key/secret/etc.; not crypto
+435	src-tauri/src/proxy/providers/codex_oauth_auth/browser.rs	343	343	asset	gt-0016
+436	src-tauri/src/proxy/providers/codex_responses_arguments.rs	170	170	reject	identifier containing token/key/secret/etc.; not crypto
+437	src-tauri/src/proxy/providers/codex_responses_arguments.rs	186	186	reject	identifier containing token/key/secret/etc.; not crypto
+438	src-tauri/src/proxy/providers/codex_responses_sse.rs	253	253	reject	comment
+439	src-tauri/src/proxy/providers/copilot_auth.rs	445	445	reject	comment
+440	src-tauri/src/proxy/providers/copilot_auth.rs	652	652	reject	identifier containing token/key/secret/etc.; not crypto
+441	src-tauri/src/proxy/providers/copilot_auth.rs	843	843	reject	identifier containing token/key/secret/etc.; not crypto
+442	src-tauri/src/proxy/providers/copilot_auth.rs	898	898	reject	identifier containing token/key/secret/etc.; not crypto
+443	src-tauri/src/proxy/providers/copilot_auth.rs	914	914	reject	identifier containing token/key/secret/etc.; not crypto
+444	src-tauri/src/proxy/providers/copilot_auth.rs	936	936	reject	identifier containing token/key/secret/etc.; not crypto
+445	src-tauri/src/proxy/providers/copilot_auth.rs	999	999	reject	identifier containing token/key/secret/etc.; not crypto
+446	src-tauri/src/proxy/providers/copilot_auth.rs	1326	1326	reject	identifier containing token/key/secret/etc.; not crypto
+447	src-tauri/src/proxy/providers/copilot_auth.rs	1374	1374	reject	identifier containing token/key/secret/etc.; not crypto
+448	src-tauri/src/proxy/providers/copilot_auth.rs	1608	1608	reject	identifier containing token/key/secret/etc.; not crypto
+449	src-tauri/src/proxy/providers/copilot_auth.rs	1613	1613	reject	identifier containing token/key/secret/etc.; not crypto
+450	src-tauri/src/proxy/providers/gemini.rs	76	76	reject	identifier containing token/key/secret/etc.; not crypto
+451	src-tauri/src/proxy/providers/gemini.rs	91	91	reject	identifier containing token/key/secret/etc.; not crypto
+452	src-tauri/src/proxy/providers/gemini.rs	96	96	reject	identifier containing token/key/secret/etc.; not crypto
+453	src-tauri/src/proxy/providers/gemini.rs	104	104	reject	identifier containing token/key/secret/etc.; not crypto
+454	src-tauri/src/proxy/providers/gemini.rs	196	196	reject	identifier containing token/key/secret/etc.; not crypto
+455	src-tauri/src/proxy/providers/gemini.rs	239	239	reject	identifier containing token/key/secret/etc.; not crypto
+456	src-tauri/src/proxy/providers/gemini_shadow.rs	145	145	reject	identifier containing token/key/secret/etc.; not crypto
+457	src-tauri/src/proxy/providers/gemini_shadow.rs	195	195	reject	identifier containing token/key/secret/etc.; not crypto
+458	src-tauri/src/proxy/providers/gemini_shadow.rs	210	210	reject	identifier containing token/key/secret/etc.; not crypto
+459	src-tauri/src/proxy/providers/mod.rs	208	208	reject	identifier containing token/key/secret/etc.; not crypto
+460	src-tauri/src/proxy/providers/reasoning_bridge.rs	22	22	reject	comment
+461	src-tauri/src/proxy/providers/reasoning_bridge.rs	24	24	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+462	src-tauri/src/proxy/providers/reasoning_bridge.rs	78	78	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+463	src-tauri/src/proxy/providers/reasoning_bridge.rs	79	79	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+464	src-tauri/src/proxy/providers/reasoning_bridge.rs	83	83	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+465	src-tauri/src/proxy/providers/reasoning_bridge.rs	84	84	reject	comment
+466	src-tauri/src/proxy/providers/reasoning_bridge.rs	128	128	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+467	src-tauri/src/proxy/providers/reasoning_bridge.rs	139	139	reject	function signature
+468	src-tauri/src/proxy/providers/reasoning_bridge.rs	144	144	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+469	src-tauri/src/proxy/providers/reasoning_bridge.rs	169	169	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+470	src-tauri/src/proxy/providers/reasoning_bridge.rs	180	180	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+471	src-tauri/src/proxy/providers/reasoning_bridge.rs	194	194	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+472	src-tauri/src/proxy/providers/reasoning_bridge.rs	206	206	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+473	src-tauri/src/proxy/providers/streaming.rs	114	114	reject	identifier containing token/key/secret/etc.; not crypto
+474	src-tauri/src/proxy/providers/streaming_codex_anthropic.rs	17	17	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+475	src-tauri/src/proxy/providers/streaming_codex_anthropic.rs	1106	1106	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+476	src-tauri/src/proxy/providers/streaming_codex_anthropic.rs	1126	1126	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+477	src-tauri/src/proxy/providers/streaming_codex_chat.rs	269	269	reject	identifier containing token/key/secret/etc.; not crypto
+478	src-tauri/src/proxy/providers/streaming_codex_chat.rs	371	371	reject	identifier containing token/key/secret/etc.; not crypto
+479	src-tauri/src/proxy/providers/streaming_codex_chat.rs	1592	1592	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+480	src-tauri/src/proxy/providers/streaming_responses.rs	523	523	reject	identifier containing token/key/secret/etc.; not crypto
+481	src-tauri/src/proxy/providers/streaming_responses.rs	527	527	reject	identifier containing token/key/secret/etc.; not crypto
+482	src-tauri/src/proxy/providers/streaming_responses.rs	548	548	reject	identifier containing token/key/secret/etc.; not crypto
+483	src-tauri/src/proxy/providers/streaming_responses.rs	552	552	reject	identifier containing token/key/secret/etc.; not crypto
+484	src-tauri/src/proxy/providers/streaming_responses.rs	574	574	reject	identifier containing token/key/secret/etc.; not crypto
+485	src-tauri/src/proxy/providers/streaming_responses.rs	575	575	reject	identifier containing token/key/secret/etc.; not crypto
+486	src-tauri/src/proxy/providers/streaming_responses.rs	579	579	reject	identifier containing token/key/secret/etc.; not crypto
+487	src-tauri/src/proxy/providers/streaming_responses.rs	583	583	reject	identifier containing token/key/secret/etc.; not crypto
+488	src-tauri/src/proxy/providers/streaming_responses.rs	718	718	reject	identifier containing token/key/secret/etc.; not crypto
+489	src-tauri/src/proxy/providers/streaming_responses.rs	722	722	reject	identifier containing token/key/secret/etc.; not crypto
+490	src-tauri/src/proxy/providers/streaming_responses.rs	823	823	reject	identifier containing token/key/secret/etc.; not crypto
+491	src-tauri/src/proxy/providers/streaming_responses.rs	824	824	reject	identifier containing token/key/secret/etc.; not crypto
+492	src-tauri/src/proxy/providers/streaming_responses.rs	990	990	reject	identifier containing token/key/secret/etc.; not crypto
+493	src-tauri/src/proxy/providers/streaming_responses.rs	994	994	reject	identifier containing token/key/secret/etc.; not crypto
+494	src-tauri/src/proxy/providers/streaming_responses.rs	1208	1208	reject	identifier containing token/key/secret/etc.; not crypto
+495	src-tauri/src/proxy/providers/streaming_responses.rs	1239	1239	reject	identifier containing token/key/secret/etc.; not crypto
+496	src-tauri/src/proxy/providers/streaming_responses.rs	1282	1282	reject	identifier containing token/key/secret/etc.; not crypto
+497	src-tauri/src/proxy/providers/streaming_responses.rs	1306	1306	reject	identifier containing token/key/secret/etc.; not crypto
+498	src-tauri/src/proxy/providers/streaming_responses.rs	1460	1460	reject	identifier containing token/key/secret/etc.; not crypto
+499	src-tauri/src/proxy/providers/streaming_responses.rs	1570	1570	reject	identifier containing token/key/secret/etc.; not crypto
+500	src-tauri/src/proxy/providers/streaming_responses.rs	1571	1571	reject	identifier containing token/key/secret/etc.; not crypto
+501	src-tauri/src/proxy/providers/streaming_responses.rs	1660	1660	reject	identifier containing token/key/secret/etc.; not crypto
+502	src-tauri/src/proxy/providers/streaming_responses.rs	1661	1661	reject	identifier containing token/key/secret/etc.; not crypto
+503	src-tauri/src/proxy/providers/streaming_responses.rs	1665	1665	reject	identifier containing token/key/secret/etc.; not crypto
+504	src-tauri/src/proxy/providers/streaming_responses.rs	1843	1843	reject	identifier containing token/key/secret/etc.; not crypto
+505	src-tauri/src/proxy/providers/streaming_responses.rs	1844	1844	reject	identifier containing token/key/secret/etc.; not crypto
+506	src-tauri/src/proxy/providers/streaming_responses.rs	1956	1956	reject	identifier containing token/key/secret/etc.; not crypto
+507	src-tauri/src/proxy/providers/streaming_responses.rs	2988	2988	reject	identifier containing token/key/secret/etc.; not crypto
+508	src-tauri/src/proxy/providers/streaming_responses.rs	3326	3326	reject	identifier containing token/key/secret/etc.; not crypto
+509	src-tauri/src/proxy/providers/streaming_responses.rs	3377	3377	reject	identifier containing token/key/secret/etc.; not crypto
+510	src-tauri/src/proxy/providers/streaming_responses.rs	3378	3378	reject	identifier containing token/key/secret/etc.; not crypto
+511	src-tauri/src/proxy/providers/streaming_responses.rs	3443	3443	reject	comment
+512	src-tauri/src/proxy/providers/streaming_responses.rs	3448	3448	reject	identifier containing token/key/secret/etc.; not crypto
+513	src-tauri/src/proxy/providers/streaming_responses.rs	3503	3503	reject	identifier containing token/key/secret/etc.; not crypto
+514	src-tauri/src/proxy/providers/streaming_responses.rs	4233	4233	reject	identifier containing token/key/secret/etc.; not crypto
+515	src-tauri/src/proxy/providers/streaming_responses.rs	4450	4450	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+516	src-tauri/src/proxy/providers/streaming_responses.rs	4451	4451	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+517	src-tauri/src/proxy/providers/streaming_responses.rs	4454	4454	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+518	src-tauri/src/proxy/providers/streaming_responses.rs	4469	4469	reject	comment
+519	src-tauri/src/proxy/providers/streaming_responses.rs	7127	7127	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+520	src-tauri/src/proxy/providers/streaming_responses.rs	7148	7148	reject	function signature
+521	src-tauri/src/proxy/providers/streaming_responses.rs	7155	7155	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+522	src-tauri/src/proxy/providers/streaming_responses.rs	7186	7186	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+523	src-tauri/src/proxy/providers/streaming_responses.rs	7203	7203	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+524	src-tauri/src/proxy/providers/streaming_responses.rs	7231	7231	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+525	src-tauri/src/proxy/providers/transform.rs	521	521	reject	comment
+526	src-tauri/src/proxy/providers/transform.rs	837	837	reject	identifier containing token/key/secret/etc.; not crypto
+527	src-tauri/src/proxy/providers/transform.rs	843	843	reject	identifier containing token/key/secret/etc.; not crypto
+528	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	29	29	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+529	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	83	83	reject	comment
+530	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	84	84	reject	comment
+531	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	101	101	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+532	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	106	106	reject	project function decoding a base64 envelope, no crypto
+533	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	107	107	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+534	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	119	119	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+535	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	130	130	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+536	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	191	191	reject	identifier containing token/key/secret/etc.; not crypto
+537	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	194	194	reject	identifier containing token/key/secret/etc.; not crypto
+538	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	321	321	reject	identifier containing token/key/secret/etc.; not crypto
+539	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	525	525	reject	comment
+540	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	664	664	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+541	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	2233	2233	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+542	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	2245	2245	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+543	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	2465	2465	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+544	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	2481	2481	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+545	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	2556	2556	reject	function signature
+546	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	2661	2661	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+547	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	2664	2664	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+548	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	2693	2693	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+549	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	2914	2914	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+550	src-tauri/src/proxy/providers/transform_codex_anthropic.rs	3116	3116	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+551	src-tauri/src/proxy/providers/transform_codex_chat.rs	2379	2379	reject	identifier containing token/key/secret/etc.; not crypto
+552	src-tauri/src/proxy/providers/transform_codex_chat.rs	2384	2384	reject	identifier containing token/key/secret/etc.; not crypto
+553	src-tauri/src/proxy/providers/transform_codex_chat.rs	2389	2389	reject	identifier containing token/key/secret/etc.; not crypto
+554	src-tauri/src/proxy/providers/transform_codex_chat.rs	6712	6712	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+555	src-tauri/src/proxy/providers/transform_codex_chat.rs	6745	6745	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+556	src-tauri/src/proxy/providers/transform_codex_chat_moonshot_schema.rs	126	126	reject	identifier containing token/key/secret/etc.; not crypto
+557	src-tauri/src/proxy/providers/transform_codex_responses_namespace.rs	17	17	reject	comment
+558	src-tauri/src/proxy/providers/transform_codex_responses_xai_sanitize.rs	50	50	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+559	src-tauri/src/proxy/providers/transform_codex_responses_xai_sanitize.rs	787	787	reject	comment
+560	src-tauri/src/proxy/providers/transform_codex_responses_xai_sanitize.rs	936	936	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+561	src-tauri/src/proxy/providers/transform_codex_responses_xai_sanitize.rs	937	937	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+562	src-tauri/src/proxy/providers/transform_codex_responses_xai_sanitize.rs	1222	1222	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+563	src-tauri/src/proxy/providers/transform_codex_responses_xai_sanitize.rs	1223	1223	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+564	src-tauri/src/proxy/providers/transform_codex_responses_xai_sanitize.rs	1232	1232	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+565	src-tauri/src/proxy/providers/transform_codex_responses_xai_sanitize.rs	1243	1243	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+566	src-tauri/src/proxy/providers/transform_codex_responses_xai_sanitize.rs	1254	1254	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+567	src-tauri/src/proxy/providers/transform_codex_responses_xai_sanitize.rs	1261	1261	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+568	src-tauri/src/proxy/providers/transform_codex_responses_xai_sanitize.rs	1700	1700	reject	function signature
+569	src-tauri/src/proxy/providers/transform_codex_responses_xai_sanitize.rs	1711	1711	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+570	src-tauri/src/proxy/providers/transform_codex_responses_xai_sanitize.rs	1800	1800	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+571	src-tauri/src/proxy/providers/transform_gemini.rs	1291	1291	reject	identifier containing token/key/secret/etc.; not crypto
+572	src-tauri/src/proxy/providers/transform_gemini.rs	1292	1292	reject	identifier containing token/key/secret/etc.; not crypto
+573	src-tauri/src/proxy/providers/transform_gemini.rs	1368	1368	reject	identifier containing token/key/secret/etc.; not crypto
+574	src-tauri/src/proxy/providers/transform_gemini.rs	1408	1408	reject	identifier containing token/key/secret/etc.; not crypto
+575	src-tauri/src/proxy/providers/transform_gemini.rs	1413	1413	reject	identifier containing token/key/secret/etc.; not crypto
+576	src-tauri/src/proxy/providers/transform_gemini.rs	1422	1422	reject	identifier containing token/key/secret/etc.; not crypto
+577	src-tauri/src/proxy/providers/transform_gemini.rs	1441	1441	reject	identifier containing token/key/secret/etc.; not crypto
+578	src-tauri/src/proxy/providers/transform_gemini.rs	1607	1607	reject	identifier containing token/key/secret/etc.; not crypto
+579	src-tauri/src/proxy/providers/transform_gemini.rs	1611	1611	reject	identifier containing token/key/secret/etc.; not crypto
+580	src-tauri/src/proxy/providers/transform_gemini.rs	1615	1615	reject	identifier containing token/key/secret/etc.; not crypto
+581	src-tauri/src/proxy/providers/transform_gemini.rs	1625	1625	reject	identifier containing token/key/secret/etc.; not crypto
+582	src-tauri/src/proxy/providers/transform_gemini.rs	1626	1626	reject	identifier containing token/key/secret/etc.; not crypto
+583	src-tauri/src/proxy/providers/transform_responses.rs	629	629	reject	identifier containing token/key/secret/etc.; not crypto
+584	src-tauri/src/proxy/providers/transform_responses.rs	1526	1526	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+585	src-tauri/src/proxy/providers/transform_responses.rs	1581	1581	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+586	src-tauri/src/proxy/providers/transform_responses.rs	1777	1777	reject	comment
+587	src-tauri/src/proxy/providers/transform_responses.rs	1999	1999	reject	comment
+588	src-tauri/src/proxy/providers/transform_responses.rs	2015	2015	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+589	src-tauri/src/proxy/providers/transform_responses.rs	2229	2229	reject	identifier containing token/key/secret/etc.; not crypto
+590	src-tauri/src/proxy/providers/transform_responses.rs	2244	2244	reject	identifier containing token/key/secret/etc.; not crypto
+591	src-tauri/src/proxy/providers/transform_responses.rs	3495	3495	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+592	src-tauri/src/proxy/providers/transform_responses.rs	3691	3691	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+593	src-tauri/src/proxy/providers/transform_responses.rs	3698	3698	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+594	src-tauri/src/proxy/providers/transform_responses.rs	4825	4825	reject	function signature
+595	src-tauri/src/proxy/providers/transform_responses.rs	4830	4830	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+596	src-tauri/src/proxy/providers/transform_responses.rs	4875	4875	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+597	src-tauri/src/proxy/providers/transform_responses.rs	4914	4914	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+598	src-tauri/src/proxy/providers/transform_responses.rs	4925	4925	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+599	src-tauri/src/proxy/providers/transform_responses.rs	5328	5328	reject	comment
+600	src-tauri/src/proxy/providers/transform_responses.rs	5329	5329	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+601	src-tauri/src/proxy/providers/transform_responses.rs	5356	5356	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+602	src-tauri/src/proxy/providers/transform_responses.rs	5371	5371	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+603	src-tauri/src/proxy/providers/transform_responses.rs	5375	5375	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+604	src-tauri/src/proxy/providers/transform_responses.rs	5392	5392	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+605	src-tauri/src/proxy/providers/xai_oauth_auth.rs	335	335	reject	identifier containing token/key/secret/etc.; not crypto
+606	src-tauri/src/proxy/providers/xai_oauth_auth.rs	337	337	reject	identifier containing token/key/secret/etc.; not crypto
+607	src-tauri/src/proxy/providers/xai_oauth_auth.rs	349	349	reject	identifier containing token/key/secret/etc.; not crypto
+608	src-tauri/src/proxy/providers/xai_oauth_auth.rs	390	390	reject	identifier containing token/key/secret/etc.; not crypto
+609	src-tauri/src/proxy/providers/xai_oauth_auth.rs	551	551	reject	identifier containing token/key/secret/etc.; not crypto
+610	src-tauri/src/proxy/providers/xai_oauth_auth.rs	626	626	reject	identifier containing token/key/secret/etc.; not crypto
+611	src-tauri/src/proxy/providers/xai_oauth_auth.rs	644	644	reject	identifier containing token/key/secret/etc.; not crypto
+612	src-tauri/src/proxy/providers/xai_oauth_auth.rs	816	816	reject	nonce from SystemTime for a temp file name: not crypto
+613	src-tauri/src/proxy/providers/xai_oauth_auth.rs	916	916	reject	project JWT payload parser: base64 decode only, no signature verify
+614	src-tauri/src/proxy/providers/xai_oauth_auth.rs	926	926	reject	identifier containing token/key/secret/etc.; not crypto
+615	src-tauri/src/proxy/providers/xai_oauth_auth.rs	927	927	reject	identifier containing token/key/secret/etc.; not crypto
+616	src-tauri/src/proxy/providers/xai_oauth_auth.rs	1004	1004	reject	test helper building an unsigned JWT string
+617	src-tauri/src/proxy/providers/xai_oauth_auth.rs	1015	1015	reject	identifier containing token/key/secret/etc.; not crypto
+618	src-tauri/src/proxy/providers/xai_oauth_auth.rs	1026	1026	reject	identifier containing token/key/secret/etc.; not crypto
+619	src-tauri/src/proxy/response_processor.rs	430	430	reject	identifier containing token/key/secret/etc.; not crypto
+620	src-tauri/src/proxy/server.rs	1308	1308	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+621	src-tauri/src/proxy/server.rs	1385	1385	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+622	src-tauri/src/proxy/server.rs	1428	1428	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+623	src-tauri/src/proxy/thinking_budget_rectifier.rs	62	62	reject	identifier containing token/key/secret/etc.; not crypto
+624	src-tauri/src/proxy/thinking_budget_rectifier.rs	125	125	reject	identifier containing token/key/secret/etc.; not crypto
+625	src-tauri/src/proxy/thinking_budget_rectifier.rs	131	131	reject	identifier containing token/key/secret/etc.; not crypto
+626	src-tauri/src/proxy/thinking_optimizer.rs	38	38	reject	identifier containing token/key/secret/etc.; not crypto
+627	src-tauri/src/proxy/usage/calculator.rs	82	82	reject	identifier containing token/key/secret/etc.; not crypto
+628	src-tauri/src/proxy/usage/calculator.rs	100	100	reject	identifier containing token/key/secret/etc.; not crypto
+629	src-tauri/src/proxy/usage/logger.rs	55	55	reject	function signature of a project crypto helper; the library call inside is annotated
+630	src-tauri/src/proxy/usage/logger.rs	68	68	asset	gt-0017
+631	src-tauri/src/proxy/usage/logger.rs	137	137	reject	identifier containing token/key/secret/etc.; not crypto
+632	src-tauri/src/proxy/usage/logger.rs	160	160	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+633	src-tauri/src/proxy/usage/logger.rs	170	170	reject	log/error string
+634	src-tauri/src/proxy/usage/parser.rs	325	325	reject	identifier containing token/key/secret/etc.; not crypto
+635	src-tauri/src/proxy/usage/parser.rs	326	326	reject	identifier containing token/key/secret/etc.; not crypto
+636	src-tauri/src/proxy/usage/parser.rs	339	339	reject	identifier containing token/key/secret/etc.; not crypto
+637	src-tauri/src/proxy/usage/parser.rs	340	340	reject	identifier containing token/key/secret/etc.; not crypto
+638	src-tauri/src/proxy/usage/parser.rs	422	422	reject	identifier containing token/key/secret/etc.; not crypto
+639	src-tauri/src/proxy/usage/parser.rs	423	423	reject	identifier containing token/key/secret/etc.; not crypto
+640	src-tauri/src/proxy/usage/parser.rs	426	426	reject	identifier containing token/key/secret/etc.; not crypto
+641	src-tauri/src/proxy/usage/parser.rs	427	427	reject	identifier containing token/key/secret/etc.; not crypto
+642	src-tauri/src/proxy/usage/parser.rs	476	476	reject	identifier containing token/key/secret/etc.; not crypto
+643	src-tauri/src/proxy/usage/parser.rs	477	477	reject	identifier containing token/key/secret/etc.; not crypto
+644	src-tauri/src/proxy/usage/parser.rs	481	481	reject	identifier containing token/key/secret/etc.; not crypto
+645	src-tauri/src/proxy/usage/parser.rs	500	500	reject	identifier containing token/key/secret/etc.; not crypto
+646	src-tauri/src/services/agy_account/mod.rs	254	254	reject	identifier containing token/key/secret/etc.; not crypto
+647	src-tauri/src/services/agy_account/mod.rs	400	400	reject	identifier containing token/key/secret/etc.; not crypto
+648	src-tauri/src/services/agy_account/mod.rs	404	404	reject	identifier containing token/key/secret/etc.; not crypto
+649	src-tauri/src/services/agy_account/mod.rs	472	472	reject	identifier containing token/key/secret/etc.; not crypto
+650	src-tauri/src/services/agy_account/mod.rs	532	532	reject	identifier containing token/key/secret/etc.; not crypto
+651	src-tauri/src/services/agy_account/mod.rs	704	704	reject	identifier containing token/key/secret/etc.; not crypto
+652	src-tauri/src/services/agy_account/oauth.rs	80	80	asset	gt-0018
+653	src-tauri/src/services/agy_account/oauth.rs	223	223	reject	identifier containing token/key/secret/etc.; not crypto
+654	src-tauri/src/services/agy_account/oauth.rs	237	237	reject	identifier containing token/key/secret/etc.; not crypto
+655	src-tauri/src/services/agy_account/oauth.rs	287	287	reject	comment
+656	src-tauri/src/services/agy_account/oauth.rs	337	337	reject	identifier containing token/key/secret/etc.; not crypto
+657	src-tauri/src/services/agy_account/oauth.rs	338	338	reject	identifier containing token/key/secret/etc.; not crypto
+658	src-tauri/src/services/agy_account/oauth.rs	372	372	reject	identifier containing token/key/secret/etc.; not crypto
+659	src-tauri/src/services/claude_account/layout.rs	11	11	reject	comment
+660	src-tauri/src/services/claude_account/layout.rs	118	118	reject	comment
+661	src-tauri/src/services/claude_account/layout.rs	123	123	asset	gt-0019
+662	src-tauri/src/services/claude_account/layout.rs	124	124	reject	digest output formatting
+663	src-tauri/src/services/claude_account/layout.rs	162	162	reject	comment
+664	src-tauri/src/services/claude_account/layout.rs	167	167	asset	gt-0020
+665	src-tauri/src/services/claude_account/mod.rs	405	405	reject	identifier containing token/key/secret/etc.; not crypto
+666	src-tauri/src/services/claude_account/mod.rs	421	421	reject	identifier containing token/key/secret/etc.; not crypto
+667	src-tauri/src/services/claude_account/snapshot/mod.rs	157	157	reject	identifier containing token/key/secret/etc.; not crypto
+668	src-tauri/src/services/claude_account/snapshot/mod.rs	183	183	reject	identifier containing token/key/secret/etc.; not crypto
+669	src-tauri/src/services/claude_account/snapshot/store.rs	105	105	reject	comment
+670	src-tauri/src/services/claude_account/snapshot/store.rs	108	108	asset	gt-0021
+671	src-tauri/src/services/claude_account/snapshot/store.rs	109	109	reject	digest output formatting
+672	src-tauri/src/services/claude_account/snapshot/switch.rs	101	101	reject	identifier containing token/key/secret/etc.; not crypto
+673	src-tauri/src/services/claude_account/snapshot/tests.rs	126	126	reject	identifier containing token/key/secret/etc.; not crypto
+674	src-tauri/src/services/coding_plan.rs	166	166	reject	identifier containing token/key/secret/etc.; not crypto
+675	src-tauri/src/services/coding_plan.rs	1359	1359	reject	comment
+676	src-tauri/src/services/coding_plan.rs	1360	1360	reject	comment
+677	src-tauri/src/services/coding_plan.rs	1361	1361	reject	comment
+678	src-tauri/src/services/coding_plan.rs	1366	1366	reject	string literal
+679	src-tauri/src/services/coding_plan.rs	1368	1368	reject	function signature of a project crypto helper; the library call inside is annotated
+680	src-tauri/src/services/coding_plan.rs	1370	1370	reject	type alias Hmac<Sha256>
+681	src-tauri/src/services/coding_plan.rs	1371	1371	asset	gt-0022
+682	src-tauri/src/services/coding_plan.rs	1378	1378	asset	gt-0023
+683	src-tauri/src/services/coding_plan.rs	1414	1414	reject	comment
+684	src-tauri/src/services/coding_plan.rs	1431	1431	reject	format string literal (canonical headers)
+685	src-tauri/src/services/coding_plan.rs	1439	1439	reject	format string literal
+686	src-tauri/src/services/coding_plan.rs	1443	1443	reject	comment
+687	src-tauri/src/services/coding_plan.rs	1444	1444	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+688	src-tauri/src/services/coding_plan.rs	1445	1445	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+689	src-tauri/src/services/coding_plan.rs	1446	1446	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+690	src-tauri/src/services/coding_plan.rs	1447	1447	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+691	src-tauri/src/services/coding_plan.rs	1448	1448	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+692	src-tauri/src/services/coding_plan.rs	1454	1454	reject	identifier containing token/key/secret/etc.; not crypto
+693	src-tauri/src/services/coding_plan.rs	1482	1482	reject	HTTP header name string
+694	src-tauri/src/services/coding_plan.rs	3020	3020	reject	comment
+695	src-tauri/src/services/coding_plan.rs	3029	3029	reject	test assertion on a header string
+696	src-tauri/src/services/coding_plan.rs	3033	3033	reject	test assertion on a header string
+697	src-tauri/src/services/dsh_account.rs	292	292	asset	gt-0024
+698	src-tauri/src/services/dsh_account.rs	504	504	reject	string literal
+699	src-tauri/src/services/dsh_account.rs	739	739	asset	gt-0025
+700	src-tauri/src/services/env_checker.rs	21	21	reject	identifier containing token/key/secret/etc.; not crypto
+701	src-tauri/src/services/kimi_oauth/account.rs	40	40	reject	comment
+702	src-tauri/src/services/kimi_oauth/account.rs	129	129	asset	gt-0026
+703	src-tauri/src/services/kimi_oauth/account.rs	130	130	reject	digest output formatting
+704	src-tauri/src/services/kimi_oauth/account.rs	137	137	asset	gt-0027
+705	src-tauri/src/services/kimi_oauth/account.rs	420	420	reject	identifier containing token/key/secret/etc.; not crypto
+706	src-tauri/src/services/kimi_oauth/mod.rs	69	69	asset	gt-0028
+707	src-tauri/src/services/kimi_oauth/mod.rs	70	70	reject	digest output used in a JSON key
+708	src-tauri/src/services/kimi_oauth/mod.rs	171	171	reject	identifier containing token/key/secret/etc.; not crypto
+709	src-tauri/src/services/kimi_oauth/mod.rs	369	369	reject	string literal
+710	src-tauri/src/services/kimi_oauth/mod.rs	976	976	reject	identifier containing token/key/secret/etc.; not crypto
+711	src-tauri/src/services/kimi_oauth/mod.rs	1020	1020	reject	identifier containing token/key/secret/etc.; not crypto
+712	src-tauri/src/services/model_fetch.rs	114	114	reject	identifier containing token/key/secret/etc.; not crypto
+713	src-tauri/src/services/pi_prompt_files.rs	340	340	asset	gt-0029
+714	src-tauri/src/services/provider/agy_direct.rs	60	60	reject	string literal
+715	src-tauri/src/services/provider/claude_editor.rs	345	345	reject	identifier containing token/key/secret/etc.; not crypto
+716	src-tauri/src/services/provider/claude_editor.rs	405	405	reject	identifier containing token/key/secret/etc.; not crypto
+717	src-tauri/src/services/provider/codex_client_catalog.rs	319	319	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+718	src-tauri/src/services/provider/codex_client_catalog.rs	346	346	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+719	src-tauri/src/services/provider/codex_client_catalog.rs	430	430	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+720	src-tauri/src/services/provider/codex_client_catalog.rs	893	893	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+721	src-tauri/src/services/provider/codex_direct.rs	267	267	reject	identifier containing token/key/secret/etc.; not crypto
+722	src-tauri/src/services/provider/codex_direct.rs	1090	1090	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+723	src-tauri/src/services/provider/codex_direct.rs	1102	1102	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+724	src-tauri/src/services/provider/codex_direct.rs	1105	1105	reject	identifier containing token/key/secret/etc.; not crypto
+725	src-tauri/src/services/provider/codex_direct.rs	1153	1153	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+726	src-tauri/src/services/provider/codex_direct.rs	1227	1227	reject	identifier containing token/key/secret/etc.; not crypto
+727	src-tauri/src/services/provider/codex_editor.rs	123	123	reject	identifier containing token/key/secret/etc.; not crypto
+728	src-tauri/src/services/provider/codex_editor.rs	459	459	reject	identifier containing token/key/secret/etc.; not crypto
+729	src-tauri/src/services/provider/codex_editor.rs	465	465	reject	identifier containing token/key/secret/etc.; not crypto
+730	src-tauri/src/services/provider/codex_login.rs	167	167	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+731	src-tauri/src/services/provider/codex_login.rs	186	186	reject	comment
+732	src-tauri/src/services/provider/codex_login.rs	362	362	reject	comment
+733	src-tauri/src/services/provider/codex_login.rs	402	402	reject	comment
+734	src-tauri/src/services/provider/codex_official_models.rs	84	84	reject	identifier containing token/key/secret/etc.; not crypto
+735	src-tauri/src/services/provider/codex_official_models.rs	305	305	reject	identifier containing token/key/secret/etc.; not crypto
+736	src-tauri/src/services/provider/codex_terminal.rs	131	131	reject	identifier containing token/key/secret/etc.; not crypto
+737	src-tauri/src/services/provider/codex_terminal.rs	278	278	reject	identifier containing token/key/secret/etc.; not crypto
+738	src-tauri/src/services/provider/gemini_editor.rs	247	247	reject	identifier containing token/key/secret/etc.; not crypto
+739	src-tauri/src/services/provider/live.rs	103	103	reject	identifier containing token/key/secret/etc.; not crypto
+740	src-tauri/src/services/provider/live.rs	252	252	reject	identifier containing token/key/secret/etc.; not crypto
+741	src-tauri/src/services/provider/live.rs	489	489	reject	identifier containing token/key/secret/etc.; not crypto
+742	src-tauri/src/services/provider/live.rs	1243	1243	reject	identifier containing token/key/secret/etc.; not crypto
+743	src-tauri/src/services/provider/mod.rs	1196	1196	reject	constant name SSL_BYPASS
+744	src-tauri/src/services/provider/mod.rs	5498	5498	reject	identifier containing token/key/secret/etc.; not crypto
+745	src-tauri/src/services/provider/mod.rs	5499	5499	reject	identifier containing token/key/secret/etc.; not crypto
+746	src-tauri/src/services/provider/mod.rs	6192	6192	reject	identifier containing token/key/secret/etc.; not crypto
+747	src-tauri/src/services/provider/mod.rs	6266	6266	reject	identifier containing token/key/secret/etc.; not crypto
+748	src-tauri/src/services/provider/mod.rs	6357	6357	reject	identifier containing token/key/secret/etc.; not crypto
+749	src-tauri/src/services/provider/mod.rs	6394	6394	reject	identifier containing token/key/secret/etc.; not crypto
+750	src-tauri/src/services/provider/mod.rs	7662	7662	reject	string constant name containing PRIVATE_KEY
+751	src-tauri/src/services/provider/mod.rs	7704	7704	reject	string constant name containing PRIVATE_KEY
+752	src-tauri/src/services/provider/mod.rs	7996	7996	reject	identifier containing token/key/secret/etc.; not crypto
+753	src-tauri/src/services/provider/mod.rs	8458	8458	reject	identifier containing token/key/secret/etc.; not crypto
+754	src-tauri/src/services/provider/mod.rs	8531	8531	reject	identifier containing token/key/secret/etc.; not crypto
+755	src-tauri/src/services/provider/mod.rs	8576	8576	reject	identifier containing token/key/secret/etc.; not crypto
+756	src-tauri/src/services/provider/mod.rs	8605	8605	reject	identifier containing token/key/secret/etc.; not crypto
+757	src-tauri/src/services/provider/mod.rs	8631	8631	reject	identifier containing token/key/secret/etc.; not crypto
+758	src-tauri/src/services/provider/mod.rs	8692	8692	reject	identifier containing token/key/secret/etc.; not crypto
+759	src-tauri/src/services/provider/usage.rs	110	110	reject	identifier containing token/key/secret/etc.; not crypto
+760	src-tauri/src/services/s3.rs	64	64	reject	identifier containing token/key/secret/etc.; not crypto
+761	src-tauri/src/services/s3.rs	89	89	reject	comment
+762	src-tauri/src/services/s3.rs	91	91	reject	function signature of a project crypto helper; the library call inside is annotated
+763	src-tauri/src/services/s3.rs	93	93	reject	type alias Hmac<Sha256>
+764	src-tauri/src/services/s3.rs	94	94	asset	gt-0030
+765	src-tauri/src/services/s3.rs	99	99	reject	function signature of a project crypto helper; the library call inside is annotated
+766	src-tauri/src/services/s3.rs	101	101	asset	gt-0031
+767	src-tauri/src/services/s3.rs	126	126	reject	comment
+768	src-tauri/src/services/s3.rs	146	146	reject	HTTP header insert of a computed hash value
+769	src-tauri/src/services/s3.rs	200	200	reject	format string literal
+770	src-tauri/src/services/s3.rs	203	203	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+771	src-tauri/src/services/s3.rs	207	207	reject	comment
+772	src-tauri/src/services/s3.rs	208	208	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+773	src-tauri/src/services/s3.rs	212	212	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+774	src-tauri/src/services/s3.rs	213	213	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+775	src-tauri/src/services/s3.rs	214	214	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+776	src-tauri/src/services/s3.rs	217	217	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+777	src-tauri/src/services/s3.rs	222	222	reject	identifier containing token/key/secret/etc.; not crypto
+778	src-tauri/src/services/s3.rs	344	344	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+779	src-tauri/src/services/s3.rs	386	386	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+780	src-tauri/src/services/s3.rs	431	431	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+781	src-tauri/src/services/s3.rs	502	502	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+782	src-tauri/src/services/s3.rs	541	541	reject	comment
+783	src-tauri/src/services/s3.rs	544	544	reject	function signature of a project crypto helper; the library call inside is annotated
+784	src-tauri/src/services/s3.rs	546	546	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+785	src-tauri/src/services/s3.rs	552	552	reject	function signature of a project crypto helper; the library call inside is annotated
+786	src-tauri/src/services/s3.rs	555	555	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+787	src-tauri/src/services/s3.rs	561	561	reject	function signature of a project crypto helper; the library call inside is annotated
+788	src-tauri/src/services/s3.rs	562	562	reject	comment
+789	src-tauri/src/services/s3.rs	563	563	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+790	src-tauri/src/services/s3.rs	748	748	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+791	src-tauri/src/services/s3.rs	758	758	reject	test string literal
+792	src-tauri/src/services/s3.rs	764	764	reject	test assertion on a header string
+793	src-tauri/src/services/s3.rs	788	788	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+794	src-tauri/src/services/s3.rs	810	810	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+795	src-tauri/src/services/s3.rs	811	811	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+796	src-tauri/src/services/s3.rs	812	812	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+797	src-tauri/src/services/s3.rs	813	813	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+798	src-tauri/src/services/s3.rs	819	819	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+799	src-tauri/src/services/s3.rs	820	820	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+800	src-tauri/src/services/s3.rs	821	821	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+801	src-tauri/src/services/s3.rs	822	822	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+802	src-tauri/src/services/s3_sync.rs	17	17	reject	use list naming a project helper
+803	src-tauri/src/services/s3_sync.rs	48	48	reject	identifier containing token/key/secret/etc.; not crypto
+804	src-tauri/src/services/s3_sync.rs	51	51	reject	identifier containing token/key/secret/etc.; not crypto
+805	src-tauri/src/services/s3_sync.rs	54	54	reject	identifier containing token/key/secret/etc.; not crypto
+806	src-tauri/src/services/s3_sync.rs	89	89	reject	identifier containing token/key/secret/etc.; not crypto
+807	src-tauri/src/services/s3_sync.rs	116	116	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+808	src-tauri/src/services/s3_sync.rs	126	126	reject	identifier containing token/key/secret/etc.; not crypto
+809	src-tauri/src/services/s3_sync.rs	191	191	reject	identifier containing token/key/secret/etc.; not crypto
+810	src-tauri/src/services/session_usage.rs	410	410	reject	identifier containing token/key/secret/etc.; not crypto
+811	src-tauri/src/services/session_usage.rs	601	601	asset	gt-0032
+812	src-tauri/src/services/session_usage.rs	604	604	reject	finalize: follow-up
+813	src-tauri/src/services/session_usage.rs	606	606	reject	digest output slicing
+814	src-tauri/src/services/session_usage.rs	903	903	reject	identifier containing token/key/secret/etc.; not crypto
+815	src-tauri/src/services/session_usage.rs	925	925	reject	identifier containing token/key/secret/etc.; not crypto
+816	src-tauri/src/services/session_usage.rs	1235	1235	reject	identifier containing token/key/secret/etc.; not crypto
+817	src-tauri/src/services/session_usage.rs	1318	1318	reject	identifier containing token/key/secret/etc.; not crypto
+818	src-tauri/src/services/session_usage_agy.rs	43	43	reject	string literal
+819	src-tauri/src/services/session_usage_agy.rs	252	252	reject	identifier containing token/key/secret/etc.; not crypto
+820	src-tauri/src/services/session_usage_agy.rs	299	299	reject	identifier containing token/key/secret/etc.; not crypto
+821	src-tauri/src/services/session_usage_agy/native_models.rs	98	98	reject	identifier containing token/key/secret/etc.; not crypto
+822	src-tauri/src/services/session_usage_codex.rs	374	374	reject	identifier containing token/key/secret/etc.; not crypto
+823	src-tauri/src/services/session_usage_codex.rs	436	436	reject	identifier containing token/key/secret/etc.; not crypto
+824	src-tauri/src/services/session_usage_codex.rs	1291	1291	reject	identifier containing token/key/secret/etc.; not crypto
+825	src-tauri/src/services/session_usage_codex.rs	1295	1295	reject	identifier containing token/key/secret/etc.; not crypto
+826	src-tauri/src/services/session_usage_codex.rs	1300	1300	reject	identifier containing token/key/secret/etc.; not crypto
+827	src-tauri/src/services/session_usage_codex.rs	1645	1645	reject	identifier containing token/key/secret/etc.; not crypto
+828	src-tauri/src/services/session_usage_codex.rs	1894	1894	reject	identifier containing token/key/secret/etc.; not crypto
+829	src-tauri/src/services/session_usage_codex.rs	2652	2652	reject	identifier containing token/key/secret/etc.; not crypto
+830	src-tauri/src/services/session_usage_copilot.rs	50	50	reject	string literal
+831	src-tauri/src/services/session_usage_copilot.rs	151	151	reject	string literal
+832	src-tauri/src/services/session_usage_dsh.rs	131	131	reject	string literal
+833	src-tauri/src/services/session_usage_dsh.rs	498	498	reject	identifier containing token/key/secret/etc.; not crypto
+834	src-tauri/src/services/session_usage_dsh.rs	528	528	reject	identifier containing token/key/secret/etc.; not crypto
+835	src-tauri/src/services/session_usage_dsh.rs	529	529	reject	identifier containing token/key/secret/etc.; not crypto
+836	src-tauri/src/services/session_usage_dsh.rs	530	530	reject	identifier containing token/key/secret/etc.; not crypto
+837	src-tauri/src/services/session_usage_dsh.rs	531	531	reject	identifier containing token/key/secret/etc.; not crypto
+838	src-tauri/src/services/session_usage_dsh.rs	547	547	asset	gt-0033
+839	src-tauri/src/services/session_usage_dsh.rs	565	565	reject	identifier containing token/key/secret/etc.; not crypto
+840	src-tauri/src/services/session_usage_gemini.rs	182	182	reject	identifier containing token/key/secret/etc.; not crypto
+841	src-tauri/src/services/session_usage_gemini.rs	187	187	reject	identifier containing token/key/secret/etc.; not crypto
+842	src-tauri/src/services/session_usage_gemini.rs	264	264	reject	identifier containing token/key/secret/etc.; not crypto
+843	src-tauri/src/services/session_usage_gemini.rs	266	266	reject	identifier containing token/key/secret/etc.; not crypto
+844	src-tauri/src/services/session_usage_grokbuild.rs	342	342	reject	identifier containing token/key/secret/etc.; not crypto
+845	src-tauri/src/services/session_usage_kimi.rs	50	50	reject	string literal
+846	src-tauri/src/services/session_usage_kimi.rs	157	157	reject	identifier containing token/key/secret/etc.; not crypto
+847	src-tauri/src/services/session_usage_kimi.rs	179	179	asset	gt-0034
+848	src-tauri/src/services/session_usage_kimi.rs	196	196	reject	identifier containing token/key/secret/etc.; not crypto
+849	src-tauri/src/services/session_usage_kimi.rs	263	263	reject	identifier containing token/key/secret/etc.; not crypto
+850	src-tauri/src/services/session_usage_kimi.rs	282	282	reject	identifier containing token/key/secret/etc.; not crypto
+851	src-tauri/src/services/session_usage_mcode.rs	17	17	reject	string literal
+852	src-tauri/src/services/session_usage_mcode.rs	147	147	reject	string literal
+853	src-tauri/src/services/session_usage_mcode.rs	201	201	reject	identifier containing token/key/secret/etc.; not crypto
+854	src-tauri/src/services/session_usage_opencode.rs	148	148	reject	string literal
+855	src-tauri/src/services/session_usage_opencode.rs	346	346	reject	identifier containing token/key/secret/etc.; not crypto
+856	src-tauri/src/services/session_usage_opencode.rs	348	348	reject	identifier containing token/key/secret/etc.; not crypto
+857	src-tauri/src/services/session_usage_opencode.rs	349	349	reject	identifier containing token/key/secret/etc.; not crypto
+858	src-tauri/src/services/session_usage_opencode.rs	350	350	reject	identifier containing token/key/secret/etc.; not crypto
+859	src-tauri/src/services/session_usage_opencode.rs	356	356	reject	identifier containing token/key/secret/etc.; not crypto
+860	src-tauri/src/services/session_usage_opencode.rs	360	360	reject	identifier containing token/key/secret/etc.; not crypto
+861	src-tauri/src/services/session_usage_opencode.rs	451	451	reject	identifier containing token/key/secret/etc.; not crypto
+862	src-tauri/src/services/session_usage_pi.rs	515	515	asset	gt-0035
+863	src-tauri/src/services/session_usage_pi.rs	518	518	reject	finalize: follow-up
+864	src-tauri/src/services/session_usage_pi.rs	519	519	reject	digest output conversion
+865	src-tauri/src/services/session_usage_pi.rs	872	872	reject	identifier containing token/key/secret/etc.; not crypto
+866	src-tauri/src/services/session_usage_pi.rs	873	873	reject	identifier containing token/key/secret/etc.; not crypto
+867	src-tauri/src/services/session_usage_pi.rs	874	874	reject	identifier containing token/key/secret/etc.; not crypto
+868	src-tauri/src/services/session_usage_pi.rs	875	875	reject	identifier containing token/key/secret/etc.; not crypto
+869	src-tauri/src/services/session_usage_pi.rs	1069	1069	asset	gt-0036
+870	src-tauri/src/services/session_usage_pi.rs	1119	1119	asset	gt-0037
+871	src-tauri/src/services/session_usage_pi.rs	1137	1137	reject	function signature of a project crypto helper; the library call inside is annotated
+872	src-tauri/src/services/session_usage_pi.rs	1172	1172	reject	function signature of a project crypto helper; the library call inside is annotated
+873	src-tauri/src/services/session_usage_workbuddy.rs	53	53	reject	string literal
+874	src-tauri/src/services/skill.rs	1270	1270	reject	comment
+875	src-tauri/src/services/skill.rs	1292	1292	asset	gt-0038
+876	src-tauri/src/services/skill.rs	1353	1353	asset	gt-0039
+877	src-tauri/src/services/skill.rs	3135	3135	reject	nonce from SystemTime for a temp file name: not crypto
+878	src-tauri/src/services/skill.rs	3513	3513	reject	identifier containing token/key/secret/etc.; not crypto
+879	src-tauri/src/services/skill.rs	4041	4041	reject	identifier containing token/key/secret/etc.; not crypto
+880	src-tauri/src/services/skill.rs	5141	5141	reject	identifier containing token/key/secret/etc.; not crypto
+881	src-tauri/src/services/stream_check.rs	5	5	reject	comment
+882	src-tauri/src/services/subscription.rs	299	299	reject	identifier containing token/key/secret/etc.; not crypto
+883	src-tauri/src/services/subscription.rs	681	681	reject	comment
+884	src-tauri/src/services/subscription.rs	688	688	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+885	src-tauri/src/services/subscription.rs	811	811	reject	identifier containing token/key/secret/etc.; not crypto
+886	src-tauri/src/services/subscription.rs	823	823	reject	identifier containing token/key/secret/etc.; not crypto
+887	src-tauri/src/services/subscription.rs	1335	1335	reject	identifier containing token/key/secret/etc.; not crypto
+888	src-tauri/src/services/subscription.rs	1661	1661	reject	identifier containing token/key/secret/etc.; not crypto
+889	src-tauri/src/services/subscription.rs	1681	1681	reject	identifier containing token/key/secret/etc.; not crypto
+890	src-tauri/src/services/subscription.rs	1848	1848	reject	identifier containing token/key/secret/etc.; not crypto
+891	src-tauri/src/services/subscription.rs	1890	1890	reject	identifier containing token/key/secret/etc.; not crypto
+892	src-tauri/src/services/subscription_grok.rs	97	97	reject	identifier containing token/key/secret/etc.; not crypto
+893	src-tauri/src/services/subscription_grok.rs	148	148	reject	identifier containing token/key/secret/etc.; not crypto
+894	src-tauri/src/services/subscription_grok.rs	223	223	reject	identifier containing token/key/secret/etc.; not crypto
+895	src-tauri/src/services/subscription_grok.rs	780	780	reject	identifier containing token/key/secret/etc.; not crypto
+896	src-tauri/src/services/sync_protocol.rs	142	142	reject	struct field named sha256
+897	src-tauri/src/services/sync_protocol.rs	199	199	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+898	src-tauri/src/services/sync_protocol.rs	206	206	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+899	src-tauri/src/services/sync_protocol.rs	223	223	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+900	src-tauri/src/services/sync_protocol.rs	241	241	reject	formatting a stored hash field
+901	src-tauri/src/services/sync_protocol.rs	243	243	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+902	src-tauri/src/services/sync_protocol.rs	334	334	reject	comment
+903	src-tauri/src/services/sync_protocol.rs	357	357	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+904	src-tauri/src/services/sync_protocol.rs	358	358	reject	comparing hash strings
+905	src-tauri/src/services/sync_protocol.rs	362	362	reject	error message string
+906	src-tauri/src/services/sync_protocol.rs	363	363	reject	reading a stored hash field
+907	src-tauri/src/services/sync_protocol.rs	367	367	reject	error message string
+908	src-tauri/src/services/sync_protocol.rs	368	368	reject	reading a stored hash field
+909	src-tauri/src/services/sync_protocol.rs	407	407	reject	function signature of a project crypto helper; the library call inside is annotated
+910	src-tauri/src/services/sync_protocol.rs	408	408	asset	gt-0040
+911	src-tauri/src/services/sync_protocol.rs	510	510	reject	function signature of a project crypto helper; the library call inside is annotated
+912	src-tauri/src/services/sync_protocol.rs	512	512	reject	struct field initialisation
+913	src-tauri/src/services/sync_protocol.rs	573	573	reject	function signature of a project crypto helper; the library call inside is annotated
+914	src-tauri/src/services/sync_protocol.rs	574	574	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+915	src-tauri/src/services/sync_protocol.rs	748	748	reject	string literal
+916	src-tauri/src/services/sync_protocol.rs	764	764	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+917	src-tauri/src/services/usage_cache.rs	102	102	reject	identifier containing token/key/secret/etc.; not crypto
+918	src-tauri/src/services/usage_stats.rs	1905	1905	reject	string literal
+919	src-tauri/src/services/usage_stats.rs	1906	1906	reject	identifier containing token/key/secret/etc.; not crypto
+920	src-tauri/src/services/usage_stats.rs	1907	1907	reject	identifier containing token/key/secret/etc.; not crypto
+921	src-tauri/src/services/usage_stats.rs	2104	2104	reject	identifier containing token/key/secret/etc.; not crypto
+922	src-tauri/src/services/usage_stats.rs	2105	2105	reject	identifier containing token/key/secret/etc.; not crypto
+923	src-tauri/src/services/usage_stats.rs	2523	2523	reject	identifier containing token/key/secret/etc.; not crypto
+924	src-tauri/src/services/webdav_sync.rs	21	21	reject	use list naming a project helper
+925	src-tauri/src/services/webdav_sync.rs	144	144	reject	call to a project helper that wraps the hash/HMAC (guide, project helpers)
+926	src-tauri/src/services/workbuddy_account/mod.rs	8	8	reject	comment
+927	src-tauri/src/services/workbuddy_account/mod.rs	550	550	reject	call to project method verify comparing files with a bundle; no crypto
+928	src-tauri/src/services/workbuddy_account/mod.rs	835	835	reject	identifier containing token/key/secret/etc.; not crypto
+929	src-tauri/src/services/workbuddy_account/mod.rs	854	854	reject	identifier containing token/key/secret/etc.; not crypto
+930	src-tauri/src/services/workbuddy_account/mod.rs	888	888	reject	project method verify that compares bytes; no crypto
+931	src-tauri/src/services/workbuddy_account/quota.rs	7	7	reject	comment
+932	src-tauri/src/services/workbuddy_account/quota.rs	333	333	asset	gt-0041
+933	src-tauri/src/services/workbuddy_account/quota.rs	340	340	reject	comment
+934	src-tauri/src/services/workbuddy_account/quota.rs	347	347	reject	return type Hmac<Sha256>
+935	src-tauri/src/services/workbuddy_account/quota.rs	349	349	asset	gt-0042
+936	src-tauri/src/services/workbuddy_account/quota.rs	438	438	reject	uuid::Uuid::new_v4 client nonce: identifier library, not a crypto draw (guide, random draws); base64 encoding only
+937	src-tauri/src/services/workbuddy_account/quota.rs	470	470	reject	identifier containing token/key/secret/etc.; not crypto
+938	src-tauri/src/services/workbuddy_account/tests.rs	104	104	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+939	src-tauri/src/services/workbuddy_account/tests.rs	137	137	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+940	src-tauri/src/services/workbuddy_account/tests.rs	138	138	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+941	src-tauri/src/services/workbuddy_account/tests.rs	700	700	reject	identifier containing token/key/secret/etc.; not crypto
+942	src-tauri/src/services/workbuddy_account/tests.rs	701	701	reject	string literal
+943	src-tauri/src/services/workbuddy_account/tests.rs	844	844	reject	comment
+944	src-tauri/src/session_manager/cache.rs	364	364	reject	identifier containing token/key/secret/etc.; not crypto
+945	src-tauri/src/session_manager/content.rs	654	654	reject	identifier containing token/key/secret/etc.; not crypto
+946	src-tauri/src/session_manager/mod.rs	200	200	reject	identifier containing token/key/secret/etc.; not crypto
+947	src-tauri/src/session_manager/model.rs	134	134	reject	comment
+948	src-tauri/src/session_manager/providers/claude.rs	1268	1268	reject	identifier containing token/key/secret/etc.; not crypto
+949	src-tauri/src/session_manager/providers/codex.rs	2880	2880	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+950	src-tauri/src/session_manager/providers/codex.rs	2946	2946	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+951	src-tauri/src/session_manager/providers/codex.rs	2951	2951	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+952	src-tauri/src/session_manager/providers/codex.rs	3081	3081	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+953	src-tauri/src/session_manager/providers/gemini.rs	450	450	reject	identifier containing token/key/secret/etc.; not crypto
+954	src-tauri/src/session_manager/providers/grokbuild.rs	82	82	reject	comment
+955	src-tauri/src/session_manager/providers/opencode_blocks.rs	358	358	reject	identifier containing token/key/secret/etc.; not crypto
+956	src-tauri/src/session_manager/providers/opencode_blocks.rs	570	570	reject	LLM API field/string named encrypted_content or a base64 envelope helper; no crypto call
+957	src-tauri/src/session_manager/search_revision.rs	56	56	reject	identifier containing token/key/secret/etc.; not crypto
+958	src-tauri/src/session_manager/search_revision.rs	107	107	asset	gt-0043
+959	src-tauri/src/session_manager/search_revision.rs	108	108	reject	follow-up update on the hash object
+960	src-tauri/src/session_manager/search_revision.rs	109	109	reject	follow-up update on the hash object
+961	src-tauri/src/session_manager/search_revision.rs	119	119	reject	follow-up update on the hash object
+962	src-tauri/src/session_manager/search_revision.rs	121	121	reject	follow-up update on the hash object
+963	src-tauri/src/session_manager/search_revision.rs	124	124	reject	follow-up update on the hash object
+964	src-tauri/src/session_manager/search_revision.rs	125	125	reject	follow-up update on the hash object
+965	src-tauri/src/session_manager/search_revision.rs	138	138	reject	follow-up update on the hash object
+966	src-tauri/src/session_manager/search_revision.rs	141	141	reject	follow-up update on the hash object
+967	src-tauri/src/session_manager/search_revision.rs	143	143	reject	follow-up update on the hash object
+968	src-tauri/src/session_manager/search_revision.rs	144	144	reject	follow-up update on the hash object
+969	src-tauri/src/session_manager/search_revision.rs	147	147	reject	follow-up update on the hash object
+970	src-tauri/src/session_manager/search_revision.rs	148	148	reject	follow-up update on the hash object
+971	src-tauri/src/session_manager/search_revision.rs	151	151	reject	follow-up update on the hash object
+972	src-tauri/src/session_manager/search_revision.rs	156	156	reject	follow-up update on the hash object
+973	src-tauri/src/session_manager/search_revision.rs	157	157	reject	follow-up update on the hash object
+974	src-tauri/src/session_manager/search_revision.rs	167	167	reject	finalize: follow-up
+975	src-tauri/src/tray.rs	3546	3546	reject	identifier containing token/key/secret/etc.; not crypto

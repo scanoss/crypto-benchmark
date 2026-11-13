@@ -1,0 +1,63 @@
+schema_version: "1"
+entry: java-c-jadx-pool
+scope:
+  kind: pool
+assets:
+  - id: gt-0001
+    file: jadx-core/src/main/java/jadx/core/utils/files/FileUtils.java
+    lines: [498, 498]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "Reused from the files-scope truth: MessageDigest.getInstance(\"MD5\") creates the hash; update/digest are follow-ups. Cache-key use still counts. Every FileUtils.md5Sum(...) call elsewhere is a project-helper call, not an asset."
+  - id: gt-0002
+    file: "jadx-gui/src/main/java/jadx/gui/treemodel/ApkSignatureNode.java"
+    lines: [176, 176]
+    asset_type: algorithm
+    primitive: signature
+    origin: project
+    reachable: unknown
+    notes: "Reused from the files-scope truth: apksig ApkVerifier.verify() one-shot verifies the APK signatures; algorithm comes from the APK, so none set."
+  - id: gt-0003
+    file: "jadx-gui/src/main/java/jadx/gui/utils/CertificateManager.java"
+    lines: [42, 42]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "CertificateFactory.getInstance(\"X.509\") then cf.generateCertificates(in) parses X.509 certificates from a stream; the parse call is the asset (the factory creation on line 41 names only the certificate type)."
+  - id: gt-0004
+    file: "jadx-gui/src/main/java/jadx/gui/utils/CertificateManager.java"
+    lines: [158, 158]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "Judgement call. getThumbPrint's MessageDigest.getInstance(type) takes its algorithm from a parameter; the only callers (lines 83-85, project-helper calls, not assets) pass MD5, SHA-1 and SHA-256. By one asset per call and algorithm, the call is three assets with the same lines, one per algorithm that reaches it. Certificate fingerprint: the certificate does not perform the hash, so no object."
+  - id: gt-0005
+    file: "jadx-gui/src/main/java/jadx/gui/utils/CertificateManager.java"
+    lines: [158, 158]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: "Second algorithm of the parameterised getThumbPrint digest (see gt-0004)."
+  - id: gt-0006
+    file: "jadx-gui/src/main/java/jadx/gui/utils/CertificateManager.java"
+    lines: [158, 158]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Third algorithm of the parameterised getThumbPrint digest (see gt-0004)."
+  - id: gt-0007
+    file: "jadx-gui/src/main/java/jadx/gui/utils/CertificateManager.java"
+    lines: [159, 159]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "Judgement call. cert.getEncoded() serializes the X.509 certificate to DER bytes, which the program passes on to the fingerprint digest; serializing a certificate to bytes is a certificate asset by the guide (like cert.public_bytes). The certificate may come from gt-0003's parse or from apksig's parsed signer certificates, so no object is shared with gt-0003."
