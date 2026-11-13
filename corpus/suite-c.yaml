@@ -1,0 +1,647 @@
+# Suite C candidates, retrieved on 2026-11-13. METHODOLOGY.md ("Suite C selection")
+# states the rule. Within a language, rows are in rank order (stars, descending) and stop
+# at the second selected row. Checked by internal/selection against corpus/manifest.yaml.
+schema_version: "1"
+candidates:
+  - language: java
+    rank: 1
+    repo: NationalSecurityAgency/ghidra
+    url: https://github.com/NationalSecurityAgency/ghidra
+    source: https://api.github.com/search/repositories?q=language:Java+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 99809
+    license: Apache-2.0
+    sha: 42db038f3c88c6bd7e9bedbb919138111f8b77fd
+    last_commit: 2026-11-10
+    outcome: rejected
+    filter: 5
+    reason: "a desktop reverse engineering application; 15,894 Java files"
+    source_files: 15894
+  - language: java
+    rank: 2
+    repo: iluwatar/java-design-patterns
+    url: https://github.com/iluwatar/java-design-patterns
+    source: https://api.github.com/search/repositories?q=language:Java+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 94864
+    license: NOASSERTION
+    outcome: rejected
+    filter: 1
+    reason: "license NOASSERTION"
+  - language: java
+    rank: 3
+    repo: macrozheng/mall
+    url: https://github.com/macrozheng/mall
+    source: https://api.github.com/search/repositories?q=language:Java+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 85044
+    license: Apache-2.0
+    sha: dcaa93b3150352e5044708d7211b5bed0af4509f
+    last_commit: 2026-09-15
+    outcome: selected
+    reason: "an e-commerce system (storefront and admin back end) built on Spring Boot"
+    source_files: 524
+    signal_files: 28
+    id: java-c-mall
+  - language: java
+    rank: 4
+    repo: spring-projects/spring-boot
+    url: https://github.com/spring-projects/spring-boot
+    source: https://api.github.com/search/repositories?q=language:Java+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 81906
+    license: Apache-2.0
+    sha: 6cb2722d23c4329c7d2c7da837d5d19dc8cdde5b
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 3
+    reason: "a framework"
+  - language: java
+    rank: 5
+    repo: doocs/advanced-java
+    url: https://github.com/doocs/advanced-java
+    source: https://api.github.com/search/repositories?q=language:Java+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 79174
+    license: CC-BY-SA-4.0
+    outcome: rejected
+    filter: 1
+    reason: "license CC-BY-SA-4.0 is not OSI approved"
+  - language: java
+    rank: 6
+    repo: elastic/elasticsearch
+    url: https://github.com/elastic/elasticsearch
+    source: https://api.github.com/search/repositories?q=language:Java+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 78679
+    license: NOASSERTION
+    outcome: rejected
+    filter: 1
+    reason: "license NOASSERTION"
+  - language: java
+    rank: 7
+    repo: TheAlgorithms/Java
+    url: https://github.com/TheAlgorithms/Java
+    source: https://api.github.com/search/repositories?q=language:Java+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 67211
+    license: MIT
+    sha: 07c7ea317f67fe27c6830fc2cea652c65f19f225
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 3
+    reason: "an algorithm collection"
+  - language: java
+    rank: 8
+    repo: termux/termux-app
+    url: https://github.com/termux/termux-app
+    source: https://api.github.com/search/repositories?q=language:Java+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 64726
+    license: NOASSERTION
+    outcome: rejected
+    filter: 1
+    reason: "license NOASSERTION"
+  - language: java
+    rank: 9
+    repo: spring-projects/spring-framework
+    url: https://github.com/spring-projects/spring-framework
+    source: https://api.github.com/search/repositories?q=language:Java+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 60318
+    license: Apache-2.0
+    sha: aa18571597f96e5508975a9a553762c4b69b9467
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 3
+    reason: "a framework"
+  - language: java
+    rank: 10
+    repo: dbeaver/dbeaver
+    url: https://github.com/dbeaver/dbeaver
+    source: https://api.github.com/search/repositories?q=language:Java+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 52413
+    license: Apache-2.0
+    sha: cc7e36f3ec5e78a88d76d42bae51be7c5d7147f9
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 5
+    reason: "a desktop database client; 7,335 Java files"
+    source_files: 7335
+  - language: java
+    rank: 11
+    repo: google/guava
+    url: https://github.com/google/guava
+    source: https://api.github.com/search/repositories?q=language:Java+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 51923
+    license: Apache-2.0
+    sha: 022257016d63cfac448410effc7b156629a1f620
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 3
+    reason: "a library"
+  - language: java
+    rank: 12
+    repo: skylot/jadx
+    url: https://github.com/skylot/jadx
+    source: https://api.github.com/search/repositories?q=language:Java+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 51792
+    license: Apache-2.0
+    sha: fca5c2c89d08263cbd680864270edf5dd6e9e0e8
+    last_commit: 2026-11-11
+    outcome: selected
+    reason: "a Dex to Java decompiler, command line and GUI"
+    source_files: 2002
+    signal_files: 26
+    id: java-c-jadx
+  - language: python
+    rank: 1
+    repo: public-apis/public-apis
+    url: https://github.com/public-apis/public-apis
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 498529
+    license: MIT
+    sha: cb581147b5e7c808cc2db43c5c590b51679dd44c
+    last_commit: 2026-11-11
+    outcome: rejected
+    filter: 3
+    reason: "a list of APIs"
+  - language: python
+    rank: 2
+    repo: EbookFoundation/free-programming-books
+    url: https://github.com/EbookFoundation/free-programming-books
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 401493
+    license: CC-BY-4.0
+    outcome: rejected
+    filter: 1
+    reason: "license CC-BY-4.0 is not OSI approved"
+  - language: python
+    rank: 3
+    repo: donnemartin/system-design-primer
+    url: https://github.com/donnemartin/system-design-primer
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 377713
+    license: NOASSERTION
+    outcome: rejected
+    filter: 1
+    reason: "license NOASSERTION"
+  - language: python
+    rank: 4
+    repo: vinta/awesome-python
+    url: https://github.com/vinta/awesome-python
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 334321
+    license: NOASSERTION
+    outcome: rejected
+    filter: 1
+    reason: "license NOASSERTION"
+  - language: python
+    rank: 5
+    repo: practical-tutorials/project-based-learning
+    url: https://github.com/practical-tutorials/project-based-learning
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 289629
+    license: MIT
+    sha: 322fb30147c809574ed71d1c34e3480e80a6b0e8
+    last_commit: 2026-11-09
+    outcome: rejected
+    filter: 3
+    reason: "a list of tutorials"
+  - language: python
+    rank: 6
+    repo: NousResearch/hermes-agent
+    url: https://github.com/NousResearch/hermes-agent
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 262966
+    license: MIT
+    sha: 1c5a7251dc66b8e992c05ae985dad6885b264944
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 5
+    reason: "an AI agent application; 11,441 Python files"
+    source_files: 11441
+  - language: python
+    rank: 7
+    repo: TheAlgorithms/Python
+    url: https://github.com/TheAlgorithms/Python
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 226062
+    license: MIT
+    sha: 30507bbe41397065728167fb09aa820f9fce8dc7
+    last_commit: 2026-11-11
+    outcome: rejected
+    filter: 3
+    reason: "an algorithm collection"
+  - language: python
+    rank: 8
+    repo: yt-dlp/yt-dlp
+    url: https://github.com/yt-dlp/yt-dlp
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 207300
+    license: Unlicense
+    sha: 412e7f0a4b0588fe884a02b344ac66a06538475b
+    last_commit: 2026-11-04
+    outcome: selected
+    reason: "a command-line audio and video downloader"
+    source_files: 1122
+    signal_files: 65
+    id: python-c-yt-dlp
+  - language: python
+    rank: 9
+    repo: microsoft/markitdown
+    url: https://github.com/microsoft/markitdown
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 195112
+    license: MIT
+    sha: ed178952a6672abdfd35b5f9e76a80b6cefc086e
+    last_commit: 2026-11-07
+    outcome: rejected
+    filter: 6
+    reason: "a command-line file to Markdown converter; 3 signal files of 93"
+    source_files: 93
+    signal_files: 3
+  - language: python
+    rank: 10
+    repo: anthropics/skills
+    url: https://github.com/anthropics/skills
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 193690
+    license: none
+    outcome: rejected
+    filter: 1
+    reason: "no license detected"
+  - language: python
+    rank: 11
+    repo: 521xueweihan/HelloGitHub
+    url: https://github.com/521xueweihan/HelloGitHub
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 188440
+    license: none
+    outcome: rejected
+    filter: 1
+    reason: "no license detected"
+  - language: python
+    rank: 12
+    repo: Significant-Gravitas/AutoGPT
+    url: https://github.com/Significant-Gravitas/AutoGPT
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 188013
+    license: NOASSERTION
+    outcome: rejected
+    filter: 1
+    reason: "license NOASSERTION"
+  - language: python
+    rank: 13
+    repo: huggingface/transformers
+    url: https://github.com/huggingface/transformers
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 168923
+    license: Apache-2.0
+    sha: 109a7d19bf667168837f32929e00b791e195d14d
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 3
+    reason: "a library (model definitions)"
+  - language: python
+    rank: 14
+    repo: langgenius/dify
+    url: https://github.com/langgenius/dify
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 161058
+    license: NOASSERTION
+    outcome: rejected
+    filter: 1
+    reason: "license NOASSERTION"
+  - language: python
+    rank: 15
+    repo: langflow-ai/langflow
+    url: https://github.com/langflow-ai/langflow
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 156577
+    license: MIT
+    sha: 2cf9ce808afa6ad3f41aa5f6b47bdcb1927cde84
+    last_commit: 2026-11-11
+    outcome: rejected
+    filter: 5
+    reason: "an agent workflow platform; 4,993 Python files"
+    source_files: 4993
+  - language: python
+    rank: 16
+    repo: github/spec-kit
+    url: https://github.com/github/spec-kit
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 149541
+    license: MIT
+    sha: 2ee2b1e8005905db05f5717300a469b3068b908f
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 3
+    reason: "described as a toolkit"
+  - language: python
+    rank: 17
+    repo: langchain-ai/langchain
+    url: https://github.com/langchain-ai/langchain
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 149418
+    license: MIT
+    sha: 980e4a80d01f699ba359db139cd7c8bfc348c110
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 3
+    reason: "a framework"
+  - language: python
+    rank: 18
+    repo: nextlevelbuilder/ui-ux-pro-max-skill
+    url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 148661
+    license: MIT
+    sha: 6ae86f61f520d6ca229d2f40e070410638c908c5
+    last_commit: 2026-11-10
+    outcome: rejected
+    filter: 3
+    reason: "an agent skill (plugin)"
+  - language: python
+    rank: 19
+    repo: Graphify-Labs/graphify
+    url: https://github.com/Graphify-Labs/graphify
+    source: https://api.github.com/search/repositories?q=language:Python+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 146744
+    license: Apache-2.0
+    sha: 52cb28218eea0c68d80a9f4b2ae102d2fa63e267
+    last_commit: 2026-11-12
+    outcome: selected
+    reason: "a tool that turns a codebase and its documents into a queryable knowledge graph"
+    source_files: 687
+    signal_files: 49
+    id: python-c-graphify
+  - language: go
+    rank: 1
+    repo: avelino/awesome-go
+    url: https://github.com/avelino/awesome-go
+    source: https://api.github.com/search/repositories?q=language:Go+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 193560
+    license: MIT
+    sha: 073c15d7e4e5ad7f0ded6243b0290f988214bdad
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 3
+    reason: "a list"
+  - language: go
+    rank: 2
+    repo: ollama/ollama
+    url: https://github.com/ollama/ollama
+    source: https://api.github.com/search/repositories?q=language:Go+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 186812
+    license: MIT
+    sha: 5632619189ab493c70bd3f9435214b8788cc1c80
+    last_commit: 2026-11-12
+    outcome: selected
+    reason: "a server and CLI that runs language models locally"
+    source_files: 1097
+    signal_files: 39
+    id: go-c-ollama
+  - language: go
+    rank: 3
+    repo: golang/go
+    url: https://github.com/golang/go
+    source: https://api.github.com/search/repositories?q=language:Go+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 139877
+    license: BSD-3-Clause
+    sha: 2e78a1823a17b0d8de782bd9e3710a4918f3c075
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 4
+    reason: "the Go toolchain and standard library, the source of the suite A go-stdlib entry"
+  - language: go
+    rank: 4
+    repo: kubernetes/kubernetes
+    url: https://github.com/kubernetes/kubernetes
+    source: https://api.github.com/search/repositories?q=language:Go+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 129036
+    license: Apache-2.0
+    sha: 1db1654736737022e146af9d1b00825b583404b7
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 5
+    reason: "a container orchestrator; 13,775 Go files"
+    source_files: 13775
+  - language: go
+    rank: 5
+    repo: JuliusBrussee/caveman
+    url: https://github.com/JuliusBrussee/caveman
+    source: https://api.github.com/search/repositories?q=language:Go+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 119423
+    license: Apache-2.0
+    sha: f5523a8e7bd09c30a2e218ca1afe7a1dab5c09ce
+    last_commit: 2026-11-12
+    outcome: selected
+    reason: "a proxy for coding agents that cuts their token use, shipped with an agent skill"
+    source_files: 666
+    signal_files: 91
+    id: go-c-caveman
+  - language: rust
+    rank: 1
+    repo: ultraworkers/claw-code
+    url: https://github.com/ultraworkers/claw-code
+    source: https://api.github.com/search/repositories?q=language:Rust+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 194782
+    license: MIT
+    sha: 508b4d862d42a5fa5bde8df5b2d3670f4d4ca324
+    last_commit: 2026-11-10
+    outcome: rejected
+    filter: 3
+    reason: "its README calls it a museum exhibit not meant to be run"
+  - language: rust
+    rank: 2
+    repo: clash-verge-rev/clash-verge-rev
+    url: https://github.com/clash-verge-rev/clash-verge-rev
+    source: https://api.github.com/search/repositories?q=language:Rust+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 158022
+    license: GPL-3.0
+    sha: 119ee86082ddab5e8ff6a32bd1cf02eb16d756b4
+    last_commit: 2026-11-12
+    outcome: selected
+    reason: "a desktop proxy client (Tauri)"
+    source_files: 147
+    signal_files: 7
+    id: rust-c-clash-verge-rev
+  - language: rust
+    rank: 3
+    repo: farion1231/cc-switch
+    url: https://github.com/farion1231/cc-switch
+    source: https://api.github.com/search/repositories?q=language:Rust+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 153939
+    license: MIT
+    sha: 3c76d3bda670297dd8c27d7d9be9b18a4c9143f5
+    last_commit: 2026-11-12
+    outcome: selected
+    reason: "a desktop assistant that manages coding agent configurations (Tauri)"
+    source_files: 414
+    signal_files: 32
+    id: rust-c-cc-switch
+  - language: javascript
+    rank: 1
+    repo: freeCodeCamp/freeCodeCamp
+    url: https://github.com/freeCodeCamp/freeCodeCamp
+    source: https://api.github.com/search/repositories?q=language:TypeScript+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 459052
+    license: BSD-3-Clause
+    sha: 7fce48a0f6b78fcd93d907fc86475e6286bde34e
+    last_commit: 2026-11-12
+    outcome: selected
+    reason: "the freeCodeCamp.org learning platform: its web app, API server and curriculum"
+    source_files: 1196
+    signal_files: 19
+    id: javascript-c-freecodecamp
+  - language: javascript
+    rank: 2
+    repo: morluto/rea
+    url: https://github.com/morluto/rea
+    source: https://api.github.com/search/repositories?q=language:TypeScript+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 455216
+    license: MIT
+    sha: a8527d43b8439476f5c9d1497315dfe7dd5e1f38
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 5
+    reason: "an agent-driven reverse engineering tool; 7,104 JavaScript and TypeScript files"
+    source_files: 7104
+  - language: javascript
+    rank: 3
+    repo: openclaw/openclaw
+    url: https://github.com/openclaw/openclaw
+    source: https://api.github.com/search/repositories?q=language:TypeScript+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 394410
+    license: MIT
+    sha: 02f29597c1075c0db5193fe2e3f2d5409593cfba
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 5
+    reason: "an AI assistant application; 54,916 JavaScript and TypeScript files"
+    source_files: 54916
+  - language: javascript
+    rank: 4
+    repo: nilbuild/developer-roadmap
+    url: https://github.com/nilbuild/developer-roadmap
+    source: https://api.github.com/search/repositories?q=language:TypeScript+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 371910
+    license: NOASSERTION
+    outcome: rejected
+    filter: 1
+    reason: "license NOASSERTION"
+  - language: javascript
+    rank: 5
+    repo: affaan-m/ECC
+    url: https://github.com/affaan-m/ECC
+    source: https://api.github.com/search/repositories?q=language:JavaScript+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 302015
+    license: MIT
+    sha: d2ef2680594f9a17526a6e1a2e18b3d242c5d17b
+    last_commit: 2026-11-06
+    outcome: rejected
+    filter: 3
+    reason: "an agent plugin installed into a coding agent"
+  - language: javascript
+    rank: 6
+    repo: deepseek-ai/deepseek-harness
+    url: https://github.com/deepseek-ai/deepseek-harness
+    source: https://api.github.com/search/repositories?q=language:TypeScript+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 279772
+    license: MIT
+    sha: e8f7b93a344964de3dca1ace9e72b6e4d6de87cb
+    last_commit: 2026-11-11
+    outcome: rejected
+    filter: 5
+    reason: "an agent harness CLI; 7,334 JavaScript and TypeScript files"
+    source_files: 7334
+  - language: javascript
+    rank: 7
+    repo: react/react
+    url: https://github.com/react/react
+    source: https://api.github.com/search/repositories?q=language:JavaScript+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 252556
+    license: MIT
+    sha: df6aa4ec76cff5b3adde531c6fe8c36099e0469b
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 3
+    reason: "a library"
+  - language: javascript
+    rank: 8
+    repo: anomalyco/opencode
+    url: https://github.com/anomalyco/opencode
+    source: https://api.github.com/search/repositories?q=language:TypeScript+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 226459
+    license: MIT
+    sha: a8dde001d3b89330cfd67f0ed226efba00627d9d
+    last_commit: 2026-11-12
+    outcome: rejected
+    filter: 5
+    reason: "a coding agent; 6,783 JavaScript and TypeScript files"
+    source_files: 6783
+  - language: javascript
+    rank: 9
+    repo: n8n-io/n8n
+    url: https://github.com/n8n-io/n8n
+    source: https://api.github.com/search/repositories?q=language:TypeScript+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 210331
+    license: NOASSERTION
+    outcome: rejected
+    filter: 1
+    reason: "license NOASSERTION"
+  - language: javascript
+    rank: 10
+    repo: firecrawl/firecrawl
+    url: https://github.com/firecrawl/firecrawl
+    source: https://api.github.com/search/repositories?q=language:TypeScript+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=1
+    retrieved: 2026-11-13
+    stars: 201283
+    license: AGPL-3.0
+    sha: ab3acea889c724e8d7ebc48839e74cb16d8ca7a1
+    last_commit: 2026-11-12
+    outcome: selected
+    reason: "a web scraping API service, self-hostable"
+    source_files: 1176
+    signal_files: 92
+    id: javascript-c-firecrawl

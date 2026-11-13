@@ -6,6 +6,7 @@ How the benchmark builds its ground truth and scores a tool against it. The rule
 |---|---|
 | [Ground truth](#ground-truth-process) | Two independent annotations per entry, every disagreement resolved against the [annotation guide](docs/annotation-guide.md) |
 | [Suite A library list](#suite-a-library-list) | Top 15 crypto-purpose packages per ecosystem plus the standard library, frozen on 2026-11-04 |
+| [Suite C](#suite-c) | 2 applications per language by stars and six fixed filters; `files` sample (headline) and `pool` scopes; first score frozen at pinned versions |
 | [Matching](#matching-rules) | Same origin, component, file and asset type, overlapping lines (`LINE_TOLERANCE = 0`), one-to-one; anchors for algorithm assets |
 | [Object level](#object-level-view) | Each crypto object counts once, next to the operation-level primary view |
 | [Metrics](#metrics) | Precision, recall, F1, attribution, reachability, suite B pairs |
@@ -16,7 +17,7 @@ How the benchmark builds its ground truth and scores a tool against it. The rule
 
 Annotation is done by agents only; there is no human annotator. Two annotators label each entry independently, from the program files and [docs/annotation-guide.md](docs/annotation-guide.md). One may be the author of the programs. The other is a fresh agent that sees only the program files, the guide, the schema and the `internal/algo` tables. The two annotations are diffed, and every disagreement is resolved by reading the code against the guide. The resolution goes into the asset's `notes`. When a resolution decides a question the guide left open, the guide gains a sentence that settles it. [docs/annotation-log.md](docs/annotation-log.md) records the agreement counts for each entry.
 
-`scope.kind: exhaustive` commits that every asset in every file of the entry is listed. What `files` and `pool` commit to is to be written with the first suite C entries.
+`scope.kind: exhaustive` commits that every asset in every file of the entry is listed. `files` commits the same for every file in `scope.files` ([files scope](#files-scope)), and `pool` commits that every item of a pool of tool findings and grep candidates was adjudicated ([pool scope](#pool-scope)).
 
 ## Suite A library list
 
@@ -51,6 +52,138 @@ The PyPI search page cannot be reached without a browser, and libraries.io needs
 **Known bias.** The Java candidate route includes crypto-finder's own knowledge base. Maven Central search matches whole words only, and so missed jjwt, jsch, xmlsec and jbcrypt. No neutral category source for Maven could be reached (mvnrepository.com refuses scripted access). Eight of the 15 Java rows came only from that route. The route can therefore favor libraries the tool already covers, and a neutral Maven source should replace it.
 
 **Python fixtures.** The frozen Python top 15 replaced oscrypto, which ranks 16th with 17,110,247 downloads, with pyotp, which ranks 13th. `fixtures/python/oscrypto` and its ground truth were removed, and `fixtures/python/pyotp` was added.
+
+## Suite C
+
+Suite C asks whether the suite A scores hold on real code that no tool was tuned on. It holds ten open-source applications, two per language, fetched at a pinned commit by `cbench fetch` and never vendored. The rule, the signal, the scopes and the freeze were written on 2026-11-13 (commit `361edb8`), before any candidate was retrieved and before any tool ran on any of them; the list and three clarifications came after, as the [change log](#change-log) records.
+
+| Part | In short |
+|---|---|
+| [Selection](#suite-c-selection) | GitHub search by stars per language, six filters in a fixed order, the top 2 that pass; every candidate examined is recorded with its outcome |
+| [Signal](#crypto-signal) | A file carries crypto when it imports a crypto module by a fixed, tool-independent pattern (`internal/frame`, `cbench frame`) |
+| [`files` scope](#files-scope) | 15 signal files per repository, drawn with the pinned commit as seed, annotated exhaustively; the headline |
+| [`pool` scope](#pool-scope) | Every finding of the three tools plus grep candidates, each adjudicated; exact precision, recall relative to the pool |
+| [Freeze](#first-score-freeze) | The first score is taken at tool versions pinned now and published as is; later runs never replace it |
+| [Decisions](#suite-c-decisions) | The choices the brief left open, with their reasons |
+
+Reachability on real repositories is phase 2 and not scored here. It needs an entry point model per repository, and suite B already scores it on controlled pairs.
+
+### Suite C selection
+
+[corpus/suite-c.yaml](corpus/suite-c.yaml) records every candidate examined, in rank order, with its outcome: `selected`, or `rejected` with the filter that failed and why. The ten selected rows are the suite C entries of `corpus/manifest.yaml`, at the same URL and commit, and `cbench validate` checks they agree. GitHub search results change over time, so the record keeps the snapshot that decided each outcome: rank, stars, license, last commit and counts.
+
+**The list**, applied on 2026-11-13. 49 candidates were examined: 10 selected, 13 rejected on license, 15 on application, 1 as a suite A library's source, 9 on size and 1 on crypto use. Full commits are in `corpus/manifest.yaml`.
+
+| Entry | Repository | Stars | Rank | Commit | Source files | Signal files | Sampled |
+|---|---|---|---|---|---|---|---|
+| `java-c-mall` | [macrozheng/mall](https://github.com/macrozheng/mall) | 85,044 | 3 | `dcaa93b31503` | 524 | 28 | 15 |
+| `java-c-jadx` | [skylot/jadx](https://github.com/skylot/jadx) | 51,792 | 12 | `fca5c2c89d08` | 2,002 | 26 | 15 |
+| `python-c-yt-dlp` | [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) | 207,300 | 8 | `412e7f0a4b05` | 1,122 | 65 | 15 |
+| `python-c-graphify` | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | 146,744 | 19 | `52cb28218eea` | 687 | 49 | 15 |
+| `go-c-ollama` | [ollama/ollama](https://github.com/ollama/ollama) | 186,812 | 2 | `5632619189ab` | 1,097 | 39 | 15 |
+| `go-c-caveman` | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | 119,423 | 5 | `f5523a8e7bd0` | 666 | 91 | 15 |
+| `rust-c-clash-verge-rev` | [clash-verge-rev/clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev) | 158,022 | 2 | `119ee86082dd` | 147 | 7 | 7 |
+| `rust-c-cc-switch` | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | 153,939 | 3 | `3c76d3bda670` | 414 | 32 | 15 |
+| `javascript-c-freecodecamp` | [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | 459,052 | 1 | `7fce48a0f6b7` | 1,196 | 19 | 15 |
+| `javascript-c-firecrawl` | [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 201,283 | 10 | `ab3acea889c7` | 1,176 | 92 | 15 |
+
+The JavaScript rank is in the merged JavaScript and TypeScript list. Rejections in short, by filter:
+
+| Filter | Rejected |
+|---|---|
+| 1 License | java-design-patterns, advanced-java, elasticsearch, termux-app; free-programming-books, system-design-primer, awesome-python, anthropics/skills, HelloGitHub, AutoGPT, dify; developer-roadmap, n8n |
+| 3 Application | spring-boot, TheAlgorithms/Java, spring-framework, guava; public-apis, project-based-learning, TheAlgorithms/Python, transformers, spec-kit, langchain, ui-ux-pro-max-skill; awesome-go; claw-code; ECC, react |
+| 4 Crypto library | golang/go, the source of the suite A Go standard library entry |
+| 5 Size | ghidra, dbeaver; hermes-agent, langflow; kubernetes; rea, openclaw, deepseek-harness, opencode |
+| 6 Crypto use | markitdown (3 signal files) |
+
+A candidate rejected on size was counted from its git tree at the pinned commit (GitHub trees API) with the same path rules as `cbench frame`, without a clone. Every candidate counted both ways got the same number.
+
+**Candidates.** For each language, the GitHub repository search ranked by stars, retrieved on 2026-11-13:
+
+```
+https://api.github.com/search/repositories?q=language:<L>+stars:>=1000+fork:false+archived:false+pushed:>=2026-08-15&sort=stars&order=desc&per_page=100&page=<n>
+```
+
+`<L>` is `Java`, `Python`, `Go` and `Rust`; the JavaScript entries come from `JavaScript` and `TypeScript`, merged by stars. GitHub's `language` is the repository's primary language. Candidates are taken in rank order, and the search stops at the second one that passes.
+
+**Filters**, applied in this order; the first that fails is the recorded reason:
+
+| # | Filter | Passes when | Source |
+|---|---|---|---|
+| 1 | License | The repository's license is OSI approved | GitHub `license.spdx_id`, checked against `isOsiApproved` in the [SPDX license list](https://github.com/spdx/license-list-data/blob/main/json/licenses.json) |
+| 2 | Maintained | The default branch's last commit is on or after 2026-08-15, 90 days before retrieval | GitHub commits API; that commit is the pinned `sha` |
+| 3 | Application | The description or the README's opening presents a program to run (a server, service, CLI tool, desktop, mobile or web app, bot or platform you deploy), not code to import (library, framework, SDK, engine, toolkit, plugin, component set) or material to read (tutorials, guides, books, courses, interview prep, lists, examples, algorithm collections) | GitHub description and README |
+| 4 | Not a crypto library | The repository is not a crypto library, and is not the source of a [suite A library](#suite-a-library-list) | `corpus/libraries.yaml` |
+| 5 | Tractable | 50 to 3,000 source files of the language outside excluded paths at the pinned commit | `cbench frame --dir DIR --language L` |
+| 6 | Uses crypto | 5 to 150 of those files carry the [crypto signal](#crypto-signal) | same |
+
+A crypto-purpose application (a password manager, a VPN) passes filter 4; only libraries fail it. Filters 5 and 6 read the counts that `cbench frame` prints, never which files carry the signal, and never any tool output.
+
+**Blind selection.** No tool, crypto-finder, cdxgen, sonar-cryptography or any other, is run on a candidate before the [freeze](#first-score-freeze). Selection uses only GitHub metadata, the README and the two counts above.
+
+**Excluded paths**, for selection and for every scope: any directory named `vendor`, `third_party`, `third-party`, `thirdparty`, `node_modules` or `bower_components`, and `*.min.js`, `*.d.ts`, `*.d.mts` and `*.d.cts` files. Git submodules are not fetched. The source files of a language are `.java`; `.py`; `.go`; `.rs`; and for JavaScript `.js`, `.jsx`, `.mjs`, `.cjs`, `.ts`, `.tsx`, `.mts` and `.cts`. Test files are in scope, as everywhere in the benchmark.
+
+### Crypto signal
+
+A source file carries the crypto signal when it imports a module whose path names crypto, or uses one of the few crypto APIs that need no import. `internal/frame` is the normative implementation and `cbench frame` prints it; changing either is a change to these rules.
+
+- **Imports.** Python `import` and `from ... import`, Java `import`, Go imports, Rust `use`, `extern crate` and the first segment of any `a::b` path, and JavaScript `import ... from`, bare `import`, `require(...)` and `import(...)`.
+- **Crypto module.** The module path is split at `.`, `/`, `:` and `@`, lowercased, with `-` read as `_`. It names crypto when a segment contains `crypt`, `jwt`, `jws`, `jwe`, `jwk`, `x509`, `pkcs`, `openssl` or `rustls`, or equals one of a fixed list of 80 names: standard library modules (`hashlib`, `hmac`, `secrets`, `ssl`, `tls`, `security`), algorithm names (`sha256`, `aes`, `rsa`, `ed25519`, `hkdf`, ...), and generic crypto words (`cipher`, `digest`, `signature`, `pki`). Library names in the list (`ring`, `nacl`, `paramiko`, `bouncycastle`, `tink`, ...) cover crates and packages whose name says nothing about crypto; the list is broader than the suite A libraries, so the frame does not favor code the tools were tuned on.
+- **Without an import.** Python `os.urandom` and `random.SystemRandom`, Java fully qualified `java.security.`, `javax.crypto.` and `javax.net.ssl.`, and JavaScript `crypto.subtle` and `crypto.getRandomValues`.
+- **Own module.** In Go, an import of the repository's own module (any `go.mod` in it) is judged on the path after the module, so a repository named `crypto-something` does not flag every file.
+
+The signal is broad on purpose: a signal file with no crypto asset is still annotated, and tests precision. Crypto in a file without the signal, such as a project helper that wraps a library imported elsewhere, is outside the `files` frame; the `pool` scope covers it.
+
+### `files` scope
+
+`scope.kind: files` commits that every asset in every file of `scope.files` is listed, by the same rules and two-annotator process as `exhaustive`. The score ignores predictions in other files and reports them as a count, so precision and recall are both exact within the sample.
+
+- **Sample.** 15 signal files per repository, or every signal file when there are 15 or fewer. Each signal file is ranked by the hex SHA-256 of `<pinned commit>:<path>`, and the 15 lowest are taken (`internal/frame.Sample`). The pinned commit is the seed: it was fixed by selection, so no one chooses a seed, and anyone can redraw the sample with `cbench frame --entry ID --sample`.
+- **What it estimates.** Precision and recall over files that import crypto. The ten repositories give 142 files: 15 each, and all 7 signal files of `rust-c-clash-verge-rev`.
+- **Headline.** The `files` scope is the suite C headline: it is the only scope whose recall does not depend on what the tools found.
+
+### `pool` scope
+
+`scope.kind: pool` commits that every item of the pool was adjudicated, over the whole repository (source files of the entry's language outside excluded paths).
+
+- **Pool.** The union of every finding of the three tools at their [frozen versions](#first-score-freeze), on the whole repository, and every grep candidate line that `cbench frame --entry ID --grep` prints: a line, outside import lines, that names a crypto operation, algorithm or API (`internal/frame`, `grepTerms`). There is no depth cutoff. A tool with no support for a language contributes no findings there.
+- **Entry.** An entry has one ground-truth file with one scope, so the pool of a repository is a second manifest entry, `<id>-pool`, with the same language, URL and commit; `cbench validate` checks they agree. It is added with its ground truth.
+- **Adjudication.** Two annotators judge each item independently against the [annotation guide](docs/annotation-guide.md), as for any ground truth. An item that is an asset becomes a ground-truth asset with its full fields; one that is not is recorded as rejected, so the adjudication can be audited. Items on the same asset are one asset.
+- **Size.** On the pinned commits the grep gives 9,899 candidate lines over the ten repositories, from 52 (`java-c-mall`) to 4,296 (`python-c-yt-dlp`). Every one is adjudicated; the pool is not sampled.
+- **Precision** is exact over the whole repository, because every finding of every pooled tool was adjudicated.
+- **Recall is relative to the pool.** The denominator is the assets found by some tool or the grep, not every asset in the repository. As in TREC-style pooling, it overstates true recall by the assets nobody found, and it favors the tools that built the pool. Every row that includes a pool entry is labeled "recall relative to pool" (the score already does this, [Scope](#matching-rules)), and pool recall is never shown next to suite A or `files` recall without that label. The report gives, per tool, the number of adjudicated assets that only that tool found.
+- **A tool that joins later.** Its findings outside the pool are adjudicated and added, and every tool is scored again against the larger pool. That score is a new dated run; it never replaces the [first score](#first-score-freeze).
+
+### Targets
+
+None are pre-registered for suite C. The suite A targets are not applied to it. Suite C is published as a measurement with its counts, so a reader can see how far real code moves each number.
+
+### First score freeze
+
+- **Pinned now.** The first suite C score is taken with the versions of the published suite A and B runs: crypto-finder v0.53.1 with remote ruleset v1.48.0, cdxgen 13.6.0 and sonar-cryptography 1.7.0, each run as recorded in [Competitor configuration](#competitor-configuration). They are recorded here on 2026-11-13, before annotation starts and before any tool runs on a suite C repository.
+- **Published as is.** The first score is published whatever it shows, with every miss.
+- **Later runs are separate.** Any change to a tool, a rule, a knowledge base or a configuration made after its suite C results were seen is reported as a separate, later, dated run. It never replaces or edits the first score, and the results page shows the first score first.
+- **Rules of scoring.** A change to these rules or the matching rules after the first score is applied to every tool, dated in the [change log](#change-log), and published next to the first score, never in its place.
+
+### Suite C decisions
+
+The brief left these open; each is decided here so the work can go ahead without another round.
+
+| Question | Decision | Why |
+|---|---|---|
+| Sample size per repository | 15 files | 142 files in all (one repository has 7 signal files), about the annotation volume of suite A, and enough files per repository that one unusual file does not decide its score |
+| Seed | The pinned commit, through SHA-256 of `<commit>:<path>` | The commit was fixed by selection, so the seed cannot be chosen after looking at a draw |
+| Headline scope | `files` | Its recall does not depend on the tools; pool recall does |
+| Targets | None | There is no prior on real code; a target set now would be a guess, and one set later would be fitted |
+| Tool versions of the first score | crypto-finder v0.53.1, ruleset v1.48.0, cdxgen 13.6.0, sonar-cryptography 1.7.0 | The same versions as the published suites A and B, so suite C measures the same tools on other code; fixed before any tool sees a suite C repository |
+| Files of other languages in a repository | Out of scope; for `pool` entries, the scorer drops predictions outside the entry's language files and excluded paths before the first pool score, a change to be made with the first pool ground truth | An entry has one language, and suite A scores one language per entry |
+| Test files | In scope | The benchmark scores every file, and the competitors are configured not to skip tests |
+| Ambiguous "application" calls in filter 3 | Decided by the selector, with the reason recorded in `corpus/suite-c.yaml`; a challenge is a dated change made before the first score only | The record makes each call auditable; reselecting after the first score would be selection on results |
+| Split | `dev`, public | Suite C tests generalization by being unseen by the tool authors at tuning time, which the freeze enforces; a private hold-out adds nothing to that |
+| Size counts of rejected candidates | Read from the git tree at the pinned commit | Same path rules as `cbench frame`, and equal to it wherever both were run, without cloning repositories of up to 55,000 files |
+| A large grep pool (4,296 lines in yt-dlp) | Adjudicated in full, no sampling | A sampled pool would make pool precision an estimate; most lines are rejected at a glance |
+| Reachability | Phase 2 | Real entry points need a model per repository; suite B scores reachability on controlled pairs |
 
 ## Matching rules
 
@@ -191,3 +324,4 @@ Every change applied to every tool, and every tool was scored again from its sto
 | 2026-11-05 | An `algorithm` asset may carry `anchors`, the call that names its algorithm for the same object in the same function; a prediction on the range or any anchor is a candidate. The allowed anchors are listed in the [annotation guide](docs/annotation-guide.md#anchors). Fernet's `decrypt` becomes its own operation. | Strict matching broke 57 pairs whose finding sat on the naming call (`KeyPairGenerator.getInstance` before `generateKeyPair`, `jwt.NewWithClaims` before `SignedString`). A tool that reports an object where its algorithm is named is not reporting the wrong line, and the anchors accept that call without accepting unrelated neighbours. 75 assets in 14 entries gained anchors; 49 of the 57 pairs match again. |
 | 2026-11-05 | Suite B lands: the suite B reachability view, the `distance` field and `scope.components`. Later the same day, the handler and callback scenarios add 10 pairs and 20 assets; no existing fixture or ground truth changed. | The fixture author had seen crypto-finder's output on early Go and Python fixtures; no fixture was changed to fit a result after that, and every miss is published. |
 | 2026-11-08 | A key generation that returns a private key, alone or in a key pair, also creates related crypto material of type `private-key` on the same lines. The value a digest, MAC or signature computes is restated as not material. | CycloneDX 1.7 models a private key as related crypto material, and an inventory is expected to list the private keys a program generates. 150 suite A assets added; suite B has no key generation. No matching rule changed. |
+| 2026-11-13 | Suite C: the [selection rule](#suite-c-selection), the [crypto signal](#crypto-signal), what the [`files`](#files-scope) and [`pool`](#pool-scope) scopes commit to, and the [first score freeze](#first-score-freeze), written before any candidate was retrieved (commit `361edb8`). Then the ten repositories were selected by it and added to the manifest with no ground truth. Three clarifications were written after retrieval, and none changes an outcome: counting size-rejected candidates from the git tree, adjudicating the grep pool in full, and the `<id>-pool` entry. `cbench validate` checks `corpus/suite-c.yaml` against the manifest. | Suite C tests whether the suite A scores hold on code no tool was tuned on, so the selection, the scopes and the freeze had to be fixed before anyone sees a suite C result. No scoring rule for suites A and B changed. |

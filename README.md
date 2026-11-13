@@ -27,7 +27,7 @@ sonar-cryptography has no JavaScript or Rust support, so it ran on three languag
 |---|---|---|---|
 | **A**, library coverage | Does the tool find every crypto operation, and name it correctly? | One small program set per library: the top 15 crypto packages of each ecosystem plus the standard library, 79 entries, 1,416 assets in 1,015 objects, under `fixtures/` | Scored |
 | **B**, transitive reachability | Can the tool tell crypto the app reaches through its dependencies from crypto it does not? | 45 pairs over five languages (app -> lib A -> lib B -> crypto). Each pair has a reachable and an unreachable variant that differ in one change. Under `fixtures/<language>/suite-b/` | Scored |
-| **C**, real repositories | Does it hold on real code? | Open-source projects fetched at a pinned commit, never vendored | Not yet scored |
+| **C**, real repositories | Does it hold on real code? | Ten open-source applications, two per language, chosen by a pre-registered rule ([METHODOLOGY.md](METHODOLOGY.md#suite-c)) and fetched at a pinned commit, never vendored | Selected, not yet annotated or scored |
 
 **Targets**, pre-registered on 2026-11-05: precision >= 0.90 and recall >= 0.85 in every language × asset type cell of suite A, in each language over all asset types, and in each asset type over all languages. The object level is the headline view ([METHODOLOGY.md](METHODOLOGY.md#targets)).
 
@@ -94,6 +94,7 @@ Both scripts refuse any other tool version and write the commands they ran to `O
 |---|---|
 | `cbench validate [--overlay DIR]` | Checks the manifest and every ground-truth file. Prints `severity: file: yaml.path: message` and exits non-zero on any error. |
 | `cbench fetch [--only ID] [--dest DIR]` | Clones every URL entry at its pinned commit into `work/corpus/<id>`. Safe to rerun: it skips a checkout at the right commit and refuses, without deleting anything, when the directory holds anything else. |
+| `cbench frame (--entry ID \| --dir DIR --language L --commit SHA) [--sample \| --grep]` | Prints a suite C checkout's signal files, the seeded `files` sample, or the `pool` grep candidates ([METHODOLOGY.md](METHODOLOGY.md#crypto-signal)). |
 | `cbench adapt crypto-finder\|cbom ...` | Converts one tool run into a prediction file. |
 | `cbench score --tool NAME [--predictions DIR] [--format json] [--out FILE]` | Validates the benchmark, then scores the predictions by the rules in [METHODOLOGY.md](METHODOLOGY.md#matching-rules). The report names the tool configuration and the entries scored, not run and skipped. |
 
@@ -102,6 +103,7 @@ Both scripts refuse any other tool version and write the commands they ran to `O
 ```
 corpus/manifest.yaml              every corpus entry: id, language, suite, split, and url+sha or path
 corpus/libraries.yaml             the frozen suite A library list
+corpus/suite-c.yaml               every suite C candidate examined and its outcome
 groundtruth/<suite>/<entry>.yaml  annotated crypto assets for one entry
 fixtures/<language>/...           in-repo programs for suites A and B
 cmd/cbench                        the CLI

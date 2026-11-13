@@ -1284,3 +1284,73 @@ entries:
     variant: unreachable
     scenario: handler
     notes: "main starts a web app and registers a handler with actix-web App::route; the handler calls liba -> libb, crypto in libb (distance 2). Unreachable variant: the handler is never registered, and nothing calls it."
+  - id: java-c-mall
+    language: java
+    suite: C
+    split: dev
+    url: https://github.com/macrozheng/mall
+    sha: dcaa93b3150352e5044708d7211b5bed0af4509f
+    notes: "Suite C real repository: macrozheng/mall, 85044 GitHub stars on 2026-11-13, rank 3 of its language; an e-commerce system (storefront and admin back end) built on Spring Boot. Selection record in corpus/suite-c.yaml."
+  - id: java-c-jadx
+    language: java
+    suite: C
+    split: dev
+    url: https://github.com/skylot/jadx
+    sha: fca5c2c89d08263cbd680864270edf5dd6e9e0e8
+    notes: "Suite C real repository: skylot/jadx, 51792 GitHub stars on 2026-11-13, rank 12 of its language; a Dex to Java decompiler, command line and GUI. Selection record in corpus/suite-c.yaml."
+  - id: python-c-yt-dlp
+    language: python
+    suite: C
+    split: dev
+    url: https://github.com/yt-dlp/yt-dlp
+    sha: 412e7f0a4b0588fe884a02b344ac66a06538475b
+    notes: "Suite C real repository: yt-dlp/yt-dlp, 207300 GitHub stars on 2026-11-13, rank 8 of its language; a command-line audio and video downloader. Selection record in corpus/suite-c.yaml."
+  - id: python-c-graphify
+    language: python
+    suite: C
+    split: dev
+    url: https://github.com/Graphify-Labs/graphify
+    sha: 52cb28218eea0c68d80a9f4b2ae102d2fa63e267
+    notes: "Suite C real repository: Graphify-Labs/graphify, 146744 GitHub stars on 2026-11-13, rank 19 of its language; a tool that turns a codebase and its documents into a queryable knowledge graph. Selection record in corpus/suite-c.yaml."
+  - id: go-c-ollama
+    language: go
+    suite: C
+    split: dev
+    url: https://github.com/ollama/ollama
+    sha: 5632619189ab493c70bd3f9435214b8788cc1c80
+    notes: "Suite C real repository: ollama/ollama, 186812 GitHub stars on 2026-11-13, rank 2 of its language; a server and CLI that runs language models locally. Selection record in corpus/suite-c.yaml."
+  - id: go-c-caveman
+    language: go
+    suite: C
+    split: dev
+    url: https://github.com/JuliusBrussee/caveman
+    sha: f5523a8e7bd09c30a2e218ca1afe7a1dab5c09ce
+    notes: "Suite C real repository: JuliusBrussee/caveman, 119423 GitHub stars on 2026-11-13, rank 5 of its language; a proxy for coding agents that cuts their token use, shipped with an agent skill. Selection record in corpus/suite-c.yaml."
+  - id: rust-c-clash-verge-rev
+    language: rust
+    suite: C
+    split: dev
+    url: https://github.com/clash-verge-rev/clash-verge-rev
+    sha: 119ee86082ddab5e8ff6a32bd1cf02eb16d756b4
+    notes: "Suite C real repository: clash-verge-rev/clash-verge-rev, 158022 GitHub stars on 2026-11-13, rank 2 of its language; a desktop proxy client (Tauri). Selection record in corpus/suite-c.yaml."
+  - id: rust-c-cc-switch
+    language: rust
+    suite: C
+    split: dev
+    url: https://github.com/farion1231/cc-switch
+    sha: 3c76d3bda670297dd8c27d7d9be9b18a4c9143f5
+    notes: "Suite C real repository: farion1231/cc-switch, 153939 GitHub stars on 2026-11-13, rank 3 of its language; a desktop assistant that manages coding agent configurations (Tauri). Selection record in corpus/suite-c.yaml."
+  - id: javascript-c-freecodecamp
+    language: javascript
+    suite: C
+    split: dev
+    url: https://github.com/freeCodeCamp/freeCodeCamp
+    sha: 7fce48a0f6b78fcd93d907fc86475e6286bde34e
+    notes: "Suite C real repository: freeCodeCamp/freeCodeCamp, 459052 GitHub stars on 2026-11-13, rank 1 of its language; the freeCodeCamp.org learning platform: its web app, API server and curriculum. Selection record in corpus/suite-c.yaml."
+  - id: javascript-c-firecrawl
+    language: javascript
+    suite: C
+    split: dev
+    url: https://github.com/firecrawl/firecrawl
+    sha: ab3acea889c724e8d7ebc48839e74cb16d8ca7a1
+    notes: "Suite C real repository: firecrawl/firecrawl, 201283 GitHub stars on 2026-11-13, rank 10 of its language; a web scraping API service, self-hostable. Selection record in corpus/suite-c.yaml."
