@@ -1,8 +1,14 @@
-# Suite C: real repositories, first score
+# Suite C: real repositories
 
-**On the 142 sampled files of ten real repositories, crypto-finder v0.53.1 with ruleset v1.48.0 finds 108 of 214 assets with 8 false positives (precision 0.931, recall 0.505).** sonar-cryptography 1.7.0 finds 28 of the 125 assets in its three languages with none, and cdxgen 13.6.0 finds 18 of 214 with 33. This is the first score, taken at the versions frozen before any tool ran on suite C, and published as is ([METHODOLOGY.md](../METHODOLOGY.md#first-score-freeze)).
+**Both scopes are scored. On the 142 sampled files (`files`, the headline), crypto-finder v0.53.1 with ruleset v1.48.0 finds 108 of 214 assets with 8 false positives (precision 0.931, recall 0.505).** sonar-cryptography 1.7.0 finds 28 of the 125 assets in its three languages with none, and cdxgen 13.6.0 finds 18 of 214 with 33.
 
-**Most of crypto-finder's misses are test files it did not scan.** Its recorded configuration ran with crypto-finder's default, which leaves test sources out (`--include-tests` adds them). Suite A has no test files, so the default never mattered there; the competitors were configured not to skip tests. In this run crypto-finder has no prediction in any test-path file of the sample: Go `_test.go` files, Python `test/`, `tests/` and `devscripts/` directories and JavaScript `__tests__` directories. Those files hold 90 of the 214 assets, and they are 90 of its 106 FN. A [later run with `--include-tests`](#later-run-crypto-finder-with---include-tests) scores 184 / 14 / 30 (precision 0.929, recall 0.860). It is shown separately and does not replace the first score.
+**Over whole repositories (`pool`), crypto-finder matches 444 of the 993 adjudicated pool assets with 24 false positives: precision 0.949, recall 0.447 relative to the pool.** sonar-cryptography matches 169 of the 590 pool assets in its languages with 3 (0.983 / 0.286 relative to the pool), and cdxgen 76 of 993 with 689 (0.099 / 0.077 relative to the pool). Pool recall counts only the assets some tool or the grep found, so it overstates true recall and is never comparable to `files` or suite A recall ([`pool` scope](#pool-scope-first-score)). 284 pool assets were found by crypto-finder's first score and by neither competitor, 71 only by sonar-cryptography and 9 only by cdxgen.
+
+These are the first scores, taken at the versions frozen before any tool ran on suite C, and published as is ([METHODOLOGY.md](../METHODOLOGY.md#first-score-freeze)).
+
+**Most of crypto-finder's misses, in both scopes, are test files it did not scan.** Its recorded configuration ran with crypto-finder's default, which leaves test sources out (`--include-tests` adds them). Suite A has no test files, so the default never mattered there; the competitors were configured not to skip tests. In the `files` scope those files hold 90 of its 106 FN; in the pool, 436 of its 549. A [later run with `--include-tests`](#later-run-crypto-finder-with---include-tests) scores 184 / 14 / 30 on `files` (precision 0.929, recall 0.860) and 880 / 45 / 113 on the pool (0.951 / 0.886 relative to the pool). It is shown separately and does not replace the first score.
+
+## `files` scope, first score
 
 | Tool | Languages run | TP / FP / FN op | P / R op | P / R obj |
 |---|---|---|---|---|
@@ -17,24 +23,38 @@
 - **No targets** are set for suite C, and the suite A targets are not applied to it.
 - **Run records:** [crypto-finder](crypto-finder/suite-c/README.md), [sonar-cryptography](sonar-cryptography/suite-c/README.md), [cdxgen](cdxgen/suite-c/README.md). Each holds the predictions, `score.md`, the commands and every deviation.
 
+## `pool` scope, first score
+
+Recall in this table is relative to the pool: the denominator is the 993 assets found by some tool or the grep, not every asset in the repositories.
+
+| Tool | Languages run | TP / FP / FN op | P / R op, R relative to pool | P / R obj, R relative to pool | Found only by this tool | Predictions outside the pool frame |
+|---|---|---|---|---|---|---|
+| crypto-finder v0.53.1, ruleset v1.48.0 | 5 | 444 / 24 / 549 | 0.949 / 0.447 | 0.944 / 0.435 | 284 | 143 dropped |
+| sonar-cryptography 1.7.0 | 3 (Go, Java, Python) | 169 / 3 / 421 | 0.983 / 0.286 | 0.983 / 0.300 | 71 | 0 |
+| cdxgen 13.6.0 | 5 | 76 / 689 / 917 | 0.099 / 0.077 | 0.098 / 0.081 | 9 | 0 |
+
+- **Scope:** `pool`. Every finding of the three tools, of the later crypto-finder run and of a grep for crypto terms, on the whole repository, was adjudicated by two annotators: 10,655 items, 993 assets ([annotation log](../docs/annotation-log.md#suite-c-pool-scope-2026-11-13)). Precision is exact.
+- **Predictions:** the same frozen prediction files as the `files` scope, re-keyed to the `<id>-pool` entries; no tool was rerun. Predictions in files of another language than the entry's are dropped before matching and counted.
+- **Run records:** [crypto-finder](crypto-finder/suite-c-pool/README.md), [sonar-cryptography](sonar-cryptography/suite-c-pool/README.md), [cdxgen](cdxgen/suite-c-pool/README.md), and the later run's [pool score](crypto-finder/suite-c-pool-include-tests/README.md).
+
 ## What suite C measures
 
-Whether the suite A scores hold on real code no tool was tuned on: ten open-source applications, two per language, chosen by a rule written before any candidate was retrieved, and fetched at a pinned commit ([METHODOLOGY.md](../METHODOLOGY.md#suite-c-selection)). The `files` scope draws 15 files per repository among those that import a crypto module, seeded by the pinned commit, and annotates every asset in them. A signal file with no crypto asset still counts: it tests precision.
+Whether the suite A scores hold on real code no tool was tuned on: ten open-source applications, two per language, chosen by a rule written before any candidate was retrieved, and fetched at a pinned commit ([METHODOLOGY.md](../METHODOLOGY.md#suite-c-selection)). The `files` scope draws 15 files per repository among those that import a crypto module, seeded by the pinned commit, and annotates every asset in them. A signal file with no crypto asset still counts: it tests precision. The `pool` scope covers the whole repository instead, but only the assets some tool or the grep found.
 
-| Entry | Repository | Sampled files | Assets |
-|---|---|---|---|
-| go-c-caveman | JuliusBrussee/caveman | 15 | 30 |
-| go-c-ollama | ollama/ollama | 15 | 31 |
-| java-c-jadx | skylot/jadx | 15 | 2 |
-| java-c-mall | macrozheng/mall | 15 | 1 |
-| javascript-c-firecrawl | firecrawl/firecrawl | 15 | 36 |
-| javascript-c-freecodecamp | freeCodeCamp/freeCodeCamp | 15 | 21 |
-| python-c-graphify | Graphify-Labs/graphify | 15 | 16 |
-| python-c-yt-dlp | yt-dlp/yt-dlp | 15 | 45 |
-| rust-c-cc-switch | farion1231/cc-switch | 15 | 23 |
-| rust-c-clash-verge-rev | clash-verge-rev/clash-verge-rev | 7 | 9 |
+| Entry | Repository | Sampled files | `files` assets | `pool` assets |
+|---|---|---|---|---|
+| go-c-caveman | JuliusBrussee/caveman | 15 | 30 | 258 |
+| go-c-ollama | ollama/ollama | 15 | 31 | 109 |
+| java-c-jadx | skylot/jadx | 15 | 2 | 7 |
+| java-c-mall | macrozheng/mall | 15 | 1 | 4 |
+| javascript-c-firecrawl | firecrawl/firecrawl | 15 | 36 | 297 |
+| javascript-c-freecodecamp | freeCodeCamp/freeCodeCamp | 15 | 21 | 50 |
+| python-c-graphify | Graphify-Labs/graphify | 15 | 16 | 58 |
+| python-c-yt-dlp | yt-dlp/yt-dlp | 15 | 45 | 154 |
+| rust-c-cc-switch | farion1231/cc-switch | 15 | 23 | 43 |
+| rust-c-clash-verge-rev | clash-verge-rev/clash-verge-rev | 7 | 9 | 13 |
 
-## First score, operation level
+## `files` scope: first score, operation level
 
 Each cell is `TP / FP / FN (precision / recall)`. sonar-cryptography is `not run` where it has no language support.
 
@@ -78,7 +98,7 @@ sonar-cryptography's rows cover its three languages only.
 
 **Attribution.** crypto-finder attributes 104 of its 108 matches (0.963), sonar-cryptography 28 of 28 and cdxgen 17 of 18. crypto-finder's four unattributed matches are freeCodeCamp's `jwt.verify(token, secret)` calls: it reports each as a signature with no algorithm, where the secret makes it HMAC (`jwt.sign` with the same secret is attributed).
 
-## First score, object level
+## `files` scope: first score, object level
 
 Each crypto object counts once ([METHODOLOGY.md](../METHODOLOGY.md#object-level-view)). Suite C has 200 objects for its 214 assets, so the two views are close.
 
@@ -97,7 +117,7 @@ Each crypto object counts once ([METHODOLOGY.md](../METHODOLOGY.md#object-level-
 
 By entry, the object level differs most in freeCodeCamp, where one JWT secret signs and verifies in several files (crypto-finder 11 / 2 / 1 at object level against 20 / 2 / 1, cdxgen 3 / 0 / 9 against 3 / 0 / 18); elsewhere it moves by one object at most. Every `score.md` has the full object-level tables.
 
-## The test-file finding
+## `files` scope: the test-file finding
 
 | | Go | Python | JavaScript | Rust | Java |
 |---|---|---|---|---|---|
@@ -134,7 +154,7 @@ By entry, the object level differs most in freeCodeCamp, where one JWT secret si
 
 ## What crypto-finder misses
 
-The first score's 106 FN and 8 FP, grouped by cause. Counts are operation level. "Left in the later run" is the same miss in the `--include-tests` run.
+In the `files` scope: the first score's 106 FN and 8 FP, grouped by cause. The pool's are under [What crypto-finder misses in the pool](#what-crypto-finder-misses-in-the-pool). Counts are operation level. "Left in the later run" is the same miss in the `--include-tests` run.
 
 | Cause | FN | FP | Where | Left in the later run |
 |---|---|---|---|---|
@@ -153,15 +173,143 @@ The first score's 106 FN and 8 FP, grouped by cause. Counts are operation level.
 
 Two of these are detectable by other tools on the same lines: cdxgen reports three of the five `Sha256::digest` calls inside `format!`.
 
-## What the other tools miss
+## `files` scope: what the other tools miss
 
 - **sonar-cryptography.** Python: no component in either repository (61 FN); it scanned 687 and 1,124 `.py` files. Go: 34 FN, of which 25 are SHA-256 hashes in `_test.go` files; outside tests it misses `rand.Read` draws, caveman's `tls.NewListener` session and ollama's Ed25519 key generation and SSH key serialization. Java: apksig's `ApkVerifier.verify()` and Spring Security's `BCryptPasswordEncoder`. No false positive. JavaScript and Rust are not supported, so 89 assets are out of its reach.
 - **cdxgen.** Python and Java: no algorithm analysis in source in 13.6.0, so all 64 assets are FN. Go: golem reports 2 of 61, none in `_test.go` files. JavaScript: `createHash`, `createHmac` and `crypto.subtle.digest` only; no `jsonwebtoken`, no random draws, nothing in `__tests__`. Rust: `Sha256::digest` calls only. All 33 of its FP are `related-crypto-material` named after variables (`input_tokens`, `refresh_token`, `password`, `key`) on lines that compute no crypto.
 
-Details and deviations are on each tool's [run record](#suite-c-real-repositories-first-score).
+Details and deviations are on each tool's run record (linked [above](#files-scope-first-score)).
+
+## `pool` scope: first score in detail
+
+**Every recall in this section is relative to the pool**, 993 assets that some tool or the grep found, and is not comparable to `files` or suite A recall. Each cell is `TP / FP / FN (precision / recall relative to pool)`. sonar-cryptography is `not run` where it has no language support.
+
+### What the pool is, and what it cannot see
+
+- **Sources.** Every finding of crypto-finder's first score, of the later `--include-tests` run, of sonar-cryptography and of cdxgen, plus every line a grep for crypto terms printed (`cbench frame --grep`), in source files of the entry's language outside excluded paths ([METHODOLOGY.md](../METHODOLOGY.md#pool-scope)). Every item was adjudicated with no tool attribution, so precision is exact for every tool.
+- **It favors the tools that built it.** An asset no source found is not in the denominator. 104 of the 993 assets were found by the grep alone, by no tool run.
+- **Known blind spots.** The annotators listed 25 assets that are in the repositories but no pool item covers, so no tool is scored on them ([annotation log](../docs/annotation-log.md#known-misses-of-the-pool)): 12 `httptest.NewTLSServer` test servers and one `StartTLS` in the two Go repositories, certificate parses (`CertPool.AppendCertsFromPEM` ×2, `load_verify_locations(cafile=...)`, rustls `add_parsable_certificates`), three IVs created from literals in yt-dlp, a `wrap_socket` TLS session in graphify, signature verifications through `AlipaySignature.rsaCheckV1` (mall) and `windows.WinVerifyTrustEx` (ollama), a crypto/rand draw through `io.ReadFull` and an ECDSA public-key serialization. TLS in test code and key material are what every source missed most, so pool recall is most generous on those types.
+- **Dropped outside the pool frame.** crypto-finder's first-score files hold 143 predictions in files of another language than the entry's (TypeScript, JavaScript and Python files in the Go and Rust repositories; Rust and Go files in firecrawl), the later run's 208. They are dropped before matching and counted, never scored. sonar-cryptography and cdxgen have none.
+
+### By language
+
+| Language | Pool assets | crypto-finder | sonar-cryptography | cdxgen |
+|---|---|---|---|---|
+| go | 367 | 140 / 3 / 227 (0.979 / 0.381) | 168 / 0 / 199 (1.000 / 0.458) | 7 / 245 / 360 (0.028 / 0.019) |
+| java | 11 | 8 / 0 / 3 (1.000 / 0.727) | 1 / 3 / 10 (0.250 / 0.091) | 0 / 0 / 11 (n/a / 0.000) |
+| javascript | 347 | 154 / 11 / 193 (0.933 / 0.444) | not run | 50 / 0 / 297 (1.000 / 0.144) |
+| python | 212 | 101 / 5 / 111 (0.953 / 0.476) | 0 / 0 / 212 (n/a / 0.000) | 0 / 0 / 212 (n/a / 0.000) |
+| rust | 56 | 41 / 5 / 15 (0.891 / 0.732) | not run | 19 / 444 / 37 (0.041 / 0.339) |
+| **all** | **993** | **444 / 24 / 549 (0.949 / 0.447)** | **169 / 3 / 421 (0.983 / 0.286)** | **76 / 689 / 917 (0.099 / 0.077)** |
+
+On the three languages both run, crypto-finder scores 249 / 8 / 341 (0.969 / 0.422 relative to pool) and sonar-cryptography 169 / 3 / 421 (0.983 / 0.286). In Go, sonar-cryptography finds more: 220 of crypto-finder's 227 Go FN are in `_test.go` files its first-score configuration did not scan.
+
+### By asset type
+
+sonar-cryptography's rows cover its three languages only.
+
+| Asset type | Pool assets | crypto-finder | sonar-cryptography | cdxgen |
+|---|---|---|---|---|
+| algorithm | 827 | 413 / 10 / 414 (0.976 / 0.499) | 169 / 3 / 286 (0.983 / 0.371) | 74 / 8 / 753 (0.902 / 0.089) |
+| certificate | 41 | 8 / 3 / 33 (0.727 / 0.195) | 0 / 0 / 39 (n/a / 0.000) | 0 / 1 / 41 (0.000 / 0.000) |
+| protocol | 46 | 9 / 8 / 37 (0.529 / 0.196) | 0 / 0 / 39 (n/a / 0.000) | 0 / 1 / 46 (0.000 / 0.000) |
+| related-crypto-material | 79 | 14 / 3 / 65 (0.824 / 0.177) | 0 / 0 / 57 (n/a / 0.000) | 2 / 679 / 77 (0.003 / 0.025) |
+
+### By entry
+
+| Entry | Pool assets | crypto-finder | sonar-cryptography | cdxgen |
+|---|---|---|---|---|
+| go-c-caveman-pool | 258 | 100 / 3 / 158 (0.971 / 0.388) | 110 / 0 / 148 (1.000 / 0.426) | 4 / 139 / 254 (0.028 / 0.016) |
+| go-c-ollama-pool | 109 | 40 / 0 / 69 (1.000 / 0.367) | 58 / 0 / 51 (1.000 / 0.532) | 3 / 106 / 106 (0.028 / 0.028) |
+| java-c-jadx-pool | 7 | 6 / 0 / 1 (1.000 / 0.857) | 1 / 3 / 6 (0.250 / 0.143) | 0 / 0 / 7 (n/a / 0.000) |
+| java-c-mall-pool | 4 | 2 / 0 / 2 (1.000 / 0.500) | 0 / 0 / 4 (n/a / 0.000) | 0 / 0 / 4 (n/a / 0.000) |
+| javascript-c-firecrawl-pool | 297 | 109 / 2 / 188 (0.982 / 0.367) | not run | 47 / 0 / 250 (1.000 / 0.158) |
+| javascript-c-freecodecamp-pool | 50 | 45 / 9 / 5 (0.833 / 0.900) | not run | 3 / 0 / 47 (1.000 / 0.060) |
+| python-c-graphify-pool | 58 | 45 / 0 / 13 (1.000 / 0.776) | 0 / 0 / 58 (n/a / 0.000) | 0 / 0 / 58 (n/a / 0.000) |
+| python-c-yt-dlp-pool | 154 | 56 / 5 / 98 (0.918 / 0.364) | 0 / 0 / 154 (n/a / 0.000) | 0 / 0 / 154 (n/a / 0.000) |
+| rust-c-cc-switch-pool | 43 | 30 / 5 / 13 (0.857 / 0.698) | not run | 19 / 399 / 24 (0.045 / 0.442) |
+| rust-c-clash-verge-rev-pool | 13 | 11 / 0 / 2 (1.000 / 0.846) | not run | 0 / 45 / 13 (0.000 / 0.000) |
+
+**Attribution.** crypto-finder attributes 429 of its 444 matches (0.966), sonar-cryptography 166 of 169 and cdxgen 63 of 76. **Object level** (recall relative to pool): crypto-finder 403 / 24 / 523 (0.944 / 0.435), sonar-cryptography 169 / 3 / 394 (0.983 / 0.300), cdxgen 75 / 689 / 851 (0.098 / 0.081). Every `score.md` has the full tables.
+
+### Assets only one tool found
+
+An asset counts for a tool when its prediction matches it by the score's rules, and as found only by that tool when no other tool in the comparison matches it (`cbench unique`; reports in [suite-c-pool-unique](suite-c-pool-unique/)). The first comparison is the three first scores; the second puts the later crypto-finder run in place of the first.
+
+| Tool | Pool assets matched | Only this tool, first scores | Only this tool, with the later crypto-finder run |
+|---|---|---|---|
+| crypto-finder | 444 first score; 880 later run | 284 | 649 |
+| sonar-cryptography 1.7.0 | 169 | 71 | 0 |
+| cdxgen 13.6.0 | 76 | 9 | 9 |
+| none of the three | | 469 | 104 |
+
+| Language | Only crypto-finder, first score | Only sonar-cryptography | Only cdxgen | None of the three first scores |
+|---|---|---|---|---|
+| go | 42 | 71 | 1 | 155 |
+| java | 7 | 0 | 0 | 3 |
+| javascript | 104 | 0 | 0 | 193 |
+| python | 101 | 0 | 0 | 111 |
+| rust | 30 | 0 | 8 | 7 |
+
+- **sonar-cryptography's 71** are all in Go `_test.go` files, which crypto-finder's first configuration left out. Against the later run it has none of its own.
+- **cdxgen's 9** are eight cc-switch `Sha256::digest(...)` calls inside `format!` macro arguments, which crypto-finder does not report, and the key half of caveman's `tls.LoadX509KeyPair` (`proxy/internal/identity/tls.go:63`).
+- **The 469 found by none of the three first scores** split into 365 found only by the later crypto-finder run, all in test-path files, and 104 found only by the grep.
+
+## Later run in the pool: crypto-finder with `--include-tests`
+
+**Dated 2026-11-13, configuration changed after the first score was seen; beside the first pool score, never in its place.** Same prediction files as the later `files` run, re-keyed ([run record](crypto-finder/suite-c-pool-include-tests/README.md)). This run is one of the pool's sources, so its pool recall is the least independent of the four.
+
+| Language | First score TP / FP / FN | P / R, R relative to pool | Later run TP / FP / FN | P / R, R relative to pool |
+|---|---|---|---|---|
+| go | 140 / 3 / 227 | 0.979 / 0.381 | 347 / 8 / 20 | 0.977 / 0.946 |
+| java | 8 / 0 / 3 | 1.000 / 0.727 | 8 / 0 / 3 | 1.000 / 0.727 |
+| javascript | 154 / 11 / 193 | 0.933 / 0.444 | 334 / 18 / 13 | 0.949 / 0.963 |
+| python | 101 / 5 / 111 | 0.953 / 0.476 | 150 / 14 / 62 | 0.915 / 0.708 |
+| rust | 41 / 5 / 15 | 0.891 / 0.732 | 41 / 5 / 15 | 0.891 / 0.732 |
+| **all, operation** | **444 / 24 / 549** | **0.949 / 0.447** | **880 / 45 / 113** | **0.951 / 0.886** |
+| all, object | 403 / 24 / 523 | 0.944 / 0.435 | 830 / 45 / 96 | 0.949 / 0.896 |
+
+| Asset type | Later run TP / FP / FN | P / R, R relative to pool |
+|---|---|---|
+| algorithm | 761 / 19 / 66 | 0.976 / 0.920 |
+| certificate | 37 / 6 / 4 | 0.860 / 0.902 |
+| protocol | 35 / 17 / 11 | 0.673 / 0.761 |
+| related-crypto-material | 47 / 3 / 32 | 0.940 / 0.595 |
+
+436 FN become TP, all in test-path files (Go `_test.go` 207, JavaScript `__tests__` 180, Python `test/` 37 and `tests/` 12), and 21 FP are added, all in test-path files. Every other miss of the first pool score is still there. Predictions dropped outside the pool frame: 208.
+
+### What crypto-finder misses in the pool
+
+The first pool score's 549 FN and 24 FP, grouped by cause, with the later run's FP beside. The 113 FN below the first row are missed by both runs; 53 of them are in test-path files. Counts are operation level; where a cause also appears in the `files` table [above](#what-crypto-finder-misses), the pool counts include those lines.
+
+| Cause | FN | FP, first score | FP, later run | Where |
+|---|---|---|---|---|
+| Test sources left out by the default configuration | 436 | 0 | | Go `_test.go` (207), JavaScript `__tests__` (180), Python `test/` (37) and `tests/` (12). The later run finds all 436 |
+| Calls into a project's own cipher implementation | 25 | 0 | 0 | yt-dlp's pure-Python AES (`yt_dlp.aes`) called from 5 extractors, `test/test_aes.py` (12) and `devscripts/generate_aes_testdata.py` (5, with an `openssl enc` command line); yt-dlp's own textbook RSA (`adn.py`, `ohdave_rsa_encrypt`) and RC4 (`VideaIE.rc4`) |
+| Certificates and private keys loaded into a TLS context | 17 | 0 | 0 | Python `load_cert_chain` key half (10, 9 of them in `test/`) and `load_verify_locations(cadata=...)`; Go `tls.LoadX509KeyPair` and `tls.X509KeyPair` key half (3) and `CertPool.AppendCertsFromPEM`; Node `https.createServer({ key, cert })` key and certificate (firecrawl test) |
+| Library or OS calls whose algorithm the pinned library fixes but the call does not name | 13 | 0 | 0 | Hutool `JWTUtil.createToken` and `verify` (mall, HS256), `@fastify/cookie` `sign` (freeCodeCamp, HMAC-SHA-256, 3), Gatsby `createContentDigest` (MD5), tauri-plugin-updater `Update::verify` (Ed25519), apksig `ApkVerifier.verify`, `x/crypto/ssh` `Signer.Sign` and `PublicKey.Verify` on an Ed25519 key (ollama), pypdf `PdfWriter.encrypt(algorithm="RC4-128")`, Windows `CryptQueryObject` (certificate) and `CryptUnprotectData` (DPAPI) |
+| pycryptodome reached through yt-dlp's own `dependencies.Cryptodome` module | 11 | 0 | 0 | `Cryptodome.AES.new`, `RSA.importKey`, `RSA.generate`, `PKCS1_v1_5.new`, `PKCS1_OAEP.new`, `CMAC.new` and a key export, called as attributes of the module yt-dlp imports instead of `Crypto`/`Cryptodome` (`aes.py`, `bilibili.py`, `ivi.py`, `tarangplus.py`, `wrestleuniverse.py`), and the `AES.new` probe in that module |
+| A hash call inside a Rust macro argument | 11 | 0 | 0 | cc-switch `Sha256::digest(...)` inside `format!(...)` (9) and `assert_eq!(...)` (2) |
+| TLS contexts and sessions | 11 | 0 | 0 | Go `&tls.Config{...}` literals passed or assigned in test code (5) and an `httptest.NewTLSServer`; tokio-rustls `TlsConnector::connect` (2, cc-switch); Python `wrap_bio` (test) and `websockets.sync.client.connect(ssl=...)`; Node `https.createServer` |
+| Salt, IV and nonce material | 8 | 0 | 0 | literal salts passed to yt-dlp's `pbkdf2_sha1` helper (3), two IVs (a default argument and a `struct.pack`), firecrawl's zero IV `Buffer.alloc(16)`, a salt filled by `rand.Read` (caveman), a nonce filled by `getrandom::fill` (clash-verge-rev) |
+| Key parse and serialization | 7 | 1 | 8 | Go `x509.MarshalECPrivateKey` (2) and `ecdsa.ParseUncompressedPublicKey` are reported as ECDSA signatures, not as key material; ECDSA `PublicKey.Bytes()` is not reported; jose `exportJWK` (3) is reported as an RSA signature, and so are the JWK object literals around it |
+| Python standard-library call forms | 6 | 1 | 1 | `hmac.HMAC(...)` (2), `hmac.new(key, digestmod=...)` fed through `update()`, whose `update()` is reported as key material (FP), `hashlib.file_digest` (2), `hashlib.sha256` passed by reference to a project function |
+| Certificate chain verification | 2 | 2 | 4 | caveman `x509.Certificate.Verify(opts)`: reported as a certificate on the call and its `VerifyOptions` literal, not as a signature verification |
+| Crypto in a guarded or mocked expression | 2 | 0 | 0 | `window?.crypto?.randomUUID` (freeCodeCamp), `createHash` inside a `vi.mock` factory (firecrawl test) |
+| TLS configuration reported as an asset of its own | 0 | 9 | 19 | Python `ssl` setters (`set_ciphers`, `set_alpn_protocols`, `minimum_version`, `maximum_version`, `verify_mode`: 4 first, 12 later); `rustls::crypto::ring::default_provider().install_default()` as a protocol (4, cc-switch); hyper-rustls `HttpsConnectorBuilder` as a certificate; later run only, a Go `tls.VersionTLS11` constant and Python `load_default_certs()` |
+| JWT decode without verification reported as an algorithm | 0 | 9 | 9 | freeCodeCamp `jwt.decode(...)`: `auth.ts` (2) and `user.test.ts` (7), a test file the default configuration scans |
+| JWKS set construction reported as public-key material | 0 | 2 | 2 | firecrawl jose `createLocalJWKSet`, `createRemoteJWKSet` |
+| A test's own `sign()` helper reported as an RSA signature | 0 | 0 | 2 | firecrawl `__tests__` |
+| **Total** | **549** | **24** | **45** | |
+
+### What the other tools miss in the pool
+
+- **sonar-cryptography.** No certificate, protocol or key-material asset in any language (135 FN of those types). Python: nothing in either repository (212 FN). Java: 1 of 11; its 3 FP are jadx's `getThumbPrint(x509cert, "MD5" | "SHA-1" | "SHA-256")` calls, where the algorithm name is passed to a project helper; the helper's `MessageDigest.getInstance` (line 158) is the asset, and it is not reported. Go: 168 of 367, precision 1.000.
+- **cdxgen.** 679 of its 689 FP are `related-crypto-material`, 570 of them `key` and 50 `token`, all in Go (245) and Rust (444): lines where an identifier is named like key material (`input_tokens`, `output_key`, `secret := ""`, `SchemaStructuralKeys`) and no crypto runs. Every one was adjudicated as a pool item; the reported lines are correct, they hold no asset. Its 76 TP are JavaScript `createHash`, `createHmac` and `crypto.subtle.digest` (50), Rust `Sha256::digest` (19) and Go (7). Python and Java: nothing, as in the `files` scope.
 
 ## Limitations
 
 - The sample is 142 files. One repository's assets can dominate a row: yt-dlp holds 45 of the 61 Python assets, firecrawl 36 of the 57 JavaScript ones, and the two Java repositories only 3 assets between them.
 - Most signal files import crypto for a hash or a random draw: 168 of the 214 assets are algorithms, and SHA-256 alone is most of Go. Suite C measures what real applications do with crypto, not library breadth; suite A does that.
-- The `pool` scope, which covers crypto outside the sampled files, is not scored yet.
+- Pool recall is relative to the pool and overstates true recall: it cannot see the assets no source found, and it favors the tools whose findings built the pool. Pool precision is exact.
+- Reachability is not scored in suite C. It is phase 2 ([METHODOLOGY.md](../METHODOLOGY.md#suite-c-decisions)).

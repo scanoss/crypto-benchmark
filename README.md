@@ -18,10 +18,15 @@ crypto-finder v0.53.1 with remote ruleset v1.48.0, scored on 2026-11-12 (suites 
 | B | Dependency crypto detected | 104 / 0 / 0 (TP / FP / FN) | 0 of 52 assets (Go, Python, Java) | 16 of 84 assets (JavaScript only) |
 | C | `files` scope, operation level, TP / FP / FN, first score | 108 / 8 / 106 | 28 / 0 / 97 (3 languages) | 18 / 33 / 196 |
 | C | `files` scope, precision / recall, first score | 0.931 / 0.505 | 1.000 / 0.224 | 0.353 / 0.084 |
+| C | `pool` scope, operation level, TP / FP / FN, first score | 444 / 24 / 549 | 169 / 3 / 421 (3 languages) | 76 / 689 / 917 |
+| C | `pool` scope, precision / recall **relative to the pool**, first score | 0.949 / 0.447 | 0.983 / 0.286 | 0.099 / 0.077 |
+| C | `pool` assets only this tool found, first scores | 284 | 71 | 9 |
 
 The two target cells crypto-finder misses are Python protocol and Rust protocol. Both fail on precision, because crypto-finder reports a TLS configuration setter as a protocol of its own. [Known gaps](results/README.md#known-gaps) lists every remaining error.
 
-In suite C, 90 of crypto-finder's 106 misses are in test files: its recorded configuration used the default that leaves test sources out, while the competitors scan them. A later, separate run with `--include-tests` scores 184 / 14 / 30 (0.929 / 0.860); the first score stands ([suite C](results/suite-c.md)).
+In suite C, most of crypto-finder's misses are in test files: its recorded configuration used the default that leaves test sources out, while the competitors scan them. That is 90 of its 106 `files` misses and 436 of its 549 `pool` misses. A later, separate run with `--include-tests` scores 184 / 14 / 30 (0.929 / 0.860) on `files` and 880 / 45 / 113 (0.951 / 0.886, recall relative to the pool) on the pool; the first score stands ([suite C](results/suite-c.md)).
+
+Pool recall counts only the 993 assets that some tool or a grep found, so it overstates true recall and is not comparable to suite A or `files` recall ([METHODOLOGY.md](METHODOLOGY.md#pool-scope)).
 
 sonar-cryptography has no JavaScript or Rust support, so it ran on three languages. cdxgen 13.6.0 does not analyze algorithm use in Python or Java source, so it scores 0 there. Neither tool reports reachability for crypto assets, so suite B shows them as having none, not as scoring zero. Both were run on the first 35 suite B pairs only.
 
@@ -31,7 +36,7 @@ sonar-cryptography has no JavaScript or Rust support, so it ran on three languag
 |---|---|---|---|
 | **A**, library coverage | Does the tool find every crypto operation, and name it correctly? | One small program set per library: the top 15 crypto packages of each ecosystem plus the standard library, 79 entries, 1,416 assets in 1,015 objects, under `fixtures/` | Scored |
 | **B**, transitive reachability | Can the tool tell crypto the app reaches through its dependencies from crypto it does not? | 45 pairs over five languages (app -> lib A -> lib B -> crypto). Each pair has a reachable and an unreachable variant that differ in one change. Under `fixtures/<language>/suite-b/` | Scored |
-| **C**, real repositories | Does it hold on real code? | Ten open-source applications, two per language, chosen by a pre-registered rule ([METHODOLOGY.md](METHODOLOGY.md#suite-c)) and fetched at a pinned commit, never vendored | `files` scope scored: first score 2026-11-13, 214 assets in 142 files ([results](results/suite-c.md)); `pool` scope not yet scored |
+| **C**, real repositories | Does it hold on real code? | Ten open-source applications, two per language, chosen by a pre-registered rule ([METHODOLOGY.md](METHODOLOGY.md#suite-c)) and fetched at a pinned commit, never vendored | Complete: `files` and `pool` scored, first scores 2026-11-13 (`files`: 214 assets in 142 files; `pool`: 993 adjudicated assets over the whole repositories) ([results](results/suite-c.md)); reachability is phase 2 |
 
 **Targets**, pre-registered on 2026-11-05: precision >= 0.90 and recall >= 0.85 in every language × asset type cell of suite A, in each language over all asset types, and in each asset type over all languages. The object level is the headline view ([METHODOLOGY.md](METHODOLOGY.md#targets)).
 
@@ -101,6 +106,7 @@ Both scripts refuse any other tool version and write the commands they ran to `O
 | `cbench frame (--entry ID \| --dir DIR --language L --commit SHA) [--sample \| --grep]` | Prints a suite C checkout's signal files, the seeded `files` sample, or the `pool` grep candidates ([METHODOLOGY.md](METHODOLOGY.md#crypto-signal)). |
 | `cbench adapt crypto-finder\|cbom ...` | Converts one tool run into a prediction file. |
 | `cbench score --tool NAME [--predictions DIR] [--format json] [--out FILE]` | Validates the benchmark, then scores the predictions by the rules in [METHODOLOGY.md](METHODOLOGY.md#matching-rules). The report names the tool configuration and the entries scored, not run and skipped. |
+| `cbench unique --run LABEL=DIR/TOOL --run ... [--format json] [--out FILE]` | Matches two or more runs against every `pool` ground truth by the same rules and counts, per run, the pool assets it matched and those no other compared run matched ([METHODOLOGY.md](METHODOLOGY.md#pool-scope)). |
 
 ### Layout
 
