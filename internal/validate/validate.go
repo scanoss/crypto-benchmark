@@ -13,6 +13,7 @@ import (
 	"github.com/scanoss/crypto-benchmark/internal/corpus"
 	"github.com/scanoss/crypto-benchmark/internal/groundtruth"
 	"github.com/scanoss/crypto-benchmark/internal/libraries"
+	"github.com/scanoss/crypto-benchmark/internal/selection"
 )
 
 // Run validates base and, when overlay is not empty, the overlay. The suite A
@@ -21,6 +22,7 @@ func Run(base, overlay string) *check.Report {
 	r := &check.Report{}
 	libraries.Load(base, r)
 	m := corpus.Load(base, overlay, r)
+	selection.Load(base, m, r)
 	annotated := map[string]string{}
 	checkTree(base, false, m, annotated, r)
 	if overlay != "" {
