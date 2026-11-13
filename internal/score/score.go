@@ -9,6 +9,7 @@ import (
 	"strings"
 
 	"github.com/scanoss/crypto-benchmark/internal/corpus"
+	"github.com/scanoss/crypto-benchmark/internal/frame"
 	"github.com/scanoss/crypto-benchmark/internal/groundtruth"
 	"github.com/scanoss/crypto-benchmark/internal/prediction"
 )
@@ -121,6 +122,10 @@ type Report struct {
 	NotRun  []string
 	Skipped []Note
 	Ignored int // predictions outside scope.files
+	// OutsideFrame are predictions of pool entries outside the entry's
+	// language source files or in excluded paths (internal/frame), dropped
+	// before matching.
+	OutsideFrame int
 	// NameConflicts are matched pairs whose algorithm name implied a
 	// parameter that an explicit field contradicted; the field was used.
 	NameConflicts []Note
@@ -171,7 +176,12 @@ func Score(tool string, m corpus.Manifest, truth map[string]groundtruth.File, pr
 		}
 		rep.Scored = append(rep.Scored, e.ID)
 		rep.Configs = addConfig(rep.Configs, pf.Tool)
-		mt := MatchEntry(gt, pf.Assets)
+		assets := pf.Assets
+		if gt.Scope.Kind == groundtruth.Pool {
+			assets = inFrame(e.Language, assets)
+			rep.OutsideFrame += len(pf.Assets) - len(assets)
+		}
+		mt := MatchEntry(gt, assets)
 		matches[e.ID] = mt
 		rep.Ignored += mt.Ignored
 		pooled := gt.Scope.Kind == groundtruth.Pool
@@ -221,6 +231,18 @@ func Score(tool string, m corpus.Manifest, truth map[string]groundtruth.File, pr
 	}
 	rep.SuiteB = scoreSuiteB(m, truth, preds, matches, rep.Pairs)
 	return rep
+}
+
+// inFrame keeps the predictions in source files of lang outside excluded
+// paths, the files a pool entry covers (METHODOLOGY.md, "Suite C decisions").
+func inFrame(lang corpus.Language, preds []prediction.Asset) []prediction.Asset {
+	var out []prediction.Asset
+	for _, p := range preds {
+		if frame.InScope(lang, p.File) {
+			out = append(out, p)
+		}
+	}
+	return out
 }
 
 func addConfig(configs []prediction.Tool, t prediction.Tool) []prediction.Tool {

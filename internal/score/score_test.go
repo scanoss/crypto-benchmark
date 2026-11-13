@@ -509,3 +509,35 @@ func TestBreakdownsAndPoolLabel(t *testing.T) {
 		t.Log(md)
 	}
 }
+
+func TestPoolEntriesDropPredictionsOutsideTheLanguageFrame(t *testing.T) {
+	m := manifest(entry("g", corpus.Go, corpus.SuiteC), entry("x", corpus.Go, corpus.SuiteA))
+	pooled := groundtruth.File{Entry: "g", Scope: groundtruth.Scope{Kind: groundtruth.Pool}, Assets: []groundtruth.Asset{truthAsset("gt-1", "a.go", 3, 3)}}
+	truth := map[string]groundtruth.File{"g": pooled, "x": exhaustive(truthAsset("gt-1", "a.go", 3, 3))}
+	// An off-language file and a vendored Go file: outside the pool's frame.
+	preds := []prediction.Asset{predAsset("a.go", 3, 3), predAsset("web/app.js", 3, 3), predAsset("vendor/x/b.go", 3, 3), predAsset("a.go", 9, 9)}
+	files := map[string]prediction.File{
+		"g": {Tool: prediction.Tool{Name: "t"}, Entry: "g", Assets: preds},
+		"x": {Tool: prediction.Tool{Name: "t"}, Entry: "x", Assets: preds},
+	}
+	rep := Score("t", m, truth, files)
+	var got []string
+	for _, g := range rep.ByEntry {
+		got = append(got, fmt.Sprintf("%s TP=%d FP=%d", g.Key, g.TP, g.FP))
+	}
+	got = append(got, fmt.Sprintf("outside_frame=%d ignored=%d", rep.OutsideFrame, rep.Ignored))
+	if want := "[g TP=1 FP=1 x TP=1 FP=3 outside_frame=2 ignored=0]"; fmt.Sprint(got) != want {
+		t.Fatalf("got %v\nwant %s (only the pool entry drops predictions outside its frame)", got, want)
+	}
+	md := Markdown(rep)
+	if want := "Predictions in pool entries outside the entry's language source files or in excluded paths, ignored: 2"; !strings.Contains(md, want) {
+		t.Errorf("markdown lacks %q\n%s", want, md)
+	}
+	data, err := JSON(rep)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if want := `"ignored_outside_pool_frame": 2`; !strings.Contains(string(data), want) {
+		t.Errorf("json lacks %q", want)
+	}
+}

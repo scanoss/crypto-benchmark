@@ -65,6 +65,9 @@ func Markdown(r Report) string {
 	if r.Ignored > 0 {
 		p("Predictions outside scope.files or scope.components, ignored: %d\n\n", r.Ignored)
 	}
+	if r.OutsideFrame > 0 {
+		p("Predictions in pool entries outside the entry's language source files or in excluded paths, ignored: %d\n\n", r.OutsideFrame)
+	}
 
 	p("## Detection\n\nCandidate match: same origin and component, same file and asset type, line ranges that overlap (LINE_TOLERANCE = %d). Ties prefer an attributed pair.\n", LineTolerance)
 	if r.Overall.Pooled {
@@ -261,6 +264,7 @@ func JSON(r Report) ([]byte, error) {
 		NotRun         []string     `json:"not_run"`
 		Skipped        []Note       `json:"skipped"`
 		Ignored        int          `json:"ignored_out_of_scope"`
+		OutsideFrame   int          `json:"ignored_outside_pool_frame"`
 		NameConflicts  []Note       `json:"name_conflicts"`
 		LineTolerance  int          `json:"line_tolerance"`
 		Overall        jsonCounts   `json:"overall"`
@@ -275,7 +279,7 @@ func JSON(r Report) ([]byte, error) {
 		ObjectLevel    objectLevel  `json:"object_level"`
 	}{
 		Tool: r.Tool, Scored: nonNil(r.Scored), NotRun: nonNil(r.NotRun), Skipped: nonNil(r.Skipped),
-		Ignored: r.Ignored, NameConflicts: nonNil(r.NameConflicts), LineTolerance: LineTolerance, Overall: toJSONCounts("", r.Overall),
+		Ignored: r.Ignored, OutsideFrame: r.OutsideFrame, NameConflicts: nonNil(r.NameConflicts), LineTolerance: LineTolerance, Overall: toJSONCounts("", r.Overall),
 		BySuite: toJSONGroups(r.BySuite), ByLanguage: toJSONGroups(r.ByLanguage),
 		ByType: toJSONGroups(r.ByType), ByLanguageType: toJSONGroups(r.ByLanguageType), ByEntry: toJSONGroups(r.ByEntry),
 		ObjectLevel: objectLevel{toJSONCounts("", r.Objects.Overall), toJSONGroups(r.Objects.ByLanguage),
