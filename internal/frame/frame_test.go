@@ -151,3 +151,23 @@ func TestGrep(t *testing.T) {
 		t.Fatalf("Grep = %v, want %v", got, want)
 	}
 }
+
+func TestInScope(t *testing.T) {
+	for _, c := range []struct {
+		lang corpus.Language
+		path string
+		want bool
+	}{
+		{corpus.Go, "cmd/main.go", true},
+		{corpus.Go, "web/app.js", false},
+		{corpus.Go, "vendor/x/a.go", false},
+		{corpus.JavaScript, "src/a.ts", true},
+		{corpus.JavaScript, "types/index.d.ts", false},
+		{corpus.JavaScript, "static/app.min.js", false},
+		{corpus.Python, "scripts/build.go", false},
+	} {
+		if got := InScope(c.lang, c.path); got != c.want {
+			t.Errorf("InScope(%s, %q) = %v, want %v", c.lang, c.path, got, c.want)
+		}
+	}
+}

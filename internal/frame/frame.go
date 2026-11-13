@@ -56,6 +56,13 @@ func Excluded(path string) bool {
 		strings.HasSuffix(base, ".d.mts") || strings.HasSuffix(base, ".d.cts")
 }
 
+// InScope reports whether a slash-separated path relative to the repository
+// root is a source file of lang outside excluded paths: the files every suite
+// C scope covers.
+func InScope(lang corpus.Language, path string) bool {
+	return isSource(lang, path) && !Excluded(path)
+}
+
 func isSource(lang corpus.Language, path string) bool {
 	ext := filepath.Ext(path)
 	for _, e := range Extensions[lang] {
@@ -247,7 +254,7 @@ func Scan(dir string, lang corpus.Language) (Frame, error) {
 			}
 			return nil
 		}
-		if !d.Type().IsRegular() || Excluded(rel) || !isSource(lang, rel) {
+		if !d.Type().IsRegular() || !InScope(lang, rel) {
 			return nil
 		}
 		f.SourceFiles++
@@ -355,7 +362,7 @@ func Grep(dir string, lang corpus.Language) ([]Line, error) {
 			}
 			return nil
 		}
-		if !d.Type().IsRegular() || Excluded(rel) || !isSource(lang, rel) {
+		if !d.Type().IsRegular() || !InScope(lang, rel) {
 			return nil
 		}
 		src, err := os.ReadFile(p)
