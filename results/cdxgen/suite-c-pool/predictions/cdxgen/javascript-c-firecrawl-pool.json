@@ -1,0 +1,582 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "cdxgen",
+    "version": "13.6.0",
+    "config": {
+      "cdxgen_locations": "true"
+    }
+  },
+  "entry": "javascript-c-firecrawl-pool",
+  "reachability_reported": false,
+  "assets": [
+    {
+      "file": "apps/api/src/lib/owner-id.ts",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-1",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/controllers/v2/parse-upload.ts",
+      "lines": [
+        103,
+        103
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/controllers/v2/parse-upload.ts",
+      "lines": [
+        124,
+        124
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/alexandria-feedback-token.ts",
+      "lines": [
+        22,
+        22
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/alexandria-feedback-token.ts",
+      "lines": [
+        29,
+        29
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/bigtable-row-key.ts",
+      "lines": [
+        21,
+        21
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/browser-sessions.ts",
+      "lines": [
+        289,
+        289
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/change-tracking-store.ts",
+      "lines": [
+        38,
+        38
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/deterministicJson/core/util.ts",
+      "lines": [
+        12,
+        12
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/gcs-jobs.ts",
+      "lines": [
+        63,
+        63
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/gcs-pdf-cache.ts",
+      "lines": [
+        38,
+        38
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/keyless.ts",
+      "lines": [
+        114,
+        114
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/mcp-delegated-credential.ts",
+      "lines": [
+        76,
+        76
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/request-credits-store.ts",
+      "lines": [
+        50,
+        50
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/request-credits-store.ts",
+      "lines": [
+        61,
+        61
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/request-credits-store.ts",
+      "lines": [
+        79,
+        79
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/secret-compare.ts",
+      "lines": [
+        10,
+        10
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/secret-compare.ts",
+      "lines": [
+        9,
+        9
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/siem-logging/azure-sentinel.ts",
+      "lines": [
+        67,
+        67
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/threat-protection/providers/google-web-risk.ts",
+      "lines": [
+        102,
+        102
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/threat-protection/providers/web-risk/sync.ts",
+      "lines": [
+        106,
+        106
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/threat-protection/providers/web-risk/testing.ts",
+      "lines": [
+        15,
+        15
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/threat-protection/providers/web-risk/testing.ts",
+      "lines": [
+        87,
+        87
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/threat-protection/providers/zscaler/client.ts",
+      "lines": [
+        117,
+        117
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/tracking.ts",
+      "lines": [
+        31,
+        31
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/world-id.ts",
+      "lines": [
+        127,
+        127
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/world-id.ts",
+      "lines": [
+        50,
+        50
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/world-id.ts",
+      "lines": [
+        63,
+        63
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/lib/world-id.ts",
+      "lines": [
+        93,
+        93
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts",
+      "lines": [
+        282,
+        282
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts",
+      "lines": [
+        344,
+        344
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts",
+      "lines": [
+        39,
+        39
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/cache-service.ts",
+      "lines": [
+        38,
+        38
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/routing.ts",
+      "lines": [
+        55,
+        55
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/waterfallExperiments.ts",
+      "lines": [
+        34,
+        34
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/search/tool-intent.ts",
+      "lines": [
+        172,
+        172
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/services/alexandria/retrieve.ts",
+      "lines": [
+        80,
+        80
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/services/index-cache.ts",
+      "lines": [
+        100,
+        100
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/services/index.ts",
+      "lines": [
+        216,
+        216
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/services/integrations/slack/signature.ts",
+      "lines": [
+        35,
+        35
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/services/monitoring/jitter.ts",
+      "lines": [
+        11,
+        11
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/services/monitoring/search/dedupe.ts",
+      "lines": [
+        13,
+        13
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/services/monitoring/search/dedupe.ts",
+      "lines": [
+        26,
+        26
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/services/monitoring/store.ts",
+      "lines": [
+        45,
+        45
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/services/oauth-token-introspection.ts",
+      "lines": [
+        34,
+        34
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/services/vercel-marketplace-oidc.ts",
+      "lines": [
+        43,
+        43
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    },
+    {
+      "file": "apps/api/src/services/webhook/delivery.ts",
+      "lines": [
+        166,
+        166
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "sha-256",
+      "origin": "project",
+      "reachable": "unknown"
+    }
+  ],
+  "metadata": {
+    "components_without_location": "0",
+    "locations_dropped": "0"
+  }
+}

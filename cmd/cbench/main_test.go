@@ -175,3 +175,22 @@ func TestAdaptCBOMThenScore(t *testing.T) {
 		t.Fatalf("missing --tool-version: exit %d, stderr %q", code, stderr.String())
 	}
 }
+
+func TestUniqueComparesLabeledRuns(t *testing.T) {
+	root := writeTree(t, benchmark())
+	dir := filepath.Join(root, "predictions", "crypto-finder")
+	var stdout, stderr bytes.Buffer
+	if code := run([]string{"unique", "--root", root, "--run", "one=" + dir}, &stdout, &stderr); code != 2 {
+		t.Fatalf("one run: exit %d, want 2", code)
+	}
+	code := run([]string{"unique", "--root", root, "--run", "first=" + dir, "--run", "second=" + dir}, &stdout, &stderr)
+	if code != 0 {
+		t.Fatalf("exit %d, stderr:\n%s", code, stderr.String())
+	}
+	// The benchmark has no pool entry, so no asset is compared.
+	for _, want := range []string{"Pool entries (0): none", "| first | 0 | 0 | none |", "| second | 0 | 0 | none |"} {
+		if !strings.Contains(stdout.String(), want) {
+			t.Errorf("report lacks %q:\n%s", want, stdout.String())
+		}
+	}
+}

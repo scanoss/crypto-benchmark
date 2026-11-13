@@ -1,0 +1,108 @@
+{
+  "schema_version": "1",
+  "tool": {
+    "name": "crypto-finder",
+    "version": "0.53.1",
+    "config": {
+      "ruleset_checksum": "a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6",
+      "ruleset_source": "remote",
+      "ruleset_version": "v1.48.0"
+    }
+  },
+  "entry": "java-c-jadx-pool",
+  "reachability_reported": true,
+  "assets": [
+    {
+      "file": "jadx-core/src/main/java/jadx/core/utils/files/FileUtils.java",
+      "lines": [
+        498,
+        498
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "jadx-gui/src/main/java/jadx/gui/utils/CertificateManager.java",
+      "lines": [
+        42,
+        42
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "false",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "jadx-gui/src/main/java/jadx/gui/utils/CertificateManager.java",
+      "lines": [
+        158,
+        158
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "MD5",
+      "parameters": {
+        "key_size": 128
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "jadx-gui/src/main/java/jadx/gui/utils/CertificateManager.java",
+      "lines": [
+        158,
+        158
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-1",
+      "parameters": {
+        "key_size": 160
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "jadx-gui/src/main/java/jadx/gui/utils/CertificateManager.java",
+      "lines": [
+        158,
+        158
+      ],
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm": "SHA-256",
+      "parameters": {
+        "key_size": 256
+      },
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    },
+    {
+      "file": "jadx-gui/src/main/java/jadx/gui/utils/CertificateManager.java",
+      "lines": [
+        159,
+        159
+      ],
+      "asset_type": "certificate",
+      "origin": "project",
+      "reachable": "true",
+      "depth": 0,
+      "distance": 0
+    }
+  ]
+}

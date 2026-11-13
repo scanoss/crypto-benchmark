@@ -28,6 +28,7 @@ const usage = `usage:
   cbench adapt crypto-finder --entry ID --input INTERIM.json [--callgraph CALLGRAPH.json] --out FILE [--root DIR] [--overlay DIR]
   cbench adapt cbom --tool NAME --tool-version V --entry ID --input BOM.json --out FILE [--source-root DIR] [--cdxgen] [--root DIR] [--overlay DIR]
   cbench score --tool NAME [--root DIR] [--overlay DIR] [--predictions DIR] [--format md|json] [--out FILE]
+  cbench unique --run LABEL=DIR/TOOL [--run ...] [--root DIR] [--overlay DIR] [--format md|json] [--out FILE]
 `
 
 func main() {
@@ -87,10 +88,64 @@ func run(args []string, stdout, stderr io.Writer) int {
 			return 2
 		}
 		return runScore(*root, *overlay, *preds, *tool, *format, *out, stdout, stderr)
+	case "unique":
+		var runs runFlags
+		fs.Var(&runs, "run", "LABEL=DIR/TOOL: one run's prediction directory, as score reads DIR with --tool TOOL; repeat per run")
+		format := fs.String("format", "md", "output format: md or json")
+		out := fs.String("out", "", "write the report to FILE instead of stdout")
+		if fs.Parse(args[1:]) != nil {
+			return 2
+		}
+		if len(runs) < 2 || (*format != "md" && *format != "json") {
+			fmt.Fprintln(stderr, "unique: at least two --run LABEL=DIR/TOOL are required and --format must be md or json")
+			return 2
+		}
+		return runUnique(*root, *overlay, runs, *format, *out, stdout, stderr)
 	default:
 		fmt.Fprint(stderr, usage)
 		return 2
 	}
+}
+
+// runFlags collects repeated --run LABEL=DIR/TOOL values.
+type runFlags [][2]string
+
+func (r *runFlags) String() string { return fmt.Sprint(*r) }
+func (r *runFlags) Set(v string) error {
+	label, dir, ok := strings.Cut(v, "=")
+	if !ok || label == "" || dir == "" {
+		return fmt.Errorf("want LABEL=DIR/TOOL, got %q", v)
+	}
+	*r = append(*r, [2]string{label, filepath.Clean(dir)})
+	return nil
+}
+
+func runUnique(root, overlay string, runs runFlags, format, out string, stdout, stderr io.Writer) int {
+	var in score.Inputs
+	var compared []score.Run
+	for _, r := range runs {
+		loaded, rep := score.Load(root, overlay, filepath.Dir(r[1]), filepath.Base(r[1]))
+		if rep.HasErrors() {
+			printReport(rep, stderr)
+			return 1
+		}
+		in = loaded
+		compared = append(compared, score.Run{Label: r[0], Preds: loaded.Preds})
+	}
+	rep := score.Unique(in.Manifest, in.Truth, compared)
+	data := []byte(score.UniqueMarkdown(rep))
+	if format == "json" {
+		var err error
+		if data, err = score.UniqueJSON(rep); err != nil {
+			fmt.Fprintln(stderr, err)
+			return 1
+		}
+	}
+	if out == "" {
+		_, err := stdout.Write(data)
+		return exitOn(err, stderr)
+	}
+	return exitOn(os.WriteFile(out, data, 0o644), stderr)
 }
 
 func printReport(r *check.Report, w io.Writer) int {
