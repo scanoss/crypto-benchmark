@@ -156,7 +156,7 @@ The signal is broad on purpose: a signal file with no crypto asset is still anno
 - **Recall is relative to the pool.** The denominator is the assets found by some tool or the grep, not every asset in the repository. As in TREC-style pooling, it overstates true recall by the assets nobody found, and it favors the tools that built the pool. Every row that includes a pool entry is labeled "recall relative to pool" (the score already does this, [Scope](#matching-rules)), and pool recall is never shown next to suite A or `files` recall without that label. The report gives, per tool, the number of adjudicated assets that only that tool found.
 - **A tool that joins later.** Its findings outside the pool are adjudicated and added, and every tool is scored again against the larger pool. That score is a new dated run; it never replaces the [first score](#first-score-freeze).
 
-### Targets
+### Suite C targets
 
 None are pre-registered for suite C. The suite A targets are not applied to it. Suite C is published as a measurement with its counts, so a reader can see how far real code moves each number.
 
