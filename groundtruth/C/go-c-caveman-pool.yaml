@@ -1,0 +1,2178 @@
+schema_version: "1"
+entry: go-c-caveman-pool
+scope:
+  kind: pool
+assets:
+  - id: gt-0001
+    file: engine/ccr/store.go
+    lines: [145, 145]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0002
+    file: engine/ccr/store.go
+    lines: [163, 163]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0003
+    file: engine/ccr/store.go
+    lines: [261, 261]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0004
+    file: engine/ccr/store.go
+    lines: [268, 268]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0005
+    file: engine/ccr/store_consolidation_blocks_test.go
+    lines: [27, 27]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0006
+    file: engine/ccr/store_reclaim.go
+    lines: [321, 321]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0007
+    file: engine/ccr/store_repair.go
+    lines: [531, 531]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0008
+    file: engine/compressors/capabilities_test.go
+    lines: [34, 34]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0009
+    file: engine/compressors/compressor.go
+    lines: [166, 166]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0010
+    file: engine/compressors/compressor.go
+    lines: [198, 198]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0011
+    file: engine/evals/probes.go
+    lines: [70, 70]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0012
+    file: engine/pixel/transform_anthropic.go
+    lines: [868, 868]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0013
+    file: engine/pixel/transform_anthropic.go
+    lines: [1303, 1303]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0014
+    file: engine/pixel/transform_anthropic_test.go
+    lines: [483, 483]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0015
+    file: engine/pixel/transform_openai.go
+    lines: [845, 845]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0016
+    file: mcp/engine_tools.go
+    lines: [191, 191]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0017
+    file: mcp/retrieve_verification_test.go
+    lines: [28, 28]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0018
+    file: mem/store.go
+    lines: [751, 751]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0019
+    file: proxy/cmd/caveman-proxy/main.go
+    lines: [370, 370]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope ground truth: tls.NewListener wraps the listener so that each accepted connection is a TLS server session, the listener counterpart of tls.Server, which suite A annotates as a protocol asset. The tls.Config comes from a project helper outside the sample. subtle.ConstantTimeCompare at line 543 is a constant-time comparison, not an asset."
+  - id: gt-0020
+    file: proxy/internal/cloudlink/events.go
+    lines: [123, 123]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0021
+    file: proxy/internal/cloudlink/events.go
+    lines: [324, 324]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."
+  - id: gt-0022
+    file: proxy/internal/cloudlink/link.go
+    lines: [427, 427]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0023
+    file: proxy/internal/cloudlink/link.go
+    lines: [639, 639]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0024
+    file: proxy/internal/cloudlink/link_test.go
+    lines: [1483, 1483]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0025
+    file: proxy/internal/cloudlink/link_test.go
+    lines: [1498, 1498]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0026
+    file: proxy/internal/config/config_test.go
+    lines: [715, 715]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: unknown
+    notes: "Key generation; the key signs a certificate or a token, so primitive signature."
+  - id: gt-0027
+    file: proxy/internal/config/config_test.go
+    lines: [715, 715]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0028
+    file: proxy/internal/config/config_test.go
+    lines: [720, 720]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "x509.CreateCertificate builds and signs a certificate; the template literal is its input (go-stdlib tls-handshake precedent)."
+  - id: gt-0029
+    file: proxy/internal/gateway/breakpoint_plan_test.go
+    lines: [230, 230]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0030
+    file: proxy/internal/gateway/breakpoint_plan_test.go
+    lines: [230, 230]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0031
+    file: proxy/internal/gateway/cache_warm.go
+    lines: [528, 528]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0032
+    file: proxy/internal/gateway/capture.go
+    lines: [271, 271]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0033
+    file: proxy/internal/gateway/capture_test.go
+    lines: [60, 60]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0034
+    file: proxy/internal/gateway/capture_test.go
+    lines: [201, 201]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0035
+    file: proxy/internal/gateway/capture_test.go
+    lines: [227, 227]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0036
+    file: proxy/internal/gateway/chatgpt.go
+    lines: [103, 103]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0037
+    file: proxy/internal/gateway/chatgpt.go
+    lines: [402, 402]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0038
+    file: proxy/internal/gateway/chatgpt_auto.go
+    lines: [315, 315]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0039
+    file: proxy/internal/gateway/chatgpt_auto.go
+    lines: [316, 316]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0040
+    file: proxy/internal/gateway/hotpath_golden_test.go
+    lines: [31, 31]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0041
+    file: proxy/internal/gateway/hotpath_golden_test.go
+    lines: [32, 32]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0042
+    file: proxy/internal/gateway/live_zone_test.go
+    lines: [86, 86]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0043
+    file: proxy/internal/gateway/live_zone_test.go
+    lines: [203, 203]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0044
+    file: proxy/internal/gateway/live_zone_test.go
+    lines: [203, 203]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0045
+    file: proxy/internal/gateway/live_zone_test.go
+    lines: [329, 329]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0046
+    file: proxy/internal/gateway/prefix_monitor.go
+    lines: [318, 318]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0047
+    file: proxy/internal/gateway/prefix_stability_payg_test.go
+    lines: [239, 239]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0048
+    file: proxy/internal/gateway/prefix_stability_payg_test.go
+    lines: [239, 239]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0049
+    file: proxy/internal/gateway/prefix_stability_payg_test.go
+    lines: [380, 380]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0050
+    file: proxy/internal/gateway/prefix_stability_payg_test.go
+    lines: [380, 380]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0051
+    file: proxy/internal/gateway/prefix_stability_test.go
+    lines: [363, 363]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0052
+    file: proxy/internal/gateway/prefix_stability_test.go
+    lines: [363, 363]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0053
+    file: proxy/internal/gateway/prefix_stability_test.go
+    lines: [465, 465]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0054
+    file: proxy/internal/gateway/prefix_stability_test.go
+    lines: [465, 465]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0055
+    file: proxy/internal/gateway/prefix_stability_test.go
+    lines: [478, 478]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0056
+    file: proxy/internal/gateway/prefix_stability_test.go
+    lines: [478, 478]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0057
+    file: proxy/internal/gateway/prefix_stability_test.go
+    lines: [512, 512]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0058
+    file: proxy/internal/gateway/prefix_stability_test.go
+    lines: [512, 512]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0059
+    file: proxy/internal/gateway/prefix_stability_test.go
+    lines: [623, 623]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0060
+    file: proxy/internal/gateway/proxy.go
+    lines: [209, 209]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0061
+    file: proxy/internal/gateway/proxy.go
+    lines: [249, 249]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0062
+    file: proxy/internal/gateway/proxy.go
+    lines: [564, 564]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0063
+    file: proxy/internal/gateway/proxy.go
+    lines: [615, 615]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0064
+    file: proxy/internal/gateway/proxy.go
+    lines: [738, 738]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0065
+    file: proxy/internal/gateway/proxy.go
+    lines: [779, 779]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0066
+    file: proxy/internal/gateway/proxy.go
+    lines: [1138, 1138]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0067
+    file: proxy/internal/gateway/proxy.go
+    lines: [1144, 1144]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0068
+    file: proxy/internal/gateway/proxy.go
+    lines: [1870, 1870]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0069
+    file: proxy/internal/gateway/raw_pin.go
+    lines: [358, 358]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0070
+    file: proxy/internal/gateway/raw_pin.go
+    lines: [376, 376]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0071
+    file: proxy/internal/gateway/route.go
+    lines: [657, 657]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read fills the per-session salt that anchorAt writes first into a SHA-256 (route.go:1185)."
+  - id: gt-0072
+    file: proxy/internal/gateway/route.go
+    lines: [657, 657]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: unknown
+    notes: "Judgement call: the 16 random bytes are the program's salt for a salted SHA-256 of messages (anchorAt), named salt and passed as the hash's first input. Not a KDF parameter; a second annotator may keep only the drbg asset."
+  - id: gt-0073
+    file: proxy/internal/gateway/route.go
+    lines: [1185, 1185]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0074
+    file: proxy/internal/gateway/route_cache.go
+    lines: [291, 291]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0075
+    file: proxy/internal/gateway/route_pool.go
+    lines: [59, 59]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0076
+    file: proxy/internal/gateway/stats_accounting_test.go
+    lines: [381, 381]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0077
+    file: proxy/internal/gateway/stats_accounting_test.go
+    lines: [381, 381]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0078
+    file: proxy/internal/gateway/subscription_live_zone_test.go
+    lines: [120, 120]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0079
+    file: proxy/internal/gateway/subscription_live_zone_test.go
+    lines: [120, 120]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0080
+    file: proxy/internal/gateway/subscription_live_zone_test.go
+    lines: [144, 144]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0081
+    file: proxy/internal/gateway/subscription_live_zone_test.go
+    lines: [144, 144]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0082
+    file: proxy/internal/gateway/subscription_live_zone_test.go
+    lines: [180, 180]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0083
+    file: proxy/internal/gateway/subscription_live_zone_test.go
+    lines: [180, 180]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0084
+    file: proxy/internal/gateway/subscription_live_zone_test.go
+    lines: [302, 302]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0085
+    file: proxy/internal/gateway/subscription_live_zone_test.go
+    lines: [302, 302]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0086
+    file: proxy/internal/gateway/subscription_live_zone_test.go
+    lines: [417, 417]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0087
+    file: proxy/internal/gateway/subscription_live_zone_test.go
+    lines: [417, 417]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0088
+    file: proxy/internal/gateway/subscription_live_zone_test.go
+    lines: [492, 492]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0089
+    file: proxy/internal/gateway/subscription_live_zone_test.go
+    lines: [492, 492]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0090
+    file: proxy/internal/gateway/toolschema_strip_test.go
+    lines: [121, 121]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0091
+    file: proxy/internal/gateway/toolschema_strip_test.go
+    lines: [121, 121]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0092
+    file: proxy/internal/gateway/toolschema_strip_test.go
+    lines: [253, 253]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0093
+    file: proxy/internal/gateway/toolschema_strip_test.go
+    lines: [253, 253]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0094
+    file: proxy/internal/gateway/toolschema_strip_test.go
+    lines: [329, 329]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0095
+    file: proxy/internal/gateway/toolschema_strip_test.go
+    lines: [329, 329]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0096
+    file: proxy/internal/gateway/toolschema_strip_test.go
+    lines: [356, 356]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0097
+    file: proxy/internal/gateway/toolschema_strip_test.go
+    lines: [356, 356]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0098
+    file: proxy/internal/gateway/toolschema_strip_test.go
+    lines: [385, 385]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0099
+    file: proxy/internal/gateway/toolschema_strip_test.go
+    lines: [385, 385]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0100
+    file: proxy/internal/identity/identity.go
+    lines: [220, 220]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0101
+    file: proxy/internal/identity/identity_test.go
+    lines: [19, 19]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope ground truth: Hash of a bearer token for the token map fixture; a plain hash, not a password KDF."
+  - id: gt-0102
+    file: proxy/internal/identity/oidc.go
+    lines: [178, 178]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "ecdsa.ParseUncompressedPublicKey parses a JWK EC public key from bytes. The rsa.PublicKey composite literal at line 171 assembles a key from decoded numbers with no parse call and is not annotated (judgement call)."
+  - id: gt-0103
+    file: proxy/internal/identity/oidc.go
+    lines: [246, 246]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0104
+    file: proxy/internal/identity/oidc.go
+    lines: [249, 249]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: rsa.VerifyPKCS1v15 with crypto.SHA256 verifies an RS256 JWS.
+  - id: gt-0105
+    file: proxy/internal/identity/oidc.go
+    lines: [252, 252]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "ecdsa.Verify of an ES256 JWS; hash: the digest is computed by sha256.Sum256 in the same function. No curve: the key was parsed (P-256) in another function, and key parameters are not carried."
+  - id: gt-0106
+    file: proxy/internal/identity/oidc_test.go
+    lines: [67, 67]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0107
+    file: proxy/internal/identity/oidc_test.go
+    lines: [71, 71]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "rsa.SignPKCS1v15 with crypto.SHA256 in the sign test helper. The helper signs with keys generated by many tests, so no object."
+  - id: gt-0108
+    file: proxy/internal/identity/oidc_test.go
+    lines: [73, 73]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "ecdsa.Sign of a SHA-256 digest computed in the same function. Helper used with several keys, so no object."
+  - id: gt-0109
+    file: proxy/internal/identity/oidc_test.go
+    lines: [79, 79]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "hmac.New(sha256.New, k): HS256 test tokens; sha256.New is a function value, not a call."
+  - id: gt-0110
+    file: proxy/internal/identity/oidc_test.go
+    lines: [102, 102]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: unknown
+    notes: "The key signs JWS tokens through the sign test helper (rsa.SignPKCS1v15), so primitive signature."
+  - id: gt-0111
+    file: proxy/internal/identity/oidc_test.go
+    lines: [102, 102]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0112
+    file: proxy/internal/identity/oidc_test.go
+    lines: [103, 103]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: unknown
+    notes: "ECDSA P-256 key; signs ES256 tokens through the sign test helper (ecdsa.Sign)."
+  - id: gt-0113
+    file: proxy/internal/identity/oidc_test.go
+    lines: [103, 103]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0114
+    file: proxy/internal/identity/oidc_test.go
+    lines: [144, 144]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: unknown
+    notes: "The key signs JWS tokens through the sign test helper (rsa.SignPKCS1v15), so primitive signature."
+  - id: gt-0115
+    file: proxy/internal/identity/oidc_test.go
+    lines: [144, 144]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0116
+    file: proxy/internal/identity/oidc_test.go
+    lines: [145, 145]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: unknown
+    notes: "ECDSA P-256 key; signs ES256 tokens through the sign test helper (ecdsa.Sign)."
+  - id: gt-0117
+    file: proxy/internal/identity/oidc_test.go
+    lines: [145, 145]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0118
+    file: proxy/internal/identity/oidc_test.go
+    lines: [146, 146]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: unknown
+    notes: "The key signs JWS tokens through the sign test helper (rsa.SignPKCS1v15), so primitive signature."
+  - id: gt-0119
+    file: proxy/internal/identity/oidc_test.go
+    lines: [146, 146]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0120
+    file: proxy/internal/identity/oidc_test.go
+    lines: [170, 170]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "x509.MarshalPKIXPublicKey serializes the RSA public key (then used as an HMAC secret in an algorithm-confusion test)."
+  - id: gt-0121
+    file: proxy/internal/identity/oidc_test.go
+    lines: [214, 214]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: unknown
+    notes: "The key signs JWS tokens through the sign test helper (rsa.SignPKCS1v15), so primitive signature."
+  - id: gt-0122
+    file: proxy/internal/identity/oidc_test.go
+    lines: [214, 214]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0123
+    file: proxy/internal/identity/oidc_test.go
+    lines: [215, 215]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: unknown
+    notes: "The key signs JWS tokens through the sign test helper (rsa.SignPKCS1v15), so primitive signature."
+  - id: gt-0124
+    file: proxy/internal/identity/oidc_test.go
+    lines: [215, 215]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0125
+    file: proxy/internal/identity/oidc_test.go
+    lines: [259, 259]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 1024
+    origin: project
+    reachable: unknown
+    notes: "The key signs JWS tokens through the sign test helper (rsa.SignPKCS1v15), so primitive signature."
+  - id: gt-0126
+    file: proxy/internal/identity/oidc_test.go
+    lines: [259, 259]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0127
+    file: proxy/internal/identity/oidc_test.go
+    lines: [260, 260]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: unknown
+    notes: "The key signs JWS tokens through the sign test helper (rsa.SignPKCS1v15), so primitive signature."
+  - id: gt-0128
+    file: proxy/internal/identity/oidc_test.go
+    lines: [260, 260]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0129
+    file: proxy/internal/identity/oidc_test.go
+    lines: [293, 293]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: unknown
+    notes: "The key signs JWS tokens through the sign test helper (rsa.SignPKCS1v15), so primitive signature."
+  - id: gt-0130
+    file: proxy/internal/identity/oidc_test.go
+    lines: [293, 293]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0131
+    file: proxy/internal/identity/oidc_test.go
+    lines: [345, 345]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: unknown
+    notes: "The key signs JWS tokens through the sign test helper (rsa.SignPKCS1v15), so primitive signature."
+  - id: gt-0132
+    file: proxy/internal/identity/oidc_test.go
+    lines: [345, 345]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0133
+    file: proxy/internal/identity/tls.go
+    lines: [51, 53]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "A tls.Config composite literal is Go's TLS context (go-stdlib tls-config precedent); the asset is the literal, from &tls.Config{ to its closing brace."
+  - id: gt-0134
+    file: proxy/internal/identity/tls.go
+    lines: [63, 63]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "tls.LoadX509KeyPair reads and parses a certificate file and a key file: one certificate and one related-crypto-material asset on the same lines (guide, load_cert_chain)."
+  - id: gt-0135
+    file: proxy/internal/identity/tls.go
+    lines: [63, 63]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "tls.LoadX509KeyPair reads and parses a certificate file and a key file: one certificate and one related-crypto-material asset on the same lines (guide, load_cert_chain)."
+  - id: gt-0136
+    file: proxy/internal/identity/tls.go
+    lines: [67, 78]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "A tls.Config composite literal is Go's TLS context (go-stdlib tls-config precedent); the asset is the literal, from &tls.Config{ to its closing brace. Lines 67-78; the cipher-suite constants inside are parameters of this context."
+  - id: gt-0137
+    file: proxy/internal/identity/tls.go
+    lines: [113, 113]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "x509.ParseCertificate parses a DER certificate (pem.Decode before it is encoding only)."
+  - id: gt-0138
+    file: proxy/internal/identity/tls.go
+    lines: [142, 142]
+    asset_type: algorithm
+    primitive: signature
+    origin: project
+    reachable: unknown
+    notes: "Judgement call: Certificate.Verify verifies the client certificate chain's signatures against the client CA pool, a verify operation (precedent: cert.verify in javascript-peculiar-x509 and bcpkix). No algorithm: the CA comes from an operator file. Adjudication: kept from the first annotation under guide, chain verification: x509 Certificate.Verify checks the chain's signatures, a signature asset; the CA comes from an operator file, so no algorithm. The second annotation had rejected chain verification."
+  - id: gt-0139
+    file: proxy/internal/identity/tls_test.go
+    lines: [39, 39]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: unknown
+    notes: "Key generation; the key signs a certificate or a token, so primitive signature."
+  - id: gt-0140
+    file: proxy/internal/identity/tls_test.go
+    lines: [39, 39]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0141
+    file: proxy/internal/identity/tls_test.go
+    lines: [42, 42]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    object: identity/tls_test.go/newIssuer/der
+    notes: "x509.CreateCertificate builds and signs a certificate; the template literal is its input (go-stdlib tls-handshake precedent)."
+  - id: gt-0142
+    file: proxy/internal/identity/tls_test.go
+    lines: [46, 46]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    object: identity/tls_test.go/newIssuer/der
+  - id: gt-0143
+    file: proxy/internal/identity/tls_test.go
+    lines: [53, 53]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: unknown
+    notes: "Key generation; the key signs a certificate or a token, so primitive signature."
+  - id: gt-0144
+    file: proxy/internal/identity/tls_test.go
+    lines: [53, 53]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0145
+    file: proxy/internal/identity/tls_test.go
+    lines: [56, 56]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "x509.CreateCertificate builds and signs a certificate; the template literal is its input (go-stdlib tls-handshake precedent)."
+  - id: gt-0146
+    file: proxy/internal/identity/tls_test.go
+    lines: [60, 60]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: x509.MarshalECPrivateKey serializes the generated key.
+  - id: gt-0147
+    file: proxy/internal/identity/tls_test.go
+    lines: [99, 99]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "tls.NewListener: TLS server sessions over the listener (protocol)."
+  - id: gt-0148
+    file: proxy/internal/identity/tls_test.go
+    lines: [105, 105]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "A tls.Config composite literal is Go's TLS context (go-stdlib tls-config precedent); the asset is the literal, from &tls.Config{ to its closing brace."
+  - id: gt-0149
+    file: proxy/internal/identity/tls_test.go
+    lines: [108, 108]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "tls.X509KeyPair parses a PEM certificate and a PEM private key: one certificate and one related-crypto-material asset on the same lines (as load_cert_chain)."
+  - id: gt-0150
+    file: proxy/internal/identity/tls_test.go
+    lines: [108, 108]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "tls.X509KeyPair parses a PEM certificate and a PEM private key: one certificate and one related-crypto-material asset on the same lines (as load_cert_chain)."
+  - id: gt-0151
+    file: proxy/internal/identity/tls_test.go
+    lines: [171, 171]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: tls.Dial creates a TLS client session (protocol).
+  - id: gt-0152
+    file: proxy/internal/identity/tls_test.go
+    lines: [171, 171]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "A tls.Config composite literal is Go's TLS context (go-stdlib tls-config precedent); the asset is the literal, from &tls.Config{ to its closing brace. Inline in the tls.Dial call; same lines as the session asset."
+  - id: gt-0153
+    file: proxy/internal/identity/tls_test.go
+    lines: [184, 184]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: tls.Dial creates a TLS client session (protocol).
+  - id: gt-0154
+    file: proxy/internal/identity/tls_test.go
+    lines: [184, 184]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "A tls.Config composite literal is Go's TLS context (go-stdlib tls-config precedent); the asset is the literal, from &tls.Config{ to its closing brace. Inline in the tls.Dial call; same lines as the session asset."
+  - id: gt-0155
+    file: proxy/internal/identity/tls_test.go
+    lines: [243, 243]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "tls.NewListener: TLS server sessions over the listener (protocol)."
+  - id: gt-0156
+    file: proxy/internal/identity/tls_test.go
+    lines: [246, 246]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "tls.X509KeyPair parses a PEM certificate and a PEM private key: one certificate and one related-crypto-material asset on the same lines (as load_cert_chain)."
+  - id: gt-0157
+    file: proxy/internal/identity/tls_test.go
+    lines: [246, 246]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "tls.X509KeyPair parses a PEM certificate and a PEM private key: one certificate and one related-crypto-material asset on the same lines (as load_cert_chain)."
+  - id: gt-0158
+    file: proxy/internal/identity/tls_test.go
+    lines: [252, 253]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "A tls.Config composite literal is Go's TLS context (go-stdlib tls-config precedent); the asset is the literal, from &tls.Config{ to its closing brace. Nested in an http.Transport literal, lines 252-253."
+  - id: gt-0159
+    file: proxy/internal/identity/tls_test.go
+    lines: [300, 300]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "x509.ParseCertificate parses a DER certificate (pem.Decode before it is encoding only)."
+  - id: gt-0160
+    file: proxy/internal/identity/tls_test.go
+    lines: [329, 329]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: unknown
+    object: "identity/tls_test.go/TestConstructedURISANNeverNamesThePrincipal/key"
+    notes: "CA key: signs the CA and leaf certificates; the leaf.Verify at line 349 verifies with its public key carried in the CA certificate (passed on)."
+  - id: gt-0161
+    file: proxy/internal/identity/tls_test.go
+    lines: [329, 329]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0162
+    file: proxy/internal/identity/tls_test.go
+    lines: [332, 332]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    object: "identity/tls_test.go/TestConstructedURISANNeverNamesThePrincipal/der"
+    notes: "x509.CreateCertificate builds and signs a certificate; the template literal is its input (go-stdlib tls-handshake precedent)."
+  - id: gt-0163
+    file: proxy/internal/identity/tls_test.go
+    lines: [336, 336]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    object: "identity/tls_test.go/TestConstructedURISANNeverNamesThePrincipal/der"
+  - id: gt-0164
+    file: proxy/internal/identity/tls_test.go
+    lines: [343, 343]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "x509.ParseCertificate parses a DER certificate (pem.Decode before it is encoding only)."
+  - id: gt-0165
+    file: proxy/internal/identity/tls_test.go
+    lines: [349, 349]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    origin: project
+    reachable: unknown
+    object: "identity/tls_test.go/TestConstructedURISANNeverNamesThePrincipal/key"
+    notes: "Judgement call: leaf.Verify verifies the leaf's chain to the CA whose ECDSA P-256 key is generated at line 329 (passed on inside caCert), so it joins that key's object. No parameters: the call names none. Adjudication: kept from the first annotation under guide, chain verification: the CA key is the ECDSA key generated in the same test, so algorithm ECDSA, and the verify joins that key's object."
+  - id: gt-0166
+    file: proxy/internal/middleware/acceptance_test.go
+    lines: [810, 810]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."
+  - id: gt-0167
+    file: proxy/internal/middleware/choices.go
+    lines: [112, 112]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."
+  - id: gt-0168
+    file: proxy/internal/middleware/counter.go
+    lines: [31, 31]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0169
+    file: proxy/internal/middleware/hardening_test.go
+    lines: [48, 48]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."
+  - id: gt-0170
+    file: proxy/internal/middleware/identity_test.go
+    lines: [45, 45]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0171
+    file: proxy/internal/middleware/protocol_v11_test.go
+    lines: [522, 522]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."
+  - id: gt-0172
+    file: proxy/internal/middleware/runtime.go
+    lines: [282, 282]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0173
+    file: proxy/internal/middleware/seal.go
+    lines: [64, 64]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    origin: project
+    reachable: unknown
+    object: middleware/seal.go/key
+    notes: "aes.NewCipher creates the AES block the GCM AEAD is built on (go-stdlib aes-gcm precedent: block-cipher). No key_size: the 32-byte length is a check, not a literal argument."
+  - id: gt-0174
+    file: proxy/internal/middleware/seal.go
+    lines: [65, 65]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+    origin: project
+    reachable: unknown
+    object: middleware/seal.go/key
+    notes: "cipher.NewGCM creates the AEAD; Seal (line 87) and Open (line 112) are follow-ups on it, and Go appends the tag."
+  - id: gt-0175
+    file: proxy/internal/middleware/seal.go
+    lines: [66, 66]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0176
+    file: proxy/internal/middleware/seal.go
+    lines: [84, 84]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: crypto/rand.Read fills the AES-GCM nonce.
+  - id: gt-0177
+    file: proxy/internal/middleware/seal.go
+    lines: [84, 84]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: unknown
+    notes: "Nonce passed to aead.Seal; created by make() and filled here, so the asset takes the rand.Read line (go-stdlib aes-gcm precedent)."
+  - id: gt-0178
+    file: proxy/internal/nativehook/hook.go
+    lines: [190, 190]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0179
+    file: proxy/internal/nativehook/hook.go
+    lines: [362, 362]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0180
+    file: proxy/internal/nativehook/hook.go
+    lines: [371, 371]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0181
+    file: proxy/internal/nativeruntime/marker.go
+    lines: [39, 39]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."
+  - id: gt-0182
+    file: proxy/internal/nativeruntime/marker.go
+    lines: [140, 140]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Session-marker HMAC; the key comes from a crypto/rand draw in LoadOrCreateSessionKey (its own drbg asset). hmac.Equal at line 110 is a constant-time comparison."
+  - id: gt-0183
+    file: proxy/internal/nativeruntime/receipt.go
+    lines: [218, 218]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0184
+    file: proxy/internal/nativeruntime/runtime.go
+    lines: [887, 887]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0185
+    file: proxy/internal/nativeruntime/runtime.go
+    lines: [1431, 1431]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0186
+    file: proxy/internal/nativeruntime/runtime.go
+    lines: [1474, 1474]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0187
+    file: proxy/internal/nativeruntime/server_windows.go
+    lines: [29, 29]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0188
+    file: proxy/internal/pool/chatgpt.go
+    lines: [99, 99]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0189
+    file: proxy/internal/pool/chatgpt.go
+    lines: [344, 344]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."
+  - id: gt-0190
+    file: proxy/internal/pool/chatgpt.go
+    lines: [356, 356]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."
+  - id: gt-0191
+    file: proxy/internal/repointel/index.go
+    lines: [795, 795]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0192
+    file: proxy/internal/runstate/runstate.go
+    lines: [122, 122]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."
+  - id: gt-0193
+    file: proxy/internal/runstate/runstate.go
+    lines: [125, 125]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."
+  - id: gt-0194
+    file: proxy/internal/standalone/middleware_test.go
+    lines: [59, 59]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0195
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [46, 46]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: unknown
+    notes: "Key generation; the key signs a certificate or a token, so primitive signature."
+  - id: gt-0196
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [46, 46]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0197
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [49, 49]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    object: standalone/principal_sources_test.go/caDER
+    notes: "x509.CreateCertificate builds and signs a certificate; the template literal is its input (go-stdlib tls-handshake precedent)."
+  - id: gt-0198
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [50, 50]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    object: standalone/principal_sources_test.go/caDER
+  - id: gt-0199
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [52, 52]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: unknown
+    notes: "Key generation; the key signs a certificate or a token, so primitive signature."
+  - id: gt-0200
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [52, 52]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0201
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [53, 54]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    object: standalone/principal_sources_test.go/issue/der
+    notes: "x509.CreateCertificate builds and signs a certificate; the template literal is its input (go-stdlib tls-handshake precedent)."
+  - id: gt-0202
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [58, 58]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    object: standalone/principal_sources_test.go/issue/der
+  - id: gt-0203
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [59, 59]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: x509.MarshalECPrivateKey serializes the generated key.
+  - id: gt-0204
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [71, 71]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: unknown
+    object: standalone/principal_sources_test.go/idpKey
+    notes: idpKey ECDSA P-256 signs the ES256 JWT at line 81.
+  - id: gt-0205
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [71, 71]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0206
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [72, 72]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "ecdsa.PublicKey.Bytes serializes the public key (uncompressed point) for the JWKS."
+  - id: gt-0207
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [73, 75]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "httptest.NewTLSServer creates a TLS server context and listener (as gt-0019 in this entry's files scope)."
+  - id: gt-0208
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [80, 80]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0209
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [81, 81]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: standalone/principal_sources_test.go/idpKey
+    notes: ecdsa.Sign of the SHA-256 digest computed on line 80.
+  - id: gt-0210
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [87, 87]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0211
+    file: proxy/internal/standalone/principal_sources_test.go
+    lines: [141, 141]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0212
+    file: proxy/internal/standalone/standalone.go
+    lines: [588, 588]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "A tls.Config composite literal is Go's TLS context (go-stdlib tls-config precedent); the asset is the literal, from &tls.Config{ to its closing brace."
+  - id: gt-0213
+    file: proxy/internal/standalone/standalone_test.go
+    lines: [1254, 1254]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope ground truth: SHA-256 payload hash compared with a request-signing header; the request signing itself is not in this file."
+  - id: gt-0214
+    file: proxy/internal/standalone/standalone_test.go
+    lines: [1354, 1354]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0215
+    file: proxy/internal/store/detect_procedures.go
+    lines: [142, 142]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0216
+    file: proxy/internal/store/learn.go
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0217
+    file: proxy/internal/store/learn_attribution.go
+    lines: [151, 151]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0218
+    file: proxy/internal/store/learn_attribution.go
+    lines: [183, 183]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0219
+    file: proxy/internal/store/learn_loops.go
+    lines: [83, 83]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0220
+    file: proxy/internal/store/prefix_cache.go
+    lines: [158, 158]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0221
+    file: proxy/internal/store/prefix_stability_e2e_test.go
+    lines: [69, 69]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0222
+    file: proxy/internal/store/recurring.go
+    lines: [285, 285]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0223
+    file: proxy/internal/store/session_source.go
+    lines: [252, 252]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0224
+    file: proxy/internal/store/usage_import.go
+    lines: [514, 514]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0225
+    file: proxy/internal/store/usage_import.go
+    lines: [519, 519]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0226
+    file: proxy/internal/translate/responses.go
+    lines: [85, 85]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0227
+    file: proxy/internal/translate/responses.go
+    lines: [234, 234]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0228
+    file: proxy/internal/translate/responses_stream.go
+    lines: [79, 79]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."
+  - id: gt-0229
+    file: proxy/providers/adapter.go
+    lines: [33, 33]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0230
+    file: proxy/providers/anthropic/content_compress_test.go
+    lines: [72, 72]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0231
+    file: proxy/providers/anthropic/content_compress_test.go
+    lines: [72, 72]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0232
+    file: proxy/providers/anthropic/content_compress_test.go
+    lines: [77, 77]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0233
+    file: proxy/providers/anthropic/content_compress_test.go
+    lines: [77, 77]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0234
+    file: proxy/providers/anthropic/content_compress_test.go
+    lines: [196, 196]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0235
+    file: proxy/providers/anthropic/content_compress_test.go
+    lines: [196, 196]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0236
+    file: proxy/providers/openai/cache_key.go
+    lines: [220, 220]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0237
+    file: proxy/providers/openai/content_compress_test.go
+    lines: [74, 74]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0238
+    file: proxy/providers/openai/content_compress_test.go
+    lines: [74, 74]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0239
+    file: proxy/providers/openai/content_compress_test.go
+    lines: [77, 77]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0240
+    file: proxy/providers/openai/content_compress_test.go
+    lines: [77, 77]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Two SHA-256 calls on one line are two assets.
+  - id: gt-0241
+    file: proxy/providers/openai/session_cache_key.go
+    lines: [77, 77]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope ground truth: Domain-separated SHA-256 of the session id for a cache key; a plain hash, not an HMAC."
+  - id: gt-0242
+    file: shared/platform/awssig/awssig.go
+    lines: [232, 232]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "SigV4 HMAC-SHA256 inside the hmacSHA256 helper; the helper's call sites (key derivation chain, signature) are not assets (guide, project helpers)."
+  - id: gt-0243
+    file: shared/platform/awssig/awssig.go
+    lines: [238, 238]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0244
+    file: shared/platform/cabundle/cabundle.go
+    lines: [67, 67]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "x509.ParseCertificate parses a DER certificate (pem.Decode before it is encoding only)."
+  - id: gt-0245
+    file: shared/platform/cabundle/cabundle_test.go
+    lines: [19, 19]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: ECDSA
+    parameters:
+      curve: P-256
+    origin: project
+    reachable: unknown
+    notes: "Key generation; the key signs a certificate or a token, so primitive signature."
+  - id: gt-0246
+    file: shared/platform/cabundle/cabundle_test.go
+    lines: [19, 19]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: Generated private key (owner decision 2026-11-08).
+  - id: gt-0247
+    file: shared/platform/cabundle/cabundle_test.go
+    lines: [24, 24]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "x509.CreateCertificate builds and signs a certificate; the template literal is its input (go-stdlib tls-handshake precedent)."
+  - id: gt-0248
+    file: shared/platform/cacheguard/cacheguard.go
+    lines: [104, 104]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0249
+    file: shared/platform/cacheguard/cacheguard.go
+    lines: [149, 149]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0250
+    file: shared/platform/id/id.go
+    lines: [19, 19]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."
+  - id: gt-0251
+    file: shared/platform/id/id.go
+    lines: [35, 35]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."
+  - id: gt-0252
+    file: shared/platform/id/id.go
+    lines: [43, 43]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."
+  - id: gt-0253
+    file: shared/platform/kms/kms.go
+    lines: [319, 319]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."
+  - id: gt-0254
+    file: shared/platform/postgresconfig/postgresconfig.go
+    lines: [67, 67]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "CertPool.AppendCertsFromPEM parses the configured CA PEM into the pool: a certificate parse given data (guide: load_verify_locations given data). x509.NewCertPool on the line before parses nothing."
+  - id: gt-0255
+    file: shared/platform/postgresconfig/postgresconfig_test.go
+    lines: [128, 128]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "x509.ParseCertificate re-parses the test TLS server's DER certificate."
+  - id: gt-0256
+    file: shared/platform/postgresconfig/postgresconfig_test.go
+    lines: [209, 209]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "x509.ParseCertificate re-parses the test TLS server's DER certificate."
+  - id: gt-0257
+    file: shared/platform/redact/payload.go
+    lines: [483, 483]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0258
+    file: shared/platform/redact/residual_test.go
+    lines: [198, 198]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto/rand.Read: a draw from the OS generator; the bytes become an identifier or token, not IV, nonce or salt material, so no material (guide, random draws: crypto/rand counts whatever the use)."

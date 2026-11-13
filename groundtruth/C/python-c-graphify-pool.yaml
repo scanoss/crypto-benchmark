@@ -1,0 +1,497 @@
+schema_version: "1"
+entry: python-c-graphify-pool
+scope:
+  kind: pool
+assets:
+  - id: gt-0001
+    file: graphify/_minhash.py
+    lines: [47, 47]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0002
+    file: graphify/cache.py
+    lines: [78, 78]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0003
+    file: graphify/cache.py
+    lines: [163, 163]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0004
+    file: graphify/cache.py
+    lines: [620, 620]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Hash object creation; update/hexdigest are follow-ups. The 'salt' mixed in is a path string fed to the hash, not salt material."
+  - id: gt-0005
+    file: graphify/cache.py
+    lines: [1075, 1075]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0006
+    file: graphify/callflow_html.py
+    lines: [376, 376]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: Files-scope truth gt-0001 reused.
+  - id: gt-0007
+    file: graphify/callflow_html.py
+    lines: [667, 667]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: Files-scope truth gt-0002 reused.
+  - id: gt-0008
+    file: graphify/cli.py
+    lines: [1205, 1205]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0009
+    file: graphify/cluster.py
+    lines: [226, 226]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Files-scope truth gt-0003 reused.
+  - id: gt-0010
+    file: graphify/detect.py
+    lines: [917, 917]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0011
+    file: graphify/detect.py
+    lines: [2469, 2469]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "hashlib imported as _hl; usedforsecurity=False does not remove the asset."
+  - id: gt-0012
+    file: graphify/export.py
+    lines: [86, 86]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0013
+    file: graphify/export.py
+    lines: [87, 87]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0014
+    file: graphify/export.py
+    lines: [668, 668]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0015
+    file: graphify/extract.py
+    lines: [470, 470]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0016
+    file: graphify/extract.py
+    lines: [12328, 12331]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: BLAKE2b
+    origin: project
+    reachable: unknown
+    notes: "digest_size=16 is an output length, not a key size, so no parameters; the trailing .digest() is a follow-up on the same expression."
+  - id: gt-0017
+    file: graphify/extractors/engine.py
+    lines: [27, 27]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0018
+    file: graphify/extractors/engine.py
+    lines: [1557, 1557]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: "Result named salt is a truncated hash used as an id suffix; a hash output is never material."
+  - id: gt-0019
+    file: graphify/extractors/engine.py
+    lines: [7411, 7412]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0020
+    file: graphify/extractors/engine.py
+    lines: [7415, 7416]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0021
+    file: graphify/extractors/engine.py
+    lines: [8532, 8533]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0022
+    file: graphify/extractors/engine.py
+    lines: [8536, 8537]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0023
+    file: graphify/extractors/engine.py
+    lines: [8569, 8570]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0024
+    file: graphify/extractors/engine.py
+    lines: [9200, 9202]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: Result named salt is a hash output, not material.
+  - id: gt-0025
+    file: graphify/extractors/go.py
+    lines: [573, 573]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: Result named salt is a hash output, not material.
+  - id: gt-0026
+    file: graphify/extractors/resolution.py
+    lines: [1129, 1129]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: Result named salt is a hash output, not material.
+  - id: gt-0027
+    file: graphify/extractors/resolution.py
+    lines: [1312, 1312]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: Result named salt is a hash output, not material.
+  - id: gt-0028
+    file: graphify/extractors/rust.py
+    lines: [456, 456]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: Result named salt is a hash output, not material.
+  - id: gt-0029
+    file: graphify/extractors/terraform.py
+    lines: [77, 77]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0030
+    file: graphify/global_graph.py
+    lines: [92, 92]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Files-scope truth gt-0004 reused.
+  - id: gt-0031
+    file: graphify/google_workspace.py
+    lines: [172, 172]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0032
+    file: graphify/google_workspace.py
+    lines: [181, 181]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0033
+    file: graphify/ids.py
+    lines: [90, 92]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0034
+    file: graphify/install.py
+    lines: [61, 61]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0035
+    file: graphify/llm.py
+    lines: [678, 678]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0036
+    file: graphify/reflect.py
+    lines: [723, 723]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Files-scope truth gt-0005 reused.
+  - id: gt-0037
+    file: graphify/scip_ingest.py
+    lines: [338, 338]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0038
+    file: graphify/transcribe.py
+    lines: [63, 63]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0039
+    file: graphify/watch.py
+    lines: [1386, 1386]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Files-scope truth gt-0006 reused: called through 'from hashlib import sha256'; result named salt is a hash output, not material."
+  - id: gt-0040
+    file: graphify/watch.py
+    lines: [1986, 1988]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: Files-scope truth gt-0007 reused.
+  - id: gt-0041
+    file: graphify/watch.py
+    lines: [2012, 2012]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: Files-scope truth gt-0008 reused.
+  - id: gt-0042
+    file: tests/test_detect.py
+    lines: [3477, 3477]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0043
+    file: tests/test_extract_cache_location.py
+    lines: [131, 131]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Files-scope truth gt-0009 reused.
+  - id: gt-0044
+    file: tests/test_file_id_collision_4854.py
+    lines: [181, 181]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0045
+    file: tests/test_install_references.py
+    lines: [442, 442]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0046
+    file: tests/test_js_import_resolution.py
+    lines: [26, 26]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0047
+    file: tests/test_language_override_lifecycle.py
+    lines: [86, 86]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+  - id: gt-0048
+    file: tests/test_office_limits.py
+    lines: [77, 77]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "os.urandom (imported as _os) draws 512 KiB from the OS generator as incompressible test data; a draw from os.urandom counts wherever it appears and whatever the bytes are used for. No algorithm for an OS generator draw; not material (used as file content, not as an IV/nonce/salt/seed)."
+  - id: gt-0049
+    file: tests/test_pdf_extra_warning.py
+    lines: [73, 73]
+    asset_type: algorithm
+    primitive: stream-cipher
+    algorithm: RC4
+    parameters:
+      key_size: 128
+    origin: project
+    reachable: unknown
+    notes: "Judgement call. pypdf PdfWriter.encrypt(user_password=..., algorithm=\"RC4-128\") is a one-shot that names its algorithm: the PDF is encrypted with RC4 and a 128-bit key. The MD5-based key derivation of the PDF standard security handler happens inside the library and is not annotated separately."
+  - id: gt-0050
+    file: tests/test_stat_index_portability.py
+    lines: [159, 159]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0051
+    file: tests/test_wheel_packaging.py
+    lines: [76, 76]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0052
+    file: tests/test_word_count_cache.py
+    lines: [86, 86]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Files-scope truth gt-0010 reused.
+  - id: gt-0053
+    file: tests/test_word_count_cache.py
+    lines: [90, 92]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Files-scope truth gt-0011 reused.
+  - id: gt-0054
+    file: tests/test_word_count_cache.py
+    lines: [116, 116]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Files-scope truth gt-0012 reused.
+  - id: gt-0055
+    file: worked/httpx/raw/auth.py
+    lines: [85, 85]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "Files-scope truth gt-0013 reused: HTTP Digest cnonce built as an MD5 of the time; hash only, no nonce material (digest output, no draw)."
+  - id: gt-0056
+    file: worked/httpx/raw/auth.py
+    lines: [89, 89]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: Files-scope truth gt-0014 reused.
+  - id: gt-0057
+    file: worked/httpx/raw/auth.py
+    lines: [90, 90]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: Files-scope truth gt-0015 reused.
+  - id: gt-0058
+    file: worked/httpx/raw/auth.py
+    lines: [91, 91]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: Files-scope truth gt-0016 reused.

@@ -1,0 +1,198 @@
+item	file	start	end	verdict	detail
+1	api/src/exam-environment/routes/exam-environment.test.ts	1690	1693	asset	gt-0001
+2	api/src/exam-environment/routes/exam-environment.ts	122	122	reject	TypeScript interface declaration
+3	api/src/exam-environment/routes/exam-environment.ts	141	141	reject	variable declaration with type annotation
+4	api/src/exam-environment/routes/exam-environment.ts	143	143	asset	gt-0002
+5	api/src/exam-environment/routes/exam-environment.ts	145	145	reject	comment
+6	api/src/plugins/auth-dev.test.ts	108	108	reject	test name string
+7	api/src/plugins/auth-dev.test.ts	118	118	reject	cookie name string 'jwt_access_token', not crypto
+8	api/src/plugins/auth.test.ts	54	54	asset	gt-0003
+9	api/src/plugins/auth.test.ts	59	59	reject	cookie name string 'jwt_access_token', not crypto
+10	api/src/plugins/auth.test.ts	111	114	asset	gt-0004
+11	api/src/plugins/auth.test.ts	119	119	reject	cookie name string 'jwt_access_token', not crypto
+12	api/src/plugins/auth.test.ts	139	142	asset	gt-0005
+13	api/src/plugins/auth.test.ts	148	148	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+14	api/src/plugins/auth.test.ts	168	171	asset	gt-0006
+15	api/src/plugins/auth.test.ts	177	177	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+16	api/src/plugins/auth.test.ts	200	203	asset	gt-0007
+17	api/src/plugins/auth.test.ts	209	209	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+18	api/src/plugins/auth.test.ts	227	230	asset	gt-0008
+19	api/src/plugins/auth.test.ts	235	235	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+20	api/src/plugins/auth.test.ts	256	259	asset	gt-0009
+21	api/src/plugins/auth.test.ts	264	264	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+22	api/src/plugins/auth.test.ts	293	296	asset	gt-0010
+23	api/src/plugins/auth.test.ts	302	302	reject	cookie name string 'jwt_access_token', not crypto
+24	api/src/plugins/auth.test.ts	316	319	asset	gt-0011
+25	api/src/plugins/auth.test.ts	325	325	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+26	api/src/plugins/auth.test.ts	339	342	asset	gt-0012
+27	api/src/plugins/auth.test.ts	348	348	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+28	api/src/plugins/auth.test.ts	366	369	asset	gt-0013
+29	api/src/plugins/auth.test.ts	375	375	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+30	api/src/plugins/auth.test.ts	394	397	asset	gt-0014
+31	api/src/plugins/auth.test.ts	403	403	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+32	api/src/plugins/auth.test.ts	426	426	asset	gt-0015
+33	api/src/plugins/auth.test.ts	479	482	asset	gt-0016
+34	api/src/plugins/auth.test.ts	504	504	reject	test name string
+35	api/src/plugins/auth.test.ts	514	514	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+36	api/src/plugins/auth.test.ts	529	529	reject	test name string
+37	api/src/plugins/auth.test.ts	565	568	asset	gt-0017
+38	api/src/plugins/auth.test.ts	573	573	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+39	api/src/plugins/auth.test.ts	608	611	asset	gt-0018
+40	api/src/plugins/auth.test.ts	616	616	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+41	api/src/plugins/auth.test.ts	625	628	asset	gt-0019
+42	api/src/plugins/auth.test.ts	633	633	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+43	api/src/plugins/auth.ts	48	48	asset	gt-0020
+44	api/src/plugins/auth.ts	49	49	reject	cookie name string 'jwt_access_token', not crypto
+45	api/src/plugins/auth.ts	52	52	reject	cookie name string 'jwt_access_token', not crypto
+46	api/src/plugins/auth.ts	54	54	reject	cookie name string 'jwt_access_token', not crypto
+47	api/src/plugins/auth.ts	56	56	reject	req.unsignCookie uses the custom signer registered in plugins/cookies.ts, a project helper (helper rule); not an asset at this call
+48	api/src/plugins/auth.ts	57	57	reject	property check on an unsign result
+49	api/src/plugins/auth.ts	58	58	reject	cookie name string 'jwt_access_token', not crypto
+50	api/src/plugins/auth.ts	84	84	reject	cookie name string 'jwt_access_token', not crypto
+51	api/src/plugins/auth.ts	90	90	reject	property read of an unsign result
+52	api/src/plugins/auth.ts	93	93	asset	gt-0021
+53	api/src/plugins/auth.ts	98	98	reject	jsonwebtoken jwt.decode only decodes the payload without verifying a signature; not crypto
+54	api/src/plugins/auth.ts	153	153	asset	gt-0022
+55	api/src/plugins/auth.ts	164	164	reject	jsonwebtoken jwt.decode only decodes the payload without verifying a signature; not crypto
+56	api/src/plugins/auth0.test.ts	338	338	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+57	api/src/plugins/auth0.test.ts	370	370	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+58	api/src/plugins/auth0.test.ts	387	387	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+59	api/src/plugins/auth0.test.ts	427	427	reject	cookie name string 'jwt_access_token', not crypto
+60	api/src/plugins/auth0.test.ts	436	436	reject	cookie name string 'jwt_access_token', not crypto
+61	api/src/plugins/auth0.test.ts	475	475	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+62	api/src/plugins/cookie-update.test.ts	58	58	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+63	api/src/plugins/cookie-update.test.ts	78	78	reject	call to project helper sign from plugins/cookies.ts (helper rule; the HMAC is fastifyCookie.sign in cookies.ts:27)
+64	api/src/plugins/cookies.test.ts	44	44	asset	gt-0023
+65	api/src/plugins/cookies.test.ts	63	63	asset	gt-0024
+66	api/src/plugins/cookies.test.ts	123	123	reject	cookie name string 'jwt_access_token', not crypto
+67	api/src/plugins/cookies.ts	27	27	asset	gt-0025
+68	api/src/plugins/cookies.ts	71	71	reject	cookie name string 'jwt_access_token', not crypto
+69	api/src/plugins/mail-providers/nodemailer.ts	17	17	reject	type declaration of a TLS option
+70	api/src/plugins/mail-providers/nodemailer.ts	76	76	reject	mail transport TLS option rejectUnauthorized: false is configuration, not a context creation
+71	api/src/plugins/service-bearer-auth.ts	48	48	reject	crypto.timingSafeEqual is a constant-time comparison, not an asset per the guide
+72	api/src/routes/protected/challenge.ts	52	52	reject	TypeScript interface declaration
+73	api/src/routes/protected/challenge.ts	1036	1036	asset	gt-0026
+74	api/src/routes/protected/user.test.ts	56	56	reject	test env mock property
+75	api/src/routes/protected/user.test.ts	530	530	reject	cookie name string 'jwt_access_token', not crypto
+76	api/src/routes/protected/user.test.ts	720	720	reject	cookie name string 'jwt_access_token', not crypto
+77	api/src/routes/protected/user.test.ts	1275	1275	reject	test name string
+78	api/src/routes/protected/user.test.ts	1279	1279	reject	jsonwebtoken jwt.decode only decodes the payload without verifying a signature; not crypto
+79	api/src/routes/protected/user.test.ts	1287	1287	asset	gt-0027
+80	api/src/routes/protected/user.test.ts	1288	1288	asset	gt-0028
+81	api/src/routes/protected/user.test.ts	1297	1297	reject	jsonwebtoken jwt.decode only decodes the payload without verifying a signature; not crypto
+82	api/src/routes/protected/user.test.ts	1298	1298	reject	type cast of a decoded payload
+83	api/src/routes/protected/user.test.ts	1312	1312	reject	jsonwebtoken jwt.decode only decodes the payload without verifying a signature; not crypto
+84	api/src/routes/protected/user.test.ts	1313	1313	reject	type cast of a decoded payload
+85	api/src/routes/protected/user.test.ts	1482	1484	reject	jsonwebtoken jwt.decode only decodes the payload without verifying a signature; not crypto
+86	api/src/routes/protected/user.test.ts	2299	2299	reject	jsonwebtoken jwt.decode only decodes the payload without verifying a signature; not crypto
+87	api/src/routes/protected/user.test.ts	2308	2308	asset	gt-0029
+88	api/src/routes/protected/user.test.ts	2311	2311	asset	gt-0030
+89	api/src/routes/protected/user.test.ts	2336	2336	reject	jsonwebtoken jwt.decode only decodes the payload without verifying a signature; not crypto
+90	api/src/routes/protected/user.test.ts	2374	2374	reject	jsonwebtoken jwt.decode only decodes the payload without verifying a signature; not crypto
+91	api/src/routes/protected/user.test.ts	2383	2383	asset	gt-0031
+92	api/src/routes/protected/user.test.ts	2386	2386	asset	gt-0032
+93	api/src/routes/protected/user.ts	762	765	asset	gt-0033
+94	api/src/routes/protected/user.ts	1011	1014	asset	gt-0034
+95	api/src/routes/public/auth.test.ts	151	151	reject	test name string
+96	api/src/routes/public/auth.test.ts	167	167	reject	cookie name string 'jwt_access_token', not crypto
+97	api/src/routes/public/signout.test.ts	22	22	reject	cookie name string 'jwt_access_token', not crypto
+98	api/src/utils/create-user.ts	62	62	asset	gt-0035
+99	api/src/utils/create-user.ts	63	63	asset	gt-0036
+100	api/src/utils/donation-verification.ts	120	120	asset	gt-0037
+101	api/src/utils/drip-campaign.ts	12	12	asset	gt-0038
+102	api/src/utils/env.ts	67	67	reject	assert on an env var presence
+103	api/src/utils/env.ts	133	133	reject	env var reference in a check
+104	api/src/utils/env.ts	134	134	reject	default-value string literal
+105	api/src/utils/env.ts	135	135	reject	message string
+106	api/src/utils/env.ts	266	266	reject	export of an env var (the key value is created outside the program)
+107	api/src/utils/index.ts	27	27	asset	gt-0039
+108	api/src/utils/index.ts	29	29	reject	function declaration of a local helper (asset is the createHash inside, line 30)
+109	api/src/utils/index.ts	30	30	asset	gt-0040
+110	api/src/utils/index.ts	32	32	reject	call to the local sha256 helper (helper rule; asset at line 30)
+111	api/src/utils/logger.test.ts	278	278	reject	test data string
+112	api/src/utils/logger.ts	91	91	asset	gt-0041
+113	api/src/utils/redirection.test.ts	13	13	reject	string literal secret assigned to a variable (keys are not material)
+114	api/src/utils/redirection.test.ts	14	14	reject	string literal secret assigned to a variable (keys are not material)
+115	api/src/utils/redirection.test.ts	30	30	reject	test name string
+116	api/src/utils/redirection.test.ts	33	36	asset	gt-0042
+117	api/src/utils/redirection.test.ts	38	38	reject	call to project helper getReturnTo (helper rule; verify inside is at redirection.ts:25)
+118	api/src/utils/redirection.test.ts	49	52	asset	gt-0043
+119	api/src/utils/redirection.test.ts	54	54	reject	call to project helper getReturnTo (helper rule)
+120	api/src/utils/redirection.test.ts	62	65	asset	gt-0044
+121	api/src/utils/redirection.test.ts	67	67	reject	call to project helper getReturnTo (helper rule)
+122	api/src/utils/redirection.ts	13	13	reject	JSDoc comment
+123	api/src/utils/redirection.ts	19	19	reject	function parameter
+124	api/src/utils/redirection.ts	20	20	reject	function parameter type annotation
+125	api/src/utils/redirection.ts	25	25	asset	gt-0045
+126	api/src/utils/sentry.test.ts	398	398	reject	test name string
+127	api/src/utils/sentry.test.ts	487	487	reject	test name string
+128	api/src/utils/sentry.test.ts	614	614	reject	cookie name string 'jwt_access_token', not crypto
+129	api/src/utils/sentry.test.ts	680	680	reject	cookie name string 'jwt_access_token', not crypto
+130	api/src/utils/sentry.test.ts	695	695	reject	cookie name string 'jwt_access_token', not crypto
+131	api/src/utils/sentry.test.ts	744	744	reject	test name string
+132	api/src/utils/sentry.ts	90	90	reject	redaction regex literal
+133	api/src/utils/sentry.ts	93	93	reject	redaction regex literal
+134	api/src/utils/tokens.ts	7	7	reject	JSDoc comment
+135	api/src/utils/tokens.ts	13	13	asset	gt-0046
+136	client/config/cert-and-project-map.ts	431	431	reject	curriculum title string
+137	client/config/cert-and-project-map.ts	432	432	reject	curriculum link string
+138	client/config/cert-and-project-map.ts	604	604	reject	curriculum title string
+139	client/config/cert-and-project-map.ts	605	605	reject	curriculum link string
+140	client/gatsby-node.ts	93	93	reject	bundler polyfill alias config (crypto-browserify), not a call
+141	client/src/components/Donation/donation-text-components.tsx	200	200	reject	i18n key string
+142	client/src/components/Donation/donation-text-components.tsx	201	201	reject	i18n key string
+143	client/src/redux/prop-types.ts	226	226	reject	type field declaration contentDigest
+144	client/src/templates/Challenges/components/help-modal.test.tsx	228	228	reject	i18n key string (rsa = read-search-ask)
+145	client/src/templates/Challenges/components/help-modal.test.tsx	261	261	reject	i18n key string
+146	client/src/templates/Challenges/components/help-modal.test.tsx	283	283	reject	i18n key string
+147	client/src/templates/Challenges/components/help-modal.tsx	30	30	reject	forum URL constant named RSA (read-search-ask), not crypto
+148	client/src/templates/Challenges/components/help-modal.tsx	189	189	reject	i18n label string
+149	client/src/templates/Challenges/components/help-modal.tsx	192	192	reject	link href
+150	client/src/templates/Challenges/components/help-modal.tsx	276	276	reject	i18n key string
+151	client/src/templates/Challenges/components/help-modal.tsx	277	277	reject	link href
+152	client/src/templates/Challenges/components/help-modal.tsx	283	283	reject	i18n key string
+153	client/src/templates/Introduction/components/block.test.tsx	61	61	reject	test fixture string
+154	client/src/utils/growthbook-cookie.ts	5	5	reject	comment
+155	client/src/utils/growthbook-cookie.ts	7	7	asset	gt-0047
+156	client/src/utils/growthbook-cookie.ts	15	15	asset	gt-0048
+157	curriculum/src/fix-seed-semicolons.ts	298	298	reject	ESLint linter.verify, not crypto
+158	e2e/donate-page-default.spec.ts	200	200	reject	i18n key string
+159	e2e/donate-page-default.spec.ts	205	205	reject	i18n key string
+160	e2e/editor.spec.ts	42	42	reject	URL string (Caesar cipher course)
+161	e2e/editor.spec.ts	76	76	reject	URL string
+162	e2e/fixtures/isolated-user.ts	126	126	reject	cookie name string 'jwt_access_token', not crypto
+163	e2e/utils/logout.ts	4	4	reject	cookie name string 'jwt_access_token', not crypto
+164	packages/shared/src/config/constants.ts	211	211	reject	string literal in the blocklistedUsernames list, no computation
+165	packages/shared/src/config/constants.ts	212	212	reject	string literal in the blocklistedUsernames list, no computation
+166	packages/shared/src/config/constants.ts	213	213	reject	string literal in the blocklistedUsernames list, no computation
+167	packages/shared/src/config/constants.ts	214	214	reject	string literal in the blocklistedUsernames list, no computation
+168	packages/shared/src/config/constants.ts	215	215	reject	string literal in the blocklistedUsernames list, no computation
+169	packages/shared/src/config/constants.ts	261	261	reject	string literal in the blocklistedUsernames list, no computation
+170	packages/shared/src/config/constants.ts	287	287	reject	string literal in the blocklistedUsernames list, no computation
+171	packages/shared/src/config/constants.ts	301	301	reject	string literal in the blocklistedUsernames list, no computation
+172	packages/shared/src/config/constants.ts	302	302	reject	string literal in the blocklistedUsernames list, no computation
+173	packages/shared/src/config/constants.ts	319	319	reject	string literal in the blocklistedUsernames list, no computation
+174	packages/shared/src/config/constants.ts	320	320	reject	string literal in the blocklistedUsernames list, no computation
+175	packages/shared/src/config/constants.ts	321	321	reject	string literal in the blocklistedUsernames list, no computation
+176	packages/shared/src/config/constants.ts	372	372	reject	string literal in the blocklistedUsernames list, no computation
+177	packages/shared/src/config/constants.ts	373	373	reject	string literal in the blocklistedUsernames list, no computation
+178	packages/shared/src/config/constants.ts	374	374	reject	string literal in the blocklistedUsernames list, no computation
+179	packages/shared/src/config/constants.ts	375	375	reject	string literal in the blocklistedUsernames list, no computation
+180	packages/shared/src/config/constants.ts	376	376	reject	string literal in the blocklistedUsernames list, no computation
+181	packages/shared/src/config/constants.ts	377	377	reject	string literal in the blocklistedUsernames list, no computation
+182	packages/shared/src/config/constants.ts	378	378	reject	string literal in the blocklistedUsernames list, no computation
+183	packages/shared/src/config/constants.ts	548	548	reject	string literal in the blocklistedUsernames list, no computation
+184	packages/shared/src/config/constants.ts	549	549	reject	string literal in the blocklistedUsernames list, no computation
+185	packages/shared/src/config/constants.ts	574	574	reject	string literal in the blocklistedUsernames list, no computation
+186	packages/shared/src/config/constants.ts	575	575	reject	string literal in the blocklistedUsernames list, no computation
+187	packages/shared/src/config/constants.ts	576	576	reject	string literal in the blocklistedUsernames list, no computation
+188	packages/shared/src/config/constants.ts	577	577	reject	string literal in the blocklistedUsernames list, no computation
+189	packages/shared/src/config/constants.ts	578	578	reject	string literal in the blocklistedUsernames list, no computation
+190	tools/client-plugins/browser-scripts/sass-compile.ts	13	13	reject	feature check for a crypto object in a worker
+191	tools/client-plugins/browser-scripts/sass-compile.ts	14	14	reject	assignment of a polyfill object
+192	tools/client-plugins/browser-scripts/sass-compile.ts	15	15	reject	polyfill getRandomValues implemented with Math.random, not a cryptographic draw; a definition, not a call
+193	tools/client-plugins/gatsby-source-challenges/create-challenge-nodes.js	10	11	asset	gt-0049
+194	tools/client-plugins/gatsby-source-challenges/create-challenge-nodes.js	13	13	reject	digest('hex') follow-up on the createHash at lines 10-11
+195	tools/client-plugins/gatsby-source-challenges/create-challenge-nodes.js	15	15	reject	object property holding a digest output
+196	tools/client-plugins/gatsby-source-challenges/gatsby-node.js	30	30	reject	destructured function parameter (Gatsby API), not a call
+197	tools/client-plugins/gatsby-source-challenges/gatsby-node.js	231	231	asset	gt-0050

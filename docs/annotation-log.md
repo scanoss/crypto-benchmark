@@ -573,3 +573,73 @@ Each is now a sentence in the [annotation guide](annotation-guide.md):
 - **Objects across files.** An imported secret given to calls in several files is one object.
 - **Overridden algorithm literals.** Only the parameters every reaching value shares are set.
 - **Reachability fields in suite C.** `reachable: unknown`, no `depth`.
+
+## Suite C, `pool` scope (2026-11-13)
+
+Two fresh agents judged every item of the ten `<id>-pool` entries independently. Each had the checkout at the pinned commit, the annotation guide, the schema, the `internal/algo` tables and the `files` ground truth of the entry, and saw each item only as a file, a line range and the source text, with no word on which pool source brought it. Neither saw the other's annotation, and no tool output was read before or during adjudication. Assets were matched as for the `files` scope: same file, overlapping lines and same asset type, then compared on lines, anchors, primitive, algorithm, parameters and material type; objects were compared as groupings of the matched assets. An item's verdict is `asset` when its lines overlap a ground-truth asset, which is how the score pairs a prediction with an asset.
+
+| Entry | Items | Item verdicts differ | First | Second | Agreed | Field | Only first | Only second | Agreement | Final |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| java-c-mall | 52 | 0 | 5 | 5 | 5 | 0 | 0 | 0 | 1.000 | 4 |
+| java-c-jadx | 62 | 0 | 7 | 7 | 7 | 0 | 0 | 0 | 1.000 | 7 |
+| python-c-yt-dlp | 4,288 | 12 | 161 | 155 | 145 | 7 | 9 | 3 | 0.884 | 154 |
+| python-c-graphify | 205 | 0 | 58 | 58 | 58 | 0 | 0 | 0 | 1.000 | 58 |
+| go-c-ollama | 2,319 | 0 | 109 | 109 | 108 | 1 | 0 | 0 | 0.991 | 109 |
+| go-c-caveman | 1,501 | 3 | 258 | 257 | 256 | 0 | 2 | 1 | 0.988 | 258 |
+| rust-c-clash-verge-rev | 152 | 0 | 13 | 13 | 13 | 0 | 0 | 0 | 1.000 | 13 |
+| rust-c-cc-switch | 975 | 0 | 43 | 43 | 43 | 0 | 0 | 0 | 1.000 | 43 |
+| javascript-c-freecodecamp | 197 | 0 | 50 | 50 | 50 | 0 | 0 | 0 | 1.000 | 50 |
+| javascript-c-firecrawl | 904 | 1 | 297 | 297 | 297 | 0 | 0 | 0 | 1.000 | 297 |
+| **Total** | **10,655** | **16** | **1,001** | **994** | **982** | **8** | **11** | **4** | **0.977** | **993** |
+
+The two annotations gave the same verdict on 10,639 of 10,655 items (0.998). Agreement on assets is agreed over agreed, field, only first and only second, as in the `files` table. The final ground truth has 993 assets, in `groundtruth/C/<id>-pool.yaml`, and the final verdict of every item is in `groundtruth/C/<id>-pool.verdicts.tsv`. Every pool asset in one of the 142 sampled files has the fields of its `files` ground-truth asset. The one object that differs is `ed25519.GenerateKey` in go-c-ollama's `cmd/cmd.go`: the pool covers `auth/auth.go`, which signs with the stored key, so the key generation and that signature share an object across files, where the `files` truth, with `auth/auth.go` outside its sample, has none.
+
+### Resolutions
+
+Of the 23 asset disagreements, 10 were resolved by taking the first annotation and 13 by taking the second. Of the 4 object-grouping disagreements, 2 went to the second annotation and 2 followed the asset they belong to (first). Two assets both annotations agreed on were changed by a ruling: one removed, one added. One range was corrected after a check of every range for a call cut short. Each resolution is in the asset's `notes`, prefixed `Adjudication:`; a removed asset's reason is in the verdict file.
+
+- **python-c-yt-dlp, `aes_*_bytes` call sites (8 only first, 3 only second).** `aes_cbc_decrypt_bytes` and `aes_gcm_decrypt_and_verify_bytes` call pycryptodome's `AES.new`, with a pure-Python fallback, so they are helpers: their 8 call sites were removed, and their `AES.new` calls are the assets. `aes_cbc_encrypt_bytes` calls no library, only the project's own `aes_cbc_encrypt`, so it is part of the project's implementation and its call site in `tencent.py` was kept, with its range extended to line 42, where the call closes. The 3 calls the second annotation had inside `yt_dlp/aes.py` (lines 19, 23, 27) are calls between the implementation's building blocks and were removed.
+- **python-c-yt-dlp, fields (7).** Padding `PKCS7` added to one `aes_cbc_encrypt` call that leaves the default padding and two `aes_ecb_encrypt` calls, which always pad with PKCS#7 (second). `CryptUnprotectData` keeps algorithm `DPAPI` with primitive `other`, not `ae` (first). The inline `pow(m, e, n)` RSA in `adn.py` takes no padding from the separate `pkcs1pad` helper (first). The inner `hashlib.md5` in `kankanews.py` ends on line 39, and the `hashlib.sha256` path step in `tiktok.py` is on line 241 alone (second).
+- **python-c-yt-dlp, objects (2).** The literal keys of `test/test_aes.py` given to several of the project's AES calls are two objects, `key` and `self.key` (second).
+- **python-c-yt-dlp, websockets (added).** `websockets.sync.client.connect(sock=sock, ..., ssl=ssl_ctx)` opens a TLS session over the program's socket from its context: a protocol asset, which both annotations had read as configuration.
+- **go-c-ollama, `windows.CryptQueryObject` (1 field).** The call ends on line 287, and it shares a certificate object with the `x509.ParseCertificate` of the signer certificate taken from the store it returns (first).
+- **go-c-caveman, `x509.Certificate.Verify` (2 only first).** Kept as `signature` assets: chain verification checks signatures. The test's CA key is the ECDSA key generated in the same test, so that verify is ECDSA and joins the key's object; the other one's CA comes from an operator file, so it has no algorithm.
+- **go-c-caveman, `&rsa.PublicKey{N: n, E: e}` (1 only second).** Removed: a struct literal that assembles a key is not a call; the parse calls around it are annotated.
+- **java-c-mall, `new DefaultAlipayClient(...)` (removed).** Both annotations had it as an RSA signer object. In the SDK version the repository pins, the constructor takes the sign type as an argument (RSA, RSA2 or SM2) and only stores the key string, so the library does not fix the algorithm, and the facade rule leaves it out.
+- **javascript-c-firecrawl, one item.** Item 152, a line inside the `https.createServer({ key, cert }, ...)` call, overlaps that call's three assets, so its verdict is `asset`; both annotations had the same assets.
+
+Library facades both annotations kept were checked in the published package source at the version the lockfile or build file pins: Hutool `JWTUtil.createToken` installs an HS256 signer when the token names no algorithm (hutool-all 5.8.40), `@fastify/cookie` `sign` defaults to HMAC with SHA-256 (11.0.2), Gatsby's `createContentDigest` hashes with MD5 (gatsby 5.16.1 through gatsby-core-utils 4.16.0), and tauri-plugin-updater's `Update::verify` runs minisign's Ed25519 verify (2.14.1 with minisign-verify 0.3.0).
+
+### Known misses of the pool
+
+These assets, by the guide, are in the repositories but no pool item covers them, so they are not in the pool ground truth: they are what pool recall cannot see. The annotators reported them, or they are `files` ground-truth assets with no pool item.
+
+| Entry | Asset | Where |
+|---|---|---|
+| java-c-mall | `AlipaySignature.rsaCheckV1` one-shot verify | `mall-portal/.../service/impl/AlipayServiceImpl.java` 86 |
+| python-c-yt-dlp | IV created by a literal (`files` truth) | `devscripts/generate_aes_testdata.py` 29 |
+| python-c-yt-dlp | `load_verify_locations(cafile=...)` certificate parse (`files` truth) | `yt_dlp/networking/_helper.py` 25 |
+| python-c-yt-dlp | IV created by a literal, passed to `aes_cbc_encrypt_bytes` | `yt_dlp/extractor/tencent.py` 41 |
+| python-c-yt-dlp | zero IV created by `binascii.unhexlify('00...')`, passed to `AES.new` | `yt_dlp/extractor/tarangplus.py` 101 |
+| python-c-graphify | `self._context.wrap_socket(...)` TLS session | `graphify/security.py` 229 |
+| go-c-ollama | `httptest.NewTLSServer` ×5 | `server/download_test.go` 41, 144; `transfer/redirect_test.go` 317, 350, 552 |
+| go-c-ollama | `windows.WinVerifyTrustEx` signature verify | `app/updater/updater_windows.go` 249 |
+| go-c-ollama | crypto/rand draw in `auth.NewNonce` (`io.ReadFull` on `rand.Reader`) | `auth/auth.go` 46 |
+| go-c-caveman | `httptest.NewTLSServer` ×7 (one in the `files` truth) | `proxy/internal/identity/oidc_test.go` 35, 296, 351; `shared/platform/postgresconfig/postgresconfig_test.go` 126, 207; `shared/platform/ssrf/ssrf_test.go` 785; `proxy/internal/standalone/standalone_test.go` 1770 |
+| go-c-caveman | `httptest.Server.StartTLS` | `proxy/internal/gateway/reliability_test.go` 175 |
+| go-c-caveman | `CertPool.AppendCertsFromPEM` certificate parse ×2 | `proxy/internal/identity/tls_test.go` 102, 251 |
+| go-c-caveman | ECDSA `PublicKey.Bytes()` key serialization | `proxy/internal/identity/oidc_test.go` 56 |
+| rust-c-cc-switch | `add_parsable_certificates` certificate parse (`files` truth) | `src-tauri/src/proxy/hyper_client.rs` 623 |
+
+### Questions the guide leaves open
+
+Each is now a sentence in the [annotation guide](annotation-guide.md):
+
+- **A project implementation and its helpers.** Calls between the building blocks of a project's own algorithm are not assets, and a project function that calls a library's crypto is a helper even with a pure-code fallback.
+- **Library facades.** A facade is an asset only when the pinned package source fixes its algorithm.
+- **OS data protection.** `CryptUnprotectData` is `DPAPI` with primitive `other`.
+- **Certificate chain verification.** A `signature` asset, with an algorithm only when the CA key's type is known.
+- **Key literals.** A struct literal that assembles a key is not an asset.
+- **TLS sessions from a client library.** `websockets` `connect(sock=..., ssl=ctx)` opens a session over a socket.
+- **Salts of a plain hash.** A random value hashed as a salt is `salt` material.
+- **Assets no item covers.** They stay out of a `pool` ground truth and are listed here.

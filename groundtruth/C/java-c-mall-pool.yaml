@@ -1,0 +1,45 @@
+schema_version: "1"
+entry: java-c-mall-pool
+scope:
+  kind: pool
+assets:
+  - id: gt-0001
+    file: "mall-demo/src/main/java/com/macro/mall/demo/config/SecurityConfig.java"
+    lines: [41, 41]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: unknown
+    notes: "Reused from the files-scope truth: Spring Security BCryptPasswordEncoder() is a password hasher fixed to bcrypt by default; strength not stated, so no parameters."
+  - id: gt-0002
+    file: "mall-security/src/main/java/com/macro/mall/security/config/CommonSecurityConfig.java"
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: unknown
+    notes: "Same shape as gt-0001: new BCryptPasswordEncoder() fixes bcrypt by default."
+  - id: gt-0003
+    file: "mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java"
+    lines: [53, 53]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: mall-security/secret
+    notes: "Hutool JWTUtil.createToken(claims, key) signs a JWS; JWT.create() has no alg header, so Hutool 5.8.40 setKey(byte[]) installs its default HS256 signer (bytecode checked): the API fixes HMAC with SHA-256. The class comment says HS512, but that describes the code before the Hutool refactor, not what runs. No key size: the secret comes from configuration. Adjudication: facade checked in the hutool-all 5.8.40 sources: JWTUtil.createToken(payload, key) calls JWT.create()...setKey(key), and setKey installs JWTSignerUtil.hs256 when the header has no alg; JWTUtil.verify(token, key) builds the signer from the token's alg. Both annotations agreed."
+  - id: gt-0004
+    file: "mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java"
+    lines: [62, 62]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: unknown
+    object: mall-security/secret
+    notes: "Hutool JWTUtil.verify(token, key) is a one-shot verify. In Hutool 5.8.40 JWT.setKey(byte[]) builds the signer from the token header's alg when present (bytecode checked), so the call takes its algorithm from the token: HMAC, the HS256 the program produces at gt-0003, with no hash per the guide's take-from-token rule. Same secret as gt-0003, so one object. Adjudication: facade checked in the hutool-all 5.8.40 sources: JWTUtil.createToken(payload, key) calls JWT.create()...setKey(key), and setKey installs JWTSignerUtil.hs256 when the header has no alg; JWTUtil.verify(token, key) builds the signer from the token's alg. Both annotations agreed."

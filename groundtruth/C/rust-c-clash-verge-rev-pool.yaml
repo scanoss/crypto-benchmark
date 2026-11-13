@@ -1,0 +1,120 @@
+schema_version: "1"
+entry: rust-c-clash-verge-rev-pool
+scope:
+  kind: pool
+assets:
+  - id: gt-0001
+    file: src-tauri/src/config/dns.rs
+    lines: [48, 48]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope asset. Sha256::new() creates the hash object; update/finalize on 49-53 are follow-ups."
+  - id: gt-0002
+    file: src-tauri/src/config/encrypt.rs
+    lines: [20, 20]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: GCM
+    origin: project
+    reachable: unknown
+    object: config/encrypt/encryption_key
+    notes: "Same as the files-scope asset. Aes256Gcm::new_from_slice fixes AES-256-GCM; encrypt on line 26 is a follow-up."
+  - id: gt-0003
+    file: src-tauri/src/config/encrypt.rs
+    lines: [23, 23]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "getrandom::fill draws the nonce from the OS generator."
+  - id: gt-0004
+    file: src-tauri/src/config/encrypt.rs
+    lines: [23, 23]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: unknown
+    notes: The nonce the draw fills, passed as the Aes256Gcm nonce.
+  - id: gt-0005
+    file: src-tauri/src/config/encrypt.rs
+    lines: [36, 36]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: GCM
+    origin: project
+    reachable: unknown
+    object: config/encrypt/encryption_key
+    notes: "Second Aes256Gcm cipher for decryption; decrypt on line 46 is a follow-up. Same key as line 20."
+  - id: gt-0006
+    file: src-tauri/src/core/owner_identity.rs
+    lines: [172, 172]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "getrandom::fill draws the owner token; an auth token is not related crypto material."
+  - id: gt-0007
+    file: src-tauri/src/core/runtime_bundle.rs
+    lines: [121, 121]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new() for a cache filename digest; follow-ups on 122-125."
+  - id: gt-0008
+    file: src-tauri/src/core/service.rs
+    lines: [109, 109]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "getrandom::fill draws a service session token; a token is not related crypto material."
+  - id: gt-0009
+    file: src-tauri/src/core/updater.rs
+    lines: [116, 116]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: Ed25519
+    origin: project
+    reachable: unknown
+    notes: "Judgement call. tauri-plugin-updater Update::verify(bytes) is a library call (not a project helper) that verifies the release's minisign signature with the configured public key (minisign-verify PublicKey::verify, Ed25519). A one-shot verify the program calls directly, so an asset. A second annotator may reject it as a call into an updater framework; minisign may prehash with BLAKE2b, which is not set as hash. Adjudication: facade checked in the published crate sources the lockfile pins: tauri-plugin-updater 2.14.1 Update::verify calls minisign-verify 0.3.0 PublicKey::verify, which verifies an Ed25519 signature (over a BLAKE2b prehash when the signature says so). Both annotations agreed."
+  - id: gt-0010
+    file: src-tauri/src/feat/clash.rs
+    lines: [143, 143]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope asset. tokio-rustls connector.connect(server_name, stream) creates a TLS session (guide, TLS sessions). TlsConnector::from on line 139 is configuration."
+  - id: gt-0011
+    file: src-tauri/src/utils/dirs.rs
+    lines: [163, 163]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "getrandom::fill draws 32 bytes the program stores and uses as the AES-256-GCM key (config/encrypt.rs). A draw used as a key is a drbg asset with no material and no object."
+  - id: gt-0012
+    file: src-tauri/src/utils/network.rs
+    lines: [54, 57]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope asset. rustls ClientConfig::builder_with_provider chain creates the TLS client context. RootCertStore::from_iter of built-in webpki roots on line 53 parses nothing."
+  - id: gt-0013
+    file: src-tauri/src/utils/server.rs
+    lines: [348, 348]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "getrandom::fill draws a random instance token; no material."

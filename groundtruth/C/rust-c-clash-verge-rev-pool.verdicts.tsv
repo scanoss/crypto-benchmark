@@ -1,0 +1,153 @@
+item	file	start	end	verdict	detail
+1	crates/clash-verge-media-unlock/src/bahamut.rs	28	28	reject	URL string formatting (token_url)
+2	crates/clash-verge-media-unlock/src/disney_plus.rs	37	37	reject	OAuth refresh token retrieval, not crypto
+3	src-tauri/src/cmd/profile.rs	28	28	reject	error message string match on TLS
+4	src-tauri/src/cmd/service.rs	173	173	reject	enum variant name (DigestMismatch)
+5	src-tauri/src/config/dns.rs	48	48	asset	gt-0001
+6	src-tauri/src/config/dns.rs	49	49	reject	follow-up update on Sha256 object (asset at line 48)
+7	src-tauri/src/config/dns.rs	50	50	reject	follow-up update
+8	src-tauri/src/config/dns.rs	51	51	reject	follow-up update
+9	src-tauri/src/config/dns.rs	53	53	reject	follow-up finalize; digest output
+10	src-tauri/src/config/encrypt.rs	3	3	reject	import of the Aes256Gcm type
+11	src-tauri/src/config/encrypt.rs	15	15	reject	thread-local flag declaration
+12	src-tauri/src/config/encrypt.rs	18	18	reject	function signature of a project helper
+13	src-tauri/src/config/encrypt.rs	19	19	reject	call to project helper get_encryption_key; key drawn in utils/dirs.rs
+14	src-tauri/src/config/encrypt.rs	20	20	asset	gt-0002
+15	src-tauri/src/config/encrypt.rs	22	22	reject	zeroed array declaration; nonce created by the draw on line 23
+16	src-tauri/src/config/encrypt.rs	23	23	asset	gt-0003,gt-0004
+17	src-tauri/src/config/encrypt.rs	25	25	reject	follow-up encrypt on cipher object (line 20)
+18	src-tauri/src/config/encrypt.rs	26	26	reject	follow-up encrypt on cipher object (line 20)
+19	src-tauri/src/config/encrypt.rs	27	27	reject	error mapping
+20	src-tauri/src/config/encrypt.rs	30	30	reject	Vec extend, no crypto
+21	src-tauri/src/config/encrypt.rs	34	34	reject	function signature of project helper
+22	src-tauri/src/config/encrypt.rs	35	35	reject	call to project helper get_encryption_key
+23	src-tauri/src/config/encrypt.rs	36	36	asset	gt-0005
+24	src-tauri/src/config/encrypt.rs	37	37	reject	Base64 decode, not crypto
+25	src-tauri/src/config/encrypt.rs	39	39	reject	error return
+26	src-tauri/src/config/encrypt.rs	42	42	reject	split_at reads the nonce back; not created here
+27	src-tauri/src/config/encrypt.rs	45	45	reject	follow-up decrypt on cipher object (line 36)
+28	src-tauri/src/config/encrypt.rs	46	46	reject	follow-up decrypt on cipher object (line 36)
+29	src-tauri/src/config/encrypt.rs	47	47	reject	error mapping
+30	src-tauri/src/config/encrypt.rs	52	52	reject	function signature
+31	src-tauri/src/config/encrypt.rs	57	57	reject	flag check
+32	src-tauri/src/config/encrypt.rs	59	59	reject	call to project helper encrypt_data (guide, project helpers)
+33	src-tauri/src/config/encrypt.rs	60	60	reject	serializer call
+34	src-tauri/src/config/encrypt.rs	66	66	reject	function signature
+35	src-tauri/src/config/encrypt.rs	71	71	reject	flag check
+36	src-tauri/src/config/encrypt.rs	72	72	reject	serde deserialize
+37	src-tauri/src/config/encrypt.rs	74	74	reject	match
+38	src-tauri/src/config/encrypt.rs	75	75	reject	match arm
+39	src-tauri/src/config/encrypt.rs	76	76	reject	call to project helper decrypt_data (guide, project helpers)
+40	src-tauri/src/config/encrypt.rs	77	77	reject	JSON parse
+41	src-tauri/src/config/encrypt.rs	86	86	reject	function signature
+42	src-tauri/src/config/encrypt.rs	91	91	reject	task-local scope
+43	src-tauri/src/config/encrypt.rs	94	94	reject	function signature
+44	src-tauri/src/config/encrypt.rs	95	95	reject	flag read
+45	src-tauri/src/config/mod.rs	5	5	reject	module declaration
+46	src-tauri/src/config/prfitem.rs	314	314	reject	identifier key_lower, string op
+47	src-tauri/src/config/runtime.rs	38	38	reject	YAML key identifier
+48	src-tauri/src/config/verge.rs	3	3	reject	use declaration
+49	src-tauri/src/config/verge.rs	182	182	reject	serde attribute naming a project helper (guide, project helpers)
+50	src-tauri/src/config/verge.rs	183	183	reject	serde attribute naming a project helper (guide, project helpers)
+51	src-tauri/src/config/verge.rs	191	191	reject	serde attribute naming a project helper (guide, project helpers)
+52	src-tauri/src/config/verge.rs	192	192	reject	serde attribute naming a project helper (guide, project helpers)
+53	src-tauri/src/config/verge.rs	200	200	reject	serde attribute naming a project helper (guide, project helpers)
+54	src-tauri/src/config/verge.rs	201	201	reject	serde attribute naming a project helper (guide, project helpers)
+55	src-tauri/src/core/hotkey.rs	267	267	reject	identifier containing key/hotkey; not crypto
+56	src-tauri/src/core/hotkey.rs	279	279	reject	identifier containing key/hotkey; not crypto
+57	src-tauri/src/core/hotkey.rs	319	319	reject	identifier containing key/hotkey; not crypto
+58	src-tauri/src/core/hotkey.rs	329	329	reject	identifier containing key/hotkey; not crypto
+59	src-tauri/src/core/hotkey.rs	337	337	reject	identifier containing key/hotkey; not crypto
+60	src-tauri/src/core/hotkey.rs	362	362	reject	identifier containing key/hotkey; not crypto
+61	src-tauri/src/core/hotkey.rs	405	405	reject	identifier containing key/hotkey; not crypto
+62	src-tauri/src/core/hotkey.rs	430	430	reject	identifier containing key/hotkey; not crypto
+63	src-tauri/src/core/hotkey.rs	434	434	reject	identifier containing key/hotkey; not crypto
+64	src-tauri/src/core/notify/desktop.rs	52	52	reject	identifier containing key/hotkey; not crypto
+65	src-tauri/src/core/notify/desktop.rs	73	73	reject	identifier containing key/hotkey; not crypto
+66	src-tauri/src/core/owner_identity.rs	117	117	reject	constant
+67	src-tauri/src/core/owner_identity.rs	171	171	reject	zeroed array declaration; draw on line 172
+68	src-tauri/src/core/owner_identity.rs	172	172	asset	gt-0006
+69	src-tauri/src/core/owner_identity.rs	199	199	reject	zeroed array declaration; token read from file, no draw
+70	src-tauri/src/core/owner_identity.rs	391	391	reject	file size comparison
+71	src-tauri/src/core/owner_identity.rs	651	651	reject	function signature (hex encoding)
+72	src-tauri/src/core/owner_identity.rs	652	652	reject	string capacity
+73	src-tauri/src/core/runstate/env.rs	53	53	reject	struct field set to None
+74	src-tauri/src/core/runstate/probe.rs	141	141	reject	enum variant name
+75	src-tauri/src/core/runtime_bundle.rs	121	121	asset	gt-0007
+76	src-tauri/src/core/runtime_bundle.rs	122	122	reject	follow-up update
+77	src-tauri/src/core/runtime_bundle.rs	123	123	reject	follow-up update
+78	src-tauri/src/core/runtime_bundle.rs	124	124	reject	follow-up update
+79	src-tauri/src/core/runtime_bundle.rs	125	125	reject	follow-up finalize; digest output
+80	src-tauri/src/core/runtime_bundle.rs	135	135	reject	file name formatting
+81	src-tauri/src/core/runtime_bundle.rs	168	168	reject	call to project function collecting SSH key file paths; no key parse
+82	src-tauri/src/core/runtime_bundle.rs	275	275	reject	function signature; it collects file paths only
+83	src-tauri/src/core/service.rs	109	109	asset	gt-0008
+84	src-tauri/src/core/service.rs	793	793	reject	comment
+85	src-tauri/src/core/service.rs	914	914	reject	call to project helper generate_service_session_token (guide, project helpers; draw at line 109)
+86	src-tauri/src/core/service.rs	1196	1196	reject	tuple key identifier
+87	src-tauri/src/core/timer.rs	315	315	reject	timer task key
+88	src-tauri/src/core/timer.rs	422	422	reject	timer task key
+89	src-tauri/src/core/tray/mod.rs	426	426	reject	string uppercasing
+90	src-tauri/src/core/tray/mod.rs	648	648	reject	hotkey creation
+91	src-tauri/src/core/updater.rs	116	116	asset	gt-0009
+92	src-tauri/src/core/validate.rs	383	383	reject	string array
+93	src-tauri/src/enhance/field.rs	22	22	reject	identifier containing key/hotkey; not crypto
+94	src-tauri/src/enhance/field.rs	41	41	reject	identifier containing key/hotkey; not crypto
+95	src-tauri/src/enhance/field.rs	59	59	reject	identifier containing key/hotkey; not crypto
+96	src-tauri/src/enhance/mod.rs	367	367	reject	identifier containing key/hotkey; not crypto
+97	src-tauri/src/enhance/mod.rs	435	435	reject	identifier containing key/hotkey; not crypto
+98	src-tauri/src/enhance/mod.rs	446	446	reject	identifier containing key/hotkey; not crypto
+99	src-tauri/src/enhance/mod.rs	457	457	reject	identifier containing key/hotkey; not crypto
+100	src-tauri/src/enhance/mod.rs	842	842	reject	identifier containing key/hotkey; not crypto
+101	src-tauri/src/enhance/mod.rs	843	843	reject	identifier containing key/hotkey; not crypto
+102	src-tauri/src/enhance/mod.rs	892	892	reject	identifier containing key/hotkey; not crypto
+103	src-tauri/src/enhance/script.rs	50	50	reject	identifier containing key/hotkey; not crypto
+104	src-tauri/src/enhance/tun.rs	11	11	reject	identifier containing key/hotkey; not crypto
+105	src-tauri/src/enhance/tun.rs	18	18	reject	identifier containing key/hotkey; not crypto
+106	src-tauri/src/enhance/tun.rs	23	23	reject	identifier containing key/hotkey; not crypto
+107	src-tauri/src/feat/clash.rs	17	17	reject	static declaration of a rustls ClientConfig type
+108	src-tauri/src/feat/clash.rs	18	18	reject	call to project helper build_webpki_rooted_tls_config (guide, project helpers; context created in utils/network.rs)
+109	src-tauri/src/feat/clash.rs	96	96	reject	doc comment
+110	src-tauri/src/feat/clash.rs	139	139	reject	TlsConnector::from wraps the config without a stream: configuration (guide, TLS sessions)
+111	src-tauri/src/feat/clash.rs	143	143	asset	gt-0010
+112	src-tauri/src/lib.rs	308	308	reject	identifier containing key/hotkey; not crypto
+113	src-tauri/src/utils/dirs.rs	155	155	reject	function signature of project helper
+114	src-tauri/src/utils/dirs.rs	157	157	reject	file path join
+115	src-tauri/src/utils/dirs.rs	160	160	reject	fs::read of raw key bytes; no key parse
+116	src-tauri/src/utils/dirs.rs	162	162	reject	zeroed vec declaration; draw on line 163
+117	src-tauri/src/utils/dirs.rs	163	163	asset	gt-0011
+118	src-tauri/src/utils/dirs.rs	168	168	reject	fs::write of key bytes, no serialization of a key object
+119	src-tauri/src/utils/help.rs	24	24	reject	call to project helper with_encryption (guide, project helpers)
+120	src-tauri/src/utils/help.rs	138	138	reject	call to project helper with_encryption (guide, project helpers)
+121	src-tauri/src/utils/help.rs	148	148	reject	doc comment
+122	src-tauri/src/utils/network.rs	46	46	reject	enum declaration
+123	src-tauri/src/utils/network.rs	51	51	reject	doc comment
+124	src-tauri/src/utils/network.rs	53	53	reject	RootCertStore from built-in webpki roots parses nothing (guide, certificate and key loaders)
+125	src-tauri/src/utils/network.rs	54	54	asset	gt-0012
+126	src-tauri/src/utils/network.rs	75	75	reject	struct field
+127	src-tauri/src/utils/network.rs	78	78	reject	reqwest tls_backend_rustls selects a TLS backend: configuration (guide, TLS sessions)
+128	src-tauri/src/utils/network.rs	84	84	reject	enum match
+129	src-tauri/src/utils/network.rs	85	85	reject	tls_backend_preconfigured with a project helper config: configuration; context created in build_webpki_rooted_tls_config
+130	src-tauri/src/utils/network.rs	98	98	reject	comment
+131	src-tauri/src/utils/network.rs	132	132	reject	string literal
+132	src-tauri/src/utils/network.rs	133	133	reject	string literal
+133	src-tauri/src/utils/network.rs	152	152	reject	error message string
+134	src-tauri/src/utils/network.rs	166	166	reject	trait bound
+135	src-tauri/src/utils/network.rs	169	169	reject	enum variant call
+136	src-tauri/src/utils/network.rs	172	172	reject	closure call
+137	src-tauri/src/utils/network.rs	173	173	reject	error message string
+138	src-tauri/src/utils/network.rs	187	187	reject	struct field
+139	src-tauri/src/utils/network.rs	196	196	reject	percent decoding of a proxy password, not crypto
+140	src-tauri/src/utils/network.rs	214	214	reject	struct field
+141	src-tauri/src/utils/network.rs	254	254	reject	struct field
+142	src-tauri/src/utils/network.rs	283	283	reject	project function call
+143	src-tauri/src/utils/network.rs	294	294	reject	project function call
+144	src-tauri/src/utils/network.rs	303	303	reject	struct field
+145	src-tauri/src/utils/network.rs	317	317	reject	struct field
+146	src-tauri/src/utils/network.rs	320	320	reject	project function call
+147	src-tauri/src/utils/network.rs	349	349	reject	doc comment
+148	src-tauri/src/utils/network.rs	357	357	reject	project function call
+149	src-tauri/src/utils/network.rs	358	358	reject	project function call
+150	src-tauri/src/utils/resolve/mod.rs	143	143	reject	config flag
+151	src-tauri/src/utils/server.rs	153	153	reject	string clone
+152	src-tauri/src/utils/server.rs	348	348	asset	gt-0013

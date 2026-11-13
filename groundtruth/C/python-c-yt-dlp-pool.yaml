@@ -1,0 +1,1360 @@
+schema_version: "1"
+entry: python-c-yt-dlp-pool
+scope:
+  kind: pool
+assets:
+  - id: gt-0001
+    file: devscripts/generate_aes_testdata.py
+    lines: [31, 31]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 128
+      mode: CBC
+    origin: project
+    reachable: unknown
+    object: generate_aes_testdata/key
+    notes: "Reused from the files-scope truth: openssl enc -aes-128-cbc through the file's helper."
+  - id: gt-0002
+    file: devscripts/generate_aes_testdata.py
+    lines: [36, 36]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    origin: project
+    reachable: unknown
+    object: generate_aes_testdata/key
+    notes: "Reused from the files-scope truth: yt_dlp.aes.aes_encrypt of one block."
+  - id: gt-0003
+    file: devscripts/generate_aes_testdata.py
+    lines: [37, 37]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 128
+      mode: CTR
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0004
+    file: devscripts/generate_aes_testdata.py
+    lines: [42, 42]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0005
+    file: devscripts/generate_aes_testdata.py
+    lines: [43, 43]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: CTR
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0006
+    file: devscripts/generate_third_party_licenses.py
+    lines: [352, 352]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Cache-file name hash; purpose does not matter (guide, purpose)."
+  - id: gt-0007
+    file: test/helper.py
+    lines: [100, 100]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "hashlib.md5 inside a lambda named md5; the lambda is a project helper, its calls (lines 148, 227) are not assets."
+  - id: gt-0008
+    file: test/test_aes.py
+    lines: [42, 42]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    origin: project
+    reachable: unknown
+    object: test_aes/key
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). Adjudication: object test_aes/key from the second annotation: the calls are given the same literal key, so they act on one key (guide, Objects: two one-shot calls given the same key)."
+  - id: gt-0009
+    file: test/test_aes.py
+    lines: [43, 43]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    origin: project
+    reachable: unknown
+    object: test_aes/key
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). Adjudication: object test_aes/key from the second annotation: the calls are given the same literal key, so they act on one key (guide, Objects: two one-shot calls given the same key)."
+  - id: gt-0010
+    file: test/test_aes.py
+    lines: [48, 48]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+    origin: project
+    reachable: unknown
+    object: test_aes/self.key
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). Adjudication: object test_aes/self.key from the second annotation: the calls are given the same literal key, so they act on one key (guide, Objects: two one-shot calls given the same key)."
+  - id: gt-0011
+    file: test/test_aes.py
+    lines: [56, 56]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+      padding: PKCS7
+    origin: project
+    reachable: unknown
+    object: test_aes/self.key
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). aes_cbc_encrypt pads with PKCS7 by default, but the call does not state it. Adjudication: padding PKCS7 from the second annotation: aes_cbc_encrypt pads with PKCS#7 unless the caller passes padding_mode, and this call leaves the default, so the API fixes it (as noble-ciphers in suite A). Adjudication: object test_aes/self.key from the second annotation: the calls are given the same literal key, so they act on one key (guide, Objects: two one-shot calls given the same key)."
+  - id: gt-0012
+    file: test/test_aes.py
+    lines: [63, 63]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CTR
+    origin: project
+    reachable: unknown
+    object: test_aes/self.key
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). Adjudication: object test_aes/self.key from the second annotation: the calls are given the same literal key, so they act on one key (guide, Objects: two one-shot calls given the same key)."
+  - id: gt-0013
+    file: test/test_aes.py
+    lines: [68, 68]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CTR
+    origin: project
+    reachable: unknown
+    object: test_aes/self.key
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). Adjudication: object test_aes/self.key from the second annotation: the calls are given the same literal key, so they act on one key (guide, Objects: two one-shot calls given the same key)."
+  - id: gt-0014
+    file: test/test_aes.py
+    lines: [77, 78]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+    origin: project
+    reachable: unknown
+    object: test_aes/self.key
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). Adjudication: object test_aes/self.key from the second annotation: the calls are given the same literal key, so they act on one key (guide, Objects: two one-shot calls given the same key)."
+  - id: gt-0015
+    file: test/test_aes.py
+    lines: [89, 90]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+    origin: project
+    reachable: unknown
+    object: test_aes/self.key
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). Adjudication: object test_aes/self.key from the second annotation: the calls are given the same literal key, so they act on one key (guide, Objects: two one-shot calls given the same key)."
+  - id: gt-0016
+    file: test/test_aes.py
+    lines: [103, 103]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 128
+      mode: CTR
+    origin: project
+    reachable: unknown
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). aes_decrypt_text derives the key with one AES block encryption and decrypts in CTR mode (fixed by its API); key_size_bytes literal 16 gives 128."
+  - id: gt-0017
+    file: test/test_aes.py
+    lines: [111, 111]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: CTR
+    origin: project
+    reachable: unknown
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). aes_decrypt_text with key_size_bytes 32 gives AES-256-CTR."
+  - id: gt-0018
+    file: test/test_aes.py
+    lines: [116, 116]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: ECB
+      padding: PKCS7
+    origin: project
+    reachable: unknown
+    object: test_aes/self.key
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). Adjudication: padding PKCS7 from the second annotation: aes_ecb_encrypt always pads each block with pkcs7_padding, so its API fixes PKCS#7. Adjudication: object test_aes/self.key from the second annotation: the calls are given the same literal key, so they act on one key (guide, Objects: two one-shot calls given the same key)."
+  - id: gt-0019
+    file: test/test_aes.py
+    lines: [123, 123]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: ECB
+    origin: project
+    reachable: unknown
+    object: test_aes/self.key
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). Adjudication: object test_aes/self.key from the second annotation: the calls are given the same literal key, so they act on one key (guide, Objects: two one-shot calls given the same key)."
+  - id: gt-0020
+    file: test/test_cookies.py
+    lines: [170, 170]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: unknown
+    notes: "pbkdf2_sha1 is a project helper (guide, project helpers), so the call is not an asset; the literal salt b' ' * 16 is created here and passed through the helper to hashlib.pbkdf2_hmac's salt, so it is salt material where created. Range is the whole line (the literal sits inside the helper call)."
+  - id: gt-0021
+    file: test/test_download.py
+    lines: [58, 58]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "hashlib.file_digest(f, hashlib.md5): an MD5 file digest."
+  - id: gt-0022
+    file: test/test_http_proxy.py
+    lines: [110, 115]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "Reused from the files-scope truth: wrap_bio creates a TLS session from the context."
+  - id: gt-0023
+    file: test/test_http_proxy.py
+    lines: [135, 135]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0024
+    file: test/test_http_proxy.py
+    lines: [136, 136]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "Reused from the files-scope truth (load_cert_chain, certificate half)."
+  - id: gt-0025
+    file: test/test_http_proxy.py
+    lines: [136, 136]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "Reused from the files-scope truth (load_cert_chain, key half)."
+  - id: gt-0026
+    file: test/test_http_proxy.py
+    lines: [140, 140]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "Reused from the files-scope truth: wrap_socket creates a TLS session."
+  - id: gt-0027
+    file: test/test_http_proxy.py
+    lines: [186, 186]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0028
+    file: test/test_http_proxy.py
+    lines: [187, 187]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0029
+    file: test/test_http_proxy.py
+    lines: [187, 187]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0030
+    file: test/test_http_proxy.py
+    lines: [188, 188]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0031
+    file: test/test_networking.py
+    lines: [310, 310]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: ssl.SSLContext(...) creates a TLS context.
+  - id: gt-0032
+    file: test/test_networking.py
+    lines: [311, 311]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "load_cert_chain(certfile, None): certificate half (guide, certificate and key loaders)."
+  - id: gt-0033
+    file: test/test_networking.py
+    lines: [311, 311]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "load_cert_chain: key half, key parse with no material_type (guide, certificate and key loaders; keyfile None reads the key from the same PEM)."
+  - id: gt-0034
+    file: test/test_networking.py
+    lines: [312, 312]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: wrap_socket creates a TLS session (guide, TLS sessions).
+  - id: gt-0035
+    file: test/test_networking.py
+    lines: [338, 338]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: ssl.SSLContext(...) creates a TLS context.
+  - id: gt-0036
+    file: test/test_networking.py
+    lines: [339, 339]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: wrap_socket creates a TLS session (guide, TLS sessions).
+  - id: gt-0037
+    file: test/test_networking.py
+    lines: [356, 356]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "ssl.SSLContext(...); maximum_version and set_ciphers below are configuration."
+  - id: gt-0038
+    file: test/test_networking.py
+    lines: [359, 359]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: load_cert_chain (guide, certificate and key loaders).
+  - id: gt-0039
+    file: test/test_networking.py
+    lines: [359, 359]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "load_cert_chain key half (guide, certificate and key loaders)."
+  - id: gt-0040
+    file: test/test_networking.py
+    lines: [360, 360]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: wrap_socket (guide, TLS sessions).
+  - id: gt-0041
+    file: test/test_networking.py
+    lines: [381, 381]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: ssl.SSLContext(...).
+  - id: gt-0042
+    file: test/test_networking.py
+    lines: [384, 384]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: load_cert_chain (guide, certificate and key loaders).
+  - id: gt-0043
+    file: test/test_networking.py
+    lines: [384, 384]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "load_cert_chain key half (guide, certificate and key loaders)."
+  - id: gt-0044
+    file: test/test_networking.py
+    lines: [385, 385]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: wrap_socket (guide, TLS sessions).
+  - id: gt-0045
+    file: test/test_networking.py
+    lines: [795, 795]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: ssl.SSLContext(...).
+  - id: gt-0046
+    file: test/test_networking.py
+    lines: [797, 797]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "load_verify_locations(cafile=...) parses CA certificates from a file (guide, certificate and key loaders)."
+  - id: gt-0047
+    file: test/test_networking.py
+    lines: [798, 798]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: load_cert_chain (guide, certificate and key loaders).
+  - id: gt-0048
+    file: test/test_networking.py
+    lines: [798, 798]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "load_cert_chain key half (guide, certificate and key loaders)."
+  - id: gt-0049
+    file: test/test_networking.py
+    lines: [799, 799]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: wrap_socket (guide, TLS sessions).
+  - id: gt-0050
+    file: test/test_networking_utils.py
+    lines: [92, 92]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: ssl.SSLContext(...).
+  - id: gt-0051
+    file: test/test_networking_utils.py
+    lines: [93, 93]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "load_verify_locations(cafile=certifi.where()) parses the CA bundle (guide, certificate and key loaders)."
+  - id: gt-0052
+    file: test/test_networking_utils.py
+    lines: [94, 94]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: ssl.SSLContext(...).
+  - id: gt-0053
+    file: test/test_networking_utils.py
+    lines: [98, 98]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: ssl.SSLContext(...).
+  - id: gt-0054
+    file: test/test_networking_utils.py
+    lines: [100, 100]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: ssl.SSLContext(...).
+  - id: gt-0055
+    file: test/test_pot/test_pot_director.py
+    lines: [581, 582]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Test digest of a cache key; purpose does not matter (guide, purpose)."
+  - id: gt-0056
+    file: test/test_pot/test_pot_director.py
+    lines: [595, 596]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Test digest of a cache key (guide, purpose).
+  - id: gt-0057
+    file: test/test_utils.py
+    lines: [1782, 1782]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    origin: project
+    reachable: unknown
+    notes: "ohdave_rsa_encrypt (yt_dlp/utils/_utils.py) is the project's own textbook RSA (pow(m, e, N)) with no library call, so each call site is an asset like a library one-shot. No padding (raw RSA), no key_size: the modulus is a literal but no call states a size."
+  - id: gt-0058
+    file: test/test_websockets.py
+    lines: [97, 97]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0059
+    file: test/test_websockets.py
+    lines: [98, 98]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0060
+    file: test/test_websockets.py
+    lines: [98, 98]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0061
+    file: test/test_websockets.py
+    lines: [109, 109]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0062
+    file: test/test_websockets.py
+    lines: [111, 111]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0063
+    file: test/test_websockets.py
+    lines: [112, 112]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0064
+    file: test/test_websockets.py
+    lines: [112, 112]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0065
+    file: test/test_websockets.py
+    lines: [119, 119]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0066
+    file: test/test_websockets.py
+    lines: [122, 122]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0067
+    file: test/test_websockets.py
+    lines: [122, 122]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0068
+    file: test/test_websockets.py
+    lines: [154, 154]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "Reused from the files-scope truth: ssl.SSLContext nested in a helper call."
+  - id: gt-0069
+    file: yt_dlp/aes.py
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+    origin: project
+    reachable: unknown
+    notes: "pycryptodome(x) AES.new(key, MODE_CBC, iv) inside the aes_cbc_decrypt_bytes helper: the library call is an asset (guide, project helpers); .decrypt is a follow-up. The IV is a parameter from the caller."
+  - id: gt-0070
+    file: yt_dlp/aes.py
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      mode: GCM
+    origin: project
+    reachable: unknown
+    notes: "pycryptodome(x) AES.new(key, MODE_GCM, nonce) inside aes_gcm_decrypt_and_verify_bytes; decrypt_and_verify is a follow-up. Nonce and tag come from the caller."
+  - id: gt-0071
+    file: yt_dlp/cookies.py
+    lines: [457, 457]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: unknown
+    notes: "pbkdf2_sha1 is a project helper (guide, project helpers), so the call is not an asset; the literal salt=b'saltysalt' is created here and reaches hashlib.pbkdf2_hmac's salt through the helper, so it is salt material where created."
+  - id: gt-0072
+    file: yt_dlp/cookies.py
+    lines: [506, 506]
+    asset_type: related-crypto-material
+    material_type: salt
+    origin: project
+    reachable: unknown
+    notes: "Same as line 457: literal salt b'saltysalt' passed through the pbkdf2_sha1 helper."
+  - id: gt-0073
+    file: yt_dlp/cookies.py
+    lines: [1041, 1041]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: PBKDF2
+    origin: project
+    reachable: unknown
+    notes: "hashlib.pbkdf2_hmac('sha1', ...): PBKDF2 (guide: no hash on a KDF). Inside the pbkdf2_sha1 helper, so the helper's call sites are not assets (guide, project helpers)."
+  - id: gt-0074
+    file: yt_dlp/cookies.py
+    lines: [1044, 1044]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: unknown
+    notes: "The default argument initialization_vector=b' ' * 16 on the def line is a literal that creates the IV passed to aes_cbc_decrypt_bytes on line 1046 (Chrome's fixed IV); the item was a def line but holds the creating expression."
+  - id: gt-0075
+    file: yt_dlp/cookies.py
+    lines: [1089, 1097]
+    asset_type: algorithm
+    primitive: other
+    algorithm: DPAPI
+    origin: project
+    reachable: unknown
+    notes: "Judgement call: Windows DPAPI CryptUnprotectData (crypt32) is a one-shot decrypt function of the OS crypto API. DPAPI does not name its cipher at the call, so the algorithm is written DPAPI with primitive other. Range covers the whole multi-line call. Adjudication: primitive other, as the first annotation had (the second had ae): CryptUnprotectData is the OS data-protection API, recorded as algorithm DPAPI, and the schema's primitive list has `other` for it (guide, OS data protection). DPAPI's cipher is not stated by the call."
+  - id: gt-0076
+    file: yt_dlp/dependencies/Cryptodome.py
+    lines: [36, 36]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    origin: project
+    reachable: unknown
+    notes: "AES.new(b'abcdefghijklmnop') creates an AES cipher with a literal key as a probe for legacy pycrypto (which defaults to ECB); it still creates a cipher object bound to AES. No mode stated."
+  - id: gt-0077
+    file: yt_dlp/downloader/bunnycdn.py
+    lines: [44, 44]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0078
+    file: yt_dlp/downloader/fragment.py
+    lines: [355, 355]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: unknown
+    notes: "Judgement call: when the playlist gives no IV, the program creates it as struct.pack('>8xq', media_sequence) (the HLS default IV) and passes it as the iv of aes_cbc_decrypt_bytes on line 363; a non-random creating expression of the IV."
+  - id: gt-0079
+    file: yt_dlp/extractor/abc.py
+    lines: [303, 305]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: hmac.new with a literal key and hashlib.sha256.
+  - id: gt-0080
+    file: yt_dlp/extractor/abematv.py
+    lines: [75, 78]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0081
+    file: yt_dlp/extractor/abematv.py
+    lines: [81, 81]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: ECB
+    origin: project
+    reachable: unknown
+    notes: "Reused from the files-scope truth: yt_dlp.aes.aes_ecb_decrypt, project AES; API fixes ECB."
+  - id: gt-0082
+    file: yt_dlp/extractor/abematv.py
+    lines: [105, 105]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0083
+    file: yt_dlp/extractor/adn.py
+    lines: [211, 211]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    origin: project
+    reachable: unknown
+    notes: "Judgement call: the program's own textbook RSA encryption pow(m, e, n) on a hard-coded public key, with no library call; annotated where it runs like a library one-shot. The message is padded by the project's pkcs1pad on the line before, but this call does not state a padding, so none is set. Adjudication: no padding, as the first annotation had (the second had PKCS1v15): pkcs1pad on the line before is a separate padding helper, and a padding applied by a separate helper is not a parameter of the operation (suite A pycryptodome aes-cbc, where pad(...) leaves the AES asset without padding)."
+  - id: gt-0084
+    file: yt_dlp/extractor/anvato.py
+    lines: [23, 23]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "hashlib.md5 inside the md5_text helper; the helper calls (lines 233, 241, 249) are not assets (guide, project helpers)."
+  - id: gt-0085
+    file: yt_dlp/extractor/anvato.py
+    lines: [235, 236]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    origin: project
+    reachable: unknown
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). aes_encrypt of one block with a hard-coded key."
+  - id: gt-0086
+    file: yt_dlp/extractor/aws.py
+    lines: [28, 28]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0087
+    file: yt_dlp/extractor/aws.py
+    lines: [52, 52]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "hmac.new inside the aws_hmac helper; its callers (aws_hmac_digest/hexdigest, lines 55-64) are not assets (guide, project helpers)."
+  - id: gt-0088
+    file: yt_dlp/extractor/bilibili.py
+    lines: [166, 166]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+  - id: gt-0089
+    file: yt_dlp/extractor/bilibili.py
+    lines: [2241, 2241]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "RSA.importKey parses a public key from PEM: a key parse, related-crypto-material with no material_type."
+  - id: gt-0090
+    file: yt_dlp/extractor/bilibili.py
+    lines: [2242, 2242]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: unknown
+    notes: "PKCS1_v1_5.new(public_key) creates an RSA PKCS#1 v1.5 cipher; .encrypt on the same line is a follow-up. No object: the key parse is related-crypto-material, a different asset type."
+  - id: gt-0091
+    file: yt_dlp/extractor/brilliantpala.py
+    lines: [83, 83]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0092
+    file: yt_dlp/extractor/cda.py
+    lines: [162, 166]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0093
+    file: yt_dlp/extractor/cda.py
+    lines: [165, 165]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "Reused from the files-scope truth: hashlib.md5 nested in the HMAC message."
+  - id: gt-0094
+    file: yt_dlp/extractor/dacast.py
+    lines: [123, 124]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0095
+    file: yt_dlp/extractor/dangalplay.py
+    lines: [122, 122]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "hashlib.md5 inside a dict value keyed md5 (pre-sort exception: a real call)."
+  - id: gt-0096
+    file: yt_dlp/extractor/douyutv.py
+    lines: [175, 176]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+  - id: gt-0097
+    file: yt_dlp/extractor/eggs.py
+    lines: [22, 22]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Reused from the files-scope truth: secrets.token_hex(8)."
+  - id: gt-0098
+    file: yt_dlp/extractor/fptplay.py
+    lines: [76, 76]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+  - id: gt-0099
+    file: yt_dlp/extractor/goplay.py
+    lines: [290, 290]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0100
+    file: yt_dlp/extractor/goplay.py
+    lines: [338, 338]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "HKDF-extract written by hand as HMAC-SHA256(salt, ikm): annotated as the HMAC call it is."
+  - id: gt-0101
+    file: yt_dlp/extractor/goplay.py
+    lines: [340, 340]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: HKDF-expand step written by hand as HMAC-SHA256.
+  - id: gt-0102
+    file: yt_dlp/extractor/goplay.py
+    lines: [393, 393]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "hashlib.sha256 inside the __hash_sha256 helper of the SRP code."
+  - id: gt-0103
+    file: yt_dlp/extractor/goplay.py
+    lines: [418, 418]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "os.urandom(nbytes) draws the SRP ephemeral secret; only the draw (no listed material type)."
+  - id: gt-0104
+    file: yt_dlp/extractor/hotstar.py
+    lines: [60, 60]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0105
+    file: yt_dlp/extractor/huya.py
+    lines: [95, 96]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "hashlib.md5 called on a str (would raise at runtime in Python 3), still a call that names MD5."
+  - id: gt-0106
+    file: yt_dlp/extractor/huya.py
+    lines: [138, 138]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: hashlib.md5 called on a str; still a call naming MD5.
+  - id: gt-0107
+    file: yt_dlp/extractor/instagram.py
+    lines: [594, 595]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0108
+    file: yt_dlp/extractor/iqiyi.py
+    lines: [31, 31]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "Inside the md5_text helper; helper call sites are not assets (guide, project helpers)."
+  - id: gt-0109
+    file: yt_dlp/extractor/ivi.py
+    lines: [108, 109]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: CMAC
+    origin: project
+    reachable: unknown
+    notes: "Cryptodome.CMAC.new(key, msg, Blowfish): a CMAC over the Blowfish block cipher; hexdigest is a follow-up. Algorithm written CMAC (cipher Blowfish noted here; no algo-table parameter for the block cipher of a CMAC). The two items are the two lines of one call."
+  - id: gt-0110
+    file: yt_dlp/extractor/iwara.py
+    lines: [156, 156]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+  - id: gt-0111
+    file: yt_dlp/extractor/jamendo.py
+    lines: [57, 57]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0112
+    file: yt_dlp/extractor/kankanews.py
+    lines: [37, 39]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "Outer hashlib.md5 of the hex digest of the inner one; the outer call spans lines 37-39."
+  - id: gt-0113
+    file: yt_dlp/extractor/kankanews.py
+    lines: [37, 39]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "Inner hashlib.md5 nested in the outer one, from line 37 to its closing parenthesis before .encode() on line 38; a separate call, so a separate asset. Adjudication: lines 37-39 from the second annotation: the inner md5's argument closes with ').encode())' on line 39, so its call ends there too."
+  - id: gt-0114
+    file: yt_dlp/extractor/musescore.py
+    lines: [48, 48]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+  - id: gt-0115
+    file: yt_dlp/extractor/naver.py
+    lines: [121, 122]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-1
+    origin: project
+    reachable: unknown
+    notes: "hmac.HMAC(key, msg, digestmod=hashlib.sha1) over two lines; one asset for both items."
+  - id: gt-0116
+    file: yt_dlp/extractor/neteasemusic.py
+    lines: [42, 42]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+  - id: gt-0117
+    file: yt_dlp/extractor/neteasemusic.py
+    lines: [46, 46]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: ECB
+      padding: PKCS7
+    origin: project
+    reachable: unknown
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). aes_ecb_encrypt with a literal 16-byte key; the key is not stated as a size, so no key_size. Adjudication: padding PKCS7 from the second annotation: aes_ecb_encrypt always pads each block with pkcs7_padding, so its API fixes PKCS#7."
+  - id: gt-0118
+    file: yt_dlp/extractor/nexx.py
+    lines: [412, 413]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+  - id: gt-0119
+    file: yt_dlp/extractor/playsuisse.py
+    lines: [171, 171]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "PKCE code challenge: SHA-256 of the code verifier. The verifier is built from uuid.uuid4 (an identifier library, guide, random draws), so it is not a draw."
+  - id: gt-0120
+    file: yt_dlp/extractor/scrippsnetworks.py
+    lines: [68, 68]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0121
+    file: yt_dlp/extractor/tarangplus.py
+    lines: [102, 102]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+    origin: project
+    reachable: unknown
+    notes: "Cryptodome.AES.new(key, MODE_CBC, iv); the decrypt on the next line is a follow-up. The zero IV on line 101 is not a pool item."
+  - id: gt-0122
+    file: yt_dlp/extractor/tencent.py
+    lines: [38, 42]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      mode: CBC
+    origin: project
+    reachable: unknown
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). aes_cbc_encrypt_bytes with a literal 16-byte key and IV and padding_mode='whitespace' (not a standard padding, so no padding). The literal IV on line 41 is not a pool item. Adjudication: lines 38-42: the call closes on line 42, before .hex(); the first annotation had stopped at 41. Adjudication: kept from the first annotation. aes_cbc_encrypt_bytes calls no library crypto: its body only calls the project's pure-Python aes_cbc_encrypt, so it is part of the project's own implementation and is annotated at its call site outside yt_dlp/aes.py (guide, project helpers); the call inside it, at aes.py 27, is a call between the implementation's building blocks and is not an asset. The second annotation had read it as a helper and annotated aes.py 27 instead. padding_mode='whitespace' names no standard padding, so no padding."
+  - id: gt-0123
+    file: yt_dlp/extractor/theplatform.py
+    lines: [221, 221]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-1
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0124
+    file: yt_dlp/extractor/tiktok.py
+    lines: [241, 241]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Judgement call: hashlib.sha256 is passed by reference into traverse_obj, which calls it on the decoded bytes; the hash object is created by this expression (lines 239-241) and later copied/updated. copy/update/digest in the loop are follow-ups. Adjudication: lines 241 from the second annotation: the program names hashlib.sha256 only in the path step on line 241; the enclosing traverse_obj call (239-241) is not the hash."
+  - id: gt-0125
+    file: yt_dlp/extractor/tube8.py
+    lines: [71, 72]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: CTR
+    origin: project
+    reachable: unknown
+    notes: "yt_dlp.aes is the project's own pure-Python AES (module treated as the project's crypto library); a call to its API from outside aes.py is annotated at the call site like a library one-shot (as the files-scope truth does for aes_ecb_decrypt and aes_encrypt). aes_decrypt_text(..., 32): AES-256 in CTR mode (fixed by its API), key_size from the literal 32 bytes."
+  - id: gt-0126
+    file: yt_dlp/extractor/twitcasting.py
+    lines: [177, 177]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+  - id: gt-0127
+    file: yt_dlp/extractor/vice.py
+    lines: [131, 131]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-512
+    origin: project
+    reachable: unknown
+    notes: "Reused from the files-scope truth: named sign by the API but an unkeyed SHA-512."
+  - id: gt-0128
+    file: yt_dlp/extractor/vk.py
+    lines: [65, 65]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "The salt in the f-string is received from the server challenge, not created, so no material."
+  - id: gt-0129
+    file: yt_dlp/extractor/weverse.py
+    lines: [211, 213]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-1
+    origin: project
+    reachable: unknown
+    notes: "hmac.HMAC(key, msg, digestmod=hashlib.sha1) over lines 211-213; one asset for both items."
+  - id: gt-0130
+    file: yt_dlp/extractor/wrestleuniverse.py
+    lines: [129, 129]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA
+    parameters:
+      key_size: 2048
+    origin: project
+    reachable: unknown
+    object: wrestleuniverse/private_key
+    notes: "RSA.generate(2048): key pair generation; the key is used for RSA-OAEP decryption on line 130/136, so primitive pke (guide, key generation primitive)."
+  - id: gt-0131
+    file: yt_dlp/extractor/wrestleuniverse.py
+    lines: [129, 129]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: "RSA.generate returns the private key: private-key material on the same lines (guide, Private key)."
+  - id: gt-0132
+    file: yt_dlp/extractor/wrestleuniverse.py
+    lines: [130, 130]
+    asset_type: algorithm
+    primitive: pke
+    algorithm: RSA-OAEP
+    origin: project
+    reachable: unknown
+    object: wrestleuniverse/private_key
+    notes: "PKCS1_OAEP.new(private_key, hashAlgo=SHA1) creates the RSA-OAEP cipher; RSA-OAEP takes no hash (guide). cipher.decrypt on line 136 is a follow-up. Same object as the key generation."
+  - id: gt-0133
+    file: yt_dlp/extractor/wrestleuniverse.py
+    lines: [140, 140]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "private_key.public_key().export_key('DER') serializes the public key: a key serialization, related-crypto-material with no material_type. Its own object (the private-key material carries a material_type and cannot share one)."
+  - id: gt-0134
+    file: yt_dlp/extractor/ximalaya.py
+    lines: [108, 109]
+    asset_type: algorithm
+    primitive: stream-cipher
+    algorithm: RC4
+    origin: project
+    reachable: unknown
+    notes: "VideaIE.rc4 (yt_dlp/extractor/videa.py) is the project's own pure-Python RC4 implementation with no library call, so its call site is an asset like a library one-shot (guide). The call spans lines 108-109."
+  - id: gt-0135
+    file: yt_dlp/extractor/yahoo.py
+    lines: [343, 343]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+  - id: gt-0136
+    file: yt_dlp/extractor/yandexmusic.py
+    lines: [123, 123]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+  - id: gt-0137
+    file: yt_dlp/extractor/youtube/_base.py
+    lines: [769, 769]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0138
+    file: yt_dlp/extractor/youtube/jsc/_builtin/ejs.py
+    lines: [69, 69]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA3-512
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0139
+    file: yt_dlp/extractor/youtube/pot/_director.py
+    lines: [151, 151]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Cache-key digest (guide, purpose).
+  - id: gt-0140
+    file: yt_dlp/extractor/zingmp3.py
+    lines: [61, 62]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+  - id: gt-0141
+    file: yt_dlp/extractor/zingmp3.py
+    lines: [66, 67]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-512
+    origin: project
+    reachable: unknown
+    notes: hmac.new(literal key, msg, hashlib.sha512).
+  - id: gt-0142
+    file: yt_dlp/networking/_helper.py
+    lines: [50, 50]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "Reused from the files-scope truth: load_verify_locations(cadata=cert)."
+  - id: gt-0143
+    file: yt_dlp/networking/_helper.py
+    lines: [110, 110]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0144
+    file: yt_dlp/networking/_helper.py
+    lines: [146, 148]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0145
+    file: yt_dlp/networking/_helper.py
+    lines: [146, 148]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0146
+    file: yt_dlp/networking/_websockets.py
+    lines: [159, 173]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "websockets.sync.client.connect(sock=sock, ..., ssl=ssl_ctx) opens a TLS session over the program's socket from the context it built: a protocol asset (guide, TLS sessions; TLS sessions). Adjudication: both annotations had rejected it as configuration; added under the pool ruling. The call spans lines 159-173."
+  - id: gt-0147
+    file: yt_dlp/postprocessor/sponsorblock.py
+    lines: [95, 95]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Reused from the files-scope truth.
+  - id: gt-0148
+    file: yt_dlp/update.py
+    lines: [200, 200]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: hashlib.file_digest(f, hashlib.sha256).
+  - id: gt-0149
+    file: yt_dlp/update.py
+    lines: [531, 531]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Checksum of the downloaded update.
+  - id: gt-0150
+    file: yt_dlp/utils/_deprecated.py
+    lines: [45, 45]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "hmac.new inside the deprecated jwt_encode_hs256 helper; the hash is named, HS256."
+  - id: gt-0151
+    file: yt_dlp/utils/_utils.py
+    lines: [4452, 4452]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "secrets.randbelow inside pkcs1pad draws the random padding bytes from the secrets module: a drbg draw. Padding bytes are not a listed material type."
+  - id: gt-0152
+    file: yt_dlp/utils/_utils.py
+    lines: [4800, 4800]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "hmac.new inside the jwt_encode helper (HS256); its callers are not assets (guide, project helpers)."
+  - id: gt-0153
+    file: yt_dlp/utils/_utils.py
+    lines: [5675, 5675]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: Dump-file name hash (guide, purpose).
+  - id: gt-0154
+    file: yt_dlp/utils/_utils.py
+    lines: [5679, 5679]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: Dump-file name hash (guide, purpose).

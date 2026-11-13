@@ -1,0 +1,905 @@
+item	file	start	end	verdict	detail
+1	apps/api/src/__tests__/nuq-fdb/core.test.ts	21	21	asset	gt-0001
+2	apps/api/src/__tests__/nuq-fdb/core.test.ts	64	64	asset	gt-0002
+3	apps/api/src/__tests__/nuq-fdb/core.test.ts	91	91	asset	gt-0003
+4	apps/api/src/__tests__/nuq-fdb/core.test.ts	114	114	asset	gt-0004
+5	apps/api/src/__tests__/nuq-fdb/core.test.ts	119	119	asset	gt-0005
+6	apps/api/src/__tests__/nuq-fdb/core.test.ts	128	128	asset	gt-0006
+7	apps/api/src/__tests__/nuq-fdb/core.test.ts	204	204	asset	gt-0007
+8	apps/api/src/__tests__/nuq-fdb/core.test.ts	211	211	asset	gt-0008
+9	apps/api/src/__tests__/nuq-fdb/core.test.ts	212	212	asset	gt-0009
+10	apps/api/src/__tests__/nuq-fdb/core.test.ts	245	245	asset	gt-0010
+11	apps/api/src/__tests__/nuq-fdb/core.test.ts	248	248	asset	gt-0011
+12	apps/api/src/__tests__/nuq-fdb/core.test.ts	264	264	asset	gt-0012
+13	apps/api/src/__tests__/nuq-fdb/core.test.ts	268	268	asset	gt-0013,gt-0014
+14	apps/api/src/__tests__/nuq-fdb/core.test.ts	277	277	asset	gt-0015
+15	apps/api/src/__tests__/nuq-fdb/core.test.ts	288	288	asset	gt-0016
+16	apps/api/src/__tests__/nuq-fdb/core.test.ts	291	291	asset	gt-0017
+17	apps/api/src/__tests__/nuq-fdb/core.test.ts	337	337	asset	gt-0018
+18	apps/api/src/__tests__/nuq-fdb/core.test.ts	340	340	asset	gt-0019
+19	apps/api/src/__tests__/nuq-fdb/core.test.ts	375	375	asset	gt-0020
+20	apps/api/src/__tests__/nuq-fdb/core.test.ts	378	378	asset	gt-0021,gt-0022
+21	apps/api/src/__tests__/nuq-fdb/core.test.ts	411	411	asset	gt-0023
+22	apps/api/src/__tests__/nuq-fdb/core.test.ts	443	443	asset	gt-0024
+23	apps/api/src/__tests__/nuq-fdb/core.test.ts	460	460	asset	gt-0025
+24	apps/api/src/__tests__/nuq-fdb/core.test.ts	462	462	asset	gt-0026
+25	apps/api/src/__tests__/nuq-fdb/core.test.ts	482	482	asset	gt-0027
+26	apps/api/src/__tests__/nuq-fdb/core.test.ts	485	485	asset	gt-0028
+27	apps/api/src/__tests__/nuq-fdb/core.test.ts	527	527	asset	gt-0029
+28	apps/api/src/__tests__/nuq-fdb/core.test.ts	565	565	asset	gt-0030
+29	apps/api/src/__tests__/nuq-fdb/core.test.ts	577	577	asset	gt-0031
+30	apps/api/src/__tests__/nuq-fdb/core.test.ts	584	584	asset	gt-0032
+31	apps/api/src/__tests__/nuq-fdb/core.test.ts	595	595	asset	gt-0033
+32	apps/api/src/__tests__/nuq-fdb/core.test.ts	610	610	asset	gt-0034
+33	apps/api/src/__tests__/nuq-fdb/core.test.ts	613	613	asset	gt-0035
+34	apps/api/src/__tests__/nuq-fdb/core.test.ts	639	639	asset	gt-0036
+35	apps/api/src/__tests__/nuq-fdb/core.test.ts	642	642	asset	gt-0037
+36	apps/api/src/__tests__/nuq-fdb/core.test.ts	682	682	asset	gt-0038
+37	apps/api/src/__tests__/nuq-fdb/core.test.ts	683	683	asset	gt-0039
+38	apps/api/src/__tests__/nuq-fdb/core.test.ts	703	703	asset	gt-0040
+39	apps/api/src/__tests__/nuq-fdb/core.test.ts	705	705	asset	gt-0041
+40	apps/api/src/__tests__/nuq-fdb/core.test.ts	715	715	asset	gt-0042
+41	apps/api/src/__tests__/nuq-fdb/core.test.ts	727	727	asset	gt-0043
+42	apps/api/src/__tests__/nuq-fdb/core.test.ts	729	729	asset	gt-0044
+43	apps/api/src/__tests__/nuq-fdb/core.test.ts	752	752	asset	gt-0045
+44	apps/api/src/__tests__/nuq-fdb/core.test.ts	754	754	asset	gt-0046
+45	apps/api/src/__tests__/nuq-fdb/core.test.ts	772	772	asset	gt-0047
+46	apps/api/src/__tests__/nuq-fdb/core.test.ts	773	773	asset	gt-0048
+47	apps/api/src/__tests__/nuq-fdb/core.test.ts	796	796	asset	gt-0049
+48	apps/api/src/__tests__/nuq-fdb/core.test.ts	810	810	asset	gt-0050
+49	apps/api/src/__tests__/nuq-fdb/core.test.ts	830	830	asset	gt-0051
+50	apps/api/src/__tests__/nuq-fdb/core.test.ts	833	833	asset	gt-0052
+51	apps/api/src/__tests__/nuq-fdb/key-gate.test.ts	18	18	asset	gt-0053
+52	apps/api/src/__tests__/nuq-fdb/key-gate.test.ts	58	58	asset	gt-0054
+53	apps/api/src/__tests__/nuq-fdb/key-gate.test.ts	84	84	asset	gt-0055
+54	apps/api/src/__tests__/nuq-fdb/key-gate.test.ts	109	109	asset	gt-0056
+55	apps/api/src/__tests__/nuq-fdb/key-gate.test.ts	148	148	asset	gt-0057
+56	apps/api/src/__tests__/nuq-fdb/key-gate.test.ts	149	149	asset	gt-0058
+57	apps/api/src/__tests__/nuq-fdb/key-gate.test.ts	186	186	asset	gt-0059
+58	apps/api/src/__tests__/nuq-fdb/key-gate.test.ts	196	196	asset	gt-0060
+59	apps/api/src/__tests__/nuq-fdb/key-gate.test.ts	224	224	asset	gt-0061
+60	apps/api/src/__tests__/nuq-fdb/key-gate.test.ts	225	225	asset	gt-0062
+61	apps/api/src/__tests__/nuq-fdb/key-gate.test.ts	265	265	asset	gt-0063
+62	apps/api/src/__tests__/nuq-fdb/key-gate.test.ts	300	300	asset	gt-0064
+63	apps/api/src/__tests__/nuq-fdb/key-gate.test.ts	302	302	asset	gt-0065
+64	apps/api/src/__tests__/nuq-fdb/key-gate.test.ts	331	331	asset	gt-0066
+65	apps/api/src/__tests__/nuq-fdb/key-gate.test.ts	332	332	asset	gt-0067
+66	apps/api/src/__tests__/nuq-fdb/router.test.ts	54	54	asset	gt-0068
+67	apps/api/src/__tests__/nuq-fdb/router.test.ts	55	55	asset	gt-0069
+68	apps/api/src/__tests__/nuq-fdb/router.test.ts	60	60	asset	gt-0070
+69	apps/api/src/__tests__/nuq-fdb/router.test.ts	66	66	asset	gt-0071
+70	apps/api/src/__tests__/nuq-fdb/router.test.ts	67	67	asset	gt-0072
+71	apps/api/src/__tests__/nuq-fdb/router.test.ts	121	121	asset	gt-0073
+72	apps/api/src/__tests__/nuq-fdb/router.test.ts	122	122	asset	gt-0074
+73	apps/api/src/__tests__/nuq-fdb/router.test.ts	164	164	asset	gt-0075
+74	apps/api/src/__tests__/nuq-fdb/router.test.ts	165	165	asset	gt-0076
+75	apps/api/src/__tests__/nuq-fdb/router.test.ts	172	172	asset	gt-0077
+76	apps/api/src/__tests__/nuq-fdb/router.test.ts	224	224	asset	gt-0078
+77	apps/api/src/__tests__/nuq-fdb/router.test.ts	225	225	asset	gt-0079
+78	apps/api/src/__tests__/nuq-fdb/router.test.ts	226	226	asset	gt-0080
+79	apps/api/src/__tests__/nuq-fdb/router.test.ts	271	271	asset	gt-0081
+80	apps/api/src/__tests__/nuq-fdb/router.test.ts	272	272	asset	gt-0082
+81	apps/api/src/__tests__/nuq-fdb/router.test.ts	273	273	asset	gt-0083
+82	apps/api/src/__tests__/nuq-fdb/router.test.ts	309	309	asset	gt-0084
+83	apps/api/src/__tests__/nuq-fdb/router.test.ts	310	310	asset	gt-0085
+84	apps/api/src/__tests__/nuq-fdb/stress.test.ts	11	11	asset	gt-0086
+85	apps/api/src/__tests__/nuq-fdb/stress.test.ts	32	32	asset	gt-0087
+86	apps/api/src/__tests__/nuq-fdb/stress.test.ts	40	40	asset	gt-0088
+87	apps/api/src/__tests__/nuq-fdb/stress.test.ts	104	104	asset	gt-0089
+88	apps/api/src/__tests__/nuq-fdb/stress.test.ts	105	105	asset	gt-0090
+89	apps/api/src/__tests__/nuq-fdb/stress.test.ts	118	118	asset	gt-0091
+90	apps/api/src/__tests__/nuq-postgres.test.ts	41	41	asset	gt-0092
+91	apps/api/src/__tests__/nuq-postgres.test.ts	46	46	asset	gt-0093
+92	apps/api/src/__tests__/nuq-postgres.test.ts	47	47	asset	gt-0094
+93	apps/api/src/__tests__/nuq-postgres.test.ts	79	79	asset	gt-0095
+94	apps/api/src/__tests__/nuq-postgres.test.ts	80	80	asset	gt-0096,gt-0097
+95	apps/api/src/__tests__/nuq-postgres.test.ts	81	81	asset	gt-0098,gt-0099
+96	apps/api/src/__tests__/routes/exchange-agent-managed-key.routes.test.ts	85	85	reject	String literal or object field ('digest', 'Digest' name); no crypto call.
+97	apps/api/src/__tests__/routes/exchange-connectors.routes.test.ts	231	231	reject	String literal or object field ('digest', 'Digest' name); no crypto call.
+98	apps/api/src/__tests__/routes/exchange-connectors.routes.test.ts	332	332	reject	String literal or object field ('digest', 'Digest' name); no crypto call.
+99	apps/api/src/__tests__/snips/index-cache.test.ts	28	28	asset	gt-0100
+100	apps/api/src/__tests__/snips/lib.ts	51	51	asset	gt-0101
+101	apps/api/src/__tests__/snips/v1/deprecation.test.ts	79	79	asset	gt-0102
+102	apps/api/src/__tests__/snips/v1/deprecation.test.ts	207	207	asset	gt-0103
+103	apps/api/src/__tests__/snips/v1/deprecation.test.ts	226	226	asset	gt-0104
+104	apps/api/src/__tests__/snips/v1/scrape.test.ts	32	32	asset	gt-0105
+105	apps/api/src/__tests__/snips/v1/scrape.test.ts	346	346	asset	gt-0106
+106	apps/api/src/__tests__/snips/v1/scrape.test.ts	862	862	asset	gt-0107
+107	apps/api/src/__tests__/snips/v1/scrape.test.ts	1119	1119	asset	gt-0108
+108	apps/api/src/__tests__/snips/v1/scrape.test.ts	1120	1120	asset	gt-0109
+109	apps/api/src/__tests__/snips/v1/zdr.test.ts	33	33	asset	gt-0110
+110	apps/api/src/__tests__/snips/v2/agent-thread.test.ts	175	175	asset	gt-0111
+111	apps/api/src/__tests__/snips/v2/agent-thread.test.ts	190	190	asset	gt-0112
+112	apps/api/src/__tests__/snips/v2/audio-routing.test.ts	75	75	reject	Engine name string 'tlsclient' in a test; no TLS context.
+113	apps/api/src/__tests__/snips/v2/audio-routing.test.ts	82	82	reject	Engine name string 'tlsclient' in a test; no TLS context.
+114	apps/api/src/__tests__/snips/v2/audio-routing.test.ts	99	99	reject	Engine name string 'tlsclient' in a test; no TLS context.
+115	apps/api/src/__tests__/snips/v2/audio-routing.test.ts	106	106	reject	Engine name string 'tlsclient' in a test; no TLS context.
+116	apps/api/src/__tests__/snips/v2/auth-denied.test.ts	11	11	asset	gt-0113
+117	apps/api/src/__tests__/snips/v2/browser-replay.test.ts	79	79	asset	gt-0114
+118	apps/api/src/__tests__/snips/v2/browser-replay.test.ts	153	153	asset	gt-0115
+119	apps/api/src/__tests__/snips/v2/browser-replay.test.ts	230	230	asset	gt-0116
+120	apps/api/src/__tests__/snips/v2/crawl.test.ts	359	359	asset	gt-0117
+121	apps/api/src/__tests__/snips/v2/exchange-provider-metadata.test.ts	201	201	asset	gt-0118
+122	apps/api/src/__tests__/snips/v2/index-cache-variants.test.ts	23	23	asset	gt-0119
+123	apps/api/src/__tests__/snips/v2/index-cache-variants.test.ts	54	54	asset	gt-0120
+124	apps/api/src/__tests__/snips/v2/keyless.test.ts	52	52	reject	Comment or call of the project helper decryptKeylessSignupToken; the library call inside the helper is the asset.
+125	apps/api/src/__tests__/snips/v2/keyless.test.ts	68	68	reject	Comment or call of the project helper decryptKeylessSignupToken; the library call inside the helper is the asset.
+126	apps/api/src/__tests__/snips/v2/monitor.test.ts	46	46	asset	gt-0121
+127	apps/api/src/__tests__/snips/v2/parse.test.ts	164	165	asset	gt-0122
+128	apps/api/src/__tests__/snips/v2/parse.test.ts	167	167	reject	Follow-up update/digest on a hash or HMAC object whose creating call is the asset; the value a digest computes is not an asset.
+129	apps/api/src/__tests__/snips/v2/parsers-maxpages-index-cache.test.ts	24	24	asset	gt-0123
+130	apps/api/src/__tests__/snips/v2/parsers-maxpages-index-cache.test.ts	46	46	asset	gt-0124
+131	apps/api/src/__tests__/snips/v2/parsers-maxpages-index-cache.test.ts	70	70	asset	gt-0125
+132	apps/api/src/__tests__/snips/v2/scrape-browser.test.ts	46	46	asset	gt-0126
+133	apps/api/src/__tests__/snips/v2/scrape-browser.test.ts	47	47	asset	gt-0127
+134	apps/api/src/__tests__/snips/v2/scrape-browser.test.ts	111	111	asset	gt-0128
+135	apps/api/src/__tests__/snips/v2/scrape-browser.test.ts	184	184	asset	gt-0129
+136	apps/api/src/__tests__/snips/v2/scrape-browser.test.ts	262	262	asset	gt-0130
+137	apps/api/src/__tests__/snips/v2/scrape-browser.test.ts	285	285	asset	gt-0131
+138	apps/api/src/__tests__/snips/v2/scrape-browser.test.ts	317	317	asset	gt-0132
+139	apps/api/src/__tests__/snips/v2/scrape-cache.test.ts	19	19	asset	gt-0133
+140	apps/api/src/__tests__/snips/v2/scrape-cache.test.ts	54	54	asset	gt-0134
+141	apps/api/src/__tests__/snips/v2/scrape-cache.test.ts	89	89	asset	gt-0135
+142	apps/api/src/__tests__/snips/v2/scrape-cache.test.ts	126	126	asset	gt-0136
+143	apps/api/src/__tests__/snips/v2/scrape-cache.test.ts	162	162	asset	gt-0137
+144	apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts	22	22	asset	gt-0138
+145	apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts	59	59	asset	gt-0139
+146	apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts	80	80	asset	gt-0140
+147	apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts	105	105	asset	gt-0141
+148	apps/api/src/__tests__/snips/v2/scrape-robots.test.ts	29	29	asset	gt-0142
+149	apps/api/src/__tests__/snips/v2/scrape-skip-tls.test.ts	60	60	reject	Type annotation of the https.Server variable; the server is created at 70-76.
+150	apps/api/src/__tests__/snips/v2/scrape-skip-tls.test.ts	65	65	reject	Test name, string, address read or guard around the TLS fixture; not a crypto call (the server is created at 70-76).
+151	apps/api/src/__tests__/snips/v2/scrape-skip-tls.test.ts	70	70	asset	gt-0143,gt-0144,gt-0145
+152	apps/api/src/__tests__/snips/v2/scrape-skip-tls.test.ts	74	74	asset	gt-0143,gt-0144,gt-0145
+153	apps/api/src/__tests__/snips/v2/scrape-skip-tls.test.ts	79	79	reject	listen/close on the https server created at 70-76; follow-ups on an existing TLS listener.
+154	apps/api/src/__tests__/snips/v2/scrape-skip-tls.test.ts	81	81	reject	Test name, string, address read or guard around the TLS fixture; not a crypto call (the server is created at 70-76).
+155	apps/api/src/__tests__/snips/v2/scrape-skip-tls.test.ts	83	83	reject	Test name, string, address read or guard around the TLS fixture; not a crypto call (the server is created at 70-76).
+156	apps/api/src/__tests__/snips/v2/scrape-skip-tls.test.ts	89	89	reject	Test name, string, address read or guard around the TLS fixture; not a crypto call (the server is created at 70-76).
+157	apps/api/src/__tests__/snips/v2/scrape-skip-tls.test.ts	93	93	reject	listen/close on the https server created at 70-76; follow-ups on an existing TLS listener.
+158	apps/api/src/__tests__/snips/v2/scrape-skip-tls.test.ts	98	98	reject	Test name, string, address read or guard around the TLS fixture; not a crypto call (the server is created at 70-76).
+159	apps/api/src/__tests__/snips/v2/scrape-skip-tls.test.ts	132	132	reject	Test name, string, address read or guard around the TLS fixture; not a crypto call (the server is created at 70-76).
+160	apps/api/src/__tests__/snips/v2/scrape-skip-tls.test.ts	142	142	reject	Test name, string, address read or guard around the TLS fixture; not a crypto call (the server is created at 70-76).
+161	apps/api/src/__tests__/snips/v2/scrape.test.ts	34	34	asset	gt-0146
+162	apps/api/src/__tests__/snips/v2/scrape.test.ts	64	64	asset	gt-0147
+163	apps/api/src/__tests__/snips/v2/scrape.test.ts	1356	1356	asset	gt-0148
+164	apps/api/src/__tests__/snips/v2/scrape.test.ts	1357	1357	asset	gt-0149
+165	apps/api/src/__tests__/snips/v2/team-siem-logging.test.ts	39	39	reject	Env var check or comment about the encryption key; no crypto call.
+166	apps/api/src/__tests__/snips/v2/threat-protection-zscaler.test.ts	24	24	reject	Env var check or comment about the encryption key; no crypto call.
+167	apps/api/src/__tests__/snips/v2/threat-protection-zscaler.test.ts	29	29	reject	Env var check or comment about the encryption key; no crypto call.
+168	apps/api/src/__tests__/snips/v2/threat-protection-zscaler.test.ts	37	37	reject	Env var check or comment about the encryption key; no crypto call.
+169	apps/api/src/__tests__/snips/v2/threat-protection-zscaler.test.ts	42	42	reject	Env var check or comment about the encryption key; no crypto call.
+170	apps/api/src/__tests__/snips/v2/threat-protection-zscaler.test.ts	160	160	reject	Env var check or comment about the encryption key; no crypto call.
+171	apps/api/src/__tests__/snips/v2/zdr.test.ts	44	44	asset	gt-0150
+172	apps/api/src/__tests__/snips/v2/zdr.test.ts	80	80	asset	gt-0151
+173	apps/api/src/config.ts	159	159	reject	Config schema key, schema column or comment; no crypto call.
+174	apps/api/src/config.ts	162	162	reject	Config schema key, schema column or comment; no crypto call.
+175	apps/api/src/config.ts	163	163	reject	Config schema key, schema column or comment; no crypto call.
+176	apps/api/src/config.ts	164	164	reject	Config schema key, schema column or comment; no crypto call.
+177	apps/api/src/config.ts	165	165	reject	Config schema key, schema column or comment; no crypto call.
+178	apps/api/src/config.ts	250	250	reject	Config schema key, schema column or comment; no crypto call.
+179	apps/api/src/config.ts	251	251	reject	Config schema key, schema column or comment; no crypto call.
+180	apps/api/src/config.ts	253	253	reject	Config schema key, schema column or comment; no crypto call.
+181	apps/api/src/config.ts	658	658	reject	Config schema key, schema column or comment; no crypto call.
+182	apps/api/src/config.ts	679	679	reject	Config schema key, schema column or comment; no crypto call.
+183	apps/api/src/config.ts	682	682	reject	Config key, env var, schema column or variable holding a secret or ciphertext; no crypto call.
+184	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	95	95	reject	Type alias or variable declaration of a key pair or JWK; no crypto call.
+185	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	96	96	reject	Type alias or variable declaration of a key pair or JWK; no crypto call.
+186	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	97	97	reject	Type alias or variable declaration of a key pair or JWK; no crypto call.
+187	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	100	100	asset	gt-0152,gt-0153
+188	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	101	101	asset	gt-0154
+189	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	104	104	reject	Declaration of the project test helper sign(); the SignJWT chain inside it is the asset.
+190	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	111	111	reject	Type alias or variable declaration of a key pair or JWK; no crypto call.
+191	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	116	119	asset	gt-0155
+192	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	130	130	asset	gt-0155
+193	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	179	179	reject	Builds a JWKS HTTP response from already-exported JWKs; no crypto call.
+194	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	200	200	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+195	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	249	249	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+196	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	273	273	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+197	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	289	289	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+198	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	300	300	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+199	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	319	319	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+200	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	344	344	asset	gt-0156,gt-0157
+201	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	345	349	asset	gt-0158
+202	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	350	350	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+203	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	353	353	reject	Passes or stores a private key generated elsewhere; the key generation is the asset.
+204	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	367	367	reject	Builds a JWKS HTTP response from already-exported JWKs; no crypto call.
+205	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	384	384	asset	gt-0159,gt-0160
+206	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	386	386	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+207	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	399	399	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+208	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	413	413	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+209	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	426	426	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+210	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	443	443	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+211	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	456	456	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+212	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	477	477	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+213	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	500	500	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+214	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	529	529	reject	looksLikeJwt helper (format check, no crypto) or test name about JWTs.
+215	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	533	533	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+216	apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts	547	547	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+217	apps/api/src/controllers/__tests__/auth.test.ts	127	127	reject	Config key KEYLESS_CONVERSION_HMAC_SECRET read, set or tested; no crypto call.
+218	apps/api/src/controllers/__tests__/auth.test.ts	128	128	reject	Config key KEYLESS_CONVERSION_HMAC_SECRET read, set or tested; no crypto call.
+219	apps/api/src/controllers/__tests__/auth.test.ts	155	155	reject	Config key KEYLESS_CONVERSION_HMAC_SECRET read, set or tested; no crypto call.
+220	apps/api/src/controllers/__tests__/auth.test.ts	183	183	asset	gt-0161
+221	apps/api/src/controllers/__tests__/auth.test.ts	185	185	reject	Follow-up digest on an HMAC or hash created on the lines above.
+222	apps/api/src/controllers/__tests__/auth.test.ts	213	213	reject	Config key KEYLESS_CONVERSION_HMAC_SECRET read, set or tested; no crypto call.
+223	apps/api/src/controllers/__tests__/auth.test.ts	256	256	reject	Comment or call of the project helper decryptKeylessSignupToken; the library call inside the helper is the asset.
+224	apps/api/src/controllers/auth.ts	60	60	reject	looksLikeJwt helper (format check, no crypto) or test name about JWTs.
+225	apps/api/src/controllers/auth.ts	1092	1092	reject	looksLikeJwt helper (format check, no crypto) or test name about JWTs.
+226	apps/api/src/controllers/v2/__tests__/agent-status.test.ts	504	504	reject	Field or type named digest, or a comment about it; no hash computation.
+227	apps/api/src/controllers/v2/__tests__/agent-status.test.ts	517	517	reject	Field or type named digest, or a comment about it; no hash computation.
+228	apps/api/src/controllers/v2/__tests__/agent-status.test.ts	535	535	reject	Field or type named digest, or a comment about it; no hash computation.
+229	apps/api/src/controllers/v2/feedback/alexandria.integration.test.ts	75	75	asset	gt-0162
+230	apps/api/src/controllers/v2/feedback/alexandria.integration.test.ts	76	76	asset	gt-0163
+231	apps/api/src/controllers/v2/feedback/record.integration.test.ts	66	66	asset	gt-0164
+232	apps/api/src/controllers/v2/feedback/record.integration.test.ts	67	67	asset	gt-0165
+233	apps/api/src/controllers/v2/feedback/record.integration.test.ts	75	75	asset	gt-0166
+234	apps/api/src/controllers/v2/feedback/record.integration.test.ts	77	77	asset	gt-0167
+235	apps/api/src/controllers/v2/parse-upload.ts	103	104	asset	gt-0168
+236	apps/api/src/controllers/v2/parse-upload.ts	106	106	reject	Follow-up digest on an HMAC or hash created on the lines above.
+237	apps/api/src/controllers/v2/parse-upload.ts	124	125	asset	gt-0169
+238	apps/api/src/controllers/v2/parse-upload.ts	127	127	reject	Follow-up digest on an HMAC or hash created on the lines above.
+239	apps/api/src/controllers/v2/parse-upload.ts	133	133	reject	crypto.timingSafeEqual: constant-time comparison, not an asset (guide).
+240	apps/api/src/controllers/v2/scrape-alexandria.ts	119	119	asset	gt-0170
+241	apps/api/src/controllers/v2/slack.ts	173	173	reject	Call of the project helper decryptSlackToken or a log about it; the library decipher inside the helper is the asset.
+242	apps/api/src/controllers/v2/slack.ts	175	175	reject	Call of the project helper decryptSlackToken or a log about it; the library decipher inside the helper is the asset.
+243	apps/api/src/controllers/v2/slack.ts	217	217	reject	Slack ssl_check request field; no TLS context.
+244	apps/api/src/controllers/v2/slack.ts	218	218	reject	Slack ssl_check request field; no TLS context.
+245	apps/api/src/controllers/v2/team-siem-logging.ts	131	131	asset	gt-0171
+246	apps/api/src/controllers/v2/types.ts	1754	1754	reject	Field or type named digest, or a comment about it; no hash computation.
+247	apps/api/src/controllers/v2/types.ts	1755	1755	reject	Field or type named digest, or a comment about it; no hash computation.
+248	apps/api/src/controllers/v2/types.ts	1757	1757	reject	Field or type named digest, or a comment about it; no hash computation.
+249	apps/api/src/controllers/v2/types.ts	1827	1827	reject	Field or type named digest, or a comment about it; no hash computation.
+250	apps/api/src/controllers/v2/types.ts	1828	1828	reject	Field or type named digest, or a comment about it; no hash computation.
+251	apps/api/src/controllers/v2/types.ts	1841	1841	reject	Field or type named digest, or a comment about it; no hash computation.
+252	apps/api/src/controllers/v2/types.ts	1842	1842	reject	Field or type named digest, or a comment about it; no hash computation.
+253	apps/api/src/db/pool-profiles.ts	8	8	reject	Comment.
+254	apps/api/src/db/schema/public.ts	681	681	reject	Config schema key, schema column or comment; no crypto call.
+255	apps/api/src/db/schema/public.ts	707	707	reject	Config schema key, schema column or comment; no crypto call.
+256	apps/api/src/index.ts	64	64	reject	Config key KEYLESS_CONVERSION_HMAC_SECRET read, set or tested; no crypto call.
+257	apps/api/src/index.ts	66	66	reject	Config key KEYLESS_CONVERSION_HMAC_SECRET read, set or tested; no crypto call.
+258	apps/api/src/lib/__tests__/keyless-world-id-limits.test.ts	94	94	reject	Config key KEYLESS_CONVERSION_HMAC_SECRET read, set or tested; no crypto call.
+259	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	5	5	reject	looksLikeJwt helper (format check, no crypto) or test name about JWTs.
+260	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	16	16	reject	Type alias or variable declaration of a key pair or JWK; no crypto call.
+261	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	17	17	reject	Type alias or variable declaration of a key pair or JWK; no crypto call.
+262	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	18	18	reject	Type alias or variable declaration of a key pair or JWK; no crypto call.
+263	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	19	19	reject	Type alias or variable declaration of a key pair or JWK; no crypto call.
+264	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	20	20	reject	Type alias or variable declaration of a key pair or JWK; no crypto call.
+265	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	23	23	asset	gt-0172,gt-0173
+266	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	24	24	asset	gt-0174,gt-0175
+267	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	25	29	asset	gt-0176
+268	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	30	30	asset	gt-0177
+269	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	33	33	reject	Builds a JWKS HTTP response from already-exported JWKs; no crypto call.
+270	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	43	43	reject	Declaration of the project test helper sign(); the SignJWT chain inside it is the asset.
+271	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	49	49	reject	Type alias or variable declaration of a key pair or JWK; no crypto call.
+272	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	55	59	asset	gt-0178
+273	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	70	70	asset	gt-0178
+274	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	85	85	reject	looksLikeJwt helper (format check, no crypto) or test name about JWTs.
+275	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	87	87	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+276	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	91	91	reject	looksLikeJwt helper (format check, no crypto) or test name about JWTs.
+277	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	92	92	reject	looksLikeJwt helper (format check, no crypto) or test name about JWTs.
+278	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	93	93	reject	looksLikeJwt helper (format check, no crypto) or test name about JWTs.
+279	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	94	94	reject	looksLikeJwt helper (format check, no crypto) or test name about JWTs.
+280	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	100	100	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+281	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	115	115	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+282	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	120	120	asset	gt-0179,gt-0180
+283	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	121	121	asset	gt-0181
+284	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	123	123	reject	Builds a JWKS HTTP response from already-exported JWKs; no crypto call.
+285	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	126	126	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+286	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	132	132	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+287	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	136	136	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+288	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	141	141	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+289	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	149	149	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+290	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	153	153	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+291	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	158	158	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+292	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	167	167	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+293	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	184	184	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+294	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	213	213	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+295	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	217	217	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+296	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	240	240	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+297	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	247	247	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+298	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	266	266	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+299	apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts	304	304	reject	Call of the project test helper sign() (its SignJWT chain is the asset) or of verifyVercelOidcToken (its jwtVerify is the asset); not an asset at the call site.
+300	apps/api/src/lib/__tests__/world-id.test.ts	27	27	reject	Type alias or variable declaration of a key pair or JWK; no crypto call.
+301	apps/api/src/lib/__tests__/world-id.test.ts	28	28	reject	Type alias or variable declaration of a key pair or JWK; no crypto call.
+302	apps/api/src/lib/__tests__/world-id.test.ts	31	31	asset	gt-0182,gt-0183
+303	apps/api/src/lib/__tests__/world-id.test.ts	32	32	reject	Passes or stores a private key generated elsewhere; the key generation is the asset.
+304	apps/api/src/lib/__tests__/world-id.test.ts	33	33	asset	gt-0184
+305	apps/api/src/lib/__tests__/world-id.test.ts	51	51	asset	gt-0185
+306	apps/api/src/lib/__tests__/world-id.test.ts	52	52	asset	gt-0185
+307	apps/api/src/lib/__tests__/world-id.test.ts	58	58	asset	gt-0185
+308	apps/api/src/lib/__tests__/world-id.test.ts	120	120	asset	gt-0186
+309	apps/api/src/lib/__tests__/world-id.test.ts	122	122	reject	Follow-up digest on an HMAC or hash created on the lines above.
+310	apps/api/src/lib/admin-auth.ts	23	23	reject	crypto.timingSafeEqual: constant-time comparison, not an asset (guide).
+311	apps/api/src/lib/alexandria-feedback-token.test.ts	89	89	asset	gt-0187
+312	apps/api/src/lib/alexandria-feedback-token.test.ts	91	91	reject	Follow-up digest on an HMAC or hash created on the lines above.
+313	apps/api/src/lib/alexandria-feedback-token.test.ts	95	95	asset	gt-0188
+314	apps/api/src/lib/alexandria-feedback-token.test.ts	97	97	reject	Follow-up digest on an HMAC or hash created on the lines above.
+315	apps/api/src/lib/alexandria-feedback-token.ts	22	22	asset	gt-0189
+316	apps/api/src/lib/alexandria-feedback-token.ts	24	24	reject	Follow-up digest on an HMAC or hash created on the lines above.
+317	apps/api/src/lib/alexandria-feedback-token.ts	29	29	asset	gt-0190
+318	apps/api/src/lib/alexandria-feedback-token.ts	31	31	reject	Follow-up digest on an HMAC or hash created on the lines above.
+319	apps/api/src/lib/alexandria-feedback-token.ts	54	54	reject	Call of the file's project helper sign(); the createHmac inside it (line 29) is the asset.
+320	apps/api/src/lib/alexandria-feedback-token.ts	82	82	reject	Call of the file's project helper sign(); the createHmac inside it (line 29) is the asset.
+321	apps/api/src/lib/bigtable-row-key.ts	21	22	asset	gt-0191
+322	apps/api/src/lib/bigtable-row-key.ts	24	24	reject	Follow-up digest on an HMAC or hash created on the lines above.
+323	apps/api/src/lib/browser-sessions.ts	289	289	asset	gt-0192
+324	apps/api/src/lib/browser-sessions.ts	291	291	reject	Follow-up digest on an HMAC or hash created on the lines above.
+325	apps/api/src/lib/change-tracking-store.ts	23	23	reject	Comment, declaration or call site of the project sha256() helper; the createHash inside it (line 38) is the asset.
+326	apps/api/src/lib/change-tracking-store.ts	37	37	reject	Comment, declaration or call site of the project sha256() helper; the createHash inside it (line 38) is the asset.
+327	apps/api/src/lib/change-tracking-store.ts	38	38	asset	gt-0193
+328	apps/api/src/lib/change-tracking-store.ts	43	43	reject	Comment, declaration or call site of the project sha256() helper; the createHash inside it (line 38) is the asset.
+329	apps/api/src/lib/change-tracking-store.ts	45	45	reject	Comment, declaration or call site of the project sha256() helper; the createHash inside it (line 38) is the asset.
+330	apps/api/src/lib/change-tracking-store.ts	53	53	reject	Comment, declaration or call site of the project sha256() helper; the createHash inside it (line 38) is the asset.
+331	apps/api/src/lib/change-tracking-store.ts	57	57	reject	Comment, declaration or call site of the project sha256() helper; the createHash inside it (line 38) is the asset.
+332	apps/api/src/lib/deterministicJson/core/util.ts	12	12	asset	gt-0194
+333	apps/api/src/lib/engpicker.ts	235	235	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+334	apps/api/src/lib/engpicker.ts	237	237	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+335	apps/api/src/lib/engpicker.ts	241	241	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+336	apps/api/src/lib/engpicker.ts	246	246	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+337	apps/api/src/lib/engpicker.ts	248	248	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+338	apps/api/src/lib/engpicker.ts	252	252	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+339	apps/api/src/lib/engpicker.ts	268	268	reject	Variables/fields about the fire-engine tlsclient engine result; no TLS context.
+340	apps/api/src/lib/engpicker.ts	269	269	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+341	apps/api/src/lib/engpicker.ts	271	271	reject	Variables/fields about the fire-engine tlsclient engine result; no TLS context.
+342	apps/api/src/lib/engpicker.ts	272	272	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+343	apps/api/src/lib/engpicker.ts	281	281	reject	Variables/fields about the fire-engine tlsclient engine result; no TLS context.
+344	apps/api/src/lib/engpicker.ts	282	282	reject	Variables/fields about the fire-engine tlsclient engine result; no TLS context.
+345	apps/api/src/lib/engpicker.ts	283	283	reject	Variables/fields about the fire-engine tlsclient engine result; no TLS context.
+346	apps/api/src/lib/engpicker.ts	284	284	reject	Variables/fields about the fire-engine tlsclient engine result; no TLS context.
+347	apps/api/src/lib/engpicker.ts	289	289	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+348	apps/api/src/lib/engpicker.ts	290	290	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+349	apps/api/src/lib/engpicker.ts	299	299	reject	Comment.
+350	apps/api/src/lib/error-serde.ts	31	31	reject	SSLError error class or reference; no TLS context or session.
+351	apps/api/src/lib/error-serde.ts	68	68	reject	SSLError error class or reference; no TLS context or session.
+352	apps/api/src/lib/exchange.test.ts	739	739	reject	Property, field, schema or literal named digest/sha256 (a value or identifier), not a hash computation.
+353	apps/api/src/lib/exchange.test.ts	766	766	reject	Property, field, schema or literal named digest/sha256 (a value or identifier), not a hash computation.
+354	apps/api/src/lib/exchange.test.ts	813	813	reject	Property, field, schema or literal named digest/sha256 (a value or identifier), not a hash computation.
+355	apps/api/src/lib/exchange.test.ts	835	835	reject	Property, field, schema or literal named digest/sha256 (a value or identifier), not a hash computation.
+356	apps/api/src/lib/exchange.test.ts	850	850	reject	Property, field, schema or literal named digest/sha256 (a value or identifier), not a hash computation.
+357	apps/api/src/lib/exchange.test.ts	874	874	reject	Property, field, schema or literal named digest/sha256 (a value or identifier), not a hash computation.
+358	apps/api/src/lib/exchange.test.ts	888	888	reject	Property, field, schema or literal named digest/sha256 (a value or identifier), not a hash computation.
+359	apps/api/src/lib/exchange.test.ts	906	906	reject	Property, field, schema or literal named digest/sha256 (a value or identifier), not a hash computation.
+360	apps/api/src/lib/exchange.test.ts	927	927	reject	Property, field, schema or literal named digest/sha256 (a value or identifier), not a hash computation.
+361	apps/api/src/lib/exchange.test.ts	940	940	reject	Property, field, schema or literal named digest/sha256 (a value or identifier), not a hash computation.
+362	apps/api/src/lib/exchange.test.ts	972	972	reject	Property, field, schema or literal named digest/sha256 (a value or identifier), not a hash computation.
+363	apps/api/src/lib/exchange.test.ts	989	989	reject	Property, field, schema or literal named digest/sha256 (a value or identifier), not a hash computation.
+364	apps/api/src/lib/fire-privacy-client.ts	119	119	reject	Category string 'CRYPTO'; no crypto call.
+365	apps/api/src/lib/gcs-jobs.ts	47	47	reject	Comment.
+366	apps/api/src/lib/gcs-jobs.ts	63	63	asset	gt-0195
+367	apps/api/src/lib/gcs-pdf-cache.ts	38	38	asset	gt-0196
+368	apps/api/src/lib/gcs-pdf-cache.ts	41	41	reject	Comment.
+369	apps/api/src/lib/gcs-pdf-cache.ts	44	44	reject	Comment.
+370	apps/api/src/lib/gcs-pdf-cache.ts	48	48	reject	Comment.
+371	apps/api/src/lib/gcs-pdf-cache.ts	49	49	reject	Comment.
+372	apps/api/src/lib/html-to-markdown.ts	20	20	asset	gt-0197
+373	apps/api/src/lib/keyless-signup-link.test.ts	7	7	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+374	apps/api/src/lib/keyless-signup-link.test.ts	8	8	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+375	apps/api/src/lib/keyless-signup-link.test.ts	9	9	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+376	apps/api/src/lib/keyless-signup-link.test.ts	10	10	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+377	apps/api/src/lib/keyless-signup-link.test.ts	30	30	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+378	apps/api/src/lib/keyless-signup-link.test.ts	46	46	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+379	apps/api/src/lib/keyless-signup-link.test.ts	49	49	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+380	apps/api/src/lib/keyless-signup-link.test.ts	50	50	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+381	apps/api/src/lib/keyless-signup-link.test.ts	52	52	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+382	apps/api/src/lib/keyless-signup-link.test.ts	59	59	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+383	apps/api/src/lib/keyless-signup-link.test.ts	62	62	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+384	apps/api/src/lib/keyless-signup-link.test.ts	83	83	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+385	apps/api/src/lib/keyless-signup-link.test.ts	85	85	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+386	apps/api/src/lib/keyless-signup-link.test.ts	95	95	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+387	apps/api/src/lib/keyless-signup-link.test.ts	108	108	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+388	apps/api/src/lib/keyless-signup-link.test.ts	111	111	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+389	apps/api/src/lib/keyless-signup-link.test.ts	112	112	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+390	apps/api/src/lib/keyless-signup-link.test.ts	113	113	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+391	apps/api/src/lib/keyless-signup-link.test.ts	114	114	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+392	apps/api/src/lib/keyless-signup-link.test.ts	118	118	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+393	apps/api/src/lib/keyless-signup-link.test.ts	123	123	reject	Comment.
+394	apps/api/src/lib/keyless-signup-link.test.ts	130	130	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+395	apps/api/src/lib/keyless-signup-link.test.ts	136	136	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+396	apps/api/src/lib/keyless-signup-link.test.ts	147	147	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+397	apps/api/src/lib/keyless-signup-link.test.ts	169	169	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+398	apps/api/src/lib/keyless-signup-link.test.ts	173	173	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+399	apps/api/src/lib/keyless-signup-link.test.ts	176	176	reject	Test name, import or call of the project FF1/token helpers (ff1Encrypt, ff1Decrypt, encrypt/decryptKeylessSignupToken); the library AES calls inside the helper file are the assets.
+400	apps/api/src/lib/keyless-signup-link.ts	9	9	reject	Comment.
+401	apps/api/src/lib/keyless-signup-link.ts	10	10	reject	Comment.
+402	apps/api/src/lib/keyless-signup-link.ts	20	20	reject	Comment.
+403	apps/api/src/lib/keyless-signup-link.ts	23	23	reject	Comment.
+404	apps/api/src/lib/keyless-signup-link.ts	27	27	reject	Comment.
+405	apps/api/src/lib/keyless-signup-link.ts	28	28	reject	Comment.
+406	apps/api/src/lib/keyless-signup-link.ts	69	69	reject	Comment.
+407	apps/api/src/lib/keyless-signup-link.ts	72	72	reject	Declaration of the project helper aesBlock; the createCipheriv on line 73 is the asset.
+408	apps/api/src/lib/keyless-signup-link.ts	73	73	asset	gt-0198
+409	apps/api/src/lib/keyless-signup-link.ts	74	74	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+410	apps/api/src/lib/keyless-signup-link.ts	75	75	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+411	apps/api/src/lib/keyless-signup-link.ts	78	78	reject	Comment.
+412	apps/api/src/lib/keyless-signup-link.ts	80	80	asset	gt-0199,gt-0200
+413	apps/api/src/lib/keyless-signup-link.ts	81	81	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+414	apps/api/src/lib/keyless-signup-link.ts	82	82	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+415	apps/api/src/lib/keyless-signup-link.ts	117	117	reject	Parameter, flag, key-length check, round logic, declaration or call of the project FF1 helpers (aesBlock, ff1, ff1Encrypt/Decrypt, encrypt/decryptKeylessSignupToken) or a log; the createCipheriv calls on 73 and 80 are the assets.
+416	apps/api/src/lib/keyless-signup-link.ts	120	120	reject	Parameter, flag, key-length check, round logic, declaration or call of the project FF1 helpers (aesBlock, ff1, ff1Encrypt/Decrypt, encrypt/decryptKeylessSignupToken) or a log; the createCipheriv calls on 73 and 80 are the assets.
+417	apps/api/src/lib/keyless-signup-link.ts	144	144	reject	Parameter, flag, key-length check, round logic, declaration or call of the project FF1 helpers (aesBlock, ff1, ff1Encrypt/Decrypt, encrypt/decryptKeylessSignupToken) or a log; the createCipheriv calls on 73 and 80 are the assets.
+418	apps/api/src/lib/keyless-signup-link.ts	149	149	reject	Parameter, flag, key-length check, round logic, declaration or call of the project FF1 helpers (aesBlock, ff1, ff1Encrypt/Decrypt, encrypt/decryptKeylessSignupToken) or a log; the createCipheriv calls on 73 and 80 are the assets.
+419	apps/api/src/lib/keyless-signup-link.ts	155	155	reject	Parameter, flag, key-length check, round logic, declaration or call of the project FF1 helpers (aesBlock, ff1, ff1Encrypt/Decrypt, encrypt/decryptKeylessSignupToken) or a log; the createCipheriv calls on 73 and 80 are the assets.
+420	apps/api/src/lib/keyless-signup-link.ts	162	162	reject	Parameter, flag, key-length check, round logic, declaration or call of the project FF1 helpers (aesBlock, ff1, ff1Encrypt/Decrypt, encrypt/decryptKeylessSignupToken) or a log; the createCipheriv calls on 73 and 80 are the assets.
+421	apps/api/src/lib/keyless-signup-link.ts	176	176	reject	Parameter, flag, key-length check, round logic, declaration or call of the project FF1 helpers (aesBlock, ff1, ff1Encrypt/Decrypt, encrypt/decryptKeylessSignupToken) or a log; the createCipheriv calls on 73 and 80 are the assets.
+422	apps/api/src/lib/keyless-signup-link.ts	185	185	reject	Parameter, flag, key-length check, round logic, declaration or call of the project FF1 helpers (aesBlock, ff1, ff1Encrypt/Decrypt, encrypt/decryptKeylessSignupToken) or a log; the createCipheriv calls on 73 and 80 are the assets.
+423	apps/api/src/lib/keyless-signup-link.ts	221	221	reject	Parameter, flag, key-length check, round logic, declaration or call of the project FF1 helpers (aesBlock, ff1, ff1Encrypt/Decrypt, encrypt/decryptKeylessSignupToken) or a log; the createCipheriv calls on 73 and 80 are the assets.
+424	apps/api/src/lib/keyless-signup-link.ts	237	237	reject	Parameter, flag, key-length check, round logic, declaration or call of the project FF1 helpers (aesBlock, ff1, ff1Encrypt/Decrypt, encrypt/decryptKeylessSignupToken) or a log; the createCipheriv calls on 73 and 80 are the assets.
+425	apps/api/src/lib/keyless-signup-link.ts	251	251	reject	Parameter, flag, key-length check, round logic, declaration or call of the project FF1 helpers (aesBlock, ff1, ff1Encrypt/Decrypt, encrypt/decryptKeylessSignupToken) or a log; the createCipheriv calls on 73 and 80 are the assets.
+426	apps/api/src/lib/keyless-signup-link.ts	259	259	reject	Parameter, flag, key-length check, round logic, declaration or call of the project FF1 helpers (aesBlock, ff1, ff1Encrypt/Decrypt, encrypt/decryptKeylessSignupToken) or a log; the createCipheriv calls on 73 and 80 are the assets.
+427	apps/api/src/lib/keyless-signup-link.ts	287	287	reject	Parameter, flag, key-length check, round logic, declaration or call of the project FF1 helpers (aesBlock, ff1, ff1Encrypt/Decrypt, encrypt/decryptKeylessSignupToken) or a log; the createCipheriv calls on 73 and 80 are the assets.
+428	apps/api/src/lib/keyless-signup-link.ts	293	293	reject	Parameter, flag, key-length check, round logic, declaration or call of the project FF1 helpers (aesBlock, ff1, ff1Encrypt/Decrypt, encrypt/decryptKeylessSignupToken) or a log; the createCipheriv calls on 73 and 80 are the assets.
+429	apps/api/src/lib/keyless.conversion.test.ts	17	17	reject	Config key KEYLESS_CONVERSION_HMAC_SECRET read, set or tested; no crypto call.
+430	apps/api/src/lib/keyless.conversion.test.ts	20	20	reject	Config key KEYLESS_CONVERSION_HMAC_SECRET read, set or tested; no crypto call.
+431	apps/api/src/lib/keyless.conversion.test.ts	24	24	reject	Config key KEYLESS_CONVERSION_HMAC_SECRET read, set or tested; no crypto call.
+432	apps/api/src/lib/keyless.conversion.test.ts	25	25	reject	Config key KEYLESS_CONVERSION_HMAC_SECRET read, set or tested; no crypto call.
+433	apps/api/src/lib/keyless.conversion.test.ts	43	43	reject	Config key KEYLESS_CONVERSION_HMAC_SECRET read, set or tested; no crypto call.
+434	apps/api/src/lib/keyless.conversion.test.ts	50	50	reject	Config key KEYLESS_CONVERSION_HMAC_SECRET read, set or tested; no crypto call.
+435	apps/api/src/lib/keyless.conversion.test.ts	57	57	reject	Config key KEYLESS_CONVERSION_HMAC_SECRET read, set or tested; no crypto call.
+436	apps/api/src/lib/keyless.signup-prompt.test.ts	60	60	reject	Comment or call of the project helper decryptKeylessSignupToken; the library call inside the helper is the asset.
+437	apps/api/src/lib/keyless.ts	39	39	reject	Comment.
+438	apps/api/src/lib/keyless.ts	111	111	reject	Config key KEYLESS_CONVERSION_HMAC_SECRET read, set or tested; no crypto call.
+439	apps/api/src/lib/keyless.ts	114	114	asset	gt-0201
+440	apps/api/src/lib/keyless.ts	116	116	reject	Follow-up update/digest on a hash or HMAC object whose creating call is the asset; the value a digest computes is not an asset.
+441	apps/api/src/lib/mcp-delegated-credential.ts	76	76	asset	gt-0202
+442	apps/api/src/lib/org-secret-crypto.test.ts	6	6	reject	Config key read/write, key-loading helper or its error; the key is decoded from config, not generated or parsed as a crypto key.
+443	apps/api/src/lib/org-secret-crypto.test.ts	9	9	reject	Config key read/write, key-loading helper or its error; the key is decoded from config, not generated or parsed as a crypto key.
+444	apps/api/src/lib/org-secret-crypto.test.ts	12	12	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+445	apps/api/src/lib/org-secret-crypto.test.ts	13	13	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+446	apps/api/src/lib/org-secret-crypto.test.ts	14	14	asset	gt-0203
+447	apps/api/src/lib/org-secret-crypto.test.ts	15	15	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+448	apps/api/src/lib/org-secret-crypto.test.ts	17	17	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+449	apps/api/src/lib/org-secret-crypto.test.ts	18	18	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+450	apps/api/src/lib/org-secret-crypto.test.ts	19	19	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+451	apps/api/src/lib/org-secret-crypto.test.ts	20	20	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+452	apps/api/src/lib/org-secret-crypto.test.ts	24	24	reject	Config key read/write, key-loading helper or its error; the key is decoded from config, not generated or parsed as a crypto key.
+453	apps/api/src/lib/org-secret-crypto.test.ts	25	25	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+454	apps/api/src/lib/org-secret-crypto.test.ts	26	26	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+455	apps/api/src/lib/org-secret-crypto.test.ts	29	29	reject	Config key read/write, key-loading helper or its error; the key is decoded from config, not generated or parsed as a crypto key.
+456	apps/api/src/lib/org-secret-crypto.test.ts	30	30	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+457	apps/api/src/lib/org-secret-crypto.ts	4	4	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+458	apps/api/src/lib/org-secret-crypto.ts	6	6	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+459	apps/api/src/lib/org-secret-crypto.ts	7	7	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+460	apps/api/src/lib/org-secret-crypto.ts	11	11	reject	Config key read/write, key-loading helper or its error; the key is decoded from config, not generated or parsed as a crypto key.
+461	apps/api/src/lib/org-secret-crypto.ts	12	12	reject	Config key read/write, key-loading helper or its error; the key is decoded from config, not generated or parsed as a crypto key.
+462	apps/api/src/lib/org-secret-crypto.ts	14	14	reject	Config key read/write, key-loading helper or its error; the key is decoded from config, not generated or parsed as a crypto key.
+463	apps/api/src/lib/org-secret-crypto.ts	27	27	reject	Config key read/write, key-loading helper or its error; the key is decoded from config, not generated or parsed as a crypto key.
+464	apps/api/src/lib/org-secret-crypto.ts	33	33	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+465	apps/api/src/lib/org-secret-crypto.ts	34	34	reject	Config key read/write, key-loading helper or its error; the key is decoded from config, not generated or parsed as a crypto key.
+466	apps/api/src/lib/org-secret-crypto.ts	35	35	asset	gt-0204,gt-0205
+467	apps/api/src/lib/org-secret-crypto.ts	36	36	asset	gt-0206
+468	apps/api/src/lib/org-secret-crypto.ts	37	37	reject	setAAD on a cipher/decipher: configuration of an existing cipher object (AAD is not annotated).
+469	apps/api/src/lib/org-secret-crypto.ts	38	38	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+470	apps/api/src/lib/org-secret-crypto.ts	39	39	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+471	apps/api/src/lib/org-secret-crypto.ts	40	40	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+472	apps/api/src/lib/org-secret-crypto.ts	42	42	asset	gt-0207
+473	apps/api/src/lib/org-secret-crypto.ts	43	43	reject	Base64 encoding of IV, tag and ciphertext into a string; encoding is not cryptographic and the values were annotated where created.
+474	apps/api/src/lib/org-secret-crypto.ts	46	46	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+475	apps/api/src/lib/org-secret-crypto.ts	48	48	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+476	apps/api/src/lib/org-secret-crypto.ts	51	51	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+477	apps/api/src/lib/org-secret-crypto.ts	54	54	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+478	apps/api/src/lib/org-secret-crypto.ts	55	55	reject	Test name, comment, error, string split, or call/declaration of the project helpers encryptOrgSecret/decryptOrgSecret; the library cipher calls inside them are the assets.
+479	apps/api/src/lib/org-secret-crypto.ts	58	62	asset	gt-0208
+480	apps/api/src/lib/org-secret-crypto.ts	63	63	reject	setAAD on a cipher/decipher: configuration of an existing cipher object (AAD is not annotated).
+481	apps/api/src/lib/org-secret-crypto.ts	64	64	reject	setAuthTag passes the stored GCM tag back to the decipher; passing material on is not another asset.
+482	apps/api/src/lib/org-secret-crypto.ts	66	66	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+483	apps/api/src/lib/org-secret-crypto.ts	67	67	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+484	apps/api/src/lib/owner-id.ts	7	7	reject	Comment / follow-up digest of the SHA-1 hash created on line 10.
+485	apps/api/src/lib/owner-id.ts	10	10	asset	gt-0209
+486	apps/api/src/lib/owner-id.ts	13	13	reject	Comment / follow-up digest of the SHA-1 hash created on line 10.
+487	apps/api/src/lib/request-credits-store.ts	50	50	asset	gt-0210
+488	apps/api/src/lib/request-credits-store.ts	61	62	asset	gt-0211
+489	apps/api/src/lib/request-credits-store.ts	65	65	reject	Follow-up digest on an HMAC or hash created on the lines above.
+490	apps/api/src/lib/request-credits-store.ts	79	79	asset	gt-0212
+491	apps/api/src/lib/robots-txt.ts	49	49	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+492	apps/api/src/lib/robots-txt.ts	50	50	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+493	apps/api/src/lib/robots-txt.ts	59	59	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+494	apps/api/src/lib/robots-txt.ts	60	60	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+495	apps/api/src/lib/secret-compare.ts	3	3	reject	Comment.
+496	apps/api/src/lib/secret-compare.ts	9	9	asset	gt-0213
+497	apps/api/src/lib/secret-compare.ts	10	10	asset	gt-0214
+498	apps/api/src/lib/siem-logging/azure-sentinel.test.ts	314	314	asset	gt-0215
+499	apps/api/src/lib/siem-logging/azure-sentinel.test.ts	341	341	asset	gt-0216
+500	apps/api/src/lib/siem-logging/azure-sentinel.ts	67	67	asset	gt-0217
+501	apps/api/src/lib/siem-logging/azure-sentinel.ts	69	69	reject	Follow-up digest / use of the digest value; the createHash on 67 is the asset.
+502	apps/api/src/lib/siem-logging/azure-sentinel.ts	70	70	reject	Follow-up digest / use of the digest value; the createHash on 67 is the asset.
+503	apps/api/src/lib/siem-logging/azure-sentinel.ts	304	304	asset	gt-0218
+504	apps/api/src/lib/siem-logging/store.ts	50	50	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+505	apps/api/src/lib/siem-logging/store.ts	155	155	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+506	apps/api/src/lib/siem-logging/store.ts	161	161	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+507	apps/api/src/lib/siem-logging/store.ts	162	162	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+508	apps/api/src/lib/siem-logging/store.ts	166	166	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+509	apps/api/src/lib/siem-logging/store.ts	167	167	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+510	apps/api/src/lib/siem-logging/store.ts	168	168	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+511	apps/api/src/lib/siem-logging/store.ts	173	173	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+512	apps/api/src/lib/siem-logging/store.ts	183	183	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+513	apps/api/src/lib/siem-logging/store.ts	184	184	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+514	apps/api/src/lib/siem-logging/store.ts	185	185	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+515	apps/api/src/lib/spur.ts	247	247	asset	gt-0219
+516	apps/api/src/lib/threat-protection/config.ts	65	65	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+517	apps/api/src/lib/threat-protection/providers/google-web-risk.ts	20	20	reject	Comment.
+518	apps/api/src/lib/threat-protection/providers/google-web-risk.ts	102	102	asset	gt-0220
+519	apps/api/src/lib/threat-protection/providers/web-risk/canonicalize.ts	5	5	reject	Comment.
+520	apps/api/src/lib/threat-protection/providers/web-risk/store.test.ts	31	31	reject	Call or declaration of the project sha256() test helper; the createHash inside it (testing.ts line 15) is the asset.
+521	apps/api/src/lib/threat-protection/providers/web-risk/store.test.ts	35	35	reject	Call or declaration of the project sha256() test helper; the createHash inside it (testing.ts line 15) is the asset.
+522	apps/api/src/lib/threat-protection/providers/web-risk/store.test.ts	60	60	reject	Call or declaration of the project sha256() test helper; the createHash inside it (testing.ts line 15) is the asset.
+523	apps/api/src/lib/threat-protection/providers/web-risk/store.test.ts	64	64	reject	Call or declaration of the project sha256() test helper; the createHash inside it (testing.ts line 15) is the asset.
+524	apps/api/src/lib/threat-protection/providers/web-risk/store.test.ts	75	75	reject	Call or declaration of the project sha256() test helper; the createHash inside it (testing.ts line 15) is the asset.
+525	apps/api/src/lib/threat-protection/providers/web-risk/store.test.ts	80	80	reject	Call or declaration of the project sha256() test helper; the createHash inside it (testing.ts line 15) is the asset.
+526	apps/api/src/lib/threat-protection/providers/web-risk/store.test.ts	86	86	reject	Call or declaration of the project sha256() test helper; the createHash inside it (testing.ts line 15) is the asset.
+527	apps/api/src/lib/threat-protection/providers/web-risk/store.test.ts	100	100	reject	Call or declaration of the project sha256() test helper; the createHash inside it (testing.ts line 15) is the asset.
+528	apps/api/src/lib/threat-protection/providers/web-risk/store.test.ts	113	113	reject	Call or declaration of the project sha256() test helper; the createHash inside it (testing.ts line 15) is the asset.
+529	apps/api/src/lib/threat-protection/providers/web-risk/store.test.ts	114	114	reject	Call or declaration of the project sha256() test helper; the createHash inside it (testing.ts line 15) is the asset.
+530	apps/api/src/lib/threat-protection/providers/web-risk/store.ts	46	46	reject	Comment.
+531	apps/api/src/lib/threat-protection/providers/web-risk/sync.test.ts	59	59	asset	gt-0221
+532	apps/api/src/lib/threat-protection/providers/web-risk/sync.test.ts	61	61	reject	Follow-up digest on a hash object created above; or the checksum value.
+533	apps/api/src/lib/threat-protection/providers/web-risk/sync.test.ts	77	77	reject	Checksum field holding a digest value or a call of the project checksumOf helper; not a hash creation.
+534	apps/api/src/lib/threat-protection/providers/web-risk/sync.test.ts	138	138	reject	Checksum field holding a digest value or a call of the project checksumOf helper; not a hash creation.
+535	apps/api/src/lib/threat-protection/providers/web-risk/sync.test.ts	176	176	reject	Checksum field holding a digest value or a call of the project checksumOf helper; not a hash creation.
+536	apps/api/src/lib/threat-protection/providers/web-risk/sync.test.ts	211	211	reject	Checksum field holding a digest value or a call of the project checksumOf helper; not a hash creation.
+537	apps/api/src/lib/threat-protection/providers/web-risk/sync.ts	46	46	reject	Checksum field holding a digest value or a call of the project checksumOf helper; not a hash creation.
+538	apps/api/src/lib/threat-protection/providers/web-risk/sync.ts	104	104	reject	Comment.
+539	apps/api/src/lib/threat-protection/providers/web-risk/sync.ts	106	106	asset	gt-0222
+540	apps/api/src/lib/threat-protection/providers/web-risk/sync.ts	108	108	reject	Follow-up digest on a hash object created above; or the checksum value.
+541	apps/api/src/lib/threat-protection/providers/web-risk/sync.ts	153	153	reject	Checksum field holding a digest value or a call of the project checksumOf helper; not a hash creation.
+542	apps/api/src/lib/threat-protection/providers/web-risk/sync.ts	184	184	asset	gt-0223
+543	apps/api/src/lib/threat-protection/providers/web-risk/testing.ts	14	14	reject	Call or declaration of the project sha256() test helper; the createHash inside it (testing.ts line 15) is the asset.
+544	apps/api/src/lib/threat-protection/providers/web-risk/testing.ts	15	15	asset	gt-0224
+545	apps/api/src/lib/threat-protection/providers/web-risk/testing.ts	19	19	reject	Comment.
+546	apps/api/src/lib/threat-protection/providers/web-risk/testing.ts	24	24	reject	Call or declaration of the project sha256() test helper; the createHash inside it (testing.ts line 15) is the asset.
+547	apps/api/src/lib/threat-protection/providers/web-risk/testing.ts	87	87	asset	gt-0225
+548	apps/api/src/lib/threat-protection/providers/web-risk/testing.ts	105	105	reject	Follow-up digest on a hash object created above; or the checksum value.
+549	apps/api/src/lib/threat-protection/providers/zscaler/client.ts	117	117	asset	gt-0226
+550	apps/api/src/lib/threat-protection/providers/zscaler/client.ts	119	119	reject	Follow-up digest / use of the digest; the createHash on 117 is the asset.
+551	apps/api/src/lib/threat-protection/providers/zscaler/client.ts	120	120	reject	Follow-up digest / use of the digest; the createHash on 117 is the asset.
+552	apps/api/src/lib/threat-protection/providers/zscaler/lookup-queue.ts	196	196	asset	gt-0227
+553	apps/api/src/lib/threat-protection/store.test.ts	93	93	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+554	apps/api/src/lib/threat-protection/store.test.ts	110	110	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+555	apps/api/src/lib/threat-protection/store.ts	47	47	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+556	apps/api/src/lib/threat-protection/store.ts	48	48	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+557	apps/api/src/lib/threat-protection/store.ts	54	54	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+558	apps/api/src/lib/threat-protection/store.ts	84	84	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+559	apps/api/src/lib/threat-protection/store.ts	237	237	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+560	apps/api/src/lib/threat-protection/store.ts	247	247	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+561	apps/api/src/lib/threat-protection/store.ts	249	249	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+562	apps/api/src/lib/threat-protection/store.ts	264	264	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+563	apps/api/src/lib/threat-protection/store.ts	268	268	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+564	apps/api/src/lib/threat-protection/store.ts	368	368	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+565	apps/api/src/lib/threat-protection/store.ts	381	381	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+566	apps/api/src/lib/threat-protection/store.ts	386	386	reject	Column, field, variable, comment or call of the project helpers encryptOrgSecret/decryptOrgSecret; no library crypto call here.
+567	apps/api/src/lib/tracking.ts	31	31	asset	gt-0228
+568	apps/api/src/lib/vercel-marketplace-oidc.ts	4	4	reject	Import, type or comment naming a jose/node:crypto API, or a jose error class; not a call.
+569	apps/api/src/lib/vercel-marketplace-oidc.ts	6	6	reject	Import, type or comment naming a jose/node:crypto API, or a jose error class; not a call.
+570	apps/api/src/lib/vercel-marketplace-oidc.ts	11	11	reject	Import, type or comment naming a jose/node:crypto API, or a jose error class; not a call.
+571	apps/api/src/lib/vercel-marketplace-oidc.ts	61	61	reject	looksLikeJwt helper (format check, no crypto) or test name about JWTs.
+572	apps/api/src/lib/vercel-marketplace-oidc.ts	90	90	reject	Import, type or comment naming a jose/node:crypto API, or a jose error class; not a call.
+573	apps/api/src/lib/vercel-marketplace-oidc.ts	114	114	reject	createLocalJWKSet(jwks) builds a key-set lookup; jose imports a JWK lazily inside the jwtVerify that uses it (the verify is the asset). Judgement call, see notes.
+574	apps/api/src/lib/vercel-marketplace-oidc.ts	196	196	reject	Import, type or comment naming a jose/node:crypto API, or a jose error class; not a call.
+575	apps/api/src/lib/vercel-marketplace-oidc.ts	201	206	asset	gt-0229
+576	apps/api/src/lib/world-id.ts	2	2	reject	Import, type or comment naming a jose/node:crypto API, or a jose error class; not a call.
+577	apps/api/src/lib/world-id.ts	3	3	reject	Import, type or comment naming a jose/node:crypto API, or a jose error class; not a call.
+578	apps/api/src/lib/world-id.ts	4	4	reject	Import, type or comment naming a jose/node:crypto API, or a jose error class; not a call.
+579	apps/api/src/lib/world-id.ts	7	7	reject	Import, type or comment naming a jose/node:crypto API, or a jose error class; not a call.
+580	apps/api/src/lib/world-id.ts	50	50	asset	gt-0230
+581	apps/api/src/lib/world-id.ts	52	52	reject	Follow-up digest on an HMAC created two lines above.
+582	apps/api/src/lib/world-id.ts	63	63	asset	gt-0231
+583	apps/api/src/lib/world-id.ts	65	65	reject	Follow-up digest on an HMAC created two lines above.
+584	apps/api/src/lib/world-id.ts	93	93	asset	gt-0232
+585	apps/api/src/lib/world-id.ts	95	95	reject	Follow-up digest on an HMAC created two lines above.
+586	apps/api/src/lib/world-id.ts	127	127	asset	gt-0233
+587	apps/api/src/lib/world-id.ts	129	129	reject	Follow-up digest on an HMAC created two lines above.
+588	apps/api/src/lib/world-id.ts	160	160	reject	Comment.
+589	apps/api/src/lib/world-id.ts	162	162	asset	gt-0234,gt-0235
+590	apps/api/src/lib/world-id.ts	163	163	asset	gt-0236
+591	apps/api/src/lib/world-id.ts	164	164	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+592	apps/api/src/lib/world-id.ts	165	165	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+593	apps/api/src/lib/world-id.ts	166	166	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+594	apps/api/src/lib/world-id.ts	168	168	asset	gt-0237
+595	apps/api/src/lib/world-id.ts	180	184	asset	gt-0238
+596	apps/api/src/lib/world-id.ts	185	185	reject	setAuthTag passes the stored GCM tag back to the decipher; passing material on is not another asset.
+597	apps/api/src/lib/world-id.ts	187	187	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+598	apps/api/src/lib/world-id.ts	188	188	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+599	apps/api/src/lib/world-id.ts	207	207	reject	createRemoteJWKSet(new URL(...)) creates a remote key-set fetcher; it parses no key at this call. The jwtVerify on 313-318 is the asset.
+600	apps/api/src/lib/world-id.ts	296	296	reject	Import, type or comment naming a jose/node:crypto API, or a jose error class; not a call.
+601	apps/api/src/lib/world-id.ts	297	297	reject	Import, type or comment naming a jose/node:crypto API, or a jose error class; not a call.
+602	apps/api/src/lib/world-id.ts	298	298	reject	Import, type or comment naming a jose/node:crypto API, or a jose error class; not a call.
+603	apps/api/src/lib/world-id.ts	313	318	asset	gt-0239
+604	apps/api/src/lib/zdr-queue.ts	236	236	asset	gt-0240
+605	apps/api/src/routes/exchange.ts	272	272	reject	Help string mentioning a digest field.
+606	apps/api/src/scraper/WebScraper/sitemap.ts	91	91	reject	Engine name string 'fire-engine;tlsclient'; no TLS context.
+607	apps/api/src/scraper/WebScraper/sitemap.ts	92	92	reject	Engine name string 'fire-engine;tlsclient'; no TLS context.
+608	apps/api/src/scraper/WebScraper/sitemap.ts	100	100	reject	Engine name string 'fire-engine;tlsclient'; no TLS context.
+609	apps/api/src/scraper/WebScraper/sitemap.ts	101	101	reject	Engine name string 'fire-engine;tlsclient'; no TLS context.
+610	apps/api/src/scraper/WebScraper/utils/blocklist.ts	232	232	reject	Variable named decryptedUrl; plain URL lookup, no decryption.
+611	apps/api/src/scraper/WebScraper/utils/blocklist.ts	233	233	reject	Variable named decryptedUrl; plain URL lookup, no decryption.
+612	apps/api/src/scraper/WebScraper/utils/blocklist.ts	238	238	reject	Variable named decryptedUrl; plain URL lookup, no decryption.
+613	apps/api/src/scraper/WebScraper/utils/blocklist.ts	240	240	reject	Variable named decryptedUrl; plain URL lookup, no decryption.
+614	apps/api/src/scraper/WebScraper/utils/blocklist.ts	241	241	reject	Variable named decryptedUrl; plain URL lookup, no decryption.
+615	apps/api/src/scraper/crawler/sitemap.ts	71	71	reject	Engine name string 'fire-engine;tlsclient'; no TLS context.
+616	apps/api/src/scraper/crawler/sitemap.ts	72	72	reject	Engine name string 'fire-engine;tlsclient'; no TLS context.
+617	apps/api/src/scraper/crawler/sitemap.ts	81	81	reject	Engine name string 'fire-engine;tlsclient'; no TLS context.
+618	apps/api/src/scraper/crawler/sitemap.ts	82	82	reject	Engine name string 'fire-engine;tlsclient'; no TLS context.
+619	apps/api/src/scraper/scrapeURL/engines/fetch/index.ts	206	206	reject	TLS certificate error-code set or check, or SSLError construction; no TLS context or session.
+620	apps/api/src/scraper/scrapeURL/engines/fetch/index.ts	208	208	reject	SSLError error class or reference; no TLS context or session.
+621	apps/api/src/scraper/scrapeURL/engines/fire-engine/__tests__/fileSchema.test.ts	58	58	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+622	apps/api/src/scraper/scrapeURL/engines/fire-engine/__tests__/fileSchema.test.ts	111	111	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+623	apps/api/src/scraper/scrapeURL/engines/fire-engine/__tests__/usOnly.test.ts	89	89	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+624	apps/api/src/scraper/scrapeURL/engines/fire-engine/checkStatus.ts	10	10	reject	SSLError class, message strings, construction or check; no TLS context or session.
+625	apps/api/src/scraper/scrapeURL/engines/fire-engine/checkStatus.ts	222	222	reject	SSLError class, message strings, construction or check; no TLS context or session.
+626	apps/api/src/scraper/scrapeURL/engines/fire-engine/fileSchema.ts	22	22	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+627	apps/api/src/scraper/scrapeURL/engines/fire-engine/index.ts	26	26	reject	SSLError class, message strings, construction or check; no TLS context or session.
+628	apps/api/src/scraper/scrapeURL/engines/fire-engine/index.ts	160	160	reject	SSLError class, message strings, construction or check; no TLS context or session.
+629	apps/api/src/scraper/scrapeURL/engines/fire-engine/index.ts	713	713	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+630	apps/api/src/scraper/scrapeURL/engines/fire-engine/index.ts	715	715	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+631	apps/api/src/scraper/scrapeURL/engines/fire-engine/index.ts	723	723	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+632	apps/api/src/scraper/scrapeURL/engines/fire-engine/index.ts	795	795	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+633	apps/api/src/scraper/scrapeURL/engines/fire-engine/index.ts	804	804	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+634	apps/api/src/scraper/scrapeURL/engines/fire-engine/scrape.ts	17	17	reject	SSLError class, message strings, construction or check; no TLS context or session.
+635	apps/api/src/scraper/scrapeURL/engines/fire-engine/scrape.ts	125	125	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+636	apps/api/src/scraper/scrapeURL/engines/fire-engine/scrape.ts	323	323	reject	SSLError class, message strings, construction or check; no TLS context or session.
+637	apps/api/src/scraper/scrapeURL/engines/index.ts	58	58	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+638	apps/api/src/scraper/scrapeURL/engines/index.ts	59	59	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+639	apps/api/src/scraper/scrapeURL/engines/index.ts	87	87	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+640	apps/api/src/scraper/scrapeURL/engines/index.ts	88	88	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+641	apps/api/src/scraper/scrapeURL/engines/index.ts	137	137	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+642	apps/api/src/scraper/scrapeURL/engines/index.ts	203	203	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+643	apps/api/src/scraper/scrapeURL/engines/index.ts	204	204	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+644	apps/api/src/scraper/scrapeURL/engines/index.ts	227	227	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+645	apps/api/src/scraper/scrapeURL/engines/index.ts	228	228	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+646	apps/api/src/scraper/scrapeURL/engines/index.ts	229	229	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+647	apps/api/src/scraper/scrapeURL/engines/index.ts	230	230	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+648	apps/api/src/scraper/scrapeURL/engines/index.ts	425	425	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+649	apps/api/src/scraper/scrapeURL/engines/index.ts	447	447	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+650	apps/api/src/scraper/scrapeURL/engines/index.ts	743	743	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+651	apps/api/src/scraper/scrapeURL/engines/index.ts	756	756	reject	Comment.
+652	apps/api/src/scraper/scrapeURL/engines/index.ts	757	757	reject	Comment.
+653	apps/api/src/scraper/scrapeURL/engines/index.ts	817	817	reject	Comment.
+654	apps/api/src/scraper/scrapeURL/engines/index.ts	901	901	reject	Comment.
+655	apps/api/src/scraper/scrapeURL/engines/index.ts	906	906	reject	Comment.
+656	apps/api/src/scraper/scrapeURL/engines/index.ts	917	917	reject	Comment.
+657	apps/api/src/scraper/scrapeURL/engines/index.ts	918	918	reject	Comment.
+658	apps/api/src/scraper/scrapeURL/engines/index.ts	921	921	reject	Comment.
+659	apps/api/src/scraper/scrapeURL/engines/index.ts	925	925	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+660	apps/api/src/scraper/scrapeURL/engines/index.ts	926	926	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+661	apps/api/src/scraper/scrapeURL/engines/index.ts	1042	1042	reject	Comment.
+662	apps/api/src/scraper/scrapeURL/engines/index.ts	1044	1044	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+663	apps/api/src/scraper/scrapeURL/engines/index.ts	1046	1046	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+664	apps/api/src/scraper/scrapeURL/engines/index/index.ts	92	92	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+665	apps/api/src/scraper/scrapeURL/engines/index/index.ts	93	93	reject	Fire-engine 'tlsclient' engine name, span or identifier string; no TLS context or session is created.
+666	apps/api/src/scraper/scrapeURL/engines/index/index.ts	105	105	asset	gt-0241
+667	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts	133	133	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+668	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts	148	148	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+669	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts	158	158	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+670	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts	248	248	asset	gt-0242
+671	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts	276	276	asset	gt-0243
+672	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts	286	286	asset	gt-0244
+673	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts	300	300	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+674	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts	308	308	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+675	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts	353	353	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+676	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts	414	414	asset	gt-0245
+677	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFAsync.test.ts	1127	1127	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+678	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFAsync.test.ts	1188	1188	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+679	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFAsync.test.ts	1195	1195	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+680	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFAsync.test.ts	1456	1456	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+681	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFAsync.test.ts	1506	1506	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+682	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFAsync.test.ts	1585	1585	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+683	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFBackgroundRefresh.test.ts	25	25	reject	Dynamic import of createHash; imports are not assets.
+684	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFBackgroundRefresh.test.ts	28	28	asset	gt-0246
+685	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFBackgroundRefresh.test.ts	131	131	asset	gt-0247
+686	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFBackgroundRefresh.test.ts	132	132	asset	gt-0248
+687	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFCache.test.ts	49	49	reject	Dynamic import of createHash; imports are not assets.
+688	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFCache.test.ts	58	58	asset	gt-0249
+689	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFCache.test.ts	1390	1391	asset	gt-0250
+690	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFCache.test.ts	1393	1393	reject	Follow-up digest on a hash created on the lines above.
+691	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFCache.test.ts	1394	1394	asset	gt-0251
+692	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFReservedCapacity.test.ts	440	440	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+693	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFSupersede.test.ts	142	143	asset	gt-0252
+694	apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFSupersede.test.ts	145	145	reject	Follow-up digest on a hash created on the lines above.
+695	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/async.ts	103	103	reject	Comment.
+696	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/async.ts	116	116	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+697	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/async.ts	211	211	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+698	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/background-refresh.ts	128	128	asset	gt-0253
+699	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference-flow.ts	7	7	reject	Import, declaration or call of the project helper sha256OfFile; its createHash (line 282) is the asset.
+700	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference-flow.ts	101	101	reject	Import, declaration or call of the project helper sha256OfFile; its createHash (line 282) is the asset.
+701	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference-flow.ts	218	218	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+702	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference-flow.ts	219	219	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+703	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference-flow.ts	222	222	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+704	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference-flow.ts	226	226	reject	Log message string mentioning sha256.
+705	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference-flow.ts	243	243	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+706	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts	23	23	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+707	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts	39	39	asset	gt-0254
+708	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts	41	41	reject	Follow-up digest on a hash object; the createHash is the asset.
+709	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts	49	49	reject	Comment.
+710	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts	60	60	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+711	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts	149	149	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+712	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts	257	257	reject	Comment.
+713	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts	274	274	reject	Comment.
+714	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts	278	278	reject	Import, declaration or call of the project helper sha256OfFile; its createHash (line 282) is the asset.
+715	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts	282	282	asset	gt-0255
+716	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts	286	286	reject	Follow-up digest on a hash object; the createHash is the asset.
+717	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts	294	294	reject	Comment.
+718	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts	344	344	asset	gt-0256
+719	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts	379	379	reject	Follow-up digest on a hash object; the createHash is the asset.
+720	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts	390	390	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+721	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/cache-service.ts	38	41	asset	gt-0257
+722	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/cache-service.ts	43	43	reject	Hex encoding of the digest output; the subtle.digest call on 38-41 is the asset.
+723	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/lookup.ts	16	16	reject	Comment.
+724	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/lookup.ts	20	20	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+725	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/lookup.ts	48	48	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+726	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/lookup.ts	67	67	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+727	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/lookup.ts	108	108	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+728	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/routing.ts	55	55	asset	gt-0258
+729	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/submit.ts	43	43	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+730	apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/submit.ts	143	143	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+731	apps/api/src/scraper/scrapeURL/engines/pdf/runpodMU.ts	28	28	reject	Comment.
+732	apps/api/src/scraper/scrapeURL/engines/pdf/runpodMU.ts	104	104	asset	gt-0259
+733	apps/api/src/scraper/scrapeURL/engines/utils/downloadFile.ts	9	9	reject	TLS certificate error-code set or check, or SSLError construction; no TLS context or session.
+734	apps/api/src/scraper/scrapeURL/engines/utils/downloadFile.ts	109	109	reject	TLS certificate error-code set or check, or SSLError construction; no TLS context or session.
+735	apps/api/src/scraper/scrapeURL/engines/utils/downloadFile.ts	110	110	reject	TLS certificate error-code set or check, or SSLError construction; no TLS context or session.
+736	apps/api/src/scraper/scrapeURL/engines/utils/downloadFile.ts	228	228	reject	Comment.
+737	apps/api/src/scraper/scrapeURL/engines/utils/downloadGcsFile.ts	15	15	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+738	apps/api/src/scraper/scrapeURL/engines/utils/safeFetch.ts	12	12	reject	TLS certificate error-code set or check, or SSLError construction; no TLS context or session.
+739	apps/api/src/scraper/scrapeURL/engines/utils/safeFetch.ts	16	16	reject	TLS certificate error-code set or check, or SSLError construction; no TLS context or session.
+740	apps/api/src/scraper/scrapeURL/engines/utils/safeFetch.ts	103	103	reject	rejectUnauthorized option of an undici Agent/ProxyAgent: an HTTP client that only toggles TLS verification is configuration, not a TLS context or session (guide).
+741	apps/api/src/scraper/scrapeURL/engines/utils/safeFetch.ts	108	108	reject	rejectUnauthorized option of an undici Agent/ProxyAgent: an HTTP client that only toggles TLS verification is configuration, not a TLS context or session (guide).
+742	apps/api/src/scraper/scrapeURL/engines/utils/safeFetch.ts	125	125	reject	TLSSocket type annotation on a socket read from an existing client; no TLS context created.
+743	apps/api/src/scraper/scrapeURL/engines/utils/specialtyHandler.test.ts	49	49	reject	Comment.
+744	apps/api/src/scraper/scrapeURL/engines/utils/specialtyHandler.test.ts	275	275	reject	Comment.
+745	apps/api/src/scraper/scrapeURL/engines/utils/specialtyHandler.ts	35	35	asset	gt-0260
+746	apps/api/src/scraper/scrapeURL/engines/utils/specialtyHandler.ts	49	49	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+747	apps/api/src/scraper/scrapeURL/engines/utils/specialtyHandler.ts	59	59	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+748	apps/api/src/scraper/scrapeURL/error.ts	108	108	reject	SSLError class, message strings, construction or check; no TLS context or session.
+749	apps/api/src/scraper/scrapeURL/error.ts	115	115	reject	SSLError class, message strings, construction or check; no TLS context or session.
+750	apps/api/src/scraper/scrapeURL/error.ts	117	117	reject	SSLError class, message strings, construction or check; no TLS context or session.
+751	apps/api/src/scraper/scrapeURL/error.ts	119	119	reject	SSLError class, message strings, construction or check; no TLS context or session.
+752	apps/api/src/scraper/scrapeURL/error.ts	120	120	reject	SSLError class, message strings, construction or check; no TLS context or session.
+753	apps/api/src/scraper/scrapeURL/error.ts	136	136	reject	SSLError class, message strings, construction or check; no TLS context or session.
+754	apps/api/src/scraper/scrapeURL/index.ts	46	46	reject	SSLError class, message strings, construction or check; no TLS context or session.
+755	apps/api/src/scraper/scrapeURL/index.ts	209	209	reject	Field, literal or variable holding a SHA-256 value (or its schema); no hash computation.
+756	apps/api/src/scraper/scrapeURL/index.ts	400	400	asset	gt-0261
+757	apps/api/src/scraper/scrapeURL/index.ts	1050	1050	reject	SSLError class, message strings, construction or check; no TLS context or session.
+758	apps/api/src/scraper/scrapeURL/index.ts	1360	1360	reject	Comment.
+759	apps/api/src/scraper/scrapeURL/index.ts	1922	1922	reject	SSLError class, message strings, construction or check; no TLS context or session.
+760	apps/api/src/scraper/scrapeURL/index.ts	1923	1923	reject	SSLError class, message strings, construction or check; no TLS context or session.
+761	apps/api/src/scraper/scrapeURL/index.ts	1927	1927	reject	SSLError class, message strings, construction or check; no TLS context or session.
+762	apps/api/src/scraper/scrapeURL/index.ts	1931	1931	reject	SSLError class, message strings, construction or check; no TLS context or session.
+763	apps/api/src/scraper/scrapeURL/lib/__tests__/fetch.test.ts	22	22	reject	Header name, redaction regex or test string mentioning JWT/secret; no crypto call.
+764	apps/api/src/scraper/scrapeURL/lib/__tests__/fetch.test.ts	76	76	reject	Header name, redaction regex or test string mentioning JWT/secret; no crypto call.
+765	apps/api/src/scraper/scrapeURL/lib/__tests__/fetch.test.ts	146	146	reject	Engine name string 'tlsclient' in a test; no TLS context.
+766	apps/api/src/scraper/scrapeURL/lib/fetch.ts	33	33	reject	Header name, redaction regex or test string mentioning JWT/secret; no crypto call.
+767	apps/api/src/scraper/scrapeURL/lib/fetch.ts	118	118	asset	gt-0262
+768	apps/api/src/scraper/scrapeURL/lib/mock.ts	16	16	asset	gt-0263
+769	apps/api/src/scraper/scrapeURL/lib/promptInjectionGuard.ts	102	102	asset	gt-0264
+770	apps/api/src/scraper/scrapeURL/scrapeURL.test.ts	28	28	reject	Engine name string 'tlsclient' in a test; no TLS context.
+771	apps/api/src/scraper/scrapeURL/waterfallExperiments.ts	34	34	asset	gt-0265
+772	apps/api/src/scraper/scrapeURL/waterfallExperiments.ts	36	36	reject	Follow-up digest on a hash created on the line above.
+773	apps/api/src/search/tool-intent.ts	172	172	asset	gt-0266
+774	apps/api/src/search/tool-intent.ts	174	174	reject	Follow-up digest on a hash created on the line above.
+775	apps/api/src/search/tool-intent.ts	204	204	asset	gt-0267
+776	apps/api/src/services/alexandria/access.test.ts	105	105	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+777	apps/api/src/services/alexandria/access.test.ts	229	229	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+778	apps/api/src/services/alexandria/access.test.ts	284	284	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+779	apps/api/src/services/alexandria/access.test.ts	328	328	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+780	apps/api/src/services/alexandria/access.test.ts	330	330	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+781	apps/api/src/services/alexandria/access.test.ts	370	370	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+782	apps/api/src/services/alexandria/access.ts	26	26	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+783	apps/api/src/services/alexandria/retrieve.ts	80	80	asset	gt-0268
+784	apps/api/src/services/alexandria/retrieve.ts	82	82	reject	Follow-up digest on a hash created on the line above.
+785	apps/api/src/services/alexandria/terms.test.ts	11	11	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+786	apps/api/src/services/alexandria/terms.test.ts	19	19	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+787	apps/api/src/services/alexandria/terms.test.ts	57	57	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+788	apps/api/src/services/alexandria/terms.test.ts	188	188	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+789	apps/api/src/services/alexandria/terms.ts	11	11	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+790	apps/api/src/services/alexandria/terms.ts	33	33	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+791	apps/api/src/services/alexandria/terms.ts	70	70	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+792	apps/api/src/services/alexandria/terms.ts	200	200	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+793	apps/api/src/services/alexandria/terms.ts	226	226	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+794	apps/api/src/services/alexandria/terms.ts	234	234	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+795	apps/api/src/services/alexandria/terms.ts	247	247	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+796	apps/api/src/services/alexandria/terms.ts	271	271	reject	Terms 'digest' field, schema, comparison or test fixture value; no hash computation.
+797	apps/api/src/services/autumn/autumn.service.ts	321	321	asset	gt-0269
+798	apps/api/src/services/autumn/firebill.ts	316	316	asset	gt-0270
+799	apps/api/src/services/index-cache.ts	100	100	asset	gt-0271
+800	apps/api/src/services/index.ts	216	216	asset	gt-0272
+801	apps/api/src/services/index.ts	501	501	reject	Engine verdict string 'TlsClientOk' in a type or comparison; no TLS context.
+802	apps/api/src/services/index.ts	523	523	reject	Engine verdict string 'TlsClientOk' in a type or comparison; no TLS context.
+803	apps/api/src/services/integrations/slack/crypto.ts	11	11	reject	Config key read/write, error message, comment or declaration of the project helpers encryptSlackToken/decryptSlackToken; no library crypto call here.
+804	apps/api/src/services/integrations/slack/crypto.ts	30	30	reject	Config key read/write, error message, comment or declaration of the project helpers encryptSlackToken/decryptSlackToken; no library crypto call here.
+805	apps/api/src/services/integrations/slack/crypto.ts	36	36	reject	Config key read/write, error message, comment or declaration of the project helpers encryptSlackToken/decryptSlackToken; no library crypto call here.
+806	apps/api/src/services/integrations/slack/crypto.ts	38	38	reject	Config key read/write, error message, comment or declaration of the project helpers encryptSlackToken/decryptSlackToken; no library crypto call here.
+807	apps/api/src/services/integrations/slack/crypto.ts	43	43	reject	Config key read/write, error message, comment or declaration of the project helpers encryptSlackToken/decryptSlackToken; no library crypto call here.
+808	apps/api/src/services/integrations/slack/crypto.ts	48	48	asset	gt-0273,gt-0274
+809	apps/api/src/services/integrations/slack/crypto.ts	49	49	asset	gt-0275
+810	apps/api/src/services/integrations/slack/crypto.ts	50	50	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+811	apps/api/src/services/integrations/slack/crypto.ts	51	51	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+812	apps/api/src/services/integrations/slack/crypto.ts	52	52	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+813	apps/api/src/services/integrations/slack/crypto.ts	54	54	asset	gt-0276
+814	apps/api/src/services/integrations/slack/crypto.ts	55	55	reject	Base64 encoding of IV, tag and ciphertext into a string; encoding is not cryptographic and the values were annotated where created.
+815	apps/api/src/services/integrations/slack/crypto.ts	58	58	reject	Config key read/write, error message, comment or declaration of the project helpers encryptSlackToken/decryptSlackToken; no library crypto call here.
+816	apps/api/src/services/integrations/slack/crypto.ts	60	60	reject	Config key read/write, error message, comment or declaration of the project helpers encryptSlackToken/decryptSlackToken; no library crypto call here.
+817	apps/api/src/services/integrations/slack/crypto.ts	68	68	reject	Config key read/write, error message, comment or declaration of the project helpers encryptSlackToken/decryptSlackToken; no library crypto call here.
+818	apps/api/src/services/integrations/slack/crypto.ts	73	73	reject	Config key read/write, error message, comment or declaration of the project helpers encryptSlackToken/decryptSlackToken; no library crypto call here.
+819	apps/api/src/services/integrations/slack/crypto.ts	75	79	asset	gt-0277
+820	apps/api/src/services/integrations/slack/crypto.ts	80	80	reject	setAuthTag passes the stored GCM tag back to the decipher; passing material on is not another asset.
+821	apps/api/src/services/integrations/slack/crypto.ts	82	82	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+822	apps/api/src/services/integrations/slack/crypto.ts	83	83	reject	Follow-up (update/final/setAutoPadding/Buffer.concat of them) on a cipher object whose creating call is the asset.
+823	apps/api/src/services/integrations/slack/oauth.ts	48	48	asset	gt-0278
+824	apps/api/src/services/integrations/slack/oauth.ts	133	133	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+825	apps/api/src/services/integrations/slack/oauth.ts	159	159	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+826	apps/api/src/services/integrations/slack/oauth.ts	163	163	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+827	apps/api/src/services/integrations/slack/oauth.ts	165	165	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+828	apps/api/src/services/integrations/slack/oauth.ts	168	168	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+829	apps/api/src/services/integrations/slack/signature.ts	35	35	asset	gt-0279
+830	apps/api/src/services/integrations/slack/signature.ts	40	40	reject	crypto.timingSafeEqual: constant-time comparison, not an asset (guide).
+831	apps/api/src/services/integrations/slack/slack.test.ts	13	13	reject	Config key read/write, error message, comment or declaration of the project helpers encryptSlackToken/decryptSlackToken; no library crypto call here.
+832	apps/api/src/services/integrations/slack/slack.test.ts	17	17	reject	Config key read/write, error message, comment or declaration of the project helpers encryptSlackToken/decryptSlackToken; no library crypto call here.
+833	apps/api/src/services/integrations/slack/slack.test.ts	21	21	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+834	apps/api/src/services/integrations/slack/slack.test.ts	22	22	reject	Config key read/write, error message, comment or declaration of the project helpers encryptSlackToken/decryptSlackToken; no library crypto call here.
+835	apps/api/src/services/integrations/slack/slack.test.ts	23	23	asset	gt-0280
+836	apps/api/src/services/integrations/slack/slack.test.ts	24	24	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+837	apps/api/src/services/integrations/slack/slack.test.ts	27	27	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+838	apps/api/src/services/integrations/slack/slack.test.ts	30	30	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+839	apps/api/src/services/integrations/slack/slack.test.ts	34	34	reject	Config key read/write, error message, comment or declaration of the project helpers encryptSlackToken/decryptSlackToken; no library crypto call here.
+840	apps/api/src/services/integrations/slack/slack.test.ts	36	36	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+841	apps/api/src/services/integrations/slack/slack.test.ts	38	38	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+842	apps/api/src/services/integrations/slack/slack.test.ts	42	42	asset	gt-0281
+843	apps/api/src/services/integrations/slack/slack.test.ts	43	43	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+844	apps/api/src/services/integrations/slack/slack.test.ts	44	44	reject	Config key read/write, error message, comment or declaration of the project helpers encryptSlackToken/decryptSlackToken; no library crypto call here.
+845	apps/api/src/services/integrations/slack/slack.test.ts	45	45	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+846	apps/api/src/services/integrations/slack/slack.test.ts	49	49	reject	Config key read/write, error message, comment or declaration of the project helpers encryptSlackToken/decryptSlackToken; no library crypto call here.
+847	apps/api/src/services/integrations/slack/slack.test.ts	50	50	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+848	apps/api/src/services/integrations/slack/slack.test.ts	55	55	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+849	apps/api/src/services/integrations/slack/slack.test.ts	58	58	reject	Declaration or call of the test file's project sign() helper; its createHmac (61-62) is the asset.
+850	apps/api/src/services/integrations/slack/slack.test.ts	61	62	asset	gt-0282
+851	apps/api/src/services/integrations/slack/slack.test.ts	64	64	reject	Follow-up digest on the HMAC created on 61-62.
+852	apps/api/src/services/integrations/slack/slack.test.ts	73	73	reject	Declaration or call of the test file's project sign() helper; its createHmac (61-62) is the asset.
+853	apps/api/src/services/integrations/slack/slack.test.ts	83	83	reject	Declaration or call of the test file's project sign() helper; its createHmac (61-62) is the asset.
+854	apps/api/src/services/integrations/slack/slack.test.ts	99	99	reject	Declaration or call of the test file's project sign() helper; its createHmac (61-62) is the asset.
+855	apps/api/src/services/mcp/action-logs.test.ts	177	177	reject	Header name, redaction regex or test string mentioning JWT/secret; no crypto call.
+856	apps/api/src/services/mcp/action-logs.test.ts	178	178	reject	Header name, redaction regex or test string mentioning JWT/secret; no crypto call.
+857	apps/api/src/services/mcp/action-logs.ts	24	24	reject	Header name, redaction regex or test string mentioning JWT/secret; no crypto call.
+858	apps/api/src/services/monitoring/email_recipients.ts	37	37	asset	gt-0283
+859	apps/api/src/services/monitoring/jitter.ts	11	11	asset	gt-0284
+860	apps/api/src/services/monitoring/scheduler.ts	52	52	asset	gt-0285
+861	apps/api/src/services/monitoring/search/dedupe.ts	13	13	asset	gt-0286
+862	apps/api/src/services/monitoring/search/dedupe.ts	15	15	reject	Follow-up digest on a hash created on the line above.
+863	apps/api/src/services/monitoring/search/dedupe.ts	26	26	asset	gt-0287
+864	apps/api/src/services/monitoring/search/dedupe.ts	28	28	reject	Follow-up digest on a hash created on the line above.
+865	apps/api/src/services/monitoring/store.ts	45	45	asset	gt-0288
+866	apps/api/src/services/notification/monitoring_slack.test.ts	1	1	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+867	apps/api/src/services/notification/monitoring_slack.test.ts	4	4	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+868	apps/api/src/services/notification/monitoring_slack.test.ts	15	15	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+869	apps/api/src/services/notification/monitoring_slack.test.ts	16	16	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+870	apps/api/src/services/notification/monitoring_slack.test.ts	180	180	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+871	apps/api/src/services/notification/monitoring_slack.test.ts	184	184	reject	Comment, test name, mock, or call of the project helpers encryptSlackToken/decryptSlackToken; the library cipher calls inside the helper file are the assets.
+872	apps/api/src/services/notification/monitoring_slack.ts	107	107	reject	Call of the project helper decryptSlackToken or a log about it; the library decipher inside the helper is the asset.
+873	apps/api/src/services/notification/monitoring_slack.ts	109	109	reject	Call of the project helper decryptSlackToken or a log about it; the library decipher inside the helper is the asset.
+874	apps/api/src/services/notification/monitoring_slack.ts	113	113	reject	Call of the project helper decryptSlackToken or a log about it; the library decipher inside the helper is the asset.
+875	apps/api/src/services/oauth-token-introspection.ts	34	34	asset	gt-0289
+876	apps/api/src/services/vercel-marketplace-oidc.ts	31	31	reject	JWTVerifyGetKey type; no crypto call.
+877	apps/api/src/services/vercel-marketplace-oidc.ts	33	33	reject	JWTVerifyGetKey type; no crypto call.
+878	apps/api/src/services/vercel-marketplace-oidc.ts	43	43	asset	gt-0290
+879	apps/api/src/services/webhook/config.ts	16	16	reject	Reads the webhook HMAC secret from config or the database; no crypto call.
+880	apps/api/src/services/webhook/config.ts	31	31	reject	Reads the webhook HMAC secret from config or the database; no crypto call.
+881	apps/api/src/services/webhook/config.ts	38	38	reject	Reads the webhook HMAC secret from config or the database; no crypto call.
+882	apps/api/src/services/webhook/config.ts	40	40	reject	Reads the webhook HMAC secret from config or the database; no crypto call.
+883	apps/api/src/services/webhook/config.ts	45	45	reject	Reads the webhook HMAC secret from config or the database; no crypto call.
+884	apps/api/src/services/webhook/config.ts	50	50	reject	Reads the webhook HMAC secret from config or the database; no crypto call.
+885	apps/api/src/services/webhook/delivery.ts	83	83	asset	gt-0291
+886	apps/api/src/services/webhook/delivery.ts	166	166	asset	gt-0292
+887	apps/api/src/services/webhook/delivery.ts	167	167	reject	Follow-up update/digest on the HMAC created on line 166.
+888	apps/api/src/services/webhook/delivery.ts	168	168	reject	Follow-up update/digest on the HMAC created on line 166.
+889	apps/api/src/services/worker/nuq-fdb/groups.ts	116	116	asset	gt-0293
+890	apps/api/src/services/worker/nuq-fdb/queue.ts	754	754	asset	gt-0294
+891	apps/api/src/services/worker/nuq-fdb/sweeper.ts	130	130	asset	gt-0295
+892	apps/api/src/services/worker/nuq.ts	96	96	asset	gt-0296
+893	apps/js-sdk/firecrawl/src/__tests__/unit/v2/agent-thread.unit.test.ts	232	232	reject	Field or type named digest, or a comment about it; no hash computation.
+894	apps/js-sdk/firecrawl/src/__tests__/unit/v2/agent-thread.unit.test.ts	245	245	reject	Field or type named digest, or a comment about it; no hash computation.
+895	apps/js-sdk/firecrawl/src/__tests__/unit/v2/agent-thread.unit.test.ts	263	263	reject	Field or type named digest, or a comment about it; no hash computation.
+896	apps/js-sdk/firecrawl/src/__tests__/unit/v2/agent-thread.unit.test.ts	279	279	reject	Field or type named digest, or a comment about it; no hash computation.
+897	apps/js-sdk/firecrawl/src/v2/methods/tools.ts	77	77	asset	gt-0297
+898	apps/js-sdk/firecrawl/src/v2/types.ts	1689	1689	reject	Field or type named digest, or a comment about it; no hash computation.
+899	apps/js-sdk/firecrawl/src/v2/types.ts	1690	1690	reject	Field or type named digest, or a comment about it; no hash computation.
+900	apps/js-sdk/firecrawl/src/v2/types.ts	1703	1703	reject	Field or type named digest, or a comment about it; no hash computation.
+901	apps/js-sdk/firecrawl/src/v2/types.ts	1704	1704	reject	Field or type named digest, or a comment about it; no hash computation.
+902	apps/js-sdk/firecrawl/src/v2/types.ts	1734	1734	reject	Field or type named digest, or a comment about it; no hash computation.
+903	apps/js-sdk/firecrawl/src/v2/types.ts	1735	1735	reject	Field or type named digest, or a comment about it; no hash computation.
+904	apps/playwright-service-ts/api.ts	368	368	reject	Log line mentioning TLS verification; no TLS context.

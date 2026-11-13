@@ -1,0 +1,2554 @@
+schema_version: "1"
+entry: javascript-c-firecrawl-pool
+scope:
+  kind: pool
+assets:
+  - id: gt-0001
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [21, 21]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0002
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [64, 64]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0003
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [91, 91]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0004
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [114, 114]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0005
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [119, 119]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0006
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [128, 128]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0007
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [204, 204]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0008
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [211, 211]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0009
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [212, 212]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0010
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [245, 245]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0011
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [248, 248]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0012
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [264, 264]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0013
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [268, 268]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material. Two randomUUID calls on this line are two assets (this is call 1)."
+  - id: gt-0014
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [268, 268]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material. Two randomUUID calls on this line are two assets (this is call 2)."
+  - id: gt-0015
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [277, 277]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0016
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [288, 288]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0017
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [291, 291]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0018
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [337, 337]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0019
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [340, 340]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0020
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [375, 375]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0021
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [378, 378]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material. Two randomUUID calls on this line are two assets (this is call 1)."
+  - id: gt-0022
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [378, 378]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material. Two randomUUID calls on this line are two assets (this is call 2)."
+  - id: gt-0023
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [411, 411]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0024
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [443, 443]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0025
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [460, 460]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0026
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [462, 462]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0027
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [482, 482]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0028
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [485, 485]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0029
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [527, 527]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0030
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [565, 565]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0031
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [577, 577]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0032
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [584, 584]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0033
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [595, 595]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0034
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [610, 610]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0035
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [613, 613]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0036
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [639, 639]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0037
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [642, 642]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0038
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [682, 682]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0039
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [683, 683]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0040
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [703, 703]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0041
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [705, 705]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0042
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [715, 715]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0043
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [727, 727]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0044
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [729, 729]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0045
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [752, 752]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0046
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [754, 754]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0047
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [772, 772]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0048
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [773, 773]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0049
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [796, 796]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0050
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [810, 810]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0051
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [830, 830]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0052
+    file: apps/api/src/__tests__/nuq-fdb/core.test.ts
+    lines: [833, 833]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0053
+    file: apps/api/src/__tests__/nuq-fdb/key-gate.test.ts
+    lines: [18, 18]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0054
+    file: apps/api/src/__tests__/nuq-fdb/key-gate.test.ts
+    lines: [58, 58]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0055
+    file: apps/api/src/__tests__/nuq-fdb/key-gate.test.ts
+    lines: [84, 84]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0056
+    file: apps/api/src/__tests__/nuq-fdb/key-gate.test.ts
+    lines: [109, 109]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0057
+    file: apps/api/src/__tests__/nuq-fdb/key-gate.test.ts
+    lines: [148, 148]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0058
+    file: apps/api/src/__tests__/nuq-fdb/key-gate.test.ts
+    lines: [149, 149]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0059
+    file: apps/api/src/__tests__/nuq-fdb/key-gate.test.ts
+    lines: [186, 186]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0060
+    file: apps/api/src/__tests__/nuq-fdb/key-gate.test.ts
+    lines: [196, 196]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0061
+    file: apps/api/src/__tests__/nuq-fdb/key-gate.test.ts
+    lines: [224, 224]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0062
+    file: apps/api/src/__tests__/nuq-fdb/key-gate.test.ts
+    lines: [225, 225]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0063
+    file: apps/api/src/__tests__/nuq-fdb/key-gate.test.ts
+    lines: [265, 265]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0064
+    file: apps/api/src/__tests__/nuq-fdb/key-gate.test.ts
+    lines: [300, 300]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0065
+    file: apps/api/src/__tests__/nuq-fdb/key-gate.test.ts
+    lines: [302, 302]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0066
+    file: apps/api/src/__tests__/nuq-fdb/key-gate.test.ts
+    lines: [331, 331]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0067
+    file: apps/api/src/__tests__/nuq-fdb/key-gate.test.ts
+    lines: [332, 332]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0068
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [54, 54]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0069
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [55, 55]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0070
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [60, 60]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0071
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [66, 66]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0072
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [67, 67]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0073
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [121, 121]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0074
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [122, 122]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0075
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [164, 164]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0076
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [165, 165]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0077
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [172, 172]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0078
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [224, 224]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0079
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [225, 225]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0080
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [226, 226]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0081
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [271, 271]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0082
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [272, 272]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0083
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [273, 273]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0084
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [309, 309]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0085
+    file: apps/api/src/__tests__/nuq-fdb/router.test.ts
+    lines: [310, 310]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0086
+    file: apps/api/src/__tests__/nuq-fdb/stress.test.ts
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0087
+    file: apps/api/src/__tests__/nuq-fdb/stress.test.ts
+    lines: [32, 32]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0088
+    file: apps/api/src/__tests__/nuq-fdb/stress.test.ts
+    lines: [40, 40]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0089
+    file: apps/api/src/__tests__/nuq-fdb/stress.test.ts
+    lines: [104, 104]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0090
+    file: apps/api/src/__tests__/nuq-fdb/stress.test.ts
+    lines: [105, 105]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0091
+    file: apps/api/src/__tests__/nuq-fdb/stress.test.ts
+    lines: [118, 118]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0092
+    file: apps/api/src/__tests__/nuq-postgres.test.ts
+    lines: [41, 41]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0093
+    file: apps/api/src/__tests__/nuq-postgres.test.ts
+    lines: [46, 46]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0094
+    file: apps/api/src/__tests__/nuq-postgres.test.ts
+    lines: [47, 47]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0095
+    file: apps/api/src/__tests__/nuq-postgres.test.ts
+    lines: [79, 79]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0096
+    file: apps/api/src/__tests__/nuq-postgres.test.ts
+    lines: [80, 80]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material. Two randomUUID calls on this line are two assets (this is call 1)."
+  - id: gt-0097
+    file: apps/api/src/__tests__/nuq-postgres.test.ts
+    lines: [80, 80]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material. Two randomUUID calls on this line are two assets (this is call 2)."
+  - id: gt-0098
+    file: apps/api/src/__tests__/nuq-postgres.test.ts
+    lines: [81, 81]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material. Two randomUUID calls on this line are two assets (this is call 1)."
+  - id: gt-0099
+    file: apps/api/src/__tests__/nuq-postgres.test.ts
+    lines: [81, 81]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material. Two randomUUID calls on this line are two assets (this is call 2)."
+  - id: gt-0100
+    file: apps/api/src/__tests__/snips/index-cache.test.ts
+    lines: [28, 28]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0101
+    file: apps/api/src/__tests__/snips/lib.ts
+    lines: [51, 51]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0102
+    file: apps/api/src/__tests__/snips/v1/deprecation.test.ts
+    lines: [79, 79]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0103
+    file: apps/api/src/__tests__/snips/v1/deprecation.test.ts
+    lines: [207, 207]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0104
+    file: apps/api/src/__tests__/snips/v1/deprecation.test.ts
+    lines: [226, 226]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0105
+    file: apps/api/src/__tests__/snips/v1/scrape.test.ts
+    lines: [32, 32]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0106
+    file: apps/api/src/__tests__/snips/v1/scrape.test.ts
+    lines: [346, 346]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0107
+    file: apps/api/src/__tests__/snips/v1/scrape.test.ts
+    lines: [862, 862]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0108
+    file: apps/api/src/__tests__/snips/v1/scrape.test.ts
+    lines: [1119, 1119]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0109
+    file: apps/api/src/__tests__/snips/v1/scrape.test.ts
+    lines: [1120, 1120]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0110
+    file: apps/api/src/__tests__/snips/v1/zdr.test.ts
+    lines: [33, 33]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0111
+    file: apps/api/src/__tests__/snips/v2/agent-thread.test.ts
+    lines: [175, 175]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0112
+    file: apps/api/src/__tests__/snips/v2/agent-thread.test.ts
+    lines: [190, 190]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0113
+    file: apps/api/src/__tests__/snips/v2/auth-denied.test.ts
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0114
+    file: apps/api/src/__tests__/snips/v2/browser-replay.test.ts
+    lines: [79, 79]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0115
+    file: apps/api/src/__tests__/snips/v2/browser-replay.test.ts
+    lines: [153, 153]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0116
+    file: apps/api/src/__tests__/snips/v2/browser-replay.test.ts
+    lines: [230, 230]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0117
+    file: apps/api/src/__tests__/snips/v2/crawl.test.ts
+    lines: [359, 359]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0118
+    file: "apps/api/src/__tests__/snips/v2/exchange-provider-metadata.test.ts"
+    lines: [201, 201]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0119
+    file: apps/api/src/__tests__/snips/v2/index-cache-variants.test.ts
+    lines: [23, 23]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0120
+    file: apps/api/src/__tests__/snips/v2/index-cache-variants.test.ts
+    lines: [54, 54]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0121
+    file: apps/api/src/__tests__/snips/v2/monitor.test.ts
+    lines: [46, 46]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0122
+    file: apps/api/src/__tests__/snips/v2/parse.test.ts
+    lines: [164, 165]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "crypto\\n.createHmac('sha256', getLocalUploadRefSecret()) split over 164-165 (receiver on 164, callee on 165), as in the files-scope slack test; update/digest are follow-ups."
+  - id: gt-0123
+    file: "apps/api/src/__tests__/snips/v2/parsers-maxpages-index-cache.test.ts"
+    lines: [24, 24]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0124
+    file: "apps/api/src/__tests__/snips/v2/parsers-maxpages-index-cache.test.ts"
+    lines: [46, 46]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0125
+    file: "apps/api/src/__tests__/snips/v2/parsers-maxpages-index-cache.test.ts"
+    lines: [70, 70]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0126
+    file: apps/api/src/__tests__/snips/v2/scrape-browser.test.ts
+    lines: [46, 46]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0127
+    file: apps/api/src/__tests__/snips/v2/scrape-browser.test.ts
+    lines: [47, 47]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0128
+    file: apps/api/src/__tests__/snips/v2/scrape-browser.test.ts
+    lines: [111, 111]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0129
+    file: apps/api/src/__tests__/snips/v2/scrape-browser.test.ts
+    lines: [184, 184]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0130
+    file: apps/api/src/__tests__/snips/v2/scrape-browser.test.ts
+    lines: [262, 262]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0131
+    file: apps/api/src/__tests__/snips/v2/scrape-browser.test.ts
+    lines: [285, 285]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0132
+    file: apps/api/src/__tests__/snips/v2/scrape-browser.test.ts
+    lines: [317, 317]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0133
+    file: apps/api/src/__tests__/snips/v2/scrape-cache.test.ts
+    lines: [19, 19]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0134
+    file: apps/api/src/__tests__/snips/v2/scrape-cache.test.ts
+    lines: [54, 54]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0135
+    file: apps/api/src/__tests__/snips/v2/scrape-cache.test.ts
+    lines: [89, 89]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0136
+    file: apps/api/src/__tests__/snips/v2/scrape-cache.test.ts
+    lines: [126, 126]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0137
+    file: apps/api/src/__tests__/snips/v2/scrape-cache.test.ts
+    lines: [162, 162]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0138
+    file: apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts
+    lines: [22, 22]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0139
+    file: apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts
+    lines: [59, 59]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0140
+    file: apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts
+    lines: [80, 80]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0141
+    file: apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts
+    lines: [105, 105]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0142
+    file: apps/api/src/__tests__/snips/v2/scrape-robots.test.ts
+    lines: [29, 29]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0143
+    file: apps/api/src/__tests__/snips/v2/scrape-skip-tls.test.ts
+    lines: [70, 76]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "The cert option loads the PEM certificate into the TLS context: a certificate parse, by analogy with load_cert_chain (guide; one certificate and one key parse on the same lines)."
+  - id: gt-0144
+    file: apps/api/src/__tests__/snips/v2/scrape-skip-tls.test.ts
+    lines: [70, 76]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "https.createServer({ key, cert }, handler) spans 70-76: creates a TLS listener with a server context (guide: creating a TLS session or listener is a protocol asset, like Go's httptest.NewTLSServer). Judgement call: https.createServer read as a TLS listener."
+  - id: gt-0145
+    file: apps/api/src/__tests__/snips/v2/scrape-skip-tls.test.ts
+    lines: [70, 76]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "The key option loads the PEM private key into the TLS context: a key parse with no material_type, by analogy with load_cert_chain."
+  - id: gt-0146
+    file: apps/api/src/__tests__/snips/v2/scrape.test.ts
+    lines: [34, 34]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0147
+    file: apps/api/src/__tests__/snips/v2/scrape.test.ts
+    lines: [64, 64]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0148
+    file: apps/api/src/__tests__/snips/v2/scrape.test.ts
+    lines: [1356, 1356]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0149
+    file: apps/api/src/__tests__/snips/v2/scrape.test.ts
+    lines: [1357, 1357]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0150
+    file: apps/api/src/__tests__/snips/v2/zdr.test.ts
+    lines: [44, 44]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0151
+    file: apps/api/src/__tests__/snips/v2/zdr.test.ts
+    lines: [80, 80]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0152
+    file: apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts
+    lines: [100, 100]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: unknown
+    object: auth-oidc-test/signing
+    notes: "jose generateKeyPair('RS256'): RSA key pair generation for JWS signing; no modulus length stated, so no key_size, and no hash on a key generation. PKCS1v15 as in the files-scope ground truth (an RSASSA-PKCS1-v1_5 key). Its private key is the default key of the sign() helper's SignJWT.sign: one object."
+  - id: gt-0153
+    file: apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts
+    lines: [100, 100]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair returns a key pair whose private key the program handles: private-key material on the lines of the key generation (owner decision 2026-11-08)."
+  - id: gt-0154
+    file: apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts
+    lines: [101, 101]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "jose exportJWK(signing.publicKey): serializing a public key to a JWK; only one serialization of this key, so no object."
+  - id: gt-0155
+    file: apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts
+    lines: [116, 130]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: unknown
+    object: auth-oidc-test/signing
+    notes: "new SignJWT(...)...sign(key) fluent chain from the constructor (116) to the closing parenthesis of .sign (130). alg is `overrides.alg ?? \"RS256\"` and a caller passes RS512, so the call fixes RSA PKCS#1 v1.5 but not the digest: no hash (same decision as the files-scope vercel-marketplace-oidc test). Default key signing.privateKey, so it joins that key's object. The sign() call sites are project helper calls."
+  - id: gt-0156
+    file: apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts
+    lines: [344, 344]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair('RS256'): RSA key pair generation for JWS signing; no modulus length stated, so no key_size, and no hash on a key generation. PKCS1v15 as in the files-scope ground truth (an RSASSA-PKCS1-v1_5 key). The rotated key reaches SignJWT.sign only through an override, and that call is grouped with the default key, so this key generation is its own object (as for 'other' in the files-scope test)."
+  - id: gt-0157
+    file: apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts
+    lines: [344, 344]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair returns a key pair whose private key the program handles: private-key material on the lines of the key generation (owner decision 2026-11-08)."
+  - id: gt-0158
+    file: apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts
+    lines: [346, 346]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "jose exportJWK(rotated.publicKey) on line 346 inside the object literal spanning 345-349: serializing a public key."
+  - id: gt-0159
+    file: apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts
+    lines: [384, 384]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair('RS512'): RSA key pair generation for JWS signing; no modulus length stated, so no key_size, and no hash on a key generation. PKCS1v15 as in the files-scope ground truth (an RSASSA-PKCS1-v1_5 key)."
+  - id: gt-0160
+    file: apps/api/src/controllers/__tests__/auth-vercel-oidc.test.ts
+    lines: [384, 384]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair returns a key pair whose private key the program handles: private-key material on the lines of the key generation (owner decision 2026-11-08)."
+  - id: gt-0161
+    file: apps/api/src/controllers/__tests__/auth.test.ts
+    lines: [183, 183]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHmac('sha256', key); update/digest are follow-ups, the range is the createHmac call."
+  - id: gt-0162
+    file: "apps/api/src/controllers/v2/feedback/alexandria.integration.test.ts"
+    lines: [75, 75]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0163
+    file: "apps/api/src/controllers/v2/feedback/alexandria.integration.test.ts"
+    lines: [76, 76]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0164
+    file: "apps/api/src/controllers/v2/feedback/record.integration.test.ts"
+    lines: [66, 66]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0165
+    file: "apps/api/src/controllers/v2/feedback/record.integration.test.ts"
+    lines: [67, 67]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0166
+    file: "apps/api/src/controllers/v2/feedback/record.integration.test.ts"
+    lines: [75, 75]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0167
+    file: "apps/api/src/controllers/v2/feedback/record.integration.test.ts"
+    lines: [77, 77]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0168
+    file: apps/api/src/controllers/v2/parse-upload.ts
+    lines: [103, 104]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: parse-upload/secret
+    notes: "crypto\\n.createHmac('sha256', secret) on 103-104 signing an upload ref. The verify on 124-125 is a second one-shot HMAC given the same secret (getEffectiveRefSecret()), so both share an object."
+  - id: gt-0169
+    file: apps/api/src/controllers/v2/parse-upload.ts
+    lines: [124, 125]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: parse-upload/secret
+    notes: "crypto\\n.createHmac('sha256', secret) on 124-125 recomputing the upload-ref signature; same secret as 103-104. timingSafeEqual on 133 is a constant-time comparison, not an asset."
+  - id: gt-0170
+    file: apps/api/src/controllers/v2/scrape-alexandria.ts
+    lines: [119, 119]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0171
+    file: apps/api/src/controllers/v2/team-siem-logging.ts
+    lines: [131, 131]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0172
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [23, 23]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: unknown
+    object: oidc-test/signing
+    notes: "jose generateKeyPair('RS256'): RSA key pair generation for JWS signing. The JWS name only selects the key type; no modulus length is stated (library default), so no key_size and, per the guide, no hash on a key generation. Its private key is the default key of the sign() helper's SignJWT.sign, so they share an object. Adjudication: the annotations differed on padding. Kept PKCS1v15: jose generateKeyPair('RS256') makes a WebCrypto RSASSA-PKCS1-v1_5 key bound to that scheme, as in the suite A jose entry. Same asset as the files-scope ground truth."
+  - id: gt-0173
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [23, 23]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair returns a key pair whose private key the program handles (owner decision 2026-11-08: private-key material on the same lines as the key generation). Same asset as the files-scope ground truth."
+  - id: gt-0174
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [24, 24]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair('RS256'): RSA key pair generation for JWS signing. The JWS name only selects the key type; no modulus length is stated (library default), so no key_size and, per the guide, no hash on a key generation. The 'other' key pair: its private key reaches SignJWT.sign only through an override argument, and that call is grouped with the default signing key, so this key generation is its own object. Adjudication: the annotations differed on padding. Kept PKCS1v15, as for the key pair on line 23. Same asset as the files-scope ground truth."
+  - id: gt-0175
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [24, 24]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair returns a key pair whose private key the program handles (owner decision 2026-11-08: private-key material on the same lines as the key generation). Same asset as the files-scope ground truth."
+  - id: gt-0176
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [26, 26]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "jose exportJWK(signing.publicKey): serializing a public key to a JWK. Only one serialization of this key, so no object. Same asset as the files-scope ground truth."
+  - id: gt-0177
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [30, 30]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "jose exportJWK(other.publicKey): serializing a public key to a JWK. Same asset as the files-scope ground truth."
+  - id: gt-0178
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [55, 70]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: unknown
+    object: oidc-test/signing
+    notes: "new SignJWT(...)...sign(key) fluent chain, one expression from the constructor (55) to the closing parenthesis of .sign (70); the alg is set by setProtectedHeader on lines 60-63, inside the range. alg is `overrides.alg ?? \"RS256\"`, and one caller passes RS512, so the call site fixes RSA PKCS#1 v1.5 but not the digest: no hash. Key defaults to signing.privateKey, so it joins the signing key object. Adjudication: the second annotation added hash SHA-256. Not added: alg is overrides.alg ?? 'RS256' and a caller passes RS512, so the call fixes PKCS#1 v1.5 for every value but not the digest; a parameter is set only when every value reaching the call fixes it. Same asset as the files-scope ground truth."
+  - id: gt-0179
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [120, 120]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair('RS512'): RSA key pair generation for JWS signing. The JWS name only selects the key type; no modulus length is stated (library default), so no key_size and, per the guide, no hash on a key generation. Adjudication: the annotations differed on padding. Kept PKCS1v15: generateKeyPair('RS512') makes an RSASSA-PKCS1-v1_5 key. Same asset as the files-scope ground truth."
+  - id: gt-0180
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [120, 120]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair returns a key pair whose private key the program handles (owner decision 2026-11-08: private-key material on the same lines as the key generation). Same asset as the files-scope ground truth."
+  - id: gt-0181
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [121, 121]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "jose exportJWK(rs512.publicKey): serializing a public key to a JWK. Same asset as the files-scope ground truth."
+  - id: gt-0182
+    file: apps/api/src/lib/__tests__/world-id.test.ts
+    lines: [31, 31]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: unknown
+    object: world-id-test/pair
+    notes: "jose generateKeyPair('RS256'): RSA key pair generation for JWS signing; no modulus length stated, so no key_size, and no hash on a key generation. PKCS1v15 as in the files-scope ground truth (an RSASSA-PKCS1-v1_5 key). Its private key signs every token in idToken(): one object."
+  - id: gt-0183
+    file: apps/api/src/lib/__tests__/world-id.test.ts
+    lines: [31, 31]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair returns a key pair whose private key the program handles: private-key material on the lines of the key generation (owner decision 2026-11-08)."
+  - id: gt-0184
+    file: apps/api/src/lib/__tests__/world-id.test.ts
+    lines: [33, 33]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "jose exportJWK(pair.publicKey): serializing a public key to a JWK."
+  - id: gt-0185
+    file: apps/api/src/lib/__tests__/world-id.test.ts
+    lines: [51, 58]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: world-id-test/pair
+    notes: "new SignJWT(...).setProtectedHeader({ alg: 'RS256' })...sign(privateKey) chain 51-58; the literal RS256 fixes PKCS#1 v1.5 with SHA-256."
+  - id: gt-0186
+    file: apps/api/src/lib/__tests__/world-id.test.ts
+    lines: [120, 120]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', literal key) forging a credential signature in a test; update/digest follow-ups."
+  - id: gt-0187
+    file: apps/api/src/lib/alexandria-feedback-token.test.ts
+    lines: [89, 89]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', literal secret) used to derive the token signing key (HMAC as a key derivation step); annotated as the HMAC it calls. update/digest are follow-ups. Same asset as the files-scope ground truth."
+  - id: gt-0188
+    file: apps/api/src/lib/alexandria-feedback-token.test.ts
+    lines: [95, 95]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', key) signing the token payload with the key derived at line 89; a derived key is a new object, and it is used once, so no object. Same asset as the files-scope ground truth."
+  - id: gt-0189
+    file: apps/api/src/lib/alexandria-feedback-token.ts
+    lines: [22, 22]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', secret) deriving the token signing key (domain-separated); same shape as the files-scope test file's line 89."
+  - id: gt-0190
+    file: apps/api/src/lib/alexandria-feedback-token.ts
+    lines: [29, 29]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', key) in the sign helper; the key is derived by signingKey() on each call (a new object each derivation), so no object. The sign(...) helper call sites on 54 and 82 are project helper calls, not assets."
+  - id: gt-0191
+    file: apps/api/src/lib/bigtable-row-key.ts
+    lines: [21, 22]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "crypto\\n.createHash('sha256') split over 21-22; the result is named salt but is a digest output (guide: a digest's output is not material)."
+  - id: gt-0192
+    file: apps/api/src/lib/browser-sessions.ts
+    lines: [289, 289]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHash('sha256') on line 289; update/digest/slice on 290-292 are follow-ups, so the range is the createHash call only. Same asset as the files-scope ground truth."
+  - id: gt-0193
+    file: apps/api/src/lib/change-tracking-store.ts
+    lines: [38, 38]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHash('sha256') inside the project's sha256() helper; the helper's call sites (43, 45, 57) are not assets."
+  - id: gt-0194
+    file: apps/api/src/lib/deterministicJson/core/util.ts
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0195
+    file: apps/api/src/lib/gcs-jobs.ts
+    lines: [63, 63]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0196
+    file: apps/api/src/lib/gcs-pdf-cache.ts
+    lines: [38, 38]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHash('sha256') for a cache key. Same asset as the files-scope ground truth."
+  - id: gt-0197
+    file: apps/api/src/lib/html-to-markdown.ts
+    lines: [20, 20]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0198
+    file: apps/api/src/lib/keyless-signup-link.ts
+    lines: [73, 73]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 128
+      mode: ECB
+    origin: project
+    reachable: unknown
+    object: keyless-signup-link/key
+    notes: "createCipheriv('aes-128-ecb', key, null) inside the project's FF1 (NIST SP 800-38G) implementation; the library call inside the helper is the asset, ff1Encrypt/ff1Decrypt/encryptKeylessSignupToken call sites are not. setAutoPadding(false) turns off padding, so no padding parameter. ff1() passes the same key to aesBlock and prf, so both cipher objects are built on one key: one object."
+  - id: gt-0199
+    file: apps/api/src/lib/keyless-signup-link.ts
+    lines: [80, 80]
+    asset_type: algorithm
+    primitive: block-cipher
+    algorithm: AES
+    parameters:
+      key_size: 128
+      mode: CBC
+    origin: project
+    reachable: unknown
+    object: keyless-signup-link/key
+    notes: "createCipheriv('aes-128-cbc', key, Buffer.alloc(16)) used as FF1's PRF (AES CBC-MAC with a zero IV); annotated as the AES-CBC cipher the call creates. Judgement call: primitive kept block-cipher (the call is a cipher, the CBC-MAC is built on top of it by the project). setAutoPadding(false): no padding."
+  - id: gt-0200
+    file: apps/api/src/lib/keyless-signup-link.ts
+    lines: [80, 80]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: unknown
+    notes: "Buffer.alloc(16), a constant all-zero IV created inline and passed as createCipheriv's iv: a literal that creates the material (guide, Related crypto material). Judgement call: a zero-filled buffer is treated like a literal IV."
+  - id: gt-0201
+    file: apps/api/src/lib/keyless.ts
+    lines: [114, 114]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', secret) inside a template literal; update/digest on 115-116 are follow-ups."
+  - id: gt-0202
+    file: apps/api/src/lib/mcp-delegated-credential.ts
+    lines: [76, 76]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', secret) recomputing a credential signature; one call in the file, so no object."
+  - id: gt-0203
+    file: apps/api/src/lib/org-secret-crypto.test.ts
+    lines: [14, 14]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "node:crypto randomBytes draws from the cryptographic RNG: a drbg draw with no algorithm. Hex string set as the AES-256-GCM key in config; random bytes used as a key are a draw only (guide), as in the files-scope slack test."
+  - id: gt-0204
+    file: apps/api/src/lib/org-secret-crypto.ts
+    lines: [35, 35]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "node:crypto randomBytes draws from the cryptographic RNG: a drbg draw with no algorithm. Becomes the IV passed to createCipheriv on line 36."
+  - id: gt-0205
+    file: apps/api/src/lib/org-secret-crypto.ts
+    lines: [35, 35]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: unknown
+    notes: "randomBytes(12) passed as the iv argument of createCipheriv('aes-256-gcm', key, iv) on line 36; Node names the parameter iv, so initialization-vector (as in the suite A node stdlib entry)."
+  - id: gt-0206
+    file: apps/api/src/lib/org-secret-crypto.ts
+    lines: [36, 36]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: GCM
+    origin: project
+    reachable: unknown
+    object: org-secret-crypto/key
+    notes: "createCipheriv('aes-256-gcm', key, iv). update/final are follow-ups. The key is read from config by getEncryptionKey() in both encrypt and decrypt, so both calls are built on the same key: one object."
+  - id: gt-0207
+    file: apps/api/src/lib/org-secret-crypto.ts
+    lines: [42, 42]
+    asset_type: related-crypto-material
+    material_type: tag
+    origin: project
+    reachable: unknown
+    notes: "cipher.getAuthTag() returns the GCM tag separately from the ciphertext (guide, Tag)."
+  - id: gt-0208
+    file: apps/api/src/lib/org-secret-crypto.ts
+    lines: [58, 62]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: GCM
+    origin: project
+    reachable: unknown
+    object: org-secret-crypto/key
+    notes: "createDecipheriv('aes-256-gcm', getEncryptionKey(), iv) spans 58-62; decryption is its own asset. setAAD/setAuthTag/update/final are follow-ups or configuration."
+  - id: gt-0209
+    file: apps/api/src/lib/owner-id.ts
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: "createHash('sha1') implementing UUIDv5 (RFC 4122 namespaced SHA-1); update/digest on 11-13 are follow-ups. Same asset as the files-scope ground truth."
+  - id: gt-0210
+    file: apps/api/src/lib/request-credits-store.ts
+    lines: [50, 50]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0211
+    file: apps/api/src/lib/request-credits-store.ts
+    lines: [61, 62]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "crypto\\n.createHash('sha256') split over 61-62; the result is named salt but is a digest output, not salt material."
+  - id: gt-0212
+    file: apps/api/src/lib/request-credits-store.ts
+    lines: [79, 79]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0213
+    file: apps/api/src/lib/secret-compare.ts
+    lines: [9, 9]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHash('sha256') hashing a secret before a constant-time comparison; still an asset (purpose does not matter)."
+  - id: gt-0214
+    file: apps/api/src/lib/secret-compare.ts
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Second createHash('sha256') on its own line; own asset.
+  - id: gt-0215
+    file: apps/api/src/lib/siem-logging/azure-sentinel.test.ts
+    lines: [314, 314]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0216
+    file: apps/api/src/lib/siem-logging/azure-sentinel.test.ts
+    lines: [341, 341]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0217
+    file: apps/api/src/lib/siem-logging/azure-sentinel.ts
+    lines: [67, 67]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0218
+    file: apps/api/src/lib/siem-logging/azure-sentinel.ts
+    lines: [304, 304]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0219
+    file: apps/api/src/lib/spur.ts
+    lines: [247, 247]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Used as a lock token. Same asset as the files-scope ground truth."
+  - id: gt-0220
+    file: "apps/api/src/lib/threat-protection/providers/google-web-risk.ts"
+    lines: [102, 102]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0221
+    file: "apps/api/src/lib/threat-protection/providers/web-risk/sync.test.ts"
+    lines: [59, 59]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0222
+    file: "apps/api/src/lib/threat-protection/providers/web-risk/sync.ts"
+    lines: [106, 106]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0223
+    file: "apps/api/src/lib/threat-protection/providers/web-risk/sync.ts"
+    lines: [184, 184]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0224
+    file: "apps/api/src/lib/threat-protection/providers/web-risk/testing.ts"
+    lines: [15, 15]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHash('sha256') inside the exported sha256() test helper; the helper's call sites (store.test.ts, line 24) are project helper calls, not assets."
+  - id: gt-0225
+    file: "apps/api/src/lib/threat-protection/providers/web-risk/testing.ts"
+    lines: [87, 87]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0226
+    file: "apps/api/src/lib/threat-protection/providers/zscaler/client.ts"
+    lines: [117, 117]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0227
+    file: "apps/api/src/lib/threat-protection/providers/zscaler/lookup-queue.ts"
+    lines: [196, 196]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0228
+    file: apps/api/src/lib/tracking.ts
+    lines: [31, 31]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0229
+    file: apps/api/src/lib/vercel-marketplace-oidc.ts
+    lines: [201, 206]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "jose jwtVerify(token, getKey, { algorithms: ['RS256'] }) spans 201-206; one-shot verify, RS256 fixes PKCS#1 v1.5 with SHA-256. The key comes from a remote JWKS, so no object."
+  - id: gt-0230
+    file: apps/api/src/lib/world-id.ts
+    lines: [50, 50]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', WORLD_ID_CREDENTIAL_SECRET) deriving a per-purpose key (derivedKey)."
+  - id: gt-0231
+    file: apps/api/src/lib/world-id.ts
+    lines: [63, 63]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', WORLD_ID_SUBJECT_SECRET) keyed subject pseudonym."
+  - id: gt-0232
+    file: apps/api/src/lib/world-id.ts
+    lines: [93, 93]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', derivedKey('credential')) minting a credential. The key is derived anew on each call (guide, Derived keys), so not grouped with line 127."
+  - id: gt-0233
+    file: apps/api/src/lib/world-id.ts
+    lines: [127, 127]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', derivedKey('credential')) verifying a credential; key derived anew, no object. timingSafeEqual on 130 is not an asset."
+  - id: gt-0234
+    file: apps/api/src/lib/world-id.ts
+    lines: [162, 162]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "node:crypto randomBytes draws from the cryptographic RNG: a drbg draw with no algorithm. Becomes the IV passed to createCipheriv on line 163."
+  - id: gt-0235
+    file: apps/api/src/lib/world-id.ts
+    lines: [162, 162]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: unknown
+    notes: "randomBytes(12) passed as the iv argument of createCipheriv('aes-256-gcm', key, iv) on line 163; Node names the parameter iv, so initialization-vector (as in the suite A node stdlib entry)."
+  - id: gt-0236
+    file: apps/api/src/lib/world-id.ts
+    lines: [163, 163]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: GCM
+    origin: project
+    reachable: unknown
+    notes: "createCipheriv('aes-256-gcm', derivedKey('device'), iv). The key is derived by an HMAC each time derivedKey runs, and a derived key is a new object each time it is derived (guide, Derived keys), so the seal and open calls are not grouped."
+  - id: gt-0237
+    file: apps/api/src/lib/world-id.ts
+    lines: [168, 168]
+    asset_type: related-crypto-material
+    material_type: tag
+    origin: project
+    reachable: unknown
+    notes: "cipher.getAuthTag() inside Buffer.concat returns the GCM tag separately from the ciphertext (guide, Tag)."
+  - id: gt-0238
+    file: apps/api/src/lib/world-id.ts
+    lines: [180, 184]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: GCM
+    origin: project
+    reachable: unknown
+    notes: "createDecipheriv('aes-256-gcm', derivedKey('device'), iv) spans 180-184; its own asset. Not grouped with line 163: the key is derived anew on each call."
+  - id: gt-0239
+    file: apps/api/src/lib/world-id.ts
+    lines: [313, 318]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "jose jwtVerify(idToken, issuerJwks(), { algorithms: ['RS256'] }) spans 313-318; one-shot verify of an ID token, RS256 fixes PKCS#1 v1.5 with SHA-256."
+  - id: gt-0240
+    file: apps/api/src/lib/zdr-queue.ts
+    lines: [236, 236]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0241
+    file: apps/api/src/scraper/scrapeURL/engines/index/index.ts
+    lines: [105, 105]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0242
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts"
+    lines: [248, 248]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0243
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts"
+    lines: [276, 276]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0244
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts"
+    lines: [286, 286]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0245
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/fireEngineHandoff.test.ts"
+    lines: [414, 414]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0246
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFBackgroundRefresh.test.ts"
+    lines: [28, 28]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHash('sha256') in a vi.mock factory replacing createPdfCacheKey; a real library call in the test."
+  - id: gt-0247
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFBackgroundRefresh.test.ts"
+    lines: [131, 131]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0248
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFBackgroundRefresh.test.ts"
+    lines: [132, 132]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0249
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFCache.test.ts"
+    lines: [58, 58]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHash('sha256') in a vi.mock factory; a real library call in the test."
+  - id: gt-0250
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFCache.test.ts"
+    lines: [1390, 1391]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "crypto\\n.createHash('sha256') split over 1390-1391 inside a template literal."
+  - id: gt-0251
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFCache.test.ts"
+    lines: [1394, 1394]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0252
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/__tests__/firePDFSupersede.test.ts"
+    lines: [142, 143]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "crypto\\n.createHash('sha256') split over 142-143 inside a template literal."
+  - id: gt-0253
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/background-refresh.ts"
+    lines: [128, 128]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0254
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts"
+    lines: [39, 39]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0255
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts"
+    lines: [282, 282]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHash('sha256') streaming hash of a file; update in the loop and digest on 286 are follow-ups."
+  - id: gt-0256
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/by-reference.ts"
+    lines: [344, 344]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Conditional createHash('sha256') on 344 (the expression starts on 343); update in the Transform and digest on 379 are follow-ups."
+  - id: gt-0257
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/cache-service.ts"
+    lines: [38, 41]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "WebCrypto crypto.subtle.digest('SHA-256', ...) one-shot, call spans 38-41. The createPdfCacheKey call on line 43 is a project helper in another file and is not annotated here. Same asset as the files-scope ground truth."
+  - id: gt-0258
+    file: "apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/routing.ts"
+    lines: [55, 55]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0259
+    file: apps/api/src/scraper/scrapeURL/engines/pdf/runpodMU.ts
+    lines: [104, 104]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0260
+    file: "apps/api/src/scraper/scrapeURL/engines/utils/specialtyHandler.ts"
+    lines: [35, 35]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0261
+    file: apps/api/src/scraper/scrapeURL/index.ts
+    lines: [400, 400]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0262
+    file: apps/api/src/scraper/scrapeURL/lib/fetch.ts
+    lines: [118, 118]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0263
+    file: apps/api/src/scraper/scrapeURL/lib/mock.ts
+    lines: [16, 16]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0264
+    file: apps/api/src/scraper/scrapeURL/lib/promptInjectionGuard.ts
+    lines: [102, 102]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0265
+    file: apps/api/src/scraper/scrapeURL/waterfallExperiments.ts
+    lines: [34, 34]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0266
+    file: apps/api/src/search/tool-intent.ts
+    lines: [172, 172]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0267
+    file: apps/api/src/search/tool-intent.ts
+    lines: [204, 204]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0268
+    file: apps/api/src/services/alexandria/retrieve.ts
+    lines: [80, 80]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0269
+    file: apps/api/src/services/autumn/autumn.service.ts
+    lines: [321, 321]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0270
+    file: apps/api/src/services/autumn/firebill.ts
+    lines: [316, 316]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0271
+    file: apps/api/src/services/index-cache.ts
+    lines: [100, 100]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0272
+    file: apps/api/src/services/index.ts
+    lines: [216, 216]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0273
+    file: apps/api/src/services/integrations/slack/crypto.ts
+    lines: [48, 48]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "node:crypto randomBytes draws from the cryptographic RNG: a drbg draw with no algorithm. Becomes the IV passed to createCipheriv on line 49."
+  - id: gt-0274
+    file: apps/api/src/services/integrations/slack/crypto.ts
+    lines: [48, 48]
+    asset_type: related-crypto-material
+    material_type: initialization-vector
+    origin: project
+    reachable: unknown
+    notes: "randomBytes(12) passed as the iv argument of createCipheriv('aes-256-gcm', key, iv) on line 49; Node names the parameter iv, so initialization-vector (as in the suite A node stdlib entry)."
+  - id: gt-0275
+    file: apps/api/src/services/integrations/slack/crypto.ts
+    lines: [49, 49]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: GCM
+    origin: project
+    reachable: unknown
+    object: slack-crypto/key
+    notes: "createCipheriv('aes-256-gcm', key, iv). The key comes from getKey() (config) in both encrypt and decrypt: one object with the decrypt on 75-79."
+  - id: gt-0276
+    file: apps/api/src/services/integrations/slack/crypto.ts
+    lines: [54, 54]
+    asset_type: related-crypto-material
+    material_type: tag
+    origin: project
+    reachable: unknown
+    notes: "cipher.getAuthTag() returns the GCM tag separately (guide, Tag)."
+  - id: gt-0277
+    file: apps/api/src/services/integrations/slack/crypto.ts
+    lines: [75, 79]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: GCM
+    origin: project
+    reachable: unknown
+    object: slack-crypto/key
+    notes: "createDecipheriv('aes-256-gcm', key, iv) spans 75-79; decryption is its own asset."
+  - id: gt-0278
+    file: apps/api/src/services/integrations/slack/oauth.ts
+    lines: [48, 48]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "node:crypto randomBytes draws from the cryptographic RNG: a drbg draw with no algorithm. Used as an OAuth state value, not crypto material."
+  - id: gt-0279
+    file: apps/api/src/services/integrations/slack/signature.ts
+    lines: [35, 35]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', signingSecret) verifying a webhook request signature; the key is a parameter or config value from outside the file. timingSafeEqual on line 40 is a constant-time comparison, not an asset. Same asset as the files-scope ground truth."
+  - id: gt-0280
+    file: apps/api/src/services/integrations/slack/slack.test.ts
+    lines: [23, 23]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto.randomBytes(32) drawn as a token encryption key (hex string set in config). Random bytes used as a key are a drbg draw only, no related crypto material. Same asset as the files-scope ground truth."
+  - id: gt-0281
+    file: apps/api/src/services/integrations/slack/slack.test.ts
+    lines: [42, 42]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto.randomBytes(32) drawn as a token encryption key; drbg draw only. Same asset as the files-scope ground truth."
+  - id: gt-0282
+    file: apps/api/src/services/integrations/slack/slack.test.ts
+    lines: [61, 62]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "crypto.createHmac('sha256', secret) split over lines 61-62 (receiver on 61, callee on 62); range covers both. The literal secret is given to this one HMAC call only (the verify function is a project helper), so no object. Same asset as the files-scope ground truth."
+  - id: gt-0283
+    file: apps/api/src/services/monitoring/email_recipients.ts
+    lines: [37, 37]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "node:crypto randomBytes draws from the cryptographic RNG: a drbg draw with no algorithm. Used as a recipient confirmation token, not crypto material."
+  - id: gt-0284
+    file: apps/api/src/services/monitoring/jitter.ts
+    lines: [11, 11]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0285
+    file: apps/api/src/services/monitoring/scheduler.ts
+    lines: [52, 52]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0286
+    file: apps/api/src/services/monitoring/search/dedupe.ts
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0287
+    file: apps/api/src/services/monitoring/search/dedupe.ts
+    lines: [26, 26]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0288
+    file: apps/api/src/services/monitoring/store.ts
+    lines: [45, 45]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0289
+    file: apps/api/src/services/oauth-token-introspection.ts
+    lines: [34, 34]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0290
+    file: apps/api/src/services/vercel-marketplace-oidc.ts
+    lines: [43, 43]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "node:crypto createHash('sha256') one-shot chain; update/digest are follow-ups, the range is the createHash call."
+  - id: gt-0291
+    file: apps/api/src/services/webhook/delivery.ts
+    lines: [83, 83]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0292
+    file: apps/api/src/services/webhook/delivery.ts
+    lines: [166, 166]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', this.secret) webhook signature; update on 167 and digest on 168 are follow-ups."
+  - id: gt-0293
+    file: apps/api/src/services/worker/nuq-fdb/groups.ts
+    lines: [116, 116]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0294
+    file: apps/api/src/services/worker/nuq-fdb/queue.ts
+    lines: [754, 754]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0295
+    file: apps/api/src/services/worker/nuq-fdb/sweeper.ts
+    lines: [130, 130]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0296
+    file: apps/api/src/services/worker/nuq.ts
+    lines: [96, 96]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."
+  - id: gt-0297
+    file: apps/js-sdk/firecrawl/src/v2/methods/tools.ts
+    lines: [77, 77]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID (imported from node:crypto or the global Web Crypto object) draws from the cryptographic RNG: a drbg draw with no algorithm, as in the files-scope ground truth. The UUID is an identifier, not related crypto material."

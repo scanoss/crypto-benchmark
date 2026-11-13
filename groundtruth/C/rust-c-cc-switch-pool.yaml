@@ -1,0 +1,388 @@
+schema_version: "1"
+entry: rust-c-cc-switch-pool
+scope:
+  kind: pool
+assets:
+  - id: gt-0001
+    file: src-tauri/src/codex_history_migration.rs
+    lines: [1503, 1503]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest of a provider id. The DefaultHasher (SipHash) on line 1523 is std hashing, not a crypto API, and is not an item."
+  - id: gt-0002
+    file: src-tauri/src/live/engine.rs
+    lines: [87, 87]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest inside the project helper sha256_hex; callers of sha256_hex/digest elsewhere are helper calls (guide, project helpers)."
+  - id: gt-0003
+    file: src-tauri/src/pi_config/mod.rs
+    lines: [494, 494]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope asset: Sha256::digest one-shot for a config revision string."
+  - id: gt-0004
+    file: src-tauri/src/proxy/codex_quota_protection.rs
+    lines: [266, 266]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new() for an owner/token fingerprint; updates are follow-ups."
+  - id: gt-0005
+    file: src-tauri/src/proxy/copilot_optimizer.rs
+    lines: [314, 314]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope asset: deterministic request id."
+  - id: gt-0006
+    file: src-tauri/src/proxy/copilot_optimizer.rs
+    lines: [343, 343]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope asset: deterministic interaction id."
+  - id: gt-0007
+    file: src-tauri/src/proxy/forwarder.rs
+    lines: [79, 79]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new() for a conversation fingerprint; finalize on line 100 is a follow-up."
+  - id: gt-0008
+    file: src-tauri/src/proxy/hyper_client.rs
+    lines: [62, 66]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope asset: hyper-rustls HttpsConnectorBuilder chain with webpki roots (guide, TLS sessions). The item covers 62-63; the call runs to build() on 66."
+  - id: gt-0009
+    file: src-tauri/src/proxy/hyper_client.rs
+    lines: [431, 432]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope asset: tokio-rustls tls_connector.connect(server_name, stream) creates a TLS session (guide, TLS sessions)."
+  - id: gt-0010
+    file: src-tauri/src/proxy/hyper_client.rs
+    lines: [537, 538]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope asset: tokio-rustls connect to an https proxy creates a TLS session (guide, TLS sessions)."
+  - id: gt-0011
+    file: src-tauri/src/proxy/hyper_client.rs
+    lines: [622, 622]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope asset: rustls_native_certs::load_native_certs parses the system certificates (guide, certificate and key loaders). The files-scope object id is left out because its partner, add_parsable_certificates on line 623, is not a pool item, and an object needs two assets."
+  - id: gt-0012
+    file: src-tauri/src/proxy/hyper_client.rs
+    lines: [625, 627]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope asset: rustls ClientConfig::builder() chain creates the TLS client context. TlsConnector::from on 628 is configuration."
+  - id: gt-0013
+    file: src-tauri/src/proxy/json_canonical.rs
+    lines: [93, 93]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new() wrapped in a HashWriter for canonical JSON hashing; finalize on line 103 is a follow-up."
+  - id: gt-0014
+    file: src-tauri/src/proxy/json_canonical.rs
+    lines: [107, 107]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest one-shot of bytes."
+  - id: gt-0015
+    file: src-tauri/src/proxy/providers/codex_oauth_auth/browser.rs
+    lines: [57, 57]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest of the PKCE verifier (S256 challenge)."
+  - id: gt-0016
+    file: src-tauri/src/proxy/providers/codex_oauth_auth/browser.rs
+    lines: [343, 343]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest in a test assertion; tests are in scope."
+  - id: gt-0017
+    file: src-tauri/src/proxy/usage/logger.rs
+    lines: [68, 68]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest of an encoded semantic key; the .sha256() method calls on it are project helper calls."
+  - id: gt-0018
+    file: src-tauri/src/services/agy_account/oauth.rs
+    lines: [80, 80]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope asset: PKCE S256 challenge."
+  - id: gt-0019
+    file: src-tauri/src/services/claude_account/layout.rs
+    lines: [123, 123]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Same as the files-scope asset.
+  - id: gt-0020
+    file: src-tauri/src/services/claude_account/layout.rs
+    lines: [167, 167]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Same as the files-scope asset (test).
+  - id: gt-0021
+    file: src-tauri/src/services/claude_account/snapshot/store.rs
+    lines: [108, 108]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Same as the files-scope asset.
+  - id: gt-0022
+    file: src-tauri/src/services/coding_plan.rs
+    lines: [1371, 1371]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Hmac<Sha256>::new_from_slice inside the project helper volc_hmac_sha256 (Volcengine request signing). The key is a helper parameter, so no object; the helper calls on 1444-1448 are project-helper rejects."
+  - id: gt-0023
+    file: src-tauri/src/services/coding_plan.rs
+    lines: [1378, 1378]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest inside a hex helper (body hash for request signing)."
+  - id: gt-0024
+    file: src-tauri/src/services/dsh_account.rs
+    lines: [292, 292]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope asset: PKCE S256 challenge."
+  - id: gt-0025
+    file: src-tauri/src/services/dsh_account.rs
+    lines: [739, 739]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Same as the files-scope asset (test).
+  - id: gt-0026
+    file: src-tauri/src/services/kimi_oauth/account.rs
+    lines: [129, 129]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Same as the files-scope asset.
+  - id: gt-0027
+    file: src-tauri/src/services/kimi_oauth/account.rs
+    lines: [137, 137]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Same as the files-scope asset.
+  - id: gt-0028
+    file: src-tauri/src/services/kimi_oauth/mod.rs
+    lines: [69, 69]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest of an environment string for a storage key."
+  - id: gt-0029
+    file: src-tauri/src/services/pi_prompt_files.rs
+    lines: [340, 340]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest one-shot."
+  - id: gt-0030
+    file: src-tauri/src/services/s3.rs
+    lines: [94, 94]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "HmacSha256::new_from_slice inside the project helper hmac_sha256 (AWS SigV4). The key is a helper parameter, so no object; the helper calls on 208-217 and in tests are project-helper rejects."
+  - id: gt-0031
+    file: src-tauri/src/services/s3.rs
+    lines: [101, 101]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest inside the project helper sha256_hex; its callers are project-helper rejects."
+  - id: gt-0032
+    file: src-tauri/src/services/session_usage.rs
+    lines: [601, 601]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new(); finalize on 604 is a follow-up."
+  - id: gt-0033
+    file: src-tauri/src/services/session_usage_dsh.rs
+    lines: [547, 547]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Same as the files-scope asset.
+  - id: gt-0034
+    file: src-tauri/src/services/session_usage_kimi.rs
+    lines: [179, 179]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest fingerprint of a record when no id exists."
+  - id: gt-0035
+    file: src-tauri/src/services/session_usage_pi.rs
+    lines: [515, 515]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Same as the files-scope asset.
+  - id: gt-0036
+    file: src-tauri/src/services/session_usage_pi.rs
+    lines: [1069, 1069]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Same as the files-scope asset.
+  - id: gt-0037
+    file: src-tauri/src/services/session_usage_pi.rs
+    lines: [1119, 1119]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Same as the files-scope asset.
+  - id: gt-0038
+    file: src-tauri/src/services/skill.rs
+    lines: [1292, 1292]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new() for a content hash; follow-ups after it."
+  - id: gt-0039
+    file: src-tauri/src/services/skill.rs
+    lines: [1353, 1353]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new() for a content hash; follow-ups after it."
+  - id: gt-0040
+    file: src-tauri/src/services/sync_protocol.rs
+    lines: [408, 408]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope asset: Sha256::new() inside sha256_hex; callers are helper calls."
+  - id: gt-0041
+    file: src-tauri/src/services/workbuddy_account/quota.rs
+    lines: [333, 333]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest of the ticket (prefix sent instead of the ticket)."
+  - id: gt-0042
+    file: src-tauri/src/services/workbuddy_account/quota.rs
+    lines: [349, 349]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Hmac::<Sha256>::new_from_slice keyed with the ticket for the handshake proof (proof_mac); updates are follow-ups. One asset on this key in the pool, so no object."
+  - id: gt-0043
+    file: src-tauri/src/session_manager/search_revision.rs
+    lines: [107, 107]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Same as the files-scope asset; updates and finalize on 108-167 are follow-ups."

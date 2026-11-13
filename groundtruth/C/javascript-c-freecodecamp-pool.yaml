@@ -1,0 +1,539 @@
+schema_version: "1"
+entry: javascript-c-freecodecamp-pool
+scope:
+  kind: pool
+assets:
+  - id: gt-0001
+    file: api/src/exam-environment/routes/exam-environment.test.ts
+    lines: [1690, 1693]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "Files-scope truth gt-0001 reused. jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0002
+    file: api/src/exam-environment/routes/exam-environment.ts
+    lines: [143, 143]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "Files-scope truth gt-0002 reused. jsonwebtoken jwt.verify with a string secret and no algorithms option: the algorithm comes from the token, so HMAC (what the program signs) with no hash. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0003
+    file: api/src/plugins/auth.test.ts
+    lines: [54, 54]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.verify with a string secret and no algorithms option: the algorithm comes from the token, so HMAC (what the program signs) with no hash. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0004
+    file: api/src/plugins/auth.test.ts
+    lines: [111, 114]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0005
+    file: api/src/plugins/auth.test.ts
+    lines: [139, 142]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: auth-test/invalid-secret
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. The literal 'invalid-secret' is given to three sign calls in this test file, so they share one object."
+  - id: gt-0006
+    file: api/src/plugins/auth.test.ts
+    lines: [168, 171]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0007
+    file: api/src/plugins/auth.test.ts
+    lines: [200, 203]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0008
+    file: api/src/plugins/auth.test.ts
+    lines: [227, 230]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0009
+    file: api/src/plugins/auth.test.ts
+    lines: [256, 259]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0010
+    file: api/src/plugins/auth.test.ts
+    lines: [293, 296]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0011
+    file: api/src/plugins/auth.test.ts
+    lines: [316, 319]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: auth-test/invalid-secret
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. The literal 'invalid-secret' is given to three sign calls in this test file, so they share one object."
+  - id: gt-0012
+    file: api/src/plugins/auth.test.ts
+    lines: [339, 342]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0013
+    file: api/src/plugins/auth.test.ts
+    lines: [366, 369]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0014
+    file: api/src/plugins/auth.test.ts
+    lines: [394, 397]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0015
+    file: api/src/plugins/auth.test.ts
+    lines: [426, 426]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. A string payload does not change the algorithm. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0016
+    file: api/src/plugins/auth.test.ts
+    lines: [479, 482]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0017
+    file: api/src/plugins/auth.test.ts
+    lines: [565, 568]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0018
+    file: api/src/plugins/auth.test.ts
+    lines: [608, 611]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: auth-test/invalid-secret
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. The literal 'invalid-secret' is given to three sign calls in this test file, so they share one object."
+  - id: gt-0019
+    file: api/src/plugins/auth.test.ts
+    lines: [625, 628]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0020
+    file: api/src/plugins/auth.ts
+    lines: [48, 48]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "Files-scope truth gt-0003 reused. jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0021
+    file: api/src/plugins/auth.ts
+    lines: [93, 93]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "Files-scope truth gt-0004 reused. jsonwebtoken jwt.verify with a string secret and no algorithms option: the algorithm comes from the token, so HMAC (what the program signs) with no hash. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0022
+    file: api/src/plugins/auth.ts
+    lines: [153, 153]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "Files-scope truth gt-0005 reused. jsonwebtoken jwt.verify with a string secret and no algorithms option: the algorithm comes from the token, so HMAC (what the program signs) with no hash. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0023
+    file: api/src/plugins/cookies.test.ts
+    lines: [44, 44]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/COOKIE_SECRET
+    notes: "@fastify/cookie sign(value, secret) computes an HMAC with its default algorithm sha256 (API default), so HMAC with SHA-256. COOKIE_SECRET imported from the env module is one key object across files. Adjudication: facade checked in the @fastify/cookie 11.0.2 sources (the version the lockfile pins): sign(value, secret, algorithm = 'sha256') computes createHmac(algorithm, secret). Both annotations agreed."
+  - id: gt-0024
+    file: api/src/plugins/cookies.test.ts
+    lines: [63, 63]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/COOKIE_SECRET
+    notes: "@fastify/cookie sign(value, secret) computes an HMAC with its default algorithm sha256 (API default), so HMAC with SHA-256. COOKIE_SECRET imported from the env module is one key object across files. Adjudication: facade checked in the @fastify/cookie 11.0.2 sources (the version the lockfile pins): sign(value, secret, algorithm = 'sha256') computes createHmac(algorithm, secret). Both annotations agreed."
+  - id: gt-0025
+    file: api/src/plugins/cookies.ts
+    lines: [27, 27]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/COOKIE_SECRET
+    notes: "@fastify/cookie sign(value, secret) computes an HMAC with its default algorithm sha256 (API default), so HMAC with SHA-256. COOKIE_SECRET imported from the env module is one key object across files. Adjudication: facade checked in the @fastify/cookie 11.0.2 sources (the version the lockfile pins): sign(value, secret, algorithm = 'sha256') computes createHmac(algorithm, secret). Both annotations agreed."
+  - id: gt-0026
+    file: api/src/routes/protected/challenge.ts
+    lines: [1036, 1036]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "Files-scope truth gt-0006 reused. jsonwebtoken jwt.verify with a string secret and no algorithms option: the algorithm comes from the token, so HMAC (what the program signs) with no hash. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0027
+    file: api/src/routes/protected/user.test.ts
+    lines: [1287, 1287]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: unknown
+    object: user-test/wrong-secret
+    notes: "jsonwebtoken jwt.verify with a string secret and no algorithms option: the algorithm comes from the token, so HMAC (what the program signs) with no hash. The literal 'wrong-secret' is given to three verify calls in this test file, so they share one object (each is expected to fail)."
+  - id: gt-0028
+    file: api/src/routes/protected/user.test.ts
+    lines: [1288, 1288]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.verify with a string secret and no algorithms option: the algorithm comes from the token, so HMAC (what the program signs) with no hash. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0029
+    file: api/src/routes/protected/user.test.ts
+    lines: [2308, 2308]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: unknown
+    object: user-test/wrong-secret
+    notes: "jsonwebtoken jwt.verify with a string secret and no algorithms option: the algorithm comes from the token, so HMAC (what the program signs) with no hash. The literal 'wrong-secret' is given to three verify calls in this test file, so they share one object (each is expected to fail)."
+  - id: gt-0030
+    file: api/src/routes/protected/user.test.ts
+    lines: [2311, 2311]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.verify with a string secret and no algorithms option: the algorithm comes from the token, so HMAC (what the program signs) with no hash. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0031
+    file: api/src/routes/protected/user.test.ts
+    lines: [2383, 2383]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: unknown
+    object: user-test/wrong-secret
+    notes: "jsonwebtoken jwt.verify with a string secret and no algorithms option: the algorithm comes from the token, so HMAC (what the program signs) with no hash. The literal 'wrong-secret' is given to three verify calls in this test file, so they share one object (each is expected to fail)."
+  - id: gt-0032
+    file: api/src/routes/protected/user.test.ts
+    lines: [2386, 2386]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "jsonwebtoken jwt.verify with a string secret and no algorithms option: the algorithm comes from the token, so HMAC (what the program signs) with no hash. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0033
+    file: api/src/routes/protected/user.ts
+    lines: [762, 765]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "Files-scope truth gt-0007 reused. jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0034
+    file: api/src/routes/protected/user.ts
+    lines: [1011, 1014]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "Files-scope truth gt-0008 reused. jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0035
+    file: api/src/utils/create-user.ts
+    lines: [62, 62]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Files-scope truth gt-0009 reused. crypto.randomUUID draws its random bits from the cryptographic RNG; a drbg draw (OS generator, no algorithm). The UUID is an identifier, not related crypto material."
+  - id: gt-0036
+    file: api/src/utils/create-user.ts
+    lines: [63, 63]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Files-scope truth gt-0010 reused. crypto.randomUUID draws its random bits from the cryptographic RNG; a drbg draw (OS generator, no algorithm). The UUID is an identifier, not related crypto material."
+  - id: gt-0037
+    file: api/src/utils/donation-verification.ts
+    lines: [120, 120]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "randomUUID imported from node:crypto. crypto.randomUUID draws its random bits from the cryptographic RNG; a drbg draw (OS generator, no algorithm). The UUID is an identifier, not related crypto material."
+  - id: gt-0038
+    file: api/src/utils/drip-campaign.ts
+    lines: [12, 12]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: Files-scope truth gt-0011 reused.
+  - id: gt-0039
+    file: api/src/utils/index.ts
+    lines: [27, 27]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Files-scope truth gt-0012 reused: randomBytes(32) for a PKCE code verifier; only the draw is annotated."
+  - id: gt-0040
+    file: api/src/utils/index.ts
+    lines: [30, 30]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Files-scope truth gt-0013 reused: createHash('sha256') inside the local sha256() helper; update/digest are follow-ups."
+  - id: gt-0041
+    file: api/src/utils/logger.ts
+    lines: [91, 91]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Files-scope truth gt-0014 reused. crypto.randomUUID draws its random bits from the cryptographic RNG; a drbg draw (OS generator, no algorithm). The UUID is an identifier, not related crypto material."
+  - id: gt-0042
+    file: api/src/utils/redirection.test.ts
+    lines: [33, 36]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: redirection-test/validJWTSecret
+    notes: "Files-scope truth gt-0015 reused. jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API."
+  - id: gt-0043
+    file: api/src/utils/redirection.test.ts
+    lines: [49, 52]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Files-scope truth gt-0016 reused. jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. invalidJWTSecret is given to only this call, so no object."
+  - id: gt-0044
+    file: api/src/utils/redirection.test.ts
+    lines: [62, 65]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: redirection-test/validJWTSecret
+    notes: "Files-scope truth gt-0017 reused. jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API."
+  - id: gt-0045
+    file: api/src/utils/redirection.ts
+    lines: [25, 25]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    origin: project
+    reachable: unknown
+    notes: "jsonwebtoken jwt.verify with a string secret and no algorithms option: the algorithm comes from the token, so HMAC (what the program signs) with no hash. The secret is a parameter: production callers pass JWT_SECRET and the tests pass literal secrets, so it is not grouped into either object."
+  - id: gt-0046
+    file: api/src/utils/tokens.ts
+    lines: [13, 13]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    object: api/JWT_SECRET
+    notes: "Files-scope truth gt-0018 reused. jsonwebtoken jwt.sign with a secret and no algorithm option: the library default is HS256, so HMAC with SHA-256 fixed by the API. Every sign and verify given the shared JWT_SECRET (imported from the env module) is one key object across files."
+  - id: gt-0047
+    file: client/src/utils/growthbook-cookie.ts
+    lines: [7, 7]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Files-scope truth gt-0019 reused: window.crypto.randomUUID()."
+  - id: gt-0048
+    file: client/src/utils/growthbook-cookie.ts
+    lines: [15, 15]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Files-scope truth gt-0020 reused: crypto.getRandomValues inside a replace callback."
+  - id: gt-0049
+    file: "tools/client-plugins/gatsby-source-challenges/create-challenge-nodes.js"
+    lines: [10, 11]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "Files-scope truth gt-0021 reused: crypto.createHash('md5') split over lines 10-11."
+  - id: gt-0050
+    file: tools/client-plugins/gatsby-source-challenges/gatsby-node.js
+    lines: [231, 231]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "Judgement call. Gatsby's createContentDigest(object) is a library one-shot whose algorithm the API fixes: gatsby-core-utils hashes objects with node-object-hash configured alg md5 (and primitives with createHash('md5')). Not a project helper, so annotated at the call. Adjudication: facade checked in the published sources the lockfile pins: gatsby 5.16.1 passes gatsby-core-utils' createContentDigest to plugins, and gatsby-core-utils 4.16.0 hashes an object with node-object-hash configured alg md5 (a primitive with createHash('md5')). Both annotations agreed."

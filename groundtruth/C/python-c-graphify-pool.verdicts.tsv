@@ -1,0 +1,206 @@
+item	file	start	end	verdict	detail
+1	graphify/_minhash.py	47	47	asset	gt-0001
+2	graphify/cache.py	41	41	reject	constant assignment; the match is in its trailing comment
+3	graphify/cache.py	78	78	asset	gt-0002
+4	graphify/cache.py	79	79	reject	slice of a digest output assigned to a cache variable
+5	graphify/cache.py	163	163	asset	gt-0003
+6	graphify/cache.py	239	239	reject	comment or docstring text
+7	graphify/cache.py	297	297	reject	comment or docstring text
+8	graphify/cache.py	322	322	reject	comment or docstring text
+9	graphify/cache.py	524	524	reject	comment or docstring text
+10	graphify/cache.py	527	527	reject	comment or docstring text
+11	graphify/cache.py	530	530	reject	comment or docstring text
+12	graphify/cache.py	564	564	reject	comment or docstring text
+13	graphify/cache.py	566	566	reject	comment or docstring text
+14	graphify/cache.py	569	569	reject	comment or docstring text
+15	graphify/cache.py	610	610	reject	comment or docstring text
+16	graphify/cache.py	620	620	asset	gt-0004
+17	graphify/cache.py	624	624	reject	hexdigest() follow-up on the hash created at line 620
+18	graphify/cache.py	632	632	reject	stores a digest output in a dict
+19	graphify/cache.py	633	633	reject	dict pop of a legacy key, not crypto
+20	graphify/cache.py	636	636	reject	returns a digest output
+21	graphify/cache.py	1075	1075	asset	gt-0005
+22	graphify/cache.py	1086	1086	reject	comment or docstring text
+23	graphify/cache.py	1239	1239	reject	comment or docstring text
+24	graphify/callflow_html.py	376	376	asset	gt-0006
+25	graphify/callflow_html.py	383	383	reject	f-string using a digest output
+26	graphify/callflow_html.py	667	667	asset	gt-0007
+27	graphify/cli.py	1205	1205	asset	gt-0008
+28	graphify/cluster.py	214	214	reject	comment or docstring text
+29	graphify/cluster.py	226	226	asset	gt-0009
+30	graphify/cluster.py	230	230	reject	hexdigest() follow-up on the hash created at line 226
+31	graphify/detect.py	146	146	reject	regex for SSH key file names (sensitive-file detection), not crypto
+32	graphify/detect.py	181	181	reject	regex for secret-looking file names, not crypto
+33	graphify/detect.py	221	221	reject	comment or docstring text
+34	graphify/detect.py	595	595	reject	comment or docstring text
+35	graphify/detect.py	917	917	asset	gt-0010
+36	graphify/detect.py	2467	2467	reject	comment or docstring text
+37	graphify/detect.py	2469	2469	asset	gt-0011
+38	graphify/detect.py	2476	2476	reject	hexdigest() follow-up on the hash created at line 2469
+39	graphify/detect.py	2480	2480	reject	comment or docstring text
+40	graphify/detect.py	3050	3050	reject	comment or docstring text
+41	graphify/detect.py	3070	3070	reject	comment or docstring text
+42	graphify/detect.py	3101	3101	reject	comment or docstring text
+43	graphify/detect.py	3249	3249	reject	comment or docstring text
+44	graphify/export.py	86	86	asset	gt-0012
+45	graphify/export.py	87	87	asset	gt-0013
+46	graphify/export.py	668	668	asset	gt-0014
+47	graphify/export.py	671	671	reject	f-string using a digest output
+48	graphify/exporters/html.py	737	737	reject	SRI integrity attribute string literal in generated HTML; no computation in this program
+49	graphify/extract.py	470	470	asset	gt-0015
+50	graphify/extract.py	11429	11429	reject	comment or docstring text
+51	graphify/extract.py	12327	12327	reject	comment or docstring text
+52	graphify/extract.py	12328	12331	asset	gt-0016
+53	graphify/extractors/engine.py	27	27	asset	gt-0017
+54	graphify/extractors/engine.py	28	28	reject	f-string using a digest output
+55	graphify/extractors/engine.py	1557	1557	asset	gt-0018
+56	graphify/extractors/engine.py	7411	7412	asset	gt-0019
+57	graphify/extractors/engine.py	7415	7416	asset	gt-0020
+58	graphify/extractors/engine.py	8532	8533	asset	gt-0021
+59	graphify/extractors/engine.py	8536	8537	asset	gt-0022
+60	graphify/extractors/engine.py	8569	8570	asset	gt-0023
+61	graphify/extractors/engine.py	9200	9202	asset	gt-0024
+62	graphify/extractors/go.py	573	573	asset	gt-0025
+63	graphify/extractors/resolution.py	1129	1129	asset	gt-0026
+64	graphify/extractors/resolution.py	1312	1312	asset	gt-0027
+65	graphify/extractors/resolution.py	1967	1967	reject	comment or docstring text
+66	graphify/extractors/resolution.py	3140	3140	reject	string literal in a stdlib module-name list
+67	graphify/extractors/resolution.py	3145	3145	reject	string literal in a stdlib module-name list
+68	graphify/extractors/resolution.py	3156	3156	reject	string literal in a stdlib module-name list
+69	graphify/extractors/resolution.py	3465	3465	reject	comment or docstring text
+70	graphify/extractors/resolution.py	3658	3658	reject	comment or docstring text
+71	graphify/extractors/rust.py	456	456	asset	gt-0028
+72	graphify/extractors/solidity.py	195	195	reject	Solidity type-mapping dict entry (string literal)
+73	graphify/extractors/terraform.py	77	77	asset	gt-0029
+74	graphify/extractors/terraform.py	78	78	reject	project id helper call using a digest output
+75	graphify/global_graph.py	92	92	asset	gt-0030
+76	graphify/global_graph.py	94	94	reject	hexdigest() follow-up on the hash created at line 92
+77	graphify/google_workspace.py	172	172	asset	gt-0031
+78	graphify/google_workspace.py	181	181	asset	gt-0032
+79	graphify/ids.py	89	89	reject	comment or docstring text
+80	graphify/ids.py	90	92	asset	gt-0033
+81	graphify/install.py	61	61	asset	gt-0034
+82	graphify/install.py	62	62	reject	path built from a digest output
+83	graphify/llm.py	37	37	reject	comment or docstring text
+84	graphify/llm.py	675	675	reject	comment or docstring text
+85	graphify/llm.py	678	678	asset	gt-0035
+86	graphify/llm.py	681	681	reject	f-string using a digest output
+87	graphify/llm.py	3517	3517	reject	URL scheme check string, not crypto
+88	graphify/paths.py	522	522	reject	comment or docstring text
+89	graphify/reflect.py	718	718	reject	comment or docstring text
+90	graphify/reflect.py	723	723	asset	gt-0036
+91	graphify/scip_ingest.py	333	333	reject	comment or docstring text
+92	graphify/scip_ingest.py	338	338	asset	gt-0037
+93	graphify/security.py	213	213	reject	comment or docstring text
+94	graphify/security.py	215	215	reject	comment or docstring text
+95	graphify/serve.py	3574	3574	reject	hmac.compare_digest is a constant-time comparison, not an asset per the guide
+96	graphify/transcribe.py	63	63	asset	gt-0038
+97	graphify/watch.py	1386	1386	asset	gt-0039
+98	graphify/watch.py	1967	1967	reject	function definition
+99	graphify/watch.py	1986	1988	asset	gt-0040
+100	graphify/watch.py	1998	1998	reject	function parameter
+101	graphify/watch.py	2011	2011	reject	assignment target line; the MD5 call starts on line 2012 (asset there)
+102	graphify/watch.py	2012	2012	asset	gt-0041
+103	graphify/watch.py	2017	2017	reject	empty-string assignment
+104	graphify/watch.py	2021	2021	reject	dict entry holding a digest output
+105	graphify/watch.py	2027	2027	reject	dict entry holding a digest output
+106	graphify/watch.py	2435	2435	reject	call to project helper _scan_digest (helper rule; asset at watch.py 1986)
+107	tests/test_cache.py	27	27	reject	test assertion on digest length
+108	tests/test_cache.py	861	861	reject	comment or docstring text
+109	tests/test_cache.py	1752	1752	reject	comment or docstring text
+110	tests/test_cache.py	1756	1756	reject	comment or docstring text
+111	tests/test_cache.py	1782	1782	reject	test assertion on digest values
+112	tests/test_cache.py	1787	1787	reject	comment or docstring text
+113	tests/test_cli_export.py	262	262	reject	URL string literal with tls query parameter
+114	tests/test_code_only_scope_4923.py	184	184	reject	test argument scan_digest string
+115	tests/test_detect.py	2192	2192	reject	test function name
+116	tests/test_detect.py	2194	2194	reject	comment or docstring text
+117	tests/test_detect.py	2195	2195	reject	test assertion on sensitive-file detection
+118	tests/test_detect.py	3477	3477	asset	gt-0042
+119	tests/test_export.py	406	406	reject	docstring
+120	tests/test_export.py	411	411	reject	docstring
+121	tests/test_export.py	426	426	reject	test assertion on SRI string
+122	tests/test_export.py	1296	1296	reject	JavaScript string in a test (Math.sign), not crypto
+123	tests/test_extract.py	6027	6027	reject	comment or docstring text
+124	tests/test_extract.py	6031	6031	reject	test source string literal
+125	tests/test_extract.py	6037	6037	reject	test assertion
+126	tests/test_extract_cache_location.py	131	131	asset	gt-0043
+127	tests/test_extract_cache_location.py	135	135	reject	hexdigest() follow-up on the hash created at line 131
+128	tests/test_file_id_collision_4854.py	181	181	asset	gt-0044
+129	tests/test_hook_content_freshness.py	179	179	reject	test function name
+130	tests/test_hypergraph.py	22	22	reject	test fixture dict with class name DigestAuth
+131	tests/test_hypergraph.py	34	34	reject	test fixture list of names
+132	tests/test_hypergraph.py	251	251	reject	test assertion string
+133	tests/test_import_self_loops.py	63	63	reject	Rust source string literal in a test
+134	tests/test_incremental_mtime_collision.py	122	122	reject	comment or docstring text
+135	tests/test_ingest.py	82	82	reject	test data strings (question/answer text)
+136	tests/test_ingest.py	83	83	reject	test data strings
+137	tests/test_ingest.py	86	86	reject	test assertion string
+138	tests/test_ingest.py	87	87	reject	test assertion string
+139	tests/test_install_references.py	442	442	asset	gt-0045
+140	tests/test_js_import_resolution.py	26	26	asset	gt-0046
+141	tests/test_language_override_lifecycle.py	86	86	asset	gt-0047
+142	tests/test_language_override_lifecycle.py	89	89	reject	dict entry holding a digest output
+143	tests/test_language_override_lifecycle.py	90	90	reject	dict entry holding digest outputs
+144	tests/test_languages.py	5212	5212	reject	test assertion on label string
+145	tests/test_languages.py	5278	5278	reject	test assertion on label string
+146	tests/test_llm_backends.py	111	111	reject	test assertion string
+147	tests/test_office_limits.py	77	77	asset	gt-0048
+148	tests/test_pdf_extra_warning.py	67	67	reject	test function name
+149	tests/test_pdf_extra_warning.py	68	68	reject	comment or docstring text
+150	tests/test_pdf_extra_warning.py	73	73	asset	gt-0049
+151	tests/test_pg_introspect.py	297	297	reject	comment or docstring text
+152	tests/test_reflect.py	283	283	reject	test data string 'bcrypt'
+153	tests/test_reflect.py	288	288	reject	test assertion string
+154	tests/test_reflect.py	343	343	reject	test data string
+155	tests/test_reflect.py	350	350	reject	test assertion string
+156	tests/test_reflect.py	441	441	reject	test data string 'JWT'
+157	tests/test_reflect.py	462	462	reject	CLI argument strings in a test
+158	tests/test_reflect.py	706	706	reject	test data string 'SHA-1'
+159	tests/test_reflect.py	707	707	reject	test data string 'SHA-256'
+160	tests/test_reflect.py	712	712	reject	test assertion string
+161	tests/test_security.py	525	525	reject	comment or docstring text
+162	tests/test_security.py	535	535	reject	comment or docstring text
+163	tests/test_security.py	539	539	reject	test data string holding a digest literal
+164	tests/test_security.py	567	567	reject	test data string holding a fake PEM header (redaction test); not parsed
+165	tests/test_security.py	584	584	reject	test function name
+166	tests/test_stat_index_multi_root.py	100	100	reject	call to project helper cache.file_hash (helper rule)
+167	tests/test_stat_index_multi_root.py	104	104	reject	call to project helper cache.file_hash (helper rule)
+168	tests/test_stat_index_multi_root.py	107	107	reject	test assertion on digest values
+169	tests/test_stat_index_portability.py	79	79	reject	comment or docstring text
+170	tests/test_stat_index_portability.py	91	91	reject	dict comprehension assignment line of project helper results
+171	tests/test_stat_index_portability.py	111	111	reject	call to project helper cache.file_hash (helper rule)
+172	tests/test_stat_index_portability.py	112	112	reject	call to project helper cache.file_hash (helper rule)
+173	tests/test_stat_index_portability.py	144	144	reject	comment or docstring text
+174	tests/test_stat_index_portability.py	159	159	asset	gt-0050
+175	tests/test_stat_index_portability.py	164	164	reject	dict entry holding a digest output
+176	tests/test_stat_index_portability.py	173	173	reject	call to project helper cache.file_hash (helper rule)
+177	tests/test_stat_index_portability.py	177	177	reject	call to project helper cache.file_hash (helper rule)
+178	tests/test_stat_index_portability.py	184	184	reject	test assertion on stored digest
+179	tests/test_update_no_change_gate.py	234	234	reject	test function name
+180	tests/test_update_no_change_gate.py	235	235	reject	comment or docstring text
+181	tests/test_update_no_change_gate.py	240	240	reject	call to project helper _scan_digest (helper rule)
+182	tests/test_update_no_change_gate.py	242	242	reject	call to project helper _scan_digest (helper rule)
+183	tests/test_update_no_change_gate.py	245	245	reject	call to project helper _scan_digest (helper rule)
+184	tests/test_wheel_packaging.py	76	76	asset	gt-0051
+185	tests/test_word_count_cache.py	67	67	reject	comment or docstring text
+186	tests/test_word_count_cache.py	74	74	reject	comment or docstring text
+187	tests/test_word_count_cache.py	75	75	reject	comment or docstring text
+188	tests/test_word_count_cache.py	86	86	asset	gt-0052
+189	tests/test_word_count_cache.py	87	87	reject	comment or docstring text
+190	tests/test_word_count_cache.py	90	92	asset	gt-0053
+191	tests/test_word_count_cache.py	96	96	reject	call to project helper cache.file_hash (helper rule)
+192	tests/test_word_count_cache.py	103	103	reject	call to project helper cache.file_hash (helper rule)
+193	tests/test_word_count_cache.py	116	116	asset	gt-0054
+194	tools/skillgen/gen.py	801	801	reject	comment or docstring text
+195	worked/httpx/raw/auth.py	4	4	reject	comment or docstring text
+196	worked/httpx/raw/auth.py	46	46	reject	class definition DigestAuth
+197	worked/httpx/raw/auth.py	48	48	reject	comment or docstring text
+198	worked/httpx/raw/auth.py	72	72	reject	comment or docstring text
+199	worked/httpx/raw/auth.py	75	75	reject	string replace on an HTTP header (protocol parsing), not crypto
+200	worked/httpx/raw/auth.py	82	82	reject	comment or docstring text
+201	worked/httpx/raw/auth.py	85	85	asset	gt-0055
+202	worked/httpx/raw/auth.py	89	89	asset	gt-0056
+203	worked/httpx/raw/auth.py	90	90	asset	gt-0057
+204	worked/httpx/raw/auth.py	91	91	asset	gt-0058
+205	worked/httpx/raw/auth.py	94	94	reject	f-string building the Digest Authorization header from hash outputs
