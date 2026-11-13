@@ -1,0 +1,38 @@
+schema_version: "1"
+entry: java-c-jadx
+scope:
+  kind: files
+  files:
+    - jadx-commons/jadx-zip/src/main/java/jadx/zip/ZipReader.java
+    - jadx-commons/jadx-zip/src/main/java/jadx/zip/fallback/FallbackZipParser.java
+    - jadx-core/src/main/java/jadx/api/JadxArgs.java
+    - jadx-core/src/main/java/jadx/api/plugins/utils/ZipSecurity.java
+    - jadx-core/src/main/java/jadx/core/export/gen/AndroidGradleGenerator.java
+    - jadx-core/src/main/java/jadx/core/utils/files/FileUtils.java
+    - jadx-core/src/main/java/jadx/core/xmlgen/ResourceStorage.java
+    - jadx-core/src/main/java/jadx/core/xmlgen/ResourcesSaver.java
+    - jadx-core/src/test/java/jadx/api/security/impl/JadxSecurityTest.java
+    - jadx-core/src/test/java/jadx/core/xmlgen/ResXmlGenTest.java
+    - jadx-core/src/test/java/jadx/tests/api/compiler/DynamicClassLoader.java
+    - jadx-core/src/test/java/jadx/tests/integration/trycatch/TestMultiExceptionCatch.java
+    - jadx-core/src/test/java/jadx/tests/integration/trycatch/TestTryCatchMultiException.java
+    - jadx-gui/src/main/java/jadx/gui/treemodel/ApkSignatureNode.java
+    - jadx-gui/src/test/java/jadx/gui/utils/CertificateManagerTest.java
+assets:
+  - id: gt-0001
+    file: jadx-core/src/main/java/jadx/core/utils/files/FileUtils.java
+    lines: [498, 498]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: MD5
+    origin: project
+    reachable: unknown
+    notes: "MessageDigest.getInstance(\"MD5\") creates the hash object; update and digest are follow-ups. Used as a cache key, not for security, but the guide annotates every hash. The two FileUtils.md5Sum(...) calls (in this file and in JadxArgs.makeCodeArgsHash) are calls to this project helper and are not assets of their own."
+  - id: gt-0002
+    file: jadx-gui/src/main/java/jadx/gui/treemodel/ApkSignatureNode.java
+    lines: [176, 176]
+    asset_type: algorithm
+    primitive: signature
+    origin: project
+    reachable: unknown
+    notes: "apksig ApkVerifier.verify() is a one-shot library call that verifies the APK's v1/v2/v3/v3.1 signatures. The algorithm comes from the APK being verified (RSA, ECDSA or DSA with various digests), so no algorithm and no hash are set. The builder on line 174 creates the verifier object and names no algorithm, so it is neither an asset nor an anchor. Reading signer.getCertificate() returns certificates apksig already parsed, and the CertificateManager calls in writeCertificate are project-helper calls (parsing and fingerprints happen in that helper, outside the sample), so neither is an asset here."

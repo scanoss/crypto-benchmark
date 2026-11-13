@@ -1,0 +1,218 @@
+schema_version: "1"
+entry: rust-c-cc-switch
+scope:
+  kind: files
+  files:
+    - src-tauri/src/pi_config/mod.rs
+    - src-tauri/src/proxy/copilot_optimizer.rs
+    - src-tauri/src/proxy/hyper_client.rs
+    - src-tauri/src/proxy/privacy_filter/mod.rs
+    - src-tauri/src/proxy/privacy_filter/pii.rs
+    - src-tauri/src/services/agy_account/oauth.rs
+    - src-tauri/src/services/claude_account/layout.rs
+    - src-tauri/src/services/claude_account/snapshot/store.rs
+    - src-tauri/src/services/dsh_account.rs
+    - src-tauri/src/services/kimi_oauth/account.rs
+    - src-tauri/src/services/session_usage_dsh.rs
+    - src-tauri/src/services/session_usage_pi.rs
+    - src-tauri/src/services/sync_protocol.rs
+    - src-tauri/src/services/workbuddy_account/tests.rs
+    - src-tauri/src/session_manager/search_revision.rs
+assets:
+  - id: gt-0001
+    file: src-tauri/src/pi_config/mod.rs
+    lines: [494, 494]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest one-shot for a config revision string."
+  - id: gt-0002
+    file: src-tauri/src/proxy/copilot_optimizer.rs
+    lines: [314, 314]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new() for a deterministic request id; follow-ups on 315-317. The Uuid::new_v4() fallback on line 327 is a plain request identifier, not a crypto use."
+  - id: gt-0003
+    file: src-tauri/src/proxy/copilot_optimizer.rs
+    lines: [343, 343]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new() for a deterministic interaction id; follow-ups on 344-346."
+  - id: gt-0004
+    file: src-tauri/src/proxy/hyper_client.rs
+    lines: [62, 66]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "hyper_rustls HttpsConnectorBuilder with webpki roots builds a rustls TLS client connector, which creates the TLS context for the hyper client."
+  - id: gt-0005
+    file: src-tauri/src/proxy/hyper_client.rs
+    lines: [431, 432]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "tokio-rustls tls_connector.connect(server_name, stream) opens a TLS session to the upstream. Adjudication: neither annotation listed it. A call that creates a TLS session over a stream from an existing context is a protocol asset (annotation guide, asset_type; the suite A tls.Server precedent), unlike wrapping the config into a connector object without a stream (TlsConnector::from, not an asset). Range covers the receiver through the closing parenthesis of connect; .await and map_err are not part of the call."
+  - id: gt-0006
+    file: src-tauri/src/proxy/hyper_client.rs
+    lines: [537, 538]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "tokio-rustls tls_connector.connect(server_name, tcp) opens a TLS session to an https proxy. Adjudication: neither annotation listed it. A call that creates a TLS session over a stream from an existing context is a protocol asset (annotation guide, asset_type; the suite A tls.Server precedent), unlike wrapping the config into a connector object without a stream (TlsConnector::from, not an asset). Range covers the receiver through the closing parenthesis of connect; .await and map_err are not part of the call."
+  - id: gt-0007
+    file: src-tauri/src/proxy/hyper_client.rs
+    lines: [622, 622]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    object: proxy/hyper_client/native
+    notes: "rustls_native_certs::load_native_certs loads the system trust certificates from the OS store / PEM files."
+  - id: gt-0008
+    file: src-tauri/src/proxy/hyper_client.rs
+    lines: [623, 623]
+    asset_type: certificate
+    origin: project
+    reachable: unknown
+    object: proxy/hyper_client/native
+    notes: "Judgement call: add_parsable_certificates parses the loaded DER certificates into trust anchors, a certificate parse of its own; same certificates as line 622, so one object. root_store.extend of built-in webpki roots on line 620 parses nothing."
+  - id: gt-0009
+    file: src-tauri/src/proxy/hyper_client.rs
+    lines: [625, 627]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "rustls ClientConfig::builder() chain creates the TLS client context. tokio_rustls::TlsConnector::from on line 628 wraps the config into a connector without a stream and is not an asset; the connect(...) handshakes on lines 431-432 and 537-538 create TLS sessions and are annotated there. root_store.extend(webpki_roots...) on line 620 copies built-in trust anchors and parses nothing."
+  - id: gt-0010
+    file: src-tauri/src/services/agy_account/oauth.rs
+    lines: [80, 80]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest of the PKCE verifier (S256 code challenge)."
+  - id: gt-0011
+    file: src-tauri/src/services/claude_account/layout.rs
+    lines: [123, 123]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest of the config directory for a keychain service name. The Uuid::new_v4() on line 44 is a local directory id, not a crypto use."
+  - id: gt-0012
+    file: src-tauri/src/services/claude_account/layout.rs
+    lines: [167, 167]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest in a test assertion; tests are in scope."
+  - id: gt-0013
+    file: src-tauri/src/services/claude_account/snapshot/store.rs
+    lines: [108, 108]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest of the snapshot bytes for change detection."
+  - id: gt-0014
+    file: src-tauri/src/services/dsh_account.rs
+    lines: [292, 292]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest of the PKCE verifier (S256 code challenge)."
+  - id: gt-0015
+    file: src-tauri/src/services/dsh_account.rs
+    lines: [739, 739]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest of the PKCE verifier in a test assertion; tests are in scope."
+  - id: gt-0016
+    file: src-tauri/src/services/kimi_oauth/account.rs
+    lines: [129, 129]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest of region and user id for an account key."
+  - id: gt-0017
+    file: src-tauri/src/services/kimi_oauth/account.rs
+    lines: [137, 137]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest of the refresh token as a token marker."
+  - id: gt-0018
+    file: src-tauri/src/services/session_usage_dsh.rs
+    lines: [547, 547]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::digest fingerprint of a log line when no message id exists."
+  - id: gt-0019
+    file: src-tauri/src/services/session_usage_pi.rs
+    lines: [515, 515]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new(); hash_field helper calls only feed update, finalize on 518 is a follow-up."
+  - id: gt-0020
+    file: src-tauri/src/services/session_usage_pi.rs
+    lines: [1069, 1069]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new() for the semantic id; hash_field/hash_json feed it, finalize on 1115 is a follow-up."
+  - id: gt-0021
+    file: src-tauri/src/services/session_usage_pi.rs
+    lines: [1119, 1119]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new() for the request id; finalize on 1126 is a follow-up."
+  - id: gt-0022
+    file: src-tauri/src/services/sync_protocol.rs
+    lines: [408, 408]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new() inside sha256_hex; the callers of sha256_hex in this file are project-helper calls, not further assets."
+  - id: gt-0023
+    file: src-tauri/src/session_manager/search_revision.rs
+    lines: [107, 107]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new() for a search revision fingerprint; updates and finalize on 108-167 are follow-ups."

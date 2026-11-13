@@ -1,0 +1,95 @@
+schema_version: "1"
+entry: rust-c-clash-verge-rev
+scope:
+  kind: files
+  files:
+    - src-tauri/src/config/dns.rs
+    - src-tauri/src/config/encrypt.rs
+    - src-tauri/src/config/mod.rs
+    - src-tauri/src/core/owner_identity.rs
+    - src-tauri/src/core/runtime_bundle.rs
+    - src-tauri/src/feat/clash.rs
+    - src-tauri/src/utils/network.rs
+assets:
+  - id: gt-0001
+    file: src-tauri/src/config/dns.rs
+    lines: [48, 48]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new() creates the hash object; the update calls and finalize on lines 49-53 are follow-ups. The digest fingerprints the DNS override fields."
+  - id: gt-0002
+    file: src-tauri/src/config/encrypt.rs
+    lines: [20, 20]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: GCM
+    origin: project
+    reachable: unknown
+    object: config/encrypt/encryption_key
+    notes: "Aes256Gcm::new_from_slice creates the AES-256-GCM cipher; the API fixes the mode and the 256-bit key. cipher.encrypt on line 26 is a follow-up. The key comes from a project helper outside the sample, so there is no key generation here. Shares an object with the decrypt cipher on line 36 because both are built on the key the same helper returns."
+  - id: gt-0003
+    file: src-tauri/src/config/encrypt.rs
+    lines: [23, 23]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "getrandom::fill draws the 12-byte nonce from the OS generator; no algorithm."
+  - id: gt-0004
+    file: src-tauri/src/config/encrypt.rs
+    lines: [23, 23]
+    asset_type: related-crypto-material
+    material_type: nonce
+    origin: project
+    reachable: unknown
+    notes: "The nonce the draw fills, passed as the nonce of Aes256Gcm encrypt; annotated at the draw that creates its value, not at the zeroed array declaration on line 22."
+  - id: gt-0005
+    file: src-tauri/src/config/encrypt.rs
+    lines: [36, 36]
+    asset_type: algorithm
+    primitive: ae
+    algorithm: AES
+    parameters:
+      key_size: 256
+      mode: GCM
+    origin: project
+    reachable: unknown
+    object: config/encrypt/encryption_key
+    notes: "Second Aes256Gcm cipher, used for decryption; cipher.decrypt on line 46 is a follow-up. The nonce is read back from the ciphertext, not created, so no material here."
+  - id: gt-0006
+    file: src-tauri/src/core/owner_identity.rs
+    lines: [172, 172]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "getrandom::fill draws the owner token from the OS generator (platform-specific module). The token is an authentication secret, not an IV/nonce/salt/seed/private key, so it has no related-crypto-material asset."
+  - id: gt-0007
+    file: src-tauri/src/core/runtime_bundle.rs
+    lines: [121, 121]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "Sha256::new() for a provider cache filename digest; update/finalize on lines 122-125 are follow-ups."
+  - id: gt-0008
+    file: src-tauri/src/feat/clash.rs
+    lines: [143, 143]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "tokio-rustls connector.connect(server_name, stream) performs the TLS handshake over the TCP stream from the static ClientConfig: a TLS session. Adjudication: neither annotation listed it. A call that creates a TLS session over a stream from an existing context is a protocol asset (annotation guide, asset_type; the suite A tls.Server precedent), unlike wrapping the config into a connector object without a stream (TlsConnector::from, not an asset). The config itself is created in network.rs by a project helper, annotated there."
+  - id: gt-0009
+    file: src-tauri/src/utils/network.rs
+    lines: [54, 57]
+    asset_type: protocol
+    origin: project
+    reachable: unknown
+    notes: "rustls ClientConfig builder chain (ring provider, safe default protocol versions, webpki roots) creates the TLS client context. RootCertStore::from_iter on line 53 copies built-in trust anchors and parses no certificate, so it is not a certificate asset. The callers of this helper (line 116 here and the clash feature file) only reuse the context. Adjudication: the connect(...) handshake in the clash feature file creates a TLS session over a stream and is annotated there; TlsConnector::from is not an asset."

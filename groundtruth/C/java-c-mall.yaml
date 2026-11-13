@@ -1,0 +1,30 @@
+schema_version: "1"
+entry: java-c-mall
+scope:
+  kind: files
+  files:
+    - mall-admin/src/main/java/com/macro/mall/config/MallSecurityConfig.java
+    - mall-admin/src/main/java/com/macro/mall/config/SpringDocConfig.java
+    - mall-admin/src/main/java/com/macro/mall/service/UmsAdminService.java
+    - mall-common/src/main/java/com/macro/mall/common/log/WebLogAspect.java
+    - mall-demo/src/main/java/com/macro/mall/demo/bo/AdminUserDetails.java
+    - mall-demo/src/main/java/com/macro/mall/demo/config/SecurityConfig.java
+    - mall-demo/src/main/java/com/macro/mall/demo/config/SpringDocConfig.java
+    - mall-portal/src/main/java/com/macro/mall/portal/config/MallSecurityConfig.java
+    - mall-portal/src/main/java/com/macro/mall/portal/domain/MemberDetails.java
+    - mall-portal/src/main/java/com/macro/mall/portal/service/impl/UmsMemberCacheServiceImpl.java
+    - mall-security/src/main/java/com/macro/mall/security/aspect/RedisCacheAspect.java
+    - mall-security/src/main/java/com/macro/mall/security/component/DynamicAuthorizationManager.java
+    - mall-security/src/main/java/com/macro/mall/security/component/DynamicSecurityService.java
+    - mall-security/src/main/java/com/macro/mall/security/component/JwtAuthenticationTokenFilter.java
+    - mall-security/src/main/java/com/macro/mall/security/component/RestAuthenticationEntryPoint.java
+assets:
+  - id: gt-0001
+    file: mall-demo/src/main/java/com/macro/mall/demo/config/SecurityConfig.java
+    lines: [41, 41]
+    asset_type: algorithm
+    primitive: kdf
+    algorithm: bcrypt
+    origin: project
+    reachable: unknown
+    notes: "Spring Security BCryptPasswordEncoder() creates a password hasher fixed to bcrypt by default (like PasswordHasher() for Argon2id). The default strength is not stated in the call, so no parameters. The other sampled files hold no crypto call: JwtAuthenticationTokenFilter calls the project helper JwtTokenUtil (getUserNameFromToken, validateToken), whose JWT crypto lives in a file outside the sample, so those call sites are not assets here; the aspectj Signature/MethodSignature types are reflection, not crypto."

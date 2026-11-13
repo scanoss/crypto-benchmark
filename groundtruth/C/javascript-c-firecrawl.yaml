@@ -1,0 +1,336 @@
+schema_version: "1"
+entry: javascript-c-firecrawl
+scope:
+  kind: files
+  files:
+    - apps/api/src/__tests__/snips/v2/exchange-provider-metadata.test.ts
+    - apps/api/src/__tests__/snips/v2/index-cache-variants.test.ts
+    - apps/api/src/__tests__/snips/v2/scrape-browser.test.ts
+    - apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts
+    - apps/api/src/__tests__/snips/v2/scrape-robots.test.ts
+    - apps/api/src/controllers/v2/slack.ts
+    - apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    - apps/api/src/lib/alexandria-feedback-token.test.ts
+    - apps/api/src/lib/browser-sessions.ts
+    - apps/api/src/lib/gcs-pdf-cache.ts
+    - apps/api/src/lib/owner-id.ts
+    - apps/api/src/lib/spur.ts
+    - apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/cache-service.ts
+    - apps/api/src/services/integrations/slack/signature.ts
+    - apps/api/src/services/integrations/slack/slack.test.ts
+assets:
+  - id: gt-0001
+    file: apps/api/src/__tests__/snips/v2/exchange-provider-metadata.test.ts
+    lines: [201, 201]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material."
+  - id: gt-0002
+    file: apps/api/src/__tests__/snips/v2/index-cache-variants.test.ts
+    lines: [23, 23]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material."
+  - id: gt-0003
+    file: apps/api/src/__tests__/snips/v2/index-cache-variants.test.ts
+    lines: [54, 54]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material."
+  - id: gt-0004
+    file: apps/api/src/__tests__/snips/v2/scrape-browser.test.ts
+    lines: [46, 46]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material."
+  - id: gt-0005
+    file: apps/api/src/__tests__/snips/v2/scrape-browser.test.ts
+    lines: [47, 47]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material."
+  - id: gt-0006
+    file: apps/api/src/__tests__/snips/v2/scrape-browser.test.ts
+    lines: [111, 111]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material."
+  - id: gt-0007
+    file: apps/api/src/__tests__/snips/v2/scrape-browser.test.ts
+    lines: [184, 184]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material."
+  - id: gt-0008
+    file: apps/api/src/__tests__/snips/v2/scrape-browser.test.ts
+    lines: [262, 262]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material."
+  - id: gt-0009
+    file: apps/api/src/__tests__/snips/v2/scrape-browser.test.ts
+    lines: [285, 285]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material."
+  - id: gt-0010
+    file: apps/api/src/__tests__/snips/v2/scrape-browser.test.ts
+    lines: [317, 317]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material."
+  - id: gt-0011
+    file: apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts
+    lines: [22, 22]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material."
+  - id: gt-0012
+    file: apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts
+    lines: [59, 59]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material."
+  - id: gt-0013
+    file: apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts
+    lines: [80, 80]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material."
+  - id: gt-0014
+    file: apps/api/src/__tests__/snips/v2/scrape-lockdown.test.ts
+    lines: [105, 105]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material."
+  - id: gt-0015
+    file: apps/api/src/__tests__/snips/v2/scrape-robots.test.ts
+    lines: [29, 29]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material."
+  - id: gt-0016
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [23, 23]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: unknown
+    object: oidc-test/signing
+    notes: "jose generateKeyPair('RS256'): RSA key pair generation for JWS signing. The JWS name only selects the key type; no modulus length is stated (library default), so no key_size and, per the guide, no hash on a key generation. Its private key is the default key of the sign() helper's SignJWT.sign, so they share an object. Adjudication: the annotations differed on padding. Kept PKCS1v15: jose generateKeyPair('RS256') makes a WebCrypto RSASSA-PKCS1-v1_5 key bound to that scheme, as in the suite A jose entry."
+  - id: gt-0017
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [23, 23]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair returns a key pair whose private key the program handles (owner decision 2026-11-08: private-key material on the same lines as the key generation)."
+  - id: gt-0018
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [24, 24]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair('RS256'): RSA key pair generation for JWS signing. The JWS name only selects the key type; no modulus length is stated (library default), so no key_size and, per the guide, no hash on a key generation. The 'other' key pair: its private key reaches SignJWT.sign only through an override argument, and that call is grouped with the default signing key, so this key generation is its own object. Adjudication: the annotations differed on padding. Kept PKCS1v15, as for the key pair on line 23."
+  - id: gt-0019
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [24, 24]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair returns a key pair whose private key the program handles (owner decision 2026-11-08: private-key material on the same lines as the key generation)."
+  - id: gt-0020
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [26, 26]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "jose exportJWK(signing.publicKey): serializing a public key to a JWK. Only one serialization of this key, so no object."
+  - id: gt-0021
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [30, 30]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "jose exportJWK(other.publicKey): serializing a public key to a JWK."
+  - id: gt-0022
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [55, 70]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: unknown
+    object: oidc-test/signing
+    notes: "new SignJWT(...)...sign(key) fluent chain, one expression from the constructor (55) to the closing parenthesis of .sign (70); the alg is set by setProtectedHeader on lines 60-63, inside the range. alg is `overrides.alg ?? \"RS256\"`, and one caller passes RS512, so the call site fixes RSA PKCS#1 v1.5 but not the digest: no hash. Key defaults to signing.privateKey, so it joins the signing key object. Adjudication: the second annotation added hash SHA-256. Not added: alg is overrides.alg ?? 'RS256' and a caller passes RS512, so the call fixes PKCS#1 v1.5 for every value but not the digest; a parameter is set only when every value reaching the call fixes it."
+  - id: gt-0023
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [120, 120]
+    asset_type: algorithm
+    primitive: signature
+    algorithm: RSA
+    parameters:
+      padding: PKCS1v15
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair('RS512'): RSA key pair generation for JWS signing. The JWS name only selects the key type; no modulus length is stated (library default), so no key_size and, per the guide, no hash on a key generation. Adjudication: the annotations differed on padding. Kept PKCS1v15: generateKeyPair('RS512') makes an RSASSA-PKCS1-v1_5 key."
+  - id: gt-0024
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [120, 120]
+    asset_type: related-crypto-material
+    material_type: private-key
+    origin: project
+    reachable: unknown
+    notes: "jose generateKeyPair returns a key pair whose private key the program handles (owner decision 2026-11-08: private-key material on the same lines as the key generation)."
+  - id: gt-0025
+    file: apps/api/src/lib/__tests__/vercel-marketplace-oidc.test.ts
+    lines: [121, 121]
+    asset_type: related-crypto-material
+    origin: project
+    reachable: unknown
+    notes: "jose exportJWK(rs512.publicKey): serializing a public key to a JWK."
+  - id: gt-0026
+    file: apps/api/src/lib/alexandria-feedback-token.test.ts
+    lines: [89, 89]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', literal secret) used to derive the token signing key (HMAC as a key derivation step); annotated as the HMAC it calls. update/digest are follow-ups."
+  - id: gt-0027
+    file: apps/api/src/lib/alexandria-feedback-token.test.ts
+    lines: [95, 95]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', key) signing the token payload with the key derived at line 89; a derived key is a new object, and it is used once, so no object."
+  - id: gt-0028
+    file: apps/api/src/lib/browser-sessions.ts
+    lines: [289, 289]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHash('sha256') on line 289; update/digest/slice on 290-292 are follow-ups, so the range is the createHash call only."
+  - id: gt-0029
+    file: apps/api/src/lib/gcs-pdf-cache.ts
+    lines: [38, 38]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHash('sha256') for a cache key."
+  - id: gt-0030
+    file: apps/api/src/lib/owner-id.ts
+    lines: [10, 10]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-1
+    origin: project
+    reachable: unknown
+    notes: "createHash('sha1') implementing UUIDv5 (RFC 4122 namespaced SHA-1); update/digest on 11-13 are follow-ups."
+  - id: gt-0031
+    file: apps/api/src/lib/spur.ts
+    lines: [247, 247]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "Node crypto.randomUUID draws its random bits from the cryptographic RNG; annotated as a drbg draw (OS generator, no algorithm). The UUID is used as an identifier, not related crypto material. Used as a lock token."
+  - id: gt-0032
+    file: apps/api/src/scraper/scrapeURL/engines/pdf/fire-pdf/cache-service.ts
+    lines: [38, 41]
+    asset_type: algorithm
+    primitive: hash
+    algorithm: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "WebCrypto crypto.subtle.digest('SHA-256', ...) one-shot, call spans 38-41. The createPdfCacheKey call on line 43 is a project helper in another file and is not annotated here."
+  - id: gt-0033
+    file: apps/api/src/services/integrations/slack/signature.ts
+    lines: [35, 35]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "createHmac('sha256', signingSecret) verifying a webhook request signature; the key is a parameter or config value from outside the file. timingSafeEqual on line 40 is a constant-time comparison, not an asset."
+  - id: gt-0034
+    file: apps/api/src/services/integrations/slack/slack.test.ts
+    lines: [23, 23]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto.randomBytes(32) drawn as a token encryption key (hex string set in config). Random bytes used as a key are a drbg draw only, no related crypto material."
+  - id: gt-0035
+    file: apps/api/src/services/integrations/slack/slack.test.ts
+    lines: [42, 42]
+    asset_type: algorithm
+    primitive: drbg
+    origin: project
+    reachable: unknown
+    notes: "crypto.randomBytes(32) drawn as a token encryption key; drbg draw only."
+  - id: gt-0036
+    file: apps/api/src/services/integrations/slack/slack.test.ts
+    lines: [61, 62]
+    asset_type: algorithm
+    primitive: mac
+    algorithm: HMAC
+    parameters:
+      hash: SHA-256
+    origin: project
+    reachable: unknown
+    notes: "crypto.createHmac('sha256', secret) split over lines 61-62 (receiver on 61, callee on 62); range covers both. The literal secret is given to this one HMAC call only (the verify function is a project helper), so no object."
