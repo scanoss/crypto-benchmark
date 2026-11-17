@@ -1,13 +1,13 @@
 # crypto-finder, suite B (transitive reachability)
 
-crypto-finder v0.53.1 with remote ruleset v1.48.0, run on 2026-11-12 over the 90 suite B entries (45 pairs): **45 of 45 pairs** right, detection TP 104, FP 0, FN 0, reachable precision and recall 1.000, false reachable 0 / 52, depth and distance right on all 104 assets. `score.md` is the full `cbench score` report; [../../suite-b.md](../../suite-b.md) has the tables by language and scenario and the history of earlier runs.
+crypto-finder v0.54.0 with remote ruleset v1.48.0, run on 2026-11-17 over the 90 suite B entries (45 pairs): **45 of 45 pairs** right, detection TP 104, FP 0, FN 0, reachable precision and recall 1.000, false reachable 0 / 52, depth and distance right on all 104 assets. `score.md` is the full `cbench score` report; [../../suite-b.md](../../suite-b.md) has the tables by language and scenario and the history of earlier runs.
 
 ## Run record
 
-- **crypto-finder:** v0.53.1, the released `crypto-finder_0.53.1_linux_amd64.tar.gz` (sha256 `3a7db29d52a911fe8d02dec1bfc36aece2f64e66ab0d70f63a58ea3fd93bd8e8`, checked against the release's checksums file). The binary reports version `0.53.1`.
-- **Ruleset:** remote, v1.48.0, checksum `sha256:a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6`, as the interim reports record it. The prediction files carry the same values in `tool.config`.
-- **Toolchains:** Go 1.26.0, Python 3.12.3 (venv, pip 24.0), Maven 3.8.7 on Temurin JDK 21.0.12 (in `JAVA_HOME`), Node.js 24.19.0 with npm, cargo 1.98.0 (registry crates fetched with `cargo fetch --locked`, then built offline). The handler frameworks come from the public registries at the versions the fixtures pin.
-- **Commands:** `scripts/run-crypto-finder-suite-b.sh CF PREDICTIONS go java javascript python rust`, with `CF` the v0.53.1 binary. For each entry it builds the fixture with `scripts/prepare-suite-b.sh` into `work/suite-b/<entry>` and runs:
+- **crypto-finder:** v0.54.0, the released `crypto-finder_0.54.0_linux_amd64.tar.gz` (sha256 `06255e9dace89710ee81308aedecd9e8e11b9ea37199b89afe9a81962971a1d0`, checked against the release's checksums file). The binary reports version `0.54.0`, commit `1bf3cb12ebf3731f40917e8dac4aea54c40f4567`. Its only change from v0.53.1 is how it downloads the ruleset: from `/v3/cryptography/rulesets` as a bundle with a signed lease, kept encrypted in the cache. The run on 2026-11-12 with v0.53.1 gave the same predictions, asset for asset; only `tool.version` differs.
+- **Ruleset:** remote, v1.48.0, the latest release on 2026-11-17, checksum `sha256:a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6`, as the interim reports record it. The prediction files carry the same values in `tool.config`.
+- **Toolchains:** Go 1.26.0, Python 3.12.3 (venv, pip 24.0), Maven 3.8.7 on Temurin JDK 21.0.13 (in `JAVA_HOME`), Node.js 24.19.0 with npm, cargo 1.98.0 (registry crates fetched with `cargo fetch --locked`, then built offline). The handler frameworks come from the public registries at the versions the fixtures pin.
+- **Commands:** `scripts/run-crypto-finder-suite-b.sh CF PREDICTIONS go java javascript python rust`, with `CF` the v0.54.0 binary. For each entry it builds the fixture with `scripts/prepare-suite-b.sh` into `work/suite-b/<entry>` and runs:
 
 ```sh
 env $(cat work/suite-b/ID/scan.env) crypto-finder scan --ruleset-version v1.48.0 \

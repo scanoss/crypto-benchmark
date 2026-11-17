@@ -1,6 +1,6 @@
 # Suite B: transitive reachability
 
-crypto-finder v0.53.1 with remote ruleset v1.48.0 (2026-11-12) discriminates **all 45 pairs**: it detects all 104 suite B assets with no false positive, answers reachable with precision and recall 1.000, calls no unreachable asset reachable (0 / 52), and names the right dependency depth and distance on every asset. cdxgen and sonar-cryptography report no reachability for crypto assets, so they are shown as having none, not as scoring zero.
+crypto-finder v0.54.0 with remote ruleset v1.48.0 (2026-11-17) discriminates **all 45 pairs**: it detects all 104 suite B assets with no false positive, answers reachable with precision and recall 1.000, calls no unreachable asset reachable (0 / 52), and names the right dependency depth and distance on every asset. cdxgen and sonar-cryptography report no reachability for crypto assets, so they are shown as having none, not as scoring zero.
 
 ## What suite B measures
 
@@ -19,7 +19,7 @@ Whether a tool knows that an application can reach crypto that lives in its depe
 
 ## crypto-finder, current run
 
-v0.53.1, remote ruleset v1.48.0, `scan --scan-dependencies --export-callgraph` ([run record](crypto-finder/suite-b/README.md)). `score.md` next to the predictions is the full report.
+v0.54.0, remote ruleset v1.48.0, `scan --scan-dependencies --export-callgraph` ([run record](crypto-finder/suite-b/README.md)). `score.md` next to the predictions is the full report.
 
 | Group | Reachable P | Reachable R | False reachable | Depth acc | Distance acc | Pairs correct |
 |---|---|---|---|---|---|---|
@@ -53,12 +53,14 @@ crypto-finder, all 45 pairs. Detection was complete from v0.51.0 on: TP 104, FP 
 | v0.51.0 | v1.44.0, v1.45.0, v1.46.0 | 2026-11-10, 2026-11-11 | 40 of 45 | 0.977 / 0.915 | 1 / 52 | 104 / 0 / 0 |
 | v0.53.1 | v1.47.0 | 2026-11-12 | 45 of 45 | 1.000 / 1.000 | 0 / 52 | 104 / 0 / 0 |
 | v0.53.1 | v1.48.0 | 2026-11-12 | 45 of 45 | 1.000 / 1.000 | 0 / 52 | 104 / 0 / 0 |
+| v0.54.0 | v1.48.0 | 2026-11-17 | 45 of 45 | 1.000 / 1.000 | 0 / 52 | 104 / 0 / 0 |
 
 What moved, in user terms:
 
 - **v0.51.0:** a handler or callback that is never registered or passed is no longer treated as an entry point just because its name appears elsewhere (a route string, a comment, another module's qualified name, a Rust lint attribute), and the 22 digest and tag outputs that v0.50.0 reported as key material are gone. Every handler and callback pair became right; the five left were dispatch.
 - **v0.53.1:** a method call on a local bound to a factory's result resolves to the class the factory constructs, so all five dispatch pairs became right.
 - **Rulesets v1.44.0 to v1.48.0** changed no answer on a scored suite B asset.
+- **v0.54.0:** only the ruleset download changed, to a leased bundle from `/v3/cryptography/rulesets`; every prediction is the same as v0.53.1's.
 
 ## Other tools
 

@@ -2,7 +2,7 @@
 
 crypto-finder finds 194 of the 197 Rust assets with 3 false positives. Rust protocol is its one target cell that fails, on two TLS configuration setters.
 
-Suite A, 15 Rust entries (`fixtures/rust/*`, one per crate), 197 assets in 151 objects, scored on 2026-11-12 against the ground truth of 2026-11-08. crypto-finder is v0.53.1 with remote ruleset v1.48.0; sonar-cryptography and cdxgen are scored from their stored predictions.
+Suite A, 15 Rust entries (`fixtures/rust/*`, one per crate), 197 assets in 151 objects, scored on 2026-11-17 against the ground truth of 2026-11-08. crypto-finder is v0.54.0 with remote ruleset v1.48.0, run on 2026-11-17 with the same predictions as v0.53.1 on 2026-11-12; sonar-cryptography and cdxgen are scored from their stored predictions.
 
 | Language | Tool | P op | R op | F1 op | P obj | R obj | F1 obj | TP / FP / FN op | Attributed op | Attributed obj |
 |---|---|---:|---:|---:|---:|---:|---:|---|---|---|
@@ -48,6 +48,7 @@ Rust only, every run against the ground truth of 2026-11-08 and the same matchin
 | v0.51.0 | v1.46.0 | 2026-11-11 | 189 / 3 / 8 | 0.984 / 0.959 | 0.980 / 0.967 |
 | v0.53.1 | v1.47.0 | 2026-11-12 | 193 / 3 / 4 | 0.985 / 0.980 | 0.980 / 0.980 |
 | v0.53.1 | v1.48.0 | 2026-11-12 | 194 / 3 / 3 | 0.985 / 0.985 | 0.980 / 0.987 |
+| v0.54.0 | v1.48.0 | 2026-11-17 | 194 / 3 / 3 | 0.985 / 0.985 | 0.980 / 0.987 |
 
 ## Run records
 

@@ -1,0 +1,42 @@
+name: Report a ground-truth error
+description: An asset that is wrong, missing or should not be there, in any suite.
+title: "Ground truth: "
+labels: ["ground-truth"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Corrections land in the next version of the benchmark; published versions never change ([how](https://github.com/scanoss/crypto-benchmark/blob/main/METHODOLOGY.md#versions-and-contributions)).
+        The [annotation guide](https://github.com/scanoss/crypto-benchmark/blob/main/docs/annotation-guide.md) decides what an asset is.
+  - type: input
+    id: entry
+    attributes:
+      label: Entry id
+      placeholder: python-cryptography
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: File and lines
+      placeholder: "aes-gcm/main.py, lines 12-13"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is wrong
+      options:
+        - An asset is missing
+        - An asset should not be there
+        - An asset has a wrong field (lines, algorithm, parameters, reachability, ...)
+        - The guide does not decide this case
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: The asset id if there is one, what it should be, and the guide rule it follows.
+    validations:
+      required: true

@@ -21,6 +21,8 @@ Only `--include-tests`. The binary, ruleset, checkouts, commands and adapter are
 
 76 FN become TP, all in test-path files; 6 FP are added, all in test-path files (below). The prediction files do not record the flag in `tool.config`; this page does.
 
+**Reproduced with v0.54.0 on 2026-11-17.** The same scan with crypto-finder v0.54.0 (tarball sha256 `06255e9dace89710ee81308aedecd9e8e11b9ea37199b89afe9a81962971a1d0`), which downloads ruleset v1.48.0 from `/v3/cryptography/rulesets` with a signed lease, gave the same predictions on all ten entries, asset for asset. Nothing here changed, and the pool gained no item.
+
 ## Run record
 
 - **crypto-finder:** v0.53.1, the same released binary as the first score (tarball sha256 `3a7db29d52a911fe8d02dec1bfc36aece2f64e66ab0d70f63a58ea3fd93bd8e8`), commit `20722e3aadc1dc23020e07a1050e9c7562554cf6`.

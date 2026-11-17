@@ -11,7 +11,7 @@ cbench adapt crypto-finder --entry <entry> --input interim.json --callgraph call
 
 ## Inputs
 
-- **Interim report** (`scan --output`), versions 1.5 to 1.8. The 1.8 `pqc` block is accepted and not scored. It is decoded strictly against the published schema (`pkg/schema/interim.go`, `schemas/interim-report-schema.json`). An undeclared property fails the adapter, because it means the contract moved.
+- **Interim report** (`scan --output`), versions 1.5 to 1.9. The 1.8 `pqc` block and the 1.9 `rules.lease` are accepted and not scored. It is decoded strictly against the published schema (`pkg/schema/interim.go`, `schemas/interim-report-schema.json`). An undeclared property fails the adapter, because it means the contract moved.
 - **Call graph export** (`scan --export-callgraph`), schema 6.17 or 6.18. Only `schema_version` and `finding_graphs[]` are read. The interim report carries no reachability, so without this file the prediction has `reachability_reported: false` and every asset answers `unknown`.
 
 An interim asset is joined to its finding graph on `(finding_id, occurrence_key)`. `finding_id` alone is not unique: it hashes file, start line and rule.

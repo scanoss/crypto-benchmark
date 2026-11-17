@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: How contributions work
+    url: https://github.com/scanoss/crypto-benchmark/blob/main/CONTRIBUTING.md
+    about: What we accept, how a case is annotated, and when it is scored.

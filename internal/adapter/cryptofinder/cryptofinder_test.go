@@ -121,6 +121,28 @@ func TestInterim18WithPQCScoresLikeInterim17(t *testing.T) {
 	}
 }
 
+// Format 1.9 adds rules.lease to a remote ruleset served as a signed bundle.
+// It must not change what is scored, and the lease stays out of the
+// prediction: the ruleset version and checksum already identify the rules.
+func TestInterim19WithLeaseScoresLikeInterim17(t *testing.T) {
+	interim17 := strings.Replace(fixture(t, "go-transitive.interim.json"),
+		`"source": "local",`, `"source": "remote", "version": "v9.9.9",`, 1)
+	graph := fixture(t, "go-transitive.callgraph.json")
+	interim19 := strings.Replace(interim17, `"version": "1.7"`, `"version": "1.9"`, 1)
+	interim19 = strings.Replace(interim19, `"source": "remote",`,
+		`"source": "remote", "lease": {"expires_at": "2026-12-17T11:15:12Z", "signing_key_id": "example-key"},`, 1)
+	if !strings.Contains(interim19, `"lease"`) {
+		t.Fatal("fixture has no rules block to attach the lease to")
+	}
+	want17, got19 := adapt(t, interim17, graph), adapt(t, interim19, graph)
+	if got, want := describeAll(got19), describeAll(want17); got != want {
+		t.Fatalf("1.9 report scored differently:\n%s\nwant:\n%s", got, want)
+	}
+	if got, want := fmt.Sprint(got19.File.Tool.Config), fmt.Sprint(want17.File.Tool.Config); got != want {
+		t.Fatalf("config: %s, want %s (the lease must not be recorded)", got, want)
+	}
+}
+
 func TestWithoutCallgraphNoReachabilityIsReported(t *testing.T) {
 	res := adapt(t, fixture(t, "go-transitive.interim.json"), "")
 	if res.File.ReachabilityReported {
@@ -254,7 +276,7 @@ func TestContractDriftIsRefused(t *testing.T) {
 		{"undeclared interim field", strings.Replace(interim, `"status": "pending"`, `"status": "pending", "confidence": "high"`, 1), graph,
 			`cryptofinder: interim report: json: unknown field "confidence"`},
 		{"interim version", strings.Replace(interim, `"version": "1.7"`, `"version": "2.0"`, 1), graph,
-			`cryptofinder: interim report version "2.0" is not one of 1.5|1.6|1.7|1.8`},
+			`cryptofinder: interim report version "2.0" is not one of 1.5|1.6|1.7|1.8|1.9`},
 		{"call graph without dependency blocks", interim, strings.Replace(graph, `"schema_version": "6.18"`, `"schema_version": "6.14"`, 1),
 			`cryptofinder: call graph schema_version "6.14" is not one of 6.17|6.18`},
 	}
