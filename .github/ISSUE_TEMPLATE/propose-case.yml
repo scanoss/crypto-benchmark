@@ -1,0 +1,54 @@
+name: Propose a case
+description: Code where you expect a crypto inventory tool to find, or not find, crypto. We write the fixture and the ground truth.
+title: "Case: "
+labels: ["case-proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Accepted cases join the existing suites in the next version of the benchmark ([how](https://github.com/scanoss/crypto-benchmark/blob/main/METHODOLOGY.md#versions-and-contributions)).
+        Please do not attach tool output: a case's ground truth is final before any tool runs on it, and no case is accepted or rejected because of what a tool finds.
+  - type: dropdown
+    id: suite
+    attributes:
+      label: Suite
+      options:
+        - "A: a program that uses a crypto library or API"
+        - "B: crypto in a dependency that the application does or does not reach"
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options: [Java, Python, Go, Rust, JavaScript / TypeScript]
+    validations:
+      required: true
+  - type: input
+    id: library
+    attributes:
+      label: Library and exact version
+      placeholder: "cryptography==50.0.2, or the standard library"
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: Code
+      description: A minimal program, or a link to a file at a fixed commit. No real keys or secrets.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: The crypto you expect an inventory to list
+      description: One line per call, with the line number, the algorithm and its parameters. For suite B, say whether the application reaches it.
+      placeholder: "line 7: HMAC with SHA-256\nline 9: a random 16-byte salt"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this case is interesting
+      description: Optional. What makes it hard to detect, or easy to get wrong.

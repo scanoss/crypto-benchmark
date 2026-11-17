@@ -25,6 +25,7 @@ A public, reproducible accuracy benchmark for crypto inventory tools. It measure
 | How ground truth is made and how a finding is matched | [METHODOLOGY.md](METHODOLOGY.md) |
 | What counts as an asset | [docs/annotation-guide.md](docs/annotation-guide.md) |
 | Agreement counts and resolutions per annotation round | [docs/annotation-log.md](docs/annotation-log.md) |
+| How to contribute a case or a correction | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | One tool run: commands, predictions, `score.md`, deviations | `results/<tool>/<run>/` |
 
 ## What it measures, and why
@@ -125,7 +126,7 @@ Full rules: [METHODOLOGY.md](METHODOLOGY.md).
 
 ## Known limitations
 
-- **Who publishes it.** The benchmark is published by SCANOSS, the maker of crypto-finder. The pre-registered rules, independent annotation, first-score freeze and published misses exist so that a reader can check every number without trusting the publisher.
+- **Who publishes it.** The benchmark is published by SCANOSS, the maker of crypto-finder. The pre-registered rules, independent annotation, first-score freeze and published misses exist so that a reader can check every number without trusting the publisher. Outside cases are [welcome](#contributing) and are accepted blind, before any tool runs on them.
 - **Annotators are agents.** Each entry is annotated by two independent agents and adjudicated. There is no human annotator.
 - **Suite A library list.** The Java candidates include the libraries crypto-finder's knowledge base names, because Maven Central search missed several. The list can favor libraries the tool already covers ([METHODOLOGY.md](METHODOLOGY.md#suite-a-library-list)).
 - **Suite B fixtures are small and uniform** by intent, and the fixture author saw crypto-finder's output on early Go and Python fixtures. No fixture was changed to fit a result.
@@ -216,6 +217,10 @@ docs/                             annotation guide, annotation log, strict-match
 METHODOLOGY.md                    how ground truth is made and how tools are scored
 scripts/                          tool runners, the scoreboard and check-public.sh
 ```
+
+## Contributing
+
+Found code where a crypto inventory tool, any tool, finds too little, finds too much or names the wrong algorithm? [Propose a case](https://github.com/scanoss/crypto-benchmark/issues/new?template=propose-case.yml) with a snippet and the crypto you expect, or [report a ground-truth error](https://github.com/scanoss/crypto-benchmark/issues/new?template=ground-truth-error.yml). You need no tool and no API key. Accepted cases join the existing suites in the next version of the benchmark, and published versions never change. No case is accepted or rejected because of what a tool finds on it. [CONTRIBUTING.md](CONTRIBUTING.md) has the how-to, and [METHODOLOGY.md](METHODOLOGY.md#versions-and-contributions) the rules.
 
 ## License
 
