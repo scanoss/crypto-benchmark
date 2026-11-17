@@ -2,6 +2,18 @@
 
 crypto-finder finds all 373 JavaScript assets with no false positive and passes every JavaScript target cell.
 
+
+## Summary
+
+| | crypto-finder | sonar-cryptography | cdxgen |
+|---|---|---|---|
+| JavaScript crypto found | **100%** (373 of 373) | not supported | 9% (32 of 373) |
+| Findings that are right | **100%** | not supported | 100% |
+
+**Found**: of all the crypto in the code, the share the tool reported (recall). **Right**: of what the tool reported, the share that is real crypto (precision).
+
+## Scores in detail
+
 Suite A, 16 JavaScript entries (`fixtures/javascript/*`, one per library, the standard library included), 373 assets in 279 objects, scored on 2026-11-17 against the ground truth of 2026-11-08. crypto-finder is v0.54.0 with remote ruleset v1.48.0, run on 2026-11-17 with the same predictions as v0.53.1 on 2026-11-12; sonar-cryptography and cdxgen are scored from their stored predictions.
 
 | Language | Tool | P op | R op | F1 op | P obj | R obj | F1 obj | TP / FP / FN op | Attributed op | Attributed obj |

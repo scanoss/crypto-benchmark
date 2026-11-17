@@ -4,12 +4,16 @@ A public, reproducible accuracy benchmark for crypto inventory tools. It measure
 
 ## Results at a glance
 
-| Suite | Question | crypto-finder | sonar-cryptography 1.7.0 | cdxgen 13.6.0 |
+**Found** is the share of the crypto in the code that a tool reported (recall). **Right** is the share of a tool's findings that are real crypto (precision).
+
+| Suite | What it asks | crypto-finder | sonar-cryptography 1.7.0 | cdxgen 13.6.0 |
 |---|---|---|---|---|
-| **A**, library coverage | Precision / recall, operation level | **0.994 / 0.998** | 0.777 / 0.177 (3 languages) | 0.593 / 0.079 |
-| **B**, transitive reachability | Pairs told apart correctly | **45 of 45** | no reachability reported | no reachability reported |
-| **C**, real code, `files` (headline) | Precision / recall, first score | **0.931 / 0.505** | 1.000 / 0.224 (3 languages) | 0.353 / 0.084 |
-| **C**, real code, `pool` | Precision / recall **relative to the pool**, first score | **0.949 / 0.447** | 0.983 / 0.286 (3 languages) | 0.099 / 0.077 |
+| **A**, library coverage | Found / right | **99.8% / 99.4%** | 18% / 78% (3 languages) | 8% / 59% |
+| **B**, transitive reachability | Can it tell crypto the app uses from crypto it never calls? | **Yes, 45 of 45 pairs** | No reachability reported | No reachability reported |
+| **C**, real code, sampled files (headline) | Found / right, first score | **50% / 93%**; 86% / 93% scanning test files too | 22% / 100% (3 languages) | 8% / 35% |
+| **C**, real code, whole repositories | Found, of the known crypto / right, first score | **45% / 95%**; 89% / 95% scanning test files too | 29% / 98% (3 languages) | 8% / 10% |
+
+Each results page starts with a summary like this one. The [Results](#results) section below has the exact counts.
 
 - crypto-finder ran with remote ruleset v1.48.0: v0.54.0 for suites A and B, scored on 2026-11-17, and v0.53.1 for the suite C first score, scored on 2026-11-13. v0.54.0 changes only how the ruleset is downloaded, and gave the same predictions as v0.53.1 on every suite, C included.
 - Suite C shows the **first score**, frozen before any tool ran on it. Most of crypto-finder's suite C misses are test files that its default configuration left out. A later run with `--include-tests` scores 0.929 / 0.860 on `files` and 0.951 / 0.886 on the pool. It is published [beside the first score](#suite-c-real-repositories), never in its place.
