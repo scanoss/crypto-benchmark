@@ -2,6 +2,18 @@
 
 crypto-finder finds all 349 Java assets with no false positive and passes every Java target cell.
 
+
+## Summary
+
+| | crypto-finder | sonar-cryptography | cdxgen |
+|---|---|---|---|
+| Java crypto found | **100%** (349 of 349) | 19% (66 of 349) | 0% (0 of 349) |
+| Findings that are right | **100%** | 62% | n/a, it reports nothing |
+
+**Found**: of all the crypto in the code, the share the tool reported (recall). **Right**: of what the tool reported, the share that is real crypto (precision).
+
+## Scores in detail
+
 Suite A, 16 Java entries (`fixtures/java/*`, one per library, the standard library included), 349 assets in 221 objects, scored on 2026-11-17 against the ground truth of 2026-11-08. crypto-finder is v0.54.0 with remote ruleset v1.48.0, run on 2026-11-17 with the same predictions as v0.53.1 on 2026-11-12; sonar-cryptography and cdxgen are scored from their stored predictions.
 
 | Language | Tool | P op | R op | F1 op | P obj | R obj | F1 obj | TP / FP / FN op | Attributed op | Attributed obj |

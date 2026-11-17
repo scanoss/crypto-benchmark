@@ -1,5 +1,17 @@
 # Suite B: transitive reachability
 
+## Summary
+
+| | crypto-finder | sonar-cryptography | cdxgen |
+|---|---|---|---|
+| Tells crypto the app really uses apart from crypto it never calls, in its dependencies | **45 of 45 pairs** | no, it does not report reachability | no, it does not report reachability |
+| Unused crypto wrongly flagged as used | **0 of 52** | n/a | n/a |
+| Crypto found inside dependencies | **104 of 104 (100%)** | 0 of 52 (0%) | 16 of 84 (19%), JavaScript only |
+
+sonar-cryptography and cdxgen ran on the first 35 pairs, before the handler and callback scenarios were added, so their counts have smaller totals. The sections below give the details.
+
+## Scores in detail
+
 crypto-finder v0.54.0 with remote ruleset v1.48.0 (2026-11-17) discriminates **all 45 pairs**: it detects all 104 suite B assets with no false positive, answers reachable with precision and recall 1.000, calls no unreachable asset reachable (0 / 52), and names the right dependency depth and distance on every asset. cdxgen and sonar-cryptography report no reachability for crypto assets, so they are shown as having none, not as scoring zero.
 
 ## What suite B measures

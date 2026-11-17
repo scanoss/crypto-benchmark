@@ -1,5 +1,28 @@
 # Suite A results
 
+## Summary
+
+| | crypto-finder | sonar-cryptography | cdxgen |
+|---|---|---|---|
+| Crypto found | **99.8%** (1,413 of 1,416) | 18% (150 of 846) | 8% (112 of 1,416) |
+| Findings that are right | **99.4%** | 78% | 59% |
+| Languages it can scan, of 5 | **5** | 3 (no JavaScript, no Rust) | 5 (finds nothing in Python and Java) |
+| Quality targets met, of the cells it ran | **28 of 30** | 0 of 20 | 0 of 30 |
+
+Crypto found, by language (findings that are right in brackets):
+
+| Language | crypto-finder | sonar-cryptography | cdxgen |
+|---|---|---|---|
+| Python | **100%** (98%) | 12% (92%) | 0% |
+| JavaScript | **100%** (100%) | not supported | 9% (100%) |
+| Rust | **98%** (98%) | not supported | 16% (48%) |
+| Go | **100%** (100%) | 24% (100%) | 24% (53%) |
+| Java | **100%** (100%) | 19% (62%) | 0% |
+
+**Found**: of all the crypto in the code, the share the tool reported (recall). **Right**: of what the tool reported, the share that is real crypto (precision). The tables below give the exact counts.
+
+## Scores in detail
+
 crypto-finder v0.54.0 with remote ruleset v1.48.0, scored on 2026-11-17, finds 1,413 of the 1,416 suite A assets with 9 false positives, and passes 28 of 30 target cells. sonar-cryptography 1.7.0 and cdxgen 13.6.0 pass none.
 
 | Tool | Languages | TP / FP / FN op | P / R op | P / R obj | Target cells, obj |

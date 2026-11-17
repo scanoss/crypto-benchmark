@@ -1,5 +1,28 @@
 # Suite C: real repositories
 
+## Summary
+
+**142 sampled files from 10 real open-source applications (`files`, the headline)**
+
+| | crypto-finder, first score | crypto-finder, scanning test files too | sonar-cryptography | cdxgen |
+|---|---|---|---|---|
+| Crypto found | 50% (108 of 214) | **86%** (184 of 214) | 22% (28 of 125, 3 languages) | 8% (18 of 214) |
+| Findings that are right | 93% | 93% | **100%** | 35% |
+
+**Whole repositories (`pool`), compared with all the crypto any tool or a grep found**
+
+| | crypto-finder, first score | crypto-finder, scanning test files too | sonar-cryptography | cdxgen |
+|---|---|---|---|---|
+| Crypto found, of the known crypto | 45% (444 of 993) | **89%** (880 of 993) | 29% (169 of 590, 3 languages) | 8% (76 of 993) |
+| Findings that are right | 95% | 95% | **98%** | 10% |
+| Crypto that only this tool found | 284 | 649 | 71, all in Go test files; 0 once crypto-finder scans test files | 9 |
+
+- The **first score** is the official result, frozen before any tool ran. Most of crypto-finder's misses there are test files: its default skips them, while the other tools were set to scan them. The run **scanning test files too** changed only that setting, after the first score was seen, so it is published beside the first score, never in its place.
+- sonar-cryptography reports less, but what it reports is almost always right. In Go it finds one asset more than crypto-finder's first score.
+- **Found**: of all the crypto in the code, the share the tool reported (recall). **Right**: of what the tool reported, the share that is real crypto (precision).
+
+## Scores in detail
+
 **Both scopes are scored. On the 142 sampled files (`files`, the headline), crypto-finder v0.53.1 with ruleset v1.48.0 finds 108 of 214 assets with 8 false positives (precision 0.931, recall 0.505).** sonar-cryptography 1.7.0 finds 28 of the 125 assets in its three languages with none, and cdxgen 13.6.0 finds 18 of 214 with 33.
 
 **Over whole repositories (`pool`), crypto-finder matches 444 of the 993 adjudicated pool assets with 24 false positives: precision 0.949, recall 0.447 relative to the pool.** sonar-cryptography matches 169 of the 590 pool assets in its languages with 3 (0.983 / 0.286 relative to the pool), and cdxgen 76 of 993 with 689 (0.099 / 0.077 relative to the pool). Pool recall counts only the assets some tool or the grep found, so it overstates true recall and is never comparable to `files` or suite A recall ([`pool` scope](#pool-scope-first-score)). 284 pool assets were found by crypto-finder's first score and by neither competitor, 71 only by sonar-cryptography and 9 only by cdxgen.
