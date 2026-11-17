@@ -2,7 +2,7 @@
 
 crypto-finder finds all 202 Go assets with no false positive and passes every Go target cell.
 
-Suite A, 16 Go entries (`fixtures/go/*`, one per library, the standard library included), 202 assets in 152 objects, scored on 2026-11-12 against the ground truth of 2026-11-08. crypto-finder is v0.53.1 with remote ruleset v1.48.0; sonar-cryptography and cdxgen are scored from their stored predictions.
+Suite A, 16 Go entries (`fixtures/go/*`, one per library, the standard library included), 202 assets in 152 objects, scored on 2026-11-17 against the ground truth of 2026-11-08. crypto-finder is v0.54.0 with remote ruleset v1.48.0, run on 2026-11-17 with the same predictions as v0.53.1 on 2026-11-12; sonar-cryptography and cdxgen are scored from their stored predictions.
 
 | Language | Tool | P op | R op | F1 op | P obj | R obj | F1 obj | TP / FP / FN op | Attributed op | Attributed obj |
 |---|---|---:|---:|---:|---:|---:|---:|---|---|---|
@@ -43,6 +43,7 @@ Go only, every run against the ground truth of 2026-11-08 and the same matching 
 | v0.51.0 | v1.46.0 | 2026-11-11 | 199 / 0 / 3 | 1.000 / 0.985 | 1.000 / 0.980 |
 | v0.53.1 | v1.47.0 | 2026-11-12 | 199 / 0 / 3 | 1.000 / 0.985 | 1.000 / 0.980 |
 | v0.53.1 | v1.48.0 | 2026-11-12 | 202 / 0 / 0 | 1.000 / 1.000 | 1.000 / 1.000 |
+| v0.54.0 | v1.48.0 | 2026-11-17 | 202 / 0 / 0 | 1.000 / 1.000 | 1.000 / 1.000 |
 
 ## Run records
 

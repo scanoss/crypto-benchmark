@@ -2,7 +2,7 @@
 
 crypto-finder finds all 295 Python assets with 6 false positives. Python protocol is its one target cell that fails, on two TLS configuration setters.
 
-Suite A, 16 Python entries (`fixtures/python/*`, one per library, the standard library included), 295 assets in 212 objects, scored on 2026-11-12 against the ground truth of 2026-11-08. crypto-finder is v0.53.1 with remote ruleset v1.48.0; sonar-cryptography and cdxgen are scored from their stored predictions.
+Suite A, 16 Python entries (`fixtures/python/*`, one per library, the standard library included), 295 assets in 212 objects, scored on 2026-11-17 against the ground truth of 2026-11-08. crypto-finder is v0.54.0 with remote ruleset v1.48.0, run on 2026-11-17 with the same predictions as v0.53.1 on 2026-11-12; sonar-cryptography and cdxgen are scored from their stored predictions.
 
 | Language | Tool | P op | R op | F1 op | P obj | R obj | F1 obj | TP / FP / FN op | Attributed op | Attributed obj |
 |---|---|---:|---:|---:|---:|---:|---:|---|---|---|
@@ -49,6 +49,7 @@ Python only, every run against the ground truth of 2026-11-08 and the same match
 | v0.51.0 | v1.46.0 | 2026-11-11 | 293 / 6 / 2 | 0.980 / 0.993 | 0.972 / 1.000 |
 | v0.53.1 | v1.47.0 | 2026-11-12 | 293 / 6 / 2 | 0.980 / 0.993 | 0.972 / 1.000 |
 | v0.53.1 | v1.48.0 | 2026-11-12 | 295 / 6 / 0 | 0.980 / 1.000 | 0.972 / 1.000 |
+| v0.54.0 | v1.48.0 | 2026-11-17 | 295 / 6 / 0 | 0.980 / 1.000 | 0.972 / 1.000 |
 
 ## Run records
 

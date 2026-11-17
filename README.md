@@ -4,14 +4,14 @@ A public, reproducible accuracy benchmark for crypto inventory tools. It measure
 
 ## Results at a glance
 
-| Suite | Question | crypto-finder v0.53.1 | sonar-cryptography 1.7.0 | cdxgen 13.6.0 |
+| Suite | Question | crypto-finder | sonar-cryptography 1.7.0 | cdxgen 13.6.0 |
 |---|---|---|---|---|
 | **A**, library coverage | Precision / recall, operation level | **0.994 / 0.998** | 0.777 / 0.177 (3 languages) | 0.593 / 0.079 |
 | **B**, transitive reachability | Pairs told apart correctly | **45 of 45** | no reachability reported | no reachability reported |
 | **C**, real code, `files` (headline) | Precision / recall, first score | **0.931 / 0.505** | 1.000 / 0.224 (3 languages) | 0.353 / 0.084 |
 | **C**, real code, `pool` | Precision / recall **relative to the pool**, first score | **0.949 / 0.447** | 0.983 / 0.286 (3 languages) | 0.099 / 0.077 |
 
-- crypto-finder ran with remote ruleset v1.48.0. Suites A and B were scored on 2026-11-12, suite C on 2026-11-13.
+- crypto-finder ran with remote ruleset v1.48.0: v0.54.0 for suites A and B, scored on 2026-11-17, and v0.53.1 for the suite C first score, scored on 2026-11-13. v0.54.0 changes only how the ruleset is downloaded, and gave the same predictions as v0.53.1 on every suite, C included.
 - Suite C shows the **first score**, frozen before any tool ran on it. Most of crypto-finder's suite C misses are test files that its default configuration left out. A later run with `--include-tests` scores 0.929 / 0.860 on `files` and 0.951 / 0.886 on the pool. It is published [beside the first score](#suite-c-real-repositories), never in its place.
 - Pool recall counts only the assets some tool or a grep found. It overstates true recall and is not comparable to suite A or `files` recall.
 
@@ -51,7 +51,7 @@ Suite C repositories: Go caveman and ollama, Java jadx and mall, JavaScript fire
 
 | Tool | Version and configuration | Languages run |
 |---|---|---|
-| crypto-finder | v0.53.1 released binary, remote ruleset v1.48.0 pinned with `--ruleset-version` (checksum recorded in every `score.md`) | all five |
+| crypto-finder | v0.54.0 released binary (v0.53.1 for the frozen suite C first score), remote ruleset v1.48.0 pinned with `--ruleset-version` (checksum recorded in every `score.md`) | all five |
 | sonar-cryptography | 1.7.0, headless in the pinned CBOMkit-action v2.3.0 container, no SonarQube server | Go, Java, Python. It has no JavaScript or Rust support |
 | cdxgen | 13.6.0: `evinse` (golem) for Go, `evinse` (rusi) for Rust, `cbom` for the rest | all five. For Python and Java it inventories libraries, not algorithm use in source, so it scores 0 there |
 
@@ -161,7 +161,7 @@ Every `results/<tool>/<run>/score.md` is the output of `cbench score` on the pre
 3. **Adapt** its output into a prediction file with `cbench adapt`.
 4. **Score** the predictions with `cbench score`.
 
-**crypto-finder.** Its detection rules are served remotely, so a scan needs a SCANOSS API key in the `SCANOSS_API_KEY` environment variable. Do not commit a key to this repository. Pin the ruleset with `--ruleset-version`.
+**crypto-finder.** Its detection rules are served remotely, so a scan needs a SCANOSS API key in the `SCANOSS_API_KEY` environment variable. Do not commit a key to this repository. Pin the ruleset with `--ruleset-version`. From v0.54.0, crypto-finder downloads the ruleset from `/v3/cryptography/rulesets` as a bundle with a signed lease, so the key needs access to that endpoint. The interim report still records the ruleset checksum, the same for every key, so a run can be checked against the published one.
 
 ```sh
 crypto-finder scan --ruleset-version v1.48.0 --include-tests --export-callgraph-project-reachability \

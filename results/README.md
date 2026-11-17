@@ -1,10 +1,10 @@
 # Suite A results
 
-crypto-finder v0.53.1 with remote ruleset v1.48.0, scored on 2026-11-12, finds 1,413 of the 1,416 suite A assets with 9 false positives, and passes 28 of 30 target cells. sonar-cryptography 1.7.0 and cdxgen 13.6.0 pass none.
+crypto-finder v0.54.0 with remote ruleset v1.48.0, scored on 2026-11-17, finds 1,413 of the 1,416 suite A assets with 9 false positives, and passes 28 of 30 target cells. sonar-cryptography 1.7.0 and cdxgen 13.6.0 pass none.
 
 | Tool | Languages | TP / FP / FN op | P / R op | P / R obj | Target cells, obj |
 |---|---|---|---|---|---|
-| crypto-finder v0.53.1, ruleset v1.48.0 | 5 | 1,413 / 9 / 3 | 0.994 / 0.998 | 0.991 / 0.998 | 28 of 30 |
+| crypto-finder v0.54.0, ruleset v1.48.0 | 5 | 1,413 / 9 / 3 | 0.994 / 0.998 | 0.991 / 0.998 | 28 of 30 |
 | sonar-cryptography 1.7.0 | 3 (no JavaScript or Rust support) | 150 / 43 / 696 | 0.777 / 0.177 | 0.728 / 0.197 | 0 of 20 |
 | cdxgen 13.6.0 | 5 | 112 / 77 / 1,304 | 0.593 / 0.079 | 0.560 / 0.097 | 0 of 30 |
 
@@ -18,7 +18,7 @@ crypto-finder v0.53.1 with remote ruleset v1.48.0, scored on 2026-11-12, finds 1
 
 | Tool | Version and configuration | Languages run |
 |---|---|---|
-| crypto-finder | v0.53.1, the released linux_amd64 binary (tarball sha256 `3a7db29d52a911fe8d02dec1bfc36aece2f64e66ab0d70f63a58ea3fd93bd8e8`, checked against the release's checksums file). Remote ruleset v1.48.0, checksum `sha256:a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6`, pinned with `--ruleset-version`. | all five |
+| crypto-finder | v0.54.0, the released linux_amd64 binary (tarball sha256 `06255e9dace89710ee81308aedecd9e8e11b9ea37199b89afe9a81962971a1d0`, checked against the release's checksums file), which downloads the ruleset from `/v3/cryptography/rulesets` with a signed lease. Remote ruleset v1.48.0, checksum `sha256:a142fbe607446599dac42ec979b92d6610f96c9880cc5ca813f22ab449d8e3e6`, pinned with `--ruleset-version`. | all five |
 | sonar-cryptography | 1.7.0, headless in CBOMkit-action v2.3.0 with cbomkit-lib 1.3.0 | Python, Go, Java; it has no JavaScript or Rust support |
 | cdxgen | 13.6.0: `cbom` for Python, JavaScript and Java, golem through `evinse -l go` for Go, rusi through `evinse -l rust` for Rust. For Python and Java it inventories libraries, keystores and certificates but not algorithm use in source, so it scores 0 there. | all five |
 
@@ -104,7 +104,7 @@ Pre-registered on 2026-11-05: precision >= 0.90 and recall >= 0.85 in every lang
 
 ## Known gaps
 
-What crypto-finder v0.53.1 with ruleset v1.48.0 still gets wrong in suite A: 9 false positives and 3 false negatives at operation level, and one family of matches that is not attributed. Go, Java and JavaScript have none.
+What crypto-finder v0.54.0 with ruleset v1.48.0 still gets wrong in suite A: 9 false positives and 3 false negatives at operation level, and one family of matches that is not attributed. Go, Java and JavaScript have none.
 
 | Gap | Count | Where | What happens |
 |---|---|---|---|
@@ -118,7 +118,7 @@ What crypto-finder v0.53.1 with ruleset v1.48.0 still gets wrong in suite A: 9 f
 
 ## History of pinned runs
 
-crypto-finder only, all five languages, every run against the ground truth of 2026-11-08 and the same matching rules. Each run pins the ruleset with `--ruleset-version`; both releases are published binaries.
+crypto-finder only, all five languages, every run against the ground truth of 2026-11-08 and the same matching rules. Each run pins the ruleset with `--ruleset-version`; every release is a published binary. The v0.54.0 run gave the same predictions as v0.53.1 with the same ruleset, asset for asset: v0.54.0 changes only how the ruleset is downloaded.
 
 | crypto-finder | Ruleset | Run | TP / FP / FN op | P / R op | P / R obj | Target cells obj / op | Suite B pairs |
 |---|---|---|---|---|---|---|---|
@@ -129,6 +129,7 @@ crypto-finder only, all five languages, every run against the ground truth of 20
 | v0.51.0 | v1.46.0 | 2026-11-11 | 1,397 / 9 / 19 | 0.994 / 0.987 | 0.991 / 0.989 | 28 / 28 | 40 of 45 |
 | v0.53.1 | v1.47.0 | 2026-11-12 | 1,402 / 9 / 14 | 0.994 / 0.990 | 0.991 / 0.991 | 28 / 28 | 45 of 45 |
 | v0.53.1 | v1.48.0 | 2026-11-12 | 1,413 / 9 / 3 | 0.994 / 0.998 | 0.991 / 0.998 | 28 / 28 | 45 of 45 |
+| v0.54.0 | v1.48.0 | 2026-11-17 | 1,413 / 9 / 3 | 0.994 / 0.998 | 0.991 / 0.998 | 28 / 28 | 45 of 45 |
 
 From v1.44.0 on, no run lost a true positive or added a false positive or false negative; every change removed one. Runs before 2026-11-08 were scored against an earlier ground truth and are not comparable. Each language page has the same table for its language.
 
