@@ -22,8 +22,10 @@ const ToolName = "crypto-finder"
 // Interim report versions whose fields this adapter reads: dependency_info.purl
 // and occurrence_key arrived in 1.5. 1.8 adds the per-asset pqc block, which
 // is decoded and left out of the prediction: it classifies an algorithm for
-// post-quantum risk and no scored field reads it.
-var interimVersions = []string{"1.5", "1.6", "1.7", "1.8"}
+// post-quantum risk and no scored field reads it. 1.9 adds rules.lease, the
+// signed lease of a remote ruleset; it is decoded and left out too, since the
+// ruleset version and checksum already identify the rules.
+var interimVersions = []string{"1.5", "1.6", "1.7", "1.8", "1.9"}
 
 // Call graph export versions carrying finding_graphs[].reachability (6.8+)
 // and finding_graphs[].dependency (6.17+).
@@ -45,10 +47,16 @@ type toolInfo struct {
 }
 
 type rulesInfo struct {
-	Source         string `json:"source"`
-	Name           string `json:"name"`
-	Version        string `json:"version"`
-	ChecksumSHA256 string `json:"checksum_sha256"`
+	Source         string      `json:"source"`
+	Name           string      `json:"name"`
+	Version        string      `json:"version"`
+	ChecksumSHA256 string      `json:"checksum_sha256"`
+	Lease          *rulesLease `json:"lease"`
+}
+
+type rulesLease struct {
+	ExpiresAt    string `json:"expires_at"`
+	SigningKeyID string `json:"signing_key_id"`
 }
 
 type finding struct {
